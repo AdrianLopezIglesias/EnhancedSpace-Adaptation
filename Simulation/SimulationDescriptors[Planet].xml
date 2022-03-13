@@ -523,33 +523,33 @@
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="PlanetSizeTiny" Type="PlanetSize" >
-        <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="ClassPlanet,!PlanetGameplayTypeGas"         TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="3"       Operation="Addition" Path="ClassPlanet,!PlanetGameplayTypeGas"         TooltipHidden="true"/>
 
-        <Modifier TargetProperty="RawMaximumPopulation"     Value="3"       Operation="Addition" Path="PlanetTypeJungle"    TooltipHidden="true"/>
-        <Modifier TargetProperty="RawMaximumPopulation"     Value="3"       Operation="Addition" Path="PlanetTypeForest"    TooltipHidden="true"/>
-        <Modifier TargetProperty="RawMaximumPopulation"     Value="3"       Operation="Addition" Path="PlanetTypeOcean"     TooltipHidden="true"/>
-        <Modifier TargetProperty="RawMaximumPopulation"     Value="3"       Operation="Addition" Path="PlanetTypeTerran"    TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="6"       Operation="Addition" Path="PlanetTypeJungle"    TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="6"       Operation="Addition" Path="PlanetTypeForest"    TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="6"       Operation="Addition" Path="PlanetTypeOcean"     TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="6"       Operation="Addition" Path="PlanetTypeTerran"    TooltipHidden="true"/>
 
-        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeSwamp"     TooltipHidden="true"/>
-        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeMonsoon"   TooltipHidden="true"/>
-        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeTropical"  TooltipHidden="true"/>
-        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeAtoll"     TooltipHidden="true"/>
-        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeSteppes"   TooltipHidden="true"/>
-        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeBoreal"    TooltipHidden="true"/>
-        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeTundra"    TooltipHidden="true"/>
-        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeVeldt"     TooltipHidden="true"/>
-        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeSnow"      TooltipHidden="true"/>
-        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeArctic"    TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="5"       Operation="Addition" Path="PlanetTypeSwamp"     TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="5"       Operation="Addition" Path="PlanetTypeMonsoon"   TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="5"       Operation="Addition" Path="PlanetTypeTropical"  TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="5"       Operation="Addition" Path="PlanetTypeAtoll"     TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="5"       Operation="Addition" Path="PlanetTypeSteppes"   TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="5"       Operation="Addition" Path="PlanetTypeBoreal"    TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="5"       Operation="Addition" Path="PlanetTypeTundra"    TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="5"       Operation="Addition" Path="PlanetTypeVeldt"     TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="5"       Operation="Addition" Path="PlanetTypeSnow"      TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="5"       Operation="Addition" Path="PlanetTypeArctic"    TooltipHidden="true"/>
 
-        <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeAsh"       TooltipHidden="true"/>
-        <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeLava"      TooltipHidden="true"/>
-        <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeArid"      TooltipHidden="true"/>
-        <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeDesert"    TooltipHidden="true"/>
-        <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeIce"       TooltipHidden="true"/>
-        <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeBarren"    TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeAsh"       TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeLava"      TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeArid"      TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeDesert"    TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeIce"       TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="PlanetTypeBarren"    TooltipHidden="true"/>
 
         <!-- DLC3 -->
-        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeFake"      TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="5"       Operation="Addition" Path="PlanetTypeFake"      TooltipHidden="true"/>
         
         <Modifier TargetProperty="PlanetDepletionMax"       Value="100" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
     </SimulationDescriptor>
