@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/HeroSkillDefinition.xsd">    <!--Vaulters BRANCH SKILLS-->
+    
+  <HeroSkillDefinition Name="HeroSkill01Sowers01">
+    <SkillLevel Name="HeroSkill01Sowers01_1">
+        <ShipSimulationDescriptorReference Name="HeroSkillShip38_FleetExploration_Percent_0"/>
+        <MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+    </SkillLevel>
+  </HeroSkillDefinition>
+  <HeroSkillDefinition Name="HeroSkill02Sowers01">
+    <Tags>ColonizedStarSystem</Tags>
+    <SkillLevel Name="HeroSkill02Sowers01_1">
+        <SystemSimulationDescriptorReference Name="HeroSkillSystem65_Food_PerAnomaly_0"/>
+        <MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+    </SkillLevel>
+  </HeroSkillDefinition>
+
+  <HeroSkillDefinition Name="HeroSkill01KalTikMas01">
+    <SkillLevel Name="HeroSkill01KalTikMas01_1">
+        <ShipSimulationDescriptorReference Name="HeroSkillShip23_FleetDefense_Percent_0"/>
+        <MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+    </SkillLevel>
+  </HeroSkillDefinition>
+  <HeroSkillDefinition Name="HeroSkill02KalTikMas01">
+    <Tags>ColonizedStarSystem</Tags>
+    <SkillLevel Name="HeroSkill02KalTikMas01_1">
+        <SystemSimulationDescriptorReference Name="HeroSkillSystem57_Approval_PerSystemLevel_0"/>
+        <MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+    </SkillLevel>
+  </HeroSkillDefinition>
+
+      <HeroSkillDefinition Name="HeroSkill01Sefaloros01">
+    <SkillLevel Name="HeroSkill01Sefaloros01_1">
+        <ShipSimulationDescriptorReference Name="HeroSkillShip41_FleetUpkeep_Percent_0"/>
+        <MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+    </SkillLevel>
+  </HeroSkillDefinition>
+  <HeroSkillDefinition Name="HeroSkill02Sefaloros01">
+    <Tags>ColonizedStarSystem</Tags>
+    <SkillLevel Name="HeroSkill02Sefaloros01_1">
+        <SystemSimulationDescriptorReference Name="HeroSkillSystem73_Industry_Perpop_0"/>
+        <MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+    </SkillLevel>
+  </HeroSkillDefinition>
+    
+      <HeroSkillDefinition Name="HeroSkill01Galvrans01">
+    <SkillLevel Name="HeroSkill01Galvrans01_1">
+        <ShipSimulationDescriptorReference Name="HeroSkillShip21_FleetDamage_PerCommandPoint_0"/>
+        <MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+    </SkillLevel>
+  </HeroSkillDefinition>
+  <HeroSkillDefinition Name="HeroSkill02Galvrans01">
+    <Tags>ColonizedStarSystem</Tags>
+    <SkillLevel Name="HeroSkill02Galvrans01_1">
+        <SystemSimulationDescriptorReference Name="HeroSkillSystem95_Science_PerAnomaly_0"/>
+        <MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+    </SkillLevel>
+  </HeroSkillDefinition>
+</Datatable>

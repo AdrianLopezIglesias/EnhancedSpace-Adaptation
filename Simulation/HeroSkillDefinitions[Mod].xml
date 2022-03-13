@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/HeroSkillDefinition.xsd">
+
+   <!-- endless -->
+   <HeroSkillDefinition Name="HeroSkill07BranchEndless">
+    <Tags>ColonizedStarSystem</Tags>
+    <SkillLevel Name="HeroSkill07BranchEndless_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SenateSimulationDescriptorReference Name="HeroSkillSenator07BranchEndless"/>
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem07BranchEndless"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+    </SkillLevel>
+  </HeroSkillDefinition>
+  
+    
+	<!--GENERIC BRANCH SKILLS-->
+
+  <HeroSkillDefinition Name="HeroSkill01BranchGenericPolitics00">
+    <Tags>ColonizedStarSystem</Tags>
+    <SkillLevel Name="HeroSkill01BranchGenericPolitics00_01">
+    </SkillLevel>
+    <SkillLevel Name="HeroSkill01BranchGenericPolitics00_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+    </SkillLevel>
+  </HeroSkillDefinition>
+
+  <HeroSkillDefinition Name="HeroSkill02BranchGenericPolitics00">
+    <Tags>ColonizedStarSystem</Tags>
+    <SkillLevel Name="HeroSkill02BranchGenericPolitics00_01">
+    </SkillLevel>
+    <SkillLevel Name="HeroSkill02BranchGenericPolitics00_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+    </SkillLevel>
+  </HeroSkillDefinition>
+  
+	<HeroSkillDefinition Name="HeroSkill01BranchGenericPolitics01">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill01BranchGenericPolitics01_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkill01_Politics01_01"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+  <HeroSkillDefinition Name="HeroSkill02BranchGenericPolitics01">
+    <Tags>ColonizedStarSystem</Tags>
+    <SkillLevel Name="HeroSkill02BranchGenericPolitics01_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SenateSimulationDescriptorReference Name="HeroSkill02_Politics01_Senator"/>
+      <ShipSimulationDescriptorReference Name="HeroSkill02_Politics01_01"/>
+      <MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+    </SkillLevel>
+  </HeroSkillDefinition>
+
+  <HeroSkillDefinition Name="HeroSkill01BranchGenericPolitics02">
+    <Tags>ColonizedStarSystem</Tags>
+    <SkillLevel Name="HeroSkill01BranchGenericPolitics02_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkill01_Politics02_01"/>
+      <MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+    </SkillLevel>
+  </HeroSkillDefinition>
+
+  <HeroSkillDefinition Name="HeroSkill02BranchGenericPolitics02">
+    <Tags>ColonizedStarSystem</Tags>
+    <SkillLevel Name="HeroSkill02BranchGenericPolitics02_01">
+       <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+       <SenateSimulationDescriptorReference Name="HeroSkill02_Politics02_Senator"/>
+       <ShipSimulationDescriptorReference Name="HeroSkill02_Politics02_01"/>
+      <MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+    </SkillLevel>
+  </HeroSkillDefinition>
+
+  <HeroSkillDefinition Name="HeroSkill01BranchGenericPolitics03">
+    <Tags>ColonizedStarSystem</Tags>
+    <SkillLevel Name="HeroSkill01BranchGenericPolitics03_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkill01_Politics03_01"/>
+      <MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+    </SkillLevel>
+  </HeroSkillDefinition>
+
+  <HeroSkillDefinition Name="HeroSkill02BranchGenericPolitics03">
+    <Tags>ColonizedStarSystem</Tags>
+    <SkillLevel Name="HeroSkill02BranchGenericPolitics03_01">
+       <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+       <SenateSimulationDescriptorReference Name="HeroSkill02_Politics03_Senator"/>
+       <ShipSimulationDescriptorReference Name="HeroSkill02_Politics03_01"/>
+      <MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+    </SkillLevel>
+  </HeroSkillDefinition>
+
+  <HeroSkillDefinition Name="HeroSkill01BranchGenericPolitics04">
+    <Tags>ColonizedStarSystem</Tags>
+    <SkillLevel Name="HeroSkill01BranchGenericPolitics04_01">
+       <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+       <SystemSimulationDescriptorReference Name="HeroSkill01_Politics04_01"/>
+      <MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+    </SkillLevel>
+  </HeroSkillDefinition>
+
+  <HeroSkillDefinition Name="HeroSkill02BranchGenericPolitics04">
+    <Tags>ColonizedStarSystem</Tags>
+    <SkillLevel Name="HeroSkill02BranchGenericPolitics04_01">
+       <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+       <SenateSimulationDescriptorReference Name="HeroSkill02_Politics04_Senator"/>
+       <ShipSimulationDescriptorReference Name="HeroSkill02_Politics04_01"/>
+       <MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+    </SkillLevel>
+  </HeroSkillDefinition>
+
+  <HeroSkillDefinition Name="HeroSkill01BranchGenericPolitics05">
+    <Tags>ColonizedStarSystem</Tags>
+    <SkillLevel Name="HeroSkill01BranchGenericPolitics05_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkill01_Politics05_01"/>
+      <MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+    </SkillLevel>
+  </HeroSkillDefinition>
+
+  <HeroSkillDefinition Name="HeroSkill02BranchGenericPolitics05">
+    <Tags>ColonizedStarSystem</Tags>
+    <SkillLevel Name="HeroSkill02BranchGenericPolitics05_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SenateSimulationDescriptorReference Name="HeroSkill02_Politics05_Senator"/>
+      <ShipSimulationDescriptorReference Name="HeroSkill02_Politics05_01"/>
+      <MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+    </SkillLevel>
+  </HeroSkillDefinition>
+
+  <HeroSkillDefinition Name="HeroSkill01BranchGenericPolitics06">
+    <Tags>ColonizedStarSystem</Tags>
+    <SkillLevel Name="HeroSkill01BranchGenericPolitics06_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+       <SystemSimulationDescriptorReference Name="HeroSkill01_Politics06_01"/>
+      <SystemSimulationDescriptorReference Name="HeroSkill01_Politics06_01"/>
+      <MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+    </SkillLevel>
+  </HeroSkillDefinition>
+
+  <HeroSkillDefinition Name="HeroSkill02BranchGenericPolitics06">
+    <Tags>ColonizedStarSystem</Tags>
+    <SkillLevel Name="HeroSkill02BranchGenericPolitics06_01">
+      <HeroSimulationDescriptorReference   Name="HeroSkillComplete"/>
+      <SenateSimulationDescriptorReference Name="HeroSkill02_Politics06_Senator"/>
+      <ShipSimulationDescriptorReference Name="HeroSkill02_Politics06_01"/>
+      <MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+    </SkillLevel>
+  </HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill08BranchAdmiral">
+		<SkillLevel Name="HeroSkill08BranchAdmiral_01">
+         <SystemSimulationDescriptorReference Name="HeroSkillSystem_Admiral08_1"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill08BranchAdmiral_02">
+         <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+         <SystemSimulationDescriptorReference Name="HeroSkillSystem_Admiral08_2"/>
+		  <MasteryLevel Class="HeroMasteryCommand" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+   <HeroSkillDefinition Name="HeroSkill08BranchAdventurer">
+      <SkillLevel Name="HeroSkill08BranchAdventurer_01">
+         <SystemSimulationDescriptorReference Name="HeroSkillSystem_Adventurer08_1"/>
+         <MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+      </SkillLevel>
+      <SkillLevel Name="HeroSkill08BranchAdventurer_02">
+         <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+         <SystemSimulationDescriptorReference Name="HeroSkillSystem_Adventurer08_2"/>
+         <MasteryLevel Class="HeroMasteryCommand" Levels="2"/>
+      </SkillLevel>
+   </HeroSkillDefinition>
+
+   <HeroSkillDefinition Name="HeroSkill09BranchAdventurer">
+      <SkillLevel Name="HeroSkill09BranchAdventurer_01">
+         <SystemSimulationDescriptorReference Name="HeroSkillSystem_Adventurer09_1"/>
+         <MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+      </SkillLevel>
+      <SkillLevel Name="HeroSkill09BranchAdventurer_02">
+         <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+         <SystemSimulationDescriptorReference Name="HeroSkillSystem_Adventurer09_2"/>
+         <MasteryLevel Class="HeroMasteryCommand" Levels="2"/>
+      </SkillLevel>
+   </HeroSkillDefinition>
+
+   <HeroSkillDefinition Name="HeroSkill10BranchAdventurer">
+      <SkillLevel Name="HeroSkill10BranchAdventurer_01">
+         <SystemSimulationDescriptorReference Name="HeroSkillSystem_Adventurer10_1"/>
+         <MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+      </SkillLevel>
+      <SkillLevel Name="HeroSkill10BranchAdventurer_02">
+         <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+         <SystemSimulationDescriptorReference Name="HeroSkillSystem_Adventurer10_2"/>
+         <MasteryLevel Class="HeroMasteryCommand" Levels="2"/>
+      </SkillLevel>
+   </HeroSkillDefinition>
+
+   <HeroSkillDefinition Name="HeroSkill08BranchCorporate">
+      <SkillLevel Name="HeroSkill08BranchCorporate_01">
+         <ShipSimulationDescriptorReference Name="HeroSkillSystem_Corporate08_1"/>
+         <MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+      </SkillLevel>
+      <SkillLevel Name="HeroSkill08BranchCorporate_02">
+         <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+         <ShipSimulationDescriptorReference Name="HeroSkillSystem_Corporate08_2"/>
+         <MasteryLevel Class="HeroMasteryCommand" Levels="2"/>
+      </SkillLevel>
+   </HeroSkillDefinition>
+
+   <HeroSkillDefinition Name="HeroSkill09BranchCorporate">
+      <SkillLevel Name="HeroSkill09BranchCorporate_01">
+         <ShipSimulationDescriptorReference Name="HeroSkillShip45_FleetExplorationFleetUpkeep_Percent_3"/>
+         <MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+      </SkillLevel>
+      <SkillLevel Name="HeroSkill09BranchCorporate_02">
+         <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+         <ShipSimulationDescriptorReference Name="HeroSkillShip45_FleetExplorationFleetUpkeep_Percent_4"/>
+         <MasteryLevel Class="HeroMasteryCuriosity" Levels="2"/>
+      </SkillLevel>
+   </HeroSkillDefinition>
+
+   <HeroSkillDefinition Name="HeroSkill10BranchCorporate">
+      <SkillLevel Name="HeroSkill10BranchCorporate_01">
+         <ShipSimulationDescriptorReference Name="HeroSkillSystem_Corporate10_1"/>
+         <MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+      </SkillLevel>
+      <SkillLevel Name="HeroSkill10BranchCorporate_02">
+         <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+         <ShipSimulationDescriptorReference Name="HeroSkillSystem_Corporate10_2"/>
+         <MasteryLevel Class="HeroMasteryCommand" Levels="2"/>
+      </SkillLevel>
+   </HeroSkillDefinition>
+
+   <HeroSkillDefinition Name="HeroSkill11BranchCorporate">
+      <SkillLevel Name="HeroSkill11BranchCorporate_01">
+         <ShipSimulationDescriptorReference Name="HeroSkillSystem_Corporate11_1"/>
+         <MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+      </SkillLevel>
+      <SkillLevel Name="HeroSkill11BranchCorporate_02">
+         <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+         <ShipSimulationDescriptorReference Name="HeroSkillSystem_Corporate11_2"/>
+         <MasteryLevel Class="HeroMasteryCommand" Levels="2"/>
+      </SkillLevel>
+   </HeroSkillDefinition>
+
+</Datatable>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+
+
+   <!--################################-->
+   <!--###     BOARDING DEFENSE     ###-->
+   <!--################################-->
+   
+    <ExtendedGuiElement Name="ModuleSupportBoardingDefense2">
+        <Title>%ModuleSupportBoardingDefense2Title</Title>
+        <Icons>
+            <Icon Size="Small" Path="Modules/ModuleSupportBoardingDefense2" />
+        </Icons>
+        <Sounds>
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+        </Sounds>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="ModuleSupportBoardingDefense3">
+       <Title>%ModuleSupportBoardingDefense3Title</Title>
+       <Icons>
+          <Icon Size="Small" Path="Modules/ModuleSupportBoardingDefense3" />
+       </Icons>
+       <Sounds>
+          <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+          <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+       </Sounds>
+    </ExtendedGuiElement>
+    
+    <!--################################-->
+    <!--###            EMP           ###-->
+    <!--################################-->
+    <ExtendedGuiElement Name="ModuleWeaponMissileEMP2Strategic6">
+        <Title>%ModuleWeaponMissileEMP2Strategic6Title</Title>
+        <Icons>
+            <Icon Size="Small" Path="Modules/ModuleWeaponMissileEMP2Strategic6" />
+        </Icons>
+        <Sounds>
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+        </Sounds>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="ModuleWeaponBeamEMP2Strategic5">
+        <Title>%ModuleWeaponBeamEMP2Strategic5Title</Title>
+        <Icons>
+            <Icon Size="Small" Path="Modules/ModuleWeaponBeamEMP2Strategic5" />
+        </Icons>
+        <Sounds>
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+        </Sounds>
+    </ExtendedGuiElement>
+    
+    <ExtendedGuiElement Name="ModuleSupportEMPShieldDefense2Strategic5">
+        <Title>%ModuleSupportEMPShieldDefense2Strategic5Title</Title>
+        <Icons>
+            <Icon Size="Small" Path="Modules/ModuleSupportEMPShieldDefense2Strategic5" />
+        </Icons>
+        <Sounds>
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+        </Sounds>
+    </ExtendedGuiElement>
+    
+    <ExtendedGuiElement Name="ModuleSupportEMPWeaponDefense2Strategic6">
+        <Title>%ModuleSupportEMPWeaponDefense2Strategic6Title</Title>
+        <Icons>
+            <Icon Size="Small" Path="Modules/ModuleSupportEMPWeaponDefense2Strategic6" />
+        </Icons>
+        <Sounds>
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+        </Sounds>
+    </ExtendedGuiElement>
+    
+   
+</Datatable>

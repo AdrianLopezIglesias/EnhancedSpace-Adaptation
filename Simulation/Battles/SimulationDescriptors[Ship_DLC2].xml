@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+
+    <SimulationDescriptor Name="ShipSizeJuggernaut"         Type="ShipSize">
+        <Property Name="MiningProbeDepositValueMultiplier" BaseValue="0" MinValue="0" Composition="Sum"/> <!-- Property only used by GUI: gameplay uses only the Fleet's property. -->
+        <Property Name="MiningProbePlanetStatsMultiplier"  BaseValue="0" MinValue="0" Composition="Sum"/> <!-- Property only used by GUI: gameplay uses only the Fleet's property. -->
+
+        <Modifier TargetProperty="VisionRange"                      Operation="Addition"    Value="1"       Path="ClassShip"/>
+        <Modifier TargetProperty="CommandPoints"                    Operation="Addition"    Value="10"      Path="ClassShip"/>
+        <Modifier TargetProperty="ShieldRadius"                     Operation="Addition"    Value="2.5"     Path="ClassShip"/>
+        <Modifier TargetProperty="ScrapPriority"                    Operation="Subtraction" Value="2"       Path="ClassShip"/>
+        <Modifier TargetProperty="VisualImportanceScore"            Operation="Addition"    Value="1000"    Path="ClassShip"/>
+        <Modifier TargetProperty="HullWeakness"                     Operation="Addition"    Value="500"     Path="ClassShip"/>
+        <Modifier TargetProperty="SizeDamageMultiplierForSquadron"  Operation="Addition"    Value="1"       Path="ClassShip" TooltipHidden="true"/>
+
+        <Modifier TargetProperty="JuggernautCount"                  Operation="Addition"    Value="1"       Path="../ClassEmpire" TooltipHidden="true"/>
+        <Modifier TargetProperty="MaximumHonorZoneRadius"           Operation="Addition"    Value="20"/>
+    </SimulationDescriptor>
+</Datatable>

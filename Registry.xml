@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Registry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Gameplay>
+        <Empire>
+          <Agencies>
+            <DepartmentOfCommerce>
+                <ResourceIncome>
+                    <NeighbourModifier>0.4</NeighbourModifier>
+                    <TradingCompanyHeadquartersModifier>1</TradingCompanyHeadquartersModifier>
+                    <TradingCompanySubsidiaryModifier>0.9</TradingCompanySubsidiaryModifier>
+                </ResourceIncome>
+                <!-- Number of turns before a company structure (HQ or subsidiary) located on a lost system is destroyed -->
+                <TradingCompanyStructureDestructionDelay>5</TradingCompanyStructureDestructionDelay>
+                <!-- Required accumulated income to unlock new HQ.              Vars: Empire -->
+                <TradingRoutesIncomeThresholdFormula>Floor(250 * Pow(4.2, Property(Empire, AvailableNumberOfTradingCompanyHeadquarters)))</TradingRoutesIncomeThresholdFormula>
+                <!-- Required experience to level up.                           Vars: Empire, TradingCompany -->
+                <TradingRoutesExperienceThresholdFormula>(Floor(500 * (1 + Pow(1.45, Property(TradingCompany, Level))) - 900)) * Property(TradingCompany, @../ClassEmpire, TradingCompanyLevelUpMultiplier)</TradingRoutesExperienceThresholdFormula>
+                <!--<TradingRoutesExperienceThresholdFormula>(Property(TradingCompany, Level) * 100 * Property(TradingCompany, @../ClassEmpire, TradingCompanyLevelUpMultiplier)</TradingRoutesExperienceThresholdFormula>-->
+                <!-- TCIncomeMultiplier x TRIncome = TCIncome.                  Vars: Empire, TradingCompany -->
+                <TradingCompanyIncomeMultiplierFormula>0.75 + Pow(Property(TradingCompany, Level) / 35, 0.75)</TradingCompanyIncomeMultiplierFormula>
+                <!-- SystemIncome x LengthModifier = TRIncome.                  Vars: TradingCompany, PathLength (int) -->
+                <TradingRouteLengthModifierFormula>Min((1 + $(PathLength) / 5), (1+1.2*(Logn($(PathLength)^2))))</TradingRouteLengthModifierFormula>
+            </DepartmentOfCommerce>
+            <DepartmentOfEducation>
+              <HeroHealCostFormula>((100 - Property(Hero, Health)) * 7.5 * Property(Hero, Level))* Property(Hero, @../ClassEmpire, HeroHealingBonus)</HeroHealCostFormula>
+            </DepartmentOfEducation>
+            <DepartmentOfTheInterior>
+              <!-- Contact AI when you modify the following key -->
+              <GrowthFormula>(300 * Property(Empire, @ClassEmpire, GameSpeedMultiplier) * $(Population))</GrowthFormula>
+              <MothershipGrowthFormula>2160 * Property(Empire, @ClassEmpire, GameSpeedMultiplier) * $(Population)</MothershipGrowthFormula>
+              <!--  <OutpostBuyoutCostFormula>((Ceil(((((Property(Empire, @AffinityGameplayVenetians, OwnedSystems) + Property(Empire, @AffinityGameplayVenetians, OwnedOutposts) - 1) / Property(Empire, @AffinityGameplayVenetians, NumberOfGalaxyNodes)) + 1) * 100) ^ (1 + 1.25 * ((Property(Empire, @AffinityGameplayVenetians, OwnedSystems) + Property(Empire, @AffinityGameplayVenetians, OwnedOutposts) - 1) / Property(Empire, @AffinityGameplayVenetians, NumberOfGalaxyNodes)))) + 100) * Property(Empire, @ClassEmpire, DustInflation))</OutpostBuyoutCostFormula>-->
+              <OutpostBuyoutCostFormula>((Ceil(((((Property(Empire, @AffinityGameplayVenetians, OwnedSystems) + Property(Empire, @AffinityGameplayVenetians, OwnedOutposts) - 1)) + 1) * 100) ^ (1 + 1.25 * ((Property(Empire, @AffinityGameplayVenetians, OwnedSystems) + Property(Empire, @AffinityGameplayVenetians, OwnedOutposts) - 1) / 300))) + 100) * Property(Empire, @ClassEmpire, DustInflation))</OutpostBuyoutCostFormula>
+              <OutpostBuyoutRefoundFormula>((Ceil(0.95*((((Property(Empire, @AffinityGameplayVenetians, OwnedSystems) + Property(Empire, @AffinityGameplayVenetians, OwnedOutposts) - 2)) + 1) * 100) ^ (1 + 1.25 * ((Property(Empire, @AffinityGameplayVenetians, OwnedSystems) + Property(Empire, @AffinityGameplayVenetians, OwnedOutposts) - 2) / 300))) + 100) * Property(Empire, @ClassEmpire, DustInflation))</OutpostBuyoutRefoundFormula>
+            </DepartmentOfTheInterior>
+          </Agencies>
+        </Empire>
+       <!--<Marketplace>
+            --><!-- Vars: Tradable, RandomNumber (between 0 and 100) --><!--
+            <ResourcesAutoRefillQuantity>Min(15,Max( $(RandomNumber),65))</ResourcesAutoRefillQuantity>
+            --><!-- Vars: Marketplace (SimulationObject), Empire (SimulationObject), TaxRateDifference (between 0 and 1) --><!--
+            <TaxRateChangeCostFormula>500 + 200 * ((Sqrt($(TaxRateDifference)*$(TaxRateDifference))) * 100)</TaxRateChangeCostFormula>
+            --><!-- Localization keys are generated as: %MarketplaceEventDemandVALUEOrLessELEMENT and %MarketplaceEventDemandMoreThanLASTVALUEELEMENT (ELEMENT = Tradable, TradableCategory, etc.) --><!--
+            <DemandFeedbackThresholds>0;2;4</DemandFeedbackThresholds>
+            <MaximumTransactionCount>50</MaximumTransactionCount>
+        </Marketplace>-->
+	</Gameplay>
+</Registry>
+
+

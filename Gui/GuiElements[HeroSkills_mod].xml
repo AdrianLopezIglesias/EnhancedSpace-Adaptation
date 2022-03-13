@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+
+
+   <ExtendedGuiElement Name="HeroSkill03BranchAdministrator">
+      <Title>%HeroSkill73_Industry_Perpop_Title</Title>
+      <Description>%HeroSkill73_Industry_Perpop_Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Dynamic/Skills/HeroSkill73_Industry_Perpop_Small" />
+      </Icons>
+   </ExtendedGuiElement>
+
+   <ExtendedGuiElement Name="HeroSkill04BranchVenetians">
+      <Title>%HeroSkill33_FleetDefense_Percent_Title</Title>
+      <Description>%HeroSkill33_FleetDefense_Percent_Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Dynamic/Skills/HeroSkill33_FleetDefense_Percent_Small" />
+      </Icons>
+   </ExtendedGuiElement>
+
+   <ExtendedGuiElement Name="HeroSkill03BranchHoratio">
+      <Title>%HeroSkill8_SystemManpower_Percent_Title</Title>
+      <Description>%HeroSkill8_SystemManpower_Percent_Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Dynamic/Skills/HeroSkill8_SystemManpower_Percent_Small" />
+      </Icons>
+   </ExtendedGuiElement>
+
+   <ExtendedGuiElement Name="HeroSkill01BranchTimeLords">
+      <Title>%HeroSkill41_FleetUpkeep_Percent_Title</Title>
+      <Description>%HeroSkill41_FleetUpkeep_Percent_Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Dynamic/Skills/HeroSkill41_FleetUpkeep_Percent_Small" />
+      </Icons>
+   </ExtendedGuiElement>
+  
+   <ExtendedGuiElement Name="HeroSkill03BranchMinorFaction02">
+       <Title>%HeroSkill41_FleetUpkeep_Percent_Title</Title>
+       <Description>%HeroSkill41_FleetUpkeep_Percent_Description</Description>
+       <Icons>
+          <Icon Size="Small" Path="Bitmaps/Dynamic/Skills/HeroSkill41_FleetUpkeep_Percent_Small" />
+       </Icons>
+   </ExtendedGuiElement>
+
+   <ExtendedGuiElement Name="HeroSkill01BranchMinorFaction04">
+      <Title>%HeroSkill30_FleetDefense_Flat_Title</Title>
+      <Description>%HeroSkill30_FleetDefense_Flat_Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Dynamic/Skills/HeroSkill30_FleetDefense_Flat_Small" />
+      </Icons>
+   </ExtendedGuiElement>
+
+   <ExtendedGuiElement Name="HeroSkill01BranchMinorFaction03">
+      <Title>%HeroSkill91_Science_PerAnomalyFlat_Title</Title>
+      <Description>%HeroSkill91_Science_PerAnomalyFlat_Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Dynamic/Skills/HeroSkill91_Science_PerAnomalyFlat_Small" />
+      </Icons>
+   </ExtendedGuiElement>
+
+   <ExtendedGuiElement Name="HeroSkill03BranchTerrans">
+      <Title>%HeroSkill8_SystemManpower_Percent_Title</Title>
+      <Description>%HeroSkill8_SystemManpower_Percent_Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Dynamic/Skills/HeroSkill8_SystemManpower_Percent_Small" />
+      </Icons>
+   </ExtendedGuiElement>
+
+   
+   <ExtendedGuiElement Name="HeroSkill03BranchEndless">
+      <Title>%HeroSkill78_IndustryFood_PerPlanetFlat_Title</Title>
+      <Description>%HeroSkill78_IndustryFood_PerPlanetFlat_Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Dynamic/Skills/HeroSkill78_IndustryFood_PerPlanetFlat_Small" />
+      </Icons>
+    </ExtendedGuiElement>
+   
+    <ExtendedGuiElement Name="HeroSkill07BranchEndless">
+        <Title>%HeroSkill105_FIDSI_PerHeroLevel_Title_02</Title>
+        <Description>%HeroSkill105_FIDSI_PerHeroLevel_Description_02</Description>
+        <Icons>
+          <Icon Size="Small" Path="Bitmaps/Dynamic/Skills/HeroSkill105_FIDSI_PerHeroLevel_Small" />
+        </Icons>
+    </ExtendedGuiElement>
+
+	  <GuiElement Name="HeroSkillSenator07BranchEndless">
+		  <Title>%HeroSkill105_FIDSI_PerHeroLevel_Title</Title>
+	  </GuiElement>
+	  <GuiElement Name="HeroSkillSystem07BranchEndless">
+		  <Title>%HeroSenatorSkillTitle</Title>
+	  </GuiElement>
+
+    <!--GENERIC SKILLS-->
+    <ExtendedGuiElement Name="HeroSkill01BranchGenericPolitics01">
+        <Title>%HeroSkill01BranchGenericPolitics01_Title</Title>
+        <Description>%HeroSkill01BranchGenericPolitics01_Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Heroskills/Heroskill01_politics01" />
+        </Icons>
+    </ExtendedGuiElement>
+
+  	 <GuiElement Name="HeroSkill01_Politics01_01">
+		  <Title>%HeroSkill01BranchGenericPolitics01_Title</Title>
+	  </GuiElement>
+
+    <ExtendedGuiElement Name="HeroSkill02BranchGenericPolitics01">
+      <Title>%HeroSkill02BranchGenericPolitics01_Title</Title>
+      <Description>%HeroSkill02BranchGenericPolitics01_Description</Description>
+      <Icons>
+        <Icon Size="Small" Path="Heroskills/Heroskill02_politics01" />
+      </Icons>
+    </ExtendedGuiElement>
+  
+    <GuiElement Name="HeroSkill02_Politics01_01">
+      <Title>%HeroSkill02BranchGenericPolitics01_Title</Title>
+    </GuiElement>
+    <GuiElement Name="HeroSkill02_Politics01_Senator">
+      <Title>%HeroSenatorSkillTitle</Title>
+    </GuiElement>
+
+    <ExtendedGuiElement Name="HeroSkill01BranchGenericPolitics02">
+        <Title>%HeroSkill01BranchGenericPolitics02_Title</Title>
+        <Description>%HeroSkill01BranchGenericPolitics02_Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Heroskills/Heroskill01_politics02" />
+        </Icons>
+    </ExtendedGuiElement>
+
+    <GuiElement Name="HeroSkill01_Politics02_01">
+      <Title>%HeroSkill01BranchGenericPolitics02_Title</Title>
+    </GuiElement>
+
+    <ExtendedGuiElement Name="HeroSkill02BranchGenericPolitics02">
+      <Title>%HeroSkill02BranchGenericPolitics02_Title</Title>
+      <Description>%HeroSkill02BranchGenericPolitics02_Description</Description>
+      <Icons>
+        <Icon Size="Small" Path="Heroskills/Heroskill02_politics02" />
+      </Icons>
+    </ExtendedGuiElement>
+
+    <GuiElement Name="HeroSkill02_Politics02_01">
+      <Title>%HeroSkill02BranchGenericPolitics02_Title</Title>
+    </GuiElement>
+    <GuiElement Name="HeroSkill02_Politics02_Senator">
+      <Title>%HeroSenatorSkillTitle</Title>
+    </GuiElement>
+
+    <ExtendedGuiElement Name="HeroSkill01BranchGenericPolitics03">
+      <Title>%HeroSkill01BranchGenericPolitics03_Title</Title>
+      <Description>%HeroSkill01BranchGenericPolitics03_Description</Description>
+      <Icons>
+        <Icon Size="Small" Path="Heroskills/Heroskill01_politics03" />
+      </Icons>
+    </ExtendedGuiElement>
+
+    <GuiElement Name="HeroSkill01_Politics03_01">
+      <Title>%HeroSkill01BranchGenericPolitics03_Title</Title>
+    </GuiElement>
+
+    <ExtendedGuiElement Name="HeroSkill02BranchGenericPolitics03">
+      <Title>%HeroSkill02BranchGenericPolitics03_Title</Title>
+      <Description>%HeroSkill02BranchGenericPolitics03_Description</Description>
+      <Icons>
+        <Icon Size="Small" Path="Heroskills/Heroskill02_politics03" />
+      </Icons>
+    </ExtendedGuiElement>
+
+    <GuiElement Name="HeroSkill02_Politics03_01">
+      <Title>%HeroSkill02BranchGenericPolitics03_Title</Title>
+    </GuiElement>
+    <GuiElement Name="HeroSkill02_Politics03_Senator">
+      <Title>%HeroSenatorSkillTitle</Title>
+    </GuiElement>
+
+    <ExtendedGuiElement Name="HeroSkill01BranchGenericPolitics04">
+      <Title>%HeroSkill01BranchGenericPolitics04_Title</Title>
+      <Description>%HeroSkill01BranchGenericPolitics04_Description</Description>
+      <Icons>
+        <Icon Size="Small" Path="Heroskills/Heroskill01_politics04" />
+      </Icons>
+    </ExtendedGuiElement>
+
+    <GuiElement Name="HeroSkill01_Politics04_01">
+      <Title>%HeroSkill01BranchGenericPolitics04_Title</Title>
+    </GuiElement>
+
+    <ExtendedGuiElement Name="HeroSkill02BranchGenericPolitics04">
+      <Title>%HeroSkill02BranchGenericPolitics04_Title</Title>
+      <Description>%HeroSkill02BranchGenericPolitics04_Description</Description>
+      <Icons>
+        <Icon Size="Small" Path="Heroskills/Heroskill02_politics04" />
+      </Icons>
+    </ExtendedGuiElement>
+
+    <GuiElement Name="HeroSkill02_Politics04_01">
+      <Title>%HeroSkill02BranchGenericPolitics04_Title</Title>
+    </GuiElement>
+    <GuiElement Name="HeroSkill02_Politics04_Senator">
+      <Title>%HeroSenatorSkillTitle</Title>
+    </GuiElement>
+
+  <ExtendedGuiElement Name="HeroSkill01BranchGenericPolitics05">
+      <Title>%HeroSkill01BranchGenericPolitics05_Title</Title>
+      <Description>%HeroSkill01BranchGenericPolitics05_Description</Description>
+      <Icons>
+        <Icon Size="Small" Path="Heroskills/Heroskill01_politics05" />
+      </Icons>
+    </ExtendedGuiElement>
+
+  <GuiElement Name="HeroSkill01_Politics05_01">
+    <Title>%HeroSkill01BranchGenericPolitics05_Title</Title>
+  </GuiElement>
+
+
+  <ExtendedGuiElement Name="HeroSkill02BranchGenericPolitics05">
+      <Title>%HeroSkill02BranchGenericPolitics05_Title</Title>
+      <Description>%HeroSkill02BranchGenericPolitics05_Description</Description>
+      <Icons>
+        <Icon Size="Small" Path="Heroskills/Heroskill02_politics05" />
+      </Icons>
+    </ExtendedGuiElement>
+
+  <GuiElement Name="HeroSkill02_Politics05_01">
+    <Title>%HeroSkill02BranchGenericPolitics05_Title</Title>
+  </GuiElement>
+  <GuiElement Name="HeroSkill02_Politics05_Senator">
+    <Title>%HeroSenatorSkillTitle</Title>
+  </GuiElement>
+
+
+  <ExtendedGuiElement Name="HeroSkill01BranchGenericPolitics06">
+      <Title>%HeroSkill01BranchGenericPolitics06_Title</Title>
+      <Description>%HeroSkill01BranchGenericPolitics06_Description</Description>
+      <Icons>
+        <Icon Size="Small" Path="Heroskills/Heroskill01_politics06" />
+      </Icons>
+    </ExtendedGuiElement>
+
+  <GuiElement Name="HeroSkill01_Politics06_01">
+    <Title>%HeroSkill01BranchGenericPolitics06_Title</Title>
+  </GuiElement>
+
+
+  <ExtendedGuiElement Name="HeroSkill02BranchGenericPolitics06">
+      <Title>%HeroSkill02BranchGenericPolitics06_Title</Title>
+      <Description>%HeroSkill02BranchGenericPolitics06_Description</Description>
+      <Icons>
+        <Icon Size="Small" Path="Heroskills/Heroskill02_politics06" />
+      </Icons>
+    </ExtendedGuiElement>
+
+
+  <GuiElement Name="HeroSkill02_Politics06_01">
+    <Title>%HeroSkill02BranchGenericPolitics06_Title</Title>
+  </GuiElement>
+  <GuiElement Name="HeroSkill02_Politics06_Senator">
+    <Title>%HeroSenatorSkillTitle</Title>
+  </GuiElement>
+
+   <ExtendedGuiElement Name="HeroSkill08BranchAdmiral">
+      <Title>%HeroSkillSystem_Admiral08_1_Title</Title>
+      <Description>%HeroSkillSystem_Admiral08_1_Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Heroskills/Heroskill08BranchAdmiral" />
+      </Icons>
+   </ExtendedGuiElement>
+   
+   <GuiElement Name="HeroSkillSystem_Admiral08_1">
+    <Title>%HeroSkillSystem_Admiral08_1_Title</Title>
+  </GuiElement>
+  <GuiElement Name="HeroSkillSystem_Admiral08_2">
+    <Title>%HeroSkillSystem_Admiral08_1_Title</Title>
+  </GuiElement>
+  <GuiElement Name="HeroSkillSystem_Admiral08_Senator">
+    <Title>%HeroSenatorSkillTitle</Title>
+  </GuiElement>
+   
+   <ExtendedGuiElement Name="HeroSkill08BranchAdventurer">
+      <Title>%HeroSkill91_Science_PerAnomalyFlat_Title</Title>
+      <Description>%HeroSkill91_Science_PerAnomalyFlat_Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Dynamic/Skills/HeroSkill91_Science_PerAnomalyFlat_Small" />
+      </Icons>
+   </ExtendedGuiElement>
+   
+   <GuiElement Name="HeroSkillSystem_Adventurer08_1">
+    <Title>%HeroSkill91_Science_PerAnomalyFlat_Title</Title>
+  </GuiElement>
+  <GuiElement Name="HeroSkillSystem_Adventurer08_2">
+    <Title>%HeroSkill91_Science_PerAnomalyFlat_Title</Title>
+  </GuiElement>
+
+   <ExtendedGuiElement Name="HeroSkill09BranchAdventurer">
+      <Title>%HeroSkill117_Strategic_Flat_Title</Title>
+      <Description>%HeroSkill117_Strategic_Flat_Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Dynamic/Skills/HeroSkill117_Strategic_Flat_Small" />
+      </Icons>
+   </ExtendedGuiElement>
+
+   <GuiElement Name="HeroSkillSystem_Adventurer09_1">
+      <Title>%HeroSkill94_Science_PerHeroLevelFlat_Title</Title>
+   </GuiElement>
+   <GuiElement Name="HeroSkillSystem_Adventurer09_2">
+      <Title>%HeroSkill94_Science_PerHeroLevelFlat_Title</Title>
+   </GuiElement>
+
+   <ExtendedGuiElement Name="HeroSkill10BranchAdventurer">
+      <Title>%HeroSkill89_Science_Percent_Title</Title>
+      <Description>%HeroSkill89_Science_Percent_Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Dynamic/Skills/HeroSkill89_Science_Percent_Small" />
+      </Icons>
+   </ExtendedGuiElement>
+
+   <GuiElement Name="HeroSkillSystem_Adventurer10_1">
+      <Title>%HeroSkill89_Science_Percent_Title</Title>
+   </GuiElement>
+   <GuiElement Name="HeroSkillSystem_Adventurer10_2">
+      <Title>%HeroSkill89_Science_Percent_Title</Title>
+   </GuiElement>
+
+   
+   <ExtendedGuiElement Name="HeroSkill08BranchCorporate">
+      <Title>%HeroSkill33_FleetDefense_Percent_Title</Title>
+      <Description>%HeroSkill33_FleetDefense_Percent_Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Dynamic/Skills/HeroSkill33_FleetDefense_Percent_Small" />
+      </Icons>
+   </ExtendedGuiElement>
+
+   <GuiElement Name="HeroSkillSystem_Corporate08_1">
+      <Title>%HeroSkill33_FleetDefense_Percent_Title</Title>
+   </GuiElement>
+   <GuiElement Name="HeroSkillSystem_Corporate08_2">
+      <Title>%HeroSkill33_FleetDefense_Percent_Title</Title>
+   </GuiElement>
+
+   <ExtendedGuiElement Name="HeroSkill09BranchCorporate">
+      <Title>%HeroSkill45_FleetExplorationFleetUpkeep_Percent_Title</Title>
+      <Description>%HeroSkill45_FleetExplorationFleetUpkeep_Percent_Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Dynamic/Skills/HeroSkill45_FleetExplorationFleetUpkeep_Percent_Small" />
+      </Icons>
+   </ExtendedGuiElement>
+
+   <GuiElement Name="HeroSkillSystem_Corporate09_1">
+      <Title>%HeroSkill45_FleetExplorationFleetUpkeep_Percent_Title</Title>
+   </GuiElement>
+   <GuiElement Name="HeroSkillSystem_Corporate09_2">
+      <Title>%HeroSkill45_FleetExplorationFleetUpkeep_Percent_Title</Title>
+   </GuiElement>
+
+   <ExtendedGuiElement Name="HeroSkill10BranchCorporate">
+      <Title>%HeroSkill09BranchCorporate_Title</Title>
+      <Description>%HeroSkill09BranchCorporate_Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Dynamic/Skills/HeroSkill11_TroopBonus_Perpop_Small" />
+      </Icons>
+   </ExtendedGuiElement>
+
+   <GuiElement Name="HeroSkillSystem_Corporate10_1">
+      <Title>%HeroSkill09BranchCorporate_Title</Title>
+   </GuiElement>
+   <GuiElement Name="HeroSkillSystem_Corporate10_2">
+      <Title>%HeroSkill09BranchCorporate_Title</Title>
+   </GuiElement>
+
+   <ExtendedGuiElement Name="HeroSkill11BranchCorporate">
+      <Title>%HeroSkill8_SystemManpower_Percent_Title</Title>
+      <Description>%HeroSkill8_SystemManpower_Percent_Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Dynamic/Skills/HeroSkill8_SystemManpower_Percent_Small" />
+      </Icons>
+   </ExtendedGuiElement>
+
+   <GuiElement Name="HeroSkillSystem_Corporate11_1">
+      <Title>%HeroSkill8_SystemManpower_Percent_Title</Title>
+   </GuiElement>
+   <GuiElement Name="HeroSkillSystem_Corporate11_2">
+      <Title>%HeroSkill8_SystemManpower_Percent_Title</Title>
+   </GuiElement>
+
+</Datatable>

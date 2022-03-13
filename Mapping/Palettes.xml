@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Palette.xsd">
+
+
+  <Palette Name="Standard">
+
+    <ColorReference Name="Red">
+      <Color Red="205" Green="11" Blue="11" Alpha=" 255"/>
+    </ColorReference>
+    <ColorReference Name="Green">
+      <Color Red="142" Green="204" Blue="21" Alpha=" 255"/>
+    </ColorReference>
+    <ColorReference Name="Blue">
+      <Color Red="77" Green="102" Blue="255" Alpha=" 255"/>
+    </ColorReference>
+    <ColorReference Name="Orange">
+      <Color Red="255" Green="130" Blue="46" Alpha=" 255"/>
+    </ColorReference>
+    <ColorReference Name="Cyan">
+      <Color Red="38" Green="240" Blue="209" Alpha=" 255"/>
+    </ColorReference>
+    <ColorReference Name="Magenta">
+      <Color Red="222" Green="130" Blue="242" Alpha=" 255"/>
+    </ColorReference>
+    <ColorReference Name="Yellow">
+      <Color Red="255" Green="229" Blue="83" Alpha=" 255"/>
+    </ColorReference>
+    <ColorReference Name="Kaki">
+      <Color Red="12" Green="112" Blue="36" Alpha=" 255"/>
+    </ColorReference>
+    <ColorReference Name="Skyblue">
+      <Color Red="92" Green="197" Blue="224" Alpha=" 255"/>
+    </ColorReference>
+    <ColorReference Name="BlueGreen">
+      <Color Red="0" Green="174" Blue="130" Alpha=" 255"/>
+    </ColorReference>
+    <ColorReference Name="Lavender">
+      <Color Red="149" Green="138" Blue="217" Alpha=" 255"/>
+    </ColorReference>
+    <ColorReference Name="Wine">
+      <Color Red="116" Green="4" Blue="52" Alpha=" 255"/>
+    </ColorReference>
+
+
+    <ColorReference Name="MarineBlue_ES2">
+      <Color Red="30" Green="110" Blue="200" Alpha=" 255"/>
+      <!--Not the Blue in the Palette chart, but this one works better on the grey background-->
+    </ColorReference>
+    <ColorReference Name="Red_ES2">
+      <Color Red="192" Green="44" Blue="44" Alpha=" 255"/>
+    </ColorReference>
+    <ColorReference Name="Orange_ES2">
+      <Color Red="235" Green="129" Blue="45" Alpha=" 255"/>
+    </ColorReference>
+    <ColorReference Name="Apple_ES2">
+      <Color Red="157" Green="181" Blue="45" Alpha=" 255"/>
+    </ColorReference>
+    <ColorReference Name="Green_ES2">
+      <Color Red="44" Green="101" Blue="22" Alpha=" 255"/>
+    </ColorReference>
+    <ColorReference Name="Skyblue_ES2">
+      <Color Red="57" Green="190" Blue="223" Alpha=" 255"/>
+    </ColorReference>
+    <ColorReference Name="Purple_ES2">
+      <Color Red="94" Green="56" Blue="129" Alpha=" 255"/>
+    </ColorReference>
+    <ColorReference Name="Pink_ES2">
+      <Color Red="244" Green="147" Blue="228" Alpha=" 255"/>
+    </ColorReference>
+    <ColorReference Name="Yellow_ES2">
+      <Color Red="255" Green="226" Blue="71" Alpha=" 255"/>
+    </ColorReference>
+    <ColorReference Name="BlueGreen_ES2">
+      <Color Red="0" Green="174" Blue="130" Alpha=" 255"/>
+    </ColorReference>
+    <ColorReference Name="Lavender_ES2">
+      <Color Red="149" Green="138" Blue="218" Alpha=" 255"/>
+    </ColorReference>
+    <ColorReference Name="Wine_ES2">
+      <Color Red="116" Green="4" Blue="51" Alpha=" 255"/>
+    </ColorReference>
+
+    <ColorReference Name="MarineBlue_CB">
+      <Color Red="56" Green="73" Blue="204" Alpha=" 255"/>
+    </ColorReference>
+    <ColorReference Name="Red_CB">
+      <Color Red="205" Green="11" Blue="11" Alpha=" 255"/>
+    </ColorReference>
+    <ColorReference Name="Green_CB">
+      <Color Red="124" Green="204" Blue="21" Alpha=" 255"/>
+    </ColorReference>
+    <ColorReference Name="Blue_CB">
+      <Color Red="77" Green="102" Blue="255" Alpha=" 255"/>
+    </ColorReference>
+    <ColorReference Name="Cyan_CB">
+      <Color Red="38" Green="240" Blue="209" Alpha=" 255"/>
+    </ColorReference>
+    <ColorReference Name="Pink_CB">
+      <Color Red="242" Green="130" Blue="178" Alpha=" 255"/>
+    </ColorReference>
+    <ColorReference Name="Yellow_CB">
+      <Color Red="213" Green="199" Blue="125" Alpha=" 255"/>
+    </ColorReference>
+    <ColorReference Name="Purple_CB">
+      <Color Red="112" Green="12" Blue="96" Alpha=" 255"/>
+    </ColorReference>
+    <ColorReference Name="Orange_CB">
+      <Color Red="236" Green="129" Blue="44" Alpha=" 255"/>
+    </ColorReference>
+    <ColorReference Name="BlueGreen_CB">
+      <Color Red="0" Green="174" Blue="130" Alpha=" 255"/>
+    </ColorReference>
+    <ColorReference Name="Lavender_CB">
+      <Color Red="149" Green="138" Blue="217" Alpha=" 255"/>
+    </ColorReference>
+    <ColorReference Name="Wine_CB">
+      <Color Red="174" Green="72" Blue="123" Alpha=" 255"/>
+    </ColorReference>
+
+     <ColorReference Name="UC_comic">
+        <Color Red="229" Green="118" Blue="220" Alpha=" 255"/>
+     </ColorReference>
+
+     <ColorReference Name="Hissho_comic">
+        <Color Red="196" Green="43" Blue="46" Alpha=" 255"/>
+     </ColorReference>
+
+     <ColorReference Name="Vaulters_comic">
+        <Color Red="253" Green="163" Blue="34" Alpha=" 255"/>
+     </ColorReference>
+     
+    <ColorReference Name="Sophons_comic">
+      <Color Red="10" Green="55" Blue="72" Alpha=" 255"/>
+    </ColorReference>
+    
+    <ColorReference Name="Cravers_comic">
+      <Color Red="140" Green="85" Blue="46" Alpha=" 255"/>
+    </ColorReference>
+
+    <ColorReference Name="Lumeris_comic">
+      <Color Red="128" Green="158" Blue="72" Alpha=" 255"/>
+    </ColorReference>
+     
+    <ColorReference Name="Vodyanis_comic">
+      <Color Red="232" Green="187" Blue="117" Alpha=" 255"/>
+    </ColorReference>
+    
+    <ColorReference Name="UE_comic">
+      <Color Red="168" Green="22" Blue="23" Alpha=" 255"/>
+    </ColorReference>
+    
+    <ColorReference Name="Horatio_comic">
+      <Color Red="173" Green="153" Blue="101" Alpha=" 255"/>
+    </ColorReference>
+    
+    <ColorReference Name="Riftborn_comic">
+      <Color Red="136" Green="237" Blue="255" Alpha=" 255"/>
+    </ColorReference>
+
+     <ColorReference Name="Unfallen_comic">
+        <Color Red="138" Green="41" Blue="144" Alpha=" 255"/>
+     </ColorReference>
+
+     <ColorReference Name="P_Empire_ES2">
+        <Color Red="160" Green="101" Blue="94" Alpha=" 255"/>
+     </ColorReference>
+     
+     <ColorReference Name="CustomAcademyEmpire">
+        <Color Red="255" Green="229" Blue="156" Alpha="255" />
+        <Tags>Hidden,AcademyEmpire</Tags>
+     </ColorReference>
+    <ColorReference Name="CustomMinorEmpire">
+      <Color Red="120" Green="120" Blue="120" Alpha=" 255"/>
+      <Tags>Hidden,MinorEmpire</Tags>
+    </ColorReference>
+    <ColorReference Name="CustomLesserEmpire">
+      <Color Red="249" Green="245" Blue="229" Alpha=" 255"/>
+      <Tags>Hidden,LesserEmpire</Tags>
+    </ColorReference>
+    <ColorReference Name="CustomPirateEmpire">
+      <Color Red="95" Green="95" Blue="95" Alpha=" 255"/>
+      <Tags>Hidden,PirateEmpire</Tags>
+    </ColorReference>
+    
+    <ColorReference Name="Default">
+      <Color Red="255" Green="255" Blue="255" Alpha=" 255"/>
+      <Tags>Hidden</Tags>
+    </ColorReference>
+  </Palette>
+
+	<Palette Name="Vanilla">
+		<ColorReference Name="MarineBlue">
+			<Color Red="30" Green="110" Blue="200" Alpha=" 255"/> <!--Not the Blue in the Palette chart, but this one works better on the grey background-->
+		</ColorReference>
+		<ColorReference Name="Red">
+			<Color Red="192" Green="44" Blue="44" Alpha=" 255"/>
+		</ColorReference>
+		<ColorReference Name="Orange">
+			<Color Red="235" Green="129" Blue="45" Alpha=" 255"/>
+		</ColorReference>
+		<ColorReference Name="Apple">
+			<Color Red="157" Green="181" Blue="45" Alpha=" 255"/>
+		</ColorReference>
+		<ColorReference Name="Green">
+			<Color Red="44" Green="101" Blue="22" Alpha=" 255"/>
+		</ColorReference>
+		<ColorReference Name="Skyblue">
+			<Color Red="57" Green="190" Blue="223" Alpha=" 255"/>
+		</ColorReference>
+		<ColorReference Name="Purple">
+			<Color Red="94" Green="56" Blue="129" Alpha=" 255"/>
+		</ColorReference>
+		<ColorReference Name="Pink">
+			<Color Red="244" Green="147" Blue="228" Alpha=" 255"/>
+		</ColorReference>
+		<ColorReference Name="Yellow">
+			<Color Red="255" Green="226" Blue="71" Alpha=" 255"/>
+		</ColorReference>
+		<ColorReference Name="BlueGreen">
+			<Color Red="0" Green="174" Blue="130" Alpha=" 255"/>
+		</ColorReference>
+		<ColorReference Name="Lavender">
+			<Color Red="149" Green="138" Blue="218" Alpha=" 255"/>
+		</ColorReference>
+		<ColorReference Name="Wine">
+			<Color Red="116" Green="4" Blue="51" Alpha=" 255"/>
+		</ColorReference>
+      <ColorReference Name="CustomAcademyEmpire">
+      <Color Red="255" Green="229" Blue="156" Alpha="255" />
+      <Tags>Hidden,AcademyEmpire</Tags>
+      </ColorReference>
+		<ColorReference Name="CustomMinorEmpire">
+			<Color Red="160" Green="160" Blue="160" Alpha=" 255"/>
+			<Tags>Hidden,MinorEmpire</Tags>
+		</ColorReference>
+		<ColorReference Name="CustomLesserEmpire">
+			<Color Red="249" Green="245" Blue="229" Alpha=" 255"/>
+			<Tags>Hidden,LesserEmpire</Tags>
+		</ColorReference>
+		<ColorReference Name="CustomPirateEmpire">
+			<!--<Color Red="162" Green="239" Blue="237" Alpha=" 255"/>-->
+            <Color Red="160" Green="101" Blue="94" Alpha=" 255"/>
+			<Tags>Hidden,PirateEmpire</Tags>
+		</ColorReference>
+		<ColorReference Name="Default">
+			<Color Red="255" Green="255" Blue="255" Alpha=" 255"/>
+            <Tags>Hidden</Tags>
+		</ColorReference>
+	</Palette>
+
+	<Palette Name="ColorBlind">
+		<ColorReference Name="MarineBlue">
+			<Color Red="56" Green="73" Blue="204" Alpha=" 255"/>
+		</ColorReference>
+		<ColorReference Name="Red">
+			<Color Red="205" Green="11" Blue="11" Alpha=" 255"/>
+		</ColorReference>
+		<ColorReference Name="Green">
+			<Color Red="124" Green="204" Blue="21" Alpha=" 255"/>
+		</ColorReference>
+		<ColorReference Name="Blue">
+			<Color Red="77" Green="102" Blue="255" Alpha=" 255"/>
+		</ColorReference>
+		<ColorReference Name="Cyan">
+			<Color Red="38" Green="240" Blue="209" Alpha=" 255"/>
+		</ColorReference>
+		<ColorReference Name="Pink">
+			<Color Red="242" Green="130" Blue="178" Alpha=" 255"/>
+		</ColorReference>
+		<ColorReference Name="Yellow">
+			<Color Red="213" Green="199" Blue="125" Alpha=" 255"/>
+		</ColorReference>
+		<ColorReference Name="Purple">
+			<Color Red="112" Green="12" Blue="96" Alpha=" 255"/>
+		</ColorReference>
+		<ColorReference Name="Orange">
+			<Color Red="236" Green="129" Blue="44" Alpha=" 255"/>
+		</ColorReference>
+		<ColorReference Name="BlueGreen">
+			<Color Red="0" Green="174" Blue="130" Alpha=" 255"/>
+		</ColorReference>
+		<ColorReference Name="Lavender">
+			<Color Red="149" Green="138" Blue="217" Alpha=" 255"/>
+		</ColorReference>
+		<ColorReference Name="Wine">
+			<Color Red="174" Green="72" Blue="123" Alpha=" 255"/>
+		</ColorReference>
+      <ColorReference Name="CustomAcademyEmpire">
+          <Color Red="255" Green="255" Blue="255" Alpha=" 255"/>
+         <Tags>Hidden,AcademyEmpire</Tags>
+      </ColorReference>
+		<ColorReference Name="CustomMinorEmpire">
+			<Color Red="192" Green="192" Blue="192" Alpha=" 255"/>
+			<Tags>Hidden,MinorEmpire</Tags>
+		</ColorReference>
+		<ColorReference Name="CustomLesserEmpire">
+			<Color Red="255" Green="242" Blue="0" Alpha=" 255"/>
+			<Tags>Hidden,LesserEmpire</Tags>
+		</ColorReference>
+		<ColorReference Name="CustomPirateEmpire">
+			<Color Red="150" Green="150" Blue="150" Alpha=" 255"/>
+			<Tags>Hidden,PirateEmpire</Tags>
+		</ColorReference>
+		<ColorReference Name="Default">
+			<Color Red="255" Green="255" Blue="255" Alpha=" 255"/>
+            <Tags>Hidden</Tags>
+		</ColorReference>
+	</Palette>
+
+	<Palette Name="EndlessSpace1">
+		<ColorReference Name="Red">
+			<Color Red="205" Green="11" Blue="11" Alpha=" 255"/>
+		</ColorReference>
+		<ColorReference Name="Green">
+			<Color Red="142" Green="204" Blue="21" Alpha=" 255"/>
+		</ColorReference>
+		<ColorReference Name="Blue">
+			<Color Red="77" Green="102" Blue="255" Alpha=" 255"/>
+		</ColorReference>
+		<ColorReference Name="Orange">
+			<Color Red="255" Green="130" Blue="46" Alpha=" 255"/>
+		</ColorReference>
+		<ColorReference Name="Cyan">
+			<Color Red="38" Green="240" Blue="209" Alpha=" 255"/>
+		</ColorReference>
+		<ColorReference Name="Magenta">
+			<Color Red="222" Green="130" Blue="242" Alpha=" 255"/>
+		</ColorReference>
+		<ColorReference Name="Yellow">
+			<Color Red="255" Green="229" Blue="83" Alpha=" 255"/>
+		</ColorReference>
+		<ColorReference Name="Kaki">
+			<Color Red="12" Green="112" Blue="36" Alpha=" 255"/>
+		</ColorReference>
+		<ColorReference Name="Skyblue">
+			<Color Red="92" Green="197" Blue="224" Alpha=" 255"/>
+		</ColorReference>
+		<ColorReference Name="BlueGreen">
+			<Color Red="0" Green="174" Blue="130" Alpha=" 255"/>
+		</ColorReference>
+		<ColorReference Name="Lavender">
+			<Color Red="149" Green="138" Blue="217" Alpha=" 255"/>
+		</ColorReference>
+		<ColorReference Name="Wine">
+			<Color Red="116" Green="4" Blue="52" Alpha=" 255"/>
+		</ColorReference>
+      <ColorReference Name="CustomAcademyEmpire">
+          <Color Red="255" Green="255" Blue="255" Alpha=" 255"/>
+          <Tags>Hidden,AcademyEmpire</Tags>
+       </ColorReference>
+		<ColorReference Name="CustomMinorEmpire">
+			<Color Red="192" Green="192" Blue="192" Alpha=" 255"/>
+			<Tags>Hidden,MinorEmpire</Tags>
+		</ColorReference>
+		<ColorReference Name="CustomLesserEmpire">
+			<Color Red="255" Green="242" Blue="0" Alpha=" 255"/>
+			<Tags>Hidden,LesserEmpire</Tags>
+		</ColorReference>
+		<ColorReference Name="CustomPirateEmpire">
+			<Color Red="150" Green="150" Blue="150" Alpha=" 255"/>
+			<Tags>Hidden,PirateEmpire</Tags>
+		</ColorReference>
+		<ColorReference Name="Default">
+			<Color Red="255" Green="255" Blue="255" Alpha=" 255"/>
+            <Tags>Hidden</Tags>
+		</ColorReference>
+	</Palette>
+</Datatable>

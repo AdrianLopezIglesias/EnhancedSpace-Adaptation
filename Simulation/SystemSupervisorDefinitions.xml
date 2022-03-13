@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/SystemSupervisorDefinition.xsd">
+
+    <!-- DEV NOTES:
+
+            o  Weight(Constructible) = Sum(Constructible[Gain].Weight * Supervisor[Gain].Weight).
+            o  Contextual constructibles (per planet, per population, on planetType) are only handled by altering the weights. 
+            o  For recipes, gains should be descripbed in ingredients.
+
+            o Weight(Planet,Pop) = Sum(Population[Gain/PlanetType].Weight * Supervisor[Gain].Weight) + Sum(Player[Fids].Net * Supervisor[Gain].Weight).
+            o Population distribution:
+              - First pass: Sort planets in weight descending order, and assign best population according to context.
+              - Second pass: Move populations (worst) from overpopulated to free planets (best).
+              - This is the simple explanation. the real one is to long to be described in here :3
+              
+            o GUI : Don't forget GuiElements ! Only supervisors that have a GuiElement specified in GuiElements[SystemSupervisors].xml will be displayed in the Supervisor Droplist.
+    -->
+
+    <!-- Balanced -->
+    <SystemSupervisorDefinition Name="SystemSupervisorBalanced">
+      <Policy CanQueueConstructions="true" CanMovePopulations="true"/>
+      <Gains>
+        <Gain Name="Food"      Weight="1.4"/>
+        <Gain Name="Approval"  Weight="1.2"/>
+        <Gain Name="Industry"  Weight="1.5"/>
+        <Gain Name="Dust"      Weight="1"/>
+        <Gain Name="Science"   Weight="1"/>
+        <Gain Name="Prestige"  Weight="1"/>
+        <Gain Name="Military"  Weight="0.4"/>
+        <Gain Name="Planetary"  Weight="-10000"/>
+      </Gains>
+    </SystemSupervisorDefinition>
+</Datatable>

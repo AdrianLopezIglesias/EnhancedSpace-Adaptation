@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+
+    
+    <SimulationDescriptor Name="UniquePlanetTor" Type="UniquePlanet" >
+		<Modifier TargetProperty="PlanetRawFood"        Operation="Addition" Value="2" />
+		<Modifier TargetProperty="PlanetRawIndustry"    Operation="Addition" Value="0" />
+		<Modifier TargetProperty="PlanetRawDust"        Operation="Addition" Value="10" />
+		<Modifier TargetProperty="PlanetRawScience"     Operation="Addition" Value="2" />
+        <Modifier TargetProperty="PlanetRawPrestige"    Operation="Addition" Value="12" />
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="UniquePlanetAuriga" Type="UniquePlanet" >
+		<Modifier TargetProperty="PlanetRawFood"        Operation="Addition" Value="0" />
+		<Modifier TargetProperty="PlanetRawIndustry"    Operation="Addition" Value="0" />
+		<Modifier TargetProperty="PlanetRawDust"        Operation="Addition" Value="12" />
+		<Modifier TargetProperty="PlanetRawScience"     Operation="Addition" Value="2" />
+        <Modifier TargetProperty="PlanetRawPrestige"    Operation="Addition" Value="7" />
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="UniquePlanetKyros" Type="UniquePlanet" >
+		<Modifier TargetProperty="PlanetRawFood"        Operation="Addition" Value="0" />
+		<Modifier TargetProperty="PlanetRawIndustry"    Operation="Addition" Value="0" />
+		<Modifier TargetProperty="PlanetRawDust"        Operation="Addition" Value="5" />
+		<Modifier TargetProperty="PlanetRawScience"     Operation="Addition" Value="12" />
+        <Modifier TargetProperty="PlanetRawPrestige"    Operation="Addition" Value="10" />
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="UniquePlanetBilgeli" Type="UniquePlanet" >
+		<Modifier TargetProperty="PlanetRawFood"        Operation="Addition" Value="4" />
+		<Modifier TargetProperty="PlanetRawIndustry"    Operation="Addition" Value="0" />
+		<Modifier TargetProperty="PlanetRawDust"        Operation="Addition" Value="3" />
+		<Modifier TargetProperty="PlanetRawScience"     Operation="Addition" Value="3" />
+        <Modifier TargetProperty="PlanetRawPrestige"    Operation="Addition" Value="5" />
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="UniquePlanetSahar" Type="UniquePlanet" >
+		<Modifier TargetProperty="PlanetRawFood"        Operation="Addition" Value="1" />
+		<Modifier TargetProperty="PlanetRawIndustry"    Operation="Addition" Value="12" />
+		<Modifier TargetProperty="PlanetRawDust"        Operation="Addition" Value="0" />
+		<Modifier TargetProperty="PlanetRawScience"     Operation="Addition" Value="5" />
+        <Modifier TargetProperty="PlanetRawPrestige"    Operation="Addition" Value="4" />
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="UniquePlanetSykagoja" Type="UniquePlanet" >
+		<Modifier TargetProperty="PlanetRawFood"        Operation="Addition" Value="12" />
+		<Modifier TargetProperty="PlanetRawIndustry"    Operation="Addition" Value="0" />
+		<Modifier TargetProperty="PlanetRawDust"        Operation="Addition" Value="0" />
+		<Modifier TargetProperty="PlanetRawScience"     Operation="Addition" Value="7" />
+        <Modifier TargetProperty="PlanetRawPrestige"    Operation="Addition" Value="5" />
+    </SimulationDescriptor>
+	
+	<SimulationDescriptor Name="UniquePlanetVeil" Type="UniquePlanet" >
+		<Modifier TargetProperty="PlanetRawFood"        Operation="Addition" Value="7" />
+		<Modifier TargetProperty="PlanetRawIndustry"    Operation="Addition" Value="3" />
+		<Modifier TargetProperty="PlanetRawDust"        Operation="Addition" Value="8" />
+		<Modifier TargetProperty="PlanetRawScience"     Operation="Addition" Value="2" />
+        <Modifier TargetProperty="PlanetRawPrestige"    Operation="Addition" Value="5" />
+    </SimulationDescriptor>
+	
+	<SimulationDescriptor Name="UniquePlanetTeonha" Type="UniquePlanet" >
+		<Modifier TargetProperty="PlanetRawFood"        Operation="Addition" Value="2" />
+		<Modifier TargetProperty="PlanetRawIndustry"    Operation="Addition" Value="2" />
+		<Modifier TargetProperty="PlanetRawDust"        Operation="Addition" Value="2" />
+		<Modifier TargetProperty="PlanetRawScience"     Operation="Addition" Value="2" />
+        <Modifier TargetProperty="PlanetRawPrestige"    Operation="Addition" Value="15" />
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="UniquePlanetCravers"    Type="UniquePlanet" >
+		<Modifier TargetProperty="PlanetRawFood"        Operation="Addition" Value="0" />
+		<Modifier TargetProperty="PlanetRawIndustry"    Operation="Addition" Value="0" />
+		<Modifier TargetProperty="PlanetRawDust"        Operation="Addition" Value="2" />
+		<Modifier TargetProperty="PlanetRawScience"     Operation="Addition" Value="2" />
+        <Modifier TargetProperty="PlanetRawPrestige"    Operation="Addition" Value="0" />
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="UniquePlanetHoratio"    Type="UniquePlanet" >
+		<Modifier TargetProperty="PlanetRawFood"        Operation="Addition" Value="2" />
+		<Modifier TargetProperty="PlanetRawIndustry"    Operation="Addition" Value="3" />
+		<Modifier TargetProperty="PlanetRawDust"        Operation="Addition" Value="2" />
+		<Modifier TargetProperty="PlanetRawScience"     Operation="Addition" Value="3" />
+        <Modifier TargetProperty="PlanetRawPrestige"    Operation="Addition" Value="0" />
+    </SimulationDescriptor>    
+
+    <SimulationDescriptor Name="UniquePlanetSophons"    Type="UniquePlanet">
+		<Modifier TargetProperty="PlanetRawFood"        Operation="Addition" Value="4" />
+		<Modifier TargetProperty="PlanetRawIndustry"    Operation="Addition" Value="1" />
+		<Modifier TargetProperty="PlanetRawDust"        Operation="Addition" Value="0" />
+		<Modifier TargetProperty="PlanetRawScience"     Operation="Addition" Value="3" />
+        <Modifier TargetProperty="PlanetRawPrestige"    Operation="Addition" Value="0" />
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="UniquePlanetTimeLords"    Type="UniquePlanet">
+		<Modifier TargetProperty="PlanetRawFood"        Operation="Addition" Value="2" />
+		<Modifier TargetProperty="PlanetRawIndustry"    Operation="Addition" Value="2" />
+		<Modifier TargetProperty="PlanetRawDust"        Operation="Addition" Value="0" />
+		<Modifier TargetProperty="PlanetRawScience"     Operation="Addition" Value="0" />
+        <Modifier TargetProperty="PlanetRawPrestige"    Operation="Addition" Value="0" />
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="UniquePlanetTerrans"    Type="UniquePlanet">
+		<Modifier TargetProperty="PlanetRawFood"        Operation="Addition" Value="0" />
+		<Modifier TargetProperty="PlanetRawIndustry"    Operation="Addition" Value="1" />
+        <Modifier TargetProperty="PlanetRawScience"     Operation="Addition" Value="0" />
+        <Modifier TargetProperty="PlanetRawDust"        Operation="Addition" Value="2" />
+        <Modifier TargetProperty="PlanetRawPrestige"    Operation="Addition" Value="0" />
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="UniquePlanetTerransTutorial"    Type="UniquePlanet">
+		<Modifier TargetProperty="PlanetRawFood"        Operation="Addition" Value="0" />
+		<Modifier TargetProperty="PlanetRawIndustry"    Operation="Addition" Value="1" />
+		<Modifier TargetProperty="PlanetRawDust"        Operation="Addition" Value="2" />
+		<Modifier TargetProperty="PlanetRawScience"     Operation="Addition" Value="0" />
+        <Modifier TargetProperty="PlanetRawPrestige"    Operation="Addition" Value="0" />
+    </SimulationDescriptor>                
+
+    <SimulationDescriptor Name="UniquePlanetVampirilis" Type="UniquePlanet" >
+		<Modifier TargetProperty="PlanetRawFood"        Operation="Addition" Value="3" />
+		<Modifier TargetProperty="PlanetRawIndustry"    Operation="Addition" Value="3" />
+		<Modifier TargetProperty="PlanetRawDust"        Operation="Addition" Value="3" />
+		<Modifier TargetProperty="PlanetRawScience"     Operation="Addition" Value="0" />
+        <Modifier TargetProperty="PlanetRawPrestige"    Operation="Addition" Value="0" />
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="UniquePlanetVenetians"  Type="UniquePlanet"  >
+      <Modifier TargetProperty="PlanetRawFood"        Operation="Addition" Value="6" />
+      <Modifier TargetProperty="PlanetRawIndustry"    Operation="Addition" Value="0" />
+      <Modifier TargetProperty="PlanetRawDust"        Operation="Addition" Value="4" />
+      <Modifier TargetProperty="PlanetRawScience"     Operation="Addition" Value="0" />
+      <Modifier TargetProperty="PlanetRawPrestige"    Operation="Addition" Value="0" />
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="UniquePlanetTemplars"    Type="UniquePlanet">
+       <Modifier TargetProperty="PlanetRawFood"        Operation="Addition" Value="2" />
+       <Modifier TargetProperty="PlanetRawIndustry"    Operation="Addition" Value="3" />
+       <Modifier TargetProperty="PlanetRawDust"        Operation="Addition" Value="2" />
+       <Modifier TargetProperty="PlanetRawScience"     Operation="Addition" Value="0" />
+       <Modifier TargetProperty="PlanetRawPrestige"    Operation="Addition" Value="0" />
+    </SimulationDescriptor>
+     
+    <SimulationDescriptor Name="UniquePlanetUnfallen"  Type="UniquePlanet" />
+
+    <!-- Custom unique planet for modding purposes. Add them to the GalaxyGeneratorWeightTable "UniquePlanetList" to find them in-game. Add a GuiElement as well. -->
+    <!-- You can override this one to add Modifiers, so they have different stats. -->
+    <!-- You can create up to 10 custom unique planets, named exactly the same way as this one, or the visuals won't work. -->
+    <SimulationDescriptor Name="UniquePlanetCustom01"  Type="UniquePlanet" />
+</Datatable>

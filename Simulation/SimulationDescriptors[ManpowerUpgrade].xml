@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+
+  <!-- Infantry -->
+  <SimulationDescriptor Name="ManpowerUpgradeInfantry1" Type="ManpowerUpgrade">
+      <Modifier TargetProperty="InfantryDamagesMultiplierAgainstPlane" Operation="Addition"   Value="1" Path="ClassEmpire"  />
+      <Modifier TargetProperty="EmpireInfantryLevel" Operation="Addition" Value="1" Path="ClassEmpire//ClassShip" TooltipHidden="true"/>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ManpowerUpgradeInfantry2" Type="ManpowerUpgrade">
+		<Modifier TargetProperty="InfantryMaxHealth"  Operation="Percent" Value="0.5" Path="ClassEmpire"/>    
+		<Modifier TargetProperty="InfantryDamagesBonus" Operation="Addition" Value="0.25" Path="ClassEmpire"/>
+    <Modifier TargetProperty="EmpireInfantryLevel" Operation="Addition" Value="1" Path="ClassEmpire//ClassShip" TooltipHidden="true"/>
+	</SimulationDescriptor>
+
+	<SimulationDescriptor Name="ManpowerUpgradeInfantry3" Type="ManpowerUpgrade">
+      <Modifier TargetProperty="InfantryMaxHealth"    Operation="Percent"  Value="1" Path="ClassEmpire"/>
+      <Modifier TargetProperty="InfantryDamagesBonus" Operation="Addition" Value="0.5" Path="ClassEmpire"/>
+      <Modifier TargetProperty="EmpireInfantryLevel" Operation="Addition" Value="1" Path="ClassEmpire//ClassShip" TooltipHidden="true"/>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ManpowerUpgradeInfantry4" Type="ManpowerUpgrade">
+		<Modifier TargetProperty="InfantryDamagesMultiplierAgainstPlane" Operation="Addition" Value="1" Path="ClassEmpire"/>
+    <Modifier TargetProperty="InfantryMaxHealth"                     Operation="Percent"  Value="1.5" Path="ClassEmpire"/>
+    <Modifier TargetProperty="EmpireInfantryLevel" Operation="Addition" Value="1" Path="ClassEmpire//ClassShip" TooltipHidden="true"/>
+	</SimulationDescriptor>
+
+	<SimulationDescriptor Name="ManpowerUpgradeInfantry5" Type="ManpowerUpgrade">
+		<Modifier TargetProperty="InfantryMaxHealth"    Operation="Percent"  Value="2" Path="ClassEmpire" />
+    <Modifier TargetProperty="InfantryDamagesBonus" Operation="Addition" Value="1" Path="ClassEmpire" />
+    <Modifier TargetProperty="EmpireInfantryLevel" Operation="Addition" Value="1" Path="ClassEmpire//ClassShip" TooltipHidden="true"/>
+  </SimulationDescriptor>
+
+  <!-- Tank -->
+  <SimulationDescriptor Name="ManpowerUpgradeTank1" Type="ManpowerUpgrade">
+    <Modifier TargetProperty="TankDamagesMultiplierAgainstInfantry" Operation="Addition" Value="1" Path="ClassEmpire" />
+  </SimulationDescriptor>
+
+	<SimulationDescriptor Name="ManpowerUpgradeTank2" Type="ManpowerUpgrade">
+    <Modifier TargetProperty="TankMaxHealth"    Operation="Percent"  Value="0.5"  Path="ClassEmpire"/>
+    <Modifier TargetProperty="TankDamagesBonus" Operation="Addition" Value="0.25" Path="ClassEmpire"/>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ManpowerUpgradeTank3" Type="ManpowerUpgrade">
+    <Modifier TargetProperty="TankMaxHealth" Operation="Percent"     Value="1" Path="ClassEmpire"/>
+    <Modifier TargetProperty="TankDamagesBonus" Operation="Addition" Value="0.5" Path="ClassEmpire"/>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ManpowerUpgradeTank4" Type="ManpowerUpgrade">
+		<Modifier TargetProperty="TankDamagesMultiplierAgainstInfantry" Operation="Addition" Value="1" Path="ClassEmpire" />
+    <Modifier TargetProperty="TankMaxHealth" Operation="Percent"     Value="1.5" Path="ClassEmpire"/>
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ManpowerUpgradeTank5" Type="ManpowerUpgrade">
+		<Modifier TargetProperty="TankMaxHealth"    Operation="Percent"  Value="2" Path="ClassEmpire"/>
+    <Modifier TargetProperty="TankDamagesBonus" Operation="Addition" Value="1"    Path="ClassEmpire"/>
+  </SimulationDescriptor>
+
+  <!-- Plane -->
+  <SimulationDescriptor Name="ManpowerUpgradePlane1" Type="ManpowerUpgrade">
+    <Modifier TargetProperty="PlaneDamagesMultiplierAgainstTank" Operation="Addition" Value="1" Path="ClassEmpire" />
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="ManpowerUpgradePlane2" Type="ManpowerUpgrade">
+    <Modifier TargetProperty="PlaneMaxHealth"    Operation="Percent"  Value="0.5" Path="ClassEmpire"/>
+    <Modifier TargetProperty="PlaneDamagesBonus" Operation="Addition" Value="0.25" Path="ClassEmpire"/>
+	</SimulationDescriptor>
+
+	<SimulationDescriptor Name="ManpowerUpgradePlane3" Type="ManpowerUpgrade">
+    <Modifier TargetProperty="PlaneMaxHealth"    Operation="Percent"  Value="1" Path="ClassEmpire"/>
+    <Modifier TargetProperty="PlaneDamagesBonus" Operation="Addition" Value="0.5" Path="ClassEmpire"/>
+	</SimulationDescriptor>
+
+	<SimulationDescriptor Name="ManpowerUpgradePlane4" Type="ManpowerUpgrade">
+		<Modifier TargetProperty="PlaneDamagesMultiplierAgainstTank" Operation="Addition" Value="1" Path="ClassEmpire" />
+    <Modifier TargetProperty="PlaneMaxHealth"                    Operation="Percent"  Value="1.5" Path="ClassEmpire"/>
+	</SimulationDescriptor>
+
+	<SimulationDescriptor Name="ManpowerUpgradePlane5" Type="ManpowerUpgrade">
+		<Modifier TargetProperty="PlaneMaxHealth"    Operation="Percent"  Value="2" Path="ClassEmpire"/>
+    <Modifier TargetProperty="PlaneDamagesBonus" Operation="Addition" Value="1" Path="ClassEmpire"/>
+  </SimulationDescriptor>
+
+</Datatable>

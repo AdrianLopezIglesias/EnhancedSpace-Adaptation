@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../../Schemas/ModuleDefinition.xsd">
+
+    <!-- AI uses family to recognize modules ; discuss with AI before any changes to families -->
+
+    <!-- ####################### -->
+    <!-- ######  Support  ###### -->
+    <!-- ####################### -->
+    
+    <SupportModule Name="ModuleSupportInvisibilityLevel1" Family="Invisibility" Level="1" GuiCategory="CategoryStrategic1">
+        <Cost ResourceName="SystemProduction">32</Cost>
+        <!--<Cost ResourceName="Strategic1" Instant="true">5</Cost>-->
+        <CustomCost ResourceName="Strategic1" Instant="true">5 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+        <TechnologyPrerequisite Flags="Edition">TechnologyDefenseModuleStrategic1</TechnologyPrerequisite>
+        <DownloadableContentPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Edition">DLCUC</DownloadableContentPrerequisite>
+        <PathPrerequisite Flags="NoMoreThanOneModuleOfThisType,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModule,ClassModuleInvisibility</PathPrerequisite>
+        <PathPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Edition" Inverted="true">../ClassEmpire,FactionTraitNativelyInvisibleShips</PathPrerequisite>
+        <InterpreterPrerequisite Flags="Edition" Inverted="true">Path(Context, @'ClassShip,ShipRoleObliterator') or Path(Context, @'ClassShip,ShipRoleBattleship')</InterpreterPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleInvisibility"/>
+        <SimulationDescriptorReference Name="ClassModuleInvisibilityLevel1"/>
+        <SimulationDescriptorReference Name="ClassModuleNotOnObliteratorOrBattleShip"/>
+    </SupportModule>
+
+    <SupportModule Name="ModuleSupportInvisibilityLevel2" Family="Invisibility" Level="2" GuiCategory="CategoryStrategic3">
+        <Cost ResourceName="SystemProduction">64</Cost>
+        <!--<Cost ResourceName="Strategic3" Instant="true">5</Cost>-->
+        <CustomCost ResourceName="Strategic3" Instant="true">5 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+        <TechnologyPrerequisite Flags="Edition">TechnologyDefenseModuleStrategic3</TechnologyPrerequisite>
+        <DownloadableContentPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Edition">DLCUC</DownloadableContentPrerequisite>
+        <PathPrerequisite Flags="NoMoreThanOneModuleOfThisType,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModule,ClassModuleInvisibility</PathPrerequisite>
+        <PathPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Edition" Inverted="true">../ClassEmpire,FactionTraitNativelyInvisibleShips</PathPrerequisite>
+        <InterpreterPrerequisite Flags="Edition" Inverted="true">Path(Context, @'ClassShip,ShipRoleObliterator') or Path(Context, @'ClassShip,ShipRoleBattleship')</InterpreterPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleInvisibility"/>
+        <SimulationDescriptorReference Name="ClassModuleInvisibilityLevel2"/>
+        <SimulationDescriptorReference Name="ClassModuleNotOnObliteratorOrBattleShip"/>
+    </SupportModule>
+
+    <SupportModule Name="ModuleSupportInvisibilityAmbush" Family="Invisibility" Level="3" GuiCategory="CategoryStrategic5">
+        <Cost ResourceName="SystemProduction">128</Cost>
+        <!--<Cost ResourceName="Strategic5" Instant="true">7</Cost>-->
+        <CustomCost ResourceName="Strategic5" Instant="true">7 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+        <TechnologyPrerequisite Flags="Edition">TechnologyDefenseModuleStrategic5</TechnologyPrerequisite>
+        <DownloadableContentPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Edition">DLCUC</DownloadableContentPrerequisite>
+        <PathPrerequisite Flags="NoMoreThanOneModuleOfThisType,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModule,ClassModuleInvisibility</PathPrerequisite>
+        <PathPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Edition" Inverted="true">../ClassEmpire,FactionTraitNativelyInvisibleShips</PathPrerequisite>
+        <InterpreterPrerequisite Flags="Edition" Inverted="true">Path(Context, @'ClassShip,ShipRoleObliterator') or Path(Context, @'ClassShip,ShipRoleBattleship')</InterpreterPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleInvisibility"/>
+        <SimulationDescriptorReference Name="ClassModuleInvisibilityLevel3"/>      
+        <SimulationDescriptorReference Name="ModuleInvisibilityAmbush"/>
+        <SimulationDescriptorReference Name="ClassModuleNotOnObliteratorOrBattleShip"/>
+        <BattleActionReference Name="SupportModule_FirstPhaseStart_HideFlotilla"/>
+        <BattleActionReference Name="SupportModule_PostPhaseStart_RevealFlotilla"/>
+    </SupportModule>
+
+    <SupportModule Name="ModuleSupportInvisibilityFullCombat" Family="Invisibility" Level="3" GuiCategory="CategoryStrategic6">
+        <Cost ResourceName="SystemProduction">128</Cost>
+        <!--<Cost ResourceName="Strategic6" Instant="true">7</Cost>-->
+        <CustomCost ResourceName="Strategic6" Instant="true">7 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+        <TechnologyPrerequisite Flags="Edition">TechnologyWeaponModule2</TechnologyPrerequisite>
+        <DownloadableContentPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Edition">DLCUC</DownloadableContentPrerequisite>
+        <PathPrerequisite Flags="NoMoreThanOneModuleOfThisType,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModule,ClassModuleInvisibility</PathPrerequisite>
+        <PathPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Edition" Inverted="true">../ClassEmpire,FactionTraitNativelyInvisibleShips</PathPrerequisite>
+        <InterpreterPrerequisite Flags="Edition" Inverted="true">Path(Context, @'ClassShip,ShipRoleObliterator') or Path(Context, @'ClassShip,ShipRoleBattleship')</InterpreterPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleInvisibility"/>
+        <SimulationDescriptorReference Name="ClassModuleInvisibilityLevel3"/>
+        <SimulationDescriptorReference Name="ModuleInvisibilityFullCombat"/>
+        <SimulationDescriptorReference Name="ModuleInvisibilityFullCombat1"/>
+        <SimulationDescriptorReference Name="ClassModuleNotOnObliteratorOrBattleShip"/>
+        <BattleActionReference Name="SupportModule_FirstPhaseStart_AddEvasionIfNotDetected"/>      
+    </SupportModule>
+
+    <SupportModule Name="ModuleSupportInvisibilityAmbushUmbralChoir" Family="Invisibility" Level="3" GuiCategory="CategoryStrategic5">
+        <Cost ResourceName="SystemProduction">128</Cost>
+        <!--<Cost ResourceName="Strategic5" Instant="true">7</Cost>-->
+        <CustomCost ResourceName="Strategic5" Instant="true">7 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+        <TechnologyPrerequisite Flags="Edition">TechnologyDefenseModuleStrategic5</TechnologyPrerequisite>
+        <DownloadableContentPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Edition">DLCUC</DownloadableContentPrerequisite>
+        <PathPrerequisite Flags="NoMoreThanOneModuleOfThisType,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModule,ClassModuleInvisibilityUmbralChoir</PathPrerequisite>
+        <PathPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Edition" Inverted="false">../ClassEmpire,FactionTraitNativelyInvisibleShips</PathPrerequisite>
+        <InterpreterPrerequisite Flags="Edition" Inverted="true">Path(Context, @'ClassShip,ShipRoleObliterator') or Path(Context, @'ClassShip,ShipRoleBattleship')</InterpreterPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>    
+        <SimulationDescriptorReference Name="ModuleInvisibilityAmbush"/>
+        <SimulationDescriptorReference Name="ClassModuleInvisibilityUmbralChoir"/>
+        <SimulationDescriptorReference Name="ClassModuleNotOnObliteratorOrBattleShip"/>
+        <BattleActionReference Name="SupportModule_FirstPhaseStart_HideFlotillaUmbralChoir"/>
+        <BattleActionReference Name="SupportModule_PostPhaseStart_RevealFlotilla"/>
+    </SupportModule>
+
+    <SupportModule Name="ModuleSupportInvisibilityFullCombatUmbralChoir" Family="Invisibility" Level="3" GuiCategory="CategoryStrategic6">
+        <Cost ResourceName="SystemProduction">128</Cost>
+        <!--<Cost ResourceName="Strategic6" Instant="true">7</Cost>-->
+        <CustomCost ResourceName="Strategic6" Instant="true">7 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+        <TechnologyPrerequisite Flags="Edition">TechnologyWeaponModule2</TechnologyPrerequisite>
+        <DownloadableContentPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Edition">DLCUC</DownloadableContentPrerequisite>
+        <PathPrerequisite Flags="NoMoreThanOneModuleOfThisType,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModule,ClassModuleInvisibilityUmbralChoir</PathPrerequisite>
+        <PathPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Edition" Inverted="false">../ClassEmpire,FactionTraitNativelyInvisibleShips</PathPrerequisite>
+        <InterpreterPrerequisite Flags="Edition" Inverted="true">Path(Context, @'ClassShip,ShipRoleObliterator') or Path(Context, @'ClassShip,ShipRoleBattleship')</InterpreterPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ModuleInvisibilityFullCombat"/>
+        <SimulationDescriptorReference Name="ModuleInvisibilityFullCombat1"/>
+        <SimulationDescriptorReference Name="ClassModuleInvisibilityUmbralChoir"/>
+        <SimulationDescriptorReference Name="ClassModuleNotOnObliteratorOrBattleShip"/>
+        <BattleActionReference Name="SupportModule_FirstPhaseStart_AddEvasionIfNotDetectedUmbralChoir"/>      
+    </SupportModule>
+
+    <SupportModule Name="ModuleSupportInvisibilityDetectionLevel1" Family="Detection" Level="1" GuiCategory="CategoryStrategic2">
+        <Cost ResourceName="SystemProduction">32</Cost>
+        <!--<Cost ResourceName="Strategic2" Instant="true">5</Cost>-->
+        <CustomCost ResourceName="Strategic2" Instant="true">5 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+        <TechnologyPrerequisite Flags="Edition">TechnologyDefenseModuleStrategic2</TechnologyPrerequisite>
+        <DownloadableContentPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Edition">DLCUC</DownloadableContentPrerequisite>
+        <PathPrerequisite Flags="NoMoreThanOneModuleOfThisType,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModule,ClassModuleInvisibilityDetection</PathPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleInvisibilityDetection"/>
+        <SimulationDescriptorReference Name="ClassModuleInvisibilityDetectionLevel1"/>
+        <BattleActionReference Name="SupportModule_BattleStart_GiveVisionStrengthToGroup"/>
+        <BattleActionReference Name="SupportModule_BattleStart_GroupInteraction_InformOpponentOfVisionStrength"/>
+    </SupportModule>
+
+    <SupportModule Name="ModuleSupportInvisibilityDetectionLevel2" Family="Detection" Level="2" GuiCategory="CategoryStrategic4">
+        <Cost ResourceName="SystemProduction">64</Cost>
+        <!--<Cost ResourceName="Strategic4" Instant="true">5</Cost>-->
+        <CustomCost ResourceName="Strategic4" Instant="true">5 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+        <TechnologyPrerequisite Flags="Edition">TechnologyDefenseModuleStrategic4</TechnologyPrerequisite>
+        <DownloadableContentPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Edition">DLCUC</DownloadableContentPrerequisite>
+        <PathPrerequisite Flags="NoMoreThanOneModuleOfThisType,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModule,ClassModuleInvisibilityDetection</PathPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleInvisibilityDetection"/>
+        <SimulationDescriptorReference Name="ClassModuleInvisibilityDetectionLevel2"/>
+        <SimulationDescriptorReference Name="ClassModuleInvisibilityDetectionProbe"/>
+        <SimulationDescriptorReference Name="ModuleInvisibilityDetectionProbeLevel1"/>
+        <BattleActionReference Name="SupportModule_BattleStart_GiveVisionStrengthToGroup"/>
+        <BattleActionReference Name="SupportModule_BattleStart_GroupInteraction_InformOpponentOfVisionStrength"/>
+    </SupportModule>
+
+    <SupportModule Name="ModuleSupportInvisibilityDetectionLevel3" Family="Detection" Level="3" GuiCategory="CategoryStrategic6">
+        <Cost ResourceName="SystemProduction">128</Cost>
+        <!--<Cost ResourceName="Strategic6" Instant="true">5</Cost>-->
+        <CustomCost ResourceName="Strategic6" Instant="true">5 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+        <TechnologyPrerequisite Flags="Edition">TechnologyDefenseModuleStrategic6</TechnologyPrerequisite>
+        <DownloadableContentPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Edition">DLCUC</DownloadableContentPrerequisite>
+        <PathPrerequisite Flags="NoMoreThanOneModuleOfThisType,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModule,ClassModuleInvisibilityDetection</PathPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleInvisibilityDetection"/>
+        <SimulationDescriptorReference Name="ClassModuleInvisibilityDetectionLevel3"/>
+        <SimulationDescriptorReference Name="ClassModuleInvisibilityDetectionProbe"/>
+        <SimulationDescriptorReference Name="ModuleInvisibilityDetectionProbeLevel2"/>
+        <BattleActionReference Name="SupportModule_BattleStart_GiveVisionStrengthToGroup"/>
+        <BattleActionReference Name="SupportModule_BattleStart_GroupInteraction_InformOpponentOfVisionStrength"/>
+    </SupportModule>
+
+</Datatable>

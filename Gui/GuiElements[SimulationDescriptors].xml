@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+  
+    <ExtendedGuiElement Name="OutpostActionIncreaseLocalGrowthVenetiansEffect">
+        <Title>%OutpostActionIncreaseLocalGrowthEffectTitle</Title>
+        <!--<TooltipElement>
+            <EffectOverride>%OutpostActionBoostGrowthByNumberOfSystemsTooltipEffect</EffectOverride>
+        </TooltipElement>-->
+    </ExtendedGuiElement>
+
+    <EntityActionGuiElement Name="OutpostActionBoostGrowthWithDustVenetians">
+        <Title>%OutpostActionBoostGrowthWithDustTitle</Title>
+        <Description>%OutpostActionBoostGrowthWithDustDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps\Dynamic\OutpostActions\OutpostAction02Small" />
+            <Icon Size="Large" Path="Bitmaps\Dynamic\OutpostActions\OutpostAction02Medium" />
+        </Icons>
+    </EntityActionGuiElement>
+
+    <!-- ##################################### -->
+    <!-- #######        LAW EFFECTS    ####### -->
+    <!-- ##################################### -->
+
+
+    <ExtendedGuiElement Name="LawEffectP01L00">
+        <Title>%LawP01L00ShortTitle</Title>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="LawEffectP01L00Republic">
+        <Title>%LawP01L00ShortTitle</Title>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="LawEffectP01L00Dictatorship">
+        <Title>%LawP01L00ShortTitle</Title>
+        <TooltipElement>
+            <EffectOverride>%LawEffectP01L00DictatorshipTooltipEffect</EffectOverride>
+        </TooltipElement>
+    </ExtendedGuiElement>
+
+
+    <GuiElement Name="LawEffectP01L01">
+      <Title>%LawP01L01ShortTitle</Title>
+    </GuiElement>
+  
+    <GuiElement Name="LawEffectP01L01Republic">
+      <Title>%LawP01L01ShortTitle</Title>
+    </GuiElement>
+
+    <ExtendedGuiElement Name="LawEffectP01L03">
+      <Title>%LawP01L03ShortTitle</Title>
+      <TooltipElement CustomTurnDuration="5">
+        <EffectOverride>%LawEffectP01L03TooltipOverride</EffectOverride>
+      </TooltipElement>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="LawEffectP01L03Republic">
+      <Title>%LawP01L03ShortTitle</Title>
+      <TooltipElement CustomTurnDuration="5">
+        <EffectOverride>%LawEffectP01L03RepublicTooltipOverride</EffectOverride>
+      </TooltipElement>
+    </ExtendedGuiElement>
+
+   <ExtendedGuiElement Name="LawEffectP02L00">
+      <Title>%LawP02L00ShortTitle</Title>
+   </ExtendedGuiElement>
+
+   <ExtendedGuiElement Name="LawEffectP02L00Republic">
+      <Title>%LawP02L00ShortTitle</Title>
+   </ExtendedGuiElement>
+
+   <ExtendedGuiElement Name="LawEffectP02L00Dictatorship">
+      <Title>%LawP02L00ShortTitle</Title>
+   </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="LawEffectP02L04">
+      <Title>%LawP02L04ShortTitle</Title>
+      <TooltipElement CustomTurnDuration="5">
+        <EffectOverride>%LawEffectP02L04TooltipOverride</EffectOverride>
+      </TooltipElement>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="LawEffectP02L04Republic">
+      <Title>%LawP02L04ShortTitle</Title>
+      <TooltipElement CustomTurnDuration="5">
+        <EffectOverride>%LawEffectP02L04RepublicTooltipOverride</EffectOverride>
+      </TooltipElement>
+    </ExtendedGuiElement>
+
+
+
+    <GuiElement Name="LawEffectP03L01">
+        <Title>%LawP03L01ShortTitle</Title>
+    </GuiElement>
+    <GuiElement Name="LawEffectP03L01Republic">
+        <Title>%LawP03L01ShortTitle</Title>
+    </GuiElement>
+    <GuiElement Name="LawEffectP03L02">
+        <Title>%LawP03L02ShortTitle</Title>
+    </GuiElement>
+    <GuiElement Name="LawEffectP03L02Republic">
+        <Title>%LawP03L02ShortTitle</Title>
+    </GuiElement>
+    <GuiElement Name="LawEffectP03L03">
+        <Title>%LawP03L03ShortTitle</Title>
+    </GuiElement>
+    <GuiElement Name="LawEffectP03L03Republic">
+        <Title>%LawP03L03ShortTitle</Title>
+    </GuiElement>
+
+    <GuiElement Name="LawEffectP03L04">
+        <Title>%LawP03L04ShortTitle</Title>
+    </GuiElement>
+    <GuiElement Name="LawEffectP03L04Republic">
+        <Title>%LawP03L04ShortTitle</Title>
+    </GuiElement>
+
+    <GuiElement Name="LawEffectP03QuestVenetians04">
+        <Title>%LawP03QuestVenetians04ShortTitle</Title>
+    </GuiElement>
+
+    <ExtendedGuiElement Name="LawEffectP04L00">
+        <Title>%LawP04L00ShortTitle</Title>
+        <TooltipElement>
+            <EffectOverride>%LawEffectP04L00TooltipEffect</EffectOverride>
+        </TooltipElement>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="LawEffectP04L00Republic">
+        <Title>%LawP04L00ShortTitle</Title>
+        <TooltipElement>
+            <EffectOverride>%LawEffectP04L00RepublicTooltipEffect</EffectOverride>
+        </TooltipElement>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="LawEffectP04L00Dictatorship">
+        <Title>%LawP04L00ShortTitle</Title>
+        <TooltipElement>
+            <EffectOverride>%LawEffectP04L00DictatorshipTooltipEffect</EffectOverride>
+        </TooltipElement>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="LawEffectP04L01">
+      <Title>%LawP01L01ShortTitle</Title>
+      <TooltipElement CustomTurnDuration="20">
+        <EffectOverride>%LawEffectP01L01TooltipEffect</EffectOverride>
+      </TooltipElement>
+    </ExtendedGuiElement>
+    <ExtendedGuiElement Name="LawEffectP04L01NoOutposts">
+      <Title>%LawP01L01ShortTitle</Title>
+      <TooltipElement CustomTurnDuration="20">
+        <EffectOverride>%LawEffectP01L01TooltipEffect</EffectOverride>
+      </TooltipElement>
+    </ExtendedGuiElement>
+    <ExtendedGuiElement Name="LawEffectP04L01Republic">
+      <Title>%LawP01L01ShortTitle</Title>
+      <TooltipElement CustomTurnDuration="20">
+        <EffectOverride>%LawEffectP01L01RepublicTooltipEffect</EffectOverride>
+      </TooltipElement>
+    </ExtendedGuiElement>
+    <ExtendedGuiElement Name="LawEffectP04L01NoOutpostsRepublic">
+      <Title>%LawP01L01ShortTitle</Title>
+      <TooltipElement CustomTurnDuration="20">
+        <EffectOverride>%LawEffectP01L01RepublicTooltipEffect</EffectOverride>
+      </TooltipElement>
+    </ExtendedGuiElement>
+
+    <GuiElement Name="LawEffectP04L01Vampirilis">
+      <Title>%LawP01L01VampirilisShortTitle</Title>
+    </GuiElement>
+    <GuiElement Name="LawEffectP04L01RepublicVampirilis">
+      <Title>%LawP01L01VampirilisShortTitle</Title>
+    </GuiElement>
+
+    <ExtendedGuiElement Name="LawEffectP04L01TimeLords">
+      <Title>%LawP01L01ShortTitle</Title>
+      <TooltipElement CustomTurnDuration="20">
+        <EffectOverride>%LawEffectP01L01TooltipEffect</EffectOverride>
+      </TooltipElement>
+    </ExtendedGuiElement>
+    <ExtendedGuiElement Name="LawEffectP04L01TimeLordsRepublic">
+      <Title>%LawP01L01ShortTitle</Title>
+      <TooltipElement CustomTurnDuration="20">
+        <EffectOverride>%LawEffectP01L01RepublicTooltipEffect</EffectOverride>
+      </TooltipElement>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="LawEffectP04L02">
+        <Title>%LawP04L02ShortTitle</Title>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="LawEffectP04L02Republic">
+        <Title>%LawP04L02ShortTitle</Title>
+    </ExtendedGuiElement>
+    
+    <GuiElement Name="LawEffectP04L03">
+        <Title>%LawP04L03ShortTitle</Title>
+    </GuiElement>
+
+    <GuiElement Name="LawEffectP04L03Republic">
+        <Title>%LawP04L03ShortTitle</Title>
+    </GuiElement>
+    
+    <ExtendedGuiElement Name="LawEffectP04L04">
+        <Title>%LawP04L04ShortTitle</Title>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="LawEffectP04L04Republic">
+        <Title>%LawP04L04ShortTitle</Title>
+    </ExtendedGuiElement>
+
+
+
+    <ExtendedGuiElement Name="LawEffectP05L00">
+        <Title>%LawP05L00ShortTitle</Title>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="LawEffectP05L00Republic">
+        <Title>%LawP05L00ShortTitle</Title>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="LawEffectP05L00Dictatorship">
+        <Title>%LawP05L00ShortTitle</Title>
+    </ExtendedGuiElement>
+
+    <GuiElement Name="LawEffectP05L01">
+      <Title>%LawP05L02ShortTitle</Title>
+    </GuiElement>
+    <GuiElement Name="LawEffectP05L01Republic">
+      <Title>%LawP05L02ShortTitle</Title>
+    </GuiElement>
+
+    <GuiElement Name="LawEffectP05L01Vampirilis">
+      <Title>%LawP05L02ShortTitle</Title>
+    </GuiElement>
+
+    <GuiElement Name="LawEffectP05L01VampirilisRepublic">
+      <Title>%LawP05L02ShortTitle</Title>
+    </GuiElement>
+  
+    <GuiElement Name="LawEffectP05L02">
+      <Title>%LawP05L01ShortTitle</Title>
+    </GuiElement>
+    <GuiElement Name="LawEffectP05L02Republic">
+      <Title>%LawP05L01ShortTitle</Title>
+    </GuiElement>
+
+
+    <ExtendedGuiElement Name="LawEffectP05L04">
+      <Title>%LawP05L04ShortTitle</Title>
+      <TooltipElement CustomTurnDuration="5">
+        <EffectOverride>%LawEffectP05L04TooltipOverride</EffectOverride>
+      </TooltipElement>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="LawEffectP05L04Republic">
+      <Title>%LawP05L04ShortTitle</Title>
+      <TooltipElement CustomTurnDuration="5">
+        <EffectOverride>%LawEffectP05L04RepublicTooltipOverride</EffectOverride>
+      </TooltipElement>
+    </ExtendedGuiElement>
+
+  
+    <ExtendedGuiElement Name="LawEffectP05L04VampirilisCommon">
+      <TooltipElement>
+        <EffectOverride>%LawEffectP05L04VampirilisCommonEffectOverride</EffectOverride>
+      </TooltipElement>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="LawEffectP05L04Vampirilis">
+      <Title>%LawP05L04ShortTitle</Title>
+      <TooltipElement CustomTurnDuration="5">
+        <EffectOverride>%LawEffectP05L04TooltipOverride</EffectOverride>
+      </TooltipElement>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="LawEffectP05L04VampirilisRepublic">
+      <Title>%LawP05L04ShortTitle</Title>
+      <TooltipElement CustomTurnDuration="5">
+        <EffectOverride>%LawEffectP05L04RepublicTooltipOverride</EffectOverride>
+      </TooltipElement>
+    </ExtendedGuiElement>
+  
+    <ExtendedGuiElement Name="LawEffectP06L01">
+      <Title>%LawP06L01ShortTitle</Title>
+      <TooltipElement CustomTurnDuration="5">
+        <EffectOverride>%LawEffectP06L01TooltipOverride</EffectOverride>
+      </TooltipElement>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="LawEffectP06L01Republic">
+      <Title>%LawP06L01ShortTitle</Title>
+      <TooltipElement CustomTurnDuration="5">
+        <EffectOverride>%LawEffectP06L01RepublicTooltipOverride</EffectOverride>
+      </TooltipElement>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="LawEffectP06L02">
+      <Title>%LawP06L02ShortTitle</Title>
+      <TooltipElement CustomTurnDuration="5">
+        <EffectOverride>%LawEffectP06L02TooltipOverride</EffectOverride>
+      </TooltipElement>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="LawEffectP06L02Republic">
+      <Title>%LawP06L02ShortTitle</Title>
+      <TooltipElement CustomTurnDuration="5">
+        <EffectOverride>%LawEffectP06L02RepublicTooltipOverride</EffectOverride>
+      </TooltipElement>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="LawEffectP06L04">
+      <Title>%LawP06L04ShortTitle</Title>
+      <TooltipElement CustomTurnDuration="5">
+        <EffectOverride>%LawEffectP06L04TooltipOverride</EffectOverride>
+      </TooltipElement>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="LawEffectP06L04Republic">
+      <Title>%LawP06L04ShortTitle</Title>
+      <TooltipElement CustomTurnDuration="5">
+        <EffectOverride>%LawEffectP06L04RepublicTooltipOverride</EffectOverride>
+      </TooltipElement>
+    </ExtendedGuiElement>
+
+   <GuiElement Name="HeroSkillSystem79_IndustryFood_Perpop_3">
+      <Title>%HeroSkill79_IndustryFood_Perpop_Title</Title>
+   </GuiElement>
+
+    
+
+</Datatable>

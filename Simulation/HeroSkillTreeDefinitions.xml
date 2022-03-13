@@ -1,0 +1,792 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/HeroSkillTreeDefinition.xsd">
+    <!--
+    EXAMPLE OF ALTERNATIVE SKILLS
+    <Skill>
+                <SkillDefinition Name="HeroSkill05"/>
+                <Alternative>
+                    <SkillDefinition Name="HeroSkill06"/>
+                    <PathPrerequisite Flags="Prerequisite">ClassHero,Politics02</PathPrerequisite>
+                </Alternative>
+    </Skill>
+    EXAMPLE OF REQUIRED SKILL
+    <Skill>
+                <SkillDefinition Name="HeroSkill19"/>
+                <RequiredSkill Name="HeroSkill18"/>
+    </Skill>
+    -->
+    <!--GENERIC TREE-->
+    <HeroSkillTreeDefinition Name="HeroSkillTreeGeneric">
+        <Stage Level="0">
+            <Skill>
+              <SkillDefinition Name="HeroSkill04BranchGeneric"/>
+            </Skill>
+            <Skill>
+                <SkillDefinition Name="HeroSkill02BranchGeneric"/>
+            </Skill>
+        </Stage>
+        <Stage Level="3">
+           <Skill>
+              <SkillDefinition Name="HeroSkill01BranchGeneric"/>
+              <RequiredSkill Name="HeroSkill04BranchGeneric"/>
+           </Skill>
+           <Skill>
+              <SkillDefinition Name="HeroSkill06BranchGeneric"/>
+              <RequiredSkill Name="HeroSkill02BranchGeneric"/>
+           </Skill>
+        </Stage>
+        <Stage Level="6">
+        
+           <Skill>
+              <SkillDefinition Name="HeroSkill03BranchGeneric"/>
+              <RequiredSkill Name="HeroSkill01BranchGeneric"/>
+           </Skill>
+           <Skill>
+              <SkillDefinition Name="HeroSkill07BranchGeneric"/>
+              <RequiredSkill Name="HeroSkill06BranchGeneric"/>
+           </Skill>
+        </Stage>
+        <Stage Level="9">
+           <Skill>
+              <SkillDefinition Name="HeroSkill01BranchGenericPolitics00"/>
+              <Alternative>
+                 <SkillDefinition Name="HeroSkill01BranchGenericPolitics01"/>
+                 <PathPrerequisite Flags="Prerequisite">ClassHero,Politics01</PathPrerequisite>
+              </Alternative>
+              <Alternative>
+                 <SkillDefinition Name="HeroSkill01BranchGenericPolitics02"/>
+                 <PathPrerequisite Flags="Prerequisite">ClassHero,Politics02</PathPrerequisite>
+              </Alternative>
+              <Alternative>
+                 <SkillDefinition Name="HeroSkill01BranchGenericPolitics03"/>
+                 <PathPrerequisite Flags="Prerequisite">ClassHero,Politics03</PathPrerequisite>
+              </Alternative>
+              <Alternative>
+                 <SkillDefinition Name="HeroSkill01BranchGenericPolitics04"/>
+                 <PathPrerequisite Flags="Prerequisite">ClassHero,Politics04</PathPrerequisite>
+              </Alternative>
+              <Alternative>
+                 <SkillDefinition Name="HeroSkill01BranchGenericPolitics05"/>
+                 <PathPrerequisite Flags="Prerequisite">ClassHero,Politics05</PathPrerequisite>
+              </Alternative>
+              <Alternative>
+                 <SkillDefinition Name="HeroSkill01BranchGenericPolitics06"/>
+                 <PathPrerequisite Flags="Prerequisite">ClassHero,Politics06</PathPrerequisite>
+              </Alternative>
+              <RequiredSkill Name="HeroSkill03BranchGeneric"/>
+           </Skill>
+            <Skill>
+                <SkillDefinition Name="HeroSkill05BranchGeneric"/>
+                <RequiredSkill Name="HeroSkill03BranchGeneric"/>
+                <RequiredSkill Name="HeroSkill07BranchGeneric"/>
+            </Skill>
+           <Skill>
+              <SkillDefinition Name="HeroSkill02BranchGenericPolitics00"/>
+              <Alternative>
+                 <SkillDefinition Name="HeroSkill02BranchGenericPolitics01"/>
+                 <PathPrerequisite Flags="Prerequisite">ClassHero,Politics01</PathPrerequisite>
+              </Alternative>
+              <Alternative>
+                 <SkillDefinition Name="HeroSkill02BranchGenericPolitics02"/>
+                 <PathPrerequisite Flags="Prerequisite">ClassHero,Politics02</PathPrerequisite>
+              </Alternative>
+              <Alternative>
+                 <SkillDefinition Name="HeroSkill02BranchGenericPolitics03"/>
+                 <PathPrerequisite Flags="Prerequisite">ClassHero,Politics03</PathPrerequisite>
+              </Alternative>
+              <Alternative>
+                 <SkillDefinition Name="HeroSkill02BranchGenericPolitics04"/>
+                 <PathPrerequisite Flags="Prerequisite">ClassHero,Politics04</PathPrerequisite>
+              </Alternative>
+              <Alternative>
+                 <SkillDefinition Name="HeroSkill02BranchGenericPolitics05"/>
+                 <PathPrerequisite Flags="Prerequisite">ClassHero,Politics05</PathPrerequisite>
+              </Alternative>
+              <Alternative>
+                 <SkillDefinition Name="HeroSkill02BranchGenericPolitics06"/>
+                 <PathPrerequisite Flags="Prerequisite">ClassHero,Politics06</PathPrerequisite>
+              </Alternative>
+              <RequiredSkill Name="HeroSkill07BranchGeneric"/>
+           </Skill>
+        </Stage>
+    </HeroSkillTreeDefinition>
+
+
+  <!--ADMIRAL (GUARDIAN) TREE-->
+  <HeroSkillTreeDefinition Name="HeroSkillTreeAdmiral">
+    <Stage Level="0">
+      <Skill>
+        <SkillDefinition Name="HeroSkill01BranchAdmiral"/>
+      </Skill>
+       <Skill>
+          <SkillDefinition Name="HeroSkill02BranchAdmiral"/>
+       </Skill>
+    </Stage>
+    <Stage Level="3">
+       <Skill>
+          <SkillDefinition Name="HeroSkill03BranchAdventurer"/>
+          <RequiredSkill Name="HeroSkill01BranchAdmiral"/>
+       </Skill>
+       <Skill>
+          <SkillDefinition Name="HeroSkill05BranchAdmiral"/>
+          <RequiredSkill Name="HeroSkill02BranchAdmiral"/>
+       </Skill>
+    </Stage>
+    <Stage Level="6">
+       <Skill>
+          <SkillDefinition Name="HeroSkill08BranchAdmiral"/>
+          <RequiredSkill Name="HeroSkill03BranchAdventurer"/>
+       </Skill>
+       <Skill>
+          <SkillDefinition Name="HeroSkill06BranchAdmiral"/>
+          <RequiredSkill Name="HeroSkill05BranchAdmiral"/>
+       </Skill>
+    </Stage>
+    <Stage Level="9">
+       <Skill>
+          <SkillDefinition Name="HeroSkill04BranchAdmiral"/>
+          <RequiredSkill Name="HeroSkill08BranchAdmiral"/>
+       </Skill>
+       <Skill>
+        <SkillDefinition Name="HeroSkill07BranchAdmiral"/>
+        <RequiredSkill Name="HeroSkill06BranchAdmiral"/>
+      </Skill>
+    </Stage>
+  </HeroSkillTreeDefinition>
+
+  <!--ADVENTURER (SEEKER) TREE-->
+  <HeroSkillTreeDefinition Name="HeroSkillTreeAdventurer">
+    <Stage Level="0">
+      <Skill>
+        <SkillDefinition Name="HeroSkill01BranchAdventurer"/>
+      </Skill>
+      <Skill>
+        <SkillDefinition Name="HeroSkill04BranchAdventurer"/>
+      </Skill>
+    </Stage>
+    <Stage Level="3">
+      <Skill>
+        <SkillDefinition Name="HeroSkill08BranchAdventurer"/>
+        <RequiredSkill Name="HeroSkill01BranchAdventurer"/>
+      </Skill>
+      <Skill>
+        <SkillDefinition Name="HeroSkill06BranchAdventurer"/>
+        <RequiredSkill Name="HeroSkill04BranchAdventurer"/>
+      </Skill>
+    </Stage>
+    <Stage Level="6">
+      <Skill>
+        <SkillDefinition Name="HeroSkill09BranchAdventurer"/>
+        <RequiredSkill Name="HeroSkill08BranchAdventurer"/>
+      </Skill>
+      <Skill>
+        <SkillDefinition Name="HeroSkill02BranchAdventurer"/>
+        <RequiredSkill Name="HeroSkill06BranchAdventurer"/>
+      </Skill>
+    </Stage>
+    <Stage Level="9">
+      <Skill>
+        <SkillDefinition Name="HeroSkill10BranchAdventurer"/>
+        <RequiredSkill Name="HeroSkill09BranchAdventurer"/>
+      </Skill>
+      <Skill>
+         <SkillDefinition Name="HeroSkill07BranchAdventurer"/>
+         <RequiredSkill Name="HeroSkill02BranchAdventurer"/>
+      </Skill>
+    </Stage>
+  </HeroSkillTreeDefinition>
+
+  <!--ADMINISTRATOR (OVERSEER) TREE-->
+
+  <HeroSkillTreeDefinition Name="HeroSkillTreeAdministrator">
+    <Stage Level="0">
+      <Skill>
+        <SkillDefinition Name="HeroSkill01BranchAdministrator"/>
+      </Skill>
+      <Skill>
+        <SkillDefinition Name="HeroSkill06BranchCorporate"/>
+      </Skill>
+    </Stage>
+    <Stage Level="3">
+      <Skill>
+        <SkillDefinition Name="HeroSkill05BranchAdministrator"/>
+        <RequiredSkill Name="HeroSkill01BranchAdministrator"/>
+      </Skill>
+      <Skill>
+        <SkillDefinition Name="HeroSkill02BranchAdministrator"/>
+        <RequiredSkill Name="HeroSkill06BranchCorporate"/>
+      </Skill>
+    </Stage>
+    <Stage Level="6">
+      <Skill>
+        <SkillDefinition Name="HeroSkill03BranchAdministrator"/>
+        <RequiredSkill Name="HeroSkill05BranchAdministrator"/>
+      </Skill>
+      <Skill>
+        <SkillDefinition Name="HeroSkill06BranchAdministrator"/>
+        <RequiredSkill Name="HeroSkill02BranchAdministrator"/>
+      </Skill>
+    </Stage>
+    <Stage Level="9">
+      <Skill>
+        <SkillDefinition Name="HeroSkill07BranchAdministrator"/>
+        <RequiredSkill Name="HeroSkill03BranchAdministrator"/>
+      </Skill>
+      <Skill>
+        <SkillDefinition Name="HeroSkill04BranchCorporate"/>
+        <RequiredSkill Name="HeroSkill06BranchAdministrator"/>
+      </Skill>
+    </Stage>
+  </HeroSkillTreeDefinition>
+
+  <!--CORPORATE (COUNSELOR) TREE-->
+
+  <HeroSkillTreeDefinition Name="HeroSkillTreeCorporate">
+    <Stage Level="0">
+       <Skill>
+         <SkillDefinition Name="HeroSkill01BranchCorporate"/>
+       </Skill>
+       <Skill>
+         <SkillDefinition Name="HeroSkill08BranchCorporate"/>
+      </Skill>
+    </Stage>
+    <Stage Level="3">
+      <Skill>
+         <SkillDefinition Name="HeroSkill05BranchCorporate"/>
+         <RequiredSkill Name="HeroSkill01BranchCorporate"/>
+      </Skill>
+      <Skill>
+         <SkillDefinition Name="HeroSkill09BranchCorporate"/>
+         <RequiredSkill Name="HeroSkill08BranchCorporate"/>
+      </Skill>
+    </Stage>
+    <Stage Level="6">
+      <Skill>
+        <SkillDefinition Name="HeroSkill07BranchCorporate"/>
+        <RequiredSkill Name="HeroSkill05BranchCorporate"/>
+      </Skill>
+      <Skill>
+        <SkillDefinition Name="HeroSkill10BranchCorporate"/>
+        <RequiredSkill Name="HeroSkill09BranchCorporate"/>
+      </Skill>
+    </Stage>
+    <Stage Level="9">
+      <Skill>
+        <SkillDefinition Name="HeroSkill04BranchAdministrator"/>
+        <RequiredSkill Name="HeroSkill07BranchCorporate"/>
+      </Skill>
+      <Skill>
+        <SkillDefinition Name="HeroSkill11BranchCorporate"/>
+        <RequiredSkill Name="HeroSkill10BranchCorporate"/>
+      </Skill>
+    </Stage>
+  </HeroSkillTreeDefinition>
+
+  <!--SOPHONS TREE-->
+    <HeroSkillTreeDefinition Name="HeroSkillTreeSophons">
+        <Stage Level="0">
+            <Skill>
+                <SkillDefinition Name="HeroSkill01BranchSophons"/>
+            </Skill>
+            <Skill>
+                <SkillDefinition Name="HeroSkill02BranchSophons"/>
+            </Skill>
+        </Stage>
+        <Stage Level="3">
+            <Skill>
+                <SkillDefinition Name="HeroSkill04BranchSophons"/>
+                <RequiredSkill Name="HeroSkill01BranchSophons"/>
+            </Skill>
+            <Skill>
+              <SkillDefinition Name="HeroSkill03BranchSophons"/>
+              <RequiredSkill Name="HeroSkill02BranchSophons"/>
+            </Skill>
+        </Stage>
+        <Stage Level="6">
+            <Skill>
+                <SkillDefinition Name="HeroSkill07BranchSophons"/>
+                <RequiredSkill Name="HeroSkill04BranchSophons"/>
+            </Skill>
+            <Skill>
+                <SkillDefinition Name="HeroSkill06BranchSophons"/>
+                <RequiredSkill Name="HeroSkill03BranchSophons"/>
+            </Skill>
+        </Stage>
+        <Stage Level="9">
+            <Skill>
+                <SkillDefinition Name="HeroSkill05BranchSophons"/>
+                <RequiredSkill Name="HeroSkill07BranchSophons"/>
+                <RequiredSkill Name="HeroSkill06BranchSophons"/>
+            </Skill>
+        </Stage>
+    </HeroSkillTreeDefinition>
+  
+  
+    <!--CRAVERS TREE-->
+    <HeroSkillTreeDefinition Name="HeroSkillTreeCravers">
+        <Stage Level="0">
+            <Skill>
+                <SkillDefinition Name="HeroSkill02BranchCravers"/>
+            </Skill>
+            <Skill>
+                <SkillDefinition Name="HeroSkill01BranchCravers"/>
+            </Skill>
+        </Stage>
+        <Stage Level="3">
+            <Skill>
+                <SkillDefinition Name="HeroSkill04BranchCravers"/>
+                <RequiredSkill Name="HeroSkill02BranchCravers"/>
+            </Skill>
+            <Skill>
+                <SkillDefinition Name="HeroSkill03BranchCravers"/>
+                <RequiredSkill Name="HeroSkill01BranchCravers"/>
+            </Skill>
+        </Stage>
+        <Stage Level="6">
+            <Skill>
+                <SkillDefinition Name="HeroSkill06BranchCravers"/>
+                <RequiredSkill Name="HeroSkill04BranchCravers"/>
+            </Skill>
+            <Skill>
+                <SkillDefinition Name="HeroSkill05BranchCravers"/>
+                <RequiredSkill Name="HeroSkill03BranchCravers"/>
+            </Skill>
+        </Stage>
+        <Stage Level="9">
+            <Skill>
+                <SkillDefinition Name="HeroSkill07BranchCravers"/>
+                <RequiredSkill Name="HeroSkill06BranchCravers"/>
+                <RequiredSkill Name="HeroSkill05BranchCravers"/>
+            </Skill>
+        </Stage>
+    </HeroSkillTreeDefinition>
+  
+    <!--TERRANS TREE-->
+    <HeroSkillTreeDefinition Name="HeroSkillTreeTerrans">
+      <Stage Level="0">
+        <Skill>
+          <SkillDefinition Name="HeroSkill02BranchTerrans"/>
+        </Skill>
+        <Skill>
+          <SkillDefinition Name="HeroSkill01BranchTerrans"/>
+        </Skill>
+      </Stage>
+      <Stage Level="3">
+        <Skill>
+          <SkillDefinition Name="HeroSkill04BranchTerrans"/>
+          <RequiredSkill Name="HeroSkill02BranchTerrans"/>
+        </Skill>
+        <Skill>
+          <SkillDefinition Name="HeroSkill03BranchTerrans"/>
+          <RequiredSkill Name="HeroSkill01BranchTerrans"/>
+        </Skill>
+      </Stage>
+      <Stage Level="6">
+        <Skill>
+          <SkillDefinition Name="HeroSkill06BranchTerrans"/>
+          <RequiredSkill Name="HeroSkill04BranchTerrans"/>
+        </Skill>
+        <Skill>
+          <SkillDefinition Name="HeroSkill05BranchTerrans"/>
+            <RequiredSkill Name="HeroSkill03BranchTerrans"/>
+        </Skill>
+      </Stage>
+      <Stage Level="9">
+        <Skill>
+          <SkillDefinition Name="HeroSkill07BranchTerrans"/>
+          <RequiredSkill Name="HeroSkill06BranchTerrans"/>
+          <RequiredSkill Name="HeroSkill05BranchTerrans"/>
+        </Skill>
+      </Stage>
+    </HeroSkillTreeDefinition>
+	
+	<!--HORATIO TREE-->
+	<HeroSkillTreeDefinition Name="HeroSkillTreeHoratio">
+		<Stage Level="0">
+			<Skill>
+				<SkillDefinition Name="HeroSkill01BranchHoratio"/>
+			</Skill>
+			<Skill>
+				<SkillDefinition Name="HeroSkill02BranchHoratio"/>
+			</Skill>
+		</Stage>
+		<Stage Level="3">
+			<Skill>
+				<SkillDefinition Name="HeroSkill04BranchHoratio"/>
+        <RequiredSkill Name="HeroSkill01BranchHoratio"/>
+			</Skill>
+			<Skill>
+				<SkillDefinition Name="HeroSkill03BranchHoratio"/>
+        <RequiredSkill Name="HeroSkill02BranchHoratio"/>
+			</Skill>
+		</Stage>
+		<Stage Level="6">
+			<Skill>
+				<SkillDefinition Name="HeroSkill05BranchHoratio"/>
+            <RequiredSkill Name="HeroSkill04BranchHoratio"/>
+			</Skill>
+			<Skill>
+				<SkillDefinition Name="HeroSkill06BranchHoratio"/>
+            <RequiredSkill Name="HeroSkill03BranchHoratio"/>
+			</Skill>
+		</Stage>
+		<Stage Level="9">
+			<Skill>
+				<SkillDefinition Name="HeroSkill07BranchHoratio"/>
+        <RequiredSkill Name="HeroSkill05BranchHoratio"/>
+        <RequiredSkill Name="HeroSkill06BranchHoratio"/>
+			</Skill>
+		</Stage>
+	</HeroSkillTreeDefinition>
+	
+    <!--Venetians TREE-->
+    <HeroSkillTreeDefinition Name="HeroSkillTreeVenetians">
+        <Stage Level="0">
+            <Skill>
+                <SkillDefinition Name="HeroSkill01BranchVenetians"/>
+            </Skill>
+            <Skill>
+                <SkillDefinition Name="HeroSkill02BranchVenetians"/>
+            </Skill>
+        </Stage>
+        <Stage Level="3">
+            <Skill>
+                <SkillDefinition Name="HeroSkill03BranchVenetians"/>
+                <RequiredSkill Name="HeroSkill01BranchVenetians"/>
+            </Skill>
+            <Skill>
+                <SkillDefinition Name="HeroSkill04BranchVenetians"/>
+                <RequiredSkill Name="HeroSkill02BranchVenetians"/>
+            </Skill>
+        </Stage>
+        <Stage Level="6">
+            <Skill>
+                <SkillDefinition Name="HeroSkill05BranchVenetians"/>
+                <RequiredSkill Name="HeroSkill03BranchVenetians"/>
+            </Skill>
+            <Skill>
+                <SkillDefinition Name="HeroSkill06BranchVenetians"/>
+                <RequiredSkill Name="HeroSkill04BranchVenetians"/>
+            </Skill>
+        </Stage>
+        <Stage Level="9">
+            <Skill>
+                <SkillDefinition Name="HeroSkill07BranchVenetians"/>
+                <RequiredSkill Name="HeroSkill05BranchVenetians"/>
+                <RequiredSkill Name="HeroSkill06BranchVenetians"/>
+            </Skill>
+        </Stage>
+    </HeroSkillTreeDefinition>
+
+    <!--VAMPIRILIS TREE-->
+    <HeroSkillTreeDefinition Name="HeroSkillTreeVampirilis">
+        <Stage Level="0">
+            <Skill>
+                <SkillDefinition Name="HeroSkill01BranchVampirilis"/>
+            </Skill>
+            <Skill>
+                <SkillDefinition Name="HeroSkill02BranchVampirilis"/>
+            </Skill>
+        </Stage>
+        <Stage Level="3">
+            <Skill>
+                <SkillDefinition Name="HeroSkill03BranchVampirilis"/>
+                <RequiredSkill Name="HeroSkill01BranchVampirilis"/>
+            </Skill>
+            <Skill>
+                <SkillDefinition Name="HeroSkill04BranchVampirilis"/>
+                <RequiredSkill Name="HeroSkill02BranchVampirilis"/>
+            </Skill>
+        </Stage>
+        <Stage Level="6">
+            <Skill>
+                <SkillDefinition Name="HeroSkill06BranchVampirilis"/>
+                <RequiredSkill Name="HeroSkill03BranchVampirilis"/>
+            </Skill>
+            <Skill>
+                <SkillDefinition Name="HeroSkill05BranchVampirilis"/>
+                <RequiredSkill Name="HeroSkill04BranchVampirilis"/> 
+            </Skill>
+        </Stage>
+        <Stage Level="9">
+            <Skill>
+                <SkillDefinition Name="HeroSkill07BranchVampirilis"/>
+                <RequiredSkill Name="HeroSkill06BranchVampirilis"/>
+                <RequiredSkill Name="HeroSkill05BranchVampirilis"/>
+            </Skill>
+        </Stage>
+    </HeroSkillTreeDefinition>
+	
+	<!--TimeLords TREE-->
+	<HeroSkillTreeDefinition Name="HeroSkillTreeTimeLords">
+		<Stage Level="0">
+			<Skill>
+				<SkillDefinition Name="HeroSkill02BranchTimeLords"/>
+			</Skill>
+			<Skill>
+				<SkillDefinition Name="HeroSkill01BranchTimeLords"/>
+			</Skill>
+		</Stage>
+		<Stage Level="3">
+			<Skill>
+				<SkillDefinition Name="HeroSkill03BranchTimeLords"/>
+            <RequiredSkill Name="HeroSkill02BranchTimeLords"/>
+			</Skill>
+			<Skill>
+				<SkillDefinition Name="HeroSkill04BranchTimeLords"/>
+            <RequiredSkill Name="HeroSkill01BranchTimeLords"/>
+			</Skill>
+		</Stage>
+		<Stage Level="6">
+			<Skill>
+				<SkillDefinition Name="HeroSkill05BranchTimeLords"/>
+        <RequiredSkill Name="HeroSkill03BranchTimeLords"/>
+			</Skill>
+			<Skill>
+				<SkillDefinition Name="HeroSkill06BranchTimeLords"/>
+        <RequiredSkill Name="HeroSkill04BranchTimeLords"/>
+			</Skill>
+		</Stage>
+		<Stage Level="9">
+			<Skill>
+				<SkillDefinition Name="HeroSkill07BranchTimeLords"/>
+        <RequiredSkill Name="HeroSkill05BranchTimeLords"/>
+        <RequiredSkill Name="HeroSkill06BranchTimeLords"/>
+			</Skill>
+		</Stage>
+	</HeroSkillTreeDefinition>
+
+    <!--Unfallen TREE-->
+    <HeroSkillTreeDefinition Name="HeroSkillTreeUnfallen">
+        <Stage Level="0">
+            <Skill>
+                <SkillDefinition Name="HeroSkill02BranchUnfallen"/>
+            </Skill>
+            <Skill>
+                <SkillDefinition Name="HeroSkill01BranchUnfallen"/>
+            </Skill>
+        </Stage>
+        <Stage Level="3">
+            <Skill>
+                <SkillDefinition Name="HeroSkill04BranchUnfallen"/>
+                <RequiredSkill Name="HeroSkill02BranchUnfallen"/>
+            </Skill>
+            <Skill>
+                <SkillDefinition Name="HeroSkill03BranchUnfallen"/>
+                <RequiredSkill Name="HeroSkill01BranchUnfallen"/>
+            </Skill>
+        </Stage>
+        <Stage Level="6">
+            <Skill>
+                <SkillDefinition Name="HeroSkill05BranchUnfallen"/>
+                <RequiredSkill Name="HeroSkill04BranchUnfallen"/>
+            </Skill>
+            <Skill>
+                <SkillDefinition Name="HeroSkill07BranchUnfallen"/>
+                <RequiredSkill Name="HeroSkill03BranchUnfallen"/>
+            </Skill>
+        </Stage>
+        <Stage Level="9">
+            <Skill>
+                <SkillDefinition Name="HeroSkill06BranchUnfallen"/>
+                <RequiredSkill Name="HeroSkill05BranchUnfallen"/>
+                <RequiredSkill Name="HeroSkill07BranchUnfallen"/>
+            </Skill>
+        </Stage>
+    </HeroSkillTreeDefinition>
+
+    <!--MINORFACTION01 TREE (SCAVENGERS)-->
+    <HeroSkillTreeDefinition Name="HeroSkillTreeMinorFaction01">
+        <Stage Level="0">
+            <Skill>
+                <SkillDefinition Name="HeroSkill01BranchMinorFaction01"/>
+            </Skill>
+            <Skill>
+                <SkillDefinition Name="HeroSkill02BranchMinorFaction01"/>
+            </Skill>
+        </Stage>
+        <Stage Level="3">
+            <Skill>
+                <SkillDefinition Name="HeroSkill04BranchMinorFaction01"/>
+                <RequiredSkill Name="HeroSkill01BranchMinorFaction01"/>
+            </Skill>
+            <Skill>
+                <SkillDefinition Name="HeroSkill03BranchMinorFaction01"/>
+                <RequiredSkill Name="HeroSkill02BranchMinorFaction01"/>
+            </Skill>
+        </Stage>
+        <Stage Level="6">
+            <Skill>
+                <SkillDefinition Name="HeroSkill05BranchMinorFaction01"/>
+              <RequiredSkill Name="HeroSkill04BranchMinorFaction01"/>
+            </Skill>
+            <Skill>
+                <SkillDefinition Name="HeroSkill06BranchMinorFaction01"/>
+              <RequiredSkill Name="HeroSkill03BranchMinorFaction01"/>
+            </Skill>
+        </Stage>
+        <Stage Level="9">
+            <Skill>
+                <SkillDefinition Name="HeroSkill07BranchMinorFaction01"/>
+                <RequiredSkill Name="HeroSkill05BranchMinorFaction01"/>
+                <RequiredSkill Name="HeroSkill06BranchMinorFaction01"/>
+            </Skill>
+        </Stage>
+    </HeroSkillTreeDefinition>
+  
+  <!--MINORFACTION02 TREE (Eusocial) -->
+    <HeroSkillTreeDefinition Name="HeroSkillTreeMinorFaction02">
+        <Stage Level="0">
+            <Skill>
+                <SkillDefinition Name="HeroSkill01BranchMinorFaction02"/>
+            </Skill>
+          <Skill>
+            <SkillDefinition Name="HeroSkill02BranchMinorFaction02"/>
+          </Skill>
+        </Stage>
+        <Stage Level="3">
+            <Skill>
+                <SkillDefinition Name="HeroSkill05BranchMinorFaction02"/>
+                <RequiredSkill Name="HeroSkill01BranchMinorFaction02"/>
+            </Skill>
+          <Skill>
+              <SkillDefinition Name="HeroSkill04BranchMinorFaction02"/>
+              <RequiredSkill Name="HeroSkill02BranchMinorFaction02"/>
+          </Skill>
+        </Stage>
+        <Stage Level="6">
+            <Skill>
+              <SkillDefinition Name="HeroSkill06BranchMinorFaction02"/>
+              <RequiredSkill Name="HeroSkill05BranchMinorFaction02"/>
+            </Skill>
+          <Skill>
+            <SkillDefinition Name="HeroSkill03BranchMinorFaction02"/>
+            <RequiredSkill Name="HeroSkill04BranchMinorFaction02"/>
+          </Skill>
+        </Stage>
+        <Stage Level="9">
+            <Skill>
+                <SkillDefinition Name="HeroSkill07BranchMinorFaction02"/>
+                <RequiredSkill Name="HeroSkill06BranchMinorFaction02"/>
+                <RequiredSkill Name="HeroSkill03BranchMinorFaction02"/>
+            </Skill>
+        </Stage>
+    </HeroSkillTreeDefinition>
+
+	<!--MinorFaction03 TREE (Technologists)-->
+	<HeroSkillTreeDefinition Name="HeroSkillTreeMinorFaction03">
+		<Stage Level="0">
+			<Skill>
+				<SkillDefinition Name="HeroSkill01BranchMinorFaction03"/>
+			</Skill>
+			<Skill>
+				<SkillDefinition Name="HeroSkill02BranchMinorFaction03"/>
+			</Skill>
+		</Stage>
+		<Stage Level="3">
+			<Skill>
+				<SkillDefinition Name="HeroSkill06BranchMinorFaction03"/>
+        <RequiredSkill Name="HeroSkill01BranchMinorFaction03"/>
+			</Skill>
+			<Skill>
+				<SkillDefinition Name="HeroSkill04BranchMinorFaction03"/>
+        <RequiredSkill Name="HeroSkill02BranchMinorFaction03"/>
+			</Skill>
+		</Stage>
+		<Stage Level="6">
+			<Skill>
+				<SkillDefinition Name="HeroSkill05BranchMinorFaction03"/>
+        <RequiredSkill Name="HeroSkill06BranchMinorFaction03"/>
+			</Skill>
+			<Skill>
+				<SkillDefinition Name="HeroSkill03BranchMinorFaction03"/>
+            <RequiredSkill Name="HeroSkill04BranchMinorFaction03"/>
+			</Skill>
+		</Stage>
+		<Stage Level="9">
+			<Skill>
+				<SkillDefinition Name="HeroSkill07BranchMinorFaction03"/>
+        <RequiredSkill Name="HeroSkill05BranchMinorFaction03"/>
+        <RequiredSkill Name="HeroSkill03BranchMinorFaction03"/>
+			</Skill>
+		</Stage>
+	</HeroSkillTreeDefinition>
+	
+	<!--MinorFaction04 TREE (primitives)-->
+	<HeroSkillTreeDefinition Name="HeroSkillTreeMinorFaction04">
+		<Stage Level="0">
+			<Skill>
+				<SkillDefinition Name="HeroSkill03BranchMinorFaction04"/>
+			</Skill>
+			<Skill>
+				<SkillDefinition Name="HeroSkill02BranchMinorFaction04"/>
+			</Skill>
+		</Stage>
+		<Stage Level="3">
+			<Skill>
+				<SkillDefinition Name="HeroSkill04BranchMinorFaction04"/>
+        <RequiredSkill Name="HeroSkill03BranchMinorFaction04"/>
+			</Skill>
+			<Skill>
+				<SkillDefinition Name="HeroSkill01BranchMinorFaction04"/>
+        <RequiredSkill Name="HeroSkill02BranchMinorFaction04"/>
+			</Skill>
+		</Stage>
+		<Stage Level="6">
+			<Skill>
+				<SkillDefinition Name="HeroSkill05BranchMinorFaction04"/>
+        <RequiredSkill Name="HeroSkill04BranchMinorFaction04"/>
+			</Skill>
+			<Skill>
+				<SkillDefinition Name="HeroSkill06BranchMinorFaction04"/>
+        <RequiredSkill Name="HeroSkill01BranchMinorFaction04"/>
+			</Skill>
+		</Stage>
+		<Stage Level="9">
+			<Skill>
+				<SkillDefinition Name="HeroSkill07BranchMinorFaction04"/>
+        <RequiredSkill Name="HeroSkill05BranchMinorFaction04"/>
+        <RequiredSkill Name="HeroSkill06BranchMinorFaction04"/>
+			</Skill>
+		</Stage>
+	</HeroSkillTreeDefinition>
+
+    <!--ENDLESS TREE-->
+    <HeroSkillTreeDefinition Name="HeroSkillTreeEndless">
+        <Stage Level="0">
+            <Skill>
+                <SkillDefinition Name="HeroSkill01BranchEndless"/>
+            </Skill>
+            <Skill>
+                <SkillDefinition Name="HeroSkill02BranchEndless"/>
+            </Skill>
+        </Stage>
+        <Stage Level="3">
+            <Skill>
+                <SkillDefinition Name="HeroSkill03BranchEndless"/>
+                <RequiredSkill Name="HeroSkill01BranchEndless"/>
+            </Skill>
+            <Skill>
+                <SkillDefinition Name="HeroSkill04BranchEndless"/>
+                <RequiredSkill Name="HeroSkill02BranchEndless"/>
+            </Skill>
+        </Stage>
+        <Stage Level="6">
+            <Skill>
+            <SkillDefinition Name="HeroSkill07BranchEndless"/>
+                <RequiredSkill Name="HeroSkill03BranchEndless"/>
+            </Skill>           
+            <Skill>
+                <SkillDefinition Name="HeroSkill06BranchEndless"/>
+                <RequiredSkill Name="HeroSkill04BranchEndless"/>
+            </Skill>
+        </Stage>
+        <Stage Level="9">
+          <Skill>
+            <SkillDefinition Name="HeroSkill05BranchEndless"/>
+            <RequiredSkill Name="HeroSkill07BranchEndless"/>
+            <RequiredSkill Name="HeroSkill06BranchEndless"/>
+          </Skill>
+        </Stage>
+    </HeroSkillTreeDefinition>
+</Datatable>

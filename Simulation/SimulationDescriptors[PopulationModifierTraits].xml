@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+
+    <!-- PopulationPlanet descriptors (provide bonuses to the population on the planet, and is used by the Collection bonuses/Boost bonuses). -->
+   <SimulationDescriptor Name="ClassPopulationStarSystemModifiersTraitPrimarySlowGrowthFIDS" Type="ClassPopulationStarSystem">
+      <!--<Modifier       TargetProperty="GrowthMalusPopulationCount"    Operation="Addition" Value="$(PopulationCount)"  Path="ClassPopulationStarSystemModifiersTraitPrimarySlowGrowthFIDS/../ClassColonizedStarSystem" TooltipOverride="%PopulationModifiersGrowthMalusEffectOverride"/>-->
+      <Modifier 		TargetProperty="SystemGrowth"          Operation="Percent"     Value="-0.1" Priority="10" Path="../ClassStarSystem"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="ClassPopulationPlanetModifiersTraitSecondaryDustFertile" Type="ClassPopulationPlanet">
+      <Modifier       TargetProperty="BonusPopulationDust"    Operation="Addition"    Value="3"   Path="FAKEFORGUI/./PlanetGameplayTypeTemperate"/>
+      <BinaryModifier TargetProperty="BonusPopulationDust"    Operation="Addition"    Left="3"    BinaryOperation="Multiplication" Right="$(PlanetIsTemperate)" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="WithPopulationPlanetModifiersTraitSecondaryDustFertile" Type="WithPopulationPlanet">
+      <Modifier TargetProperty="BonusPopulationDust"      Operation="Addition" Value="3"  Path="FAKEFORGUI/./PlanetGameplayTypeTemperate"/>
+      <Modifier TargetProperty="BonusPopulationDust"      Operation="Addition" Value="3"  Path="PopulationGrowthScoreBoosted/./ClassEmpire/ClassColonizedStarSystem/PlanetGameplayTypeTemperate/ClassPopulationPlanetModifiersTraitSecondaryDustFertile" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="ClassPopulationPlanetModifiersTraitSecondaryScienceCold" Type="ClassPopulationPlanet">
+      <Modifier       TargetProperty="BonusPopulationScience" Operation="Addition"    Value="3"   Path="FAKEFORGUI/./PlanetGameplayTypeStable"/>
+      <BinaryModifier TargetProperty="BonusPopulationScience" Operation="Addition"    Left="3"    BinaryOperation="Multiplication" Right="$(PlanetIsStable)" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="WithPopulationPlanetModifiersTraitSecondaryScienceCold" Type="WithPopulationPlanet">
+      <Modifier TargetProperty="BonusPopulationScience"   Operation="Addition" Value="3"  Path="FAKEFORGUI/./PlanetGameplayTypeStable"/>
+
+      <Modifier TargetProperty="BonusPopulationScience"   Operation="Addition" Value="3"  Path="PopulationGrowthScoreBoosted/./ClassEmpire/ClassColonizedStarSystem/PlanetGameplayTypeStable/ClassPopulationPlanetModifiersTraitSecondaryScienceCold" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+
+</Datatable>

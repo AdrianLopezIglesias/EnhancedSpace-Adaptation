@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+    <!-- PLAYS -->
+    <GuiElement Name="GroundBattleAttackerStrategy1">
+        <Title>%NotificationGroundBattleSetupAttackerStrategy1Title</Title>
+        <Description>%NotificationGroundBattleSetupAttackerStrategy1Description</Description>
+        <Icons>
+            <Icon Size="Large" Path="Bitmaps/Dynamic/GroundBattle/GroundBattleAttackerStrategy1Large" />
+        </Icons>
+    </GuiElement>
+
+    <GuiElement Name="GroundBattleAttackerStrategy2">
+        <Title>%NotificationGroundBattleSetupAttackerStrategy2Title</Title>
+        <Description>%NotificationGroundBattleSetupAttackerStrategy2Description</Description>
+        <Icons>
+            <Icon Size="Large" Path="Bitmaps/Dynamic/GroundBattle/GroundBattleAttackerStrategy2Large" />
+        </Icons>
+    </GuiElement>
+	
+	  <GuiElement Name="GroundBattleAttackerStrategy2Tikanans">
+		  <Title>%NotificationGroundBattleSetupAttackerStrategy2TikanansTitle</Title>
+		  <Description>%NotificationGroundBattleSetupAttackerStrategy2TikanansDescription</Description>
+		  <Icons>
+			  <Icon Size="Large" Path="Bitmaps/Dynamic/GroundBattle/GroundBattleAttackerStrategy2Large" />
+		  </Icons>
+	  </GuiElement>
+
+    <GuiElement Name="GroundBattleAttackerStrategy3_1">
+        <Title>%NotificationGroundBattleSetupAttackerStrategy3Title_1</Title>
+        <Description>%NotificationGroundBattleSetupAttackerStrategy3Description</Description>
+        <Icons>
+            <Icon Size="Large" Path="Bitmaps/Dynamic/GroundBattle/GroundBattleAttackerStrategy3Large" />
+        </Icons>
+    </GuiElement>
+
+    <GuiElement Name="GroundBattleAttackerStrategy3_2">
+      <Title>%NotificationGroundBattleSetupAttackerStrategy3Title_2</Title>
+      <Description>%NotificationGroundBattleSetupAttackerStrategy3Description</Description>
+      <Icons>
+        <Icon Size="Large" Path="Bitmaps/Dynamic/GroundBattle/GroundBattleAttackerStrategy3Large" />
+      </Icons>
+    </GuiElement>
+
+    <GuiElement Name="GroundBattleAttackerStrategy3_3">
+      <Title>%NotificationGroundBattleSetupAttackerStrategy3Title_3</Title>
+      <Description>%NotificationGroundBattleSetupAttackerStrategy3Description</Description>
+      <Icons>
+        <Icon Size="Large" Path="Bitmaps/Dynamic/GroundBattle/GroundBattleAttackerStrategy3Large" />
+      </Icons>
+    </GuiElement>
+
+    <GuiElement Name="GroundBattleAttackerStrategy4">
+      <Title>%NotificationGroundBattleSetupAttackerStrategy4Title</Title>
+      <Description>%NotificationGroundBattleSetupAttackerStrategy4Description</Description>
+      <Icons>
+        <Icon Size="Large" Path="GroundBattleAttackerStrategy4Large" />
+      </Icons>
+    </GuiElement>
+
+    <GuiElement Name="GroundBattleDefenderStrategy1">
+        <Title>%NotificationGroundBattleSetupDefenderStrategy1Title</Title>
+        <Description>%NotificationGroundBattleSetupDefenderStrategy1Description</Description>
+        <Icons>
+            <Icon Size="Large" Path="Bitmaps/Dynamic/GroundBattle/GroundBattleDefenderStrategy1Large" />
+        </Icons>
+    </GuiElement>
+
+    <GuiElement Name="GroundBattleDefenderStrategy1Terrans">
+        <Title>%NotificationGroundBattleSetupDefenderStrategy1TerransTitle</Title>
+        <Description>%NotificationGroundBattleSetupDefenderStrategy1TerransDescription</Description>
+        <Icons>
+            <Icon Size="Large" Path="Bitmaps/Dynamic/GroundBattle/GroundBattleDefenderStrategy1UELarge" />
+        </Icons>
+    </GuiElement>
+
+    <GuiElement Name="GroundBattleDefenderStrategy2">
+        <Title>%NotificationGroundBattleSetupDefenderStrategy2Title</Title>
+        <Description>%NotificationGroundBattleSetupDefenderStrategy2Description</Description>
+        <Icons>
+            <Icon Size="Large" Path="Bitmaps/Dynamic/GroundBattle/GroundBattleDefenderStrategy2Large" />
+        </Icons>
+    </GuiElement>
+	
+	<GuiElement Name="GroundBattleDefenderStrategy2Gnashasts">
+		<Title>%NotificationGroundBattleSetupDefenderStrategy2GnashastsTitle</Title>
+		<Description>%NotificationGroundBattleSetupDefenderStrategy2GnashastsDescription</Description>
+		<Icons>
+			<Icon Size="Large" Path="Bitmaps/Dynamic/GroundBattle/GroundBattleDefenderStrategy2Large" />
+		</Icons>
+	</GuiElement>
+    
+    <GuiElement Name="GroundBattleDefenderStrategy3B">
+        <Title>%NotificationGroundBattleSetupDefenderStrategy3Title</Title>
+        <Description>%NotificationGroundBattleSetupDefenderStrategy3Description</Description>
+        <Icons>
+            <Icon Size="Large" Path="Bitmaps/Dynamic/GroundBattle/GroundBattleDefenderStrategy3Large" />
+        </Icons>
+    </GuiElement>
+	
+	<GuiElement Name="GroundBattleDefenderStrategy3BBhagabas">
+		<Title>%NotificationGroundBattleSetupDefenderStrategy3BhagabasTitle</Title>
+		<Description>%NotificationGroundBattleSetupDefenderStrategy3BhagabasDescription</Description>
+		<Icons>
+			<Icon Size="Large" Path="Bitmaps/Dynamic/GroundBattle/GroundBattleDefenderStrategy3Large" />
+		</Icons>
+	</GuiElement>
+
+  <GuiElement Name="GroundBattleDefenderStrategy4">
+    <Title>%NotificationGroundBattleSetupDefenderStrategy4Title</Title>
+    <Description>%NotificationGroundBattleSetupDefenderStrategy4Description</Description>
+    <Icons>
+      <Icon Size="Large" Path="GroundBattleDefenderStrategy4Large" />
+    </Icons>
+  </GuiElement>
+
+    <!--MINOR FACTIONS PLAYS-->
+        <!--NORMAL-->
+    <GuiElement Name="GroundBattleAttackerStrategyMinorFaction">
+        <Title>%NotificationGroundBattleSetupAttackerStrategyMinorFactionTitle</Title>
+        <Description>%NotificationGroundBattleSetupAttackerStrategyMinorFactionDescription</Description>
+        <Icons><Icon Size="Large" Path="Bitmaps/Dynamic/GroundBattle/GroundBattleAttackerPirateLarge" /></Icons>
+    </GuiElement>
+    <GuiElement Name="GroundBattleDefenderStrategyMinorFaction">
+        <Title>%NotificationGroundBattleSetupDefenderStrategyMinorFactionTitle</Title>
+        <Description>%NotificationGroundBattleSetupDefenderStrategyMinorFactionDescription</Description>
+        <Icons>
+            <Icon Size="Large" Path="Bitmaps/Dynamic/GroundBattle/GroundBattleDefenderPirateLarge" />
+        </Icons>
+    </GuiElement>
+    <!--EASY-->
+    <GuiElement Name="GroundBattleAttackerStrategyMinorFactionEasy">
+        <Title>%NotificationGroundBattleSetupAttackerStrategyMinorFactionTitle</Title>
+        <Description>%NotificationGroundBattleSetupAttackerStrategyMinorFactionDescription</Description>
+        <Icons>
+            <Icon Size="Large" Path="Bitmaps/Dynamic/GroundBattle/GroundBattleAttackerPirateLarge" />
+        </Icons>
+    </GuiElement>
+    <GuiElement Name="GroundBattleDefenderStrategyMinorFactionEasy">
+        <Title>%NotificationGroundBattleSetupDefenderStrategyMinorFactionTitle</Title>
+        <Description>%NotificationGroundBattleSetupDefenderStrategyMinorFactionDescription</Description>
+        <Icons>
+            <Icon Size="Large" Path="Bitmaps/Dynamic/GroundBattle/GroundBattleDefenderPirateLarge" />
+        </Icons>
+    </GuiElement>
+    <!--HARD-->
+    <GuiElement Name="GroundBattleAttackerStrategyMinorFactionHard">
+        <Title>%NotificationGroundBattleSetupAttackerStrategyMinorFactionTitle</Title>
+        <Description>%NotificationGroundBattleSetupAttackerStrategyMinorFactionDescription</Description>
+        <Icons>
+            <Icon Size="Large" Path="Bitmaps/Dynamic/GroundBattle/GroundBattleAttackerPirateLarge" />
+        </Icons>
+    </GuiElement>
+    <GuiElement Name="GroundBattleDefenderStrategyMinorFactionHard">
+        <Title>%NotificationGroundBattleSetupDefenderStrategyMinorFactionTitle</Title>
+        <Description>%NotificationGroundBattleSetupDefenderStrategyMinorFactionDescription</Description>
+        <Icons>
+            <Icon Size="Large" Path="Bitmaps/Dynamic/GroundBattle/GroundBattleDefenderPirateLarge" />
+        </Icons>
+    </GuiElement>
+
+    <!--LESSER EMPIRE-->
+    <GuiElement Name="GroundBattleAttackerStrategyLesserEmpire">
+        <Title>%NotificationGroundBattleSetupAttackerStrategyLesserEmpireTitle</Title>
+        <Description>%NotificationGroundBattleSetupAttackerStrategyLesserEmpireDescription</Description>
+        <Icons>
+            <Icon Size="Large" Path="Bitmaps/Dynamic/GroundBattle/GroundBattleAttackerPirateLarge" />
+        </Icons>
+    </GuiElement>
+    <GuiElement Name="GroundBattleDefenderStrategyLesserEmpire">
+        <Title>%NotificationGroundBattleSetupDefenderStrategyLesserEmpireTitle</Title>
+        <Description>%NotificationGroundBattleSetupDefenderStrategyLesserEmpireDescription</Description>
+        <Icons>
+            <Icon Size="Large" Path="Bitmaps/Dynamic/GroundBattle/GroundBattleDefenderPirateLarge" />
+        </Icons>
+    </GuiElement>
+
+    <!--PIRATE EMPIRE-->
+    <GuiElement Name="GroundBattleAttackerStrategyPirateEmpire">
+        <Title>%NotificationGroundBattleSetupAttackerStrategyPirateEmpireTitle</Title>
+        <Description>%NotificationGroundBattleSetupAttackerStrategyPirateEmpireDescription</Description>
+        <Icons>
+            <Icon Size="Large" Path="Bitmaps/Dynamic/GroundBattle/GroundBattleAttackerPirateLarge" />
+        </Icons>
+    </GuiElement>
+    <GuiElement Name="GroundBattleDefenderStrategyPirateEmpire">
+        <Title>%NotificationGroundBattleSetupDefenderStrategyPirateEmpireTitle</Title>
+        <Description>%NotificationGroundBattleSetupDefenderStrategyPirateEmpireDescription</Description>
+        <Icons>
+            <Icon Size="Large" Path="Bitmaps/Dynamic/GroundBattle/GroundBattleDefenderPirateLarge" />
+        </Icons>
+    </GuiElement>
+
+</Datatable>

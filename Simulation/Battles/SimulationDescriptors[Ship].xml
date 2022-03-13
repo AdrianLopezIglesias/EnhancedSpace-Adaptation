@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+
+    <!-- ******************** -->
+    <!-- ** Base Ship Class ** -->
+    <!-- ******************** -->
+
+      <SimulationDescriptor Name="ClassShip" Type="Class">
+
+        <!-- Added for mod -->
+
+        <Property Name="MaximumMovementFleet"           BaseValue="0"/>
+        <Property Name="DamageBonusPerTargetCommandPointsFleet" BaseValue="0"/>
+
+        <!-- end of mod properties -->
+    
+        <!-- Base values -->
+        <Property Name="CommandPoints"                  BaseValue="0"/>
+        <Property Name="GarrisonMoneyUpkeep"            BaseValue="0"/>
+        <Property Name="GarrisonMoneyUpkeepMultiplierFromJuggernauts"   BaseValue="1" MaxValue="1024"/>
+        <Property Name="ScrapPriority"                  BaseValue="0" MinValue="Negative"/>
+        <Property Name="VisualImportanceScore"          BaseValue="0"/>
+        <Property Name="TradeValue"                     BaseValue="0"/>
+        <Property Name="IndustryCost"                   BaseValue="0" IsSealed="true"/>
+		<Property Name="CuriositiesDiscovered"	/>
+        <Property Name="ShipStage" BaseValue="0"/>
+        <Property Name="ShipCount" BaseValue="1" />
+        <Property Name="ShipHullIndex"                  BaseValue="0"/>
+
+        <!-- feedback ui -->
+        <Property Name="Health"                         BaseValue="0" />
+        <Property Name="MaximumHealth"                  BaseValue="0" MinValue="Negative"  />
+
+		<Property Name="SquadronFighterCount"			BaseValue="0"/>
+		<Property Name="SquadronBomberCount"			BaseValue="0"/>
+
+        <Property Name="FighterUnitsCount"			    BaseValue="0"/>
+        <Property Name="BomberUnitsCount"			    BaseValue="0"/>
+
+        <Property Name="FlatHealthRegeneration"         BaseValue="0" MinValue="0"/>
+        <Property Name="HealthRegenerationRatio"        BaseValue="0" MinValue="0" MaxValue="1"/>
+
+        <!-- Battle -->
+        <Property Name="RepairAfterBattle"              BaseValue="0" MinValue="0"/>
+        <Property Name="RepairAfterBattleFlat"          BaseValue="0" MinValue="0" IsSealed="true"/>
+        <Property Name="RepairAfterPhase"               BaseValue="0" MinValue="0"/>
+
+		<Property Name="SizeDamageMultiplierForSquadron" BaseValue="1"/>
+
+        <Property Name="EmpireInfantryLevel"            BaseValue="0"/>
+        <Property Name="EmpireInfantryHP"               BaseValue="0"/>
+        <Property Name="EmpireInfantryMinDamage"        BaseValue="0"/>
+        
+        <!--!-Defined by ship size -->
+        <Property Name="ShieldRadius"                   BaseValue="0"/>
+
+        <!--Do not remove: weaponAccuracy - targetEvasion (Ship) - rangePenalty (ModuleDefinition) -->
+        <Property Name="Evasion"                        BaseValue="0" MaxValue="0.60"/> <!-- modded -->
+
+        <Property Name="TargetingWeightBonus"           BaseValue="0" MinValue="Negative"/>
+
+        <Property Name="VisionRange"                    BaseValue="0.5" Composition="Maximum"/> <!--modded-->
+        <Property Name="FogOfWarRange"                  BaseValue="0"/>
+        <!-- Final fog of war range will be Max(VisionRange, FogOfWarRange) -->
+
+        <!--!-Movement/Base Parameters -->
+        <!-- CAN BE MODIFIED INDIVIDUALLY -->
+        <Property Name="MaximumMovement"                BaseValue="2" MinValue="1"/>
+        <Property Name="Movement"                       MinValue="0"    IsSerializable="true"/>
+        <Property Name="SpentMovement"                  IsSerializable="true"   IsSealed="true"/> <!-- Do not modify -->
+
+        <!-- SPEEDS NEED TO BE AFFECTED BY EMPIRE WIDE ELEMENTS -->
+        <Property Name="GlobalSpeed"                    BaseValue="2"/>
+        <Property Name="WarpSpeed"                      BaseValue="1"/>
+        <!-- in parsec per movement point. -->
+        <Property Name="WormholeSpeed"                  BaseValue="0"/>
+        <!-- in wormhole/portal per move. -->
+        <Property Name="FreeMovementSpeed"              BaseValue="0"/>
+        <!-- in parsec per movement point. -->
+
+        <Property Name="PortalMaximumCost"              BaseValue="10000"/>
+
+
+        <Property Name="NetActionPoint"                 BaseValue="1"/>
+        <Property Name="ActionPointStock"               BaseValue="1" IsSealed="true"   IsSerializable="true"/>
+        <Property Name="MaximumActionPointStock"        BaseValue="1"/>
+        <Property Name="MinimumActionPointStock"        BaseValue="0"/>
+
+        <!-- Military Power -->
+        <Property Name="MilitaryPower"                          BaseValue="0"/>
+        <Property Name="RelativeMilitaryPower"                  BaseValue="0"/>
+        <Property Name="OffensiveMilitaryPower" Composition="Sum"/>
+        <Property Name="DefensiveMilitaryPower" Composition="Sum"/>
+        <Property Name="OffensiveMilitaryPowerForSimplifiedBattles" Composition="Sum"/>
+        <Property Name="ShownMilitaryPowerMultiplier"   BaseValue="1"/>
+        <Property Name="ShownHealthMultiplier"          BaseValue="1"/>
+        <Property Name="ShownOffensiveMilitaryPower" BaseValue="0"/>
+        <Property Name="ShownDefensiveMilitaryPower" BaseValue="0"/>
+
+
+        <!-- Invasion -->
+        <Property Name="ShipManpowerStock" 			     IsSealed="true"/>
+        <Property Name="MaximumShipManpower" 		     BaseValue="0"/>
+        <Property Name="NetShipManpower" 		         BaseValue="0"/>
+                                                         
+        <Property Name="OpponentRecyclingDustPerCP" 	    BaseValue="0"/>
+        <Property Name="OpponentRecyclingSciencePerCP" 	    BaseValue="0"/>
+        <Property Name="OpponentRecyclingEmpirePointPerCP"  BaseValue="0"/>
+        <Property Name="OpponentRecyclingEssencePerCP"      BaseValue="0"/>
+        <Property Name="OpponentRecyclingStrategic1PerCP" 	BaseValue="0"/>
+        <Property Name="OpponentRecyclingStrategic2PerCP" 	BaseValue="0"/>
+        <Property Name="OpponentRecyclingEssencePerManpower" 	BaseValue="0"/>        
+
+        <Property Name="AdditionalOpponentRecyclingDustPerCP" 	    BaseValue="0"/>
+        <Property Name="AdditionalOpponentRecyclingSciencePerCP" 	    BaseValue="0"/>
+        <Property Name="AdditionalOpponentRecyclingEmpirePointPerCP"  BaseValue="0"/>
+
+        <Property Name ="SiegePower"                    MinValue="0" />
+        <Property Name ="ShipManpowerKillPerHitPercent" MinValue="0" />
+        <Property Name ="ShipManpowerKillAbsorption"    MinValue="0" MaxValue="0.95" />
+                                                         
+        <!-- Save compatibility -->                      
+        <Property Name="LocalManpower" 			         IsSealed="true"/>
+                                                         
+        <Property Name="ShipManpowerRefillRate"	         IsSealed="true"/>
+        <Property Name="MaximumShipManpowerRefillRate"	 BaseValue="0"/>
+                                                         
+        <Property Name="Experience"                      BaseValue="0" IsSealed="true"/>
+        <Property Name="ExperiencePerTurn"               BaseValue="1"/>
+        <Property Name="ExperienceBonusFromBattle"       BaseValue="0"/>
+        <Property Name="ExperienceBonusPercentFromModule" BaseValue="1"/>
+        <Property Name="Level"                           BaseValue="1" IsSealed="true"/>
+        <Property Name="ShipLevelForGUI"                 BaseValue="0"/>
+        <Property Name="NextLevelRequestedExperience"    BaseValue="0"/>
+        <Property Name="ExperienceReward"                BaseValue="4" RoundingFunction="Round"/>
+        <Property Name="ExperienceRewardFromLevel"       BaseValue="1"/>
+        <!-- Used to compute the ship XP value for admirals passive gain -->
+        <Property Name="PassiveShipExperienceRewardForAdmirals" BaseValue="0" />
+
+        <!-- Probes -->
+        <Property Name="ShipProbeStock"         IsSealed="true"/>
+        <Property Name="NetShipProbe"           BaseValue="0" MinValue="0"/>
+        <Property Name="MaximumShipProbeStock"  BaseValue="0"/>
+        <Property Name="MinimumShipProbeStock"  BaseValue="0"/>
+
+        <!-- MiningProbes -->
+        <Property Name="ShipMiningProbeStock"           IsSealed="true"/>
+        <Property Name="NetShipMiningProbe"             BaseValue="0" MinValue="0"/>
+        <Property Name="MaximumShipMiningProbeStock"    BaseValue="0"/>
+        <Property Name="MinimumShipMiningProbeStock"    BaseValue="0"/>
+
+        <!-- MiningProbes -->
+        <Property Name="ShipDetectionProbeStock"           IsSealed="true"/>
+        <Property Name="NetShipDetectionProbe"             BaseValue="0" MinValue="0"/>
+        <Property Name="MaximumShipDetectionProbeStock"    BaseValue="0"/>
+        <Property Name="MinimumShipDetectionProbeStock"    BaseValue="0"/>
+         
+        <!-- Trade -->
+        <Property Name="ShipTradingRouteBlockadePower" BaseValue="0" MinValue="0" MaxValue="1"/>
+		
+		<Property Name="RootingIncreasePerTurn" BaseValue="0" />
+
+        <!-- ***************** -->
+        <!--!-Combat property -->
+        <!-- ***************** -->
+
+        <!--!-Offensive Parameters -->
+        <Property Name="DamageBonusFromManpower"        BaseValue="0"/>
+        <Property Name="MaximumDamageBonusFromManpower" BaseValue="0.2"/>
+        
+        <Property Name="Damage"                         BaseValue="0" MinValue="-0.95"/>
+
+        <Property Name="DamageProjectile"			    BaseValue="0" MinValue="-0.95"/>
+        <Property Name="DamageKinetic"                  BaseValue="0" MinValue="-0.95"/>
+		<Property Name="DamageEnergy"				    BaseValue="0" MinValue="-0.95"/>
+        <Property Name="DamageMissile"                  BaseValue="0" MinValue="-0.95"/>
+        <Property Name="DamageLaser"                    BaseValue="0" MinValue="-0.95"/>
+        <Property Name="DamageBeam"                     BaseValue="0" MinValue="-0.95"/>
+        <Property Name="DamageShort"                    BaseValue="0" MinValue="-0.95"/>
+        <Property Name="DamageMedium"                   BaseValue="0" MinValue="-0.95"/>
+        <Property Name="DamageLong"                     BaseValue="0" MinValue="-0.95"/>
+        <Property Name="CriticalHitChance"              BaseValue="0" MinValue="-0.95"/>
+        <Property Name="ShieldPenetrationFactor"	    BaseValue="0" MinValue="-0.95"/>
+		<Property Name="HullPlatingPenetrationFactor"   BaseValue="0" MinValue="-0.95"/>
+        <Property Name="DamageShield"                   BaseValue="0" MinValue="-0.95"/>
+        <Property Name="DamageSection"                  BaseValue="0" MinValue="-0.95"/>
+        <Property Name="DamageModule"                   BaseValue="0" MinValue="-0.95"/>
+        <Property Name="DamageCore"                     BaseValue="0" MinValue="-0.95"/>
+        <Property Name="Accuracy"                       BaseValue="0" MinValue="-0.95"/>
+
+        <Property Name="DamageBonusPerTargetCommandPoints"          BaseValue="0"  MinValue="Negative"/>
+        <Property Name="DamageBonusPerOpponentShipAtLongRange"      BaseValue="0"  MinValue="Negative"/>
+
+        <!--!-Sums for GUI -->
+        <Property Name="DamagePerSecondKinetic"             BaseValue="0"/>
+        <Property Name="DamagePerSecondMissile"             BaseValue="0"/>
+        <Property Name="DamagePerSecondLaser"               BaseValue="0"/>
+        <Property Name="DamagePerSecondBeam"                BaseValue="0"/>
+        <Property Name="DamagePerSecondShort"               BaseValue="0"/>
+        <Property Name="DamagePerSecondMedium"              BaseValue="0"/>
+        <Property Name="DamagePerSecondLong"                BaseValue="0"/>
+
+        <!--!-Defensive Parameters -->
+
+		<ProportionalProperty Name="Shield"                 BaseValue="0"   IsSealed="true" IsSerializable="true" Maximum="$(MaximumShield)" StartingRatio="1"/>
+        <Property Name="MaximumShield"                      BaseValue="0"  MinValue="Negative"/>
+        <Property Name="ShieldAbsorption"                   BaseValue="0"/>
+        <Property Name="ShieldAbsorptionPercent"            BaseValue="1"/>
+        <Property Name="ShieldAbsorptionEndMultiplier"      BaseValue="0"/>
+        
+        <Property Name="ShieldReloadPerPhase"               BaseValue="0"/>
+
+        <Property Name="HullPlatingAbsorption"                  BaseValue="0" MinValue="Negative"/>
+        <Property Name="HullPlatingAbsorptionPercent"           BaseValue="1"/>
+        <Property Name="HullPlatingAbsorptionEndMultiplier"    BaseValue="0"/>
+
+        <Property Name="ShipHealth"                         BaseValue="0"  MinValue="Negative"      Composition="Sum"/>
+        <Property Name="HullWeakness"                       BaseValue="100" MinValue="Negative"/>
+
+        <Property Name="DefenseBonusOverall"				BaseValue="0"  MinValue="Negative"/>
+        <Property Name="DefenseBonusAtShortRange"           BaseValue="0"  MinValue="Negative"/>
+        <Property Name="DefenseBonusAtMediumRange"          BaseValue="0"  MinValue="Negative"/>
+        <Property Name="DefenseBonusAtLongRange"            BaseValue="0"  MinValue="Negative"/>
+
+        <Property Name="OpponentCriticalHitDamagePercent"           BaseValue="0"  MinValue="Negative"/>
+        <Property Name="FleetXPPerDamageAbsorbedByHullPlating"      BaseValue="0"/>
+        <Property Name="RepairFlatPerDamageAbsorbedByHullPlating"   BaseValue="0"/>
+
+        <Property Name="ManpowerDamageOverTimeDefense"              BaseValue="0" MaxValue="1"/>
+        <Property Name="ManpowerDamageOverTime"                     BaseValue="0"/>
+
+        <Property Name="DamagePerSecond"     BaseValue="0"/>
+
+        <Property Name="DodgeChanceAgainstSquadrons"    BaseValue="0" MaxValue="1"/>
+        
+        <Property Name="EMPWeaponDefense" BaseValue="0" MaxValue="1"/>
+        <Property Name="EMPShieldDefense" BaseValue="0" MaxValue="1"/>
+
+        <!-- DLC2 -->
+        <Property Name="PreventsEnemyRetreat" MaxValue="1"/>
+        <Property Name="ShipIsKamikaze" MaxValue="1"/>
+        <Property Name="MaximumHonorZoneRadius" BaseValue="0"/>
+        <Property Name="HonorGainMultiplier" BaseValue="1"/>        
+        <Property Name="HPRestoredPerSecond" BaseValue="0"/>
+        <Property Name="CriticalDamageReductionChance" BaseValue="0" MaxValue="0.95"/>
+        <Property Name="DamageBonusIfOneShip" BaseValue="0" MaxValue="0.95" />
+        <Property Name="DefenseBonusIfOneShip"    BaseValue="0" MaxValue="0.95" />
+
+        <Property Name="CannotFight" MaxValue="1"/>
+
+        <!-- DLC3 -->
+        <Property Name="VisionStrength"              BaseValue="0"/>
+        <Property Name="AntiVisionStrengthForModule" BaseValue="0"/>
+
+        <!-- *** MODIFIERS ***-->
+         
+        <Modifier TargetProperty="MiningProbeDepositValueMultiplier"    Operation="Division" Value="$(MaximumShipMiningProbeStock)" Path="ClassShip,ShipSizeJuggernaut"     Priority="-1"/>
+        <Modifier TargetProperty="MiningProbePlanetStatsMultiplier"     Operation="Division" Value="$(MaximumShipMiningProbeStock)" Path="ClassShip,ShipSizeJuggernaut"     Priority="-1"/>
+
+        <!-- Experience Reward (XP granted after space battles if ship is killed) -->
+        <BinaryModifier TargetProperty="ExperienceRewardFromLevel"   Operation="Addition"           Left="$(Level)"                         BinaryOperation="Multiplication"    Right="0.2"/>
+        <BinaryModifier TargetProperty="ExperienceReward"            Operation="Multiplication"     Left="$(ExperienceRewardFromLevel)"     BinaryOperation="Multiplication"    Right="$(CommandPoints)"/>
+        <!-- Compute passive xp value for the ship for admirals : shipCP * (1 + nbStratModules/10)-->
+        <Modifier   TargetProperty="PassiveShipExperienceRewardForAdmirals" Operation="Division"        Value="10"                Path="ClassShip"                                              Priority="6"/>
+        <Modifier   TargetProperty="PassiveShipExperienceRewardForAdmirals" Operation="Addition"        Value="1"                 Path="ClassShip"                                              Priority="7"/>
+        <Modifier   TargetProperty="PassiveShipExperienceRewardForAdmirals" Operation="Multiplication"  Value="$(CommandPoints)"  Path="ClassShip"                                              Priority="8"/>
+        <Modifier   TargetProperty="ExperiencePerTurn"                      Operation="Addition"        Value="$(PassiveShipExperienceRewardForAdmirals)" Path="ClassShip/./ClassGarrisonFleet/ClassHero" />
+        <Modifier   TargetProperty="ShipLevelForGUI"                        Operation="Force"           Value="$(Level)"          Path="ClassShip" />
+      
+        <!-- Manpower management-->
+        <Modifier TargetProperty="NetShipManpower"              Operation="Addition" Value="$(ShipManpowerRefillRate)"/>
+        <BinaryModifier TargetProperty="MaximumShipManpower"    Operation="Percent" Left="$(ShipStage)" BinaryOperation="Multiplication" Right="0.5" Path="ClassShip"/>
+
+        <!-- Battle stats --> 
+
+        <Modifier TargetProperty="MaximumHealth"            Operation="Addition" Value="$(ShipHealth)"                  Path="ClassShip/ClassSection,ClassSectionCore" />
+
+		<Modifier TargetProperty="DamageKinetic"			Operation="Addition" Value="$(DamageProjectile)"			Path="ClassShip"/>
+		<Modifier TargetProperty="DamageMissile"			Operation="Addition" Value="$(DamageProjectile)"			Path="ClassShip"/>
+		<Modifier TargetProperty="DamageLaser"				Operation="Addition" Value="$(DamageEnergy)"				Path="ClassShip"/>
+		<Modifier TargetProperty="DamageBeam"				Operation="Addition" Value="$(DamageEnergy)"				Path="ClassShip"/>
+
+        <Modifier TargetProperty="Damage"                   Operation="Percent" Value="$(Damage)"                       Path="ClassShip/ClassSection/ClassModuleWeapon" Priority="1" />
+        <Modifier TargetProperty="Damage"					Operation="Percent" Value="$(DamageKinetic)"                Path="ClassShip/ClassSection/ClassModuleWeapon,ClassModuleWeaponKinetic" Priority="1" />
+        <Modifier TargetProperty="Damage"					Operation="Percent" Value="$(DamageKinetic)"                Path="ClassShip/ClassSection/ClassModuleWeapon,ClassModuleWeaponKineticRailgun" Priority="1" />
+        <Modifier TargetProperty="Damage"					Operation="Percent" Value="$(DamageMissile)"                Path="ClassShip/ClassSection/ClassModuleWeapon,ClassModuleWeaponMissile" Priority="1" />
+        <Modifier TargetProperty="Damage"					Operation="Percent" Value="$(DamageMissile)"                Path="ClassShip/ClassSection/ClassModuleWeapon,ClassModuleWeaponMissileSwarm" Priority="1" />
+        <Modifier TargetProperty="Damage"					Operation="Percent" Value="$(DamageLaser)"                  Path="ClassShip/ClassSection/ClassModuleWeapon,ClassModuleWeaponLaser" Priority="1" />
+        <Modifier TargetProperty="Damage"					Operation="Percent" Value="$(DamageBeam)"                   Path="ClassShip/ClassSection/ClassModuleWeapon,ClassModuleWeaponBeam" Priority="1" />
+        <Modifier TargetProperty="DamageShort"              Operation="Percent" Value="$(DamageShort)"                  Path="ClassShip/ClassSection/ClassModuleWeapon" />
+        <Modifier TargetProperty="DamageMedium"             Operation="Percent" Value="$(DamageMedium)"                 Path="ClassShip/ClassSection/ClassModuleWeapon" />
+        <Modifier TargetProperty="DamageLong"               Operation="Percent" Value="$(DamageLong)"                   Path="ClassShip/ClassSection/ClassModuleWeapon" />
+        
+        <Modifier TargetProperty="ShipManpowerKillPerHit"   Operation="Percent" Value="$(ShipManpowerKillPerHitPercent)"  Path="ClassShip/ClassSection/ClassModuleWeapon" />
+
+        <Modifier TargetProperty="CriticalHitChance"        Operation="Addition" Value="$(CriticalHitChance)"           Path="ClassShip/ClassSection/ClassModuleWeapon" />
+        <Modifier TargetProperty="ShieldPenetrationFactor"			Operation="Addition" Value="$(ShieldPenetrationFactor)"				Path="ClassShip/ClassSection/ClassModuleWeapon" />
+		<Modifier TargetProperty="HullPlatingPenetrationFactor"     Operation="Addition" Value="$(HullPlatingPenetrationFactor)"        Path="ClassShip/ClassSection/ClassModuleWeapon" />
+        <Modifier TargetProperty="DamageShield"             Operation="Addition" Value="$(DamageShield)"                Path="ClassShip/ClassSection/ClassModuleWeapon" />
+        <Modifier TargetProperty="DamageSection"            Operation="Addition" Value="$(DamageSection)"               Path="ClassShip/ClassSection/ClassModuleWeapon" />
+        <Modifier TargetProperty="DamageModule"             Operation="Addition" Value="$(DamageModule)"                Path="ClassShip/ClassSection/ClassModuleWeapon" />
+        <Modifier TargetProperty="DamageCore"               Operation="Addition" Value="$(DamageCore)"                  Path="ClassShip/ClassSection/ClassModuleWeapon" />
+        <Modifier TargetProperty="Accuracy"                 Operation="Addition" Value="$(Accuracy)"                    Path="ClassShip/ClassSection/ClassModuleWeapon" />
+
+        <Modifier TargetProperty="Damage"                   Operation="Percent" Value="$(Damage)"                       Path="ClassShip/ClassSection/ClassModuleSquadron" />
+        <Modifier TargetProperty="Damage"                   Operation="Percent" Value="$(DamageKinetic)"                Path="ClassShip/ClassSection/ClassModuleSquadron,SquadronTypeFighter" />
+        <Modifier TargetProperty="Damage"                   Operation="Percent" Value="$(DamageKinetic)"                Path="ClassShip/ClassSection/ClassModuleSquadron,SquadronTypeBomber" />
+        <Modifier TargetProperty="Damage"                   Operation="Percent" Value="$(DamageMissile)"                Path="ClassShip/ClassSection/ClassModuleSquadron,SquadronTypeFighter" />
+        <Modifier TargetProperty="Damage"                   Operation="Percent" Value="$(DamageMissile)"                Path="ClassShip/ClassSection/ClassModuleSquadron,SquadronTypeBomber" />
+        <Modifier TargetProperty="Damage"                   Operation="Percent" Value="$(DamageLaser)"                  Path="ClassShip/ClassSection/ClassModuleSquadron,SquadronTypeFighterEnergy" />
+        <Modifier TargetProperty="Damage"                   Operation="Percent" Value="$(DamageLaser)"                  Path="ClassShip/ClassSection/ClassModuleSquadron,SquadronTypeBomberEnergy" />
+        <Modifier TargetProperty="Damage"                   Operation="Percent" Value="$(DamageBeam)"                   Path="ClassShip/ClassSection/ClassModuleSquadron,SquadronTypeFighterEnergy" />
+        <Modifier TargetProperty="Damage"                   Operation="Percent" Value="$(DamageBeam)"                   Path="ClassShip/ClassSection/ClassModuleSquadron,SquadronTypeBomberEnergy" />
+         
+        <Modifier TargetProperty="ShieldPenetrationFactor"			Operation="Addition" Value="$(ShieldPenetrationFactor)"				Path="ClassShip/ClassSection/ClassModuleSquadron" />
+        <Modifier TargetProperty="HullPlatingPenetrationFactor"     Operation="Addition" Value="$(HullPlatingPenetrationFactor)"        Path="ClassShip/ClassSection/ClassModuleSquadron" />
+
+
+        <!-- Military Power -->
+        <Modifier TargetProperty="ShieldAbsorptionEndMultiplier" Operation="Addition" Value="$(ShieldAbsorption)"/>
+        <BinaryModifier TargetProperty="ShieldAbsorptionEndMultiplier" Operation="Division" Left="$(ShieldAbsorption)" BinaryOperation="Addition" Right="$(HullWeakness)"/>
+        <Modifier TargetProperty="ShieldAbsorptionEndMultiplier" Operation="Multiplication" Value="$(ShieldAbsorptionPercent)"/>
+
+        <Modifier TargetProperty="HullPlatingAbsorptionEndMultiplier" Operation="Addition" Value="$(HullPlatingAbsorption)"/>
+        <BinaryModifier TargetProperty="HullPlatingAbsorptionEndMultiplier" Operation="Division" Left="$(HullPlatingAbsorption)" BinaryOperation="Addition" Right="$(HullWeakness)"/>
+        <Modifier TargetProperty="HullPlatingAbsorptionEndMultiplier" Operation="Multiplication" Value="$(HullPlatingAbsorptionPercent)"/>
+        
+        <BinaryModifier TargetProperty="DefensiveMilitaryPower"  Operation="Addition"       Left="$(MaximumShield)"             BinaryOperation="Division" Right="60"/>
+        <BinaryModifier TargetProperty="DefensiveMilitaryPower"  Operation="Addition"       Left="$(ShieldReloadPerPhase)"      BinaryOperation="Division" Right="60"/>
+        <BinaryModifier TargetProperty="DefensiveMilitaryPower"  Operation="Addition"       Left="$(HullPlatingAbsorptionEndMultiplier)"        BinaryOperation="Multiplication" Right="100"/>
+        <BinaryModifier TargetProperty="DefensiveMilitaryPower"  Operation="Addition"       Left="$(ShieldAbsorptionEndMultiplier)"             BinaryOperation="Multiplication" Right="50"/>
+        <BinaryModifier TargetProperty="DefensiveMilitaryPower"  Operation="Addition"       Left="$(Evasion)"        BinaryOperation="Multiplication" Right="100"/>
+        
+        <!-- Honor Intimidation effect -->
+        <BinaryModifier TargetProperty="ShownOffensiveMilitaryPower" Operation="Addition" Left="$(OffensiveMilitaryPower)" BinaryOperation="Multiplication"  Right="$(ShownMilitaryPowerMultiplier)" Priority="1"/>
+        <BinaryModifier TargetProperty="ShownDefensiveMilitaryPower" Operation="Addition" Left="$(DefensiveMilitaryPower)" BinaryOperation="Multiplication"  Right="$(ShownMilitaryPowerMultiplier)" Priority="1"/>
+
+        <BinaryModifier TargetProperty="MilitaryPower" Operation="Addition" Left="$(OffensiveMilitaryPower)" BinaryOperation="Addition" Right="$(DefensiveMilitaryPower)" />
+        
+        <Modifier       TargetProperty="RelativeMilitaryPower"          Operation="Addition"  Value="$(MilitaryPower)" Priority="-1"/>
+        <BinaryModifier TargetProperty="RelativeMilitaryPower" Operation="Multiplication" Left="$(Health)" BinaryOperation="Division" Right="$(MaximumHealth)" />
+
+        <!-- Upkeep-->
+        <BinaryModifier TargetProperty="GarrisonMoneyUpkeep"    Operation="Addition"  Left="$(CommandPoints)"    BinaryOperation ="Multiplication" Right="2" />
+        <Modifier       TargetProperty="GarrisonMoneyUpkeep"    Operation="Multiplication" Value="$(GarrisonMoneyUpkeepMultiplierFromJuggernauts)"  Path="ShipSizeJuggernaut"  Priority="100" />
+
+        <!-- speed bonuses-->
+        <Modifier       TargetProperty="WarpSpeed"                  Operation="Multiplication"  Value="$(GlobalSpeed)"    Path="ClassShip"/>
+        <Modifier       TargetProperty="FreeMovementSpeed"          Operation="Multiplication"  Value="$(GlobalSpeed)"    Path="ClassShip"/>
+
+        <BinaryModifier TargetProperty="Movement"             Operation="Addition"  Left="$(MaximumMovement)"  BinaryOperation ="Subtraction" Right="$(SpentMovement)" />
+
+        <!-- Exploration -->
+        <Modifier       TargetProperty="FogOfWarRange"        Operation="Addition"  Value="$(VisionRange)"    Path="ClassShip"/>
+        <Modifier       TargetProperty="FogOfWarRange"        Operation="Percent"   Value="0.25"              Path="ClassShip"/>
+
+        <!-- Trade -->
+        <BinaryModifier TargetProperty="ShipTradingRouteBlockadePower" Operation="Addition" Left="$(MilitaryPower)" BinaryOperation="Division" Right="2000" />
+        <Modifier TargetProperty="TradingRouteBlockadePower" Operation="Addition" Value="$(ShipTradingRouteBlockadePower)" Path="./ClassGarrisonFleet" />
+        <Modifier TargetProperty="TradeValue" Operation="Addition" Value="$(RelativeMilitaryPower)"/>
+    </SimulationDescriptor>
+
+    <!-- ******************** -->
+    <!-- **SECTION CLASS** -->
+    <!-- ******************** -->
+    <SimulationDescriptor Name="ClassSection" Type="Class">
+        <Property Name="MaximumMovement"/>
+        <Property Name="VisionRange"     Composition="Sum"/>
+        <Property Name=""/>
+
+       <Property Name="OffensiveMilitaryPower" Composition="Sum"/>
+        <Property Name="DefensiveMilitaryPower" Composition="Sum"/>
+        <Property Name="OffensiveMilitaryPowerForSimplifiedBattles" Composition="Sum"/>
+
+        <!--<ProportionalProperty Name="Health"                         BaseValue="0" IsSealed="true" IsSerializable="true" StartingRatio="1" Maximum="$(MaximumHealth)"/>-->
+        <ProportionalProperty Name="Health"             BaseValue="0" IsSealed="true" Maximum="$(MaximumHealth)" StartingRatio="1"/>
+        <Property Name="MaximumHealthFromModule"        BaseValue="0"   MinValue="Negative"/>
+        <Property Name="MaximumHealth"                  BaseValue="0" MinValue="Negative"/>
+        <Property Name="ShipHealth"                     BaseValue="0" MinValue="Negative" />
+
+        <!--!- -->
+        <Property Name="Shield"                         BaseValue="0"   IsSealed="true" IsSerializable="true"/>
+        <Property Name="MaximumShield"                  BaseValue="0"   MinValue="Negative"/>
+        <Property Name="ShieldRadius"                   BaseValue="0.5"/>
+
+        <Property Name="MiningProbeDepositValueMultiplier"  BaseValue="0" MinValue="0" Composition="Maximum"/>
+        <Property Name="MiningProbePlanetStatsMultiplier"   BaseValue="0" MinValue="0" Composition="Maximum"/>
+
+        <Modifier TargetProperty="ShipHealth"           Operation="Addition" Value="$(MaximumHealth)" Path="!ClassSectionCore"  />
+        <Modifier TargetProperty="ShipHealth"           Operation="Addition" Value="$(MaximumHealthFromModule)" />
+
+        <BinaryModifier TargetProperty="DefensiveMilitaryPower"  Operation="Addition"       Left="$(MaximumHealth)"    BinaryOperation="Division" Right="30" Path="ClassSectionCore" />
+
+    </SimulationDescriptor>
+
+    <!-- ******************** -->
+    <!-- ** CORE SECTION CLASS** -->
+    <!-- ******************** -->
+    <SimulationDescriptor Name="ClassSectionCore" Type="ClassSection">
+        <!-- Boolean to not hit a second time the target with splash salvo -->
+        <Property Name="HitBySalvo"                   BaseValue="0" MaxValue="1" IsSealed="true"/> <!-- Boolean to not hit a second time the target with splash salvo -->
+        
+        <Modifier TargetProperty="Health" Operation="Addition" Value="$(Health)" Path="./ClassShip"/>
+
+        <Modifier TargetProperty="MaximumHealth"        Operation="Subtraction" Value="$(MaximumHealthFromModule)" />
+
+        <Modifier TargetProperty="MaximumHealth"           Operation="Addition" Value="$(MaximumHealth)" Path="./ClassShip"/>
+        <!--<Modifier TargetProperty="MaximumHealth" Operation="Addition" Value="$(ShipHealth)" Path="./ClassShip"/>-->
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="SectionN" Type="Section">
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="SectionNE" Type="Section">
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="SectionE" Type="Section">
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="SectionSE" Type="Section">
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="SectionS" Type="Section">
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="SectionSW" Type="Section">
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="SectionW" Type="Section">
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="SectionNW" Type="Section">
+    </SimulationDescriptor>
+
+    <!-- ******************** -->
+    <!-- **   SHIP SIZES   ** -->
+    <!-- ******************** -->
+    <SimulationDescriptor Name="ShipSizeMothership"  Type="ShipSize">
+        <Modifier  TargetProperty="MaximumEmpireManpowerStock"          Operation="Addition"  Value="200" Path="../ClassEmpire" />
+
+        <Modifier TargetProperty="VisionRange"      Operation="Addition"  Value="3"        Path="ClassShip"/>
+        <Modifier TargetProperty="CommandPoints"        Operation="Addition"    Value="4"     Path="ClassShip"/>
+        <Modifier TargetProperty="ShieldRadius"         Operation="Addition"    Value="4"     Path="ClassShip"/>
+        <Modifier TargetProperty="ScrapPriority"        Operation="Subtraction" Value="5"     Path="ClassShip"/>
+        <Modifier TargetProperty="VisualImportanceScore" Operation="Addition" Value="500"     Path="ClassShip"/>
+        <Modifier TargetProperty="HullWeakness"         Operation="Addition" Value="500"     Path="ClassShip"/>
+		<Modifier TargetProperty="SizeDamageMultiplierForSquadron" Operation="Addition" Value="1" Path="ClassShip" TooltipHidden="true"/>
+        <!--<Modifier TargetProperty="Evasion"              Operation="Addition"  Value="-0.1"   Path="ClassShip"/>-->
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ShipSizeLarge"  Type="ShipSize">
+        <Modifier TargetProperty="VisionRange"      Operation="Addition"  Value="1"        Path="ClassShip"/>
+        <Modifier TargetProperty="CommandPoints"        Operation="Addition"    Value="6"     Path="ClassShip"/>
+        <Modifier TargetProperty="ShieldRadius"         Operation="Addition"    Value="2.5"     Path="ClassShip"/>
+        <Modifier TargetProperty="ScrapPriority"        Operation="Subtraction" Value="2"     Path="ClassShip"/>
+        <Modifier TargetProperty="VisualImportanceScore" Operation="Addition" Value="100"     Path="ClassShip"/>
+        <Modifier TargetProperty="HullWeakness"         Operation="Addition" Value="500"     Path="ClassShip"/>
+		<Modifier TargetProperty="SizeDamageMultiplierForSquadron" Operation="Addition" Value="1" Path="ClassShip" TooltipHidden="true"/>
+        <!--<Modifier TargetProperty="Evasion"              Operation="Addition"  Value="-0.1"   Path="ClassShip"/>-->
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ShipSizeMedium" Type="ShipSize">
+        <Modifier TargetProperty="VisionRange"      Operation="Addition"  Value="0.5"        Path="ClassShip"/>
+        <Modifier TargetProperty="CommandPoints"        Operation="Addition"    Value="3"     Path="ClassShip"/>
+        <Modifier TargetProperty="ShieldRadius"         Operation="Addition"    Value="1"   Path="ClassShip"/>
+        <Modifier TargetProperty="ScrapPriority"        Operation="Addition"    Value="2"     Path="ClassShip"/>
+        <Modifier TargetProperty="VisualImportanceScore" Operation="Addition" Value="50"     Path="ClassShip"/>
+        <Modifier TargetProperty="HullWeakness"         Operation="Addition" Value="150"     Path="ClassShip"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ShipSizeSmall"  Type="ShipSize">
+        <Modifier TargetProperty="VisionRange"          Operation="Addition"  Value="0.25"        Path="ClassShip"/>
+        <Modifier TargetProperty="CommandPoints"        Operation="Addition"    Value="1"     Path="ClassShip"/>
+        <Modifier TargetProperty="ShieldRadius"         Operation="Addition"    Value="0.3"   Path="ClassShip"/>
+        <Modifier TargetProperty="ScrapPriority"        Operation="Addition"    Value="4"     Path="ClassShip"/>
+        <Modifier TargetProperty="VisualImportanceScore" Operation="Addition" Value="10"     Path="ClassShip"/>
+        <!--<Modifier TargetProperty="Evasion"              Operation="Addition"  Value="0.1"   Path="ClassShip"/>-->
+		<Modifier TargetProperty="SizeDamageMultiplierForSquadron" Operation="Addition" Value="-0.5" Path="ClassShip" TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+
+    <!-- ******************** -->
+    <!-- **   SHIP ROLES   ** -->
+    <!-- ******************** -->
+    <SimulationDescriptor Name="ShipRoleColonizer"      Type="ShipRole">
+        <Modifier TargetProperty="ScrapPriority"        Operation="Subtraction" Value="5"     Path="ClassShip"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ShipRoleLeecher"      Type="ShipRole">
+        <Modifier TargetProperty="ScrapPriority"            Operation="Subtraction"    Value="5"     Path="ClassShip"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ShipRoleRootCreator"      Type="ShipRole">
+        <Modifier TargetProperty="ScrapPriority"            Operation="Subtraction"    Value="7"     Path="ClassShip"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ShipRoleExploration"    Type="ShipRole">
+        <Modifier TargetProperty="ScrapPriority"            Operation="Addition"    Value="3"     Path="ClassShip"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ShipRoleCarrier"        Type="ShipRole">
+        <Modifier TargetProperty="ScrapPriority"        Operation="Subtraction" Value="6"     Path="ClassShip"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ShipRoleSuperColonizer"      Type="ShipRole"/>
+
+    <!-- Tag for all civilian ships. -->
+    <SimulationDescriptor Name="ShipRoleTypeCivilian" Type="ShipRoleType"/>
+
+    <!-- For all Battleships -->
+    <SimulationDescriptor Name="ShipForBattle"          Type="ShipFor"/>
+    <SimulationDescriptor Name="ShipRoleSmallAttacker"  Type="ShipRole"/>
+    <SimulationDescriptor Name="ShipRoleMediumAttacker" Type="ShipRole"/>
+    <SimulationDescriptor Name="ShipRoleSmallSupport"   Type="ShipRole"/>
+    <SimulationDescriptor Name="ShipRoleMediumSupport"  Type="ShipRole"/>
+    <SimulationDescriptor Name="ShipRoleHero"           Type="ShipRole">
+        <Modifier TargetProperty="CommandPoints"                Operation="Force"    Value="0"     Path="ClassShip"/>
+        <Modifier TargetProperty="VisualImportanceScore"        Operation="Addition" Value="200"   Path="ClassShip"/>
+        <!--<Modifier TargetProperty="NetShipProbe"                 Operation="Addition" Value="0.5"   Path="ClassShip"/>--> <!-- Modded -->
+        <Modifier TargetProperty="ExperienceBonusFromBattle"    Operation="Addition" Value="10"     Path="ClassShip"/>
+    </SimulationDescriptor>
+    <SimulationDescriptor Name="ShipRoleMothership"     Type="ShipRole">
+        <Property Name="SystemManpowerStock"                BaseValue="0" IsSealed="true"/>
+        <Property Name="MaximumSystemManpower"              BaseValue="300"/>
+    </SimulationDescriptor>
+    <SimulationDescriptor Name="ShipRoleAutomated"  Type="ShipRole">
+        <Modifier TargetProperty="MaximumMovement"          Operation="Addition"    Value="-2"     Path="ClassShip"/>
+    </SimulationDescriptor>
+
+    <!-- FOR REALIZATION -->
+    <SimulationDescriptor Name="ShipRoleAttacker"       Type="ShipRole"/>
+    <SimulationDescriptor Name="ShipRoleSupport"        Type="ShipRole"/>
+
+    <!-- ******************** -->
+    <!-- ** SHIP FACTIONS (Mapping) ** -->
+    <!-- ******************** -->
+    <SimulationDescriptor Name="ShipFactionSophons"      Type="ShipFaction"/>
+    <SimulationDescriptor Name="ShipFactionTerrans"         Type="ShipFaction"/>
+    <SimulationDescriptor Name="ShipFactionCravers"      Type="ShipFaction"/>
+    <SimulationDescriptor Name="ShipFactionVenetians"      Type="ShipFaction"/>
+    <SimulationDescriptor Name="ShipFactionUnfallen"      Type="ShipFaction"/>
+    <SimulationDescriptor Name="ShipFactionVampirilis"      Type="ShipFaction"/>
+    <SimulationDescriptor Name="ShipFactionHoratio"         Type="ShipFaction"/>
+    <SimulationDescriptor Name="ShipFactionTimeLords"         Type="ShipFaction"/>
+    <SimulationDescriptor Name="ShipFactionBalancing"         Type="ShipFaction"/>
+
+    <SimulationDescriptor Name="ShipFactionMinorFactionPirates"      Type="ShipFaction"/>
+    <SimulationDescriptor Name="ShipFactionMinorFactionInsectoid"      Type="ShipFaction"/>
+    <SimulationDescriptor Name="ShipFactionMinorFactionAdvanced"      Type="ShipFaction"/>
+    <SimulationDescriptor Name="ShipFactionMinorFactionPrimitive"      Type="ShipFaction"/>
+
+
+    <SimulationDescriptor Name="ShipFactionHeroes"      Type="ShipFaction"/>
+    <SimulationDescriptor Name="ShipFactionAutomated"   Type="ShipFaction"/>
+
+    <!-- ******************** -->
+    <!-- ** SHIP HULL NUMBER (Mapping) ** -->
+    <!-- ******************** -->
+    <!--Mothership only-->
+    <SimulationDescriptor Name="ShipHull00"      Type="ShipHull">
+        <Modifier TargetProperty="ShipHullIndex" Operation="Force" Value="0" TooltipHidden="true"/>
+    </SimulationDescriptor>
+    <!--Usually attack-->
+    <SimulationDescriptor Name="ShipHull01"      Type="ShipHull">
+        <Modifier TargetProperty="ShipHullIndex" Operation="Force" Value="1" TooltipHidden="true"/>
+    </SimulationDescriptor>
+    <!--Usually Support/Defense-->
+    <SimulationDescriptor Name="ShipHull02"      Type="ShipHull">
+        <Modifier TargetProperty="ShipHullIndex" Operation="Force" Value="2" TooltipHidden="true"/>
+    </SimulationDescriptor>
+    <!--Usually Civilian (Colo or Explorer)-->
+    <SimulationDescriptor Name="ShipHull03"      Type="ShipHull">
+        <Modifier TargetProperty="ShipHullIndex" Operation="Force" Value="3" TooltipHidden="true"/>
+    </SimulationDescriptor>
+    <!--Usually heroes-->
+    <SimulationDescriptor Name="ShipHull04"      Type="ShipHull">
+        <Modifier TargetProperty="ShipHullIndex" Operation="Force" Value="4" TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <!-- ******************** -->
+    <!-- ** SHIP HULL BONUS ** -->
+    <!-- ******************** -->
+    <SimulationDescriptor Name="ShipStatBonus1TargetingFocus"   Type="ShipStatBonus1"/>
+    <SimulationDescriptor Name="ShipStatBonus1TargetingAttract" Type="ShipStatBonus1"/>
+
+    <SimulationDescriptor Name="ShipStatBonus2Offensive"        Type="ShipStatBonus2">
+        <Modifier TargetProperty="Damage"                           Operation="Percent" Value="0.1" Path="ClassShip/ClassSection/ClassModuleWeapon,!ClassModuleWeaponFlack" />
+    </SimulationDescriptor>
+    <SimulationDescriptor Name="ShipStatBonus2OffensiveHunter"      Type="ShipStatBonus2">
+        <Modifier TargetProperty="Damage"                           Operation="Percent" Value="0.2" Path="ClassShip/ClassSection/ClassModuleWeapon,!ClassModuleWeaponFlack" />
+    </SimulationDescriptor>
+    <SimulationDescriptor Name="ShipStatBonus2Defensive"    Type="ShipStatBonus2">
+        <Modifier TargetProperty="ShieldAbsorption"    Operation="Percent" Value="0.1" Path="ClassShip" />
+        <Modifier TargetProperty="HullPlatingAbsorption"  Operation="Percent" Value="0.1" Path="ClassShip" />
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ShipStatBonus2EnergyWeapons"    Type="ShipStatBonus2">
+        <Modifier TargetProperty="Damage"            Operation="Percent" Value="0.1"     Path="ClassShip/ClassSection/ClassModuleWeapon,ClassModuleWeaponLaser" />
+        <Modifier TargetProperty="Damage"            Operation="Percent" Value="0.1"     Path="ClassShip/ClassSection/ClassModuleWeapon,ClassModuleWeaponBeam" />
+    </SimulationDescriptor>
+    <SimulationDescriptor Name="ShipStatBonus2PhysicalWeapons"  Type="ShipStatBonus2">
+        <Modifier TargetProperty="Damage"            Operation="Percent" Value="0.1"     Path="ClassShip/ClassSection/ClassModuleWeapon,ClassModuleWeaponKinetic" />
+        <Modifier TargetProperty="Damage"            Operation="Percent" Value="0.1"     Path="ClassShip/ClassSection/ClassModuleWeapon,ClassModuleWeaponMissile" />
+    </SimulationDescriptor>
+    <SimulationDescriptor Name="ShipStatBonus2EnergyDefense"    Type="ShipStatBonus2">
+        <Modifier TargetProperty="ShieldAbsorption"    Operation="Percent" Value="0.1" Path="ClassShip" />
+    </SimulationDescriptor>
+    <SimulationDescriptor Name="ShipStatBonus2PhysicalDefense"  Type="ShipStatBonus2">
+        <Modifier TargetProperty="HullPlatingAbsorption"  Operation="Percent" Value="0.1" Path="ClassShip" />
+    </SimulationDescriptor>
+
+	<SimulationDescriptor Name="ShipStatBonus1Movement" Type="ShipStatBonus1">
+		<Modifier TargetProperty="MaximumMovement"          Operation="Addition"    Value="1"		Path="ClassShip"/>
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="ShipStatBonus1Movement2" Type="ShipStatBonus1">
+		<Modifier TargetProperty="MaximumMovement"          Operation="Addition"    Value="2"		Path="ClassShip"/>
+	</SimulationDescriptor>
+	
+	<SimulationDescriptor Name="ShipStatBonus2ProbeRegeneration" Type="ShipStatBonus2">
+		<Modifier TargetProperty="NetShipProbe"             Operation="Multiplication"		Value="2"	Path="ClassShip/ClassSection/ClassModuleSupport,ModuleSupportExploration"/>
+	</SimulationDescriptor>
+	
+	<SimulationDescriptor Name="ShipStatBonus1SquadronHealth" Type="ShipStatBonus1">
+		<Modifier TargetProperty="MaximumHealth"	Operation="Percent"    Value="0.1"		Path="ClassShip/ClassSection/ClassModuleSquadron"/>
+        <Modifier TargetProperty="MaximumHealth" Operation="Power" Value="0.1" Path="ClassShip//ClassModuleSquadronEncounter" TooltipHidden="true"/>
+	</SimulationDescriptor>
+	
+	<SimulationDescriptor Name="ShipStatBonus2SquadronDamage" Type="ShipStatBonus2">
+		<Modifier TargetProperty="Damage"			Operation="Percent"    Value="0.1"		Path="ClassShip/ClassSection/ClassModuleSquadron"/>
+	</SimulationDescriptor>
+
+    <!-- ************************** -->
+    <!-- **  MODDED SHIP LEVELS  ** -->
+    <!-- ************************** -->
+    <SimulationDescriptor Name="ShipLevel01" Type="ShipLevel" IsSerializable="false">
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ShipLevel02" Type="ShipLevel" IsSerializable="false">
+        <Modifier TargetProperty="MaximumHealth" Operation="Percent"  Value="0.10" Path="ClassShip/ClassSectionCore"/>
+        <Modifier TargetProperty="MaximumShield" Operation="Percent"  Value="0.10" Path="ClassShip"/>
+        <Modifier TargetProperty="Damage"        Operation="Percent"  Value="0.05" Path="ClassShip/ClassSection/ClassModuleWeapon"/>
+        <Modifier TargetProperty="Evasion"       Operation="Addition" Value="0.01" Path="ClassShip"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ShipLevel03" Type="ShipLevel" IsSerializable="false">
+        <Modifier TargetProperty="MaximumHealth" Operation="Percent"  Value="0.20" Path="ClassShip/ClassSectionCore"/>
+        <Modifier TargetProperty="MaximumShield" Operation="Percent"  Value="0.20" Path="ClassShip"/>
+        <Modifier TargetProperty="Damage"        Operation="Percent"  Value="0.10" Path="ClassShip/ClassSection/ClassModuleWeapon"/>
+        <Modifier TargetProperty="Evasion"       Operation="Addition" Value="0.02" Path="ClassShip"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ShipLevel04" Type="ShipLevel" IsSerializable="false">
+        <Modifier TargetProperty="MaximumHealth" Operation="Percent"  Value="0.30" Path="ClassShip/ClassSectionCore"/>
+        <Modifier TargetProperty="MaximumShield" Operation="Percent"  Value="0.30" Path="ClassShip"/>
+        <Modifier TargetProperty="Damage"        Operation="Percent"  Value="0.15" Path="ClassShip/ClassSection/ClassModuleWeapon"/>
+        <Modifier TargetProperty="Evasion"       Operation="Addition" Value="0.03" Path="ClassShip"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ShipLevel05" Type="ShipLevel" IsSerializable="false">
+        <Modifier TargetProperty="MaximumHealth" Operation="Percent"  Value="0.45" Path="ClassShip/ClassSectionCore"/>
+        <Modifier TargetProperty="MaximumShield" Operation="Percent"  Value="0.45" Path="ClassShip"/>
+        <Modifier TargetProperty="Damage"        Operation="Percent"  Value="0.25" Path="ClassShip/ClassSection/ClassModuleWeapon"/>
+        <Modifier TargetProperty="Evasion"       Operation="Addition" Value="0.05" Path="ClassShip"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ShipLevel06" Type="ShipLevel" IsSerializable="false">
+        <Modifier TargetProperty="MaximumHealth" Operation="Percent"  Value="0.60" Path="ClassShip/ClassSectionCore"/>
+        <Modifier TargetProperty="MaximumShield" Operation="Percent"  Value="0.60" Path="ClassShip"/>
+        <Modifier TargetProperty="Damage"        Operation="Percent"  Value="0.35" Path="ClassShip/ClassSection/ClassModuleWeapon"/>
+        <Modifier TargetProperty="Evasion"       Operation="Addition" Value="0.07" Path="ClassShip"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ShipLevel07" Type="ShipLevel" IsSerializable="false">
+        <Modifier TargetProperty="MaximumHealth" Operation="Percent"  Value="0.75" Path="ClassShip/ClassSectionCore"/>
+        <Modifier TargetProperty="MaximumShield" Operation="Percent"  Value="0.75" Path="ClassShip"/>
+        <Modifier TargetProperty="Damage"        Operation="Percent"  Value="0.45" Path="ClassShip/ClassSection/ClassModuleWeapon"/>
+        <Modifier TargetProperty="Evasion"       Operation="Addition" Value="0.09" Path="ClassShip"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ShipLevel08" Type="ShipLevel" IsSerializable="false">
+        <Modifier TargetProperty="MaximumHealth" Operation="Percent"  Value="0.95" Path="ClassShip/ClassSectionCore"/>
+        <Modifier TargetProperty="MaximumShield" Operation="Percent"  Value="0.95" Path="ClassShip"/>
+        <Modifier TargetProperty="Damage"        Operation="Percent"  Value="0.60" Path="ClassShip/ClassSection/ClassModuleWeapon"/>
+        <Modifier TargetProperty="Evasion"       Operation="Addition" Value="0.11" Path="ClassShip"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ShipLevel09" Type="ShipLevel" IsSerializable="false">
+        <Modifier TargetProperty="MaximumHealth" Operation="Percent"  Value="1.15" Path="ClassShip/ClassSectionCore"/>
+        <Modifier TargetProperty="MaximumShield" Operation="Percent"  Value="1.15" Path="ClassShip"/>
+        <Modifier TargetProperty="Damage"        Operation="Percent"  Value="0.75" Path="ClassShip/ClassSection/ClassModuleWeapon"/>
+        <Modifier TargetProperty="Evasion"       Operation="Addition" Value="0.13" Path="ClassShip"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ShipLevel10" Type="ShipLevel" IsSerializable="false">
+        <Modifier TargetProperty="MaximumHealth" Operation="Percent"  Value="1.35" Path="ClassShip/ClassSectionCore"/>
+        <Modifier TargetProperty="MaximumShield" Operation="Percent"  Value="1.35" Path="ClassShip"/>
+        <Modifier TargetProperty="Damage"        Operation="Percent"  Value="0.90" Path="ClassShip/ClassSection/ClassModuleWeapon"/>
+        <Modifier TargetProperty="Evasion"       Operation="Addition" Value="0.15" Path="ClassShip"/>
+    </SimulationDescriptor>
+   
+    <SimulationDescriptor Name="ShipLevel11" Type="ShipLevel" IsSerializable="false">
+        <Modifier TargetProperty="MaximumHealth" Operation="Percent"  Value="1.60" Path="ClassShip/ClassSectionCore"/>
+        <Modifier TargetProperty="MaximumShield" Operation="Percent"  Value="1.60" Path="ClassShip"/>
+        <Modifier TargetProperty="Damage"        Operation="Percent"  Value="1.10" Path="ClassShip/ClassSection/ClassModuleWeapon"/>
+        <Modifier TargetProperty="Evasion"       Operation="Addition" Value="0.18" Path="ClassShip"/>
+    </SimulationDescriptor>
+       
+    <SimulationDescriptor Name="ShipLevel12" Type="ShipLevel" IsSerializable="false">
+        <Modifier TargetProperty="MaximumHealth" Operation="Percent"  Value="1.85" Path="ClassShip/ClassSectionCore"/>
+        <Modifier TargetProperty="MaximumShield" Operation="Percent"  Value="1.85" Path="ClassShip"/>
+        <Modifier TargetProperty="Damage"        Operation="Percent"  Value="1.30" Path="ClassShip/ClassSection/ClassModuleWeapon"/>
+        <Modifier TargetProperty="Evasion"       Operation="Addition" Value="0.21" Path="ClassShip"/>
+    </SimulationDescriptor>
+   
+    <SimulationDescriptor Name="ShipLevel13" Type="ShipLevel" IsSerializable="false">
+        <Modifier TargetProperty="MaximumHealth" Operation="Percent"  Value="2.10" Path="ClassShip/ClassSectionCore"/>
+        <Modifier TargetProperty="MaximumShield" Operation="Percent"  Value="2.10" Path="ClassShip"/>
+        <Modifier TargetProperty="Damage"        Operation="Percent"  Value="1.50" Path="ClassShip/ClassSection/ClassModuleWeapon"/>
+        <Modifier TargetProperty="Evasion"       Operation="Addition" Value="0.24" Path="ClassShip"/>
+    </SimulationDescriptor>
+       
+    <SimulationDescriptor Name="ShipLevel14" Type="ShipLevel" IsSerializable="false">
+        <Modifier TargetProperty="MaximumHealth" Operation="Percent"  Value="2.35" Path="ClassShip/ClassSectionCore"/>
+        <Modifier TargetProperty="MaximumShield" Operation="Percent"  Value="2.35" Path="ClassShip"/>
+        <Modifier TargetProperty="Damage"        Operation="Percent"  Value="1.70" Path="ClassShip/ClassSection/ClassModuleWeapon"/>
+        <Modifier TargetProperty="Evasion"       Operation="Addition" Value="0.27" Path="ClassShip"/>
+    </SimulationDescriptor>
+           
+    <SimulationDescriptor Name="ShipLevel15" Type="ShipLevel" IsSerializable="false">
+        <Modifier TargetProperty="MaximumHealth" Operation="Percent"  Value="2.75" Path="ClassShip/ClassSectionCore"/>
+        <Modifier TargetProperty="MaximumShield" Operation="Percent"  Value="2.75" Path="ClassShip"/>
+        <Modifier TargetProperty="Damage"        Operation="Percent"  Value="2.00" Path="ClassShip/ClassSection/ClassModuleWeapon"/>
+        <Modifier TargetProperty="Evasion"       Operation="Addition" Value="0.30" Path="ClassShip"/>
+    </SimulationDescriptor>
+
+	<!-- ********************* -->
+	<!-- ** SHIP BASE INFOS ** -->
+	<!-- ********************* -->
+	
+	<!--Core = Ship lives-->
+	<SimulationDescriptor Name="ClassSectionCoreSmallCivilian" Type="ClassSectionCore">
+		<Modifier TargetProperty="MaximumHealth" Operation="Addition" Value="1500" Path="ClassSection"/>
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="ClassSectionCoreSmallOffense" Type="ClassSectionCore">
+		<Modifier TargetProperty="MaximumHealth" Operation="Addition" Value="2000" Path="ClassSection"/>
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="ClassSectionCoreSmallSupport" Type="ClassSectionCore">
+		<Modifier TargetProperty="MaximumHealth" Operation="Addition" Value="2500" Path="ClassSection"/>
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="ClassSectionCoreMediumOffense" Type="ClassSectionCore">
+		<Modifier TargetProperty="MaximumHealth" Operation="Addition" Value="7500" Path="ClassSection"/>
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="ClassSectionCoreMediumSupport" Type="ClassSectionCore">
+		<Modifier TargetProperty="MaximumHealth" Operation="Addition" Value="9500" Path="ClassSection"/>
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="ClassSectionCoreLargeCarrier" Type="ClassSectionCore">
+		<Modifier TargetProperty="MaximumHealth" Operation="Addition" Value="30000" Path="ClassSection"/>
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="ClassSectionCoreMothership" Type="ClassSectionCore">
+		<Modifier TargetProperty="MaximumHealth" Operation="Addition" Value="14000" Path="ClassSection"/>
+	</SimulationDescriptor>
+    <SimulationDescriptor Name="ClassSectionCoreJuggernaut" Type="ClassSectionCore">
+        <Modifier TargetProperty="MaximumHealth" Operation="Addition" Value="12000" Path="ClassSection"/>
+    </SimulationDescriptor>
+    <SimulationDescriptor Name="ClassSectionCoreObliterator" Type="ClassSectionCore">
+        <Modifier TargetProperty="MaximumHealth" Operation="Addition" Value="34000" Path="ClassSection"/>
+    </SimulationDescriptor>
+    <SimulationDescriptor Name="ClassSectionCoreBattleship" Type="ClassSectionCore">
+        <Modifier TargetProperty="MaximumHealth" Operation="Addition" Value="64000" Path="ClassSection"/>
+    </SimulationDescriptor>
+	<!--Heroes-->
+	<SimulationDescriptor Name="ClassSectionCoreHeroAdministrator" Type="ClassSectionCore">
+		<Modifier TargetProperty="MaximumHealth" Operation="Addition" Value="3000" Path="ClassSection"/>
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="ClassSectionCoreHeroAdmiral" Type="ClassSectionCore">
+		<Modifier TargetProperty="MaximumHealth" Operation="Addition" Value="3000" Path="ClassSection"/>
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="ClassSectionCoreHeroCorporate" Type="ClassSectionCore">
+		<Modifier TargetProperty="MaximumHealth" Operation="Addition" Value="3000" Path="ClassSection"/>
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="ClassSectionCoreHeroAdventurer" Type="ClassSectionCore">
+		<Modifier TargetProperty="MaximumHealth" Operation="Addition" Value="3000" Path="ClassSection"/>
+	</SimulationDescriptor>
+	<!--Faction specifics-->
+	<SimulationDescriptor Name="ClassSectionCoreCravers" Type="ClassSectionCore">
+		<Modifier TargetProperty="MaximumHealth" Operation="Percent" Value="-0.1" Path="ClassSection"/>
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="ClassSectionCoreTimeLords" Type="ClassSectionCore">
+		<Modifier TargetProperty="MaximumHealth" Operation="Percent" Value="-0.1" Path="ClassSection"/>
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="ClassSectionCoreHoratio" Type="ClassSectionCore">
+		<Modifier TargetProperty="MaximumHealth" Operation="Percent" Value="0.1" Path="ClassSection"/>
+	</SimulationDescriptor>
+	
+	<!--ClassHulls: infos on ships-->
+	<SimulationDescriptor Name="ClassHullSmallCivilian" Type="ClassHull">
+		<Modifier TargetProperty="MaximumShipManpower" Operation="Addition" Value="40"     Path="ClassShip"/>
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="ClassHullSmallAttack" Type="ClassHull">
+		<Modifier TargetProperty="MaximumShipManpower" Operation="Addition" Value="100" Path="ClassShip"/>
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="ClassHullSmallSupport" Type="ClassHull">
+		<Modifier TargetProperty="MaximumShipManpower" Operation="Addition" Value="100" Path="ClassShip"/>
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="ClassHullMediumAttack" Type="ClassHull">
+		<Modifier TargetProperty="MaximumShipManpower" Operation="Addition" Value="300" Path="ClassShip"/>
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="ClassHullMediumDefense" Type="ClassHull">
+		<Modifier TargetProperty="MaximumShipManpower" Operation="Addition" Value="300" Path="ClassShip"/>
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="ClassHullLargeCarrier" Type="ClassHull">
+		<Modifier TargetProperty="MaximumShipManpower" Operation="Addition" Value="900" Path="ClassShip"/>
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="ClassHullMothership"	Type="ClassHull"> <!-- modded : exponential growth -->
+    <Modifier TargetProperty="MothershipCount"             Operation="Addition" Value="1"       Path="../ClassEmpire,AffinityGameplayVampirilis" />
+    <Modifier TargetProperty="MaximumEmpireLifeforceStock" Operation="Addition" Value="350"     Path="../ClassEmpire,AffinityGameplayVampirilis" />
+    <BinaryModifier TargetProperty="MaximumEmpireLifeforceStock" Operation="Addition" Left="$(MothershipCount)" BinaryOperation="Multiplication" Right="150"     Path="../ClassEmpire,AffinityGameplayVampirilis" SearchValueFromPath="true"/>
+    <Modifier TargetProperty="MaximumShipManpower"         Operation="Addition" Value="220"     Path="ClassShip"/>
+	</SimulationDescriptor>
+	<!--Faction Specifics-->
+	<SimulationDescriptor Name="ClassHullCravers" Type="ClassHull">
+		<Modifier TargetProperty="MaximumShipManpower"	Operation="Percent"		Value="0.1"		Path="ClassShip"/>
+	</SimulationDescriptor>
+
+
+</Datatable>

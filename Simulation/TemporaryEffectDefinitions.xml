@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/TemporaryEffectDefinition.xsd">
+
+    <!-- Gameplay -->
+    <TemporaryEffectDefinition Name="ColonyHappinessBoost" Category="LawEffects" Duration="20">
+        <Path>../ClassEmpire/ClassColonizedStarSystem</Path>
+        <SimulationDescriptorReference Name="TemporaryEffectColonyHappinessBoost"/>
+    </TemporaryEffectDefinition>
+    
+    <TemporaryEffectDefinition Name="StarSystemImprovementWonder1TemporaryEffect" Category="StarSystemImprovementWonder1" Duration="40">
+        <Path>../ClassEmpire</Path>
+        <SimulationDescriptorReference Name="TemporaryEffectStarSystemImprovementWonder1"/>
+    </TemporaryEffectDefinition>
+
+	<!-- Minor Relation -->
+	<TemporaryEffectMinorRelationDefinition Name="MinorRelationWithMajorCuriosityRevealed" Category="MinorRelationWithMajor" Duration="1">
+        <Path>ClassMinorRelationWithMajor</Path>
+        <SimulationDescriptorReference Name="MinorRelationWithMajorCuriosityRevealed"/>
+    </TemporaryEffectMinorRelationDefinition>
+
+  <TemporaryEffectMinorRelationDefinition Name="MinorRelationWithMajorPraise" Category="MinorRelationWithMajor" Duration="10" StopOnWar="true">
+    <Path>ClassMinorRelationWithMajor</Path>
+    <SimulationDescriptorReference Name="MinorRelationWithMajorPraise"/>
+  </TemporaryEffectMinorRelationDefinition>
+
+  <TemporaryEffectDefinition Name="CreateMajorPopulationMemoryCounter" Category="Population" Duration="99999" >
+    <Path>ClassColonizedStarSystem</Path>
+    <SimulationDescriptorReference Name="TemporaryEffectCreateMajorPopulationMemoryCounter"/>
+  </TemporaryEffectDefinition>
+
+   <TemporaryEffectDefinition Name="StarSystemImprovementEnrollmentTempEffect" Category="Population" Duration="1" >
+      <Path>ClassColonizedStarSystem</Path>
+      <SimulationDescriptorReference Name="TemporaryEffectStarSystemImprovementEnrollment"/>
+   </TemporaryEffectDefinition>
+
+   <TemporaryEffectDefinition Name="StarSystemImprovementEnrollmentVampirilisTempEffect" Category="Population" Duration="1" >
+      <Path>ClassColonizedStarSystem</Path>
+      <SimulationDescriptorReference Name="TemporaryEffectStarSystemImprovementEnrollmentVampirilis"/>
+   </TemporaryEffectDefinition>
+
+   
+
+</Datatable>

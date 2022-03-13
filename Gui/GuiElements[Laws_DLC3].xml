@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+
+    <LawGuiElement Name="LawP04L01UmbralChoir">
+        <Title>%LawP01L01UmbralChoirTitle</Title>
+        <Description>%LawP01L01UmbralChoirDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP01L01Small" />
+        </Icons>
+        <ShortTitle>%LawP01L01UmbralChoirShortTitle</ShortTitle>
+    </LawGuiElement>
+
+    <LawGuiElement Name="LawP04L01UmbralChoirRepublic">
+        <Title>%LawP01L01UmbralChoirTitle</Title>
+        <Description>%LawP01L01UmbralChoirDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP01L01Small" />
+        </Icons>
+        <ShortTitle>%LawP01L01UmbralChoirShortTitle</ShortTitle>
+    </LawGuiElement>
+  
+
+</Datatable>

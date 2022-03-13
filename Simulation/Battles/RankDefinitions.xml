@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../../Schemas/RankDefinition.xsd">
+
+    <!-- SHIPS -->
+    <Rank Name="ShipLevel01" LevelMin="1" LevelMax ="1">
+        <SimulationDescriptorReference Name="ShipLevel01"/>
+    </Rank>
+    <Rank Name="ShipLevel02" LevelMin="2" LevelMax ="2">
+        <SimulationDescriptorReference Name="ShipLevel02"/>
+    </Rank>
+    <Rank Name="ShipLevel03" LevelMin="3" LevelMax ="3">
+        <SimulationDescriptorReference Name="ShipLevel03"/>
+    </Rank>
+    <Rank Name="ShipLevel04" LevelMin="4" LevelMax ="4">
+        <SimulationDescriptorReference Name="ShipLevel04"/>
+    </Rank>
+    <Rank Name="ShipLevel05" LevelMin="5" LevelMax ="5">
+        <SimulationDescriptorReference Name="ShipLevel05"/>
+    </Rank>
+    <Rank Name="ShipLevel06" LevelMin="6" LevelMax ="6">
+        <SimulationDescriptorReference Name="ShipLevel06"/>
+    </Rank>
+    <Rank Name="ShipLevel07" LevelMin="7" LevelMax ="7">
+        <SimulationDescriptorReference Name="ShipLevel07"/>
+    </Rank>
+    <Rank Name="ShipLevel08" LevelMin="8" LevelMax ="8">
+        <SimulationDescriptorReference Name="ShipLevel08"/>
+    </Rank>
+    <Rank Name="ShipLevel09" LevelMin="9" LevelMax ="9">
+        <SimulationDescriptorReference Name="ShipLevel09"/>
+    </Rank>
+    <Rank Name="ShipLevel10" LevelMin="10" LevelMax ="10">
+        <SimulationDescriptorReference Name="ShipLevel10"/>
+    </Rank>
+   
+    <Rank Name="ShipLevel11" LevelMin="11" LevelMax ="11">
+        <SimulationDescriptorReference Name="ShipLevel11"/>
+    </Rank>
+        
+    <Rank Name="ShipLevel12" LevelMin="12" LevelMax ="12">
+        <SimulationDescriptorReference Name="ShipLevel12"/>
+    </Rank>
+   
+    <Rank Name="ShipLevel13" LevelMin="13" LevelMax ="13">
+        <SimulationDescriptorReference Name="ShipLevel13"/>
+    </Rank>
+       
+    <Rank Name="ShipLevel14" LevelMin="14" LevelMax ="14">
+        <SimulationDescriptorReference Name="ShipLevel14"/>
+    </Rank>
+        
+    <Rank Name="ShipLevel15" LevelMin="15" LevelMax ="-1">
+        <SimulationDescriptorReference Name="ShipLevel15"/>
+    </Rank>
+    
+    <!-- HEROES -->
+    <Rank Name="HeroLevel01" LevelMin="1" LevelMax ="1">
+        <SimulationDescriptorReference Name="HeroLevel01"/>
+    </Rank>
+    <Rank Name="HeroLevel02" LevelMin="2" LevelMax ="2">
+        <SimulationDescriptorReference Name="HeroLevel02"/>
+    </Rank>
+    <Rank Name="HeroLevel03" LevelMin="3" LevelMax ="3">
+        <SimulationDescriptorReference Name="HeroLevel03"/>
+    </Rank>
+    <Rank Name="HeroLevel04" LevelMin="4" LevelMax ="4">
+        <SimulationDescriptorReference Name="HeroLevel04"/>
+    </Rank>
+    <Rank Name="HeroLevel05" LevelMin="5" LevelMax ="5">
+        <SimulationDescriptorReference Name="HeroLevel05"/>
+    </Rank>
+    <Rank Name="HeroLevel06" LevelMin="6" LevelMax ="6">
+        <SimulationDescriptorReference Name="HeroLevel06"/>
+    </Rank>
+    <Rank Name="HeroLevel07" LevelMin="7" LevelMax ="7">
+        <SimulationDescriptorReference Name="HeroLevel07"/>
+    </Rank>
+    <Rank Name="HeroLevel08" LevelMin="8" LevelMax ="8">
+        <SimulationDescriptorReference Name="HeroLevel08"/>
+    </Rank>
+    <Rank Name="HeroLevel09" LevelMin="9" LevelMax ="9">
+        <SimulationDescriptorReference Name="HeroLevel09"/>
+    </Rank>
+    <Rank Name="HeroLevel10" LevelMin="10" LevelMax ="-1">
+        <SimulationDescriptorReference Name="HeroLevel10"/>
+        <!-- This descriptor can provide stats bonuses according to the level value, to avoid having to define as many ranks as hero levels -->
+        <SimulationDescriptorReference Name="HeroLastLevel"/>
+    </Rank>
+
+    
+    <!-- COLONIZED STAR SYSTEMS -->
+
+    <Rank Name="ColonizedStarSystemLevel00" LevelMin="0" LevelMax ="0">
+        <SimulationDescriptorReference Name="StarSystemImprovementLevel0"/>
+    </Rank>
+    <Rank Name="ColonizedStarSystemLevel01" LevelMin="1" LevelMax ="1">
+        <SimulationDescriptorReference Name="StarSystemImprovementLevel1"/>
+    </Rank>
+    <Rank Name="ColonizedStarSystemLevel02" LevelMin="2" LevelMax ="2">
+        <SimulationDescriptorReference Name="StarSystemImprovementLevel2"/>
+    </Rank>
+    <Rank Name="ColonizedStarSystemLevel03" LevelMin="3" LevelMax ="3">
+        <SimulationDescriptorReference Name="StarSystemImprovementLevel3"/>
+    </Rank>
+    <Rank Name="ColonizedStarSystemLevel04" LevelMin="4" LevelMax ="4">
+        <SimulationDescriptorReference Name="StarSystemImprovementLevel4"/>
+    </Rank>
+    <Rank Name="ColonizedStarSystemLevel05" LevelMin="5" LevelMax ="5">
+        <SimulationDescriptorReference Name="StarSystemImprovementLevel5"/>
+    </Rank>
+    
+</Datatable>

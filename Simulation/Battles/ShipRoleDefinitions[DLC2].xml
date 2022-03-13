@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../../Schemas/ShipRoleDefinition.xsd">
+
+    <ShipRoleDefinition Name="ShipRoleJuggernaut">
+        <CostReductionReference Name="MilitaryShipConstructible"/>
+        <CostReductionReference Name="JuggernautShipConstructible"/>
+        <SimulationDescriptorReference Name="ShipStatBonus1Movement2"/>
+        <SimulationDescriptorReference Name="ShipRoleJuggernaut"/>
+        <SimulationDescriptorReference Name="OnlyOneOfRolePerEncounterGroup"/>
+        <SimulationDescriptorReference Name="CannotBeScrapped"/>
+        <PopulationEvent Name="PopulationEventJuggernautBuilt"/>
+    </ShipRoleDefinition>
+
+    <ShipRoleDefinition Name="ShipRoleBattleship">
+        <CostReductionReference Name="MilitaryShipConstructible"/>
+        <CostReductionReference Name="JuggernautShipConstructible"/>
+       <SimulationDescriptorReference Name="ShipStatBonus1Movement2"/>
+        <SimulationDescriptorReference Name="ShipRoleBattleship"/>
+        <SimulationDescriptorReference Name="CannotBeScrapped"/>
+    </ShipRoleDefinition>
+
+    <ShipRoleDefinition Name="ShipRoleObliterator">
+        <CostReductionReference Name="MilitaryShipConstructible"/>
+        <CostReductionReference Name="JuggernautShipConstructible"/>
+        <SimulationDescriptorReference Name="ShipRoleObliterator"/>
+        <SimulationDescriptorReference Name="CannotBeScrapped"/>
+    </ShipRoleDefinition>
+    
+</Datatable>

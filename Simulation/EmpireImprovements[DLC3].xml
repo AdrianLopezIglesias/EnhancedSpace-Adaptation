@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/EmpireImprovementDefinition.xsd">
+
+    <!--##########################################-->
+    <!--###########	  SLEEPERS        ###########-->
+    <!--##########################################-->
+
+   <EmpireImprovementDefinition Name="EmpireImprovementRevealTraitors" Category="CategoryRevealTraitors" SubCategory="SubCategoryMilitary">
+      <DownloadableContentPrerequisite Flags="Prerequisite,Discard,UnlockAvailability">DLCUC</DownloadableContentPrerequisite>
+      <TechnologyPrerequisite>TechnologyCuriosityLevel2</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="EmpireImprovementRevealTraitors" />
+   </EmpireImprovementDefinition>
+   
+   <EmpireImprovementDefinition Name="EmpireImprovementKillTraitors" Category="CategoryKillTraitors" SubCategory="SubCategoryMilitary">
+      <DownloadableContentPrerequisite Flags="Prerequisite,Discard,UnlockAvailability">DLCUC</DownloadableContentPrerequisite>
+      <TechnologyPrerequisite>TechnologyCuriosityLevel3</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="EmpireImprovementKillTraitors" />
+   </EmpireImprovementDefinition>
+   
+    <!--##########################################-->
+    <!--###########	     INVISIBILITY ###########-->
+    <!--##########################################-->
+
+    <EmpireImprovementDefinition Name="EmpireImprovementDetectionProbeLevel2" Category="CategoryDetectionSmall" SubCategory="SubCategoryMilitary">
+        <DownloadableContentPrerequisite Flags="Prerequisite,Discard,UnlockAvailability">DLCUC</DownloadableContentPrerequisite>
+        <TechnologyPrerequisite>TechnologyDefenseModuleStrategic4</TechnologyPrerequisite>
+        <SimulationDescriptorReference Name="EmpireImprovementDetectionProbeLevel2" />
+    </EmpireImprovementDefinition>
+
+    <EmpireImprovementDefinition Name="EmpireImprovementDetectionProbeLevel3" Category="CategoryDetectionSmall" SubCategory="SubCategoryMilitary">
+        <DownloadableContentPrerequisite Flags="Prerequisite,Discard,UnlockAvailability">DLCUC</DownloadableContentPrerequisite>
+        <TechnologyPrerequisite>TechnologyDefenseModuleStrategic6</TechnologyPrerequisite>
+        <SimulationDescriptorReference Name="EmpireImprovementDetectionProbeLevel3" />
+    </EmpireImprovementDefinition>
+
+    <EmpireImprovementDefinition Name="EmpireImprovementInvisibilityLevel2" Category="CategoryInvisibleSmall" SubCategory="SubCategoryMilitary">
+        <PathPrerequisite       Inverted="false"    Flags="Prerequisite,Discard,UnlockAvailability,Faction,AffinityGameplayTechnologyUmbralChoir">../ClassEmpire,FactionTraitNativelyInvisibleShips</PathPrerequisite>
+        <TechnologyPrerequisite>TechnologyDefenseModuleStrategic1</TechnologyPrerequisite>
+        <SimulationDescriptorReference Name="EmpireImprovementInvisibilityLevel2" />
+    </EmpireImprovementDefinition>
+
+    <EmpireImprovementDefinition Name="EmpireImprovementInvisibilityLevel3" Category="CategoryInvisibleSmall" SubCategory="SubCategoryMilitary">
+        <PathPrerequisite       Inverted="false"    Flags="Prerequisite,Discard,UnlockAvailability,Faction,AffinityGameplayTechnologyUmbralChoir">../ClassEmpire,FactionTraitNativelyInvisibleShips</PathPrerequisite>
+        <TechnologyPrerequisite>TechnologyDefenseModuleStrategic3</TechnologyPrerequisite>
+        <SimulationDescriptorReference Name="EmpireImprovementInvisibilityLevel3" />
+    </EmpireImprovementDefinition>
+
+
+
+</Datatable>

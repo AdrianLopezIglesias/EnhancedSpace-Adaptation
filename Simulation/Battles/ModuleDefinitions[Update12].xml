@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../../Schemas/ModuleDefinition.xsd">
+
+    <SupportModule Name="ModuleIncreasedSpeedQuest01" Family="IncreaseSpeed" Level="1">
+        <Cost ResourceName="SystemProduction">50</Cost>
+        <PathPrerequisite Flags="Edition" Inverted="false">../ClassEmpire/ClassQuests,UniquePlanetQuest-Chapter1-Choice1Reward</PathPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleSupportEngine"/>
+        <SimulationDescriptorReference Name="ModuleIncreasedSpeedQuest"/>
+        <SimulationDescriptorReference Name="ModuleIncreasedSpeedQuest01"/>
+        <BattleActionReference Name="BattleActionSupportInitialize"/>
+    </SupportModule>
+    
+</Datatable>

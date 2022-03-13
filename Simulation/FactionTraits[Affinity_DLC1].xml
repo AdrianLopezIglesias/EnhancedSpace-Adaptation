@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/FactionTrait.xsd">
+    <!-- VAULTERS -->
+    <FactionAffinity Name="AffinityGameplayVaulters" SubCategory="MajorFactionAffinity" Hidden="false" Custom="true" Cost="95">
+        <Command Name="TransferResources"               Arguments="EmpireManpower,50"/>
+        <Command Name="TransferResources"               Arguments="EmpireMoney,400"/>
+        <Command Name="TransferResources"               Arguments="EmpireEmpirePoint,50"/>
+        <Command Name="TransferResources"               Arguments="SystemInfluence,75"/>
+
+        <Command Name="UnlockBattleAction"              Arguments="Group_ComputeShipExperience"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_OnEnemyShipDestruction"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_SetInitialMilitaryPower"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_ComputeEndBattleStatus"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_Retreat"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_Retreat_RecoverMovementPoint"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_ReinforcementFlotilla_OnOwnShipDestruction"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_MainFlotilla_OnOwnShipDestruction"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_SetInitialMoraleBonus"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_OnEnemyFlotillaDestruction"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_OnFlotillaDestruction"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_ReportFlotillaDamageAppliedCurrentPhase"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_PhaseRepairShipCoreSection"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_RepairShipCoreSection"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_OnEnemyShipDeactivation"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_MainFlotilla_OnOwnShipDeactivation"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_SetShipAliveCount"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_ReduceShipAliveCount"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_ReportFlotillaInvisibilityStatusCurrentPhase"/>
+
+        <Command Name="UnlockTechnology"                Arguments="TechnologyDefinitionTerransStartingShipDesigns"/>
+
+        <Command Name="SetHomeSystemManpowerPercentage" Arguments="1" Priority="-1"/>
+        <Command Name="SetFleetsManpowerPercentage"     Arguments="1" Priority="-1"/>
+
+        <Command Name="RefillEmpireManpowerAfterColonizingHomeSystem"/>
+
+        <!--HOME SYSTEM DEFAULT BUILDING -->
+        <Command Name="CreateHomeSystemImprovement"     Arguments="StarSystemImprovementHomeSystem"/>
+        <Command Name="CreateHomeSystemImprovement"     Arguments="StarSystemImprovementColonyBase"/>
+
+        <Command Name="UnlockPlay"                      Arguments="PlayDefensiveShortHullPlatingIncrease" Priority="0"/>
+        <Command Name="UnlockPlay"                      Arguments="PlayDefensiveLongShieldIncrease" Priority="-1"/>
+        <!--<Command Name="UnlockPlay"                      Arguments="PlayPostBalancedRecycling" Priority="-2"/>
+          <Command Name="UnlockPlay"                      Arguments="PlayOffensiveLongDamageIncreasePerShip" Priority="-3"/>
+          <Command Name="UnlockPlay"                      Arguments="PlayOffensiveMediumCriticIncrease" Priority="-4"/>
+          <Command Name="UnlockPlay"                      Arguments="PlayPostBalancedXPIncrease" Priority="-5"/>-->
+
+        <!--Balance mod unlock-->
+        <Command Name="UnlockPlay"                      Arguments="PlayPostBalancedOpponentRecycling" Priority="-5"/>
+        <Command Name="UnlockPlay"                      Arguments="PlayOffensiveMediumProjectilePenertrationIncrease" Priority="-5"/>
+        <Command Name="UnlockPlay"                      Arguments="PlayOffensiveBalancedShieldPenetrationIncrease" Priority="-5"/>
+
+        <!--COLONY DEFAULT BUILDING -->
+        <ColonyImprovementReference                     Name="StarSystemImprovementColonyBase"/>
+
+        <SimulationDescriptorReference Name="AffinityVaulters"/>
+        <SimulationDescriptorReference Name="AffinityGameplayVaulters"/>
+
+        <StartingFleet>Explorer,Explorer,Colonizer</StartingFleet>
+        <UnlockedAbstractShipDesigns>Colonizer,Explorer,SmallAttack,SmallSupport,MediumAttack,MediumDefense,LargeCarrier,ScienceJuggernaut,MilitaryJuggernaut,SupportJuggernaut,Battleship,Obliterator</UnlockedAbstractShipDesigns>
+        <DefaultColonizer>ShipDesignDecolonizationVaulters</DefaultColonizer>
+        <AutomatedShip>ShipDesignAutomatedShipVaulters</AutomatedShip>
+
+    </FactionAffinity>
+</Datatable>

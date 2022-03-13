@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+
+  
+   <ExtendedGuiElement Name="EmpireImprovementFood1">
+      <Title>%EmpireImprovementFood1Title</Title>
+      <Description>%EmpireImprovementFood1Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Improvements/EmpireImprovementFood" />
+         <Icon Size="Large" Path="Improvements/EmpireImprovementFood" />
+      </Icons>
+   </ExtendedGuiElement>
+
+   <ExtendedGuiElement Name="EmpireImprovementScience1">
+      <Title>%EmpireImprovementScience1Title</Title>
+      <Description>%EmpireImprovementScience1Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Improvements/EmpireImprovementFIDSI" />
+         <Icon Size="Large" Path="Improvements/EmpireImprovementFIDSI" />
+      </Icons>
+   </ExtendedGuiElement>
+   
+   <ExtendedGuiElement Name="EmpireImprovementScience2">
+      <Title>%EmpireImprovementScience2Title</Title>
+      <Description>%EmpireImprovementScience2Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Improvements/EmpireImprovementScience" />
+         <Icon Size="Large" Path="Improvements/EmpireImprovementScience" />
+      </Icons>
+   </ExtendedGuiElement>
+
+   <ExtendedGuiElement Name="EmpireImprovementScience3">
+      <Title>%EmpireImprovementScience3Title</Title>
+      <Description>%EmpireImprovementScience3Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Improvements/EmpireImprovementFIDSI" />
+         <Icon Size="Large" Path="Improvements/EmpireImprovementFIDSI" />
+      </Icons>
+   </ExtendedGuiElement>
+
+   <ExtendedGuiElement Name="EmpireImprovementDust1">
+      <Title>%EmpireImprovementDust1Title</Title>
+      <Description>%EmpireImprovementDust1Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Improvements/EmpireImprovementDust" />
+         <Icon Size="Large" Path="Improvements/EmpireImprovementDust" />
+      </Icons>
+   </ExtendedGuiElement>
+
+   <ExtendedGuiElement Name="EmpireImprovementDust2">
+      <Title>%EmpireImprovementDust2Title</Title>
+      <Description>%EmpireImprovementDust2Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Improvements/EmpireImprovementDust" />
+         <Icon Size="Large" Path="Improvements/EmpireImprovementDust" />
+      </Icons>
+   </ExtendedGuiElement>
+
+   <ExtendedGuiElement Name="EmpireImprovementDust3">
+      <Title>%EmpireImprovementDust3Title</Title>
+      <Description>%EmpireImprovementDust3Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Improvements/EmpireImprovementBuyout" />
+         <Icon Size="Large" Path="Improvements/EmpireImprovementBuyout" />
+      </Icons>
+   </ExtendedGuiElement>
+
+   <ExtendedGuiElement Name="EmpireImprovementDust4">
+      <Title>%EmpireImprovementDust4Title</Title>
+      <Description>%EmpireImprovementDust4Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Improvements/EmpireImprovementTrade" />
+         <Icon Size="Large" Path="Improvements/EmpireImprovementTrade" />
+      </Icons>
+   </ExtendedGuiElement>
+
+   <ExtendedGuiElement Name="EmpireImprovementInfluence1">
+      <Title>%EmpireImprovementInfluence1Title</Title>
+      <Description>%EmpireImprovementInfluence1Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Improvements/EmpireImprovementInfluence" />
+         <Icon Size="Large" Path="Improvements/EmpireImprovementInfluence" />
+      </Icons>
+   </ExtendedGuiElement>
+
+   <ExtendedGuiElement Name="EmpireImprovementArkShipMovement2">
+      <Title>%EmpireImprovementArkShipMovement2Title</Title>
+      <Description>%EmpireImprovementArkShipMovement2Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="EmpireImprovementShipSmall" />
+         <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/FakeImprovements/EmpireImprovementShipLarge" />
+      </Icons>
+   </ExtendedGuiElement>
+
+   <ExtendedGuiElement Name="EmpireImprovementArkShipMovement3">
+      <Title>%EmpireImprovementArkShipMovement3Title</Title>
+      <Description>%EmpireImprovementArkShipMovement3Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="EmpireImprovementShipSmall" />
+         <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/FakeImprovements/EmpireImprovementShipLarge" />
+      </Icons>
+   </ExtendedGuiElement>
+
+   <ExtendedGuiElement Name="EmpireImprovementArkShipMovement3">
+      <Title>%EmpireImprovementArkShipMovement3Title</Title>
+      <Description>%EmpireImprovementArkShipMovement3Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="EmpireImprovementShipSmall" />
+         <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/FakeImprovements/EmpireImprovementShipLarge" />
+      </Icons>
+   </ExtendedGuiElement>
+
+</Datatable>

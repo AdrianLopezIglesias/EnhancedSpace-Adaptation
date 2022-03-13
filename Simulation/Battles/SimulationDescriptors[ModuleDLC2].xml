@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+
+    <SimulationDescriptor Name="ClassModuleJuggernautOnly" Type="ClassModuleJuggernautOnly"/> 
+    <SimulationDescriptor Name="ClassModuleCarrierBattleshipOnly" Type="ClassModuleCarrierBattleshipOnly"/> 
+    <SimulationDescriptor Name="ClassModuleCarrierJuggernautBattleshipOnly" Type="ClassModuleCarrierJuggernautBattleshipOnly"/>
+    <SimulationDescriptor Name="ClassModuleJuggernautBattleshipOnly" Type="ClassModuleJuggernautBattleshipOnly"/>
+    <SimulationDescriptor Name="ClassModuleMothershipOnly" Type="ClassModuleMothershipOnly"/>
+
+    <SimulationDescriptor Name="ClassModuleJuggernautMining" Type="ClassModuleJuggernautMining"/>
+    <SimulationDescriptor Name="ClassModuleJuggernautResourceGathererMining" Type="ClassModuleJuggernautResourceGathererMining"/>
+
+    <SimulationDescriptor Name="ModuleSupportJuggernautMiningProbe" Type="ModuleSupportJuggernautMiningProbe">
+        <Property Name="NetShipMiningProbe"/>
+        <Property Name="MaximumShipMiningProbeStock"/>
+        <Property Name="MiningProbeLifetime"/>
+        <Property Name="MiningProbeDepletionPointsOnPlanet"/>
+        <Property Name="MiningProbeDepositValueMultiplier"/>
+        <Property Name="MiningProbePlanetStatsMultiplier"/>
+
+        <Modifier TargetProperty="NetShipMiningProbe"                   Operation="Addition"    Value="0.05"                                    Path="../ClassShip"/>
+        <Modifier TargetProperty="MiningProbeDepletionPointsOnPlanet"   Operation="Addition"    Value="$(MiningProbeDepletionPointsOnPlanet)"   Path="../ClassGarrison"/>
+        <Modifier TargetProperty="MaximumShipMiningProbeStock"          Operation="Addition"    Value="$(MaximumShipMiningProbeStock)"          Path="../ClassShip"/>
+
+        <Modifier TargetProperty="JuggernautMiningModulesCount" Operation="Addition" Value="1" Path="../ClassEmpire"/>
+    </SimulationDescriptor>
+    
+    <SimulationDescriptor Name="ModuleSupportJuggernautMiningProbeStarting" Type="ModuleSupportJuggernautMiningProbe">
+        <Modifier TargetProperty="MaximumShipMiningProbeStock"          Operation="Addition"    Value="1"/>
+        <BinaryModifier TargetProperty="MiningProbeDepositValueMultiplier"    Operation="Force" Left="0.15" BinaryOperation="Multiplication" Right="$(Multiplier)"/>
+    </SimulationDescriptor>
+    
+    <SimulationDescriptor Name="ModuleSupportJuggernautMiningProbeFast1" Type="ModuleSupportJuggernautMiningProbe">
+        <Modifier TargetProperty="MaximumShipMiningProbeStock"          Operation="Addition"    Value="1"/>
+        <BinaryModifier TargetProperty="MiningProbeDepositValueMultiplier"    Operation="Force" Left="0.20" BinaryOperation="Multiplication" Right="$(Multiplier)"/>
+    </SimulationDescriptor>
+    
+    <SimulationDescriptor Name="ModuleSupportJuggernautMiningProbeFast2" Type="ModuleSupportJuggernautMiningProbe">
+        <Modifier TargetProperty="MaximumShipMiningProbeStock"          Operation="Addition"    Value="1"/>
+        <BinaryModifier TargetProperty="MiningProbeDepositValueMultiplier"    Operation="Force" Left="0.25" BinaryOperation="Multiplication" Right="$(Multiplier)"/>
+    </SimulationDescriptor>
+    
+    <SimulationDescriptor Name="ModuleSupportJuggernautMiningProbeCore" Type="ModuleSupportJuggernautMiningProbe">
+        <Modifier TargetProperty="MaximumShipMiningProbeStock"          Operation="Addition"    Value="1"/>
+        <BinaryModifier TargetProperty="MiningProbeDepositValueMultiplier"    Operation="Force" Left="0.30" BinaryOperation="Multiplication" Right="$(Multiplier)"/>
+    </SimulationDescriptor>    
+
+    <SimulationDescriptor Name="ModuleSupportJuggernautMiningProbeStartingHissho" Type="ModuleSupportJuggernautMiningProbe">
+       <Modifier TargetProperty="MaximumShipMiningProbeStock"                Operation="Addition"    Value="1"/>
+       <BinaryModifier TargetProperty="MiningProbeDepositValueMultiplier"    Operation="Force"       Left="0.2" BinaryOperation="Multiplication" Right="$(Multiplier)"/>
+        <Modifier TargetProperty="MiningProbePlanetStatsMultiplier"          Operation="Force"       Value="$(Multiplier)"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleSupportJuggernautMiningProbeFastHissho1" Type="ModuleSupportJuggernautMiningProbe">
+        <Modifier TargetProperty="MaximumShipMiningProbeStock"                Operation="Addition"    Value="1"/>
+        <BinaryModifier TargetProperty="MiningProbeDepositValueMultiplier"    Operation="Force"       Left="0.25" BinaryOperation="Multiplication" Right="$(Multiplier)"/>
+        <Modifier TargetProperty="MiningProbePlanetStatsMultiplier"           Operation="Force"       Value="$(Multiplier)"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleSupportJuggernautMiningProbeFastHissho2" Type="ModuleSupportJuggernautMiningProbe">
+        <Modifier TargetProperty="MaximumShipMiningProbeStock"                Operation="Addition"    Value="1"/>
+        <BinaryModifier TargetProperty="MiningProbeDepositValueMultiplier"    Operation="Force"       Left="0.3" BinaryOperation="Multiplication" Right="$(Multiplier)"/>
+        <Modifier TargetProperty="MiningProbePlanetStatsMultiplier"           Operation="Force"       Value="$(Multiplier)"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleSupportJuggernautMiningProbeCoreHissho" Type="ModuleSupportJuggernautMiningProbe">
+        <Modifier TargetProperty="MaximumShipMiningProbeStock"                Operation="Addition"    Value="1"/>
+        <BinaryModifier TargetProperty="MiningProbeDepositValueMultiplier"    Operation="Force"       Left="0.3" BinaryOperation="Multiplication" Right="$(Multiplier)"/>
+
+        <BinaryModifier TargetProperty="MiningProbeDepletionPointsOnPlanet"   Operation="Force"       Left="2" BinaryOperation="Multiplication" Right="$(Multiplier)"/>
+        <BinaryModifier TargetProperty="MiningProbePlanetStatsMultiplier"     Operation="Force"       Left="1.5" BinaryOperation="Multiplication" Right="$(Multiplier)"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleSupportJuggernautVision" Type="ModuleSupportJuggernautVision">
+        <Property Name="VisionRange"/>
+        <Property Name="MaximumMovement"/>
+
+        <Modifier TargetProperty="VisionRange"              Operation="Addition"        Value="$(VisionRange)"                Path="../ClassShip"     Priority="1"/>
+        <Modifier TargetProperty="MaximumMovement"          Operation="Addition"        Value="$(MaximumMovement)"            Path="../ClassShip"     Priority="1"/>
+
+        <Modifier TargetProperty="JuggernautExoticModulesCount" Operation="Addition" Value="1" Path="../ClassEmpire"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleSupportJuggernautVision1" Type="ModuleSupportJuggernautVision">
+        <Modifier TargetProperty="VisionRange"          Operation="Addition"    Value="8"       Path="ModuleSupportJuggernautVision"/>
+        <Modifier TargetProperty="MaximumMovement"      Operation="Addition"    Value="2"       Path="ModuleSupportJuggernautVision"/>
+    </SimulationDescriptor>
+    
+    <SimulationDescriptor Name="ModuleSupportJuggernautTerraformer" Type="ModuleSupportJuggernautTerraformer">
+        <Property Name="NetTerraformationProduction"/>
+        <Property Name="NetAnomalyReductionProduction"/>
+        <Modifier TargetProperty="NetTerraformationProduction"      Operation="Addition"    Value="$(NetTerraformationProduction)"      Path="../ClassGarrisonFleet"/>
+        <Modifier TargetProperty="NetAnomalyReductionProduction"    Operation="Addition"    Value="$(NetAnomalyReductionProduction)"    Path="../ClassGarrisonFleet"/>
+
+        <Modifier TargetProperty="JuggernautTerraformationModulesCount" Operation="Addition" Value="1" Path="../ClassEmpire"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleSupportJuggernautTerraformer1" Type="ModuleSupportJuggernautTerraformer">
+        <Modifier TargetProperty="NetTerraformationProduction"      Operation="Addition"    Value="60"/>
+        <Modifier TargetProperty="NetAnomalyReductionProduction"    Operation="Addition"    Value="40"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleSupportJuggernautTerraformer2" Type="ModuleSupportJuggernautTerraformer">
+        <Modifier TargetProperty="NetTerraformationProduction"      Operation="Addition"    Value="120"/>
+        <Modifier TargetProperty="NetAnomalyReductionProduction"    Operation="Addition"    Value="80"/>
+    </SimulationDescriptor>
+
+
+    <SimulationDescriptor Name="ModuleSupportJuggernautRejuvenator" Type="ModuleSupportJuggernautRejuvenator">
+        <Property Name="NetRestorationProduction"/>
+        <Property Name="NetDepletionPointsOnOrbit"/>
+        <Modifier TargetProperty="NetRestorationProduction"         Operation="Addition"    Value="$(NetRestorationProduction)"    Path="../ClassGarrisonFleet"/>
+        <Modifier TargetProperty="NetDepletionPointsOnOrbit"         Operation="Subtraction"    Value="$(NetDepletionPointsOnOrbit)"    Path="../ClassGarrisonFleet"/>
+
+        <Modifier TargetProperty="JuggernautRestorationModulesCount" Operation="Addition" Value="1" Path="../ClassEmpire"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleSupportJuggernautRejuvenator1" Type="ModuleSupportJuggernautRejuvenator">
+        <Modifier TargetProperty="NetRestorationProduction"         Operation="Addition"    Value="80"/>
+        <Modifier TargetProperty="NetDepletionPointsOnOrbit"        Operation="Addition"    Value="2"/>
+    </SimulationDescriptor>
+
+    <!-- Cravers module (+science per depletion) -->
+    <SimulationDescriptor Name="ModuleSupportJuggernautRejuvenatorCravers" Type="ModuleSupportJuggernautRejuvenator">
+        <Property Name="NetRestorationProduction"/>
+        <Property Name="EmpireResearchPerDepletionPoint"/>
+
+        <Modifier TargetProperty="NetRestorationProduction"         Operation="Addition"        Value="$(NetRestorationProduction)"         Path="../ClassGarrisonFleet"/>
+        <Modifier TargetProperty="EmpireResearchPerDepletionPoint"  Operation="Addition"        Value="$(EmpireResearchPerDepletionPoint)"  Path="../ClassGarrisonFleet"/>
+
+        <Modifier TargetProperty="HasBonusesFromDepletion"      Operation="Addition" Value="1" Path="../ClassGarrisonFleet"/>
+        <Modifier TargetProperty="JuggernautExoticModulesCount" Operation="Addition" Value="1" Path="../ClassEmpire"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleSupportJuggernautRejuvenatorCravers1" Type="ModuleSupportJuggernautRejuvenator">
+        <Modifier TargetProperty="NetRestorationProduction"         Operation="Addition"    Value="80"/>
+        <Modifier TargetProperty="EmpireResearchPerDepletionPoint"  Operation="Addition"    Value="0.5"/>
+    </SimulationDescriptor>
+    
+    <SimulationDescriptor Name="ModuleSupportJuggernautResearch" Type="ModuleSupportJuggernautResearch">
+        <Property Name="NetEmpireResearchOnSpecialNodes"/>
+
+        <Property Name="TechnologyCostQuadrantScienceAndExplorationMultiplierFromSpecialNodes" />
+        <Property Name="TechnologyCostQuadrantEconomyAndTradeMultiplierFromSpecialNodes"       />
+        <Property Name="TechnologyCostQuadrantEmpireDevelopmentMultiplierFromSpecialNodes"     />
+        <Property Name="TechnologyCostQuadrantMilitaryMultiplierFromSpecialNodes"              />
+
+        <!-- "I receive bonuses here". -->
+        <Modifier TargetProperty="HasBonusesFromOrbit" Operation="Addition" Value="1" Path="../ClassGarrisonFleet"/>
+        
+        <!-- Bonus science (on any node) -->
+        <Modifier TargetProperty="NetEmpireResearchOnSpecialNodes"    Operation="Addition"    Value="$(NetEmpireResearchOnSpecialNodes)"    Path="../ClassGarrisonFleet,FleetOrbitingSpecialNode"/>
+
+        <!-- Black hole & neutron star -->
+        <Modifier TargetProperty="TechnologyCostQuadrantScienceAndExplorationMultiplierFromSpecialNodes"     Operation="Subtraction"    Value="$(TechnologyCostQuadrantScienceAndExplorationMultiplierFromSpecialNodes)"     Path="../ClassGarrisonFleet,FleetOrbitingSpecialNodeBlackHole"/>
+        <Modifier TargetProperty="TechnologyCostQuadrantScienceAndExplorationMultiplierFromSpecialNodes"     Operation="Subtraction"    Value="$(TechnologyCostQuadrantScienceAndExplorationMultiplierFromSpecialNodes)"     Path="../ClassGarrisonFleet,FleetOrbitingSpecialNodeNeutronStar" TooltipHidden="true"/>
+        
+        <!-- Asteroid field & solar nebula -->
+        <Modifier TargetProperty="TechnologyCostQuadrantEconomyAndTradeMultiplierFromSpecialNodes"           Operation="Subtraction"    Value="$(TechnologyCostQuadrantEconomyAndTradeMultiplierFromSpecialNodes)"           Path="../ClassGarrisonFleet,FleetOrbitingSpecialNodeAsteroidField"/>
+        <Modifier TargetProperty="TechnologyCostQuadrantEconomyAndTradeMultiplierFromSpecialNodes"           Operation="Subtraction"    Value="$(TechnologyCostQuadrantEconomyAndTradeMultiplierFromSpecialNodes)"           Path="../ClassGarrisonFleet,FleetOrbitingSpecialNodeSolarNebula" TooltipHidden="true"/>
+        
+        <!-- Space clouds & vaulters -->
+        <Modifier TargetProperty="TechnologyCostQuadrantEmpireDevelopmentMultiplierFromSpecialNodes"         Operation="Subtraction"    Value="$(TechnologyCostQuadrantEmpireDevelopmentMultiplierFromSpecialNodes)"         Path="../ClassGarrisonFleet,FleetOrbitingSpecialNodeSpaceClouds"/>
+        <Modifier TargetProperty="TechnologyCostQuadrantEmpireDevelopmentMultiplierFromSpecialNodes"         Operation="Subtraction"    Value="$(TechnologyCostQuadrantEmpireDevelopmentMultiplierFromSpecialNodes)"         Path="../ClassGarrisonFleet,FleetOrbitingSpecialNodeVaulters" TooltipHidden="true"/>
+        
+        <!-- Collapsing star -->
+        <Modifier TargetProperty="TechnologyCostQuadrantMilitaryMultiplierFromSpecialNodes"                  Operation="Subtraction"    Value="$(TechnologyCostQuadrantMilitaryMultiplierFromSpecialNodes)"                  Path="../ClassGarrisonFleet,FleetOrbitingSpecialNodeCollapsingStar"/>
+
+        <Modifier TargetProperty="JuggernautResearchModulesCount" Operation="Addition" Value="1" Path="../ClassEmpire"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleSupportJuggernautResearchStarting" Type="ModuleSupportJuggernautResearch">
+       <BinaryModifier TargetProperty="NetEmpireResearchOnSpecialNodes"     Operation="Addition"   Left="15" BinaryOperation="Multiplication" Right="$(Multiplier)"/>
+       
+       <BinaryModifier TargetProperty="TechnologyCostQuadrantScienceAndExplorationMultiplierFromSpecialNodes"     Operation="Addition"   Left="0.002" BinaryOperation="Multiplication" Right="$(Multiplier)"/>
+       <BinaryModifier TargetProperty="TechnologyCostQuadrantEconomyAndTradeMultiplierFromSpecialNodes"           Operation="Addition"   Left="0.002" BinaryOperation="Multiplication" Right="$(Multiplier)"/>
+       <BinaryModifier TargetProperty="TechnologyCostQuadrantEmpireDevelopmentMultiplierFromSpecialNodes"         Operation="Addition"   Left="0.002" BinaryOperation="Multiplication" Right="$(Multiplier)"/>
+       <BinaryModifier TargetProperty="TechnologyCostQuadrantMilitaryMultiplierFromSpecialNodes"                  Operation="Addition"   Left="0.002" BinaryOperation="Multiplication" Right="$(Multiplier)"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleSupportJuggernautResearch1" Type="ModuleSupportJuggernautResearch">
+       <BinaryModifier TargetProperty="NetEmpireResearchOnSpecialNodes"     Operation="Addition"   Left="30" BinaryOperation="Multiplication" Right="$(Multiplier)"/>
+
+       <BinaryModifier TargetProperty="TechnologyCostQuadrantScienceAndExplorationMultiplierFromSpecialNodes"     Operation="Addition"   Left="0.003" BinaryOperation="Multiplication" Right="$(Multiplier)"/>
+       <BinaryModifier TargetProperty="TechnologyCostQuadrantEconomyAndTradeMultiplierFromSpecialNodes"           Operation="Addition"   Left="0.003" BinaryOperation="Multiplication" Right="$(Multiplier)"/>
+       <BinaryModifier TargetProperty="TechnologyCostQuadrantEmpireDevelopmentMultiplierFromSpecialNodes"         Operation="Addition"   Left="0.003" BinaryOperation="Multiplication" Right="$(Multiplier)"/>
+       <BinaryModifier TargetProperty="TechnologyCostQuadrantMilitaryMultiplierFromSpecialNodes"                  Operation="Addition"   Left="0.003" BinaryOperation="Multiplication" Right="$(Multiplier)"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleSupportJuggernautResearch2" Type="ModuleSupportJuggernautResearch">
+        <BinaryModifier TargetProperty="NetEmpireResearchOnSpecialNodes"     Operation="Addition"   Left="60" BinaryOperation="Multiplication" Right="$(Multiplier)"/>
+
+        <BinaryModifier TargetProperty="TechnologyCostQuadrantScienceAndExplorationMultiplierFromSpecialNodes"     Operation="Addition"   Left="0.004" BinaryOperation="Multiplication" Right="$(Multiplier)"/>
+        <BinaryModifier TargetProperty="TechnologyCostQuadrantEconomyAndTradeMultiplierFromSpecialNodes"           Operation="Addition"   Left="0.004" BinaryOperation="Multiplication" Right="$(Multiplier)"/>
+        <BinaryModifier TargetProperty="TechnologyCostQuadrantEmpireDevelopmentMultiplierFromSpecialNodes"         Operation="Addition"   Left="0.004" BinaryOperation="Multiplication" Right="$(Multiplier)"/>
+        <BinaryModifier TargetProperty="TechnologyCostQuadrantMilitaryMultiplierFromSpecialNodes"                  Operation="Addition"   Left="0.004" BinaryOperation="Multiplication" Right="$(Multiplier)"/>
+    </SimulationDescriptor>
+
+
+    <SimulationDescriptor Name="ModuleSupportJuggernautAnalyzer" Type="ModuleSupportJuggernautAnalyzer">
+        <Property Name="NetEmpireMoneyOnSpecialNodes"/>
+        <Property Name="NetEmpireResearchOnSpecialNodes"/>
+        <Property Name="NetEmpireEmpirePointOnSpecialNodes"/>
+        <Property Name="NetEmpireLifeForceOnSpecialNodes"/>
+
+        <Property Name="NetStrategic1FromSpecialNodes"/>
+        <Property Name="NetStrategic2FromSpecialNodes"/>
+        <Property Name="NetStrategic3FromSpecialNodes"/>
+        <Property Name="NetStrategic4FromSpecialNodes"/>
+        <Property Name="NetStrategic5FromSpecialNodes"/>
+        <Property Name="NetStrategic6FromSpecialNodes"/>
+
+        <Property Name="SpecialNodeEffectMultiplier"/>
+
+        <!-- "I receive bonuses here". -->
+        <Modifier TargetProperty="HasBonusesFromOrbit" Operation="Addition" Value="1" Path="../ClassGarrisonFleet"/>
+        
+        <!-- Bonus science, dust & influence (on any node) -->
+        <Modifier TargetProperty="NetEmpireMoneyOnSpecialNodes"         Operation="Addition"    Value="$(NetEmpireMoneyOnSpecialNodes)"         Path="../ClassGarrisonFleet,FleetOrbitingSpecialNode"/>
+        <Modifier TargetProperty="NetEmpireResearchOnSpecialNodes"      Operation="Addition"    Value="$(NetEmpireResearchOnSpecialNodes)"      Path="../ClassGarrisonFleet,FleetOrbitingSpecialNode"/>
+        <Modifier TargetProperty="NetEmpireEmpirePointOnSpecialNodes"   Operation="Addition"    Value="$(NetEmpireEmpirePointOnSpecialNodes)"   Path="../ClassGarrisonFleet,FleetOrbitingSpecialNode"/>
+        <Modifier TargetProperty="NetEmpireLifeForceOnSpecialNodes"     Operation="Addition"    Value="$(NetEmpireLifeForceOnSpecialNodes)"     Path="../ClassGarrisonFleet,FleetOrbitingSpecialNode"/>
+
+        <!-- More potent special node effect on system, if owned. -->
+        <Modifier TargetProperty="SpecialNodeEffectMultiplier"          Operation="Addition"    Value="$(SpecialNodeEffectMultiplier)"    Path="../ClassGarrisonFleet"/>
+        
+        <!-- Strat generation depending on special node type -->
+        <!-- Tier 1-->
+        <Modifier TargetProperty="NetStrategic1FromSpecialNodes"        Operation="Addition"        Value="$(NetStrategic1FromSpecialNodes)"            Path="../ClassGarrisonFleet,FleetOrbitingSpecialNodeBlackHole"/>
+        <Modifier TargetProperty="NetStrategic1FromSpecialNodes"        Operation="Addition"        Value="$(NetStrategic1FromSpecialNodes)"            Path="../ClassGarrisonFleet,FleetOrbitingSpecialNodeSolarNebula"/>
+        <Modifier TargetProperty="NetStrategic1FromSpecialNodes"        Operation="Addition"        Value="$(NetStrategic1FromSpecialNodes)"            Path="../ClassGarrisonFleet,FleetOrbitingSpecialNodeAsteroidField" />
+        <Modifier TargetProperty="NetStrategic2FromSpecialNodes"        Operation="Addition"        Value="$(NetStrategic2FromSpecialNodes)"            Path="../ClassGarrisonFleet,FleetOrbitingSpecialNodeCollapsingStar"/>
+        <Modifier TargetProperty="NetStrategic2FromSpecialNodes"        Operation="Addition"        Value="$(NetStrategic2FromSpecialNodes)"            Path="../ClassGarrisonFleet,FleetOrbitingSpecialNodeNeutronStar"   />
+        <Modifier TargetProperty="NetStrategic2FromSpecialNodes"        Operation="Addition"        Value="$(NetStrategic2FromSpecialNodes)"            Path="../ClassGarrisonFleet,FleetOrbitingSpecialNodeSpaceClouds"   />
+        
+        <!-- Tier 2 -->
+        <Modifier TargetProperty="NetStrategic3FromSpecialNodes"        Operation="Addition"        Value="$(NetStrategic3FromSpecialNodes)"            Path="../ClassGarrisonFleet,FleetOrbitingSpecialNodeBlackHole"/>
+        <Modifier TargetProperty="NetStrategic3FromSpecialNodes"        Operation="Addition"        Value="$(NetStrategic3FromSpecialNodes)"            Path="../ClassGarrisonFleet,FleetOrbitingSpecialNodeSolarNebula"/>
+        <Modifier TargetProperty="NetStrategic3FromSpecialNodes"        Operation="Addition"        Value="$(NetStrategic3FromSpecialNodes)"            Path="../ClassGarrisonFleet,FleetOrbitingSpecialNodeAsteroidField" />
+        <Modifier TargetProperty="NetStrategic4FromSpecialNodes"        Operation="Addition"        Value="$(NetStrategic4FromSpecialNodes)"            Path="../ClassGarrisonFleet,FleetOrbitingSpecialNodeCollapsingStar"/>
+        <Modifier TargetProperty="NetStrategic4FromSpecialNodes"        Operation="Addition"        Value="$(NetStrategic4FromSpecialNodes)"            Path="../ClassGarrisonFleet,FleetOrbitingSpecialNodeNeutronStar"   />
+        <Modifier TargetProperty="NetStrategic4FromSpecialNodes"        Operation="Addition"        Value="$(NetStrategic4FromSpecialNodes)"            Path="../ClassGarrisonFleet,FleetOrbitingSpecialNodeSpaceClouds"   />
+
+        <!-- Space Clouds & Neutron Star --> 
+        
+        <Modifier TargetProperty="JuggernautSpecialNodeModulesCount" Operation="Addition" Value="1" Path="../ClassEmpire"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleSupportJuggernautAnalyzer1" Type="ModuleSupportJuggernautAnalyzer">
+       <BinaryModifier TargetProperty="SpecialNodeEffectMultiplier"    Operation="Addition"    Left="0.03" BinaryOperation="Multiplication" Right="$(Multiplier)"/>
+
+       <BinaryModifier TargetProperty="NetStrategic1FromSpecialNodes"  Operation="Addition"    Left="0.1" BinaryOperation="Multiplication" Right="$(Multiplier)"/>
+       <BinaryModifier TargetProperty="NetStrategic2FromSpecialNodes"  Operation="Addition"    Left="0.1" BinaryOperation="Multiplication" Right="$(Multiplier)"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleSupportJuggernautAnalyzer2" Type="ModuleSupportJuggernautAnalyzer">
+        <BinaryModifier TargetProperty="SpecialNodeEffectMultiplier"    Operation="Addition"    Left="0.03" BinaryOperation="Multiplication" Right="$(Multiplier)"/>
+
+        <BinaryModifier TargetProperty="NetStrategic3FromSpecialNodes"  Operation="Addition"    Left="0.1" BinaryOperation="Multiplication" Right="$(Multiplier)"/>
+        <BinaryModifier TargetProperty="NetStrategic4FromSpecialNodes"  Operation="Addition"    Left="0.1" BinaryOperation="Multiplication" Right="$(Multiplier)"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleSupportJuggernautAnalyzerVampirilis" Type="ModuleSupportJuggernautAnalyzer">
+        <Modifier TargetProperty="NetEmpireLifeForceOnSpecialNodes"     Operation="Addition"    Value="25"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ClassModuleSystemSupport" Type="ClassModuleSystemSupport">
+        <Modifier TargetProperty="HasEffectsOnOrbit"  Operation="Addition"    Value="1" Path="../ClassGarrisonFleet"/>
+    </SimulationDescriptor>
+
+
+    <!-- No real effect: only there for GUI. -->
+    <SimulationDescriptor Name="ModuleSupportJuggernautSystemSupport" Type="ModuleSupportJuggernautSystemSupport">
+        <Property Name="SystemFIDSFlat"/>
+        <Property Name="SystemFIDSPercent"/>
+        <Property Name="DepositValue"/>
+       
+        <Modifier TargetProperty="JuggernautSystemSupportModulesCount" Operation="Addition" Value="1" Path="../ClassEmpire"/>
+    </SimulationDescriptor>
+    <SimulationDescriptor Name="ModuleSupportJuggernautSystemSupportFIDSFlat" Type="ModuleSupportJuggernautSystemSupport">
+        <BinaryModifier TargetProperty="SystemFIDSFlat" Operation="Addition"   Left="5" BinaryOperation="Multiplication" Right="$(Multiplier)"/>
+    </SimulationDescriptor>
+    <SimulationDescriptor Name="ModuleSupportJuggernautSystemSupportFIDSDynamic" Type="ModuleSupportJuggernautSystemSupport">
+        <BinaryModifier TargetProperty="SystemFIDSPercent" Operation="Addition"   Left="0.01" BinaryOperation="Multiplication" Right="$(Multiplier)"/>
+    </SimulationDescriptor>
+
+
+    <SimulationDescriptor Name="ModuleSupportJuggernautMiningProbeLong1" Type="ModuleSupportJuggernautSystemSupport">
+       <BinaryModifier TargetProperty="DepositValue" Operation="Addition"   Left="0.04"  BinaryOperation="Multiplication" Right="$(Multiplier)" />
+    </SimulationDescriptor>
+   
+    <SimulationDescriptor Name="ModuleSupportJuggernautMiningProbeLong2" Type="ModuleSupportJuggernautSystemSupport">
+       <BinaryModifier TargetProperty="DepositValue" Operation="Addition"   Left="0.05"  BinaryOperation="Multiplication" Right="$(Multiplier)" />
+    </SimulationDescriptor>
+   
+    <SimulationDescriptor Name="ModuleSupportJuggernautMiningProbeLongHissho1" Type="ModuleSupportJuggernautSystemSupport">
+       <BinaryModifier TargetProperty="DepositValue" Operation="Addition"   Left="0.04" BinaryOperation="Multiplication" Right="$(Multiplier)"  />
+    </SimulationDescriptor>
+   
+    <SimulationDescriptor Name="ModuleSupportJuggernautMiningProbeLongHissho2" Type="ModuleSupportJuggernautSystemSupport">
+       <BinaryModifier TargetProperty="DepositValue" Operation="Addition"   Left="0.05"  BinaryOperation="Multiplication" Right="$(Multiplier)" />
+    </SimulationDescriptor>
+   
+    <SimulationDescriptor Name="ModuleSupportJuggernautMiningLongQuestHisshos2" Type="ModuleSupportJuggernautSystemSupport">
+       <BinaryModifier TargetProperty="DepositValue" Operation="Addition"   Left="0.045" BinaryOperation="Multiplication" Right="$(Multiplier)" />
+    </SimulationDescriptor>
+
+    
+    <!-- Tractor beam -->
+    <SimulationDescriptor Name="ModuleSupportJuggernautTractorBeam" Type="ModuleSupportJuggernautTractorBeam">
+        <Modifier TargetProperty="PreventsEnemyRetreat" Operation="Addition" Value="1" Path="../ClassShip"/>
+    
+        <Modifier TargetProperty="JuggernautExoticModulesCount" Operation="Addition" Value="1" Path="../ClassEmpire"/>
+    </SimulationDescriptor>
+
+    <!-- Vodyani module (+essence on destroyed planets) -->
+    <SimulationDescriptor Name="ModuleSupportJuggernautDestroyedPlanets" Type="ModuleSupportJuggernautDestroyedPlanets">
+        <Property Name="EmpireLifeforcePerDestroyedPlanets"/>
+
+        <Modifier TargetProperty="HasBonusesFromDestroyedPlanets" Operation="Addition" Value="1" Path="../ClassGarrisonFleet"/>
+
+        <Modifier TargetProperty="EmpireLifeforcePerDestroyedPlanets" Operation="Addition" Value="$(EmpireLifeforcePerDestroyedPlanets)"  Path="../ClassGarrisonFleet"/>
+    
+        <Modifier TargetProperty="JuggernautExoticModulesCount" Operation="Addition" Value="1" Path="../ClassEmpire"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleSupportJuggernautDestroyedPlanetsVodyani" Type="ModuleSupportJuggernautDestroyedPlanetsVodyani">
+        <Modifier TargetProperty="EmpireLifeforcePerDestroyedPlanets" Operation="Addition" Value="100"/>
+    </SimulationDescriptor>
+
+    <!-- This descriptor is not applied anywhere! It is used only for the GUI feedback, and must be updated when the actual effects (located in ClassGarrisonFleet) are updated! -->
+    <SimulationDescriptor Name="JuggernautFleetDestroyedPlanetsEffect" Type="JuggernautFleetDestroyedPlanetsEffect">
+        <Modifier TargetProperty="EmpireLifeforceFromJuggernauts" Operation="Addition" Value="$(NetEmpireLifeforce)" Path="../ClassEmpire" EnforceContext="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="JuggernautFleetDepletionPlanetsEffect" Type="JuggernautFleetDepletionPlanetsEffect">
+        <Modifier TargetProperty="EmpireResearchFromJuggernautsDepletion" Operation="Addition" Value="$(NetEmpireResearch)" Path="../ClassEmpire" EnforceContext="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleSupportHonorZoneEnhancer"              Type="ModuleSupportHonorZoneEnhancer">
+        <Property Name="MaximumHonorZoneRadius" BaseValue="0" MinValue="0"/>        
+        <Modifier TargetProperty="MaximumHonorZoneRadius" Operation="Percent" Value="$(MaximumHonorZoneRadius)" Path="../ClassShip" Priority="1"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleSupportHonorZoneEnhancer01"              Type="ModuleSupportHonorZoneEnhancer">
+        <Modifier TargetProperty="MaximumHonorZoneRadius"       Operation="Addition" Value="0.15"    Path="ModuleSupportHonorZoneEnhancer"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleSupportHonorZoneEnhancer02"              Type="ModuleSupportHonorZoneEnhancer">
+        <Modifier TargetProperty="MaximumHonorZoneRadius"       Operation="Addition" Value="0.30"    Path="ModuleSupportHonorZoneEnhancer"/>
+    </SimulationDescriptor>
+
+
+    <!--###############################-->
+    <!--######  FACTION SPECIFIC ######-->
+    <!--###############################-->
+
+    <SimulationDescriptor Name="ModuleDefenseJuggernautHullPlatingTerrans"      Type="ModuleDefenseJuggernaut">
+        <Modifier TargetProperty="SectionHealthBonus"               Operation="Addition" Value="1300"    Path="ClassModuleDefense"/>
+        <Modifier TargetProperty="HullPlatingAbsorption"            Operation="Addition" Value="250"    Path="ClassModuleDefense"/>
+        <Modifier TargetProperty="ManpowerDamageOverTimeDefense"    Operation="Addition" Value="0.1"    Path="ClassModuleDefense"          TooltipHidden="true"/>
+
+        <Modifier TargetProperty="JuggernautExoticModulesCount" Operation="Addition" Value="1" Path="../ClassEmpire"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleDefenseJuggernautShieldTimeLords"         Type="ModuleDefenseJuggernaut">
+        <Property Name="CriticalDamageReductionChance" BaseValue="0" MinValue="0"/>
+        <Modifier TargetProperty="CriticalDamageReductionChance"    Operation="Addition" Value="0.15"/>
+        
+        <Modifier TargetProperty="SectionHealthBonus"               Operation="Addition" Value="40"    Path="ClassModuleDefense"/>
+        <Modifier TargetProperty="ShieldAbsorption"                 Operation="Addition" Value="100"   Path="ClassModuleDefense"/>
+        <Modifier TargetProperty="ShieldBonus"                      Operation="Addition" Value="400"   Path="ClassModuleDefense"/>
+        <Modifier TargetProperty="CriticalDamageReductionChance"    Operation="Addition" Value="$(CriticalDamageReductionChance)"  Path="../ClassShip"/>
+        <!-- 35% chance to destroy salvo on impact -->
+
+        <Modifier TargetProperty="JuggernautExoticModulesCount" Operation="Addition" Value="1" Path="../ClassEmpire"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleDefenseJuggernautHullPlatingUnfallen"     Type="ModuleDefenseJuggernaut">
+        <Property Name="HPRestoredPerSecond" BaseValue="0" MinValue="0"/>
+        <Modifier TargetProperty="HPRestoredPerSecond" Operation="Addition" Value="20"/>
+        
+        <Modifier TargetProperty="SectionHealthBonus"               Operation="Addition" Value="100"    Path="ClassModuleDefense"/>
+        <Modifier TargetProperty="HullPlatingAbsorption"            Operation="Addition" Value="80"     Path="ClassModuleDefense"/>
+        <Modifier TargetProperty="HPRestoredPerSecond"              Operation="Addition" Value="$(HPRestoredPerSecond)"    Path="../ClassShip"/>
+
+        <Modifier TargetProperty="JuggernautExoticModulesCount" Operation="Addition" Value="1" Path="../ClassEmpire"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleSupportJuggernautFlotillaShieldSophons"   Type="ModuleSupportJuggernaut">
+        <Modifier TargetProperty="FlotillaMaximumShield"    Operation="Addition"                Value="800"     Path="ModuleSupportFlotillaShield" />
+        <Modifier TargetProperty="FlotillaShieldAbsorption" Operation="Addition"                Value="50"      Path="ModuleSupportFlotillaShield" />
+        <Modifier TargetProperty="DefensiveMilitaryPower"   Operation="Percent" Value="0.125" Path="../ClassShip"/>
+
+        <Modifier TargetProperty="JuggernautExoticModulesCount" Operation="Addition" Value="1" Path="../ClassEmpire"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleSupportJuggernautFleetEnhancer"           Type="ModuleSupportJuggernaut">        
+        <Property Name="MaximumMovementMalus"/>
+        <Property Name="DamageEnergyFleet"             BaseValue="0"/>
+        <Property Name="DamageProjectileFleet"         BaseValue="0"/>
+        <Property Name="CriticalHitChanceFleet"        BaseValue="0"/>
+        <Property Name="MaximumHealthFleet"            BaseValue="0"    MinValue="Negative"/>
+        <Property Name="ShieldPercentBonusFleet"       BaseValue="0"    MinValue="Negative"/>
+
+        <Modifier TargetProperty="MaximumMovement"      Operation="Subtraction" Value="$(MaximumMovementMalus)"        Path="../ClassGarrison/ClassShip"     Priority="1"/>
+        <Modifier TargetProperty="DamageEnergy"         Operation="Addition"    Value="$(DamageEnergyFleet)"           Path="../ClassGarrison/ClassShip"     Priority="1"/>
+        <Modifier TargetProperty="DamageProjectile"     Operation="Addition"    Value="$(DamageProjectileFleet)"       Path="../ClassGarrison/ClassShip"     Priority="1"/>
+        <Modifier TargetProperty="CriticalHitChance"    Operation="Addition"    Value="$(CriticalHitChanceFleet)"      Path="../ClassGarrison/ClassShip"     Priority="1"/>
+        <Modifier TargetProperty="MaximumHealth"        Operation="Percent"     Value="$(MaximumHealthFleet)"          Path="../ClassGarrison/ClassShip/ClassSection,ClassSectionCore"/>
+        <Modifier TargetProperty="MaximumShield"        Operation="Percent"     Value="$(ShieldPercentBonusFleet)"     Path="../ClassGarrison/ClassShip"  />
+
+        <Modifier TargetProperty="JuggernautExoticModulesCount" Operation="Addition" Value="1" Path="../ClassEmpire"/>
+    </SimulationDescriptor>
+    
+    <SimulationDescriptor Name="ModuleSupportJuggernautFleetEnhancerCravers"    Type="ModuleSupportJuggernautFleetEnhancer">
+        <Modifier TargetProperty="MaximumMovementMalus"         Operation="Addition"    Value="3"      Path="ModuleSupportJuggernautFleetEnhancer"/>
+        <Modifier TargetProperty="DamageEnergyFleet"            Operation="Addition"    Value="0.05"    Path="ModuleSupportJuggernautFleetEnhancer"/>
+        <Modifier TargetProperty="DamageProjectileFleet"        Operation="Addition"    Value="0.05"    Path="ModuleSupportJuggernautFleetEnhancer"/>
+        <Modifier TargetProperty="CriticalHitChanceFleet"       Operation="Addition"    Value="0.05"    Path="ModuleSupportJuggernautFleetEnhancer"/>
+        <Modifier TargetProperty="MaximumHealthFleet"           Operation="Addition"    Value="0.05"    Path="ModuleSupportJuggernautFleetEnhancer"/>
+        <Modifier TargetProperty="ShieldPercentBonusFleet"      Operation="Addition"    Value="0.05"    Path="ModuleSupportJuggernautFleetEnhancer"/>
+        <Modifier TargetProperty="FlotillaMoraleBonusPercent"   Operation="Addition"    Value="0.05"    Path="ClassModuleSupport"/>
+        <Modifier TargetProperty="OffensiveMilitaryPower"       Operation="Percent"     Value="0.05"    Path="../ClassGarrison/ClassShip"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleSupportJuggernautCoreCrackerVampirilis"   Type="ModuleSupportJuggernaut">
+        <Property Name="TurnsBeforeDestructionBonus" BaseValue="0" MinValue="0"/>
+        <Property Name="OpponentRecyclingEssencePerManpower" BaseValue="0" MinValue="0"/>
+        
+        <Modifier TargetProperty="TurnsBeforeDestructionBonus"   Operation="Addition"            Value="1"/>
+        <Modifier TargetProperty="OpponentRecyclingEssencePerManpower"   Operation="Addition"            Value="2"/>
+        
+        <Modifier TargetProperty="TurnsBeforeDestruction"        Operation="Subtraction"         Value="$(TurnsBeforeDestructionBonus)"     Path="../ClassShip//ClassModuleDestruction" TooltipHidden="true" />
+        <Modifier TargetProperty="OpponentRecyclingEssencePerManpower"      Operation="Addition" Value="$(OpponentRecyclingEssencePerManpower)"       Path="../ClassShip"     Priority="1"/>
+
+        <Modifier TargetProperty="JuggernautExoticModulesCount" Operation="Addition" Value="1" Path="../ClassEmpire"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleSupportJuggernautTradeEnhancer"   Type="ModuleSupportJuggernaut">
+        <Property Name="TradingRouteSystemBaseIncome"/>
+
+        <Modifier TargetProperty="JuggernautExoticModulesCount" Operation="Addition" Value="1" Path="../ClassEmpire"/>
+    </SimulationDescriptor>
+    
+    <SimulationDescriptor Name="ModuleSupportJuggernautTradeEnhancerVenetians"   Type="ModuleSupportJuggernaut">
+        <Modifier TargetProperty="TradingRouteSystemBaseIncome"     Operation="Addition"    Value="0.5"/>
+        <Modifier TargetProperty="OpponentRecyclingDustPerCP"       Operation="Addition"    Value="50"     Path="ModuleSupportRecycling"/>
+        <Modifier TargetProperty="OpponentRecyclingSciencePerCP"    Operation="Addition"    Value="20"     Path="ModuleSupportAnalyzer"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleSupportCooldown" Type="ModuleSupport">
+        <Property Name="CooldownReduction"/>
+
+        <BinaryModifier TargetProperty="Cooldown" Operation="Percent" Right="$(CooldownReduction)" BinaryOperation="Multiplication" Left="-1" Path="../ClassShip//ClassModuleWeapon"/>
+    </SimulationDescriptor>
+    
+    <SimulationDescriptor Name="ModuleSupportJuggernautHoratio"   Type="ModuleSupportJuggernaut">
+        <Modifier TargetProperty="CooldownReduction"                Operation="Addition" Value="0.1"    />
+        <Modifier TargetProperty="ManpowerDamageOverTimeDefense"    Operation="Addition"    Value="0.2"    Path="ClassModule"          TooltipHidden="true"/>
+
+        <Modifier TargetProperty="JuggernautExoticModulesCount" Operation="Addition" Value="1" Path="../ClassEmpire"/>
+    </SimulationDescriptor>
+
+    <!-- Used to describe the effect of the portal (via GUI element) -->
+    <SimulationDescriptor Name="ClassModuleSupportPortal" Type="ClassModuleSupportPortal"/>
+
+    <SimulationDescriptor Name="ModuleSupportPortal" Type="ModuleSupportPortal">
+        <Property Name="MaximumMovementMalus"/>
+        
+        <Modifier TargetProperty="MaximumMovement"      Operation="Subtraction" Value="$(MaximumMovementMalus)"        Path="../ClassGarrison/ClassShip"     Priority="1"/>
+    </SimulationDescriptor>
+    
+    <SimulationDescriptor Name="ModuleSupportJuggernautVaulters"   Type="ModuleSupportJuggernaut">
+        <Modifier TargetProperty="MaximumMovementMalus"      Operation="Addition"     Value="1"/>
+
+        <Modifier TargetProperty="JuggernautExoticModulesCount" Operation="Addition" Value="1" Path="../ClassEmpire"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleSupportHonor" Type="ModuleSupportHonor">
+        <Property Name="HonorGainMultiplier"/>
+
+        <Modifier TargetProperty="HonorGainMultiplier"  Operation="Percent"         Value="$(HonorGainMultiplier)"       Path="../ClassShip"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleSupportJuggernautHisshos"   Type="ModuleSupportJuggernaut">
+        <Modifier TargetProperty="HonorGainMultiplier"  Operation="Addition"        Value="1"/>
+        <Modifier TargetProperty="DamageEnergy"         Operation="Addition"        Value="0.1"     Path="ModuleSupportEnergyEnhancer"/>
+        <Modifier TargetProperty="DamageProjectile"     Operation="Addition"        Value="0.1"     Path="ModuleSupportProjectileEnhancer"/>
+
+        <Modifier TargetProperty="JuggernautExoticModulesCount" Operation="Addition" Value="1" Path="../ClassEmpire"/>
+    </SimulationDescriptor>
+
+
+    <!--####################-->
+    <!--##  QUEST HISSHOS ##-->
+    <!--####################-->
+
+    <SimulationDescriptor Name="ModuleWeaponBeamQuestHisshos1"  Type="ModuleWeapon">
+        <Modifier TargetProperty="Damage"                       Operation="Addition"  Value="132"      TooltipHidden="true"/>
+        <Modifier TargetProperty="CriticalHitChance"            Operation="Addition"  Value="0.05"     TooltipHidden="true"/>       
+    </SimulationDescriptor>
+
+
+    <SimulationDescriptor Name="ModuleSupportFlotillaShieldQuest1"  Type="ModuleSupportFlotillaShield">
+        <Modifier TargetProperty="FlotillaMaximumShield"    Operation="Addition"                Value="350"     Path="ModuleSupportFlotillaShield" />
+        <Modifier TargetProperty="FlotillaShieldAbsorption" Operation="Addition"                Value="20"      Path="ModuleSupportFlotillaShield" />
+        <Modifier TargetProperty="DefensiveMilitaryPower"   Operation="Percent" Value="0.12" Path="../ClassShip"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleSupportProjectileEnhancerQuest1"            Type="ModuleSupportProjectileEnhancer">
+        <Modifier TargetProperty="DamageProjectile" Operation="Addition" Value="0.25" Path="ModuleSupportProjectileEnhancer"/>
+        <Modifier TargetProperty="CriticalHitChance" Operation="Addition" Value="0.15" Path="ModuleSupportProjectileEnhancer"/>
+        <Modifier TargetProperty="OffensiveMilitaryPower"  Operation="Percent" Value="0.06" Path="../ClassShip"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleSupportEnergyEnhancerQuest1"                   Type="ModuleSupportEnergyEnhancer">
+        <Modifier TargetProperty="DamageEnergy" Operation="Addition" Value="0.25" Path="ModuleSupportEnergyEnhancer"/>
+        <Modifier TargetProperty="CriticalHitChance" Operation="Addition" Value="0.15" Path="ModuleSupportEnergyEnhancer"/>
+        <Modifier TargetProperty="OffensiveMilitaryPower" Operation="Percent" Value="0.06" Path="../ClassShip"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleSupportFlotillaRepairQuest1"            Type="ModuleSupportFlotillaRepair">
+        <Modifier TargetProperty="FlotillaRepairAfterBattle" Operation="Addition" Value="0.1" Path="ClassModule"/>
+        <Modifier TargetProperty="FlotillaRepairAfterPhase" Operation="Addition" Value="0.05" Path="ClassModule"/>
+        <Modifier TargetProperty="DefensiveMilitaryPower"  Operation="Percent" Value="0.9" Path="../ClassShip"/>
+    </SimulationDescriptor>
+    
+    
+    <!-- Mothership defense -->
+    <SimulationDescriptor Name="ModuleSupportMothershipAnchoredDefenseEffect" Type="ModuleSupportMothershipAnchoredDefenseEffect">
+        <Modifier TargetProperty="CannotFightUnlessDetached" Operation="Addition" Value="1" Path="../ClassGarrisonFleet,FleetActionMothershipAttached"/>
+    </SimulationDescriptor>
+</Datatable>

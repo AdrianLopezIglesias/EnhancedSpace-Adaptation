@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/ManpowerUpgradeDefinition.xsd">
+
+    <!-- 
+    ManpowerUpgradeDefinition
+    
+        - Prerequisites: In what condition the Upgrade is Available (can be purchased)
+            -> PathPrerequisite
+            -> InterpreterPrerequisite
+            -> TechnologyPrerequisite
+            -> ManpowerPrerequisite
+            Flag = [Sufficient]   - The Upgrade is Unlocked automatically if this prerequisite is satisfied. 
+                   [NotNecessary] - The Upgrade can be Available even though that prerequisite is not checked.
+            NB: If an Upgrade is "automatically" unlocked via a "Sufficient" prerequisite getting filled, its costs
+            will be ignored.
+
+        
+        - Descriptors: Will be applied on ClassEmpire when the Upgrade is Unlocked
+            -> SimulationDescriptorReference
+            
+        - Cost
+            -> Cost
+            -> CustomCost
+            NB: Ignore Instant, InstantOnCompletion attributes
+    -->
+    
+    <!-- Infantry -->
+    <ManpowerUpgradeDefinition Name="ManpowerUpgradeInfantry1">
+        <SimulationDescriptorReference Name="ManpowerUpgradeInfantry1"/>
+    </ManpowerUpgradeDefinition>
+
+    <ManpowerUpgradeDefinition Name="ManpowerUpgradeInfantry2">
+        <ManpowerUpgradePrerequisite Flags="Prerequisite,Discard">ManpowerUpgradeInfantry1</ManpowerUpgradePrerequisite>
+        <SimulationDescriptorReference Name="ManpowerUpgradeInfantry2"/>
+        <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, ManpowerUpgradeCostReduction) * Property(StockLocation, DustInflation)</CustomCost>
+    </ManpowerUpgradeDefinition>
+
+    <ManpowerUpgradeDefinition Name="ManpowerUpgradeInfantry3">
+        <ManpowerUpgradePrerequisite Flags="Prerequisite,Discard">ManpowerUpgradeInfantry2</ManpowerUpgradePrerequisite>
+        <SimulationDescriptorReference Name="ManpowerUpgradeInfantry3"/>
+        <CustomCost ResourceName="EmpireMoney" Instant="true">2500 * Property(StockLocation, ManpowerUpgradeCostReduction) * Property(StockLocation, DustInflation)</CustomCost>
+        <CustomCost ResourceName="Strategic1" Instant="true">100 * Property(StockLocation, ManpowerUpgradeCostReduction)</CustomCost>
+        <CustomCost ResourceName="Strategic2" Instant="true">100 * Property(StockLocation, ManpowerUpgradeCostReduction)</CustomCost>
+    </ManpowerUpgradeDefinition>
+
+    <ManpowerUpgradeDefinition Name="ManpowerUpgradeInfantry4">
+        <ManpowerUpgradePrerequisite Flags="Prerequisite,Discard">ManpowerUpgradeInfantry3</ManpowerUpgradePrerequisite>
+        <SimulationDescriptorReference Name="ManpowerUpgradeInfantry4"/>
+        <CustomCost ResourceName="EmpireMoney" Instant="true">5000 * Property(StockLocation, ManpowerUpgradeCostReduction) * Property(StockLocation, DustInflation)</CustomCost>
+        <CustomCost ResourceName="Strategic3" Instant="true">100 * Property(StockLocation, ManpowerUpgradeCostReduction)</CustomCost>
+        <CustomCost ResourceName="Strategic4" Instant="true">100 * Property(StockLocation, ManpowerUpgradeCostReduction)</CustomCost>
+    </ManpowerUpgradeDefinition>
+
+    <ManpowerUpgradeDefinition Name="ManpowerUpgradeInfantry5">
+        <ManpowerUpgradePrerequisite Flags="Prerequisite,Discard">ManpowerUpgradeInfantry4</ManpowerUpgradePrerequisite>
+        <SimulationDescriptorReference Name="ManpowerUpgradeInfantry5"/>
+        <CustomCost ResourceName="EmpireMoney" Instant="true">10000 * Property(StockLocation, ManpowerUpgradeCostReduction) * Property(StockLocation, DustInflation)</CustomCost>
+        <CustomCost ResourceName="Strategic5" Instant="true">100 * Property(StockLocation, ManpowerUpgradeCostReduction)</CustomCost>
+        <CustomCost ResourceName="Strategic6" Instant="true">100 * Property(StockLocation, ManpowerUpgradeCostReduction)</CustomCost>
+    </ManpowerUpgradeDefinition>
+
+    <!-- Tank -->
+    <ManpowerUpgradeDefinition Name="ManpowerUpgradeTank1">
+        <TechnologyPrerequisite Flags="Prerequisite,Sufficient">TechnologyTankUnlock</TechnologyPrerequisite>
+        <SimulationDescriptorReference Name="ManpowerUpgradeTank1"/>
+    </ManpowerUpgradeDefinition>
+
+    <ManpowerUpgradeDefinition Name="ManpowerUpgradeTank2">
+        <ManpowerUpgradePrerequisite Flags="Prerequisite,Discard">ManpowerUpgradeTank1</ManpowerUpgradePrerequisite>
+        <SimulationDescriptorReference Name="ManpowerUpgradeTank2"/>
+        <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, ManpowerUpgradeCostReduction) * Property(StockLocation, DustInflation)</CustomCost>
+    </ManpowerUpgradeDefinition>
+
+    <ManpowerUpgradeDefinition Name="ManpowerUpgradeTank3">
+        <ManpowerUpgradePrerequisite Flags="Prerequisite,Discard">ManpowerUpgradeTank2</ManpowerUpgradePrerequisite>
+        <SimulationDescriptorReference Name="ManpowerUpgradeTank3"/>
+        <CustomCost ResourceName="EmpireMoney" Instant="true">2500 * Property(StockLocation, ManpowerUpgradeCostReduction) * Property(StockLocation, DustInflation)</CustomCost>
+        <CustomCost ResourceName="Strategic1" Instant="true">100 * Property(StockLocation, ManpowerUpgradeCostReduction)</CustomCost>
+        <CustomCost ResourceName="Strategic2" Instant="true">100 * Property(StockLocation, ManpowerUpgradeCostReduction)</CustomCost>
+    </ManpowerUpgradeDefinition>
+
+    <ManpowerUpgradeDefinition Name="ManpowerUpgradeTank4">
+        <ManpowerUpgradePrerequisite Flags="Prerequisite,Discard">ManpowerUpgradeTank3</ManpowerUpgradePrerequisite>
+        <SimulationDescriptorReference Name="ManpowerUpgradeTank4"/>
+        <CustomCost ResourceName="EmpireMoney" Instant="true">5000 * Property(StockLocation, ManpowerUpgradeCostReduction) * Property(StockLocation, DustInflation)</CustomCost>
+        <CustomCost ResourceName="Strategic3" Instant="true">100 * Property(StockLocation, ManpowerUpgradeCostReduction)</CustomCost>
+        <CustomCost ResourceName="Strategic4" Instant="true">100 * Property(StockLocation, ManpowerUpgradeCostReduction)</CustomCost>
+    </ManpowerUpgradeDefinition>
+
+    <ManpowerUpgradeDefinition Name="ManpowerUpgradeTank5">
+        <ManpowerUpgradePrerequisite Flags="Prerequisite,Discard">ManpowerUpgradeTank4</ManpowerUpgradePrerequisite>
+        <SimulationDescriptorReference Name="ManpowerUpgradeTank5"/>
+        <CustomCost ResourceName="EmpireMoney" Instant="true">10000 * Property(StockLocation, ManpowerUpgradeCostReduction) * Property(StockLocation, DustInflation)</CustomCost>
+        <CustomCost ResourceName="Strategic5" Instant="true">100 * Property(StockLocation, ManpowerUpgradeCostReduction)</CustomCost>
+        <CustomCost ResourceName="Strategic6" Instant="true">100 * Property(StockLocation, ManpowerUpgradeCostReduction)</CustomCost>
+    </ManpowerUpgradeDefinition>
+
+    <!-- Plane -->
+    <ManpowerUpgradeDefinition Name="ManpowerUpgradePlane1">
+        <TechnologyPrerequisite Flags="Prerequisite,Sufficient">TechnologyPlaneUnlock</TechnologyPrerequisite>
+        <SimulationDescriptorReference Name="ManpowerUpgradePlane1"/>
+    </ManpowerUpgradeDefinition>
+
+    <ManpowerUpgradeDefinition Name="ManpowerUpgradePlane2">
+        <ManpowerUpgradePrerequisite Flags="Prerequisite,Discard">ManpowerUpgradePlane1</ManpowerUpgradePrerequisite>
+        <SimulationDescriptorReference Name="ManpowerUpgradePlane2"/>
+        <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, ManpowerUpgradeCostReduction) * Property(StockLocation, DustInflation)</CustomCost>
+    </ManpowerUpgradeDefinition>
+
+    <ManpowerUpgradeDefinition Name="ManpowerUpgradePlane3">
+        <ManpowerUpgradePrerequisite Flags="Prerequisite,Discard">ManpowerUpgradePlane2</ManpowerUpgradePrerequisite>
+        <SimulationDescriptorReference Name="ManpowerUpgradePlane3"/>
+        <CustomCost ResourceName="EmpireMoney" Instant="true">2500 * Property(StockLocation, ManpowerUpgradeCostReduction) * Property(StockLocation, DustInflation)</CustomCost>
+        <CustomCost ResourceName="Strategic1" Instant="true">100 * Property(StockLocation, ManpowerUpgradeCostReduction)</CustomCost>
+        <CustomCost ResourceName="Strategic2" Instant="true">100 * Property(StockLocation, ManpowerUpgradeCostReduction)</CustomCost>
+    </ManpowerUpgradeDefinition>
+
+    <ManpowerUpgradeDefinition Name="ManpowerUpgradePlane4">
+        <ManpowerUpgradePrerequisite Flags="Prerequisite,Discard">ManpowerUpgradePlane3</ManpowerUpgradePrerequisite>
+        <SimulationDescriptorReference Name="ManpowerUpgradePlane4"/>
+        <CustomCost ResourceName="EmpireMoney" Instant="true">5000 * Property(StockLocation, ManpowerUpgradeCostReduction) * Property(StockLocation, DustInflation)</CustomCost>
+        <CustomCost ResourceName="Strategic3" Instant="true">100 * Property(StockLocation, ManpowerUpgradeCostReduction)</CustomCost>
+        <CustomCost ResourceName="Strategic4" Instant="true">100 * Property(StockLocation, ManpowerUpgradeCostReduction)</CustomCost>
+    </ManpowerUpgradeDefinition>
+
+    <ManpowerUpgradeDefinition Name="ManpowerUpgradePlane5">
+        <ManpowerUpgradePrerequisite Flags="Prerequisite,Discard">ManpowerUpgradePlane4</ManpowerUpgradePrerequisite>
+        <SimulationDescriptorReference Name="ManpowerUpgradePlane5"/>
+        <CustomCost ResourceName="EmpireMoney" Instant="true">10000 * Property(StockLocation, ManpowerUpgradeCostReduction) * Property(StockLocation, DustInflation)</CustomCost>
+        <CustomCost ResourceName="Strategic5" Instant="true">100 * Property(StockLocation, ManpowerUpgradeCostReduction)</CustomCost>
+        <CustomCost ResourceName="Strategic6" Instant="true">100 * Property(StockLocation, ManpowerUpgradeCostReduction)</CustomCost>
+    </ManpowerUpgradeDefinition>
+    
+</Datatable>

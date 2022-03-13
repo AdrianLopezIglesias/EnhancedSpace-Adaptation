@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/CuriosityDroplist.xsd">
+  
+  
+  <!-- BATTLE PLAY T1/2 : 10 -->
+  <!--<Play Name="PlayOffensiveShortMoraleBonusIncrease"		Weight="2"/>-->
+  <!--<Play Name="PlayDefensiveBalancedLostShipRepair"		Weight="2"/>-->
+  <!--<Play Name="PlayOffensiveMediumLostShipDamageIncrease"	Weight="2"/>-->
+  <!--<Play Name="PlayPostShortScienceGain"					Weight="2"/>-->
+  <!--<Play Name="PlayPostLongLostShipXPIncrease"				Weight="2"/>-->
+
+  <!-- BATTLE PLAY T3/4 : 10 -->
+  <!--<Play Name="PlayDefensiveShortAccuracyReduction"			Weight="2"/>
+  <Play Name="PlayDefensiveBalancedShieldReload"				Weight="2"/>
+  <Play Name="PlayDefensiveLongCriticReduction"				Weight="1"/>
+  <Play Name="PlayDefensiveLongCooldownIncrease"				Weight="1"/>
+  <Play Name="PlayDefensiveMediumMoralePenalty"				Weight="1"/>
+  <Play Name="PlayOffensiveBalancedInfluenceAgainstDamage"	Weight="1"/>
+  <Play Name="PlayOffensiveLongSplashDamage"					Weight="1"/>
+  <Play Name="PlayDefensiveShortDamageReductionPerSquadron"	Weight="1"/>-->
+
+
+ 
+  
+  
+  
+  
+  <!--<Module Name="TechnologyDefinitionCuriosityModuleSupportFlakEnhancer1"				ModuleName="ModuleSupportFlakEnhancer1"				Weight="3" Constrained="true"/>-->
+  <!--<Module Name="TechnologyDefinitionCuriosityModuleSupportFlakScrambler1"				ModuleName="ModuleSupportFlakScrambler1"			Weight="3" Constrained="true"/>-->
+   
+  <!--<Module Name="TechnologyDefinitionCuriosityModuleSupportCrew2"							ModuleName="ModuleSupportCrew2"							Weight="3" Constrained="true"/>-->
+  <!--<Module Name="TechnologyDefinitionCuriosityModuleSupportJournalist1"					ModuleName="ModuleSupportJournalist1"					Weight="3" Constrained="true"/>-->
+  <!--<Module Name="TechnologyDefinitionCuriosityModuleSupportRecycling1"						ModuleName="ModuleSupportRecycling1"					Weight="4" Constrained="true"/>-->
+  <!--<Module Name="TechnologyDefinitionCuriosityModuleSupportColonization3Strategic3"		ModuleName="ModuleSupportColonization3Strategic3"		Weight="3" Constrained="true"/>-->
+  <!--<Module Name="TechnologyDefinitionCuriosityModuleSupportAnalyzer2Strategic2"			ModuleName="ModuleSupportAnalyzer2Strategic2"			Weight="3" Constrained="true"/>-->
+  <!--<Module Name="TechnologyDefinitionCuriosityModuleSupportCrew2Strategic3"				ModuleName="ModuleSupportCrew2Strategic3"				Weight="3" Constrained="true"/>-->
+  <!--<Module Name="TechnologyDefinitionCuriosityModuleSupportAntiCrew2Strategic5"			ModuleName="ModuleSupportAntiCrew2Strategic5"				Weight="3" Constrained="true"/>-->
+
+  
+  
+  
+
+</Datatable>

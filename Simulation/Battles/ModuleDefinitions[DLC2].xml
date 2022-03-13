@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../../Schemas/ModuleDefinition.xsd">
+
+    <!-- AI uses family to recognize modules ; discuss with AI before any changes to families -->
+
+   <!-- ######################## -->
+   <!-- ######  Military  ###### -->
+   <!-- ######################## -->
+
+   <SupportModule Name="ModuleSupportJuggernautTractorBeamStrategic3" Family="TractorBeamBase" Level="1">
+      <Cost ResourceName="SystemProduction">64</Cost>
+      <!--<Cost ResourceName="Strategic3">2</Cost>-->
+      <CustomCost ResourceName="Strategic3" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyJuggernautTractorBeam</TechnologyPrerequisite>
+      <PathPrerequisite Flags="NoMoreThanOneTracterBeamModule,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModule,ModuleSupportJuggernautTractorBeam</PathPrerequisite>
+      <InterpreterPrerequisite Flags="Edition">Path(Context, @'ClassShip,ShipRoleCarrier') or Path(Context, @'ClassShip,ShipRoleJuggernaut') or Path(Context, @'ClassShip,ShipRoleBattleship')</InterpreterPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleCarrierJuggernautBattleshipOnly"/>
+      <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautTractorBeam"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+    <!-- ####################### -->
+    <!-- ######  Support  ###### -->
+    <!-- ####################### -->
+
+   <SupportModule Name="ModuleSupportJuggernautMiningStarting" Family="MiningProbeBase" Level="1">
+      <Cost ResourceName="SystemProduction">40</Cost>
+      <DownloadableContentPrerequisite Flags="Prerequisite,Discard,UnlockAvailability">DLCHisshos</DownloadableContentPrerequisite>
+      <PathPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Edition" Inverted="true">../ClassEmpire,FactionTraitMiningExperts</PathPrerequisite>
+      <TechnologyPrerequisite Flags="Edition">TechnologyStageEmpireDevelopment2</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Edition">ClassShip,ShipRoleJuggernaut</PathPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleJuggernautMining"/>
+      <SimulationDescriptorReference Name="ClassModuleJuggernautOnly"/>
+      <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautMiningProbe"/>
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautMiningProbeStarting"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportJuggernautMiningStartingHissho" Family="MiningProbeBase" Level="1">
+      <Cost ResourceName="SystemProduction">40</Cost>
+      <DownloadableContentPrerequisite Flags="Prerequisite,Discard,UnlockAvailability">DLCHisshos</DownloadableContentPrerequisite>
+      <TechnologyPrerequisite Flags="Edition">TechnologyStageEmpireDevelopment2</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Edition">ClassShip,ShipRoleJuggernaut</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Edition">../ClassEmpire,FactionTraitMiningExperts</PathPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleJuggernautResourceGathererMining"/>
+      <SimulationDescriptorReference Name="ClassModuleJuggernautOnly"/>
+      <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautMiningProbe"/>
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautMiningProbeStartingHissho"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportJuggernautMiningFast1" Family="MiningProbeBase" Level="2">
+      <Cost ResourceName="SystemProduction">80</Cost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyJuggernautMining1</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Edition">ClassShip,ShipRoleJuggernaut</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Edition" Inverted="true">../ClassEmpire,FactionTraitMiningExperts</PathPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleJuggernautMining"/>
+      <SimulationDescriptorReference Name="ClassModuleJuggernautOnly"/>
+      <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautMiningProbe"/>
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautMiningProbeFast1"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportJuggernautMiningFastHissho1" Family="MiningProbeBase" Level="2">
+      <Cost ResourceName="SystemProduction">80</Cost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyJuggernautMining1</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Edition">ClassShip,ShipRoleJuggernaut</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Edition">../ClassEmpire,FactionTraitMiningExperts</PathPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleJuggernautResourceGathererMining"/>
+      <SimulationDescriptorReference Name="ClassModuleJuggernautOnly"/>
+      <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautMiningProbe"/>
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautMiningProbeFastHissho1"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportJuggernautMiningFast2" Family="MiningProbeBase" Level="3">
+      <Cost ResourceName="SystemProduction">160</Cost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyJuggernautMining2</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Edition">ClassShip,ShipRoleJuggernaut</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Edition" Inverted="true">../ClassEmpire,FactionTraitMiningExperts</PathPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleJuggernautMining"/>
+      <SimulationDescriptorReference Name="ClassModuleJuggernautOnly"/>
+      <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautMiningProbe"/>
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautMiningProbeFast2"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportJuggernautMiningFastHissho2" Family="MiningProbeBase" Level="3">
+      <Cost ResourceName="SystemProduction">160</Cost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyJuggernautMining2</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Edition">ClassShip,ShipRoleJuggernaut</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Edition">../ClassEmpire,FactionTraitMiningExperts</PathPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleJuggernautResourceGathererMining"/>
+      <SimulationDescriptorReference Name="ClassModuleJuggernautOnly"/>
+      <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautMiningProbe"/>
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautMiningProbeFastHissho2"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <SystemSupportModule Name="ModuleSupportJuggernautMiningLong1" Family="SystemSupportFIDS" Level="1">
+        <Cost ResourceName="SystemProduction">80</Cost>
+        <TechnologyPrerequisite Flags="Edition">TechnologyJuggernautMining1</TechnologyPrerequisite>
+        <PathPrerequisite Flags="Edition">ClassShip,ShipRoleJuggernaut</PathPrerequisite>
+        <PathPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Edition" Inverted="true">../ClassEmpire,FactionTraitMiningExperts</PathPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleSystemSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleJuggernautOnly"/>
+        <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+            <SimulationDescriptorReference Name="ModuleSupportJuggernautSystemSupport"/>
+            <SimulationDescriptorReference Name="ModuleSupportJuggernautMiningProbeLong1"/>
+        </CategorizedSimulationDescriptors>
+
+        <SystemSimulationDescriptorReference Name="SystemSupportModuleEffect"/>
+        <SystemSimulationDescriptorReference Name="SystemSupportModuleEffectProbeLong1"/>
+    </SystemSupportModule>
+
+   <SystemSupportModule Name="ModuleSupportJuggernautMiningLongHissho1" Family="SystemSupportFIDS" Level="1">
+        <Cost ResourceName="SystemProduction">80</Cost>
+        <TechnologyPrerequisite Flags="Edition">TechnologyJuggernautMining1</TechnologyPrerequisite>
+        <PathPrerequisite Flags="Edition">ClassShip,ShipRoleJuggernaut</PathPrerequisite>
+        <PathPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Edition">../ClassEmpire,FactionTraitMiningExperts</PathPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleSystemSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleJuggernautOnly"/>
+        <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+            <SimulationDescriptorReference Name="ModuleSupportJuggernautSystemSupport"/>
+            <SimulationDescriptorReference Name="ModuleSupportJuggernautMiningProbeLongHissho1"/>
+        </CategorizedSimulationDescriptors>
+
+        <SystemSimulationDescriptorReference Name="SystemSupportModuleEffect"/>
+        <SystemSimulationDescriptorReference Name="SystemSupportModuleEffectLongHissho1"/>
+    </SystemSupportModule>
+
+   <SystemSupportModule Name="ModuleSupportJuggernautMiningLong2" Family="SystemSupportFIDS" Level="2">
+        <Cost ResourceName="SystemProduction">160</Cost>
+        <TechnologyPrerequisite Flags="Edition">TechnologyJuggernautMining2</TechnologyPrerequisite>
+        <PathPrerequisite Flags="Edition">ClassShip,ShipRoleJuggernaut</PathPrerequisite>
+        <PathPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Edition" Inverted="true">../ClassEmpire,FactionTraitMiningExperts</PathPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleSystemSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleJuggernautOnly"/>
+        <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+            <SimulationDescriptorReference Name="ModuleSupportJuggernautSystemSupport"/>
+            <SimulationDescriptorReference Name="ModuleSupportJuggernautMiningProbeLong2"/>
+        </CategorizedSimulationDescriptors>
+
+        <SystemSimulationDescriptorReference Name="SystemSupportModuleEffect"/>
+        <SystemSimulationDescriptorReference Name="SystemSupportModuleEffectProbeLong2"/>
+    </SystemSupportModule>
+
+   <SystemSupportModule Name="ModuleSupportJuggernautMiningLongHissho2" Family="SystemSupportFIDS" Level="2">
+        <Cost ResourceName="SystemProduction">160</Cost>
+        <TechnologyPrerequisite Flags="Edition">TechnologyJuggernautMining2</TechnologyPrerequisite>
+        <PathPrerequisite Flags="Edition">ClassShip,ShipRoleJuggernaut</PathPrerequisite>
+        <PathPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Edition">../ClassEmpire,FactionTraitMiningExperts</PathPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleJuggernautOnly"/>
+        <SimulationDescriptorReference Name="ClassModuleSystemSupport"/>
+        <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+            <SimulationDescriptorReference Name="ModuleSupportJuggernautSystemSupport"/>
+            <SimulationDescriptorReference Name="ModuleSupportJuggernautMiningProbeLongHissho2"/>
+        </CategorizedSimulationDescriptors>
+
+        <SystemSimulationDescriptorReference Name="SystemSupportModuleEffect"/>
+        <SystemSimulationDescriptorReference Name="SystemSupportModuleEffectLongHissho2"/>
+    </SystemSupportModule>
+
+
+   <!--##  Mining Module of the Chapter 1 Part 2 ##-->
+
+   <SystemSupportModule Name="ModuleSupportJuggernautMiningLongQuestHisshos2" Family="SystemSupportFIDS" Level="2">
+      <Cost ResourceName="SystemProduction">80</Cost>
+      <PathPrerequisite Flags="Edition" Inverted="false">../ClassEmpire/ClassQuests,HisshosQuest-Chapter1-Part1Religious-Reward</PathPrerequisite>
+      <PathPrerequisite Flags="Edition">ClassShip,ShipRoleJuggernaut</PathPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleJuggernautOnly"/>
+      <SimulationDescriptorReference Name="ClassModuleSystemSupport"/>
+      <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautSystemSupport"/>
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautMiningLongQuestHisshos2"/>
+      </CategorizedSimulationDescriptors>
+
+      <SystemSimulationDescriptorReference Name="SystemSupportModuleEffect"/>
+      <SystemSimulationDescriptorReference Name="SystemSupportModuleEffectLongQuestHisshos2"/>
+   </SystemSupportModule>
+
+    <SystemSupportModule Name="ModuleSupportJuggernautFIDSFlat" Family="SystemSupportFIDS" Level="1">
+        <Cost ResourceName="SystemProduction">40</Cost>
+        <DownloadableContentPrerequisite Flags="Prerequisite,Discard,UnlockAvailability">DLCHisshos</DownloadableContentPrerequisite>
+        <TechnologyPrerequisite Flags="Edition">TechnologyStageEmpireDevelopment2</TechnologyPrerequisite>
+        <PathPrerequisite Flags="Edition">ClassShip,ShipRoleJuggernaut</PathPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleJuggernautOnly"/>
+        <SimulationDescriptorReference Name="ClassModuleSystemSupport"/>
+        <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+            <SimulationDescriptorReference Name="ModuleSupportJuggernautSystemSupport"/>
+            <SimulationDescriptorReference Name="ModuleSupportJuggernautSystemSupportFIDSFlat"/>
+        </CategorizedSimulationDescriptors>
+
+        <SystemSimulationDescriptorReference Name="SystemSupportModuleEffect"/>
+        <SystemSimulationDescriptorReference Name="SystemSupportModuleEffectFIDSFlat"/>
+    </SystemSupportModule>
+
+    <SystemSupportModule Name="ModuleSupportJuggernautFIDSDynamic" Family="SystemSupportFIDS" Level="2">
+        <Cost ResourceName="SystemProduction">80</Cost>
+        <TechnologyPrerequisite Flags="Edition">TechnologyJuggernautFIDS2</TechnologyPrerequisite>
+        <PathPrerequisite Flags="Edition">ClassShip,ShipRoleJuggernaut</PathPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleJuggernautOnly"/>
+        <SimulationDescriptorReference Name="ClassModuleSystemSupport"/>
+        <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+            <SimulationDescriptorReference Name="ModuleSupportJuggernautSystemSupport"/>
+            <SimulationDescriptorReference Name="ModuleSupportJuggernautSystemSupportFIDSFlat"/>
+            <SimulationDescriptorReference Name="ModuleSupportJuggernautSystemSupportFIDSDynamic"/>
+        </CategorizedSimulationDescriptors>
+
+        <SystemSimulationDescriptorReference Name="SystemSupportModuleEffect"/>
+        <SystemSimulationDescriptorReference Name="SystemSupportModuleEffectFIDSFlat"/>
+        <SystemSimulationDescriptorReference Name="SystemSupportModuleEffectFIDSDynamic"/>
+    </SystemSupportModule>
+
+
+
+   <SupportModule Name="ModuleSupportJuggernautMiningLong3Strategic3" Family="MiningProbeCoreBase" Level="4">
+      <Cost ResourceName="SystemProduction">64</Cost>
+      <!--<Cost ResourceName="Strategic3">2</Cost>-->
+      <CustomCost ResourceName="Strategic3" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyJuggernautMining2</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Edition">ClassShip,ShipRoleJuggernaut</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Edition" Inverted="true">../ClassEmpire,FactionTraitMiningExperts</PathPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleJuggernautMining"/>
+      <SimulationDescriptorReference Name="ClassModuleJuggernautOnly"/>
+      <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautMiningProbe"/>
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautMiningProbeCore"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportJuggernautMiningLongHissho3Strategic3" Family="MiningProbeCoreBase" Level="4">
+      <Cost ResourceName="SystemProduction">64</Cost>
+      <!--<Cost ResourceName="Strategic3">2</Cost>-->
+      <CustomCost ResourceName="Strategic3" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyJuggernautMining2</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Edition">ClassShip,ShipRoleJuggernaut</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite,Discard,UnlockAvailability,Edition">../ClassEmpire,FactionTraitMiningExperts</PathPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleJuggernautResourceGathererMining"/>
+      <SimulationDescriptorReference Name="ClassModuleJuggernautOnly"/>
+      <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautMiningProbe"/>
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautMiningProbeCoreHissho"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <!-- ####################### -->
+   <!-- ######  Science  ###### -->
+   <!-- ####################### -->
+
+   <SupportModule Name="ModuleSupportJuggernautVision1" Family="ExplorationBase" Level="1">
+      <Cost ResourceName="SystemProduction">80</Cost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyJuggernautVision1</TechnologyPrerequisite>
+      <PathPrerequisite Flags="NoMoreThanOneModuleOfThisType,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModule,ModuleSupportJuggernautVision1</PathPrerequisite>
+      <PathPrerequisite Flags="Edition">ClassShip,ShipRoleJuggernaut</PathPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleJuggernautOnly"/>
+      <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautVision"/>
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautVision1"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportJuggernautTerraformer1" Family="TerraformationBase" Level="1">
+      <Cost ResourceName="SystemProduction">160</Cost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyJuggernautResearch2</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Edition">ClassShip,ShipRoleJuggernaut</PathPrerequisite>
+      <PathPrerequisite Flags="UnlockAvailability,Edition,Faction,AffinityGameplayVampirilis" Inverted="true">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleJuggernautOnly"/>
+      <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautTerraformer"/>
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautTerraformer1"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <!-- Rejunevator -->
+   <SupportModule Name="ModuleSupportJuggernautTerraformer2" Family="TerraformationBase" Level="2">
+      <Cost ResourceName="SystemProduction">320</Cost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyJuggernautResearch3</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Edition">ClassShip,ShipRoleJuggernaut</PathPrerequisite>
+      <PathPrerequisite Flags="UnlockAvailability,Edition" Inverted="true">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+      <PathPrerequisite Flags="UnlockAvailability,Edition" Inverted="true">../ClassEmpire,AffinityGameplayCravers</PathPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleJuggernautOnly"/>
+      <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautTerraformer"/>
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautTerraformer2"/>
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautRejuvenator"/>
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautRejuvenator1"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportJuggernautTerraformerCravers2" Family="TerraformationCravers" Level="2">
+      <Cost ResourceName="SystemProduction">320</Cost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyJuggernautResearch3</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Edition">ClassShip,ShipRoleJuggernaut</PathPrerequisite>
+      <PathPrerequisite Flags="UnlockAvailability,Edition" Inverted="true">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+      <PathPrerequisite Flags="UnlockAvailability,Edition,Faction,AffinityGameplayCravers" Inverted="false">../ClassEmpire,AffinityGameplayCravers</PathPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleJuggernautOnly"/>
+      <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautTerraformer"/>
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautTerraformer2"/>
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautRejuvenatorCravers"/>
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautRejuvenatorCravers1"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportJuggernautResearchStarting" Family="JuggernautResearchBase" Level="1">
+      <Cost ResourceName="SystemProduction">40</Cost>
+      <DownloadableContentPrerequisite Flags="Prerequisite,Discard,UnlockAvailability">DLCHisshos</DownloadableContentPrerequisite>
+      <TechnologyPrerequisite Flags="Edition">TechnologyStageEmpireDevelopment2</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Edition">ClassShip,ShipRoleJuggernaut</PathPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleJuggernautOnly"/>
+      <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautResearch"/>
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautResearchStarting"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportJuggernautResearch1" Family="JuggernautResearchBase" Level="2">
+      <Cost ResourceName="SystemProduction">80</Cost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyJuggernautResearch1</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Edition">ClassShip,ShipRoleJuggernaut</PathPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleJuggernautOnly"/>
+      <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautResearch"/>
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautResearch1"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportJuggernautResearch2" Family="JuggernautResearchBase" Level="3">
+      <Cost ResourceName="SystemProduction">160</Cost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyJuggernautResearch3</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Edition">ClassShip,ShipRoleJuggernaut</PathPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleJuggernautOnly"/>
+      <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautResearch"/>
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautResearch2"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <!-- Flat -->
+   <SupportModule Name="ModuleSupportJuggernautAnalyzer1" Family="JuggernautAnalyzerBase" Level="1">
+      <Cost ResourceName="SystemProduction">80</Cost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyJuggernautResearch1</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Edition">ClassShip,ShipRoleJuggernaut</PathPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleJuggernautOnly"/>
+      <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautAnalyzer"/>
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautAnalyzer1"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <!-- Dynamic -->
+   <SupportModule Name="ModuleSupportJuggernautAnalyzer2" Family="JuggernautAnalyzerBase" Level="1">
+      <Cost ResourceName="SystemProduction">160</Cost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyJuggernautResearch2</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Edition">ClassShip,ShipRoleJuggernaut</PathPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleJuggernautOnly"/>
+      <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautAnalyzer"/>
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautAnalyzer2"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <!-- Vodyani specific (replaces anom reduc and terraforming) -->
+   <SupportModule Name="ModuleSupportJuggernautAnalyzerVampirilis" Family="JuggernautAnalyzerBase" Level="1">
+      <Cost ResourceName="SystemProduction">160</Cost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyJuggernautResearch1</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Edition">ClassShip,ShipRoleJuggernaut</PathPrerequisite>
+      <PathPrerequisite Flags="UnlockAvailability,Edition,Faction,AffinityGameplayVampirilis" Inverted="false">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleJuggernautOnly"/>
+      <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautAnalyzer"/>
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautAnalyzerVampirilis"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportJuggernautSalvagerVampirilis" Family="SalvagerBase" Level="3">
+      <Cost ResourceName="SystemProduction">160</Cost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyJuggernautResearch3</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Edition">ClassShip,ShipRoleJuggernaut</PathPrerequisite>
+      <PathPrerequisite Flags="UnlockAvailability,Edition,Faction,AffinityGameplayVampirilis" Inverted="false">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleJuggernautOnly"/>
+      <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautDestroyedPlanets"/>
+         <SimulationDescriptorReference Name="ModuleSupportJuggernautDestroyedPlanetsVodyani"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+    
+
+</Datatable>

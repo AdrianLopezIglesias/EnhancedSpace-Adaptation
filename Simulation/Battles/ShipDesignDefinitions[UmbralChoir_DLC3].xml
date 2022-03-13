@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../../Schemas/ShipDesignDefinition.xsd">
+
+    <!--*********************-->
+    <!--**** UmbralChoir ****-->
+    <!--*********************-->
+
+    <ShipDesignDefinition Name="UmbralChoir_Explorer">
+        <HullReference Name="HullSmall04UmbralChoir"/>
+        <ShipRoleReference Name="ShipRoleExploration"/>
+        <SlotBinding SlotName="CoreSection.Support01">
+            <ModuleReference Name="ModuleSupportEngine1"/>
+        </SlotBinding>
+        <SlotBinding SlotName="SectionN.Support02">
+            <ModuleReference Name="ModuleSupportEngine1"/>
+        </SlotBinding>
+        <SlotBinding SlotName="SectionNE.DefenseSupport01">
+            <ModuleReference Name="ModuleSupportExploration1"/>
+        </SlotBinding>
+        <SlotBinding SlotName="SectionS.DefenseSupport01">
+            <ModuleReference Name="ModuleSupportEngine1"/>
+        </SlotBinding>
+        <PathPrerequisite>../ClassEmpire,!AffinityGameplayVampirilis</PathPrerequisite>
+    </ShipDesignDefinition>
+
+
+</Datatable>

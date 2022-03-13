@@ -1,0 +1,877 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+
+  <!-- *********** -->
+  <!-- FOOD BRANCH -->
+  <!-- *********** -->
+  
+  <!-- FOREST -->
+
+  <ExtendedGuiElement Name="PlanetTerraformationToForest">
+    <Title>%PlanetTerraformationToForestTitle</Title>
+    <Description>%PlanetTerraformationToForestDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationForestSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationForestLarge" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%PlanetTerraformationToForestEffectOverride</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromJungleToForest">
+    <Title>%PlanetTerraformationToForestTitle</Title>
+    <Description>%PlanetTerraformationToForestDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationForestSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationForestLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromTerranToForest">
+    <Title>%PlanetTerraformationToForestTitle</Title>
+    <Description>%PlanetTerraformationToForestDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationForestSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationForestLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- JUNGLE -->
+
+  <ExtendedGuiElement Name="PlanetTerraformationToJungle">
+    <Title>%PlanetTerraformationToJungleTitle</Title>
+    <Description>%PlanetTerraformationToJungleDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationJungleSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationJungleLarge" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%PlanetTerraformationToJungleEffectOverride</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromForestToJungle">
+    <Title>%PlanetTerraformationToJungleTitle</Title>
+    <Description>%PlanetTerraformationToJungleDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationJungleSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationJungleLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromMonsoonToJungle">
+    <Title>%PlanetTerraformationToJungleTitle</Title>
+    <Description>%PlanetTerraformationToJungleDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationJungleSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationJungleLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromOceanToJungle">
+    <Title>%PlanetTerraformationToJungleTitle</Title>
+    <Description>%PlanetTerraformationToJungleDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationJungleSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationJungleLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- MONSOON -->
+
+  <ExtendedGuiElement Name="PlanetTerraformationToMonsoon">
+    <Title>%PlanetTerraformationToMonsoonTitle</Title>
+    <Description>%PlanetTerraformationToMonsoonDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationMonsoonSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationMonsoonLarge" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%PlanetTerraformationToMonsoonEffectOverride</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromSwampToMonsoon">
+    <Title>%PlanetTerraformationToMonsoonTitle</Title>
+    <Description>%PlanetTerraformationToMonsoonDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationMonsoonSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationMonsoonLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromJungleToMonsoon">
+    <Title>%PlanetTerraformationToMonsoonTitle</Title>
+    <Description>%PlanetTerraformationToMonsoonDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationMonsoonSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationMonsoonLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromAtollToMonsoon">
+    <Title>%PlanetTerraformationToMonsoonTitle</Title>
+    <Description>%PlanetTerraformationToMonsoonDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationMonsoonSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationMonsoonLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- SWAMP -->
+
+  <ExtendedGuiElement Name="PlanetTerraformationToSwamp">
+    <Title>%PlanetTerraformationToSwampTitle</Title>
+    <Description>%PlanetTerraformationToSwampDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationSwampSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationSwampLarge" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%PlanetTerraformationToSwampEffectOverride</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromSnowToSwamp">
+    <Title>%PlanetTerraformationToSwampTitle</Title>
+    <Description>%PlanetTerraformationToSwampDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationSwampSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationSwampLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromMonsoonToSwamp">
+    <Title>%PlanetTerraformationToSwampTitle</Title>
+    <Description>%PlanetTerraformationToSwampDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationSwampSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationSwampLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromTropicalToSwamp">
+    <Title>%PlanetTerraformationToSwampTitle</Title>
+    <Description>%PlanetTerraformationToSwampDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationSwampSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationSwampLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- **************** -->
+  <!-- INFLUENCE BRANCH -->
+  <!-- **************** -->
+
+  <!-- TERRAN -->
+
+  <ExtendedGuiElement Name="PlanetTerraformationToTerran">
+    <Title>%PlanetTerraformationToTerranTitle</Title>
+    <Description>%PlanetTerraformationToTerranDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationTerranSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationTerranLarge" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%PlanetTerraformationToTerranEffectOverride</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromOceanToTerran">
+    <Title>%PlanetTerraformationToTerranTitle</Title>
+    <Description>%PlanetTerraformationToTerranDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationTerranSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationTerranLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromForestToTerran">
+    <Title>%PlanetTerraformationToTerranTitle</Title>
+    <Description>%PlanetTerraformationToTerranDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationTerranSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationTerranLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- OCEAN -->
+
+  <ExtendedGuiElement Name="PlanetTerraformationToOcean">
+    <Title>%PlanetTerraformationToOceanTitle</Title>
+    <Description>%PlanetTerraformationToOceanDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationOceanSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationOceanLarge" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%PlanetTerraformationToOceanEffectOverride</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromTerranToOcean">
+    <Title>%PlanetTerraformationToOceanTitle</Title>
+    <Description>%PlanetTerraformationToOceanDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationOceanSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationOceanLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromAtollToOcean">
+    <Title>%PlanetTerraformationToOceanTitle</Title>
+    <Description>%PlanetTerraformationToOceanDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationOceanSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationOceanLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromJungleToOcean">
+    <Title>%PlanetTerraformationToOceanTitle</Title>
+    <Description>%PlanetTerraformationToOceanDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationOceanSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationOceanLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- ATOLL -->
+
+  <ExtendedGuiElement Name="PlanetTerraformationToAtoll">
+    <Title>%PlanetTerraformationToAtollTitle</Title>
+    <Description>%PlanetTerraformationToAtollDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationAtollSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationAtollLarge" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%PlanetTerraformationToAtollEffectOverride</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromOceanToAtoll">
+    <Title>%PlanetTerraformationToAtollTitle</Title>
+    <Description>%PlanetTerraformationToAtollDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationAtollSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationAtollLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromTropicalToAtoll">
+    <Title>%PlanetTerraformationToAtollTitle</Title>
+    <Description>%PlanetTerraformationToAtollDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationAtollSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationAtollLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromMonsoonToAtoll">
+    <Title>%PlanetTerraformationToAtollTitle</Title>
+    <Description>%PlanetTerraformationToAtollDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationAtollSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationAtollLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Tropical -->
+
+  <ExtendedGuiElement Name="PlanetTerraformationToTropical">
+    <Title>%PlanetTerraformationToTropicalTitle</Title>
+    <Description>%PlanetTerraformationToTropicalDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationTropicalSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationTropicalLarge" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%PlanetTerraformationToTropicalEffectOverride</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromSteppesToTropical">
+    <Title>%PlanetTerraformationToTropicalTitle</Title>
+    <Description>%PlanetTerraformationToTropicalDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationTropicalSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationTropicalLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromAtollToTropical">
+    <Title>%PlanetTerraformationToTropicalTitle</Title>
+    <Description>%PlanetTerraformationToTropicalDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationTropicalSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationTropicalLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromSwampToTropical">
+    <Title>%PlanetTerraformationToTropicalTitle</Title>
+    <Description>%PlanetTerraformationToTropicalDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationTropicalSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationTropicalLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- **************** -->
+  <!-- INDUSTRY  BRANCH -->
+  <!-- **************** -->
+
+  <!-- STEPPES -->
+
+  <ExtendedGuiElement Name="PlanetTerraformationToSteppes">
+    <Title>%PlanetTerraformationToSteppesTitle</Title>
+    <Description>%PlanetTerraformationToSteppesDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationSteppesSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationSteppesLarge" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%PlanetTerraformationToSteppesEffectOverride</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromTropicalToSteppes">
+    <Title>%PlanetTerraformationToSteppesTitle</Title>
+    <Description>%PlanetTerraformationToSteppesDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationSteppesSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationSteppesLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromTundraToSteppes">
+    <Title>%PlanetTerraformationToSteppesTitle</Title>
+    <Description>%PlanetTerraformationToSteppesDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationSteppesSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationSteppesLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromBorealToSteppes">
+    <Title>%PlanetTerraformationToSteppesTitle</Title>
+    <Description>%PlanetTerraformationToSteppesDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationSteppesSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationSteppesLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- BOREAL -->
+
+  <ExtendedGuiElement Name="PlanetTerraformationToBoreal">
+    <Title>%PlanetTerraformationToBorealTitle</Title>
+    <Description>%PlanetTerraformationToBorealDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationBorealSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationBorealLarge" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%PlanetTerraformationToBorealEffectOverride</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromSteppesToBoreal">
+    <Title>%PlanetTerraformationToBorealTitle</Title>
+    <Description>%PlanetTerraformationToBorealDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationBorealSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationBorealLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromAshToBoreal">
+    <Title>%PlanetTerraformationToBorealTitle</Title>
+    <Description>%PlanetTerraformationToBorealDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationBorealSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationBorealLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromVeldtToBoreal">
+    <Title>%PlanetTerraformationToBorealTitle</Title>
+    <Description>%PlanetTerraformationToBorealDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationBorealSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationBorealLarge" />
+    </Icons>
+  </GuiElement>
+  
+  <!-- ASH -->
+
+  <GuiElement Name="PlanetTerraformationFromAridToAsh">
+    <Title>%PlanetTerraformationToAshTitle</Title>
+    <Description>%PlanetTerraformationToAshDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationAshSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationAshLarge" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="PlanetTerraformationFromBorealToAsh">
+    <Title>%PlanetTerraformationToAshTitle</Title>
+    <Description>%PlanetTerraformationToAshDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationAshSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationAshLarge" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="PlanetTerraformationFromLavaToAsh">
+    <Title>%PlanetTerraformationToAshTitle</Title>
+    <Description>%PlanetTerraformationToAshDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationAshSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationAshLarge" />
+    </Icons>
+  </GuiElement>
+  
+  <!-- LAVA -->
+
+  <GuiElement Name="PlanetTerraformationFromAshToLava">
+    <Title>%PlanetTerraformationToLavaTitle</Title>
+    <Description>%PlanetTerraformationToLavaDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationLavaSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationLavaLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromDesertToLava">
+    <Title>%PlanetTerraformationToLavaTitle</Title>
+    <Description>%PlanetTerraformationToLavaDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationLavaSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationLavaLarge" />
+    </Icons>
+  </GuiElement>
+
+
+  <!-- *********** -->
+  <!-- DUST BRANCH -->
+  <!-- *********** -->
+  
+  <!-- TUNDRA -->
+  
+  <GuiElement Name="PlanetTerraformationFromSnowToTundra">
+    <Title>%PlanetTerraformationToTundraTitle</Title>
+    <Description>%PlanetTerraformationToTundraDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationTundraSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationTundraLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromSteppesToTundra">
+    <Title>%PlanetTerraformationToTundraTitle</Title>
+    <Description>%PlanetTerraformationToTundraDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationTundraSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationTundraLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromVeldtToTundra">
+    <Title>%PlanetTerraformationToTundraTitle</Title>
+    <Description>%PlanetTerraformationToTundraDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationTundraSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationTundraLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- VELDT -->
+
+  <ExtendedGuiElement Name="PlanetTerraformationToVeldt">
+    <Title>%PlanetTerraformationToVeldtTitle</Title>
+    <Description>%PlanetTerraformationToVeldtDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationVeldtSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationVeldtLarge" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%PlanetTerraformationToVeldtEffectOverride</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromTundraToVeldt">
+    <Title>%PlanetTerraformationToVeldtTitle</Title>
+    <Description>%PlanetTerraformationToVeldtDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationVeldtSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationVeldtLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromAridToVeldt">
+    <Title>%PlanetTerraformationToVeldtTitle</Title>
+    <Description>%PlanetTerraformationToVeldtDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationVeldtSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationVeldtLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromBorealToVeldt">
+    <Title>%PlanetTerraformationToVeldtTitle</Title>
+    <Description>%PlanetTerraformationToVeldtDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationVeldtSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationVeldtLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromArcticToVeldt">
+    <Title>%PlanetTerraformationToVeldtTitle</Title>
+    <Description>%PlanetTerraformationToVeldtDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationVeldtSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationVeldtLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- ARID -->
+
+  <ExtendedGuiElement Name="PlanetTerraformationToArid">
+    <Title>%PlanetTerraformationToAridTitle</Title>
+    <Description>%PlanetTerraformationToAridDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationAridSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationAridLarge" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%PlanetTerraformationToAridEffectOverride</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromVeldtToArid">
+    <Title>%PlanetTerraformationToAridTitle</Title>
+    <Description>%PlanetTerraformationToAridDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationAridSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationAridLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromAshToArid">
+    <Title>%PlanetTerraformationToAridTitle</Title>
+    <Description>%PlanetTerraformationToAridDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationAridSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationAridLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromIceToArid">
+    <Title>%PlanetTerraformationToAridTitle</Title>
+    <Description>%PlanetTerraformationToAridDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationAridSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationAridLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromDesertToArid">
+    <Title>%PlanetTerraformationToAridTitle</Title>
+    <Description>%PlanetTerraformationToAridDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationAridSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationAridLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- DESERT -->
+
+  <ExtendedGuiElement Name="PlanetTerraformationToDesert">
+    <Title>%PlanetTerraformationToDesertTitle</Title>
+    <Description>%PlanetTerraformationToDesertDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationDesertSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationDesertLarge" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%PlanetTerraformationToDesertEffectOverride</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromAridToDesert">
+    <Title>%PlanetTerraformationToDesertTitle</Title>
+    <Description>%PlanetTerraformationToDesertDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationDesertSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationDesertLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromLavaToDesert">
+    <Title>%PlanetTerraformationToDesertTitle</Title>
+    <Description>%PlanetTerraformationToDesertDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationDesertSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationDesertLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromBarrenToDesert">
+    <Title>%PlanetTerraformationToDesertTitle</Title>
+    <Description>%PlanetTerraformationToDesertDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationDesertSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationDesertLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- **************** -->
+  <!-- SCIENCE  BRANCH -->
+  <!-- **************** -->
+
+  <!-- SNOW -->
+
+  <ExtendedGuiElement Name="PlanetTerraformationToSnow">
+    <Title>%PlanetTerraformationToSnowTitle</Title>
+    <Description>%PlanetTerraformationToSnowDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationSnowSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationSnowLarge" />
+    </Icons>
+    <TooltipElement>
+      <EffectOverride>%PlanetTerraformationToSnowEffectOverride</EffectOverride>
+    </TooltipElement>
+  </ExtendedGuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromTundraToSnow">
+    <Title>%PlanetTerraformationToSnowTitle</Title>
+    <Description>%PlanetTerraformationToSnowDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationSnowSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationSnowLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromArcticToSnow">
+    <Title>%PlanetTerraformationToSnowTitle</Title>
+    <Description>%PlanetTerraformationToSnowDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationSnowSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationSnowLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromSwampToSnow">
+    <Title>%PlanetTerraformationToSnowTitle</Title>
+    <Description>%PlanetTerraformationToSnowDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationSnowSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationSnowLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- ARCTIC -->
+
+    <ExtendedGuiElement Name="PlanetTerraformationToArctic">
+        <Title>%PlanetTerraformationToArcticTitle</Title>
+        <Description>%PlanetTerraformationToArcticDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationArcticSmall" />
+            <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationArcticLarge" />
+        </Icons>
+        <TooltipElement>
+            <EffectOverride>%PlanetTerraformationToArcticEffectOverride</EffectOverride>
+        </TooltipElement>
+    </ExtendedGuiElement>
+
+    <GuiElement Name="PlanetTerraformationFromSnowToArctic">
+        <Title>%PlanetTerraformationToArcticTitle</Title>
+        <Description>%PlanetTerraformationToArcticDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationArcticSmall" />
+            <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationArcticLarge" />
+        </Icons>
+    </GuiElement>
+
+    <GuiElement Name="PlanetTerraformationFromIceToArctic">
+        <Title>%PlanetTerraformationToArcticTitle</Title>
+        <Description>%PlanetTerraformationToArcticDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationArcticSmall" />
+            <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationArcticLarge" />
+        </Icons>
+    </GuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromVeldtToArctic">
+    <Title>%PlanetTerraformationToArcticTitle</Title>
+    <Description>%PlanetTerraformationToArcticDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationArcticSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationArcticLarge" />
+    </Icons>
+  </GuiElement>
+  
+  <!-- ICE -->
+
+  <GuiElement Name="PlanetTerraformationFromArcticToIce">
+    <Title>%PlanetTerraformationToIceTitle</Title>
+    <Description>%PlanetTerraformationToIceDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationIceSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationIceLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromBarrenToIce">
+    <Title>%PlanetTerraformationToIceTitle</Title>
+    <Description>%PlanetTerraformationToIceDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationIceSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationIceLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromAridToIce">
+    <Title>%PlanetTerraformationToIceTitle</Title>
+    <Description>%PlanetTerraformationToIceDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationIceSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationIceLarge" />
+    </Icons>
+  </GuiElement>
+  
+  <!-- BARREN -->
+
+  <GuiElement Name="PlanetTerraformationFromDesertToBarren">
+    <Title>%PlanetTerraformationToBarrenTitle</Title>
+    <Description>%PlanetTerraformationToBarrenDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationBarrenSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationBarrenLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromIceToBarren">
+    <Title>%PlanetTerraformationToBarrenTitle</Title>
+    <Description>%PlanetTerraformationToBarrenDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationBarrenSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationBarrenLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- *********** -->
+  <!-- GAS  BRANCH -->
+  <!-- *********** -->
+
+  <!-- Freezing -->
+  
+  <GuiElement Name="PlanetTerraformationFromGasColdToGasFrozen">
+    <Title>%PlanetTerraformationToGasFrozenTitle</Title>
+    <Description>%PlanetTerraformationToGasFrozenDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationGasFrozenSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationGasFrozenLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Cold -->
+
+  <GuiElement Name="PlanetTerraformationFromGasFrozenToGasCold">
+    <Title>%PlanetTerraformationToGasColdTitle</Title>
+    <Description>%PlanetTerraformationToGasColdDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationGasColdSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationGasColdLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromGasTemperateToGasCold">
+    <Title>%PlanetTerraformationToGasColdTitle</Title>
+    <Description>%PlanetTerraformationToGasColdDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationGasColdSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationGasColdLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Temperate -->
+
+  <GuiElement Name="PlanetTerraformationFromGasColdToGasTemperate">
+    <Title>%PlanetTerraformationToGasTemperateTitle</Title>
+    <Description>%PlanetTerraformationToGasTemperateDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationGasTemperateSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationGasTemperateLarge" />
+    </Icons>
+  </GuiElement>
+  
+  <GuiElement Name="PlanetTerraformationFromGasWarmToGasTemperate">
+    <Title>%PlanetTerraformationToGasTemperateTitle</Title>
+    <Description>%PlanetTerraformationToGasTemperateDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationGasTemperateSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationGasTemperateLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Warm -->
+
+  <GuiElement Name="PlanetTerraformationFromGasTemperateToGasWarm">
+    <Title>%PlanetTerraformationToGasWarmTitle</Title>
+    <Description>%PlanetTerraformationToGasWarmDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationGasWarmSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationGasWarmLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromGasHotToGasWarm">
+    <Title>%PlanetTerraformationToGasWarmTitle</Title>
+    <Description>%PlanetTerraformationToGasWarmDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationGasWarmSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationGasWarmLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Hot -->
+
+  <GuiElement Name="PlanetTerraformationFromGasWarmToGasHot">
+    <Title>%PlanetTerraformationToGasHotTitle</Title>
+    <Description>%PlanetTerraformationToGasHotDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationGasHotSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationGasHotLarge" />
+    </Icons>
+  </GuiElement>
+
+  <GuiElement Name="PlanetTerraformationFromGasBurningToGasHot">
+    <Title>%PlanetTerraformationToGasHotTitle</Title>
+    <Description>%PlanetTerraformationToGasHotDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationGasHotSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationGasHotLarge" />
+    </Icons>
+  </GuiElement>
+
+  <!-- Burning -->
+
+  <GuiElement Name="PlanetTerraformationFromGasHotToGasBurning">
+    <Title>%PlanetTerraformationToGasBurningTitle</Title>
+    <Description>%PlanetTerraformationToGasBurningDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationGasBurningSmall" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/Colonization/ColonizationGasBurningLarge" />
+    </Icons>
+  </GuiElement>
+  
+
+
+
+
+</Datatable>

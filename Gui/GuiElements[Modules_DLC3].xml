@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+
+    <!-- ####################### -->
+    <!-- ######  Support  ###### -->
+    <!-- ####################### -->
+    
+    <ExtendedGuiElement Name="ModuleSupportInvisibilityLevel1">
+        <Title>%ModuleSupportInvisibilityLevel1Title</Title>
+        <Icons>
+            <Icon Size="Small" Path="Modules/ModuleSupportInvisibilityLevel1" />
+        </Icons>
+        <Sounds>
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+        </Sounds>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="ModuleSupportInvisibilityLevel2">
+        <Title>%ModuleSupportInvisibilityLevel2Title</Title>
+        <Icons>
+            <Icon Size="Small" Path="Modules/ModuleSupportInvisibilityLevel2" />
+        </Icons>
+        <Sounds>
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+        </Sounds>
+    </ExtendedGuiElement>
+   
+    <ExtendedGuiElement Name="ModuleSupportInvisibilityAmbush">
+        <Title>%ModuleSupportInvisibilityAmbushTitle</Title>
+        <Icons>
+            <Icon Size="Small" Path="Modules/ModuleSupportInvisibilityAmbush" />
+        </Icons>
+        <Sounds>
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+        </Sounds>
+    </ExtendedGuiElement>
+ 
+    <ExtendedGuiElement Name="ModuleSupportInvisibilityAmbushUmbralChoir">
+        <Title>%ModuleSupportInvisibilityAmbushUmbralChoirTitle</Title>
+        <Icons>
+            <Icon Size="Small" Path="Modules/ModuleSupportInvisibilityAmbush" />
+        </Icons>
+        <Sounds>
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+        </Sounds>
+    </ExtendedGuiElement>
+
+   <ExtendedGuiElement Name="ModuleSupportInvisibilityDetectionLevel1">
+        <Title>%ModuleSupportInvisibilityDetectionLevel1Title</Title>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Dynamic/Modules/ModuleSupportInvisibilityDetection2" />
+        </Icons>
+        <Sounds>
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+        </Sounds>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="ModuleSupportInvisibilityDetectionLevel2">
+        <Title>%ModuleSupportInvisibilityDetectionLevel2Title</Title>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Dynamic/Modules/ModuleSupportInvisibilityDetection3" />
+        </Icons>
+        <Sounds>
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+        </Sounds>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="ModuleSupportInvisibilityDetectionLevel3">
+        <Title>%ModuleSupportInvisibilityDetectionLevel3Title</Title>
+        <Icons>
+            <Icon Size="Small" Path="Modules/ModuleSupportInvisibilityDetection3_2" />
+        </Icons>
+        <Sounds>
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+        </Sounds>
+    </ExtendedGuiElement>
+
+</Datatable>

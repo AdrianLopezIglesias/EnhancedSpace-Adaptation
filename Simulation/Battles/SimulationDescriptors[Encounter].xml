@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+    <SimulationDescriptor Name="ClassModuleSupportEncounter" Type="ClassModuleSupport">
+
+        <Modifier TargetProperty="DamageIncreasePercent"   Operation="Addition"    Value="$(DamageIncreasePercent)"   Path="../ClassFlotilla/ClassShipEncounter"       Priority="1"/>
+
+        <Modifier TargetProperty="MaximumShield"            Operation="Addition" Value="$(FlotillaMaximumShield)"       Path="../ClassFlotilla"     Priority="1"/>
+        <Modifier TargetProperty="ShieldAbsorption"         Operation="Addition" Value="$(FlotillaShieldAbsorption)"       Path="../ClassFlotilla"     Priority="1"/>
+        
+        <Modifier TargetProperty="HullPlatingAbsorption"   Operation="Addition" Value="$(FlotillaDmgReductionAgainstPhysical)" Path="../ClassFlotilla/ClassShipEncounter"  Priority="1"/>
+        <Modifier TargetProperty="ShieldAbsorption"     Operation="Addition" Value="$(FlotillaDmgReductionAgainstEnergy)"   Path="../ClassFlotilla/ClassShipEncounter"  Priority="1"/>
+        
+        <!-- modded -->
+        <!--<Modifier TargetProperty="DamageBonusPerTargetCommandPoints"     Operation="Addition" Value="$(DamageBonusPerTargetCommandPointsFlotilla)"   Path="../ClassFlotilla/ClassShipEncounter" />-->
+
+        <Modifier TargetProperty="RepairAfterBattle"           Operation="Addition" Value="$(FlotillaRepairAfterBattle)"       Path="../ClassFlotilla/ClassShipEncounter"     Priority="1"/>
+        <Modifier TargetProperty="RepairAfterPhase"            Operation="Addition" Value="$(FlotillaRepairAfterPhase)"        Path="../ClassFlotilla/ClassShipEncounter"     Priority="1"/>
+        
+        <Modifier TargetProperty="ShipManpowerKillPerHitPercentEncounter"       Operation="Addition" Value="$(FlotillaShipManpowerKillPerHitPercent)"        Path="../ClassFlotilla/ClassShipEncounter"     Priority="1"/>         
+    </SimulationDescriptor>
+
+</Datatable>

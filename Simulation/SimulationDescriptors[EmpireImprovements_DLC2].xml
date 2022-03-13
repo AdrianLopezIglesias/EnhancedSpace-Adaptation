@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+
+
+    <!-- ########################### -->
+    <!-- ######  Juggernauts  ###### -->
+    <!-- ########################### -->
+
+    <SimulationDescriptor Name="EmpireImprovementMovement01Juggernaut" Type="EmpireImprovement">
+        <Modifier TargetProperty="MaximumMovement" Operation="Addition" Value="3" Path="ClassEmpire//ClassGarrison/ClassShip,ShipRoleJuggernaut"/>
+    </SimulationDescriptor>
+    <SimulationDescriptor Name="EmpireImprovementMovement01JuggernautMajorHisshos" Type="EmpireImprovement">
+        <Modifier TargetProperty="MaximumMovement" Operation="Addition" Value="6" Path="ClassEmpire//ClassGarrison/ClassShip,ShipRoleJuggernaut"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="EmpireImprovementSlotsMilitary1Juggernaut" Type="EmpireImprovement">
+        <Modifier TargetProperty="ShipHealth"       Operation="Addition"        Value="28000"    Path="ClassEmpire/ClassGarrison/ClassShip,ShipRoleJuggernaut/ClassSection,ClassSectionCoreJuggernaut" TooltipOverride="%EmpireImprovementImprovedHullJuggernautHealthOverride"/>
+        <Modifier TargetProperty="ShipHealth"       Operation="Addition"        Value="28000"   Path="ClassEmpire/ClassStarSystem/ClassGarrison/ClassShip,ShipRoleJuggernaut/ClassSection,ClassSectionCoreJuggernaut" TooltipHidden="true"/>
+    </SimulationDescriptor>
+    
+    <SimulationDescriptor Name="EmpireImprovementImprovedHull1Juggernaut" Type="EmpireImprovement" >
+        <Modifier TargetProperty="JuggernautModuleCostMultiplier"   Operation="Addition"    Value="2"       Path="ClassEmpire" Priority="0" TooltipHidden="true"/>
+        
+        <Modifier TargetProperty="Multiplier"                       Operation="Addition"    Value="2"       Path="ClassEmpire/ClassGarrison/ClassShip,ShipRoleJuggernaut/ClassSection/ClassModule" Priority="0"     TooltipOverride="%EmpireImprovementImprovedHullJuggernautOverride"/>
+        <Modifier TargetProperty="ShipHealth"                       Operation="Addition"    Value="14000"   Path="ClassEmpire/ClassGarrison/ClassShip,ShipRoleJuggernaut/ClassSection,ClassSectionCoreJuggernaut"   TooltipOverride="%EmpireImprovementImprovedHullJuggernautHealthOverride"/>
+        
+        <Modifier TargetProperty="Multiplier"                       Operation="Addition"    Value="2"       Path="ClassEmpire/ClassStarSystem/ClassGarrison/ClassShip,ShipRoleJuggernaut/ClassSection/ClassModule" Priority="0" TooltipHidden="true"/>
+        <Modifier TargetProperty="ShipHealth"                       Operation="Addition"    Value="14000"   Path="ClassEmpire/ClassStarSystem/ClassGarrison/ClassShip,ShipRoleJuggernaut/ClassSection,ClassSectionCoreJuggernaut" TooltipHidden="true"/>
+         
+        <Modifier TargetProperty="JuggernautMultiplier"             Operation="Addition"    Value="2"       Path="ClassEmpire/ClassStarSystem" Priority="0" TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="EmpireImprovementImprovedHull4Juggernaut" Type="EmpireImprovement" >
+        <Modifier TargetProperty="JuggernautModuleCostMultiplier"   Operation="Addition"    Value="2"       Path="ClassEmpire" Priority="1" TooltipHidden="true"/>
+        
+        <Modifier TargetProperty="Multiplier"                       Operation="Addition"    Value="2"       Path="ClassEmpire/ClassGarrison/ClassShip,ShipRoleJuggernaut/ClassSection/ClassModule" Priority="1"     TooltipOverride="%EmpireImprovementImprovedHullJuggernautOverride"/>
+        <Modifier TargetProperty="ShipHealth"                       Operation="Addition"    Value="14000"    Path="ClassEmpire/ClassGarrison/ClassShip,ShipRoleJuggernaut/ClassSection,ClassSectionCoreJuggernaut"   TooltipOverride="%EmpireImprovementImprovedHullJuggernautHealthOverride"/>
+        
+        <Modifier TargetProperty="Multiplier"                       Operation="Addition"    Value="2"       Path="ClassEmpire/ClassStarSystem/ClassGarrison/ClassShip,ShipRoleJuggernaut/ClassSection/ClassModule" Priority="1" TooltipHidden="true"/>
+        <Modifier TargetProperty="ShipHealth"                       Operation="Addition"    Value="14000"    Path="ClassEmpire/ClassStarSystem/ClassGarrison/ClassShip,ShipRoleJuggernaut/ClassSection,ClassSectionCoreJuggernaut" TooltipHidden="true"/>
+
+        <Modifier TargetProperty="JuggernautMultiplier"             Operation="Addition"    Value="2"       Path="ClassEmpire/ClassStarSystem" Priority="0" TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="EmpireImprovementImprovedHull5Juggernaut" Type="EmpireImprovement" >
+        <Modifier TargetProperty="JuggernautModuleCostMultiplier"   Operation="Addition"       Value="3"       Path="ClassEmpire" Priority="2" TooltipHidden="true"/>
+        
+        <Modifier TargetProperty="Multiplier"                       Operation="Addition"       Value="3"       Path="ClassEmpire/ClassGarrison/ClassShip,ShipRoleJuggernaut/ClassSection/ClassModule" Priority="2"     TooltipOverride="%EmpireImprovementImprovedHullJuggernautOverride"/>
+        <Modifier TargetProperty="ShipHealth"                       Operation="Addition"    Value="14000"    Path="ClassEmpire/ClassGarrison/ClassShip,ShipRoleJuggernaut/ClassSection,ClassSectionCoreJuggernaut"   TooltipOverride="%EmpireImprovementImprovedHullJuggernautHealthOverride"/>
+        
+        <Modifier TargetProperty="Multiplier"                       Operation="Addition"       Value="3"       Path="ClassEmpire/ClassStarSystem/ClassGarrison/ClassShip,ShipRoleJuggernaut/ClassSection/ClassModule" Priority="2" TooltipHidden="true"/>
+        <Modifier TargetProperty="ShipHealth"                       Operation="Addition"    Value="14000"    Path="ClassEmpire/ClassStarSystem/ClassGarrison/ClassShip,ShipRoleJuggernaut/ClassSection,ClassSectionCoreJuggernaut" TooltipHidden="true"/>
+
+        <Modifier TargetProperty="JuggernautMultiplier"             Operation="Addition"    Value="3"       Path="ClassEmpire/ClassStarSystem" Priority="0" TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="EmpireImprovementImprovedHull6Juggernaut" Type="EmpireImprovement" >
+        <Modifier TargetProperty="JuggernautModuleCostMultiplier"   Operation="Addition"    Value="2"       Path="ClassEmpire" Priority="3" TooltipHidden="true"/>
+        
+        <Modifier TargetProperty="Multiplier"                       Operation="Addition"    Value="2"       Path="ClassEmpire/ClassGarrison/ClassShip,ShipRoleJuggernaut/ClassSection/ClassModule" Priority="3"     TooltipOverride="%EmpireImprovementImprovedHullJuggernautOverride"/>
+        <Modifier TargetProperty="ShipHealth"                       Operation="Addition"    Value="28000"   Path="ClassEmpire/ClassGarrison/ClassShip,ShipRoleJuggernaut/ClassSection,ClassSectionCoreJuggernaut"   TooltipOverride="%EmpireImprovementImprovedHullJuggernautHealthOverride"/>
+        
+        <Modifier TargetProperty="Multiplier"                       Operation="Force"       Value="2"       Path="ClassEmpire/ClassStarSystem/ClassGarrison/ClassShip,ShipRoleJuggernaut/ClassSection/ClassModule" Priority="3" TooltipHidden="true"/>
+        <Modifier TargetProperty="ShipHealth"                       Operation="Addition"    Value="28000"   Path="ClassEmpire/ClassStarSystem/ClassGarrison/ClassShip,ShipRoleJuggernaut/ClassSection,ClassSectionCoreJuggernaut" TooltipHidden="true"/>
+
+        <Modifier TargetProperty="JuggernautMultiplier"             Operation="Addition"    Value="2"       Path="ClassEmpire/ClassStarSystem" Priority="0" TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="EmpireImprovementDiplomacyBonus1MajorHissho" Type="EmpireImprovement">
+        <Modifier TargetProperty="MinorFactionsGameplayUnlocked" Operation="Addition" Value="1" Path="ClassEmpire" TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <!--##################-->
+    <!--## HISSHO QUEST ##-->
+    <!--##################-->
+
+    <SimulationDescriptor Name="EmpireImprovementQuestHisshos05"      Type="EmpireImprovement"/>
+    <SimulationDescriptor Name="EmpireImprovementQuestHisshos06"      Type="EmpireImprovement"/>
+    
+    <SimulationDescriptor Name="EmpireImprovementQuestHisshos07"      Type="EmpireImprovement">
+        <Modifier TargetProperty="ShipDamage"       Operation="Addition"           Value="0.15"       Path="ClassEmpire,ObedienceStatusEmpire3/ClassGarrisonFleet" UseIfInsteadOfWhere="true"/>
+        <Modifier TargetProperty="ShipDamage"       Operation="Addition"           Value="0.3"       Path="ClassEmpire,ObedienceStatusEmpire4/ClassGarrisonFleet" UseIfInsteadOfWhere="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="EmpireImprovementQuestHisshos08"      Type="EmpireImprovement">
+        <Modifier TargetProperty="BoostToHonorInShipBattle"         Operation="Addition"           Value="0.5"       Path="ClassEmpire" TooltipHidden="true"/>
+        <Modifier TargetProperty="BoostToHonorInShipBattle"         Operation="Percent"            Value="0.5"       Path="ClassEmpire/ClassGarrisonFleet"/>
+        <Modifier TargetProperty="BoostToHonorInGroundBattle"       Operation="Addition"           Value="0.5"       Path="ClassEmpire" TooltipHidden="true"/>
+        <Modifier TargetProperty="BoostToHonorInGroundBattle"       Operation="Percent"            Value="0.5"       Path="ClassEmpire/ClassStarSystem"/>
+    </SimulationDescriptor>
+
+</Datatable>

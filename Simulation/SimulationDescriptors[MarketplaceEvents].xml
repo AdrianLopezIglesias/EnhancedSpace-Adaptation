@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+
+	<!--#########################################-->
+	<!--####	  MARKETPLACE EFFECTS		#####-->
+	<!--#########################################-->
+
+	<!--Luxury [Resource] refill +5-->
+	<SimulationDescriptor Name="MarketplaceEventEffectLuxury1Refill5" Type="MarketplaceEventEffect" IsSerializable="false">
+		<Modifier TargetProperty="StockIncreasePerTurn" Operation="Addition" Value="15" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury1" />
+      <Modifier TargetProperty="Demand" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury1" />
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="MarketplaceEventEffectLuxury2Refill5" Type="MarketplaceEventEffect" IsSerializable="false">
+		<Modifier TargetProperty="StockIncreasePerTurn" Operation="Addition" Value="15" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury2" />
+      <Modifier TargetProperty="Demand" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury2" />
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="MarketplaceEventEffectLuxury3Refill5" Type="MarketplaceEventEffect" IsSerializable="false">
+		<Modifier TargetProperty="StockIncreasePerTurn" Operation="Addition" Value="15" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury3" />
+      <Modifier TargetProperty="Demand" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury3" />
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="MarketplaceEventEffectLuxury4Refill5" Type="MarketplaceEventEffect" IsSerializable="false">
+		<Modifier TargetProperty="StockIncreasePerTurn" Operation="Addition" Value="15" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury4" />
+      <Modifier TargetProperty="Demand" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury4" />
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="MarketplaceEventEffectLuxury5Refill5" Type="MarketplaceEventEffect" IsSerializable="false">
+		<Modifier TargetProperty="StockIncreasePerTurn" Operation="Addition" Value="15" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury5" />
+      <Modifier TargetProperty="Demand" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury5" />
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="MarketplaceEventEffectLuxury6Refill5" Type="MarketplaceEventEffect" IsSerializable="false">
+		<Modifier TargetProperty="StockIncreasePerTurn" Operation="Addition" Value="15" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury6" />
+      <Modifier TargetProperty="Demand" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury6" />
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="MarketplaceEventEffectLuxury7Refill5" Type="MarketplaceEventEffect" IsSerializable="false">
+		<Modifier TargetProperty="StockIncreasePerTurn" Operation="Addition" Value="15" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury7" />
+      <Modifier TargetProperty="Demand" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury7" />
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="MarketplaceEventEffectLuxury8Refill5" Type="MarketplaceEventEffect" IsSerializable="false">
+		<Modifier TargetProperty="StockIncreasePerTurn" Operation="Addition" Value="15" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury8" />
+      <Modifier TargetProperty="Demand" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury8" />
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="MarketplaceEventEffectLuxury9Refill5" Type="MarketplaceEventEffect" IsSerializable="false">
+		<Modifier TargetProperty="StockIncreasePerTurn" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury9" />
+      <Modifier TargetProperty="Demand" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury9" />
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="MarketplaceEventEffectLuxury10Refill5" Type="MarketplaceEventEffect" IsSerializable="false">
+		<Modifier TargetProperty="StockIncreasePerTurn" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury10" />
+      <Modifier TargetProperty="Demand" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury10" />
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="MarketplaceEventEffectLuxury11Refill5" Type="MarketplaceEventEffect" IsSerializable="false">
+		<Modifier TargetProperty="StockIncreasePerTurn" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury11" />
+      <Modifier TargetProperty="Demand" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury11" />
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="MarketplaceEventEffectLuxury12Refill5" Type="MarketplaceEventEffect" IsSerializable="false">
+		<Modifier TargetProperty="StockIncreasePerTurn" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury12" />
+      <Modifier TargetProperty="Demand" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury12" />
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="MarketplaceEventEffectLuxury13Refill5" Type="MarketplaceEventEffect" IsSerializable="false">
+		<Modifier TargetProperty="StockIncreasePerTurn" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury13" />
+      <Modifier TargetProperty="Demand" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury13" />
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="MarketplaceEventEffectLuxury14Refill5" Type="MarketplaceEventEffect" IsSerializable="false">
+		<Modifier TargetProperty="StockIncreasePerTurn" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury14" />
+      <Modifier TargetProperty="Demand" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury14" />
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="MarketplaceEventEffectLuxury15Refill5" Type="MarketplaceEventEffect" IsSerializable="false">
+		<Modifier TargetProperty="StockIncreasePerTurn" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury15" />
+      <Modifier TargetProperty="Demand" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury15" />
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="MarketplaceEventEffectLuxury16Refill5" Type="MarketplaceEventEffect" IsSerializable="false">
+		<Modifier TargetProperty="StockIncreasePerTurn" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury16" />
+      <Modifier TargetProperty="Demand" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury16" />
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="MarketplaceEventEffectLuxury17Refill5" Type="MarketplaceEventEffect" IsSerializable="false">
+		<Modifier TargetProperty="StockIncreasePerTurn" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury17" />
+      <Modifier TargetProperty="Demand" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury17" />
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="MarketplaceEventEffectLuxury18Refill5" Type="MarketplaceEventEffect" IsSerializable="false">
+		<Modifier TargetProperty="StockIncreasePerTurn" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury18" />
+      <Modifier TargetProperty="Demand" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury18" />
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="MarketplaceEventEffectLuxury19Refill5" Type="MarketplaceEventEffect" IsSerializable="false">
+		<Modifier TargetProperty="StockIncreasePerTurn" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury19" />
+      <Modifier TargetProperty="Demand" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury19" />
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="MarketplaceEventEffectLuxury20Refill5" Type="MarketplaceEventEffect" IsSerializable="false">
+		<Modifier TargetProperty="StockIncreasePerTurn" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury20" />
+      <Modifier TargetProperty="Demand" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury20" />
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="MarketplaceEventEffectLuxury21Refill5" Type="MarketplaceEventEffect" IsSerializable="false">
+		<Modifier TargetProperty="StockIncreasePerTurn" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury21" />
+      <Modifier TargetProperty="Demand" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury21" />
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="MarketplaceEventEffectLuxury22Refill5" Type="MarketplaceEventEffect" IsSerializable="false">
+		<Modifier TargetProperty="StockIncreasePerTurn" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury22" />
+      <Modifier TargetProperty="Demand" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury22" />
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="MarketplaceEventEffectLuxury23Refill5" Type="MarketplaceEventEffect" IsSerializable="false">
+		<Modifier TargetProperty="StockIncreasePerTurn" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury23" />
+      <Modifier TargetProperty="Demand" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury23" />
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="MarketplaceEventEffectLuxury24Refill5" Type="MarketplaceEventEffect" IsSerializable="false">
+		<Modifier TargetProperty="StockIncreasePerTurn" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury24" />
+      <Modifier TargetProperty="Demand" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceLuxury/TradableResourceLuxury24" />
+	</SimulationDescriptor>
+	<!--Strategic [Resource] refill +5-->
+	<SimulationDescriptor Name="MarketplaceEventEffectStrategic1Refill5" Type="MarketplaceEventEffect" IsSerializable="false">
+		<Modifier TargetProperty="StockIncreasePerTurn" Operation="Addition" Value="15" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceStrategic/TradableResourceStrategic1" />
+      <Modifier TargetProperty="Demand" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceStrategic/TradableResourceStrategic1" />
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="MarketplaceEventEffectStrategic2Refill5" Type="MarketplaceEventEffect" IsSerializable="false">
+		<Modifier TargetProperty="StockIncreasePerTurn" Operation="Addition" Value="15" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceStrategic/TradableResourceStrategic2" />
+      <Modifier TargetProperty="Demand" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceStrategic/TradableResourceStrategic2" />
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="MarketplaceEventEffectStrategic3Refill5" Type="MarketplaceEventEffect" IsSerializable="false">
+		<Modifier TargetProperty="StockIncreasePerTurn" Operation="Addition" Value="12" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceStrategic/TradableResourceStrategic3" />
+      <Modifier TargetProperty="Demand" Operation="Addition" Value="8" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceStrategic/TradableResourceStrategic3" />
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="MarketplaceEventEffectStrategic4Refill5" Type="MarketplaceEventEffect" IsSerializable="false">
+		<Modifier TargetProperty="StockIncreasePerTurn" Operation="Addition" Value="12" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceStrategic/TradableResourceStrategic4" />
+      <Modifier TargetProperty="Demand" Operation="Addition" Value="8" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceStrategic/TradableResourceStrategic4" />
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="MarketplaceEventEffectStrategic5Refill5" Type="MarketplaceEventEffect" IsSerializable="false">
+		<Modifier TargetProperty="StockIncreasePerTurn" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceStrategic/TradableResourceStrategic5" />
+      <Modifier TargetProperty="Demand" Operation="Addition" Value="6" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceStrategic/TradableResourceStrategic5" />
+	</SimulationDescriptor>
+	<SimulationDescriptor Name="MarketplaceEventEffectStrategic6Refill5" Type="MarketplaceEventEffect" IsSerializable="false">
+		<Modifier TargetProperty="StockIncreasePerTurn" Operation="Addition" Value="10" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceStrategic/TradableResourceStrategic6" />
+      <Modifier TargetProperty="Demand" Operation="Addition" Value="6" Path="ClassMarketplace/TradableCategoryResource/TradableSubCategoryResourceStrategic/TradableResourceStrategic6" />
+	</SimulationDescriptor>
+	
+	
+</Datatable>

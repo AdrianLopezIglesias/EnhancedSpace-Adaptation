@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../../Schemas/ModuleDefinition.xsd">
+
+
+
+   <!-- ******************** -->
+   <!-- ** LOGISTICS MODULES ** -->
+   <!-- ******************** -->
+
+   <LogisticsModule Name="ModuleGrowthLogistics1" Family="GrowthLogisticsBase" Level="1">
+      <Cost ResourceName="SystemProduction">20</Cost>
+      <PathPrerequisite Flags="Edition,Discard,UnlockAvailability">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <CategorizedSimulationDescriptors Category="CategoryLeech">
+         <SimulationDescriptorReference Name="ModuleLogistics"/>
+         <SimulationDescriptorReference Name="ModuleLogisticsGrowth1"/>
+      </CategorizedSimulationDescriptors>
+      <!-- Note: the resources the module can transfer are noted here. You must add the Stock, Maximum and PerAction properties in the provided descriptors -->
+      <Resource>SystemGrowth</Resource>
+   </LogisticsModule>
+
+   <LogisticsModule Name="ModuleGrowthLogistics2" Family="GrowthLogisticsBase" Level="2">
+      <Cost ResourceName="SystemProduction">80</Cost>
+      <PathPrerequisite Flags="Edition,Discard,UnlockAvailability">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+      <TechnologyPrerequisite Flags="Edition">TechnologyExploration1Vampirilis</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <CategorizedSimulationDescriptors Category="CategoryLeech">
+         <SimulationDescriptorReference Name="ModuleLogistics"/>
+         <SimulationDescriptorReference Name="ModuleLogisticsGrowth2"/>
+      </CategorizedSimulationDescriptors>
+      <Resource>SystemGrowth</Resource>
+   </LogisticsModule>
+
+   <LogisticsModule Name="ModuleGrowthLogistics3" Family="GrowthLogisticsBase" Level="3">
+      <Cost ResourceName="SystemProduction">320</Cost>
+      <PathPrerequisite Flags="Edition,Discard,UnlockAvailability">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+      <TechnologyPrerequisite Flags="Edition">TechnologyArkModule5</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <CategorizedSimulationDescriptors Category="CategoryLeech">
+         <SimulationDescriptorReference Name="ModuleLogistics"/>
+         <SimulationDescriptorReference Name="ModuleLogisticsGrowth3"/>
+      </CategorizedSimulationDescriptors>
+      <Resource>SystemGrowth</Resource>
+   </LogisticsModule>
+
+   <!-- LIFEFORCE -->
+   <MothershipModule Name="ModuleMothershipLifeforce1" Family="MothershipLifeforceBase" Level="1">
+      <Cost ResourceName="SystemProduction">20</Cost>
+      <PathPrerequisite Flags="Edition,Discard,UnlockAvailability">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+      <PathPrerequisite Flags="Edition">../ClassShip,ShipRoleMothership</PathPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleStarSystemEffectFromMothership"/>
+      <CategorizedSimulationDescriptors Category="CategoryFIDSILifeforce">
+         <!--Descriptors used for tooltip-->
+         <SimulationDescriptorReference Name="ModuleMothershipLifeforce1"/>
+      </CategorizedSimulationDescriptors>
+      <!--Descriptor used to apply effect-->
+      <SystemDescriptor Name="StarSystemEffectFromMothershipLifeforce1"/>
+   </MothershipModule>
+
+
+   <MothershipModule Name="ModuleMothershipLifeforce2" Family="MothershipLifeforceBase" Level="2">
+      <Cost ResourceName="SystemProduction">80</Cost>
+      <PathPrerequisite Flags="Edition,Discard,UnlockAvailability">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+      <PathPrerequisite Flags="Edition">../ClassShip,ShipRoleMothership</PathPrerequisite>
+      <TechnologyPrerequisite Flags="Edition">TechnologyExploration1Vampirilis</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleStarSystemEffectFromMothership"/>
+      <CategorizedSimulationDescriptors Category="CategoryFIDSILifeforce">
+         <!--Descriptors used for tooltip-->
+         <SimulationDescriptorReference Name="ModuleMothershipLifeforce2"/>
+      </CategorizedSimulationDescriptors>
+      <!--Descriptor used to apply effect-->
+      <SystemDescriptor Name="StarSystemEffectFromMothershipLifeforce2"/>
+   </MothershipModule>
+
+   <MothershipModule Name="ModuleMothershipLifeforce3" Family="MothershipLifeforceBase" Level="3">
+      <Cost ResourceName="SystemProduction">320</Cost>
+      <PathPrerequisite Flags="Edition,Discard,UnlockAvailability">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+      <PathPrerequisite Flags="Edition">../ClassShip,ShipRoleMothership</PathPrerequisite>
+      <TechnologyPrerequisite Flags="Edition">TechnologyArkModule5</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleStarSystemEffectFromMothership"/>
+      <CategorizedSimulationDescriptors Category="CategoryFIDSILifeforce">
+         <!--Descriptors used for tooltip-->
+         <SimulationDescriptorReference Name="ModuleMothershipLifeforce3"/>
+      </CategorizedSimulationDescriptors>
+      <!--Descriptor used to apply effect-->
+      <SystemDescriptor Name="StarSystemEffectFromMothershipLifeforce3"/>
+   </MothershipModule>
+
+   
+   <!-- ******************** -->
+    <!-- ** FIDSI MODULES ** -->
+    <!-- ******************** -->
+
+    <!-- DUST -->
+    <MothershipModule Name="ModuleMothershipDust1" Family="MothershipDustBase" Level="1">
+        <Cost ResourceName="SystemProduction">20</Cost>
+        <PathPrerequisite Flags="Edition,Discard,UnlockAvailability">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+        <PathPrerequisite Flags="Edition">../ClassShip,ShipRoleMothership</PathPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ModuleStarSystemEffectFromMothership"/>
+        <CategorizedSimulationDescriptors Category="CategoryFIDSIDust">
+            <!--Descriptors used for tooltip-->
+            <SimulationDescriptorReference Name="ModuleMothershipDust1"/>
+        </CategorizedSimulationDescriptors>
+        <!--Descriptor used to apply effect-->
+        <SystemDescriptor Name="StarSystemEffectFromMothershipDust1"/>
+    </MothershipModule>
+
+
+    <MothershipModule Name="ModuleMothershipDust2" Family="MothershipDustBase" Level="2">
+        <Cost ResourceName="SystemProduction">80</Cost>
+        <PathPrerequisite Flags="Edition,Discard,UnlockAvailability">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+        <PathPrerequisite Flags="Edition">../ClassShip,ShipRoleMothership</PathPrerequisite>
+        <TechnologyPrerequisite Flags="Edition">TechnologyArkModule4</TechnologyPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ModuleStarSystemEffectFromMothership"/>
+        <CategorizedSimulationDescriptors Category="CategoryFIDSIDust">
+            <!--Descriptors used for tooltip-->
+            <SimulationDescriptorReference Name="ModuleMothershipDust2"/>
+        </CategorizedSimulationDescriptors>
+        <!--Descriptor used to apply effect-->
+        <SystemDescriptor Name="StarSystemEffectFromMothershipDust2"/>
+    </MothershipModule>
+
+
+    <MothershipModule Name="ModuleMothershipDust3" Family="MothershipDustBase" Level="3">
+        <Cost ResourceName="SystemProduction">160</Cost>
+        <!--<Cost ResourceName="EmpireLifeforce" Instant="true">20</Cost>-->
+        <CustomCost ResourceName="EmpireLifeforce" Instant="true">20 * (Property(StockLocation, @../ClassEmpire, ShipEssenceCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipEssenceCostMultiplier, true) )</CustomCost>
+        <PathPrerequisite Flags="Edition,Discard,UnlockAvailability">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+        <PathPrerequisite Flags="Edition">../ClassShip,ShipRoleMothership</PathPrerequisite>
+        <TechnologyPrerequisite Flags="Edition">TechnologyArkModule3</TechnologyPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ModuleStarSystemEffectFromMothership"/>
+        <CategorizedSimulationDescriptors Category="CategoryFIDSIDust">
+            <!--Descriptors used for tooltip-->
+            <SimulationDescriptorReference Name="ModuleMothershipDust3"/>
+        </CategorizedSimulationDescriptors>
+        <!--Descriptor used to apply effect-->
+        <SystemDescriptor Name="StarSystemEffectFromMothershipDust3"/>
+    </MothershipModule>
+
+    <MothershipModule Name="ModuleMothershipDust4" Family="MothershipDustBase" Level="4">
+        <Cost ResourceName="SystemProduction">320</Cost>
+        <!--<Cost ResourceName="EmpireLifeforce" Instant="true">50</Cost>-->
+        <CustomCost ResourceName="EmpireLifeforce" Instant="true">50 * (Property(StockLocation, @../ClassEmpire, ShipEssenceCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipEssenceCostMultiplier, true) )</CustomCost>
+        <PathPrerequisite Flags="Edition,Discard,UnlockAvailability">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+        <PathPrerequisite Flags="Edition">../ClassShip,ShipRoleMothership</PathPrerequisite>
+        <TechnologyPrerequisite Flags="Edition">TechnologyArkModule7</TechnologyPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ModuleStarSystemEffectFromMothership"/>
+        <CategorizedSimulationDescriptors Category="CategoryFIDSIDust">
+            <!--Descriptors used for tooltip-->
+            <SimulationDescriptorReference Name="ModuleMothershipDust4"/>
+        </CategorizedSimulationDescriptors>
+        <!--Descriptor used to apply effect-->
+        <SystemDescriptor Name="StarSystemEffectFromMothershipDust4"/>
+    </MothershipModule>
+
+    <!-- INDUSTRY -->
+    <MothershipModule Name="ModuleMothershipIndustry1" Family="MothershipIndustryBase" Level="1">
+        <Cost ResourceName="SystemProduction">20</Cost>
+        <PathPrerequisite Flags="Edition,Discard,UnlockAvailability">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+        <PathPrerequisite Flags="Edition">../ClassShip,ShipRoleMothership</PathPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ModuleStarSystemEffectFromMothership"/>
+        <CategorizedSimulationDescriptors Category="CategoryFIDSIIndustry">
+            <!--Descriptors used for tooltip-->
+            <SimulationDescriptorReference Name="ModuleMothershipIndustry1"/>
+        </CategorizedSimulationDescriptors>
+        <!--Descriptor used to apply effect-->
+        <SystemDescriptor Name="StarSystemEffectFromMothershipIndustry1"/>
+    </MothershipModule>
+
+
+    <MothershipModule Name="ModuleMothershipIndustry2" Family="MothershipIndustryBase" Level="2">
+        <Cost ResourceName="SystemProduction">80</Cost>
+        <PathPrerequisite Flags="Edition,Discard,UnlockAvailability">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+        <TechnologyPrerequisite Flags="Edition">TechnologyScience3</TechnologyPrerequisite>
+        <PathPrerequisite Flags="Edition">../ClassShip,ShipRoleMothership</PathPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ModuleStarSystemEffectFromMothership"/>
+        <CategorizedSimulationDescriptors Category="CategoryFIDSIIndustry">
+            <!--Descriptors used for tooltip-->
+            <SimulationDescriptorReference Name="ModuleMothershipIndustry2"/>
+        </CategorizedSimulationDescriptors>
+        <!--Descriptor used to apply effect-->
+        <SystemDescriptor Name="StarSystemEffectFromMothershipIndustry2"/>
+    </MothershipModule>
+
+
+    <MothershipModule Name="ModuleMothershipIndustry3" Family="MothershipIndustryBase" Level="3">
+        <Cost ResourceName="SystemProduction">160</Cost>
+        <Cost ResourceName ="EmpireLifeforce" Instant="true">20</Cost>
+       <!--<CustomCost ResourceName="EmpireLifeforce" Instant="true">20 * (Property(StockLocation, @../ClassEmpire, ShipEssenceCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipEssenceCostMultiplier, true) )</CustomCost>-->
+        <PathPrerequisite Flags="Edition,Discard,UnlockAvailability">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+        <PathPrerequisite Flags="Edition">../ClassShip,ShipRoleMothership</PathPrerequisite>
+        <TechnologyPrerequisite Flags="Edition">TechnologyArkModule3</TechnologyPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ModuleStarSystemEffectFromMothership"/>
+        <CategorizedSimulationDescriptors Category="CategoryFIDSIIndustry">
+            <!--Descriptors used for tooltip-->
+            <SimulationDescriptorReference Name="ModuleMothershipIndustry3"/>
+        </CategorizedSimulationDescriptors>
+        <!--Descriptor used to apply effect-->
+        <SystemDescriptor Name="StarSystemEffectFromMothershipIndustry3"/>
+    </MothershipModule>
+
+
+    <MothershipModule Name="ModuleMothershipIndustry4" Family="MothershipIndustryBase" Level="4">
+        <Cost ResourceName="SystemProduction">320</Cost>
+       <Cost ResourceName ="EmpireLifeforce" Instant="true">11</Cost>
+        <!--<CustomCost ResourceName="EmpireLifeforce" Instant="true">50 * (Property(StockLocation, @../ClassEmpire, ShipEssenceCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipEssenceCostMultiplier, true) )</CustomCost>-->
+        <PathPrerequisite Flags="Edition,Discard,UnlockAvailability">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+        <PathPrerequisite Flags="Edition">../ClassShip,ShipRoleMothership</PathPrerequisite>
+        <TechnologyPrerequisite Flags="Edition">TechnologyArkModule7</TechnologyPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ModuleStarSystemEffectFromMothership"/>
+        <CategorizedSimulationDescriptors Category="CategoryFIDSIIndustry">
+            <!--Descriptors used for tooltip-->
+            <SimulationDescriptorReference Name="ModuleMothershipIndustry4"/>
+        </CategorizedSimulationDescriptors>
+        <!--Descriptor used to apply effect-->
+        <SystemDescriptor Name="StarSystemEffectFromMothershipIndustry4"/>
+    </MothershipModule>
+
+    <!-- INFLUENCE -->
+    <MothershipModule Name="ModuleMothershipInfluence1" Family="MothershipInfluenceBase" Level="1">
+        <Cost ResourceName="SystemProduction">20</Cost>
+        <PathPrerequisite Flags="Edition,Discard,UnlockAvailability">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+        <PathPrerequisite Flags="Edition">../ClassShip,ShipRoleMothership</PathPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ModuleStarSystemEffectFromMothership"/>
+        <CategorizedSimulationDescriptors Category="CategoryFIDSIInfluence">
+            <!--Descriptors used for tooltip-->
+            <SimulationDescriptorReference Name="ModuleMothershipInfluence1"/>
+        </CategorizedSimulationDescriptors>
+        <!--Descriptor used to apply effect-->
+        <SystemDescriptor Name="StarSystemEffectFromMothershipInfluence1"/>
+    </MothershipModule>
+
+
+    <MothershipModule Name="ModuleMothershipInfluence2" Family="MothershipInfluenceBase" Level="2">
+        <Cost ResourceName="SystemProduction">160</Cost>
+        <PathPrerequisite Flags="Edition,Discard,UnlockAvailability">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+        <PathPrerequisite Flags="Edition">../ClassShip,ShipRoleMothership</PathPrerequisite>
+        <TechnologyPrerequisite Flags="Edition">TechnologyArkModule3</TechnologyPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ModuleStarSystemEffectFromMothership"/>
+        <CategorizedSimulationDescriptors Category="CategoryFIDSIInfluence">
+            <!--Descriptors used for tooltip-->
+            <SimulationDescriptorReference Name="ModuleMothershipInfluence2"/>
+        </CategorizedSimulationDescriptors>
+        <!--Descriptor used to apply effect-->
+        <SystemDescriptor Name="StarSystemEffectFromMothershipInfluence2"/>
+    </MothershipModule>
+
+
+    <MothershipModule Name="ModuleMothershipInfluence3" Family="MothershipInfluenceBase" Level="3">
+        <Cost ResourceName="SystemProduction">320</Cost>
+        <!--<Cost ResourceName="EmpireLifeforce" Instant="true">20</Cost>-->
+        <CustomCost ResourceName="EmpireLifeforce" Instant="true">20 * (Property(StockLocation, @../ClassEmpire, ShipEssenceCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipEssenceCostMultiplier, true) )</CustomCost>
+        <PathPrerequisite Flags="Edition,Discard,UnlockAvailability">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+        <PathPrerequisite Flags="Edition">../ClassShip,ShipRoleMothership</PathPrerequisite>
+        <TechnologyPrerequisite Flags="Edition">TechnologyArkModule6</TechnologyPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ModuleStarSystemEffectFromMothership"/>
+        <CategorizedSimulationDescriptors Category="CategoryFIDSIInfluence">
+            <!--Descriptors used for tooltip-->
+            <SimulationDescriptorReference Name="ModuleMothershipInfluence3"/>
+        </CategorizedSimulationDescriptors>
+        <!--Descriptor used to apply effect-->
+        <SystemDescriptor Name="StarSystemEffectFromMothershipInfluence3"/>
+    </MothershipModule>
+
+
+    <!-- SCIENCE -->
+    <MothershipModule Name="ModuleMothershipScience1" Family="MothershipScienceBase" Level="1">
+        <Cost ResourceName="SystemProduction">20</Cost>
+        <PathPrerequisite Flags="Edition,Discard,UnlockAvailability">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+        <PathPrerequisite Flags="Edition">../ClassShip,ShipRoleMothership</PathPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ModuleStarSystemEffectFromMothership"/>
+        <CategorizedSimulationDescriptors Category="CategoryFIDSIScience">
+            <!--Descriptors used for tooltip-->
+            <SimulationDescriptorReference Name="ModuleMothershipScience1"/>
+        </CategorizedSimulationDescriptors>
+        <!--Descriptor used to apply effect-->
+        <SystemDescriptor Name="StarSystemEffectFromMothershipScience1"/>
+    </MothershipModule>
+
+
+    <MothershipModule Name="ModuleMothershipScience2" Family="MothershipScienceBase" Level="2">
+        <Cost ResourceName="SystemProduction">80</Cost>
+        <PathPrerequisite Flags="Edition,Discard,UnlockAvailability">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+        <PathPrerequisite Flags="Edition">../ClassShip,ShipRoleMothership</PathPrerequisite>
+        <!--<TechnologyPrerequisite  Flags="Edition">TechnologyModuleArkScience</TechnologyPrerequisite>-->
+        <TechnologyPrerequisite Flags="Edition">TechnologyArkModule4</TechnologyPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ModuleStarSystemEffectFromMothership"/>
+        <CategorizedSimulationDescriptors Category="CategoryFIDSIScience">
+            <!--Descriptors used for tooltip-->
+            <SimulationDescriptorReference Name="ModuleMothershipScience2"/>
+        </CategorizedSimulationDescriptors>
+        <!--Descriptor used to apply effect-->
+        <SystemDescriptor Name="StarSystemEffectFromMothershipScience2"/>
+    </MothershipModule>
+
+
+    <MothershipModule Name="ModuleMothershipScience3" Family="MothershipScienceBase" Level="3">
+        <Cost ResourceName="SystemProduction">160</Cost>
+        <!--<Cost ResourceName="EmpireLifeforce" Instant="true">20</Cost>-->
+        <CustomCost ResourceName="EmpireLifeforce" Instant="true">20 * (Property(StockLocation, @../ClassEmpire, ShipEssenceCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipEssenceCostMultiplier, true) )</CustomCost>
+        <PathPrerequisite Flags="Edition,Discard,UnlockAvailability">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>        
+        <PathPrerequisite Flags="Edition">../ClassShip,ShipRoleMothership</PathPrerequisite>
+        <TechnologyPrerequisite  Flags="Edition">TechnologyArkModule1</TechnologyPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ModuleStarSystemEffectFromMothership"/>
+        <CategorizedSimulationDescriptors Category="CategoryFIDSIScience">
+            <!--Descriptors used for tooltip-->
+            <SimulationDescriptorReference Name="ModuleMothershipScience3"/>
+        </CategorizedSimulationDescriptors>
+        <!--Descriptor used to apply effect-->
+        <SystemDescriptor Name="StarSystemEffectFromMothershipScience3"/>
+    </MothershipModule>
+
+
+    <MothershipModule Name="ModuleMothershipScience4" Family="MothershipScienceBase" Level="4">
+        <Cost ResourceName="SystemProduction">320</Cost>
+        <!--<Cost ResourceName="EmpireLifeforce" Instant="true">50</Cost>-->
+        <CustomCost ResourceName="EmpireLifeforce" Instant="true">50 * (Property(StockLocation, @../ClassEmpire, ShipEssenceCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipEssenceCostMultiplier, true) )</CustomCost>
+        <PathPrerequisite Flags="Edition,Discard,UnlockAvailability">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+        <PathPrerequisite Flags="Edition">../ClassShip,ShipRoleMothership</PathPrerequisite>
+        <TechnologyPrerequisite Flags="Edition">TechnologyArkModule6</TechnologyPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ModuleStarSystemEffectFromMothership"/>
+        <CategorizedSimulationDescriptors Category="CategoryFIDSIScience">
+            <!--Descriptors used for tooltip-->
+            <SimulationDescriptorReference Name="ModuleMothershipScience4"/>
+        </CategorizedSimulationDescriptors>
+        <!--Descriptor used to apply effect-->
+        <SystemDescriptor Name="StarSystemEffectFromMothershipScience4"/>
+    </MothershipModule>
+
+   
+</Datatable>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/TemporaryEffectDefinition.xsd">
+
+  <TemporaryEffectDefinition Name="EmpirePointMalusFromDemand2" Category="EmpirePointMalusFromDemand" Duration="20">
+    <Path>ClassEmpire,EmpireTypeMajor</Path>
+    <SimulationDescriptorReference Name="EmpirePointMalusFromDemand2"/>
+  </TemporaryEffectDefinition>
+  
+  <TemporaryEffectDefinition Name="FIDSMalusFromDemand2" Category="FIDSMalusFromDemand" Duration="20">
+    <Path>ClassEmpire,EmpireTypeMajor</Path>
+    <SimulationDescriptorReference Name="FIDSMalusFromDemand2"/>
+  </TemporaryEffectDefinition>
+
+  <TemporaryEffectDefinition Name="FleetUpkeepIncreaseFromDemand" Category="FleetUpkeepIncreaseFromDemand" Duration="20">
+    <Path>ClassEmpire,EmpireTypeMajor</Path>
+    <SimulationDescriptorReference Name="FleetUpkeepIncreaseFromDemand"/>
+  </TemporaryEffectDefinition>
+
+  <TemporaryEffectDefinition Name="MilitaryShipCostIncreaseFromDemand2" Category="MilitaryShipCostIncreaseFromDemand" Duration="20">
+    <Path>ClassEmpire,EmpireTypeMajor</Path>
+    <SimulationDescriptorReference Name="MilitaryShipCostIncreaseFromDemand2"/>
+  </TemporaryEffectDefinition>
+
+</Datatable>

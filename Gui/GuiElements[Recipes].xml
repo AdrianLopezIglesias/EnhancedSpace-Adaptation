@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+
+    <GuiElement Name="RecipeIngredientEffect01">
+        <Title>%StarSystemLevelEffectTitle</Title>
+        <Description>%StarSystemLevelEffectDescription</Description>
+    </GuiElement>
+
+    <GuiElement Name="RecipeIngredientEffect02">
+        <Title>%StarSystemLevelEffectTitle</Title>
+        <Description>%StarSystemLevelEffectDescription</Description>
+    </GuiElement>
+
+    <GuiElement Name="RecipeIngredientEffect03">
+        <Title>%StarSystemLevelEffectTitle</Title>
+        <Description>%StarSystemLevelEffectDescription</Description>
+    </GuiElement>
+
+    <GuiElement Name="RecipeIngredientEffect04">
+        <Title>%StarSystemLevelEffectTitle</Title>
+        <Description>%StarSystemLevelEffectDescription</Description>
+    </GuiElement>
+
+    <GuiElement Name="RecipeIngredientEffect05">
+        <Title>%StarSystemLevelEffectTitle</Title>
+        <Description>%StarSystemLevelEffectDescription</Description>
+    </GuiElement>
+
+    <GuiElement Name="RecipeIngredientEffect06">
+        <Title>%StarSystemLevelEffectTitle</Title>
+        <Description>%StarSystemLevelEffectDescription</Description>
+    </GuiElement>
+
+    <GuiElement Name="RecipeIngredientEffect07">
+        <Title>%StarSystemLevelEffectTitle</Title>
+        <Description>%StarSystemLevelEffectDescription</Description>
+    </GuiElement>
+
+    <GuiElement Name="RecipeIngredientEffect08">
+        <Title>%StarSystemLevelEffectTitle</Title>
+        <Description>%StarSystemLevelEffectDescription</Description>
+    </GuiElement>
+
+    <GuiElement Name="RecipeIngredientEffect09">
+        <Title>%StarSystemLevelEffectTitle</Title>
+        <Description>%StarSystemLevelEffectDescription</Description>
+    </GuiElement>
+
+    <GuiElement Name="RecipeIngredientEffect10">
+        <Title>%StarSystemLevelEffectTitle</Title>
+        <Description>%StarSystemLevelEffectDescription</Description>
+    </GuiElement>
+
+    <GuiElement Name="RecipeIngredientEffect11">
+        <Title>%StarSystemLevelEffectTitle</Title>
+        <Description>%StarSystemLevelEffectDescription</Description>
+    </GuiElement>
+
+    <GuiElement Name="RecipeIngredientEffect12">
+        <Title>%StarSystemLevelEffectTitle</Title>
+        <Description>%StarSystemLevelEffectDescription</Description>
+    </GuiElement>
+
+    <GuiElement Name="RecipeIngredientEffect13">
+        <Title>%StarSystemLevelEffectTitle</Title>
+        <Description>%StarSystemLevelEffectDescription</Description>
+    </GuiElement>
+
+    <GuiElement Name="RecipeIngredientEffect14">
+        <Title>%StarSystemLevelEffectTitle</Title>
+        <Description>%StarSystemLevelEffectDescription</Description>
+    </GuiElement>
+
+    <GuiElement Name="RecipeIngredientEffect15">
+        <Title>%StarSystemLevelEffectTitle</Title>
+        <Description>%StarSystemLevelEffectDescription</Description>
+    </GuiElement>
+
+    <ExtendedGuiElement Name="RecipeIngredientEffect16">
+        <Title>%StarSystemLevelEffectTitle</Title>
+        <Description>%StarSystemLevelEffectDescription</Description>
+        <TooltipElement>
+            <EffectOverride>%RecipeIngredientEffect16TooltipEffect</EffectOverride>
+        </TooltipElement>
+    </ExtendedGuiElement>
+
+    <GuiElement Name="RecipeIngredientEffect17">
+        <Title>%StarSystemLevelEffectTitle</Title>
+        <Description>%StarSystemLevelEffectDescription</Description>
+    </GuiElement>
+
+    <GuiElement Name="RecipeIngredientEffect18">
+        <Title>%StarSystemLevelEffectTitle</Title>
+        <Description>%StarSystemLevelEffectDescription</Description>
+    </GuiElement>
+
+    <GuiElement Name="RecipeIngredientEffect19">
+        <Title>%StarSystemLevelEffectTitle</Title>
+        <Description>%StarSystemLevelEffectDescription</Description>
+    </GuiElement>
+
+    <GuiElement Name="RecipeIngredientEffect20">
+        <Title>%StarSystemLevelEffectTitle</Title>
+        <Description>%StarSystemLevelEffectDescription</Description>
+    </GuiElement>
+
+    <GuiElement Name="RecipeIngredientEffect21">
+        <Title>%StarSystemLevelEffectTitle</Title>
+        <Description>%StarSystemLevelEffectDescription</Description>
+    </GuiElement>
+
+    <GuiElement Name="RecipeIngredientEffect22">
+        <Title>%StarSystemLevelEffectTitle</Title>
+        <Description>%StarSystemLevelEffectDescription</Description>
+    </GuiElement>
+
+    <GuiElement Name="RecipeIngredientEffect23">
+        <Title>%StarSystemLevelEffectTitle</Title>
+        <Description>%StarSystemLevelEffectDescription</Description>
+    </GuiElement>
+
+    <ExtendedGuiElement Name="RecipeIngredientEffect24">
+        <Title>%StarSystemLevelEffectTitle</Title>
+        <Description>%StarSystemLevelEffectDescription</Description>
+        <!--<TooltipElement>
+            <EffectOverride>%RecipeIngredientEffect24TooltipEffect</EffectOverride>
+        </TooltipElement>-->
+    </ExtendedGuiElement>
+
+    <!-- RECIPE -->
+
+  <!-- Recipe Modifiers -->
+  <!--<ExtendedGuiElement Name="RecipeIngredientEffectTier1Luxury1">-->
+  <ExtendedGuiElement Name="RecipeIngredientEffectTier2Luxury9">
+    <Title>%EmpireImprovementLevelingSystemsTitle</Title>
+    <SymbolString>[foodColored]</SymbolString>
+  </ExtendedGuiElement>
+
+  <!--<ExtendedGuiElement Name="RecipeIngredientEffectTier1Luxury2">-->
+  <ExtendedGuiElement Name="RecipeIngredientEffectTier2Luxury10">
+    <Title>%EmpireImprovementLevelingSystemsTitle</Title>
+    <SymbolString>[industryColored]</SymbolString>
+  </ExtendedGuiElement>
+
+  <!--<ExtendedGuiElement Name="RecipeIngredientEffectTier1Luxury3">-->
+  <ExtendedGuiElement Name="RecipeIngredientEffectTier2Luxury11">
+    <Title>%EmpireImprovementLevelingSystemsTitle</Title>
+    <SymbolString>[dustColored]</SymbolString>
+  </ExtendedGuiElement>
+
+  <!--<ExtendedGuiElement Name="RecipeIngredientEffectTier1Luxury4">-->
+  <ExtendedGuiElement Name="RecipeIngredientEffectTier2Luxury12">
+    <Title>%EmpireImprovementLevelingSystemsTitle</Title>
+    <SymbolString>[scienceColored]</SymbolString>
+  </ExtendedGuiElement>
+
+  <!--<ExtendedGuiElement Name="RecipeIngredientEffectTier1Luxury5">-->
+  <ExtendedGuiElement Name="RecipeIngredientEffectTier2Luxury13">
+    <Title>%EmpireImprovementLevelingSystemsTitle</Title>
+    <SymbolString>[prestigeColored]</SymbolString>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="RecipeIngredientEffectTier1Luxury6">
+    <Title>%EmpireImprovementLevelingSystemsTitle</Title>
+    <SymbolString>[happinessColored]</SymbolString>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="RecipeIngredientEffectATier1Luxury7">
+    <Title>%MaximumSystemManpowerTitle</Title>
+    <Description>%MaximumSystemManpowerDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/GameVariables/CategoryManpowerSystemSmall" />
+    </Icons>
+    <Color Red="255" Green="255" Blue="255" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="RecipeIngredientEffectBTier1Luxury7">
+    <Title>%NetSystemManpowerTitle</Title>
+    <Description>%NetSystemManpowerDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/GameVariables/CategoryManpowerSystemSmall" />
+    </Icons>
+    <SymbolString>[manPowerColored]</SymbolString>
+    <Color Red="255" Green="255" Blue="255" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="RecipeIngredientEffectATier1Luxury8">
+    <Title>%BuildingBuyoutReductionTitle</Title>
+    <TooltipElement Percent="true"/>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="RecipeIngredientEffectBTier1Luxury8">
+    <Title>%ShipBuyoutReductionTitle</Title>
+    <TooltipElement Percent="true"/>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="RecipeIngredientEffectTier1Luxury1">
+    <Title>%PlanetRawFoodAltTitle</Title>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="RecipeIngredientEffectTier1Luxury2">
+    <Title>%PlanetRawIndustryAltTitle</Title>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="RecipeIngredientEffectTier1Luxury3">
+    <Title>%PlanetRawDustAltTitle</Title>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="RecipeIngredientEffectTier1Luxury4">
+    <Title>%PlanetRawScienceAltTitle</Title>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="RecipeIngredientEffectTier1Luxury5">
+    <Title>%PlanetRawPrestigeAltTitle</Title>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="RecipeIngredientEffectTier2Luxury14">
+    <Title>%EmpireImprovementLevelingSystemsTitle</Title>
+    <Description>%HappinessDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="ApprovalSmall"/>
+    </Icons>
+    <SymbolString>[happiness]</SymbolString>
+    <Color Red="241" Green="104" Blue="206" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="RecipeIngredientEffectTier2Luxury15">
+    <Title>%GroundBattleBombardmentAttackerDamagesTitle</Title>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="RecipeIngredientEffectTier2Luxury16">
+    <Title>%EmpireImprovementLevelingSystemsTitle</Title>
+    <Description>%SystemEmpirePointDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="FIDSIEmpire" />
+    </Icons>
+    <SymbolString>[prestige]</SymbolString>
+    <Color Red="165" Green="85" Blue="231" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="RecipeIngredientEffectTier3Luxury17">
+    <Title>%EmpireImprovementLevelingSystemsTitle</Title>
+    <Description>%SystemGrowthDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/GameVariables/GrowthSmall" />
+    </Icons>
+    <SymbolString>[foodColored]</SymbolString>
+    <TooltipElement Percent="true"/>
+    <Color Red="255" Green="255" Blue="255" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="RecipeIngredientEffectTier3Luxury18">
+    <Title>%EmpireImprovementLevelingSystemsTitle</Title>
+    <Description>%NetSystemProductionDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="FIDSIIndustry" />
+      <Icon Size="Large" Path="Bitmaps/Dynamic/GameVariables/FIDSIIndustryLarge" />
+    </Icons>
+    <SymbolString>[industry]</SymbolString>
+    <TooltipElement Percent="true"/>
+    <Color Red="223" Green="130" Blue="105" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="RecipeIngredientEffectTier3Luxury19">
+    <Title>%EmpireImprovementLevelingSystemsTitle</Title>
+    <Description>%SystemMoneyDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="FIDSIDust" />
+    </Icons>
+    <SymbolString>[dust]</SymbolString>
+    <TooltipElement Percent="true"/>
+    <Color Red="230" Green="195" Blue="97" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="RecipeIngredientEffectTier3Luxury20">
+    <Title>%EmpireImprovementLevelingSystemsTitle</Title>
+    <Description>%SystemResearchDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="FIDSIScience" />
+    </Icons>
+    <SymbolString>[science]</SymbolString>
+    <TooltipElement Percent="true"/>
+    <Color Red="82" Green="201" Blue="231" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="RecipeIngredientEffectTier3Luxury21">
+    <Title>%EmpireImprovementLevelingSystemsTitle</Title>
+    <Description>%SystemEmpirePointDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="FIDSIEmpire" />
+    </Icons>
+    <SymbolString>[prestige]</SymbolString>
+    <TooltipElement Percent="true"/>
+    <Color Red="165" Green="85" Blue="231" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="RecipeIngredientEffectTier3Luxury22">
+    <Title>%HappinessOverColonizationPenalties</Title>
+    <SymbolString>[OverColonization]</SymbolString>
+    <TooltipElement Percent="true"/>
+    <Color Red="255" Green="255" Blue="255" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="RecipeIngredientEffectATier3Luxury23">
+    <Title>%MaximumSystemManpowerTitle</Title>
+    <Description>%MaximumSystemManpowerDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/GameVariables/CategoryManpowerSystemSmall" />
+    </Icons>
+    <TooltipElement Percent="true"/>
+    <Color Red="255" Green="255" Blue="255" Alpha="255" />
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="RecipeIngredientEffectBTier3Luxury23">
+    <Title>%NetSystemManpowerTitle</Title>
+    <Description>%NetSystemManpowerDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/GameVariables/CategoryManpowerSystemSmall" />
+    </Icons>
+    <SymbolString>[manPowerColored]</SymbolString>
+    <TooltipElement Percent="true"/>
+  </ExtendedGuiElement>
+
+  <ExtendedGuiElement Name="RecipeIngredientEffectTier3Luxury24" >
+    <Title>%TradingRouteIncomeModifierTitle</Title>
+    <TooltipElement Percent="true"/>
+  </ExtendedGuiElement>
+
+
+  <!--<ExtendedGuiElement Name="RecipeIngredientEffectATier1Strategic1">-->
+  <ExtendedGuiElement Name="RecipeIngredientEffectATier2Strategic3">
+    <Title>%EmpireImprovementLevelingSystemsTitle</Title>
+    <SymbolString>[foodColored]</SymbolString>
+  </ExtendedGuiElement>
+
+  <!--<ExtendedGuiElement Name="RecipeIngredientEffectBTier1Strategic1">-->
+  <ExtendedGuiElement Name="RecipeIngredientEffectBTier2Strategic3">
+    <Title>%EmpireImprovementLevelingSystemsTitle</Title>
+    <SymbolString>[industryColored]</SymbolString>
+  </ExtendedGuiElement>
+
+  <!--<ExtendedGuiElement Name="RecipeIngredientEffectATier1Strategic2">-->
+  <ExtendedGuiElement Name="RecipeIngredientEffectATier2Strategic4">
+    <Title>%EmpireImprovementLevelingSystemsTitle</Title>
+    <SymbolString>[dustColored]</SymbolString>
+  </ExtendedGuiElement>
+
+  <!--<ExtendedGuiElement Name="RecipeIngredientEffectBTier1Strategic2">-->
+  <ExtendedGuiElement Name="RecipeIngredientEffectBTier2Strategic4">
+    <Title>%EmpireImprovementLevelingSystemsTitle</Title>
+    <SymbolString>[scienceColored]</SymbolString>
+  </ExtendedGuiElement>
+
+  <!--<ExtendedGuiElement Name="RecipeIngredientEffectATier2Strategic3">-->
+  <ExtendedGuiElement Name="RecipeIngredientEffectATier1Strategic1">
+    <Title>%PlanetRawFoodAltTitle</Title>
+  </ExtendedGuiElement>
+  <!--<ExtendedGuiElement Name="RecipeIngredientEffectBTier2Strategic3">-->
+  <ExtendedGuiElement Name="RecipeIngredientEffectBTier1Strategic1">
+    <Title>%PlanetRawIndustryAltTitle</Title>
+  </ExtendedGuiElement>
+  <!--<ExtendedGuiElement Name="RecipeIngredientEffectATier2Strategic4">-->
+  <ExtendedGuiElement Name="RecipeIngredientEffectATier1Strategic2">
+    <Title>%PlanetRawDustAltTitle</Title>
+  </ExtendedGuiElement>
+  <!--<ExtendedGuiElement Name="RecipeIngredientEffectBTier2Strategic4">-->
+  <ExtendedGuiElement Name="RecipeIngredientEffectBTier1Strategic2">
+    <Title>%PlanetRawScienceAltTitle</Title>
+  </ExtendedGuiElement>
+
+</Datatable>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/HeroSkillTreeDefinition.xsd">
+    <!--Vaulters TREE-->
+    <HeroSkillTreeDefinition Name="HeroSkillTreeVaulters">
+        <Stage Level="0">
+            <Skill>
+                <SkillDefinition Name="HeroSkill01BranchVaulters"/>
+            </Skill>
+            <Skill>
+                <SkillDefinition Name="HeroSkill02BranchVaulters"/>
+            </Skill>
+        </Stage>
+        <Stage Level="3">
+            <Skill>
+                <SkillDefinition Name="HeroSkill03BranchVaulters"/>
+              <RequiredSkill Name="HeroSkill01BranchVaulters"/>
+            </Skill>
+            <Skill>
+                <SkillDefinition Name="HeroSkill04BranchVaulters"/>
+                <RequiredSkill Name="HeroSkill02BranchVaulters"/>
+            </Skill>
+        </Stage>
+        <Stage Level="6">
+            <Skill>
+                <SkillDefinition Name="HeroSkill05BranchVaulters"/>
+                <RequiredSkill Name="HeroSkill03BranchVaulters"/>
+            </Skill>
+            <Skill>
+                <SkillDefinition Name="HeroSkill06BranchVaulters"/>
+                <RequiredSkill Name="HeroSkill04BranchVaulters"/>
+            </Skill>
+        </Stage>
+        <Stage Level="9">
+            <Skill>
+                <SkillDefinition Name="HeroSkill07BranchVaulters"/>
+                <RequiredSkill Name="HeroSkill05BranchVaulters"/>
+                <RequiredSkill Name="HeroSkill06BranchVaulters"/>
+            </Skill>
+        </Stage>
+    </HeroSkillTreeDefinition>
+</Datatable>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/EmpireImprovementDefinition.xsd">
+
+    <!-- ########################### -->
+    <!-- ######  Juggernauts  ###### -->
+    <!-- ########################### -->
+
+   <EmpireImprovementDefinition Name="EmpireImprovementImprovedHull1Juggernaut" Category="CategoryHullUpgrade" SubCategory="SubCategoryHullMilitary">
+      <DownloadableContentPrerequisite Flags="Prerequisite,Discard,UnlockAvailability">DLCHisshos</DownloadableContentPrerequisite>
+      <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyJuggernautUnlock</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="EmpireImprovementImprovedHull1Juggernaut" />
+   </EmpireImprovementDefinition>
+
+   <EmpireImprovementDefinition Name="EmpireImprovementImprovedHull4Juggernaut" Category="CategoryHullUpgrade" SubCategory="SubCategoryHullMilitary">
+      <DownloadableContentPrerequisite Flags="Prerequisite,Discard,UnlockAvailability">DLCHisshos</DownloadableContentPrerequisite>
+      <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyJuggernautCitadelSpecialization</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="EmpireImprovementImprovedHull4Juggernaut" />
+   </EmpireImprovementDefinition>
+
+   <EmpireImprovementDefinition Name="EmpireImprovementImprovedHull5Juggernaut" Category="CategoryHullUpgrade" SubCategory="SubCategoryHullMilitary">
+      <DownloadableContentPrerequisite Flags="Prerequisite,Discard,UnlockAvailability">DLCHisshos</DownloadableContentPrerequisite>
+      <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyJuggernautObliteratorSpecialization</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="EmpireImprovementImprovedHull5Juggernaut" />
+   </EmpireImprovementDefinition>
+
+   <EmpireImprovementDefinition Name="EmpireImprovementImprovedHull6Juggernaut" Category="CategoryHullUpgrade" SubCategory="SubCategoryHullMilitary">
+      <DownloadableContentPrerequisite Flags="Prerequisite,Discard,UnlockAvailability">DLCHisshos</DownloadableContentPrerequisite>
+      <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyJuggernautBattleshipSpecialization</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="EmpireImprovementImprovedHull6Juggernaut" />
+   </EmpireImprovementDefinition>
+
+</Datatable>

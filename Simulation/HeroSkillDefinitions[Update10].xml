@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/HeroSkillDefinition.xsd">    <!--Vaulters BRANCH SKILLS-->
+    
+  <HeroSkillDefinition Name="HeroSkill01Harmony01">
+    <SkillLevel Name="HeroSkill01Harmony01_1">
+        <ShipSimulationDescriptorReference Name="HeroSkillShip27_FleetDefense_Percent_0"/>
+        <MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+    </SkillLevel>
+  </HeroSkillDefinition>
+  <HeroSkillDefinition Name="HeroSkill02Harmony01">
+    <Tags>ColonizedStarSystem</Tags>
+    <SkillLevel Name="HeroSkill02Harmony01_1">
+        <SystemSimulationDescriptorReference Name="HeroSkillSystem78_IndustryFood_PerPlanetFlat_0"/>
+        <MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+    </SkillLevel>
+  </HeroSkillDefinition>
+
+</Datatable>

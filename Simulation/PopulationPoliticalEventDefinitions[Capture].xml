@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/PopulationEventDefinition.xsd">
+
+    <!--
+            Category    Up to the designers.
+            Scale       System|Empire
+            Tags        Used for trait's event filters.
+    -->
+    
+    <!-- /!\ Those are code-driven. Don't change their name whitout a programmer's consent. -->
+
+    <!-- Influence -->
+    
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventSystemLostToInfluence"  Category="PoliticalEventCapture" Scale="Empire" Duration="20" Power="1">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventSystemGainedFromInfluence"  Category="PoliticalEventCapture" Scale="Empire" Duration="20" Power="1">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventPlanetLostToInfluence"  Category="PoliticalEventCapture" Scale="Empire" Duration="20" Power="1">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventPlanetGainedFromInfluence"  Category="PoliticalEventCapture" Scale="System" Duration="20" Power="1">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+
+
+    <!-- GroundBattle -->
+    
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventSystemLostToGroundBattle"  Category="PoliticalEventCapture" Scale="Empire" Duration="20" Power="1">
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventSystemGainedFromGroundBattle"  Category="PoliticalEventCapture" Scale="Empire" Duration="20" Power="1">
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventPlanetLostToGroundBattle"  Category="PoliticalEventCapture" Scale="Empire" Duration="20" Power="1">
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventPlanetGainedFromGroundBattle"  Category="PoliticalEventCapture" Scale="System" Duration="20" Power="1">
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+    
+</Datatable>

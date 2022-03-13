@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/HeroUnlockGaugeDefinition.xsd">
+
+    <!--
+    #   Note that the name of the properties in the Empire must be :
+    #   *actual* value of the stock:            [Name of the class gauge]PointsStock
+    #   valued added to stock every turn:       Net[Name of the class gauge]
+    #   value added to stock at end of turn:    [Name of the class gauge]PointsBaseStock
+    #   Example : HeroUnlockGaugeClassAdventurer -> HeroUnlockGaugeClassAdventurerPointsStock, NetHeroUnlockGaugeClassAdventurerPoints & HeroUnlockGaugeClassAdventurerPointsBaseStock
+    #   Both must be sealed.
+    -->
+    
+    <HeroUnlockGaugeDefinition Name="HeroUnlockGauge01" GaugePointsPropertyName="HeroUnlockGauge01Points">
+        <ClassGauge Name="HeroUnlockGaugeClassAdventurer" UnlockedClass="HeroClassAdventurer" ResourceName="HeroUnlockGaugeClassAdventurerPoints">
+            <SimulationDescriptorReference Name="HeroUnlockGaugeClassAdventurer"/>
+        </ClassGauge>
+        
+        <ClassGauge Name="HeroUnlockGaugeClassAdmiral" UnlockedClass="HeroClassAdmiral" ResourceName="HeroUnlockGaugeClassAdmiralPoints">
+            <SimulationDescriptorReference Name="HeroUnlockGaugeClassAdmiral"/>
+        </ClassGauge>
+        
+        <ClassGauge Name="HeroUnlockGaugeClassAdministrator" UnlockedClass="HeroClassAdministrator" ResourceName="HeroUnlockGaugeClassAdministratorPoints">
+            <FillingEvent EventType="EventConstructionCompleted" PointsFormula="10"/>
+            <SimulationDescriptorReference Name="HeroUnlockGaugeClassAdministrator"/>
+        </ClassGauge>
+        
+        <ClassGauge Name="HeroUnlockGaugeClassCorporate" UnlockedClass="HeroClassCorporate" ResourceName="HeroUnlockGaugeClassCorporatePoints">
+            <SimulationDescriptorReference Name="HeroUnlockGaugeClassCorporate"/>
+        </ClassGauge>
+    </HeroUnlockGaugeDefinition>
+
+</Datatable>

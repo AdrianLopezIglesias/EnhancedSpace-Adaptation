@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/PlanetImprovementMappingDefinition.xsd">
+
+    <PlanetImprovementMappingDefinition Name="PlanetTypeBarren"         ImprovementName="PlanetImprovementFood1"/>
+    <PlanetImprovementMappingDefinition Name="PlanetTypeArctic"         ImprovementName="PlanetImprovementFood1"/>
+    <PlanetImprovementMappingDefinition Name="PlanetTypeSnow"           ImprovementName="PlanetImprovementFood1"/>
+    <PlanetImprovementMappingDefinition Name="PlanetTypeBoreal"         ImprovementName="PlanetImprovementFood1"/>
+    <PlanetImprovementMappingDefinition Name="PlanetTypeTundra"         ImprovementName="PlanetImprovementFood1"/>
+    <PlanetImprovementMappingDefinition Name="PlanetTypeIce"            ImprovementName="PlanetImprovementFood1"/>
+    <PlanetImprovementMappingDefinition Name="PlanetTypeSteppes"        ImprovementName="PlanetImprovementFood1"/>
+    <PlanetImprovementMappingDefinition Name="PlanetTypeArid"           ImprovementName="PlanetImprovementFood1"/>
+    <PlanetImprovementMappingDefinition Name="PlanetTypeTerran"         ImprovementName="PlanetImprovementFood1"/>
+    <PlanetImprovementMappingDefinition Name="PlanetTypeVeldt"          ImprovementName="PlanetImprovementFood1"/>
+    <PlanetImprovementMappingDefinition Name="PlanetTypeForest"         ImprovementName="PlanetImprovementFood1"/>
+    <PlanetImprovementMappingDefinition Name="PlanetTypeMonsoon"        ImprovementName="PlanetImprovementFood1"/>
+    <PlanetImprovementMappingDefinition Name="PlanetTypeOcean"          ImprovementName="PlanetImprovementFood1"/>
+    <PlanetImprovementMappingDefinition Name="PlanetTypeSwamp"          ImprovementName="PlanetImprovementFood1"/>
+    <PlanetImprovementMappingDefinition Name="PlanetTypeDesert"         ImprovementName="PlanetImprovementFood1"/>
+    <PlanetImprovementMappingDefinition Name="PlanetTypeLava"           ImprovementName="PlanetImprovementFood1"/>
+    <PlanetImprovementMappingDefinition Name="PlanetTypeTropical"       ImprovementName="PlanetImprovementFood1"/>
+    <PlanetImprovementMappingDefinition Name="PlanetTypeJungle"         ImprovementName="PlanetImprovementFood1"/>
+    <PlanetImprovementMappingDefinition Name="PlanetTypeAsh"            ImprovementName="PlanetImprovementFood1"/>
+    <PlanetImprovementMappingDefinition Name="PlanetTypeAtoll"          ImprovementName="PlanetImprovementFood1"/>
+    <PlanetImprovementMappingDefinition Name="PlanetTypeGasFrozen"      ImprovementName="PlanetImprovementFood1"/>
+    <PlanetImprovementMappingDefinition Name="PlanetTypeGasCold"        ImprovementName="PlanetImprovementFood1"/>
+    <PlanetImprovementMappingDefinition Name="PlanetTypeGasTemperate"   ImprovementName="PlanetImprovementFood1"/>
+    <PlanetImprovementMappingDefinition Name="PlanetTypeGasWarm"        ImprovementName="PlanetImprovementFood1"/>
+    <PlanetImprovementMappingDefinition Name="PlanetTypeGasHot"         ImprovementName="PlanetImprovementFood1"/>
+    <PlanetImprovementMappingDefinition Name="PlanetTypeGasBurning"     ImprovementName="PlanetImprovementFood1"/>
+    
+        
+</Datatable>

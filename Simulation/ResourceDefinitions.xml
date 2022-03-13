@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/ResourceDefinition.xsd">
+
+    <!-- Default property names are generated with the name of the resource :
+  * Net{ResourceName}
+  * {ResourceName}Stock
+  * Maximum{ResourceName}Stock
+  * Minimum{ResourceName}Stock
+  * {ResourceName}Count
+  
+  Each resource is affiliated to a type:
+  * Common: the more basic type
+  * Strategic: resources displayed in the control banner
+  * Luxury: resources displayed in the empire screen
+  * Alias
+  * Gameplay: resources which doesn't stack up over turns and that are hard coded.
+  
+  It is possible to override default property names with following tags :
+  <ResourceDefinition Name="MyResource" LocationPath="ClassEmpire">
+    
+    <ResourceLocation Name="EmpireMoney" LocationPath="ClassEmpire">
+      <NetPropertyName>MyNetPropertyName</NetPropertyName>
+      <StockPropertyName>MyStockPropertyName</StockPropertyName>
+      <MaximumStockPropertyName>MyMaximumStockPropertyName</MaximumStockPropertyName>
+      <MinimumStockPropertyName>MyMinimumStockPropertyName</MinimumStockPropertyName>
+      <CountPropertyName>MyResourceCountPropertyName</CountPropertyName>
+    </ResourceLocation>
+    
+    <SimulationEffect />
+    
+  </ResourceDefinition> -->
+
+    <!-- Example of resource & context-dependent descriptors that could be applied on an empire
+    <ResourceDefinition Name="EmpireMoney">
+        <ResourceLocation (...)>
+            (...)
+        </ResourceLocation>
+        
+        <ConditionalDescriptorsGroup>
+            <PathPrerequisite Flags="Prerequisite">ClassEmpire,AffinitySophons</PathPrerequisite>
+            <ConditionalDescriptor Name="Test 1">
+                <InterpreterPrerequisite Flags="Prerequisite">(Property(Context, @ClassEmpire, BankAccount)) gt 500</InterpreterPrerequisite>
+                <SimulationDescriptorReference Name="EmpireIsRich"/>
+            </ConditionalDescriptor>
+        </ConditionalDescriptorsGroup>
+    </ResourceDefinition>  -->
+
+    <!-- Empire resources -->
+
+ 
+    <ResourceDefinition Name="EmpireTurnsSinceObliteratorShot" Type="Common">
+      <ResourceLocation Name="EmpireTurnsSinceObliteratorShot" LocationPath="ClassEmpire">
+        <NetPropertyName>NetEmpireTurnsSinceObliteratorShot</NetPropertyName>
+        <StockPropertyName>EmpireTurnsSinceObliteratorShot</StockPropertyName>
+      </ResourceLocation>
+    </ResourceDefinition>
+
+    <ResourceDefinition Name="SystemObliteratorLingeringDefense" Type="Common">
+      <ResourceLocation Name="SystemObliteratorLingeringDefense" LocationPath="ClassEmpire/ClassColonizedStarSystem">
+        <NetPropertyName>NetSystemObliteratorLingeringDefense</NetPropertyName>
+        <StockPropertyName>SystemObliteratorLingeringDefense</StockPropertyName>
+      </ResourceLocation>
+    </ResourceDefinition>
+
+    
+</Datatable>

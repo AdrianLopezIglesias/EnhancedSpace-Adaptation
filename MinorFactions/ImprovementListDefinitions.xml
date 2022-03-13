@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/ImprovementListDefinition.xsd">
+
+    <ImprovementListDefinition Name="Era1" Priority ="0">
+        <Improvement Name="StarSystemImprovementDefense1"                   Weight="15"/>
+
+        <Improvement Name="StarSystemImprovementFood1"                       Weight="15"/>
+        <Improvement Name="StarSystemImprovementIndustry2"                   Weight="15"/>
+        <Improvement Name="StarSystemImprovementDust1"                       Weight="15"/>
+        <Improvement Name="StarSystemImprovementScience2"                    Weight="15"/>
+    </ImprovementListDefinition>
+    
+    <ImprovementListDefinition Name="Era2" Priority ="1">
+        <Improvement Name="StarSystemImprovementDefense2"                    Weight="15"/>
+        <Improvement Name="StarSystemImprovementDefense3"                    Weight="15"/>
+      
+        <Improvement Name="StarSystemImprovementFood3"                       Weight="15"/>
+        <Improvement Name="StarSystemImprovementIndustry1"                   Weight="15"/>
+        <Improvement Name="StarSystemImprovementIndustry4"                   Weight="15"/>
+        <Improvement Name="StarSystemImprovementBuyout1"                     Weight="15"/>
+        <Improvement Name="StarSystemImprovementDust2"                       Weight="15"/>
+        <Improvement Name="StarSystemImprovementScience3"                    Weight="15"/>
+        <Improvement Name="StarSystemImprovementScience4"                    Weight="15"/>
+    </ImprovementListDefinition>
+
+  <ImprovementListDefinition Name="Era3" Priority ="2">
+    <Improvement Name="StarSystemImprovementFood2"                       Weight="15"/>
+    <Improvement Name="StarSystemImprovementIndustry3"                   Weight="15"/>
+    <Improvement Name="StarSystemImprovementDust3"                       Weight="15"/>
+    <Improvement Name="StarSystemImprovementDust4"                       Weight="15"/>
+    <Improvement Name="StarSystemImprovementScience1"                    Weight="15"/>
+  </ImprovementListDefinition>
+
+</Datatable>

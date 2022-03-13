@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/EmpireImprovementDefinition.xsd">
+    
+    <!-- ##################################### -->
+    <!-- #####  VAULTERS SPECIAL TECH   ###### -->
+    <!-- ###################################### -->
+
+    <EmpireImprovementDefinition Name="EmpireImprovementImprovedPortalShipRegeneration" Category="CategoryPortalUpgrade" SubCategory="SubCategoryScience">
+        <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyPortalUpgradeShipRegeneration</TechnologyPrerequisite>
+        <PathPrerequisite Flags="Prerequisite,Edition,Discard,UnlockAvailability" Inverted="true">../ClassEmpire,AffinityGameplayVaulters</PathPrerequisite>
+        <SimulationDescriptorReference Name="EmpireImprovementImprovedPortalShipRegeneration" />
+        <SimulationDescriptorReference Name="EmpireImprovementImprovedPortalShipRegenerationFakeEffect"/>
+    </EmpireImprovementDefinition>
+  
+</Datatable>

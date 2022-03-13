@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+
+   <GuiElement Name="ClassModuleSupportEngine">
+      <Title>%ClassModuleSupportEngineTitle</Title>
+      <Description>%ClassModuleSupportEngineTitle</Description>
+   </GuiElement>
+   
+   <!-- ENGINE -->
+   <ExtendedGuiElement Name="ModuleSupportEngine2Strategic1">
+      <Title>%ModuleSupportEngine2Strategic1Title</Title>
+      <Description>%ModuleSupportEngine2Strategic1Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Modules/ModuleSupportEngine2Strategic1" />
+      </Icons>
+      <Sounds>
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+      </Sounds>
+   </ExtendedGuiElement>
+
+   <ExtendedGuiElement Name="ModuleSupportEngine3Strategic3">
+      <Title>%ModuleSupportEngine3Strategic3Title</Title>
+      <Description>%ModuleSupportEngine3Strategic3Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Modules/ModuleSupportEngine3Strategic3" />
+      </Icons>
+      <Sounds>
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+      </Sounds>
+   </ExtendedGuiElement>
+
+   <ExtendedGuiElement Name="ModuleSupportEngine4Strategic5">
+      <Title>%ModuleSupportEngine4Strategic5Title</Title>
+      <Description>%ModuleSupportEngine4Strategic5Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Modules/ModuleSupportEngine4Strategic5" />
+      </Icons>
+      <Sounds>
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+      </Sounds>
+   </ExtendedGuiElement>
+
+   <ExtendedGuiElement Name="ModuleSupportEngine4Strategic6">
+      <Title>%ModuleSupportEngine4Strategic6Title</Title>
+      <Description>%ModuleSupportEngine4Strategic6Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Modules/ModuleSupportEngine4Strategic6" />
+      </Icons>
+      <Sounds>
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+      </Sounds>
+   </ExtendedGuiElement>
+
+   <!-- PROBES -->
+   <ExtendedGuiElement Name="ModuleSupportExploration3Strategic3">
+      <Title>%ModuleSupportExploration3Strategic3Title</Title>
+      <Description>%ModuleSupportExploration3Strategic3Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Modules/ModuleSupportExploration3Strategic3" />
+      </Icons>
+      <Sounds>
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+      </Sounds>
+   </ExtendedGuiElement>
+
+   <ExtendedGuiElement Name="ModuleSupportExploration3Strategic4">
+      <Title>%ModuleSupportExploration3Strategic4Title</Title>
+      <Description>%ModuleSupportExploration3Strategic4Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Modules/ModuleSupportExploration3Strategic4" />
+      </Icons>
+      <Sounds>
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+      </Sounds>
+   </ExtendedGuiElement>
+
+   <!-- SIEGE -->
+
+   <ExtendedGuiElement Name="ModuleSupportSiege2Strategic3">
+      <Title>%ModuleSupportSiege1Strategic3Title</Title>
+      <Description>%ModuleSupportSiege2Strategic5Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Modules/ModuleSupportSiege2Strategic3" />
+      </Icons>
+      <Sounds>
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+      </Sounds>
+   </ExtendedGuiElement>
+
+   <ExtendedGuiElement Name="ModuleSupportSiege2Strategic5">
+      <Title>%ModuleSupportSiege2Strategic5Title</Title>
+      <Description>%ModuleSupportSiege2Strategic5Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Modules/ModuleSupportSiege3Strategic5" /> <!-- changing the vanilla icon-->
+      </Icons>
+      <Sounds>
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+      </Sounds>
+   </ExtendedGuiElement>
+
+   <!-- ************************* -->
+   <!-- ** CREW  MODULES ** -->
+   <!-- ************************* -->
+
+   <ExtendedGuiElement Name="ModuleSupportCrew1">
+      <Title>%ModuleSupportCrew1Title</Title>
+      <Description>%ModuleSupportCrew1Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Modules/ModuleSupportCrew1Strategic2" />
+      </Icons>
+      <Sounds>
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+      </Sounds>
+      <TooltipElement>
+         <EffectOverride>%ModuleSupportCrew01TooltipEffect</EffectOverride>
+      </TooltipElement>
+   </ExtendedGuiElement>
+
+   <ExtendedGuiElement Name="ModuleSupportCrew3">
+      <Title>%ModuleSupportCrew3Title</Title>
+      <Description>%ModuleSupportCrew3Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Modules/ModuleSupportCrew2Strategic4" />
+      </Icons>
+      <Sounds>
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+      </Sounds>
+   </ExtendedGuiElement>
+
+   <ExtendedGuiElement Name="ModuleSupportCrew3Cravers">
+      <Title>%ModuleSupportCrew3CraversTitle</Title>
+      <Description>%ModuleSupportCrew3CraversDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Modules/ModuleSupportCrew2Strategic4" />
+      </Icons>
+      <Sounds>
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+      </Sounds>
+   </ExtendedGuiElement>
+
+   <ExtendedGuiElement Name="ModuleSupportCrew3Terrans">
+      <Title>%ModuleSupportCrew3TerransTitle</Title>
+      <Description>%ModuleSupportCrew3TerransDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Modules/ModuleSupportCrew2Strategic4" />
+      </Icons>
+      <Sounds>
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+      </Sounds>
+   </ExtendedGuiElement>
+
+   <ExtendedGuiElement Name="ModuleSupportCrew4Cravers">
+      <Title>%ModuleSupportCrew4Strategic6Title</Title>
+      <Description>%ModuleSupportCrew4CraversDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Dynamic/Modules/ModuleSupportCrew4Strategic6" />
+      </Icons>
+      <Sounds>
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+      </Sounds>
+   </ExtendedGuiElement>
+
+   <ExtendedGuiElement Name="ModuleSupportCrew4Strategic6">
+      <Title>%ModuleSupportCrew4CraversTitle</Title>
+      <Description>%ModuleSupportCrew4Strategic6Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Dynamic/Modules/ModuleSupportCrew4Strategic6" />
+      </Icons>
+      <Sounds>
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+      </Sounds>
+   </ExtendedGuiElement>
+
+    <!-- ************************* -->
+    <!-- ** REPAIR  MODULES ** -->
+    <!-- ************************* -->
+    
+    <ExtendedGuiElement Name="ModuleSupportRepair2Strategic2">
+        <Title>%ModuleSupportRepair2Strategic2Title</Title>
+        <Description>%ModuleSupportRepair2Strategic2Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Modules/ModuleSupportRepair2Strategic3" />
+        </Icons>
+        <Sounds>
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+        </Sounds>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="ModuleSupportRepair3Strategic5">
+        <Title>%ModuleSupportRepair3Strategic5Title</Title>
+        <Description>%ModuleSupportRepair3Strategic5Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Modules/ModuleSupportRepair3Strategic5" />
+        </Icons>
+        <Sounds>
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+        </Sounds>
+    </ExtendedGuiElement>
+
+   <!-- ############################################# -->
+   <!-- #######       FB SUPPORT    MODULES   ####### -->
+   <!-- ############################################# -->
+   
+   <ExtendedGuiElement Name="ModuleSupportSquadronDefenseEnhancer1Strategic3">
+      <Title>%ModuleSupportSquadronDefenseEnhancer1Strategic3Title</Title>
+      <Description>%ModuleSupportSquadronDefenseEnhancer1Strategic3Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Modules/ModuleSupportSquadronDefenseEnhancer1Strategic3" />
+      </Icons>
+      <Sounds>
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+      </Sounds>
+   </ExtendedGuiElement>
+
+   <ExtendedGuiElement Name="ModuleSupportSquadronDefenseEnhancer2Strategic5">
+      <Title>%ModuleSupportSquadronDefenseEnhancer2Strategic5Title</Title>
+      <Description>%ModuleSupportSquadronDefenseEnhancer1Strategic3Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Modules/ModuleSupportSquadronDefenseEnhancer2Strategic5" />
+      </Icons>
+      <Sounds>
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+      </Sounds>
+   </ExtendedGuiElement>
+   
+   <ExtendedGuiElement Name="ModuleSupportSquadronOffenseEnhancer1Strategic4">
+      <Title>%ModuleSupportSquadronOffenseEnhancer1Strategic4Title</Title>
+      <Description>%ModuleSupportSquadronOffenseEnhancer1Strategic4Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Modules/ModuleSupportSquadronOffenseEnhancer1Strategic4" />
+      </Icons>
+      <Sounds>
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+      </Sounds>
+   </ExtendedGuiElement>
+
+   <ExtendedGuiElement Name="ModuleSupportSquadronOffenseEnhancer2Strategic6">
+      <Title>%ModuleSupportSquadronOffenseEnhancer2Strategic6Title</Title>
+      <Description>%ModuleSupportSquadronOffenseEnhancer1Strategic4Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Modules/ModuleSupportSquadronOffenseEnhancer2Strategic6" />
+      </Icons>
+      <Sounds>
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+      </Sounds>
+   </ExtendedGuiElement>
+
+   <ExtendedGuiElement Name="ModuleSupportFlakEnhancer1">
+      <Title>%ModuleSupportFlakEnhancer1Title</Title>
+      <Description>%ModuleSupportFlakEnhancer1Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Modules/ModuleSupportFlak1" />
+      </Icons>
+      <Sounds>
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+      </Sounds>
+   </ExtendedGuiElement>
+
+   <ExtendedGuiElement Name="ModuleSupportFlakEnhancer2">
+      <Title>%ModuleSupportFlakEnhancer2Title</Title>
+      <Description>%ModuleSupportFlakEnhancer1Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Modules/ModuleSupportFlak2" />
+      </Icons>
+      <Sounds>
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+      </Sounds>
+   </ExtendedGuiElement>
+
+   <ExtendedGuiElement Name="ModuleSupportFlakEnhancer3">
+      <Title>%ModuleSupportFlakEnhancer3Title</Title>
+      <Description>%ModuleSupportFlakEnhancer1Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Modules/ModuleSupportFlak3" />
+      </Icons>
+      <Sounds>
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+         <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+      </Sounds>
+   </ExtendedGuiElement>
+
+ <!-- ************************* -->
+    <!-- ** SHIELD RELOAD  MODULES ** -->
+    <!-- ************************* -->
+   
+    <ExtendedGuiElement Name="ModuleSupportShieldReload1Strategic2">
+        <Title>%ModuleSupportShieldReload1Strategic2Title</Title>
+        <Description>%ModuleSupportShieldReload1Strategic4Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Modules/ModuleSupportShieldReload1Strategic2" />
+        </Icons>
+        <Sounds>
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+        </Sounds>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="ModuleSupportShieldReload1Strategic4">
+        <Title>%ModuleSupportShieldReload1Strategic4Title</Title>
+        <Description>%ModuleSupportShieldReload1Strategic4Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Modules/ModuleSupportShieldReload1Strategic4" />
+        </Icons>
+        <Sounds>
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+        </Sounds>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="ModuleSupportShieldReload2Strategic6">
+        <Title>%ModuleSupportShieldReload2Strategic6Title</Title>
+        <Description>%ModuleSupportShieldReload2Strategic6Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Modules/ModuleSupportShieldReload2Strategic6" />
+        </Icons>
+        <Sounds>
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_AddSupportModule" Type="OnEquipModule" />
+            <Sound EventName="Play_ES2_GUI_ShipDesignScreen_RemoveModule" Type="OnUnequipModule" />
+        </Sounds>
+    </ExtendedGuiElement>
+
+</Datatable>

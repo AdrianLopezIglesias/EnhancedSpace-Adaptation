@@ -1,0 +1,1846 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/IndustryConstructibleElement.xsd">
+  
+  <!-- ************* -->
+  <!-- FOOD BRANCH : -->
+  <!-- ************* -->
+  
+  <!-- To Forest -->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromJungleToForest" SubCategory="PlanetTerraformationDust">
+    <AIGain RessourceName="FoodGain"/>
+    
+    <SupervisorGain Name="Food"     Weight="1"/>
+    <SupervisorGain Name="Approval" Weight="1"/>
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">8000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic5" Instant="true">30 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic6" Instant="true">30 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">2</CustomCost>
+    
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation2</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeJungle,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeForest"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTeeming"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeLush"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <!-- To Jungle -->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromMonsoonToJungle" SubCategory="PlanetTerraformationDust">
+    <AIGain RessourceName="FoodGain"/>
+
+    <SupervisorGain Name="Food"     Weight="1"/>
+    <SupervisorGain Name="Approval" Weight="1"/>
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">5000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic3" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic4" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">2</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation2</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeMonsoon,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeJungle"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTeeming"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeLush"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromForestToJungle" SubCategory="PlanetTerraformationDust">
+    <AIGain RessourceName="IndustryGain"/>
+
+    <SupervisorGain Name="Food"     Weight="-1"/>
+    <SupervisorGain Name="Approval" Weight="-1"/>
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation2</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeForest,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeJungle"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTeeming"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeLush"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+  
+
+  <!-- To monsoon -->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromSwampToMonsoon" SubCategory="PlanetTerraformationDust">
+    <AIGain RessourceName="FoodGain"/>
+
+    <SupervisorGain Name="Food"     Weight="1"/>
+    <SupervisorGain Name="Approval" Weight="1"/>
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">2000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">20 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">20 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeSwamp,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeMonsoon"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMild"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeLush"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromJungleToMonsoon" SubCategory="PlanetTerraformationDust">
+    <AIGain RessourceName="IndustryGain"/>
+
+    <SupervisorGain Name="Food"     Weight="-1"/>
+    <SupervisorGain Name="Approval" Weight="-1"/>
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeJungle,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeMonsoon"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMild"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeLush"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+    <!-- To Swamp -->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromMonsoonToSwamp" SubCategory="PlanetTerraformationDust">
+    <AIGain RessourceName="IndustryGain"/>
+
+    <SupervisorGain Name="Food"     Weight="-1"/>
+    <SupervisorGain Name="Approval" Weight="-1"/>
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeMonsoon,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeSwamp"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMild"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeLush"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <!-- ****************** -->
+  <!-- INFLUENCE BRANCH : -->
+  <!-- ****************** -->
+  
+  <!-- To Terran -->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromOceanToTerran" SubCategory="PlanetTerraformationDust">
+    <AIGain RessourceName="FoodGain"/>
+
+    <SupervisorGain Name="Influence"     Weight="1"/>
+    <SupervisorGain Name="Approval" Weight="1"/>
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">8000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic5" Instant="true">30 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic6" Instant="true">30 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">2</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation2</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeOcean,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeTerran"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTeeming"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeWater"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <!-- To Ocean -->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromAtollToOcean" SubCategory="PlanetTerraformationDust">
+    <AIGain RessourceName="FoodGain"/>
+
+    <SupervisorGain Name="Influence"     Weight="1"/>
+    <SupervisorGain Name="Approval" Weight="1"/>
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">5000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic3" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic4" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">2</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation2</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeAtoll,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeOcean"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTeeming"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeWater"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromTerranToOcean" SubCategory="PlanetTerraformationDust">
+    <AIGain RessourceName="IndustryGain"/>
+
+    <SupervisorGain Name="Influence"     Weight="-1"/>
+    <SupervisorGain Name="Approval" Weight="-1"/>
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">2000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation2</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeTerran,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeOcean"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTeeming"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeWater"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <!-- To Atoll -->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromTropicalToAtoll" SubCategory="PlanetTerraformationDust">
+    <AIGain RessourceName="FoodGain"/>
+
+    <SupervisorGain Name="Influence"     Weight="1"/>
+    <SupervisorGain Name="Approval" Weight="1"/>
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">2000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">20 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">20 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeTropical,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeAtoll"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMild"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeWater"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromOceanToAtoll" SubCategory="PlanetTerraformationDust">
+    <AIGain RessourceName="IndustryGain"/>
+
+    <SupervisorGain Name="Influence"     Weight="-1"/>
+    <SupervisorGain Name="Approval" Weight="-1"/>
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeOcean,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeAtoll"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMild"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeWater"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <!-- To Tropical -->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromAtollToTropical" SubCategory="PlanetTerraformationDust">
+    <AIGain RessourceName="FoodGain"/>
+
+    <SupervisorGain Name="Food"     Weight="-1"/>
+    <SupervisorGain Name="Approval" Weight="-1"/>
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeAtoll,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeTropical"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMild"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeWater"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <!-- ***************** -->
+  <!-- INDUSTRY BRANCH : -->
+  <!-- ***************** -->
+
+  <!-- To Lava -->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromAshToLava" SubCategory="PlanetTerraformationDust">
+    <AIGain RessourceName="IndustryGain"/>
+
+    <SupervisorGain Name="Industry"     Weight="1"/>
+    <SupervisorGain Name="Approval"     Weight="-1"/>
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">8000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic5" Instant="true">30 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic6" Instant="true">30 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">2</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation2</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeAsh,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeLava"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeHot"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMeager"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeCraggy"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <!-- To Ash -->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromBorealToAsh" SubCategory="PlanetTerraformationDust">
+    <AIGain RessourceName="IndustryGain"/>
+
+    <SupervisorGain Name="Industry"     Weight="1"/>
+    <SupervisorGain Name="Approval"     Weight="-1"/>
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">5000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic3" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic4" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">2</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation2</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeBoreal,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeAsh"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeHot"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMeager"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeCraggy"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromLavaToAsh" SubCategory="PlanetTerraformationDust">
+    <AIGain RessourceName="FoodGain"/>
+
+    <SupervisorGain Name="Industry"     Weight="-1"/>
+    <SupervisorGain Name="Approval"     Weight="1"/>
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation2</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeLava,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeAsh"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeHot"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMeager"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeCraggy"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+
+  <!-- To Boreal -->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromSteppesToBoreal" SubCategory="PlanetTerraformationDust">
+    <AIGain RessourceName="IndustryGain"/>
+
+    <SupervisorGain Name="Industry"     Weight="1"/>
+    <SupervisorGain Name="Approval"     Weight="-1"/>
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">2000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">20 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">20 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeSteppes,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeBoreal"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMild"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeCraggy"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromAshToBoreal" SubCategory="PlanetTerraformationDust">
+    <AIGain RessourceName="FoodGain"/>
+
+    <SupervisorGain Name="Industry"     Weight="-1"/>
+    <SupervisorGain Name="Approval" Weight="1"/>
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeAsh,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeBoreal"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMild"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeCraggy"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <!-- To Steppes -->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromBorealToSteppes" SubCategory="PlanetTerraformationDust">
+    <AIGain RessourceName="FoodGain"/>
+
+    <SupervisorGain Name="Industry"     Weight="-1"/>
+    <SupervisorGain Name="Approval" Weight="1"/>
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeBoreal,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeSteppes"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMild"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeCraggy"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <!-- ***************** -->
+  <!-- DUST BRANCH : -->
+  <!-- ***************** -->
+
+  <!-- To Desert -->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromAridToDesert" SubCategory="PlanetTerraformationDust">
+    <AIGain RessourceName="DustGain"/>
+
+    <SupervisorGain Name="Dust"         Weight="1"/>
+    <SupervisorGain Name="Approval"     Weight="-1"/>
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">8000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic5" Instant="true">30 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic6" Instant="true">30 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">2</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation2</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeArid,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeDesert"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMeager"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeDry"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <!-- To Arid -->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromVeldtToArid" SubCategory="PlanetTerraformationDust">
+    <AIGain RessourceName="DustGain"/>
+
+    <SupervisorGain Name="Dust"     Weight="1"/>
+    <SupervisorGain Name="Approval"     Weight="-1"/>
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">5000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic3" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic4" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">2</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation2</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeVeldt,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeArid"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMeager"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeDry"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromDesertToArid" SubCategory="PlanetTerraformationDust">
+    <AIGain RessourceName="FoodGain"/>
+
+    <SupervisorGain Name="Dust"     Weight="-1"/>
+    <SupervisorGain Name="Approval"     Weight="1"/>
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation2</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeDesert,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeArid"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMeager"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeDry"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+
+  <!-- To veldt -->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromTundraToVeldt" SubCategory="PlanetTerraformationDust">
+    <AIGain RessourceName="DustGain"/>
+
+    <SupervisorGain Name="Dust"     Weight="1"/>
+    <SupervisorGain Name="Approval"     Weight="-1"/>
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">2000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">20 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">20 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeTundra,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeVeldt"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMild"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeDry"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromAridToVeldt" SubCategory="PlanetTerraformationDust">
+    <AIGain RessourceName="FoodGain"/>
+
+    <SupervisorGain Name="Dust"     Weight="-1"/>
+    <SupervisorGain Name="Approval" Weight="1"/>
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeArid,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeVeldt"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMild"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeDry"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <!-- To Tundra -->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromVeldtToTundra" SubCategory="PlanetTerraformationDust">
+    <AIGain RessourceName="FoodGain"/>
+
+    <SupervisorGain Name="Dust"     Weight="-1"/>
+    <SupervisorGain Name="Approval" Weight="1"/>
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeVeldt,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeTundra"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMild"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeDry"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+  
+  <!-- **************** -->
+  <!-- SCIENCE BRANCH : -->
+  <!-- **************** -->
+
+  <!-- To Barren -->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromIceToBarren" SubCategory="PlanetTerraformationDust">
+    <AIGain RessourceName="ScienceGain"/>
+
+    <SupervisorGain Name="Science"      Weight="1"/>
+    <SupervisorGain Name="Approval"     Weight="-1"/>
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">8000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic5" Instant="true">30 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic6" Instant="true">30 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">2</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation2</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeIce,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeBarren"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeCold"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMeager"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeStable"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <!-- To Ice -->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromArcticToIce" SubCategory="PlanetTerraformationDust">
+    <AIGain RessourceName="ScienceGain"/>
+
+    <SupervisorGain Name="Science"      Weight="1"/>
+    <SupervisorGain Name="Approval"     Weight="-1"/>
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">5000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic3" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic4" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">2</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation2</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeArctic,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeIce"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeCold"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMeager"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeStable"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromBarrenToIce" SubCategory="PlanetTerraformationDust">
+    <AIGain RessourceName="FoodGain"/>
+
+    <SupervisorGain Name="Science"      Weight="-1"/>
+    <SupervisorGain Name="Approval"     Weight="1"/>
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation2</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeBarren,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeIce"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeCold"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMeager"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeStable"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+
+  <!-- To Arctic -->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromSnowToArctic" SubCategory="PlanetTerraformationDust">
+    <AIGain RessourceName="ScienceGain"/>
+
+    <SupervisorGain Name="Science"      Weight="1"/>
+    <SupervisorGain Name="Approval"     Weight="-1"/>
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">2000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">20 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">20 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeSnow,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeArctic"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMild"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeStable"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromIceToArctic" SubCategory="PlanetTerraformationDust">
+    <AIGain RessourceName="FoodGain"/>
+
+    <SupervisorGain Name="Science"     Weight="-1"/>
+    <SupervisorGain Name="Approval"    Weight="1"/>
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeIce,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeArctic"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMild"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeStable"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <!-- To Snow -->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromArcticToSnow" SubCategory="PlanetTerraformationDust">
+    <AIGain RessourceName="FoodGain"/>
+
+    <SupervisorGain Name="Science"     Weight="-1"/>
+    <SupervisorGain Name="Approval"    Weight="1"/>
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeArctic,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeSnow"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMild"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeStable"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <!-- ********** -->
+  <!-- GAS BRANCH -->
+  <!-- ********** -->
+
+  <!-- To Freezing gas -->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromGasColdToGasFrozen" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation2</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeGasCold,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeGasFrozen"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeCold"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMeager"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeGas"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <!-- To Cold gas -->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromGasFrozenToGasCold" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation2</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeGasFrozen,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeGasCold"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeCold"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMeager"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeGas"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromGasTemperateToGasCold" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation2</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeGasTemperate,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeGasCold"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeCold"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMeager"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeGas"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <!-- To temperate gas -->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromGasColdToGasTemperate" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation2</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeGasCold,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeGasTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeCold"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMeager"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeGas"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromGasWarmToGasTemperate" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation2</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeGasWarm,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeGasTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeCold"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMeager"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeGas"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <!-- To Gas Warm -->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromGasTemperateToGasWarm" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation2</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeGasTemperate,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeGasWarm"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeHot"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMeager"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeGas"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromGasHotToGasWarm" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation2</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeGasHot,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeGasWarm"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeHot"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMeager"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeGas"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+  
+  <!-- To Gas Hot-->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromGasWarmToGasHot" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation2</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeGasWarm,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeGasHot"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeHot"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMeager"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeGas"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromGasBurningToGasHot" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation2</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeGasBurning,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeGasHot"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeHot"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMeager"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeGas"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+  
+  <!-- To gas burning -->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromGasHotToGasBurning" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation2</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeGasHot,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeGasBurning"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeHot"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMeager"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeGas"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+
+
+  <!-- ********************* -->
+  <!-- SIDE WAY TERRAFORMING -->
+  <!-- ********************* -->
+  
+  <!-- Forest <> Terran -->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromForestToTerran" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation2</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeForest,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeTerran"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTeeming"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeWater"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromTerranToForest" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation2</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeTerran,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeForest"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTeeming"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeLush"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <!-- Jungle <> Ocean -->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromJungleToOcean" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation2</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeJungle,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeOcean"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTeeming"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeWater"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromOceanToJungle" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation2</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeOcean,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeJungle"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTeeming"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeLush"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <!-- Monsoon <> Atoll -->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromMonsoonToAtoll" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeMonsoon,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeAtoll"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMild"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeWater"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromAtollToMonsoon" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeAtoll,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeMonsoon"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMild"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeLush"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <!-- Swamp <> Tropical -->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromSwampToTropical" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeSwamp,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeTropical"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMild"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeWater"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromTropicalToSwamp" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeTropical,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeSwamp"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMild"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeLush"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <!-- Swamp <> Atol --><!--
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromSwampToSnow" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeSwamp,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeSnow"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMild"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeStable"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromSnowToSwamp" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeSnow,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeSwamp"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMild"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeLush"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>-->
+
+  <!-- Steppes <> Tropical -->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromSteppesToTropical" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeSteppes,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeTropical"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMild"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeWater"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromTropicalToSteppes" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeTropical,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeSteppes"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMild"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeCraggy"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <!-- Steppes <> Tundra -->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromSteppesToTundra" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeSteppes,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeTundra"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMild"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeDry"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromTundraToSteppes" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeTundra,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeSteppes"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMild"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeCraggy"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <!-- Snow <> Tundra -->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromSnowToTundra" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeSnow,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeTundra"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMild"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeDry"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromTundraToSnow" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeTundra,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeSnow"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMild"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeStable"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <!-- Snow <> Swamp -->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromSnowToSwamp" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeSnow,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeSwamp"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMild"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeLush"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromSwampToSnow" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeSwamp,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeSnow"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMild"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeStable"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <!-- Arctic <> Veldt -->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromArcticToVeldt" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeArctic,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeVeldt"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMild"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeDry"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromVeldtToArctic" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeVeldt,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeArctic"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMild"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeStable"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <!-- Ice <> Arid -->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromIceToArid" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation2</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeIce,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeArid"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMeager"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeDry"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromAridToIce" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation2</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeArid,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeIce"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeCold"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMeager"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeStable"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <!-- Barren <> Desert -->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromBarrenToDesert" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation2</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeBarren,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeDesert"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMeager"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeDry"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromDesertToBarren" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation2</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeDesert,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeBarren"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeCold"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMeager"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeStable"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <!-- Boreal <> Veldt -->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromBorealToVeldt" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeBoreal,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeVeldt"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMild"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeDry"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromVeldtToBoreal" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation1</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeVeldt,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeBoreal"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMild"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeCraggy"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <!-- Ash <> Arid -->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromAshToArid" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation2</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeAsh,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeArid"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMeager"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeDry"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromAridToAsh" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation2</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeArid,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeAsh"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeHot"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMeager"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeCraggy"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <!-- Lava <> Desert -->
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromLavaToDesert" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation2</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeLava,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeDesert"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMeager"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeDry"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromDesertToLava" SubCategory="PlanetTerraformationDust">
+
+    <CustomCost ResourceName="EmpireMoney" Instant="true">1000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+    <CustomCost ResourceName="Strategic1" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="Strategic2" Instant="true">25 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+    <CustomCost ResourceName="SystemTurnBased">1</CustomCost>
+
+
+    <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard">TechnologyTerraformation2</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeDesert,!IsUniquePlanet</PathPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeLava"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeHot"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMeager"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeCraggy"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <!-- UNFALLEN QUESTS -->
+
+    <PlanetTerraformationDefinition Name="PlanetTerraformationFromBarrenToForest" SubCategory="PlanetTerraformationDust">
+        <AIGain RessourceName="FoodGain"/>
+        <AIGain RessourceName="ScienceGain"/>
+
+        <SupervisorGain Name="Food"     Weight="2"/>
+        <SupervisorGain Name="Industry" Weight="2"/>
+        <SupervisorGain Name="Dust"     Weight="0.5"/>
+        <SupervisorGain Name="Science"  Weight="-2"/>
+        <SupervisorGain Name="Approval" Weight="2"/>
+
+        <CustomCost ResourceName="EmpireMoney" Instant="true">5000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+        <CustomCost ResourceName="Strategic5" Instant="true">10 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+        <CustomCost ResourceName="Strategic6" Instant="true">10 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+        <CustomCost ResourceName="SystemTurnBased">2</CustomCost>
+
+        <PathPrerequisite Inverted="false"   Flags="Prerequisite,Discard,CheckOnEmpire">../ClassEmpire,EmpireImprovementQuestUnfallen08</PathPrerequisite>
+        <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeBarren,!IsUniquePlanet</PathPrerequisite>
+
+      <SimulationDescriptorReference Name="PlanetTypeForest"/>
+      <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+      <SimulationDescriptorReference Name="PlanetGameplayTypeTeeming"/>
+      <SimulationDescriptorReference Name="PlanetGameplayTypeLush"/>
+
+        <RemovedType>PlanetType</RemovedType>
+        <RemovedType>PlanetGameplayType</RemovedType>
+    </PlanetTerraformationDefinition>
+
+    <PlanetTerraformationDefinition Name="PlanetTerraformationFromArcticToForest" SubCategory="PlanetTerraformationDust">
+        <AIGain RessourceName="FoodGain"/>
+        <AIGain RessourceName="ScienceGain"/>
+        
+        <SupervisorGain Name="Food"     Weight="2"/>
+        <SupervisorGain Name="Industry" Weight="2"/>
+        <SupervisorGain Name="Dust"     Weight="-0.5"/>
+        <SupervisorGain Name="Science"  Weight="-1"/>
+        <SupervisorGain Name="Approval" Weight="1"/>
+
+        <CustomCost ResourceName="EmpireMoney" Instant="true">5000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+        <CustomCost ResourceName="Strategic5" Instant="true">10 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+        <CustomCost ResourceName="Strategic6" Instant="true">10 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+        <CustomCost ResourceName="SystemTurnBased">2</CustomCost>
+
+        <PathPrerequisite Inverted="false"   Flags="Prerequisite,Discard,CheckOnEmpire">../ClassEmpire,EmpireImprovementQuestUnfallen08</PathPrerequisite>
+        <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeArctic,!IsUniquePlanet</PathPrerequisite>
+
+      <SimulationDescriptorReference Name="PlanetTypeForest"/>
+      <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+      <SimulationDescriptorReference Name="PlanetGameplayTypeTeeming"/>
+      <SimulationDescriptorReference Name="PlanetGameplayTypeLush"/>
+
+        <RemovedType>PlanetType</RemovedType>
+        <RemovedType>PlanetGameplayType</RemovedType>
+    </PlanetTerraformationDefinition>
+
+    <PlanetTerraformationDefinition Name="PlanetTerraformationFromSnowToForest" SubCategory="PlanetTerraformationDust">
+        <AIGain RessourceName="FoodGain"/>
+        <AIGain RessourceName="ScienceGain"/>
+
+        <SupervisorGain Name="Food"     Weight="2"/>
+        <SupervisorGain Name="Industry" Weight="2"/>
+        <SupervisorGain Name="Dust"     Weight="0"/>
+        <SupervisorGain Name="Science"  Weight="-1"/>
+        <SupervisorGain Name="Approval" Weight="1"/>
+
+        <CustomCost ResourceName="EmpireMoney" Instant="true">5000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+        <CustomCost ResourceName="Strategic5" Instant="true">10 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+        <CustomCost ResourceName="Strategic6" Instant="true">10 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+        <CustomCost ResourceName="SystemTurnBased">2</CustomCost>
+
+        <PathPrerequisite Inverted="false"   Flags="Prerequisite,Discard,CheckOnEmpire">../ClassEmpire,EmpireImprovementQuestUnfallen08</PathPrerequisite>
+        <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeSnow,!IsUniquePlanet</PathPrerequisite>
+
+        <SimulationDescriptorReference Name="PlanetTypeForest"/>
+        <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+        <SimulationDescriptorReference Name="PlanetGameplayTypeTeeming"/>
+        <SimulationDescriptorReference Name="PlanetGameplayTypeLush"/>
+
+        <RemovedType>PlanetType</RemovedType>
+        <RemovedType>PlanetGameplayType</RemovedType>
+    </PlanetTerraformationDefinition>
+
+    <PlanetTerraformationDefinition Name="PlanetTerraformationFromLavaToForest" SubCategory="PlanetTerraformationDust">
+        <AIGain RessourceName="FoodGain"/>
+        <AIGain RessourceName="ScienceGain"/>
+
+        <SupervisorGain Name="Food"     Weight="2"/>
+        <SupervisorGain Name="Industry" Weight="-2"/>
+        <SupervisorGain Name="Dust"     Weight="1"/>
+        <SupervisorGain Name="Science"  Weight="2"/>
+        <SupervisorGain Name="Approval" Weight="2"/>
+
+        <CustomCost ResourceName="EmpireMoney" Instant="true">5000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+        <CustomCost ResourceName="Strategic5" Instant="true">10 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+        <CustomCost ResourceName="Strategic6" Instant="true">10 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+        <CustomCost ResourceName="SystemTurnBased">2</CustomCost>
+
+        <PathPrerequisite Inverted="false"   Flags="Prerequisite,Discard,CheckOnEmpire">../ClassEmpire,EmpireImprovementQuestUnfallen09</PathPrerequisite>
+        <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeLava,!IsUniquePlanet</PathPrerequisite>
+
+        <SimulationDescriptorReference Name="PlanetTypeForest"/>
+        <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+        <SimulationDescriptorReference Name="PlanetGameplayTypeTeeming"/>
+        <SimulationDescriptorReference Name="PlanetGameplayTypeLush"/>
+
+        <RemovedType>PlanetType</RemovedType>
+        <RemovedType>PlanetGameplayType</RemovedType>
+    </PlanetTerraformationDefinition>
+
+    <PlanetTerraformationDefinition Name="PlanetTerraformationFromAshToForest" SubCategory="PlanetTerraformationDust">
+        <AIGain RessourceName="FoodGain"/>
+        <AIGain RessourceName="ScienceGain"/>
+        
+        <SupervisorGain Name="Food"     Weight="2"/>
+        <SupervisorGain Name="Industry" Weight="-1.5"/>
+        <SupervisorGain Name="Dust"     Weight="0"/>
+        <SupervisorGain Name="Science"  Weight="2"/>
+        <SupervisorGain Name="Approval" Weight="1.5"/>
+
+        <CustomCost ResourceName="EmpireMoney" Instant="true">5000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+        <CustomCost ResourceName="Strategic5" Instant="true">10 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+        <CustomCost ResourceName="Strategic6" Instant="true">10 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+        <CustomCost ResourceName="SystemTurnBased">2</CustomCost>
+
+        <PathPrerequisite Inverted="false"   Flags="Prerequisite,Discard,CheckOnEmpire">../ClassEmpire,EmpireImprovementQuestUnfallen09</PathPrerequisite>
+        <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeAsh,!IsUniquePlanet</PathPrerequisite>
+
+        <SimulationDescriptorReference Name="PlanetTypeForest"/>
+        <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+        <SimulationDescriptorReference Name="PlanetGameplayTypeTeeming"/>
+        <SimulationDescriptorReference Name="PlanetGameplayTypeLush"/>
+
+        <RemovedType>PlanetType</RemovedType>
+        <RemovedType>PlanetGameplayType</RemovedType>
+    </PlanetTerraformationDefinition>
+
+    <PlanetTerraformationDefinition Name="PlanetTerraformationFromDesertToForest" SubCategory="PlanetTerraformationDust">
+        <AIGain RessourceName="FoodGain"/>
+        <AIGain RessourceName="ScienceGain"/>
+
+        <SupervisorGain Name="Food"     Weight="2"/>
+        <SupervisorGain Name="Industry" Weight="-1"/>
+        <SupervisorGain Name="Dust"     Weight="-0.5"/>
+        <SupervisorGain Name="Science"  Weight="2"/>
+        <SupervisorGain Name="Approval" Weight="1"/>
+
+        <CustomCost ResourceName="EmpireMoney" Instant="true">5000 * Property(StockLocation, @../ClassEmpire, TerraformationModifier) * Property(Context,@'../ClassEmpire',DustInflation)</CustomCost>
+        <CustomCost ResourceName="Strategic5" Instant="true">10 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+        <CustomCost ResourceName="Strategic6" Instant="true">10 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+        <CustomCost ResourceName="SystemTurnBased">2</CustomCost>
+
+        <PathPrerequisite Inverted="false"   Flags="Prerequisite,Discard,CheckOnEmpire">../ClassEmpire,EmpireImprovementQuestUnfallen09</PathPrerequisite>
+        <PathPrerequisite Flags="Prerequisite,Discard,CheckOnPlanet">PlanetTypeDesert,!IsUniquePlanet</PathPrerequisite>
+
+        <SimulationDescriptorReference Name="PlanetTypeForest"/>
+        <SimulationDescriptorReference Name="PlanetGameplayTypeTemperate"/>
+        <SimulationDescriptorReference Name="PlanetGameplayTypeTeeming"/>
+        <SimulationDescriptorReference Name="PlanetGameplayTypeLush"/>
+
+        <RemovedType>PlanetType</RemovedType>
+        <RemovedType>PlanetGameplayType</RemovedType>
+    </PlanetTerraformationDefinition>
+
+
+  <!-- From Destroyed -->
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromDestroyedToLava" SubCategory="PlanetTerraformationDust">
+    <Tags>PlanetTerraformationFromDestroyed</Tags>
+
+    <CustomCost ResourceName="SystemProduction">250 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+
+    <!-- Not buildable on a system! -->
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">false</InterpreterPrerequisite>
+
+    <!-- Buildable only on destroyed non-unique planets. -->
+    <PathPrerequisite Flags="Discard,CheckOnPlanet">PlanetTypeDestroyed</PathPrerequisite>
+    <PathPrerequisite Flags="CheckOnPlanet" Inverted="true">IsUniquePlanet</PathPrerequisite>
+    <PathPrerequisite Flags="CheckOnPlanet" Inverted="true">CannotBeColonized</PathPrerequisite>
+    <PathPrerequisite Flags="CheckOnPlanet" Inverted="true">../CannotBeColonized</PathPrerequisite>
+
+    <!-- You need to have the first terraformation tech -->
+    <MetaPrerequisite Operator="Or">
+      <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard,CheckOnEmpire">TechnologyTerraformation1</TechnologyPrerequisite>
+      <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard,CheckOnEmpire">TechnologyTerraformation1TimeLords</TechnologyPrerequisite>
+    </MetaPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeLava"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeHot"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMeager"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeCraggy"/>
+
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+  <!-- From Gas Destroyed -->
+  <PlanetTerraformationDefinition Name="PlanetTerraformationFromDestroyedGasToGasHot" SubCategory="PlanetTerraformationDust">
+    <Tags>PlanetTerraformationFromDestroyed</Tags>
+
+    <CustomCost ResourceName="SystemProduction">250 * Property(StockLocation, @../ClassEmpire, TerraformationModifier)</CustomCost>
+
+    <!-- Not buildable on a system! -->
+    <InterpreterPrerequisite Flags="Prerequisite,Discard">false</InterpreterPrerequisite>
+
+    <!-- Buildable only on destroyed non-unique planets. -->
+    <PathPrerequisite Flags="Discard,CheckOnPlanet">PlanetTypeDestroyedGas</PathPrerequisite>
+    <PathPrerequisite Flags="CheckOnPlanet" Inverted="true">IsUniquePlanet</PathPrerequisite>
+    <PathPrerequisite Flags="CheckOnPlanet" Inverted="true">CannotBeColonized</PathPrerequisite>
+    <PathPrerequisite Flags="CheckOnPlanet" Inverted="true">../CannotBeColonized</PathPrerequisite>
+     
+    <!-- You need to have the second terraformation tech -->
+    <MetaPrerequisite Operator="Or">
+      <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard,CheckOnEmpire">TechnologyTerraformation2</TechnologyPrerequisite>
+      <TechnologyPrerequisite UnlockHidden="true" Flags="Technology,Prerequisite,Discard,CheckOnEmpire">TechnologyTerraformation2TimeLords</TechnologyPrerequisite>
+    </MetaPrerequisite>
+
+    <SimulationDescriptorReference Name="PlanetTypeGasWarm"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeHot"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeMeager"/>
+    <SimulationDescriptorReference Name="PlanetGameplayTypeGas"/>
+
+    <RemovedType>PlanetType</RemovedType>
+    <RemovedType>PlanetGameplayType</RemovedType>
+  </PlanetTerraformationDefinition>
+
+</Datatable>

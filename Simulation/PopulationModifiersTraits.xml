@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/PopulationModifiersTrait.xsd">
+
+    <PopulationModifiersTrait Name="PopulationModifiersTraitSecondaryScienceCold" SubCategory="Secondary" ShowInCustom="true" Cost="5"><!--Contextual Bonus: Cryologists-->
+        <Tags>PlanetGameplayTypeStable,BonusPopulationScience</Tags>
+        <Modifiers>
+            <Modifier Class="ClassPopulationEmpire" DisplayWhenBoostedOnly="true">
+                <SimulationDescriptorReference Name="WithPopulationPlanetModifiersTraitSecondaryScienceCold"/>
+            </Modifier>
+            <Modifier Class="ClassPopulationPlanet"><!--+3 Science per Population on Cold-->
+                <SimulationDescriptorReference Name="ClassPopulationPlanetModifiersTraitSecondaryScienceCold"/>
+            </Modifier>
+        </Modifiers>
+		<AssimilatedModifiers>
+			<Modifier Class="ClassPopulationPlanet">
+				<!--Bonus given to the Population that assimilates them-->
+				<SimulationDescriptorReference Name="ClassPopulationAssimilatedPlanetScienceCold"/>
+			</Modifier>
+		</AssimilatedModifiers>
+    </PopulationModifiersTrait>
+
+    <PopulationModifiersTrait Name="PopulationModifiersTraitSecondaryDustFertile" SubCategory="Secondary" ShowInCustom="true" Cost="5"><!--Contextual Bonus: Dust Seekers-->
+        <Tags>PlanetGameplayTypeTemperate,BonusPopulationDust</Tags>
+        <Modifiers>
+            <Modifier Class="ClassPopulationEmpire" DisplayWhenBoostedOnly="true">
+                <SimulationDescriptorReference Name="WithPopulationPlanetModifiersTraitSecondaryDustFertile"/>
+            </Modifier>
+            <Modifier Class="ClassPopulationPlanet">
+                <SimulationDescriptorReference Name="ClassPopulationPlanetModifiersTraitSecondaryDustFertile"/><!--+5 Dust per Population on Fertile-->
+            </Modifier>
+        </Modifiers>
+		<AssimilatedModifiers>
+			<Modifier Class="ClassPopulationPlanet">
+				<!--Bonus given to the Population that assimilates them-->
+				<SimulationDescriptorReference Name="ClassPopulationAssimilatedPlanetDustFertile"/>
+			</Modifier>
+		</AssimilatedModifiers>
+    </PopulationModifiersTrait>
+    
+</Datatable>

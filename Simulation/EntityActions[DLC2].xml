@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/EntityActionDefinition.xsd">
+
+  
+        <LaunchMiningProbeFleetAction Name="LaunchMiningProbeFleetAction" FeedbackDuration="1.5" DelayAfterFeedback="1">
+
+        <EntityPrerequisites Location="Self">
+            <!-- Hide button if module not equipped. -->
+            <InterpreterPrerequisite Flags="Discard" Inverted="false">Property(Context, MaximumShipMiningProbeStock) gt 0</InterpreterPrerequisite>
+
+            <!-- Grey out if under enemy influence. -->
+            <PathPrerequisite Flags="UnderEnemyInfluence" Inverted="true">FleetInfluenceStateHostile</PathPrerequisite>
+
+            <PathPrerequisite Inverted="true" Flags="EncounterInProgress">../FleetActionAttack</PathPrerequisite>
+            <PathPrerequisite Inverted="true" Flags="FleetIsBusy">../FleetActionGroundBattle</PathPrerequisite>
+            <PathPrerequisite Inverted="true" Flags="IsCollectingRelics">FleetActionCollectingRelics</PathPrerequisite>
+        </EntityPrerequisites>
+
+        <EntityModifiers Location="Self">
+            <SimulationAlteration DescriptorReference="FleetActionLaunchingMiningProbe"/>
+            <SimulationAlteration DescriptorReference="FleetActionBusy"/>
+        </EntityModifiers>
+
+        <DownloadableContentPrerequisite Flags="Discard">DLCHisshos</DownloadableContentPrerequisite>
+
+        <CancelActions Flags="CancelOnAnything,CancelOnMiningProbeLaunch" SameContext="true" SameInitiator="true"/>
+
+        <MovementCostFormula Flags="NoMiningProbeInStock">
+            <Formula>Clamp01(Property(Context, MaximumShipMiningProbeStock)) * (1 / Max(1, Property(Context, MaximumShipMiningProbeStock))) * Property(Context, MaximumMovement)</Formula>
+            <CostOnShipWithLowestMovementImpact ResourceName="ShipMiningProbe" Instant="true">1</CostOnShipWithLowestMovementImpact>
+        </MovementCostFormula>
+
+    </LaunchMiningProbeFleetAction>
+
+          
+    <FireObliteratorFleetAction Name="FireObliteratorFleetAction">
+
+        <EntityPrerequisites Location="Self">
+            <PathPrerequisite                 Flags="Discard">ClassGarrison/ShipRoleObliterator</PathPrerequisite>
+
+            <PathPrerequisite Inverted="true" Flags="EncounterInProgress">FleetActionAttack</PathPrerequisite>
+            <PathPrerequisite Inverted="true" Flags="FleetIsBusy">FleetActionGroundBattle</PathPrerequisite>
+            <InterpreterPrerequisite Flags="Prerequisite,GlobalCooldownObliterator">Property(Context,@'../ClassEmpire',EmpireTurnsSinceObliteratorShot) ge Ceil(5 *Property(Context, @../ClassEmpire, GameSpeedMultiplier, true))</InterpreterPrerequisite>
+            
+            <!-- Grey out if under enemy influence. -->
+            <PathPrerequisite Flags="UnderEnemyInfluence" Inverted="true">FleetInfluenceStateHostile</PathPrerequisite>
+            <PathPrerequisite Inverted="true" Flags="IsCollectingRelics">FleetActionCollectingRelics</PathPrerequisite>
+           
+        </EntityPrerequisites>
+
+        
+        <!--<CustomCost Instant="true" ResourceName="EmpireHonor">25  * Property(Context, @'../ClassEmpire', CanUseHonor)</CustomCost>-->
+        <CustomCost Instant="true" ResourceName="Strategic3">Property(Context,@'ClassGarrison/ClassShip,ShipRoleObliterator',ObliteratorShotCost)</CustomCost>
+        <CustomCost Instant="true" ResourceName="Strategic4">Property(Context,@'ClassGarrison/ClassShip,ShipRoleObliterator',ObliteratorShotCost)</CustomCost>
+        <CustomCost Instant="true" ResourceName="Strategic5">Property(Context,@'ClassGarrison/ClassShip,ShipRoleObliterator',ObliteratorShotCost)</CustomCost>
+        <CustomCost Instant="true" ResourceName="Strategic6">Property(Context,@'ClassGarrison/ClassShip,ShipRoleObliterator',ObliteratorShotCost)</CustomCost>
+        <CustomCost Instant="true" ResourceName="EmpireTurnsSinceObliteratorShot">Max(Ceil(5 * Property(Context, @../ClassEmpire, GameSpeedMultiplier, true)) , Property(Context,@'../ClassEmpire',EmpireTurnsSinceObliteratorShot))</CustomCost>
+        <DownloadableContentPrerequisite Flags="Discard">DLCHisshos</DownloadableContentPrerequisite>
+        <!--<TemporaryEffect Name="ObliteratorMalus"/>-->
+    </FireObliteratorFleetAction>
+
+   <SpecializeJuggernautRetrofitShipAction Name="JuggernautSpecializationObliterator" ShipDesignName="Juggernauts_Obliterator" RequestedTurnsCount="15">
+
+      <EntityPrerequisites Location="Self">
+         <PathPrerequisite                 Flags="Discard">ShipRoleJuggernaut</PathPrerequisite>
+
+         <PathPrerequisite Inverted="true" Flags="EncounterInProgress">../FleetActionAttack</PathPrerequisite>
+         <PathPrerequisite Inverted="true" Flags="FleetIsBusy">../FleetActionGroundBattle</PathPrerequisite>
+
+         <PathPrerequisite Inverted="true" Flags="SpecializationInProgress">ShipActionSpecializing</PathPrerequisite>
+         <PathPrerequisite Inverted="true" Flags="IsCollectingRelics">FleetActionCollectingRelics</PathPrerequisite>
+      </EntityPrerequisites>
+
+      <EntityModifiers Location="Self">
+         <SimulationAlteration DescriptorReference="ShipStateLockedInGarrison"/>
+         <SimulationAlteration DescriptorReference="ShipActionSpecializing"/>
+      </EntityModifiers>
+
+      <CustomCost Instant="true" ResourceName="EmpireMoney">3000 * Property(Context, @'../ClassEmpire', DustInflation) * Property(Context, @'../ClassEmpire', ObliteratorConstructionCostMultiplier)</CustomCost>
+      <CustomCost Instant="true" ResourceName="Strategic3">50 * Property(Context, @'../ClassEmpire', ObliteratorConstructionCostMultiplier)</CustomCost>
+      <CustomCost Instant="true" ResourceName="Strategic4">50 * Property(Context, @'../ClassEmpire', ObliteratorConstructionCostMultiplier)</CustomCost>
+      <CustomCost Instant="true" ResourceName="Strategic5">15 * Property(Context, @'../ClassEmpire', ObliteratorConstructionCostMultiplier)</CustomCost>
+      <CustomCost Instant="true" ResourceName="Strategic6">15 * Property(Context, @'../ClassEmpire', ObliteratorConstructionCostMultiplier)</CustomCost>
+
+      <GameSettingPrerequisite    Flags="Prerequisite,Discard,NoSuperWeaponsAllowed">AllowSuperWeapons,True</GameSettingPrerequisite>
+      <TechnologyPrerequisite Flags="Prerequisite,Technology">TechnologyJuggernautObliteratorSpecialization</TechnologyPrerequisite>
+
+      <SystemInterpreterPrerequisite Flags="RequiresSpaceport">Property(Context,SystemLevel) ge 2</SystemInterpreterPrerequisite>
+
+
+   </SpecializeJuggernautRetrofitShipAction>
+
+
+   <SpecializeJuggernautRetrofitShipAction Name="JuggernautSpecializationBattleship" ShipDesignName="Juggernauts_Battleship" RequestedTurnsCount="15">
+
+      <EntityPrerequisites Location="Self">
+         <PathPrerequisite                 Flags="Discard">ShipRoleJuggernaut</PathPrerequisite>
+
+         <PathPrerequisite Inverted="true" Flags="EncounterInProgress">../FleetActionAttack</PathPrerequisite>
+         <PathPrerequisite Inverted="true" Flags="FleetIsBusy">../FleetActionGroundBattle</PathPrerequisite>
+
+         <PathPrerequisite Inverted="true" Flags="SpecializationInProgress">ShipActionSpecializing</PathPrerequisite>
+         <PathPrerequisite Inverted="true" Flags="IsCollectingRelics">FleetActionCollectingRelics</PathPrerequisite>
+      </EntityPrerequisites>
+
+      <EntityModifiers Location="Self">
+         <SimulationAlteration DescriptorReference="ShipStateLockedInGarrison"/>
+         <SimulationAlteration DescriptorReference="ShipActionSpecializing"/>
+      </EntityModifiers>
+
+      <CustomCost Instant="true" ResourceName="EmpireMoney">3000 * Property(Context, @'../ClassEmpire', DustInflation)</CustomCost>
+      <Cost Instant="true" ResourceName="Strategic3">50</Cost>
+      <Cost Instant="true" ResourceName="Strategic4">50</Cost>
+      <Cost Instant="true" ResourceName="Strategic5">15</Cost>
+      <Cost Instant="true" ResourceName="Strategic6">15</Cost>
+      
+      
+
+      <TechnologyPrerequisite Flags="Prerequisite,Technology">TechnologyJuggernautBattleshipSpecialization</TechnologyPrerequisite>
+
+      <SystemInterpreterPrerequisite Flags="RequiresSpaceport">Property(Context,SystemLevel) ge 2</SystemInterpreterPrerequisite>
+
+   </SpecializeJuggernautRetrofitShipAction>
+
+
+   <SpecializeJuggernautCitadelShipAction Name="JuggernautSpecializationCitadel" RequestedTurnsCount="10" SilentRecovery="true" CitadelDefinitionName="Citadel1">
+
+      <EntityPrerequisites Location="Self">
+         <PathPrerequisite                 Flags="Discard">ShipRoleJuggernaut</PathPrerequisite>
+
+         <PathPrerequisite Inverted="true" Flags="EncounterInProgress">../FleetActionAttack</PathPrerequisite>
+         <PathPrerequisite Inverted="true" Flags="FleetIsBusy">../FleetActionGroundBattle</PathPrerequisite>
+
+         <PathPrerequisite Inverted="true" Flags="SpecializationInProgress">ShipActionSpecializing</PathPrerequisite>
+         <PathPrerequisite Inverted="true" Flags="IsCollectingRelics">FleetActionCollectingRelics</PathPrerequisite>
+      </EntityPrerequisites>
+
+      <EntityModifiers Location="Self">
+         <SimulationAlteration DescriptorReference="ShipStateLockedInGarrison"/>
+         <SimulationAlteration DescriptorReference="ShipActionSpecializing"/>
+         <SimulationAlteration DescriptorReference="ShipActionSpecializingCitadel"/>
+      </EntityModifiers>
+
+      <CustomCost Instant="true" ResourceName="EmpireMoney">2000 * Property(Context, @'../ClassEmpire', DustInflation)</CustomCost>
+      <Cost Instant="true" ResourceName="Strategic1">35</Cost>
+      <Cost Instant="true" ResourceName="Strategic2">35</Cost>
+      <Cost Instant="true" ResourceName="Strategic3">10</Cost>
+      <Cost Instant="true" ResourceName="Strategic4">10</Cost>
+      <Cost Instant="true" ResourceName="EmpireManpower">800</Cost>
+
+      <TechnologyPrerequisite Flags="Prerequisite,Technology">TechnologyJuggernautCitadelSpecialization</TechnologyPrerequisite>
+
+      <SystemInterpreterPrerequisite Flags="RequiresSpaceport">Property(Context,SystemLevel) ge 2</SystemInterpreterPrerequisite>
+      <SystemPathPrerequisite Flags="AlreadyHasACitadel" Inverted="true">ClassColonizedStarSystem/ClassCitadel</SystemPathPrerequisite>
+      <SystemPathPrerequisite Flags="AlreadyHasACitadel" Inverted="true">ClassColonizedStarSystem/ClassGarrison/ClassShip,ShipActionSpecializingCitadel</SystemPathPrerequisite>
+
+
+   </SpecializeJuggernautCitadelShipAction>
+
+
+</Datatable>

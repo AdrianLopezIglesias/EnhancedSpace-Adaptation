@@ -1,0 +1,589 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../../Documentation/Schemas/Amplitude.Unity.Localization.LocalizationDatatableElement.xsd">
+
+  <!--Contains the new texts for the mod. If there is juste English language, it will be use for all localisations -->
+
+  <LocalizationPair Name="%EmpireColourPaletteVanillaTitle">Grundversion</LocalizationPair>
+  <LocalizationPair Name="%EmpireColourPaletteVanillaDescription">Die original Farbpalette</LocalizationPair>
+
+  <LocalizationPair Name="%fakeforguiSystems">Systeme</LocalizationPair>
+   
+  <LocalizationPair Name="%SystemSupervisorBalancedDescription">Ausgewogene Politik</LocalizationPair>
+  
+  <LocalizationPair Name="%PlanetTypeGasFrozenTitle">Eis-Gas</LocalizationPair>
+  <LocalizationPair Name="%PlanetTypeGasFrozenDescription">Äußerst unwirtlich, sind diese Planeten so eisig, dass sogar die Atemluft gefroren ist, so dass die Planeten ohne die geringste Atmosphäre auskommen, um ihre raue Schönheit zu schützen. Am Leben zu bleiben, geschweige denn zu leben, ist eine enorm schwierige Aufgabe, aber die wissenschaftlichen Einblicke gleichen die Strapazen mehr als aus.</LocalizationPair>
+  <LocalizationPair Name="%PlanetTypeGasColdTitle">Ammoniak-Gas</LocalizationPair>
+  <LocalizationPair Name="%PlanetTypeGasColdDescription">Eindeutig mild im Vergleich zu ihren gefrorenen Gasgeschwistern, liegen diese Welten dennoch nur etwa hundert Grad über dem absoluten Nullpunkt und enthalten alle Arten von seltsamer und wunderbarer Chemie, von Flüssen aus flüssigem Stickstoff bis hin zu Methanseen. Ein wahrer Himmel für Fachidioten.</LocalizationPair>
+  <LocalizationPair Name="%PlanetTypeGasTemperateTitle">Dampf-Gas</LocalizationPair>
+  <LocalizationPair Name="%PlanetTypeGasTemperateDescription">Umgangssprachlich als Dust-"Goldlöckchen"-Zone bezeichnet, sind Dampf-Gaswelten eine unerschöpfliche Quelle für die nahezu magische Substanz - sofern man die Technologien hat, um auf einer Planetenoberfläche zu überleben, die Treibsand wie eine natürliches Fortbewegungsmittel erscheinen lässt. Lass den Nachwuchs besser zu Hause, wenn du diese Welten besuchst.</LocalizationPair>
+  <LocalizationPair Name="%PlanetTypeGasWarmTitle">Wolkenloses Gas</LocalizationPair>
+  <LocalizationPair Name="%PlanetTypeGasWarmDescription">Unglaubliche Sonnenuntergänge, sagt die Broschüre, und versäumt es, den Methanregen, giftige Wolken und ein Dutzend weitere tödliche Nebenwirkungen zu erwähnen. Erwähnenenswerte Dustvorkommenen sind nicht bekannt.</LocalizationPair>
+  <LocalizationPair Name="%PlanetTypeGasHotTitle">Alkali-Gas</LocalizationPair>
+  <LocalizationPair Name="%PlanetTypeGasHotDescription">Abseits von jeglichem Leben ist diese Welt ein brennendes Höllenloch aus feurigen Winden und schmelzflüssigen Lavaseen. Es muss davon ausgegangen werden, dass hier angesiedelte Bevölkerung eher unzufrieden über ihr Schicksal sein wird, andererseits ist der industrielle Nutzen einer solchen Niederlassung auf Planeten dieser Beschaffenheit unersetzlich.</LocalizationPair>
+  <LocalizationPair Name="%PlanetTypeGasBurningTitle">Silikat-Gas</LocalizationPair>
+  <LocalizationPair Name="%PlanetTypeGasBurningDescription">In einem anderen Leben hätten diese Planeten den Sprung zu einem vollkommenen Sternenkörper  geschafft. Nur ein wenig näher an der glühenden Hitze der hiesigen Sonne, ein Quäntchen mehr Schwerkraft, ein zarter Hauch von Nebel, und dieser Ort wäre prädestiniert für eine Photonenfabrik. Dennoch schätzt die Industrie diese Planeten und ihre hochofenähnlichen Bedingungen.</LocalizationPair>
+  <LocalizationPair Name="%PlanetTerraformationToGasFrozenTitle">Terraformen zu Eis-Gas</LocalizationPair>
+  <LocalizationPair Name="%PlanetTerraformationToGasFrozenDescription"></LocalizationPair>
+  <LocalizationPair Name="%PlanetTerraformationToGasColdTitle">Terraformen zu Ammoniak-Gas </LocalizationPair>
+  <LocalizationPair Name="%PlanetTerraformationToGasColdDescription"></LocalizationPair>
+  <LocalizationPair Name="%PlanetTerraformationToGasTemperateTitle">Terraformen zu Wasserdampf-Gas</LocalizationPair>
+  <LocalizationPair Name="%PlanetTerraformationToGasTemperateDescription"></LocalizationPair>
+  <LocalizationPair Name="%PlanetTerraformationToGasWarmTitle">Terraformen zu Purem Gas</LocalizationPair>
+  <LocalizationPair Name="%PlanetTerraformationToGasWarmDescription"></LocalizationPair>
+  <LocalizationPair Name="%PlanetTerraformationToGasHotTitle">Terraformen zu Alkali-Gas</LocalizationPair>
+  <LocalizationPair Name="%PlanetTerraformationToGasHotDescription"></LocalizationPair>
+  <LocalizationPair Name="%PlanetTerraformationToGasBurningTitle">Terraformen zu Silikat-Gas</LocalizationPair>
+  <LocalizationPair Name="%PlanetTerraformationToGasBurningDescription"></LocalizationPair>
+
+
+  <LocalizationPair Name="%PopulationPoliticalEventColonizationToxicTitle">Sumpfplanet kolonisiert</LocalizationPair>
+  <LocalizationPair Name="%PlanetTypeSwampTitle">Sumpf</LocalizationPair>
+  <LocalizationPair Name="%PlanetTypeSwampDescription">Die Sumpfwelten, die von Ungeheuern und Eremiten bevorzugt werden, sind die Heimat stinkender Moore, dicker Nebel und akzepatbler Methangas-Vorkommen. Weniger bekannt ist jedoch ihre Möglichkeit, unvorstellbare Mengen an abgefahrenen, aber doch essbaren Pilzen zu erzeugen, da sie die perfekten Feuchtigkeitsbedingungen und idealerweise einen mulchartigen Nährboden bieten.</LocalizationPair>
+  <LocalizationPair Name="%PlanetColonizationSwampTitle">Sumpfkolonisierung</LocalizationPair>
+  <LocalizationPair Name="%PlanetColonizationSwampDescription">Die Kolonisierung sumpfartiger Planeten beruht auf Erfindungen, die die verschiedenen Verfahren vereinen, die für die Filtration und Entwässerung benötigt werden, denn tödliche Chemikalien und Strahlung kommen sowohl in der Atmosphäre als auch im Erdreich im Überfluss vor. Die Bedingungen sind tödlich und unnachgiebig, falls diese Prozesse nicht sorgsam umgesetzt werden.</LocalizationPair>
+  <LocalizationPair Name="%PlanetTerraformationToSwampTitle">Terraformen zu Sumpf</LocalizationPair>
+
+  <LocalizationPair Name="%FactionTraitHomePlanetPlanetTypeBorealTitle">Alpin</LocalizationPair>
+  <LocalizationPair Name="%PopulationPoliticalEventColonizationBorealTitle">Alpiner Planet kolonisiert</LocalizationPair>
+  <LocalizationPair Name="%PlanetTypeBorealTitle">Alpin</LocalizationPair>
+  <LocalizationPair Name="%PlanetTypeBorealDescription">Alpine Planeten, die von dichten Magnetkernen aus geschmolzenem Eisen geprägt sind, ermöglichen es Wissenschaftlern, eine Reihe von Wechselwirkungen zwischen atmosphärischen, elektromagnetischen und kosmischen Strahlen in einem kühlen Klima zu erforschen. Erwarten Sie Laubwälder und Säugetiere mit dichtem, struppigem Fell.</LocalizationPair>
+  <LocalizationPair Name="%PlanetColonizationBorealTitle">Alpine Planeten kolonisieren</LocalizationPair>
+  <LocalizationPair Name="%PlanetColonizationBorealDescription">Kalt und feucht wie sie sind, stellen alpine Welten, die oft von cleveren Marketingbroschüren - deren Motive durchweg im Sommer aufgenommen wurden - angelockten Siedler und Industrien vor unerwartete Herausforderungen. Obwohl potenziell einladend und produktiv, ist die Umwelt einen Großteil des Jahres abschreckend und muss mit Bedacht und Umsicht gehandhabt werden.</LocalizationPair>
+  <LocalizationPair Name="%PlanetTerraformationToBorealTitle">Terraformen zu alpinem Planeten</LocalizationPair>
+  <LocalizationPair Name="%PlanetTerraformationToBorealDescription">Das Terraformen zu einem alpinen Planeten, der trotz seiner relativen Kälte von Flora und Fauna nur so wimmelt, erfordert die Etablierung einer breiten Artenvielfalt und eines ausreichend fruchtbaren Bodens, die als Grundlage für die Entwicklung eines Ökosystems dienen.</LocalizationPair>
+
+  <LocalizationPair Name="%PlanetGameplayTypeHotTitle">Brennend</LocalizationPair>
+  <LocalizationPair Name="%PlanetGameplayTypeHotDescription">Brennende Welten, mit ihren schmilzenden Oberflächen und hochofenartigem Innern tragen dazu bei, dass schwerere Elemente vom Kern bis zur Kruste gelangen. Als Resultat davon floriert die Industrie.</LocalizationPair>
+  <LocalizationPair Name="%PlanetGameplayTypeColdTitle">Gefrierend</LocalizationPair>
+  <LocalizationPair Name="%PlanetGameplayTypeColdDescription">Gefrierende Welten bieten raue Umgebungen, in denen strenge Disziplin und umsichtiges Handeln der Schlüssel zum Überleben sind. Vielleicht ist das der Grund, warum die Wissenschaft tendenziell besser gedeiht.</LocalizationPair>
+  <LocalizationPair Name="%PlanetGameplayTypeTemperateTitle">Gemäßigt</LocalizationPair>
+  <LocalizationPair Name="%PlanetGameplayTypeTemperateDescription">Eine gemäßigte Welt bietet Lebensbedingungen, die für die meisten Arten in der Galaxie in der Regel als angenehm empfunden werden. Auf diesen Planeten kann in der Regel ein breites Spektrum an Unternehmungen gedeihen.</LocalizationPair>
+  <LocalizationPair Name="%PlanetGameplayTypeTeemingTitle">Fruchtbar</LocalizationPair>
+  <LocalizationPair Name="%PlanetGameplayTypeTeemingDescription">Reich an vielfältigen Lebensformen, bieten fruchtbare Planeten reichlich Nahrung. Die Dustreserven sind jedoch in der Regel sehr bescheiden, da die Biosphäre etwaige konzentrierte Dust-Ablagerungen gleichmäßig auf dem gesamten Planeten verteilt hat.</LocalizationPair>
+  <LocalizationPair Name="%PlanetGameplayTypeMildTitle">Mild</LocalizationPair>
+  <LocalizationPair Name="%PlanetGameplayTypeMildDescription">Milde Planeten bilden die überwiegende Mehrheit der bewohnbaren Planeten in der Galaxie, da sie weder leicht noch schwer zu besiedeln sind und auch nur durchschnittliche Erträge erzielen.</LocalizationPair>
+  <LocalizationPair Name="%PlanetGameplayTypeMeagerTitle">Karg</LocalizationPair>
+  <LocalizationPair Name="%PlanetGameplayTypeMeagerDescription">Leben mag auf kargen Planeten relativ selten sein, aber die vergleichsweise dürftige Präsenz von Lebensformen bedeutet, dass diese Welten weitestgehend unberührt vom Zahn der Zeit und voller Entwicklungsmöglichkeiten sind.</LocalizationPair>
+  <LocalizationPair Name="%PlanetGameplayTypeLushTitle">Üppig</LocalizationPair>
+  <LocalizationPair Name="%PlanetGameplayTypeLushDescription">Durch die Pflanzenvielfalt brauchen die Menschen auf diesen Welten keine Angst vor Nahrungsmangel zu haben, andererseits ist es ein wahrer Alptraum für jene, die an Dendrophobie leiden.</LocalizationPair>
+  <LocalizationPair Name="%PlanetGameplayTypeWaterTitle">Wasser</LocalizationPair>
+  <LocalizationPair Name="%PlanetGameplayTypeWaterDescription">Wasserreiche Welten, unabhängig vom Salzgehalt, sind dem Leben in all seinen unzähligen Formen sehr willkommen, sie machen auch landschaftlich traumhafte touristische Naturattraktionen aus.</LocalizationPair>
+  <LocalizationPair Name="%PlanetGameplayTypeCraggyTitle">Zerklüftet</LocalizationPair>
+  <LocalizationPair Name="%PlanetGameplayTypeCraggyDescription">Diese Welten leiden unter hoher tektonischer Aktivität, was zu zahlreichen Regionen mit leichtem Zugang zu natürlichen Bodenschätzen führt. Obwohl sie von den meisten Individuen nicht sehr geschätzt werden, sind Industrielle sehr an ihnen interessiert.</LocalizationPair>
+  <LocalizationPair Name="%PlanetGameplayTypeDryTitle">Trocken</LocalizationPair>
+  <LocalizationPair Name="%PlanetGameplayTypeDryDescription">Trockene Welten ohne ausreichend Wasservorkommen sind suboptimale Standorte für neue Siedlungen, aber es gibt einen Lichtblick: Dustadern sind in der Regel reichlich vorhanden. Warum? Die Dust-Schürfer wissen es nicht, weshalb sollte es sie auch kümmern?</LocalizationPair>
+  <LocalizationPair Name="%PlanetGameplayTypeStableTitle">Stabil</LocalizationPair>
+  <LocalizationPair Name="%PlanetGameplayTypeStableDescription">Diese Welten bieten eine stabile Umgebung, die es den Wissenschaftlern erleichtert, ihre Experimente zu replizieren und somit erstklassige Standorte für Labore zu schaffen.</LocalizationPair>
+  <LocalizationPair Name="%PlanetGameplayTypeGasTitle">Gas</LocalizationPair>
+  <LocalizationPair Name="%PlanetGameplayTypeGasDescription">Gasförmige Planeten erzeugen selten ihre eigenen Lebensformen, die Umgebungsbedingungen sind oft zu chaotisch und giftig, als dass Leben entstehen könnte. Umgekehrt empfinden die meisten Arten, die sich in stabileren Klimazonen entwickelt haben, den Übergang zum Leben auf Gasplaneten als äußerst schwierig, aber die Vorteile können außergewöhnlich sein.</LocalizationPair>
+  <LocalizationPair Name="%PlanetGameplayTypeTreeTitle">Wald</LocalizationPair>
+  <LocalizationPair Name="%PlanetGameplayTypeTreeDescription">Dieser Planet ist ideal, um einen Wächter hervorzubringen.</LocalizationPair>
+
+  <LocalizationPair Name="%StarSystemImprovementEnrollmentResourcesDescription">Konvertiere 1 [population] zu 150 [ManpowerColored]. Das hinzugewonnene Personal pro konvertierter [population] erhöht sich mit steigender Einzugsrate.</LocalizationPair>
+  <LocalizationPair Name="%StarSystemImprovementEnrollmentVampirilisResourcesDescription">Konvertiere 150 [lifeforceColored] zu 350 [ManpowerColored]. Das hinzugewonnene Personal pro konvertierter [population] erhöht sich mit steigender Einzugsrate.</LocalizationPair>
+  <LocalizationPair Name="%LawEffectP01L00DictatorshipTooltipEffect">20% der eingesetzten Industrie für Konstruktionen wird bei Fertigstellung in Dust umgewandelt.</LocalizationPair>
+  <LocalizationPair Name="%LawEffectP01L00TooltipEffect">40% der eingesetzten Industrie für Konstruktionen wird bei Fertigstellung in Dust umgewandelt.</LocalizationPair>
+  <LocalizationPair Name="%LawEffectP01L03TooltipOverride">+2% maximale Schiffskern-Energie (bis maximal 40%) pro Zug.</LocalizationPair>
+  <LocalizationPair Name="%LawEffectP01L03RepublicTooltipOverride">+4% maximale Schiffskern-Energie (bis maximal 40%) pro Zug.</LocalizationPair>
+  <LocalizationPair Name="%LawEffectP03L03TooltipOverride">+5% Reduzierung der Diplomatiekosten (bis maximal 50%) pro Zug.
+-3% imperiumsweite Inflation (bis maximal-30%) pro Zug.</LocalizationPair>
+  <LocalizationPair Name="%LawEffectP03L03RepublicTooltipOverride">+10% Reduzierung der Diplomatiekosten (bis maximal 50%) pro Zug.
+-6% imperiumsweite Inflation (bis maximal-30%) pro Zug.</LocalizationPair>
+  <LocalizationPair Name="%LawEffectP02L04TooltipOverride">+2.5% maximale Schildkapazität und Energie Verteidigung auf Schiffe (bis maximal 50%) pro Zug.</LocalizationPair>
+  <LocalizationPair Name="%LawEffectP02L04RepublicTooltipOverride">+5% maximale Schildkapazität und Energie Verteidigung auf Schiffe (bis maximal 50%) pro Zug.</LocalizationPair>
+  <LocalizationPair Name="%LawEffectP05L04TooltipOverride">+1% Schaden auf Waffenmodule and maximale Schiffsenergie auf Flotten mit Helden (bis maximal 20%) pro Zug.</LocalizationPair>
+  <LocalizationPair Name="%LawEffectP05L04RepublicTooltipOverride">+2% Schaden auf Waffenmodule and maximale Schiffsenergie auf: Flotten mit Helden (bis maximal 20%) pro Zug.</LocalizationPair>
+  <LocalizationPair Name="%LawEffectP06L01TooltipOverride">-1% Schiffskosten [industryColored] (maximal -20%) pro Zug.</LocalizationPair>
+  <LocalizationPair Name="%LawEffectP06L01RepublicTooltipOverride">-2% Schiffskosten [industryColored] (maximal -20%) pro Zug.</LocalizationPair>
+  <LocalizationPair Name="%LawEffectP06L02TooltipOverride">+1% Kostenreduzierung auf Dust und strategische Ressourcen beim Aufwerten auf das neueste Schiffsdesign (maximal 20%)  pro Zug.</LocalizationPair>
+  <LocalizationPair Name="%LawEffectP06L02RepublicTooltipOverride">+2% Kostenreduzierung auf Dust und strategische Ressourcen beim Aufwerten auf das neueste Schiffsdesign (maximal 20%) pro Zug.</LocalizationPair>
+  <LocalizationPair Name="%LawEffectP06L04TooltipOverride">+2% Schaden auf Waffenmodule und Bodentruppen (maximal 40%) pro Zug.</LocalizationPair>
+  <LocalizationPair Name="%LawEffectP06L04RepublicTooltipOverride">+4% Schaden auf Waffenmodule und Bodentruppen (maximal 40%) pro Zug.</LocalizationPair>
+  
+  <LocalizationPair Name="%LawP01L01NewShortTitle">Sichere Routen</LocalizationPair>
+  <LocalizationPair Name="%LawP01L01NewTitle">Sicherheitsgesetz zum Schutz der Transportwege</LocalizationPair>
+  <LocalizationPair Name="%LawP01L01NewDescription">Die sorgfältige Organisation und Durchführung neuer Patrouillenfahrten über die am häufigsten genutzten Versorgungswege führt zu einer drastischen Reduzierung der Piraterie und hilft Ihnen, die mit der Wartung aller Flotten verbundenen Kosten zu senken und die Leistungsfähigkeit des Systems zu optimieren.</LocalizationPair>
+  <LocalizationPair Name="%LawP02L02ShortTitle">Blick zu den Sternen</LocalizationPair>
+  <LocalizationPair Name="%LawP02L02Title">Blick zu den Sternen</LocalizationPair>
+  <LocalizationPair Name="%LawP02L02Description">Als Sternenvolk ist Ihre Spezies immer wieder fasziniert, wenn es von den neuen Wundern hört, die die Galaxis in sich birgt, und so ist es leicht, sie vom Nutzen höherer Steuersätze zu überzeugen, um mehr Mittel für die Weltraumerforschung bereitzustellen.</LocalizationPair>
+  <LocalizationPair Name="%LawP02L03ShortTitle">Cogito Gesetz</LocalizationPair>
+  <LocalizationPair Name="%LawP02L03Title">Cogito Gesetz</LocalizationPair>
+  <LocalizationPair Name="%LawP02L03Description">Die Einflussnahme auf die Bildungs- und Ausbildungseinrichtungen ermöglicht es dem Senat, die klügsten Köpfe des Imperiums dort zu bündeln, wo sie am dringendsten benötigt werden. Wenn dieses Gesetz verabschiedet wird, führt dies zu einer besseren und effizienteren wissenschaftlichen Produktivität.</LocalizationPair>
+  <LocalizationPair Name="%LawP02L04Description">Angesichts der zunehmenden galaktischen Konflikte bündelt der Senat eine Reihe von Normen und Vorschriften, um die Leistung von Sicherheitsschilden zu erhöhen. Während einige von ihnen als paranoid bezeichnet werden, haben die meisten das Gefühl, dass der eigene Schutzschild nie groß genug sein kann.</LocalizationPair>
+
+  <LocalizationPair Name="%SheredynNoRetreat">Feinde können sich nicht zurückziehen, wenn sie in einer Raumschlacht gegen dich kämpfen.</LocalizationPair>
+  
+  <LocalizationPair Name="%Population2modEffect">+1 Bevölkerungsplatz auf terranischen Planeten.</LocalizationPair>
+  <LocalizationPair Name="%OwnsMarketplace">Kann nicht vom Marktplatz verbannt werden.</LocalizationPair>
+
+  <LocalizationPair Name="%EmpireImprovementStageEconomyAndTrade3EffectOverride">Schaltet System-Aufwertung Stufe 2 frei
+Schaltet Raumhafenplätze x3 frei
++2 [FIDS] pro [population]
+-10% System-Unterhalt [upkeepColored]
+-10% Überbevölkerungs-Mali [OverPopulation]</LocalizationPair>
+
+  <LocalizationPair Name="%EmpireImprovementStageEconomyAndTrade4EffectOverride">Schaltet System-Aufwertung Stufe 3 frei
+Schaltet Raumhafen Platz x1 frei
++2 [FIDS] pro [population]
+-10% System-Unterhalt [upkeepColored]
+-10% Überbevölkerungs-Mali [OverPopulation]</LocalizationPair>
+
+  <LocalizationPair Name="%EmpireImprovementStageEconomyAndTrade5EffectOverride">Schaltet System-Aufwertung Stufe 4 frei
+Schaltet Raumhafen Platz x1 frei
++4 [FIDS] pro [population]
+-10% System-Unterhalt [upkeepColored]
+-10% Überbevölkerungs-Mali [OverPopulation]</LocalizationPair>
+   
+   <LocalizationPair Name="%EmpireImprovementStageEconomyAndTrade3NoSpacePortEffectOverride">Schaltet System-Aufwertung Stufe 2 frei
++2 [FIDS] pro [population]
+-10% System-Unterhalt [upkeepColored]
+-10% Überbevölkerungs-Mali [OverPopulation]</LocalizationPair>
+   <LocalizationPair Name="%EmpireImprovementStageEconomyAndTrade4NoSpacePortEffectOverride">Schaltet System-Aufwertung Stufe 3 frei
++2 [FIDS] pro [population]
+-10% System-Unterhalt [upkeepColored]
+-10% Überbevölkerungs-Mali [OverPopulation]</LocalizationPair>
+   <LocalizationPair Name="%EmpireImprovementStageEconomyAndTrade5NoSpacePortEffectOverride">Schaltet System-Aufwertung Stufe 4 frei
++4 [FIDS] pro [population]
+-10% System-Unterhalt [upkeepColored]
+-10% Überbevölkerungs-Mali [OverPopulation]</LocalizationPair>
+  
+  <LocalizationPair Name="%Politics01AffectingEventsDescription">Bau von [industryColored] -erzeugenden Konstruktionen
+Rekrutierung von Industriellen Helden
+Zuweisung von Industriellen Helden zu Systemen oder Flotten
+Planeten kolonisieren
+Systeme aufwerten
+[industrialistColored]Quests und Ereignisse</LocalizationPair>
+  <LocalizationPair Name="%Politics02AffectingEventsDescription">Bau von [scienceColored] -erzeugenden Konstruktionen
+Rekrutierung von Wissenschaftlichen Helden
+Zuweisung von Wissenschaftlichen Helden zu Systemen oder Flotten
+Suchen nach Kuriositäten
+Galaxie-Erkundung
+Unterzeichnung von Wissenschaftsvereinbarungen
+Freischaltung höherer Technologiestufen
+Geteilte Sicht aktivieren
+[scientistColored]Quests und Ereignisse</LocalizationPair>
+  <LocalizationPair Name="%Politics03AffectingEventsDescription">Bau von [prestigeColored] -erzeugenden oder Handels-Konstruktionen
+Rekrutierung von Pazifisten Helden
+Zuweisung von Pazifisten Helden zu Systemen oder Flotten
+Handels-Routen
+Betreiben freundlicher Diplomatie
+Entdeckung neuer Zivilisationen
+Eigener Marktplatz
+[pacifistColored]Quests und Ereignisse</LocalizationPair>
+  <LocalizationPair Name="%Politics04AffectingEventsDescription">Bau von [foodColored] -erzeugenden Konstruktionen
+Baue [FIDS] -erzeugende Konstruktionen
+Baue [population] Konstruktionen
+Rekrutierung von Ökologisten Helden
+Zuweisung von Ökologisten Helden zu Systemen oder Flotten
+Die Bevölkerungsvielfalt fördern
+Bau ziviler Schiffe
+[ecologistColored]Quests und Ereignisse</LocalizationPair>
+  <LocalizationPair Name="%Politics05AffectingEventsDescription">Bau von [dustColored] -erzeugenden Konstruktionen
+Baue [happinessColored] -erzeugende Konstruktionen
+Rekrutierung von Helden
+Rekrutierung von Gläubigen Helden
+Zuweisung von Gläubigen Helden zu Systemen oder Flotten
+Einnehmen von Systemen durch Einfluss
+[religiousColored]Quests und Ereignisse</LocalizationPair>
+  <LocalizationPair Name="%Politics06AffectingEventsDescription">Konstruktion militärischer Schiffe
+
+Baue Systemverteidigungen
+Rekrutierung von Militaristischen Helden
+Zuweisung von Militaristischen Helden zu Systemen oder Flotten
+Erlebe Blockaden, Belagerungen oder feindliche Präsenz in deinem Heimatsystem
+Betreiben aggressiver Diplomatie
+Anhaltende Territoriumsverluste
+[militaristColored]Quests und Ereignisse</LocalizationPair>
+
+  <LocalizationPair Name="%Recipe02">+3% Energie Regenerationsrate auf Flotten im Orbit oder Hangar</LocalizationPair>
+  <LocalizationPair Name="%Recipe10">+6% Energie Regenerationsrate auf Flotten im Orbit oder Hangar</LocalizationPair>
+  <LocalizationPair Name="%Recipe18">+9% Energie Regenerationsrate auf Flotten im Orbit oder Hangar</LocalizationPair>
+  <LocalizationPair Name="%Recipe03">-5% System-Unterhalt [upkeepColored]</LocalizationPair>
+  <LocalizationPair Name="%Recipe11">-10% System-Unterhalt [upkeepColored]</LocalizationPair>
+  <LocalizationPair Name="%Recipe19">-15% System-Unterhalt [upkeepColored]</LocalizationPair>
+
+  <LocalizationPair Name="%EmpireImprovementTerraformation1Title">Primäres Terraforming</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementTerraformation1Description">Obwohl es kein Freifahrtschein für Terraforming ist, ermöglicht der Bau solider Strukturen, die sich den stets wandelnden Einflüssen anpassen können, die Umwandlung von Planeten in besser geeignete Varianten ihres jeweiligen Primärtyps.</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementTerraformation2Title">Fortgeschrittenes Terraforming</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementTerraformation2Description">Ein ausreichender Erfahrungsschatz in den Bereichen „Terraforming-Projekte“ und „komplexe geo-atmosphärische Wissenschaft“ hat zu einer allgemeinen Steigerung der Effektivität von Terraforming geführt. Mit genügend Zeit und Geld können deine Ingenieure und Wissenschaftler nun Planeten in den am üppigsten bewachsenen und ertragreichsten Planetentyp verwandeln.</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementTerraformation1EffectOverride">Ermöglicht primäres Terraforming</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementTerraformation2EffectOverride">Ermöglicht fortgeschrittenes Terraforming</LocalizationPair>
+
+  <LocalizationPair Name="%DynamicEffectLevelTwoDemandPenaltyTitle">Besondere Sanktionen im Weigerungsfall</LocalizationPair>
+  <LocalizationPair Name="%DynamicEffectLevelTwoDemandPenaltyDescription">Wenn das andere Imperium die Bedingungen ablehnt, kannst du diesen Effekt anwenden.</LocalizationPair>
+  <LocalizationPair Name="%DynamicEffectTemporaryEffectTitle">{0}Sanktionen im Weigerungsfall)</LocalizationPair>
+  <LocalizationPair Name="%TemporaryEffectEmpirePointMalusFromDemand">Diplomatische Angelegenheit (</LocalizationPair>
+  <LocalizationPair Name="%TemporaryEffectFIDSMalusFromDemand">Wirtschaftssanktionen (</LocalizationPair>
+  <LocalizationPair Name="%TemporaryEffectMilitaryShipCostIncreaseFromDemand">Embargo für Rüstungsgüter (</LocalizationPair>
+  <LocalizationPair Name="%TemporaryEffectEmpirePointMalusFromDemand2">Diplomatische Angelegenheit II (</LocalizationPair>
+  <LocalizationPair Name="%TemporaryEffectFIDSMalusFromDemand2">Wirtschaftssanktionen II (</LocalizationPair>
+  <LocalizationPair Name="%TemporaryEffectMilitaryShipCostIncreaseFromDemand2">Embargo für Rüstungsgüter II (</LocalizationPair>
+  <LocalizationPair Name="%TemporaryEffectMilitaryShipMovementReductionFromDemand">Militärischer Rückzug (Special </LocalizationPair>
+  <LocalizationPair Name="%TemporaryEffectFleetUpkeepIncreaseFromDemand">Militärische Sanktionen (Special </LocalizationPair>
+  <LocalizationPair Name="%DynamicEffectHeroLockTitle">Helden Bann (besondere Verweigerungsstrafe)</LocalizationPair>
+  
+  <LocalizationPair Name="%FailureNotEnoughSiegePowerDescription">Du benötigst mindestens 80 Belagerungsschaden, um diese Taktik anzuwenden (der Wert wird immer dann aktualisiert, wenn du die Invasion beginnst oder zu Beginn der folgenden Züge).</LocalizationPair>
+ 
+  <LocalizationPair Name="%ManpowerStockBoost1">+75 [manpower] -Kapazität pro System auf: Imperium</LocalizationPair>
+  <LocalizationPair Name="%ManpowerStockBoost2">+150 [manpower] -Kapazität pro System auf: Imperium</LocalizationPair>
+  <LocalizationPair Name="%ManpowerStockBoost3">+250 [manpower] -Kapazität pro System auf: Imperium</LocalizationPair>
+  <LocalizationPair Name="%ManpowerStockBoost4">+500 [manpower] -Kapazität pro System auf: Imperium</LocalizationPair>
+
+  <LocalizationPair Name="%NotificationGroundBattleSetupAttackerStrategy1Title">Infiltration</LocalizationPair>
+  <LocalizationPair Name="%NotificationGroundBattleSetupAttackerStrategy1Description">Die erste Wahl gegen "Guerilla-Taktiken", wird jedoch durch die "Kombinierte Waffen-Taktik" gekontert.</LocalizationPair>
+  <LocalizationPair Name="%NotificationGroundBattleSetupAttackerStrategy2Title">Gepanzerte Speerspitze</LocalizationPair>
+  <LocalizationPair Name="%NotificationGroundBattleSetupAttackerStrategy2Description">Die erste Wahl gegen die "Kombinierte Waffen-Taktik", wird jedoch durch die Taktik "Indirekte Feuerunterstützung" gekontert.</LocalizationPair>
+  <LocalizationPair Name="%NotificationGroundBattleSetupAttackerStrategy2TikanansTitle">Offensive Schwarmmanöver (Gepanzerte Speerspitze)</LocalizationPair>
+  <LocalizationPair Name="%NotificationGroundBattleSetupAttackerStrategy2TikanansDescription">Sie sind Meister der schnellen, durchschlagkräftigen Angriffe, so dass jeder vom Studium der Tikanan-Angriffstaktik eine Menge lernen kann. Die beste Wahl gegen die "Kombinierte Waffen-Taktik", wird jedoch durch die Taktik "Indirekte Feuerunterstützung" gekontert.</LocalizationPair>
+  <LocalizationPair Name="%NotificationGroundBattleSetupAttackerStrategy3Title_1">Orbitale Belagerung</LocalizationPair>
+  <LocalizationPair Name="%NotificationGroundBattleSetupAttackerStrategy3Title_2">Orbitale Belagerung II</LocalizationPair>
+  <LocalizationPair Name="%NotificationGroundBattleSetupAttackerStrategy3Title_3">Orbitale Belagerung III</LocalizationPair>
+  <LocalizationPair Name="%NotificationGroundBattleSetupAttackerStrategy3Description">Deine Schiffe werden die Einsatzziele auf dem Planeten bombardieren, bevor die eigentliche Schlacht beginnt. Dieser Taktik kann nicht entgegengewirkt werden.</LocalizationPair>
+  <LocalizationPair Name="%NotificationGroundBattleSetupAttackerStrategy4Title">Bombenteppich</LocalizationPair>
+  <LocalizationPair Name="%NotificationGroundBattleSetupAttackerStrategy4Description">Die erste Wahl gegen die Taktik "Indirekte Feuerunterstützung", wird jedoch durch "Guerilla-Taktiken" gekontert.</LocalizationPair>
+
+  <LocalizationPair Name="%NotificationGroundBattleSetupDefenderStrategy1Title">Guerilla-Taktiken</LocalizationPair>
+  <LocalizationPair Name="%NotificationGroundBattleSetupDefenderStrategy1Description">Die erste Wahl gegen die Taktik "Bombenteppich", wird jedoch durch die Taktik "Infiltration" gekontert. Hinweis: Das Konvertieren von Bevölkerung zu Personal kann nicht rückgängig gemacht werden.</LocalizationPair>
+  <LocalizationPair Name="%NotificationGroundBattleSetupDefenderStrategy1TerransTitle">Patriotische Pflicht (Guerilla-Taktiken)</LocalizationPair>
+  <LocalizationPair Name="%NotificationGroundBattleSetupDefenderStrategy1TerransDescription">Die erste Wahl gegen die Taktik "Bombenteppich", wird jedoch durch die Taktik "Infiltration" gekontert. Hinweis: Das Konvertieren von Bevölkerung zu Personal kann nicht rückgängig gemacht werden.</LocalizationPair>
+  <LocalizationPair Name="%NotificationGroundBattleSetupDefenderStrategy2Title">Kombinierte Waffen</LocalizationPair>
+  <LocalizationPair Name="%NotificationGroundBattleSetupDefenderStrategy2Description">Die erste Wahl gegen die Taktik "Infiltration", wird jedoch durch die Taktik "Gepanzerte Speerspitze" gekontert.</LocalizationPair>
+  <LocalizationPair Name="%NotificationGroundBattleSetupDefenderStrategy2GnashastsTitle">Militante Gegenwehr (Kombinierte Waffen)</LocalizationPair>
+  <LocalizationPair Name="%NotificationGroundBattleSetupDefenderStrategy2GnashastsDescription">Die Gnashast sind erbitterte Verteidiger ihres eigenen Territoriums. Dies spiegelt sich in der Angriffslustigkeit wider, mit der sie in die Schlacht gegen Eindringlinge ziehen. Die erste Wahl gegen die Taktik "Infiltration", wird jedoch durch die Taktik "Gepanzerte Speerspitze" gekontert.</LocalizationPair>
+  <LocalizationPair Name="%NotificationGroundBattleSetupDefenderStrategy3Title">Taktische Kapitulation</LocalizationPair>
+  <LocalizationPair Name="%NotificationGroundBattleSetupDefenderStrategy3Description">Kapituliere, um deine Bevölkerung und Verbesserungen zu schützen, aber organisiere gleichzeitig ein Netzwerk des Widerstands, um die Übergangsphase bis zur vollständigen feindlichen Übernahme zu verlängern. Sinnvoll, wenn du deine Flotten mobilisieren kannst, um das System wieder einzunehmen oder den Gegner für die Zeit der Systemübernahme zu sabotieren.</LocalizationPair>
+  <LocalizationPair Name="%NotificationGroundBattleSetupDefenderStrategy3BhagabasTitle">Weiße Flagge (Tactical Surrender)</LocalizationPair>
+  <LocalizationPair Name="%NotificationGroundBattleSetupDefenderStrategy3BhagabasDescription">Durch die Verwendung ihres dezentralen Wesens können Bhagaba massenhaft kapitulieren, um sowohl die Infrastruktur als auch die Bevölkerung zu schützen und gleichzeitig die Übergangsphase bis zur vollständigen feindlichen Übernahme zu verlängern.</LocalizationPair>
+  <LocalizationPair Name="%NotificationGroundBattleSetupDefenderStrategy4Title">Indirekte Feuerunterstützung</LocalizationPair>
+  <LocalizationPair Name="%NotificationGroundBattleSetupDefenderStrategy4Description">Die erste Wahl gegen die Taktik "Gepanzerte Speerspitze", wird jedoch durch die Taktik "Bombenteppich" gekontert.</LocalizationPair>
+   
+  <!--<LocalizationPair Name="%NotificationGroundBattleSetupAttackerStrategyLesserEmpireDescription">Als Standard-Offensivstrategie ist der Angriff schnell und direkt.</LocalizationPair>
+  <LocalizationPair Name="%NotificationGroundBattleSetupAttackerStrategyLesserEmpireTitle">Blitzkrieg</LocalizationPair>
+  <LocalizationPair Name="%NotificationGroundBattleSetupDefenderStrategyLesserEmpireDescription">Bleiben Sie in den Schatten, bis der Feind gesichtet wird, woraufhin Blitz-Taktiken zum Einsatz kommen.</LocalizationPair>
+  <LocalizationPair Name="%NotificationGroundBattleSetupDefenderStrategyLesserEmpireTitle">Bei Sichtkontakt angreifen</LocalizationPair>-->
+  
+  <!--<LocalizationPair Name="%NotificationGroundBattleSetupAttackerStrategyMinorFactionDescription">Diese Invasionsstrategie, die sowohl auf die Infrastruktur als auch auf die Ballungszentren abzielt, verursacht massive Schäden am System.</LocalizationPair>
+  <LocalizationPair Name="%NotificationGroundBattleSetupAttackerStrategyMinorFactionTitle">Volle Kraft voraus</LocalizationPair>
+  <LocalizationPair Name="%NotificationGroundBattleSetupDefenderStrategyMinorFactionDescription">Durch die Verwendung dieser Strategie werden die Truppen in Festungsanlagen zusammengezogen, was dazu dient, die Verluste durch Bombardements zu reduzieren.</LocalizationPair>
+  <LocalizationPair Name="%NotificationGroundBattleSetupDefenderStrategyMinorFactionTitle">Bunker unter Beschuss</LocalizationPair>-->
+  
+  <!--<LocalizationPair Name="%NotificationGroundBattleSetupAttackerStrategyPirateEmpireDescription">Verwende klassische Freibeutertaktiken, wie Antäuschen und woanders Zuschlagen, um den Gegner dauerhaft zu verunsichern.</LocalizationPair>
+  <LocalizationPair Name="%NotificationGroundBattleSetupAttackerStrategyPirateEmpireTitle">Fallschirmjäger</LocalizationPair>
+  <LocalizationPair Name="%NotificationGroundBattleSetupDefenderStrategyPirateEmpireDescription">Tief eingebettet in jedes x-beliebige Terrain das zur Verfügung steht, wird der Feind diese Strategie nur schwer überwinden können.</LocalizationPair>
+  <LocalizationPair Name="%NotificationGroundBattleSetupDefenderStrategyPirateEmpireTitle">Tunnel-Taktik</LocalizationPair>-->
+  
+  
+  <LocalizationPair Name="%GroundBattleAttackerStrategy1TooltipEffect">+40% (+15% falls gekontert) Gesundheit auf Invasionstruppen</LocalizationPair>
+  <LocalizationPair Name="%GroundBattleAttackerStrategy2TooltipEffect">+15% (0% falls gekontert) erlittener Schaden für Verteidiger während einer Bodenschlacht</LocalizationPair>
+  <LocalizationPair Name="%GroundBattleAttackerStrategy2BTooltipEffect">+20% (0% falls gekontert) erlittener Schaden für Verteidiger während einer Bodenschlacht</LocalizationPair>
+  <LocalizationPair Name="%GroundBattleAttackerStrategy4TooltipEffect">+45% (15% falls gekontert) erlittener Schaden für Verteidiger während einer Bodenschlacht</LocalizationPair>
+  
+  <LocalizationPair Name="%GroundBattleDefenderStrategy1TooltipEffect1">Fügt bis zu +150 (0 falls gekontert) Personalrekrutierungsrate [Manpower] hinzu und erhöht die maximale Personaleinsatzgrenze, die Erhöhung der Personalstärke hängt auch vom aktuellen Wert des Systembesitzstatus ab.</LocalizationPair>
+  <LocalizationPair Name="%GroundBattleDefenderStrategy1TooltipEffect2">-1 [population] solange nicht gekontert</LocalizationPair>
+  <LocalizationPair Name="%GroundBattleDefenderStrategy1BTooltipEffect1">Fügt bis zu +200 (0 falls gekontert) Personalrekrutierungsrate [Manpower] hinzu und erhöht die maximale Personaleinsatzgrenze, die Erhöhung der Personalstärke hängt auch vom aktuellen Wert des Systembesitzstatus ab.</LocalizationPair>
+  <LocalizationPair Name="%GroundBattleDefenderStrategy1BTooltipEffect2">-1 [population] solange nicht gekontert</LocalizationPair>
+  <LocalizationPair Name="%GroundBattleDefenderStrategy2TooltipEffect">+15% (0% falls gekontert) erlittener Schaden für Angreifer während einer Bodenschlacht</LocalizationPair>
+  <LocalizationPair Name="%GroundBattleDefenderStrategy2BTooltipEffect">+20% (0% falls gekontert) erlittener Schaden für Angreifer während einer Bodenschlacht</LocalizationPair>
+  <LocalizationPair Name="%GroundBattleDefenderStrategy4TooltipEffect">+33% (0% falls gekontert) erlittener Schaden für Angreifer während einer Bodenschlacht</LocalizationPair>
+
+  <LocalizationPair Name="%FailureGlobalCooldownObliterator">Einer deiner Ausmerzer hat erst vor wenigen Zügen geschossen.</LocalizationPair>
+
+  <LocalizationPair Name="%StarSystemImprovementObliteratorShieldEffects">Verhindert die Vernichtung Ihres Systems, wenn es von einem Ausmerzer angegriffen wird.
+Diese Verbesserung wird zerstört, wenn sie eingesetzt wird, aber ihre Effekte halten für einige Züge an.
+Nur 35% der Bevölkerung werden getötet, 35% der Verbesserungen (25% der Verteidigungsverbesserungen) werden zerstört, und 50% des Schadens wird den Flotten im Orbit zugefügt. Wenn ein Held sich in dieser Situation befindet, wird er in 33% der Fälle verletzt.</LocalizationPair>
+
+  <LocalizationPair Name="%ShipSizeJuggernautDescription">Leviathane verbrauchen #E3BDAC#10#REVERT# [commandPoint] (Kommando Punkte) in ihrer Flotte.
+Rumpfschwäche: #E3BDAC#500#REVERT# (siehe Verteidigungsabsorption)</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementImprovedHullJuggernautOverride">+$(Input) auf Modul-Multiplikator der Leviathane</LocalizationPair>
+
+  <LocalizationPair Name="%ClassMiningProbeTitle">Fördersonden</LocalizationPair>
+   
+  <LocalizationPair Name="%JuggernautSystemFIDSFlat">[FIDS] auf das System</LocalizationPair>
+  <LocalizationPair Name="%JuggernautSystemFIDSPercent">%[FIDS] auf das System</LocalizationPair>
+   
+  <LocalizationPair Name="%PanelFeatureModuleNetStrategic1FromSpecialNodesTitle">[Strat01titaniumColored] aus Schwarzen Löchern, Sonnennebeln &amp; Asteroiden Feldern(Freischaltung des Ressourcenabbaus erforderlich)</LocalizationPair>
+  <LocalizationPair Name="%PanelFeatureModuleNetStrategic2FromSpecialNodesTitle">[Strat02hyperiumColored] aus zusammenbrechenden Sternen, Neutronensternen &amp; Nebelwolken(Freischaltung des Ressourcenabbaus erforderlich)</LocalizationPair>
+  <LocalizationPair Name="%PanelFeatureModuleNetStrategic3FromSpecialNodesTitle">[Strat03adamantianColored] aus Schwarzen Löchern, Sonnennebeln &amp; Asteroiden Feldern(Freischaltung des Ressourcenabbaus erforderlich)</LocalizationPair>
+  <LocalizationPair Name="%PanelFeatureModuleNetStrategic4FromSpecialNodesTitle">[Strat04anti-matterColored] aus zusammenbrechenden Sternen, Neutronensternen &amp; Nebelwolken(Freischaltung des Ressourcenabbaus erforderlich)</LocalizationPair>
+  <LocalizationPair Name="%PanelFeatureModuleSpecialNodeEffectMultiplierTitle">Orbitaler Knoten-Effekt</LocalizationPair>
+   
+  <LocalizationPair Name="%ShipLevel10Title">Legendär I</LocalizationPair>
+  <LocalizationPair Name="%ShipLevel11Title">Legendär II</LocalizationPair>
+  <LocalizationPair Name="%ShipLevel12Title">Legendär III</LocalizationPair>
+  <LocalizationPair Name="%ShipLevel13Title">Legendär IV</LocalizationPair>
+  <LocalizationPair Name="%ShipLevel14Title">Legendär V</LocalizationPair>
+  <LocalizationPair Name="%ShipLevel15Title">Legendär VI</LocalizationPair>
+
+  <LocalizationPair Name="%ClassModuleSupportEngineTitle">Ist nicht vom Schiffsmultiplikator betroffen.</LocalizationPair>
+  <LocalizationPair Name="%GlobalSpeedModuleTitle">Bonus-Bewegungspunkte</LocalizationPair>
+  <LocalizationPair Name="%ModuleSupportEngine2Strategic1Title">Titan Antrieb</LocalizationPair>
+  <LocalizationPair Name="%ModuleSupportEngine3Strategic3Title">Adamantian Antrieb</LocalizationPair>
+  <LocalizationPair Name="%ModuleSupportEngine4Strategic5Title">Orichalcix Antrieb</LocalizationPair>
+  <LocalizationPair Name="%ModuleSupportEngine4Strategic6Title">Quadrinix Antrieb</LocalizationPair>
+  <LocalizationPair Name="%ModuleSupportCrew3CraversTitle">OpEx C-Getriebe</LocalizationPair>
+  <LocalizationPair Name="%ModuleSupportCrew3TerransTitle">OpEx Imperiales Getriebe</LocalizationPair>
+  <LocalizationPair Name="%ModuleSupportExploration3Strategic3Title">Fortgeschrittene A Sonden</LocalizationPair>
+  <LocalizationPair Name="%ModuleSupportExploration3Strategic4Title">Fortgeschrittene A-M Sonden</LocalizationPair>
+  <LocalizationPair Name="%ModuleSupportSiege1Strategic3Title">Adamantian A2S Geschosse</LocalizationPair>
+  <LocalizationPair Name="%ModuleSupportShieldReload1Strategic2Title">Hyperium Regenerations-Schild</LocalizationPair>
+  <LocalizationPair Name="%ModuleSupportFlakEnhancer2Title">Erweiterte KI-Flak</LocalizationPair>
+  <LocalizationPair Name="%ModuleSupportFlakEnhancer3Title">Ultra-KI-Flak</LocalizationPair>
+  <LocalizationPair Name="%ModuleSupportSquadronOffenseEnhancer2Strategic6Title">Fortgeschrittener Treffer-Multiplikator</LocalizationPair>
+  <LocalizationPair Name="%ModuleSupportSquadronDefenseEnhancer2Strategic5Title">Fortgeschrittene Geschwader-Steuerung</LocalizationPair>
+  <LocalizationPair Name="%ModuleSupportBoardingDefense2Title">Fortgeschrittene AP Verteidigungsdrohnen</LocalizationPair>
+  <LocalizationPair Name="%ModuleSupportBoardingDefense3Title">Ultra-AP Verteidigungsdrohnen</LocalizationPair>
+  
+  <LocalizationPair Name="%ModuleSupportEMPShieldDefense2Strategic5Title">Fortgeschrittene Gehärtete Schilde Generatoren</LocalizationPair>
+  <LocalizationPair Name="%ModuleSupportEMPWeaponDefense2Strategic6Title">Fortgeschrittene Geschützturm-Wiederherstellungsfelder</LocalizationPair>
+  <LocalizationPair Name="%ModuleWeaponMissileEMP2Strategic6Title">Fortgeschrittene Geschützturm Störrakete</LocalizationPair>
+  <LocalizationPair Name="%ModuleWeaponBeamEMP2Strategic5Title">Fortgeschrittener Schutzschild Störstrahler</LocalizationPair>
+  
+  <LocalizationPair Name="%FailureShipHasWeaponModuleExploration">Es sind bereits Waffenmodule ausgerüstet. Entfernen Sie sie zuerst, bevor Sie ein weiterentwickeltes Sondenmodul hinzufügen.</LocalizationPair>
+
+  <LocalizationPair Name="%EmpireImprovementArkShipMovement1Title">Geweihte Archenantriebe</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementArkShipMovement1Description"></LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementArkShipMovement2Title">Gesegnete Archenantriebe</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementArkShipMovement2Description"></LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementArkShipMovement3Title">Heilige Archenantriebe</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementArkShipMovement3Description"></LocalizationPair>
+  <LocalizationPair Name="%OverrideCCPerLevel5System">+2 #FFFFFF#[commandPoint]#REVERT# pro Stufe 4 System mit Autonomer Verwaltung auf: Imperium</LocalizationPair>  
+
+  <LocalizationPair Name="%LawP02L00Description">Dieses streng geheime Gesetz verpflichtet die Elite der bedeutendsten Wissenschaftler und Ingenieure des Imperiums, eine Arbeitsgruppe zu bilden, die mit der Erfindung von Spitzentechnologien und deren praktischen Einsatzmöglichkeiten beauftragt ist. Das Ergebnis? Dein Imperium kann noch schneller modernste Technologien erforschen.</LocalizationPair>
+
+  <LocalizationPair Name="%PanelFeatureModuleBonusesOnSystemTitle">Auf dem umkreisten System</LocalizationPair>
+  
+  <LocalizationPair Name="%ShieldAbsorptionTitle">Energie-Verteidigung</LocalizationPair>
+  <LocalizationPair Name="%HullPlatingAbsorptionTitle">Projektil-Verteidigung</LocalizationPair>
+
+  <LocalizationPair Name="%SettingResourcesAbundanceTitle">Ressourcenreichtum</LocalizationPair>
+  <LocalizationPair Name="%SettingResourcesAbundanceDescription">Die Aussichten eines Planeten, reich an Ressourcen zu sein.</LocalizationPair>
+  <LocalizationPair Name="%SettingResourcesAbundanceAbundantDescription">Hohe Wahrscheinlichkeit auf reiche Vorkommen, geringe Wahrscheinlichkeit auf niedrige Vorkommen.</LocalizationPair>
+  <LocalizationPair Name="%SettingResourcesAbundanceAbundantTitle">Hoch</LocalizationPair>
+  <LocalizationPair Name="%SettingResourcesAbundanceNormalDescription">Ausgewogene Einstellung.</LocalizationPair>
+  <LocalizationPair Name="%SettingResourcesAbundanceNormalTitle">Normal</LocalizationPair>
+  <LocalizationPair Name="%SettingResourcesAbundanceRareDescription">Höhere Wahrscheinlichkeit auf geringe Vorkommen.</LocalizationPair>
+  <LocalizationPair Name="%SettingResourcesAbundanceRareTitle">Gering</LocalizationPair>
+
+  <LocalizationPair Name="%SettingDepositMultiplierTitle">Anzahl der Ressourcenvorkommen</LocalizationPair>
+  <LocalizationPair Name="%SettingDepositMultiplierDescription">Einstellung zur Anpassung des Multiplikators für die Menge der Ressourcenvorkommen in der gesamten Galaxie für alle Ressourcen.</LocalizationPair>
+  <LocalizationPair Name="%SettingDepositMultiplierVeryVeryLowTitle">Ultra-Gering</LocalizationPair>
+  <LocalizationPair Name="%SettingDepositMultiplierVeryVeryLowDescription">x0.35</LocalizationPair>
+  <LocalizationPair Name="%SettingDepositMultiplierVeryLowTitle">Sehr gering</LocalizationPair>
+  <LocalizationPair Name="%SettingDepositMultiplierVeryLowDescription">x0.5</LocalizationPair>
+  <LocalizationPair Name="%SettingDepositMultiplierLowTitle">Wenig</LocalizationPair>
+  <LocalizationPair Name="%SettingDepositMultiplierLowDescription">x0.75</LocalizationPair>
+  <LocalizationPair Name="%SettingDepositMultiplierNormalTitle">Normal</LocalizationPair>
+  <LocalizationPair Name="%SettingDepositMultiplierNormalDescription">x1</LocalizationPair>
+  <LocalizationPair Name="%SettingDepositMultiplierHighTitle">Hoch</LocalizationPair>
+  <LocalizationPair Name="%SettingDepositMultiplierHighDescription">x1.33</LocalizationPair>
+  <LocalizationPair Name="%SettingDepositMultiplierVeryHighTitle">Sehr Hoch</LocalizationPair>
+  <LocalizationPair Name="%SettingDepositMultiplierVeryHighDescription">x1.5</LocalizationPair>
+  <LocalizationPair Name="%SettingDepositMultiplierVeryVeryHighTitle">Ultra-Hoch</LocalizationPair>
+  <LocalizationPair Name="%SettingDepositMultiplierVeryVeryHighDescription">x2</LocalizationPair>
+
+  <LocalizationPair Name="%SettingEndTurnTimerDuration75Description">75 Sekunden</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerDuration75Title">75</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerEraAdditionalDuration5Description">5 Sekunden</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerEraAdditionalDuration5Title">5</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerEraAdditionalDuration10Description">10 Sekunden</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerEraAdditionalDuration10Title">10</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerEraAdditionalDuration30Description">30 Sekunden</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerEraAdditionalDuration30Title">30</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerSystemAdditionalDuration5Description">5 Sekunden</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerSystemAdditionalDuration5Title">5</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerSystemAdditionalDuration15Description">15 Sekunden</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerSystemAdditionalDuration15Title">15</LocalizationPair>
+  <LocalizationPair Name="%SettingMaxOvertime30Description">30 Sekunden</LocalizationPair>
+  <LocalizationPair Name="%SettingMaxOvertime30Title">30</LocalizationPair>
+  <LocalizationPair Name="%SettingMaxOvertime45Description">45 Sekunden</LocalizationPair>
+  <LocalizationPair Name="%SettingMaxOvertime45Title">45</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerLastPlayerDuration10Description">10 Sekunden</LocalizationPair>
+  <LocalizationPair Name="%SettingEndTurnTimerLastPlayerDuration10Title">10</LocalizationPair>
+  <LocalizationPair Name="%SettingBattleAutoStartTimerDuration40Description">40 Sekunden</LocalizationPair>
+  <LocalizationPair Name="%SettingBattleAutoStartTimerDuration40Title">40</LocalizationPair>
+  <LocalizationPair Name="%SettingBattleAutoStartTimerDuration50Description">50 Sekunden</LocalizationPair>
+  <LocalizationPair Name="%SettingBattleAutoStartTimerDuration50Title">50</LocalizationPair>
+
+  <LocalizationPair Name="%FoodPenaltiesFromOverPopulation">Mali auf Überbevölkerung [OverPopulation]</LocalizationPair>
+  <LocalizationPair Name="%GroundBattlePopulationToManPowerPermanentConversionRateTitle">Umwandlungsrate (kommt zum Einsatz bei der Konvertierung von Bevölkerung [Population] in Personal [manpowerColored])</LocalizationPair>
+   
+  <LocalizationPair Name="%PlanetImprovementFood1Override1">+1 [foodColored] pro [Population] auf fruchtbare, üppige Planeten</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementFood1Override2">+1 [foodColored] pro [Population]</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementFood2Override1">+2 [foodColored] pro [Population] auf fruchtbare, üppige Planeten</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementFood2Override2">+2 [foodColored] pro [Population]</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementFood2Override3">+1 [foodColored] pro [Population] auf milde, üppige Planeten</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementFood2Override4">+1 [foodColored] pro [Population] auf Wasserplaneten</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementFood3Override1">+3 [foodColored] pro [Population]</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementFood3Override2">+3 [foodColored] pro [Population] auf fruchtbare, üppige Planeten</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementFood3Override3">+2 [foodColored] pro [Population] auf milde, üppige Planeten</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementFood3Override4">+2 [foodColored] pro [Population] auf Wasserplaneten</LocalizationPair>
+
+  <LocalizationPair Name="%PlanetImprovementIndustry1Override1">+1 [industryColored] pro [Population] auf brennende, zerklüftete Planeten</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementIndustry1Override2">+1 [industryColored] pro [Population]</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementIndustry2Override1">+2 [industryColored] pro [Population] auf brennende, zerklüftete Planeten</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementIndustry2Override2">+2 [industryColored] pro [Population]</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementIndustry2Override3">+1 [industryColored] pro [Population] auf gemäßigte, zerklüftete Planeten</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementIndustry2Override4">+1 [industryColored] pro [Population] auf brennende Gasplaneten</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementIndustry3Override1">+3 [industryColored] pro [Population] auf brennende, zerklüftete Planeten</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementIndustry3Override2">+3 [industryColored] pro [Population]</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementIndustry3Override3">+2 [industryColored] pro [Population] auf gemäßigte, zerklüftete Planeten</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementIndustry3Override4">+2 [industryColored] pro [Population] auf brennende Gasplaneten</LocalizationPair>
+
+  <LocalizationPair Name="%PlanetImprovementScience1Override1">+1 [scienceColored] pro [Population] auf gefrierende, stabile Planeten</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementScience1Override2">+1 [scienceColored] pro [Population]</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementScience2Override1">+2 [scienceColored] pro [Population] auf gefrierende, stabile Planeten</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementScience2Override2">+2 [scienceColored] pro [Population]</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementScience2Override3">+1 [scienceColored] pro [Population] auf gefrierende Gasplaneten</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementScience2Override4">+1 [scienceColored] pro [Population] auf gemäßigte, stabile Planeten</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementScience3Override1">+3 [scienceColored] pro [Population] auf gefrierende, stabile Planeten</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementScience3Override2">+3 [scienceColored] pro [Population]</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementScience3Override3">+2 [scienceColored] pro [Population] auf gefrierende Gasplaneten</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementScience3Override4">+2 [scienceColored] pro [Population] auf gemäßigte, stabile Planeten</LocalizationPair>
+
+  <LocalizationPair Name="%PlanetImprovementDust1Override1">+1 [dustColored] pro [Population] auf karge, trockene Planeten</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementDust1Override2">+1 [dustColored] pro [Population]</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementDust2Override1">+2 [dustColored] pro [Population] auf karge, trockene Planeten</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementDust2Override2">+2 [dustColored] pro [Population]</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementDust2Override3">+1 [dustColored] pro [Population] auf karge, trockene Planeten</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementDust2Override4">+1 [dustColored] pro [Population] auf Gasplaneten</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementDust3Override1">+3 [dustColored] pro [Population] auf karge, trockene Planeten</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementDust3Override2">+3 [dustColored] pro [Population]</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementDust3Override3">+2 [dustColored] pro [Population] auf milde, trockene Planeten</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementDust3Override4">+2 [dustColored] pro [Population] auf Gasplaneten</LocalizationPair>
+
+  <LocalizationPair Name="%PlanetImprovementInfluence1Override1">+1 [prestigeColored] pro [Population] auf fruchtbare Wasserplaneten</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementInfluence1Override2">+1 [prestigeColored] pro [Population]</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementInfluence2Override1">+2 [prestigeColored] pro [Population] auf fruchtbare Wasserplaneten</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementInfluence2Override2">+2 [prestigeColored] pro [Population]</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementInfluence2Override3">+1 [prestigeColored] pro [Population] auf üppige Planeten</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementInfluence2Override4">+1 [prestigeColored] pro [Population] auf milde Wasserplaneten</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementInfluence3Override1">+3 [prestigeColored] pro [Population] auf fruchtbare Wasserplaneten</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementInfluence3Override2">+3 [prestigeColored] pro [Population]</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementInfluence3Override3">+2 [prestigeColored] pro [Population] auf üppige Planeten</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementInfluence3Override4">+2 [prestigeColored] pro [Population] auf milde Wasserplaneten</LocalizationPair>
+   
+  <LocalizationPair Name="%FailureCannotSeeValidPathDescription">Kein gültiger sichtbarer Pfad: Erkunden Sie die Galaxie eingehender, oder schalten Sie die dritte Stufe von Wissenschaft und Erforschung für Warpantriebe frei.</LocalizationPair>
+  <LocalizationPair Name="%FailureNeedFreeMovementDescription">Es gibt keinen Weg, der zu diesem Knoten führt. Deine Schiffe brauchen freie Bewegung. Schalten Sie die dritte Stufe von Wissenschaft und Erforschung für Warpantriebe frei.</LocalizationPair>
+  
+  <LocalizationPair Name="%EmptyTooltipOverride"></LocalizationPair>  <!-- good old bodge, don't delete-->
+
+  <LocalizationPair Name="%ClassModuleSupportAndHeroShipOnlyTitle">Kann nur auf [hero]- oder [support]- Schiffen installiert werden</LocalizationPair>
+  <LocalizationPair Name="%HeroSkillMultiplierOverride">+1 auf Moduleffekt-Multiplikator auf [hero]- Schiff</LocalizationPair>
+   
+  <LocalizationPair Name="%HeroSkill105_FIDSI_PerHeroLevel_Title_02">Autorität der Endless</LocalizationPair>
+  <LocalizationPair Name="%HeroSkill105_FIDSI_PerHeroLevel_Description_02">Durch die reine Energie der charismatischen Ausstrahlung und Persönlichkeit, die auf seinem unerschütterlichen Glauben ruht, schart der Held - als einer der wenigen Überlebenden Endless - das gesamte Reich mit beeindruckenden, Gänsehaut hervorrufenden Ansprachen, um sich.</LocalizationPair>
+  <LocalizationPair Name="%HeroSkill01BranchGenericPolitics01_Title">Ziviles Ingenieurwesen</LocalizationPair>
+  <LocalizationPair Name="%HeroSkill01BranchGenericPolitics01_Description">Industrielle Helden sind bekannt dafür, dass sie in der Lage sind, die lokale Produktion zu steigern, und es scheint, dass dieser Held dem Klischee in besonderem Maße entspricht.</LocalizationPair>
+  <LocalizationPair Name="%HeroSkill02BranchGenericPolitics01_Title">Effizientes Schulwesen</LocalizationPair>
+  <LocalizationPair Name="%HeroSkill02BranchGenericPolitics01_Description">Dieser Held, der in den Ingenieurwissenschaften sehr versiert ist, überwacht die Instandsetzung der Schiffe seiner Flotte höchstpersönlich, um eventuelle Schwachstellen in ihren Rümpfen zu beseitigen. In seiner Freizeit schreibt der Held auch Lehrbücher, um den zukünftigen Generationen beizubringen, wie man die strukturelle Integrität optimiert, was zu einer Senkung der Reparaturkosten im ganzen Reich führt.</LocalizationPair>
+  <LocalizationPair Name="%HeroSkill01BranchGenericPolitics02_Title">Wirtschaftswissenschaftliche Partnerschaft</LocalizationPair>
+  <LocalizationPair Name="%HeroSkill01BranchGenericPolitics02_Description">Der Held leitet eine Werbekampagne für die Integration von neuronalen Implantaten in das Gehirn der jungen Studenten vor Ort, die ihnen eine nahezu sofortige und dauerhafte Einprägung aller Informationen ermöglicht, derer sie habhaft werden. Das Resultat ist ein Anstieg der Wissenschaft im gesamten System.</LocalizationPair>
+  <LocalizationPair Name="%HeroSkill02BranchGenericPolitics02_Title">Einsichten</LocalizationPair>
+  <LocalizationPair Name="%HeroSkill02BranchGenericPolitics02_Description">Der wissenshungrige Held analysiert alle Kampfdaten, auf die er Zugriff hat, um die Verteidigungsfähigkeiten seiner Flotte zu optimieren. Als führender Politiker im Senat bittet er auch jeden Einzelnen im Imperium um detaillierte Berichte.</LocalizationPair>
+  <LocalizationPair Name="%HeroSkill01BranchGenericPolitics03_Title">Motivations-Coach</LocalizationPair>
+  <LocalizationPair Name="%HeroSkill01BranchGenericPolitics03_Description">Der Held nutzt seine nahezu hypnotischen, durch Dust verstärkten Fähigkeiten, um lokale Unternehmer vom Nutzen der Luxusressourcen zu überzeugen, was zu höheren Erträgen im System führt.</LocalizationPair>
+  <LocalizationPair Name="%HeroSkill02BranchGenericPolitics03_Title">Kooperationen</LocalizationPair>
+  <LocalizationPair Name="%HeroSkill02BranchGenericPolitics03_Description">Der Held setzt seine Überzeugungskraft bei Kriegsgefangenen ein, in der Hoffnung, politischen Einfluss gegen gemeinsame Feinde zu gewinnen.</LocalizationPair>
+  <LocalizationPair Name="%HeroSkill01BranchGenericPolitics04_Title">Agrargenetiker</LocalizationPair>
+  <LocalizationPair Name="%HeroSkill01BranchGenericPolitics04_Description">Indem er sein umfangreiches Wissen über Pflanzengenetik mit den Bauern vor Ort teilt, ist der Held in der Lage, die Nahrungsmittelproduktion deutlich zu steigern.</LocalizationPair>
+  <LocalizationPair Name="%HeroSkill02BranchGenericPolitics04_Title">Robuste Konstitution</LocalizationPair>
+  <LocalizationPair Name="%HeroSkill02BranchGenericPolitics04_Description">Die persönliche Überwachung der Ernährung jedes anderen durch Dust aufgewerteten Individuums im Imperium führt zu einer geringeren Ausfallzeit von Helden nach einer Verletzung. Der Held optimiert auch die Lebensmittelproduktionsanlagen an Bord seiner Flotte, die er benötigt, um die Armeen der Bodeninvasion während ihrer langen Reisen zu ernähren.</LocalizationPair>
+  <LocalizationPair Name="%HeroSkill01BranchGenericPolitics05_Title">Ministerium für Propaganda</LocalizationPair>
+  <LocalizationPair Name="%HeroSkill01BranchGenericPolitics05_Description">Ein neues Ministerium unter der Leitung des Helden wird geschaffen. Sein Ziel: die Massen davon zu überzeugen, dass es sie glücklicher macht, wenn sie zu Mäzenen ihrer lokalen religiösen Organisationen werden.</LocalizationPair>
+  <LocalizationPair Name="%HeroSkill02BranchGenericPolitics05_Title">Dust-Fuchs</LocalizationPair>
+  <LocalizationPair Name="%HeroSkill02BranchGenericPolitics05_Description">Durch die regelmäßige Erstellung von Raumschiffattrappen aus Dustwolken ist der Held in der Lage, die feindlichen Zielsysteme zu täuschen und so die Überlebensfähigkeit seiner Flotte zu erhöhen. Nach der Schlacht helfen die Dustwolken auch bei den Reparaturen der vorbeiziehenden Flotte und verringern deren Unterhalt.</LocalizationPair>
+  <LocalizationPair Name="%HeroSkill01BranchGenericPolitics06_Title">Bodenschlacht-Experte</LocalizationPair>
+  <LocalizationPair Name="%HeroSkill01BranchGenericPolitics06_Description">Die beste Verteidigung ist der Angriff. Der Held nutzt diese Doktrin, um die Chancen zu erhöhen, die defensiven Bodenschlachten, an denen er teilnimmt, zu gewinnen.</LocalizationPair>
+  <LocalizationPair Name="%HeroSkill02BranchGenericPolitics06_Title">Abschirmbunker</LocalizationPair>
+  <LocalizationPair Name="%HeroSkill02BranchGenericPolitics06_Description">Als Führer der Partei versucht der Held, den Nutzen von Notschutzeinrichtungen im gesamten Reich zu fördern. Um seinen Standpunkt weiter zu untermauern, installiert er auch dustkontrollierte Schutzbunker bei den Waffensystemen seiner Flotte, um deren Ausfallzeiten zu verringern, wenn sie unter Beschuss geraten.</LocalizationPair>
+  <LocalizationPair Name="%HeroSkillSystem_Admiral08_1_Title">Sicherheits-Spezialist</LocalizationPair>
+  <LocalizationPair Name="%HeroSkillSystem_Admiral08_1_Description">Planeten unter der Führung von Wächtern gehören zu den sichersten Orten in der Galaxie. Da sie detaillierte Aufzeichnungen über jedes lebensfähige Individuum führen, ist der Held in der Lage, bei einem Angriff auf das System schnell eine unübertroffene Verteidigung zu organisieren.</LocalizationPair>
+  <LocalizationPair Name="%HeroSkill107_FleetDefense_Percent_Description">Das äußere Erscheinungsbild der Flotte eines Aufseher-Helden ist immer akribisch. Indem der Held ein wenig von seinem Ermessensbudget für robuste Schutzwände und Reflexionsanstriche ausgibt, erhöht er sogar die Effektivität der Flotte auch im Kampf.</LocalizationPair>
+  <LocalizationPair Name="%HeroSkill09BranchCorporate_Title">Gerechtigkeitskultur</LocalizationPair>
+  <LocalizationPair Name="%HeroSkill09BranchCorporate_Description">Der Berater Held führt in seiner Flotte ein System der Gerechtigkeitskultur ein, um sicherzustellen, dass die Besatzungsmitglieder Probleme melden, sobald sie auftreten, und um sicherzustellen, dass sie wirksam eingedämmt werden. Kleine Schiffe profitieren am meisten von dieser Maßnahme.</LocalizationPair>
+  <LocalizationPair Name="%HeroSkill11_TroopBonus_Perpop_Description">Für die eusozialen Arten ist die Gesundheit des gesamten Superorganismus von höchster Bedeutung. Schwache Individuen werden abgelehnt. Als solcher hat der Held keinen Platz für Besatzungsmitglieder, die nicht in Topform sind.</LocalizationPair>
+	   
+  <LocalizationPair Name="%PlanetImprovementResource3Title">Kompakte selbstabbauende PNO</LocalizationPair>
+  <LocalizationPair Name="%PlanetImprovementResource3Description">Auf der Grundlage der früheren Raketenkonstruktion wurde durch die Reduzierung der Größe und Masse der Bergbaukomponenten eine größere Reichweite realisiert. Es ist nun möglich, noch mehr Himmelskörper auszubeuten.</LocalizationPair>
+	
+  <LocalizationPair Name="%StarSystemImprovementCuriosity3">+15 [happinessColored] wenn Vorkommen von Luxusressourcen im System</LocalizationPair>
+  <LocalizationPair Name="%StarSystemImprovementCuriosity3Hissho">+7 [prestigeColored] wenn Vorkommen von Luxusressourcen im System</LocalizationPair>
+	
+  <LocalizationPair Name="%StarSystemImprovementApproval6Title">Freiheit des Körpers</LocalizationPair>
+  <LocalizationPair Name="%StarSystemImprovementApproval6Description">Tradition, Religion und soziale Sitten neigen dazu, die Evolution des Körpers und die physische Veränderung des Organismus eines Individuums streng zu kontrollieren. Aus einer enormen Anzahl von Gründen (politischer, wirtschaftlicher und praktischer Art) neigen Regierungen jedoch immer mehr dazu, Individuen ihre physische Struktur durch Augmentationen, Transplantationen, Klone, Implantationen, Tätowierungen, elektronische Ätzungen und andere Veränderungen frei verändern zu lassen.</LocalizationPair>
+  <LocalizationPair Name="%StarSystemImprovementApproval7Title">Unbefristeter Urlaub</LocalizationPair>
+  <LocalizationPair Name="%StarSystemImprovementApproval7Description">Was passiert, wenn die Gesellschaft so weit fortgeschritten ist, dass alle Grundbedürfnisse durch automatisierte und unverwüstliche Systeme befriedigt werden? Arbeit wird zu einer Option, und die größte Herausforderung ist die effektive Nutzung der Freizeit.</LocalizationPair>
+  <LocalizationPair Name="%StarSystemImprovementApproval8Title">Unbegrenzte Informationswege</LocalizationPair>
+  <LocalizationPair Name="%StarSystemImprovementApproval8Description">Kriege zwischen Inhaltsschöpfern, Infrastruktureigentümern, Endnutzern, Regierungen und Unternehmen haben der Fähigkeit, eine Gesellschaft zu vernetzen, viel von ihrem Wert genommen. Durch den Aufbau eines offenen Zugangs zu Quellen für Forschung, Unterhaltung und Nachrichten aus dem ganzen Universum geht ein Boom in der Nutzung von Informationen mit einem Boom in der öffentlichen Meinungsbildung einher.</LocalizationPair>
+	
+  <LocalizationPair Name="%fakeforguiEmpire">Imperium</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementHappinessOnHotDescription">Die Allzeit-Klimatisierung nutzt fortschrittliche Thermodynamik und effiziente Energiequellen, um das tägliche Leben der Bewohner von brennenden Planeten angenehmer zu gestalten. Sie behalten die Vorteile von klarem Wetter, großartigen Stränden und dem Leben im Freien, während sie trotzdem in der Lage sind, sich zu erfrischen, wann immer sie wollen.</LocalizationPair>
+  <LocalizationPair Name="%SophonsQuest-Chapter1Alt-C2ObjectiveTooltip">Möglicherweise müssen Sie mehr Wissenschafts- und Erkundungstechnologien erforschen, um Warpantriebe freizuschalten, die Reisen außerhalb der Sternenbahnen ermöglichen.</LocalizationPair>
+  <LocalizationPair Name="%SophonsQuest-Chapter1-C2ObjectiveTooltip">Verwenden Sie Sonden, um neue Konstellationen zu entdecken. Erforschen Sie weitere Wissenschafts- und Erkundungstechnologien, um Warpantriebe freizuschalten, die Reisen außerhalb der Sternenbahnen ermöglichen. Unentdeckte isolierte Knoten könnten sich noch in Ihrem Systembereich befinden.</LocalizationPair>
+
+  <LocalizationPair Name="%EconomyNoBranchesTitle">Dieses Hauptquartier ist nicht in der Lage, eine Route zu Ihrer Niederlassung zu berechnen.</LocalizationPair>
+  <LocalizationPair Name="%UniquePlanetQuest-Chapter1-Choice01ObjectiveTooltip">Andere Konstellationen können mit Sonden und einigen Quests oder Ereignissen oder durch das Erschließen von Wurmlöchern gefunden werden.</LocalizationPair>
+	   
+  <LocalizationPair Name="%StarSystemImprovementFood7Title">Kompakte Kühlsysteme</LocalizationPair>
+  <LocalizationPair Name="%StarSystemImprovementFood7Description">Die Beherrschung der zunehmend miniaturisierten Thermodynamik erlaubt die Schaffung von Wärmeaustauschsystemen, die klein genug sind, um in fast jeden Gegenstand zu passen. Mit diesen Technologien wird das Risiko des Verderbens von Lebensmitteln im Wesentlichen auf Null reduziert.</LocalizationPair>
+  <LocalizationPair Name="%StarSystemImprovementFood8Title">Dauerhafte Pflanzenkulturen</LocalizationPair>
+  <LocalizationPair Name="%StarSystemImprovementFood8Description">Nutzpflanzen sind nicht mehr als die Pflanzen erkennbar, aus denen sie entstanden sind. Nanoveränderte und gentechnisch modifizierte, gesunde und unsterbliche Pflanzen sind Lebensmittelfabriken, die das ganze Jahr über und unabhängig vom Wetter betrieben werden. Kontinuierlich geerntet, selbstbefruchtend und selbstregulierend, wird der Nahrungsvorrat einfach nie zur Neige gehen.</LocalizationPair>
+  <LocalizationPair Name="%StarSystemImprovementFood9Title">Verschwendungsfreie Versorgungskette</LocalizationPair>
+  <LocalizationPair Name="%StarSystemImprovementFood9Description">Transport- und Kühltechnologien, die an die Überwachung von Lebenswandel und Verhaltensanalysen gebunden sind, sorgen dafür, dass die 30-40% der Nahrungsmittel, die normalerweise verschwendet oder weggeworfen werden, auch weiterhin für den Verzehr geeignet sind. Es handelt sich um ein unglaublich komplexes System, das dennoch eine enorme Steigerung der Nahrungsmittelverfügbarkeit bewirkt.</LocalizationPair>
+  <LocalizationPair Name="%StarSystemImprovementIndustry7Title">Raffinerien für schwere Isotope</LocalizationPair>
+  <LocalizationPair Name="%StarSystemImprovementIndustry7Description">Die Entwicklung der N-fach-Fusionstechnologie ermöglicht die Schaffung und Nutzung stabiler und billigerer Brennstoffe, wodurch die industrielle Produktion gesteigert wird.</LocalizationPair>
+  <LocalizationPair Name="%StarSystemImprovementIndustry8Title">Flexible industrielle Systeme</LocalizationPair>
+  <LocalizationPair Name="%StarSystemImprovementIndustry8Description">Auf der Ebene der rudimentären Endless-Technologie ist die industrielle Basis des Systems nun intelligent, selbstanpassend, nachhaltig und autonom geworden.</LocalizationPair>
+  <LocalizationPair Name="%StarSystemImprovementIndustry9Title">Selbstorganisierte Städte</LocalizationPair>
+  <LocalizationPair Name="%StarSystemImprovementIndustry9Description">Die Züge ändern ihre Fahrpläne, um bei Bedarf anzukommen. Überfüllte Gebäude lassen zusätzliche Stockwerke wachsen. Fenster passen sich an, um das Umgebungslicht zu optimieren. Systeme, die mit Sauerstoff und Schadstoffen umgehen, skalieren je nach Tageszeit, Jahreszeit und langfristigen Trends nach oben und unten. Mit ausreichend fortgeschrittenen KI-Systemen und selbstorganisierenden Materialien ist die sich automatisch entwickelnde Stadt jetzt Realität.</LocalizationPair>
+  <LocalizationPair Name="%StarSystemImprovementIndustry10Title">Mondmassen-Treiber</LocalizationPair>
+  <LocalizationPair Name="%StarSystemImprovementIndustry10Description">Die Konstruktion eines Massenantriebs auf nahegelegenen atmosphärenlosen Mondkörpern ermöglicht einen kostengünstigen und effizienten Weg, lokal geerntete Rohstoffe über das System zu transferieren.</LocalizationPair>
+  <LocalizationPair Name="%StarSystemImprovementIndustry10HoratioTitle">Horatios "Lunar Industries"</LocalizationPair> <!--this is a Moon (2009) reference, hopefully it doesn't get lost in translation-->
+  <LocalizationPair Name="%StarSystemImprovementIndustry10HoratioDescription">Auf nahegelegenen Mondkörpern befinden sich hochautomatisierte Erntenanlagen, die nur einen einzigen Klon benötigen, um ordnungsgemäß betrieben zu werden. Anstatt sie zu entlohnen, werden die Klone nach ihren Dreijahresverträgen aufgelöst und durch neue ersetzt, um die Kosteneffizienz zu maximieren.</LocalizationPair>
+  <LocalizationPair Name="%StarSystemImprovementDust8Title">Weltraumlift</LocalizationPair>
+  <LocalizationPair Name="%StarSystemImprovementDust8Description">Als Teil eines langfristigen Investitionsprogramms in die Infrastruktur ist die Schaffung von Weltraumaufzügen im gesamten System, die Güter und Menschen vom Planeten in die Umlaufbahn befördern, ein durchschlagender Erfolg. Ohne Schlüsselmaterialien und -techniken, die von anderen Gesellschaften übernommen wurden, wäre dies nicht möglich gewesen.</LocalizationPair>
+  <LocalizationPair Name="%StarSystemImprovementDust9Title">Luxusressourcen im Überfluss</LocalizationPair>
+  <LocalizationPair Name="%StarSystemImprovementDust9Description">Handels- und Industriesysteme stellen Luxusgüter auf so effiziente und kostengünstige Weise zur Verfügung, dass die Fraktion nun in der Lage ist, zu exportieren, zu verkaufen und anderweitig von einem boomenden Luxushandel zu profitieren. Angesichts früherer Einschränkungen durch Knappheit und verfügbares Einkommen war dies nie zuvor möglich.</LocalizationPair>
+  <LocalizationPair Name="%StarSystemImprovementDust10Title">Weltall-Dusternteanlage</LocalizationPair>
+  <LocalizationPair Name="%StarSystemImprovementDust10Description">Ob es sich um den Fallout einer Dust Nova oder den Effekt einer Endlesskonstruktion handelt, niemand versteht wirklich, woher diese Duststürme im den Tiefen des Weltraums kommen, aber eines ist sichert: Es ist möglich, unglaublich reich zu werden, indem man diese seltsamen Phänomene aberntet.</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementFood1Title">Hydrosequenzverfahren</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementFood1Description">Die Fähigkeit, einzelne Wassermoleküle durch den Wasserkreislauf zu verfolgen, liefert ein detailliertes Gesamtbild von Absorption, Verdunstung und Niederschlag auf jedem Planeten. Eine Goldmine von Daten wird produziert, die die Landwirtschaft im ganzen Reich revolutioniert.</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementInfluence1Title">Alien Soziologie</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementInfluence1Description">Die Analyse der Organisation fremder Gesellschaften und ihrer Werte liefert wichtige Einblicke in ihre Regeln und Bräuche, um fremde Botschafter nicht zu beleidigen, was bei diplomatischen Anliegen ungemein hilfreich ist.</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementScience1Title">Planetarisches Institut</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementScience1Description">Durch fortschrittliche Manipulation von Partikeln, die eine Nachbildung der Atmosphärenforschung im Labor ermöglichen, ist es einfach, eine detaillierte Studie der Atmosphäre und Geologie durchzuführen, um die einzigartigen Eigenschaften eines Planeten zu nutzen.</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementScience2Title">"In-vitro" Anomalien</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementScience2Description">Die Wissenschaft ist an einem Punkt angelangt, an dem Anomalien unter Laborbedingungen nachgebildet und untersucht werden können. Zu den untersuchten Anomalien gehören Schwarze Löcher, Entropie, Sterne und Dunkle Materie.</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementScience3Title">Nicht-Baryonische Schale</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementScience3Description">Ein verbessertes Verständnis von ungewöhnlichen Partikeln und Gravitationswechselwirkungen ermöglicht die systemweite Errichtung von Schutzfeldern, die planetarische Infrastrukturen stabilisieren. Durch die Vermeidung unerwünschter Interferenzen durch nicht-baryonische Strahlung und Partikelstösse werden Risiko- und Zufallselemente aus industriellen Prozessen entfernt. Infolgedessen werden sie zuverlässiger, vorhersehbarer und ertragreicher.</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementDust1Title">Totale Optionsbörse</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementDust1Description">Früher war der Optionshandel eine einfache, wenn auch technische Berechnung auf der Grundlage von Black-Scholes und ähnlichen Preismodellen. Mit der Einbeziehung relativistischer und nicht-relativistischer Rahmenbedingungen werden diese Berechnungen jedoch ungeheuer komplex; jedes Sternensystem, das in der Lage ist, die hochentwickelten Rechen- und Handelssysteme aufzubauen, die für den Handel mit diesen Optionen erforderlich sind, gewinnt erhebliche Vorteile.</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementDust2Title">Revenue Zen</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementDust2Description">Die wertvollste Substanz im Universum ist letztlich Dust. Wenn die Komplexität des pan-galaktischen Handels und Finanzwesens gemeistert ist, besteht der letzte Schritt zur Maximierung von Einnahmen und Wert darin, die Tatsache auszunutzen, dass die Währung des bekannten Universums lebendig und intelligent ist und die Grenze zwischen einer Ware oder Dienstleistung und ihrer Bezahlung immer fließender wird. Sobald die grundlegende Natur der Existenz des Dusts als Währung und Gut, als Theorie und Technologie, gemeistert ist, kann ein Zustand des Revenue Zen erreicht werden.</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementDust3Title">Automatisierte Investitionsüberwachung</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementDust3Description">Die Anwendung fortschrittlicher KI-Routinen auf individuelle und unternehmerische Entscheidungen über die Verwendung von Finanzmitteln ist überraschend leistungsfähig. Durch das Ausbalancieren so unterschiedlicher Faktoren wie Wetter, Rohstoffpreise, Immobilientrends und politischer Trends kann Geld so ausgegeben werden, dass eine "perfekte" Kapitalrendite erzielt wird.</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementDust4Title">Quanten-Informationsaustausch</LocalizationPair>
+  <LocalizationPair Name="%EmpireImprovementDust4Description">Das wertvollste Gut in der fortgeschrittenen Gesellschaft ist die Information. Letztendlich überwiegt der Wert des Wissens, wann, wo und für wie viel man eine Ware oder Dienstleistung verkauft, den Wert der Sache selbst. Mit der Entwicklung von Börsen, die Informationen mit quantenmechanischer Geschwindigkeit weitergeben, ist der Mythos des "perfekten Wissens" in der Wirtschaft nun Wirklichkeit geworden.</LocalizationPair>
+
+  <LocalizationPair Name="%DiplomaticInteractionEscalationPlayerDisregardedTresspassUltimatumUmbralChoir">Kreatur, es scheint, wir müssen unsere Beziehungen wieder deutlich abkühlen lassen. Ihre anhaltenden Einmischungen und das Ignorieren unserer Appelle, können nicht unbeantwortet bleiben.</LocalizationPair> <!-- vanilla bugfix for the tooltip name being wrong-->
+	
+	
+  <LocalizationPair Name="%SystemFIDSIFromEmpireImprovementScience1">+35 [FIDS] auf: Systeme</LocalizationPair>
+  <LocalizationPair Name="%SystemFIDSIFromEmpireImprovementScience3">+2.5% [FIDS] pro Systemstufe auf: Systeme</LocalizationPair>
+  <LocalizationPair Name="%TooltipOverrideStarSystemImprovementUniqueStartingImprovement">+3 [FIDSI] pro [Population]</LocalizationPair>
+  <LocalizationPair Name="%TooltipOverrideStarSystemImprovementFIDSI1">+5 [FIDSI] pro [Population]</LocalizationPair>
+  <LocalizationPair Name="%TooltipOverrideStarSystemImprovementFIDSI2">+20% [FIDSI]</LocalizationPair>
+  <LocalizationPair Name="%TooltipOverrideBuildingStarSystemImprovementWonder4">+6 [FIDSI] pro [Population]</LocalizationPair>
+  <LocalizationPair Name="%TooltipOverrideStarSystemImprovementVictoryWonder1">+8 [FIDSI] pro [Population]</LocalizationPair>
+
+  <LocalizationPair Name="%TooltipOverrideStarSystemImprovementLevel2">+2 [FIDSI] pro [Population]</LocalizationPair>
+  <LocalizationPair Name="%TooltipOverrideStarSystemImprovementLevel3">+2 [FIDSI] pro [Population]</LocalizationPair>
+  <LocalizationPair Name="%TooltipOverrideStarSystemImprovementLevel4">+4 [FIDSI] pro [Population]</LocalizationPair>
+	
+  <LocalizationPair Name="%TooltipOverrideEmpireImprovementDust1_1">+40% [dustColored] auf: Stufe 4 Systeme</LocalizationPair>
+  <LocalizationPair Name="%TooltipOverrideEmpireImprovementDust1_2">+20% [dustColored] auf: Stufe 3 Systeme</LocalizationPair>
+  <LocalizationPair Name="%TooltipOverrideEmpireImprovementDust1_3">+10% [dustColored] auf: Stufe 2 Systeme</LocalizationPair>
+  <LocalizationPair Name="%TooltipOverrideEmpireImprovementDust1_4">+5% [dustColored] auf: Stufe 1 Systeme</LocalizationPair>
+	
+  <LocalizationPair Name="%TooltipOverrideEmpireImprovementInfluence1">+20% Diplomatischer Druck</LocalizationPair>
+</Datatable>

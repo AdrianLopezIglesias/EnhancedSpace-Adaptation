@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+
+    
+	<SimulationDescriptor Name="FactionTraitInimical" Type="FactionTrait"> <!--Biophobic-->
+      <!--Biophobic-->
+
+      <!-- monsoon, atoll  2 happiness > -2-->
+      <BinaryModifier  TargetProperty="Happiness"  Operation="Addition" Left="-4" BinaryOperation="Multiplication" Right="$(MajorPopulationCount)"    Path="ClassEmpire/ClassColonizedStarSystem/PlanetTypeMonsoon" SearchValueFromPath="true"  />
+      <BinaryModifier  TargetProperty="Happiness"  Operation="Addition" Left="-4" BinaryOperation="Multiplication" Right="$(MajorPopulationCount)"    Path="ClassEmpire/ClassColonizedStarSystem/PlanetTypeAtoll"   SearchValueFromPath="true"  />
+    
+      <!-- jungle, ocean 5 happiness > -5 -->
+      <BinaryModifier  TargetProperty="Happiness"  Operation="Addition" Left="-10" BinaryOperation="Multiplication" Right="$(MajorPopulationCount)"    Path="ClassEmpire/ClassColonizedStarSystem/PlanetTypeJungle"  SearchValueFromPath="true"  />
+      <BinaryModifier  TargetProperty="Happiness"  Operation="Addition" Left="-10" BinaryOperation="Multiplication" Right="$(MajorPopulationCount)"    Path="ClassEmpire/ClassColonizedStarSystem/PlanetTypeOcean"   SearchValueFromPath="true"  />
+
+      <!-- forrest, terran 8 happiness > -8 -->
+      <BinaryModifier  TargetProperty="Happiness"  Operation="Addition" Left="-16" BinaryOperation="Multiplication" Right="$(MajorPopulationCount)"   Path="ClassEmpire/ClassColonizedStarSystem/PlanetTypeForest"  SearchValueFromPath="true"  />
+      <BinaryModifier  TargetProperty="Happiness"  Operation="Addition" Left="-16" BinaryOperation="Multiplication" Right="$(MajorPopulationCount)"   Path="ClassEmpire/ClassColonizedStarSystem/PlanetTypeTerran"  SearchValueFromPath="true"  />
+
+      <!-- Boreal, veldt, snow -2 happiness > +2 -->
+      <BinaryModifier  TargetProperty="Happiness"  Operation="Addition" Left="4"   BinaryOperation="Multiplication" Right="$(MajorPopulationCount)"    Path="ClassEmpire/ClassColonizedStarSystem/PlanetTypeBoreal" SearchValueFromPath="true"  />
+      <BinaryModifier  TargetProperty="Happiness"  Operation="Addition" Left="4"   BinaryOperation="Multiplication" Right="$(MajorPopulationCount)"    Path="ClassEmpire/ClassColonizedStarSystem/PlanetTypeVeldt"  SearchValueFromPath="true"  />
+      <BinaryModifier  TargetProperty="Happiness"  Operation="Addition" Left="4"   BinaryOperation="Multiplication" Right="$(MajorPopulationCount)"    Path="ClassEmpire/ClassColonizedStarSystem/PlanetTypeSnow"   SearchValueFromPath="true"  />
+
+      <!-- Ash, Arid, ice -5 happiness > +5 -->
+      <BinaryModifier  TargetProperty="Happiness"  Operation="Addition" Left="10"  BinaryOperation="Multiplication" Right="$(MajorPopulationCount)"    Path="ClassEmpire/ClassColonizedStarSystem/PlanetTypeAsh"    SearchValueFromPath="true"  />
+      <BinaryModifier  TargetProperty="Happiness"  Operation="Addition" Left="10"  BinaryOperation="Multiplication" Right="$(MajorPopulationCount)"    Path="ClassEmpire/ClassColonizedStarSystem/PlanetTypeArid"   SearchValueFromPath="true"  />
+      <BinaryModifier  TargetProperty="Happiness"  Operation="Addition" Left="10"  BinaryOperation="Multiplication" Right="$(MajorPopulationCount)"    Path="ClassEmpire/ClassColonizedStarSystem/PlanetTypeIce"    SearchValueFromPath="true"  />
+      
+      <!-- Lava, Desert, Barren -8 happiness > +8 -->
+      <BinaryModifier  TargetProperty="Happiness"  Operation="Addition" Left="16"  BinaryOperation="Multiplication" Right="$(MajorPopulationCount)"    Path="ClassEmpire/ClassColonizedStarSystem/PlanetTypeLava"   SearchValueFromPath="true"  />
+      <BinaryModifier  TargetProperty="Happiness"  Operation="Addition" Left="16"  BinaryOperation="Multiplication" Right="$(MajorPopulationCount)"    Path="ClassEmpire/ClassColonizedStarSystem/PlanetTypeDesert" SearchValueFromPath="true"  />
+      <BinaryModifier  TargetProperty="Happiness"  Operation="Addition" Left="16"  BinaryOperation="Multiplication" Right="$(MajorPopulationCount)"    Path="ClassEmpire/ClassColonizedStarSystem/PlanetTypeBarren" SearchValueFromPath="true"  />
+
+      <!-- Gas -12 happiness > +5 -->
+      <BinaryModifier  TargetProperty="Happiness"  Operation="Addition" Left="17"  BinaryOperation="Multiplication" Right="$(MajorPopulationCount)"    Path="ClassEmpire/ClassColonizedStarSystem/PlanetGameplayTypeGas" SearchValueFromPath="true"  />
+
+    <!--<BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="2"  BinaryOperation="Multiplication" Right="$(Population)"    Path="ClassEmpire/ClassColonizedStarSystem/PlanetGameplayTypeMeager" SearchValueFromPath="true"  />-->
+    <!--<BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="-2" BinaryOperation="Multiplication" Right="$(Population)"    Path="ClassEmpire/ClassColonizedStarSystem/PlanetGameplayTypeTeeming" SearchValueFromPath="true"  />-->
+    </SimulationDescriptor>
+
+    <!--Ship Cost Price of Perfection-->
+    <SimulationDescriptor Name="FactionTraitPriceOfPerfection1"    Type="FactionTrait">
+      <Modifier TargetProperty="ShipProductionCostReduction"	Operation="Addition" Value="0.10" Path="ClassEmpire/ClassColonizedStarSystem" Priority="-5"/>
+      <Modifier TargetProperty="ColonyShipProductionCostReduction" Operation="Addition" Value="0.10" Path="ClassEmpire/ClassColonizedStarSystem" Priority="-5" TooltipHidden="true"/>
+   
+      <Modifier TargetProperty="Damage" Operation="Percent" Value="0.05" Path="ClassEmpire/ClassGarrison/ClassShip/ClassSection/ClassModule,ClassModuleWeapon"/>
+    </SimulationDescriptor>
+   
+    <SimulationDescriptor Name="FactionTraitPriceOfPerfection2"    Type="FactionTrait">
+      <Modifier TargetProperty="ShipProductionCostReduction"	Operation="Addition" Value="0.20" Path="ClassEmpire/ClassColonizedStarSystem" Priority="-5"/>
+      <Modifier TargetProperty="ColonyShipProductionCostReduction" Operation="Addition" Value="0.20" Path="ClassEmpire/ClassColonizedStarSystem" Priority="-5" TooltipHidden="true"/>
+
+      <Modifier TargetProperty="Damage" Operation="Percent" Value="0.10" Path="ClassEmpire/ClassGarrison/ClassShip/ClassSection/ClassModule,ClassModuleWeapon"/>
+    </SimulationDescriptor>
+	
+</Datatable>

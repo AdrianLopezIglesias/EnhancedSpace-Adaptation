@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../../Schemas/ModuleDefinition.xsd">
+
+    <!--#####################-->
+    <!--### SWARM MISSILE ###-->
+    <!--#####################-->
+    <WeaponModule Name="ModuleWeaponMissileSwarm1" Type="Missile" Family="MissileSwarm" Level="2">
+        <Cost ResourceName="SystemProduction">40</Cost>
+        <!-- ** START AI DATA ** -->
+        <!-- Weapons types -->
+        <AIBattleSituations Situation="ProjectileWeapon" Mode="Use" Value="1"/>
+        <!-- Armor types -->
+        <AIBattleSituations Situation="EnergyDefense" Mode="Against" Value="1"/>
+        <AIBattleSituations Situation="ProjectileDefense" Mode="Against" Value="-1"/>
+        <!-- Specific weapons -->
+        <AIBattleSituations Situation="Missile" Mode="Use" Value="1"/>
+        <AIBattleSituations Situation="Laser" Mode="Against" Value="0.5"/>
+        <AIBattleSituations Situation="Beam" Mode="Against" Value="0.75"/>
+        <!-- Ranges -->
+        <AIBattleSituations Situation="Short" Mode="Use" Value="0.25"/>
+        <AIBattleSituations Situation="Medium" Mode="Use" Value="0.5"/>
+        <AIBattleSituations Situation="Long" Mode="Use" Value="1"/>
+        <AIBattleSituations Situation="Short" Mode="Against" Value="0.25"/>
+        <AIBattleSituations Situation="Medium" Mode="Against" Value="0.5"/>
+        <AIBattleSituations Situation="Long" Mode="Against" Value="1"/>
+        <!-- ** END AI DATA ** -->
+        <!--<DownloadableContentPrerequisite Flags="Prerequisite,Edition,UnlockAvailability">Update5</DownloadableContentPrerequisite>-->
+        <TechnologyPrerequisite Flags="Edition">TechnologyStageMilitary2</TechnologyPrerequisite>
+        <PathPrerequisite Flags="Edition" Inverted="true">ClassShip,CannotHaveWeapon</PathPrerequisite>
+        <PathPrerequisite Flags="ShipHasDestructionModule,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModuleDestruction</PathPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleWeapon"/>
+        <SimulationDescriptorReference Name="ClassModuleWeaponMissileSwarm"/>
+        <SimulationDescriptorReference Name="ModuleWeaponMissileSwarm1"/>
+        <SimulationDescriptorReference Name="ClassModuleSwarmMissilesExplication"/>
+        <BattleActionReference Name="Weapon_Initialize"/>
+        <BattleActionReference Name="WeaponSwarm_Initialize"/>
+        <BattleActionReference Name="Weapon_SalvoHitFlotillaShield"/>
+        <BattleActionReference Name="Weapon_SalvoHitShipShield"/>
+        <BattleActionReference Name="Weapon_SalvoApplyShieldDamage"/>
+        <BattleActionReference Name="Weapon_SalvoLaunched"/>
+        <BattleActionReference Name="WeaponSwarm_SwarmLaunched"/>
+        <BattleActionReference Name="Weapon_SalvoPrepareHitTarget"/>
+        <BattleActionReference Name="Weapon_SalvoHitTarget"/>
+        <BattleActionReference Name="Weapon_SalvoPostHitTarget"/>
+        <BattleActionReference Name="Weapon_SalvoPostHitTarget_StatisticsRecording"/>
+        <BattleActionReference Name="WeaponMissileSwarm_SalvoPostHitTarget_StatisticsRecording"/>
+        <BattleActionReference Name="Weapon_UpdateAccuracyAfterMiss"/>
+        <AttackPathPrerequisite Inverted="true">EncounterEntityStatusDisabled</AttackPathPrerequisite>
+        <SalvoReference Name="SalvoMissileSwarm1"/>
+        <AvailableRange RangeName="Short" PenaltyPropertyName="ShortRangePenalty"/>
+        <AvailableRange RangeName="Medium" PenaltyPropertyName="MediumRangePenalty"/>
+        <AvailableRange RangeName="Long" PenaltyPropertyName="LongRangePenalty"/>
+        <TargetSortingCriterion Name="Type">
+            <ScoreModifier Name="Ship">1</ScoreModifier>
+        </TargetSortingCriterion>
+        <TargetSortingCriterion_PropertyMultiplier Name="PropertyMultiplier">
+            <ScoreModifier Name="OffensiveMilitaryPowerIfWeakestTargeting">-1</ScoreModifier>
+        </TargetSortingCriterion_PropertyMultiplier>
+        <TargetSortingCriterion Name="Role" ScoreModifiersDefaultValue="1" IgnoredWhenCheckingTargetValidity="true"/>
+        <TargetSortingCriterion_PropertyMultiplier Name="PropertyMultiplier">
+            <ScoreModifier Name="TargetersCount">-1</ScoreModifier>
+            <ScoreModifier Name="TargetingWeightBonus">1</ScoreModifier>
+        </TargetSortingCriterion_PropertyMultiplier>
+    </WeaponModule>
+
+
+    <WeaponModule Name="ModuleWeaponMissileSwarm2" Type="Missile" Family="MissileSwarm" Level="3">
+        <Cost ResourceName="SystemProduction">160</Cost>
+        <!-- ** START AI DATA ** -->
+        <!-- Weapons types -->
+        <AIBattleSituations Situation="ProjectileWeapon" Mode="Use" Value="1"/>
+        <!-- Armor types -->
+        <AIBattleSituations Situation="EnergyDefense" Mode="Against" Value="1"/>
+        <AIBattleSituations Situation="ProjectileDefense" Mode="Against" Value="-1"/>
+        <!-- Specific weapons -->
+        <AIBattleSituations Situation="Missile" Mode="Use" Value="1"/>
+        <AIBattleSituations Situation="Laser" Mode="Against" Value="0.5"/>
+        <AIBattleSituations Situation="Beam" Mode="Against" Value="0.75"/>
+        <!-- Ranges -->
+        <AIBattleSituations Situation="Short" Mode="Use" Value="0.25"/>
+        <AIBattleSituations Situation="Medium" Mode="Use" Value="0.5"/>
+        <AIBattleSituations Situation="Long" Mode="Use" Value="1"/>
+        <AIBattleSituations Situation="Short" Mode="Against" Value="0.25"/>
+        <AIBattleSituations Situation="Medium" Mode="Against" Value="0.5"/>
+        <AIBattleSituations Situation="Long" Mode="Against" Value="1"/>
+        <!-- ** END AI DATA ** -->
+        <!--<DownloadableContentPrerequisite Flags="Prerequisite,Edition,UnlockAvailability">Update5</DownloadableContentPrerequisite>-->
+        <TechnologyPrerequisite Flags="Edition">TechnologyStageMilitary4</TechnologyPrerequisite>
+        <PathPrerequisite Flags="Edition" Inverted="true">ClassShip,CannotHaveWeapon</PathPrerequisite>
+        <PathPrerequisite Flags="ShipHasDestructionModule,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModuleDestruction</PathPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleWeapon"/>
+        <SimulationDescriptorReference Name="ClassModuleWeaponMissileSwarm"/>
+        <SimulationDescriptorReference Name="ModuleWeaponMissileSwarm2"/>
+        <SimulationDescriptorReference Name="ClassModuleSwarmMissilesExplication"/>
+        <BattleActionReference Name="Weapon_Initialize"/>
+        <BattleActionReference Name="WeaponSwarm_Initialize"/>
+        <BattleActionReference Name="Weapon_SalvoHitFlotillaShield"/>
+        <BattleActionReference Name="Weapon_SalvoHitShipShield"/>
+        <BattleActionReference Name="Weapon_SalvoApplyShieldDamage"/>
+        <BattleActionReference Name="Weapon_SalvoLaunched"/>
+        <BattleActionReference Name="WeaponSwarm_SwarmLaunched"/>
+        <BattleActionReference Name="Weapon_SalvoPrepareHitTarget"/>
+        <BattleActionReference Name="Weapon_SalvoHitTarget"/>
+        <BattleActionReference Name="Weapon_SalvoPostHitTarget"/>
+        <BattleActionReference Name="Weapon_SalvoPostHitTarget_StatisticsRecording"/>
+        <BattleActionReference Name="WeaponMissileSwarm_SalvoPostHitTarget_StatisticsRecording"/>
+        <BattleActionReference Name="Weapon_UpdateAccuracyAfterMiss"/>
+        <AttackPathPrerequisite Inverted="true">EncounterEntityStatusDisabled</AttackPathPrerequisite>
+        <SalvoReference Name="SalvoMissileSwarm2"/>
+        <AvailableRange RangeName="Short" PenaltyPropertyName="ShortRangePenalty"/>
+        <AvailableRange RangeName="Medium" PenaltyPropertyName="MediumRangePenalty"/>
+        <AvailableRange RangeName="Long" PenaltyPropertyName="LongRangePenalty"/>
+        <TargetSortingCriterion Name="Type">
+            <ScoreModifier Name="Ship">1</ScoreModifier>
+        </TargetSortingCriterion>
+        <TargetSortingCriterion_PropertyMultiplier Name="PropertyMultiplier">
+            <ScoreModifier Name="OffensiveMilitaryPowerIfWeakestTargeting">-1</ScoreModifier>
+        </TargetSortingCriterion_PropertyMultiplier>
+        <TargetSortingCriterion Name="Role" ScoreModifiersDefaultValue="1" IgnoredWhenCheckingTargetValidity="true"/>
+        <TargetSortingCriterion_PropertyMultiplier Name="PropertyMultiplier">
+            <ScoreModifier Name="TargetersCount">-1</ScoreModifier>
+            <ScoreModifier Name="TargetingWeightBonus">1</ScoreModifier>
+        </TargetSortingCriterion_PropertyMultiplier>
+    </WeaponModule>
+
+
+    <WeaponModule Name="ModuleWeaponMissileSwarm3" Type="Missile" Family="MissileSwarm" Level="4">
+        <Cost ResourceName="SystemProduction">320</Cost>
+        <!-- ** START AI DATA ** -->
+        <!-- Weapons types -->
+        <AIBattleSituations Situation="ProjectileWeapon" Mode="Use" Value="1"/>
+        <!-- Armor types -->
+        <AIBattleSituations Situation="EnergyDefense" Mode="Against" Value="1"/>
+        <AIBattleSituations Situation="ProjectileDefense" Mode="Against" Value="-1"/>
+        <!-- Specific weapons -->
+        <AIBattleSituations Situation="Missile" Mode="Use" Value="1"/>
+        <AIBattleSituations Situation="Laser" Mode="Against" Value="0.5"/>
+        <AIBattleSituations Situation="Beam" Mode="Against" Value="0.75"/>
+        <!-- Ranges -->
+        <AIBattleSituations Situation="Short" Mode="Use" Value="0.25"/>
+        <AIBattleSituations Situation="Medium" Mode="Use" Value="0.5"/>
+        <AIBattleSituations Situation="Long" Mode="Use" Value="1"/>
+        <AIBattleSituations Situation="Short" Mode="Against" Value="0.25"/>
+        <AIBattleSituations Situation="Medium" Mode="Against" Value="0.5"/>
+        <AIBattleSituations Situation="Long" Mode="Against" Value="1"/>
+        <!-- ** END AI DATA ** -->
+        <!--<DownloadableContentPrerequisite Flags="Prerequisite,Edition,UnlockAvailability">Update5</DownloadableContentPrerequisite>-->
+        <TechnologyPrerequisite Flags="Edition">TechnologyStageMilitary5</TechnologyPrerequisite>
+        <PathPrerequisite Flags="Edition" Inverted="true">ClassShip,CannotHaveWeapon</PathPrerequisite>
+        <PathPrerequisite Flags="ShipHasDestructionModule,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModuleDestruction</PathPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleWeapon"/>
+        <SimulationDescriptorReference Name="ClassModuleWeaponMissileSwarm"/>
+        <SimulationDescriptorReference Name="ModuleWeaponMissileSwarm3"/>
+        <SimulationDescriptorReference Name="ClassModuleSwarmMissilesExplication"/>
+        <BattleActionReference Name="Weapon_Initialize"/>
+        <BattleActionReference Name="WeaponSwarm_Initialize"/>
+        <BattleActionReference Name="Weapon_SalvoHitFlotillaShield"/>
+        <BattleActionReference Name="Weapon_SalvoHitShipShield"/>
+        <BattleActionReference Name="Weapon_SalvoApplyShieldDamage"/>
+        <BattleActionReference Name="Weapon_SalvoLaunched"/>
+        <BattleActionReference Name="WeaponSwarm_SwarmLaunched"/>
+        <BattleActionReference Name="Weapon_SalvoPrepareHitTarget"/>
+        <BattleActionReference Name="Weapon_SalvoHitTarget"/>
+        <BattleActionReference Name="Weapon_SalvoPostHitTarget"/>
+        <BattleActionReference Name="Weapon_SalvoPostHitTarget_StatisticsRecording"/>
+        <BattleActionReference Name="WeaponMissileSwarm_SalvoPostHitTarget_StatisticsRecording"/>
+        <BattleActionReference Name="Weapon_UpdateAccuracyAfterMiss"/>
+        <AttackPathPrerequisite Inverted="true">EncounterEntityStatusDisabled</AttackPathPrerequisite>
+        <SalvoReference Name="SalvoMissileSwarm3"/>
+        <AvailableRange RangeName="Short" PenaltyPropertyName="ShortRangePenalty"/>
+        <AvailableRange RangeName="Medium" PenaltyPropertyName="MediumRangePenalty"/>
+        <AvailableRange RangeName="Long" PenaltyPropertyName="LongRangePenalty"/>
+        <TargetSortingCriterion Name="Type">
+            <ScoreModifier Name="Ship">1</ScoreModifier>
+        </TargetSortingCriterion>
+        <TargetSortingCriterion_PropertyMultiplier Name="PropertyMultiplier">
+            <ScoreModifier Name="OffensiveMilitaryPowerIfWeakestTargeting">-1</ScoreModifier>
+        </TargetSortingCriterion_PropertyMultiplier>
+        <TargetSortingCriterion Name="Role" ScoreModifiersDefaultValue="1" IgnoredWhenCheckingTargetValidity="true"/>
+        <TargetSortingCriterion_PropertyMultiplier Name="PropertyMultiplier">
+            <ScoreModifier Name="TargetersCount">-1</ScoreModifier>
+            <ScoreModifier Name="TargetingWeightBonus">1</ScoreModifier>
+        </TargetSortingCriterion_PropertyMultiplier>
+    </WeaponModule>
+
+    <!--#####################-->
+    <!--###    RAILGUN    ###-->
+    <!--#####################-->
+    <WeaponModule Name="ModuleWeaponKineticRailgun1" Type="KineticRailgun" Family="KineticRailgun" Level="3">
+        <Cost ResourceName="SystemProduction">40</Cost>
+        <!-- ** START AI DATA ** -->
+        <!-- Weapons types -->
+        <AIBattleSituations Situation="ProjectileWeapon" Mode="Use" Value="1"/>
+        <!-- Armor types -->
+        <AIBattleSituations Situation="EnergyDefense" Mode="Against" Value="1"/>
+        <AIBattleSituations Situation="ProjectileDefense" Mode="Against" Value="1"/>
+        <!-- Specific weapons -->
+        <AIBattleSituations Situation="Kinetic" Mode="Against" Value="1"/>
+        <AIBattleSituations Situation="Missile" Mode="Against" Value="0.25"/>
+        <AIBattleSituations Situation="Laser" Mode="Against" Value="0.5"/>
+        <AIBattleSituations Situation="Beam" Mode="Against" Value="0.5"/>
+        <!-- Ranges -->
+        <AIBattleSituations Situation="Short" Mode="Use" Value="1"/>
+        <AIBattleSituations Situation="Medium" Mode="Use" Value="0.5"/>
+        <AIBattleSituations Situation="Long" Mode="Use" Value="0.1"/>
+        <AIBattleSituations Situation="Short" Mode="Against" Value="1"/>
+        <AIBattleSituations Situation="Medium" Mode="Against" Value="0.5"/>
+        <AIBattleSituations Situation="Long" Mode="Against" Value="0.1"/>
+        <!-- ** END AI DATA ** -->
+        <!--<DownloadableContentPrerequisite Flags="Prerequisite,Edition,UnlockAvailability">Update5</DownloadableContentPrerequisite>-->
+        <TechnologyPrerequisite Flags="Edition">TechnologyStageMilitary2</TechnologyPrerequisite>
+        <PathPrerequisite Flags="Edition" Inverted="true">ClassShip,CannotHaveWeapon</PathPrerequisite>
+        <PathPrerequisite Flags="ShipHasDestructionModule,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModuleDestruction</PathPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleWeapon"/>
+        <SimulationDescriptorReference Name="ClassModuleWeaponKineticRailgun"/>
+        <SimulationDescriptorReference Name="ModuleWeaponKineticRailgun1"/>
+        <SimulationDescriptorReference Name="ClassModuleIgnoresDefenses"/>
+        <BattleActionReference Name="Weapon_Initialize"/>
+        <BattleActionReference Name="Weapon_SalvoLaunched"/>
+        <BattleActionReference Name="WeaponRailgun_SalvoPrepareHitTarget"/>
+        <BattleActionReference Name="Weapon_SalvoHitTarget"/>
+        <BattleActionReference Name="Weapon_SalvoPostHitTarget"/>
+        <BattleActionReference Name="Weapon_SalvoPostHitTarget_StatisticsRecording"/>
+        <BattleActionReference Name="WeaponRailgun_SalvoPostHitTarget_StatisticsRecording"/>
+        <BattleActionReference Name="Weapon_UpdateAccuracyAfterMiss"/>
+        <AttackPathPrerequisite Inverted="true">EncounterEntityStatusDisabled</AttackPathPrerequisite>
+        <SalvoReference Name="SalvoKineticRailgun1"/>
+        <AvailableRange RangeName="Short" PenaltyPropertyName="ShortRangePenalty"/>
+        <AvailableRange RangeName="Medium" PenaltyPropertyName="MediumRangePenalty"/>
+        <AvailableRange RangeName="Long" PenaltyPropertyName="LongRangePenalty"/>
+        <TargetSortingCriterion Name="Type">
+            <ScoreModifier Name="Ship">1</ScoreModifier>
+        </TargetSortingCriterion>
+        <TargetSortingCriterion_PropertyMultiplier Name="PropertyMultiplier">
+            <ScoreModifier Name="OffensiveMilitaryPowerIfWeakestTargeting">-1</ScoreModifier>
+        </TargetSortingCriterion_PropertyMultiplier>
+        <TargetSortingCriterion Name="Role" ScoreModifiersDefaultValue="1" IgnoredWhenCheckingTargetValidity="true"/>
+        <TargetSortingCriterion_PropertyMultiplier Name="PropertyMultiplier">
+            <ScoreModifier Name="TargetersCount">-1</ScoreModifier>
+            <ScoreModifier Name="TargetingWeightBonus">1</ScoreModifier>
+        </TargetSortingCriterion_PropertyMultiplier>
+    </WeaponModule>
+    
+    <WeaponModule Name="ModuleWeaponKineticRailgun2" Type="KineticRailgun" Family="KineticRailgun" Level="4">
+        <Cost ResourceName="SystemProduction">160</Cost>
+        <!-- ** START AI DATA ** -->
+        <!-- Weapons types -->
+        <AIBattleSituations Situation="ProjectileWeapon" Mode="Use" Value="1"/>
+        <!-- Armor types -->
+        <AIBattleSituations Situation="EnergyDefense" Mode="Against" Value="1"/>
+        <AIBattleSituations Situation="ProjectileDefense" Mode="Against" Value="1"/>
+        <!-- Specific weapons -->
+        <AIBattleSituations Situation="Kinetic" Mode="Against" Value="1"/>
+        <AIBattleSituations Situation="Missile" Mode="Against" Value="0.25"/>
+        <AIBattleSituations Situation="Laser" Mode="Against" Value="0.5"/>
+        <AIBattleSituations Situation="Beam" Mode="Against" Value="0.5"/>
+        <!-- Ranges -->
+        <AIBattleSituations Situation="Short" Mode="Use" Value="1"/>
+        <AIBattleSituations Situation="Medium" Mode="Use" Value="0.5"/>
+        <AIBattleSituations Situation="Long" Mode="Use" Value="0.1"/>
+        <AIBattleSituations Situation="Short" Mode="Against" Value="1"/>
+        <AIBattleSituations Situation="Medium" Mode="Against" Value="0.5"/>
+        <AIBattleSituations Situation="Long" Mode="Against" Value="0.1"/>
+        <!-- ** END AI DATA ** -->
+        <!--<DownloadableContentPrerequisite Flags="Prerequisite,Edition,UnlockAvailability">Update5</DownloadableContentPrerequisite>-->
+        <TechnologyPrerequisite Flags="Edition">TechnologyStageMilitary4</TechnologyPrerequisite>
+        <PathPrerequisite Flags="Edition" Inverted="true">ClassShip,CannotHaveWeapon</PathPrerequisite>
+        <PathPrerequisite Flags="ShipHasDestructionModule,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModuleDestruction</PathPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleWeapon"/>
+        <SimulationDescriptorReference Name="ClassModuleWeaponKineticRailgun"/>
+        <SimulationDescriptorReference Name="ModuleWeaponKineticRailgun2"/>
+        <SimulationDescriptorReference Name="ClassModuleIgnoresDefenses"/>
+        <BattleActionReference Name="Weapon_Initialize"/>
+        <BattleActionReference Name="Weapon_SalvoLaunched"/>
+        <BattleActionReference Name="WeaponRailgun_SalvoPrepareHitTarget"/>
+        <BattleActionReference Name="Weapon_SalvoHitTarget"/>
+        <BattleActionReference Name="Weapon_SalvoPostHitTarget"/>
+        <BattleActionReference Name="Weapon_SalvoPostHitTarget_StatisticsRecording"/>
+        <BattleActionReference Name="WeaponRailgun_SalvoPostHitTarget_StatisticsRecording"/>
+        <BattleActionReference Name="Weapon_UpdateAccuracyAfterMiss"/>
+        <AttackPathPrerequisite Inverted="true">EncounterEntityStatusDisabled</AttackPathPrerequisite>
+        <SalvoReference Name="SalvoKineticRailgun2"/>
+        <AvailableRange RangeName="Short" PenaltyPropertyName="ShortRangePenalty"/>
+        <AvailableRange RangeName="Medium" PenaltyPropertyName="MediumRangePenalty"/>
+        <AvailableRange RangeName="Long" PenaltyPropertyName="LongRangePenalty"/>
+        <TargetSortingCriterion Name="Type">
+            <ScoreModifier Name="Ship">1</ScoreModifier>
+        </TargetSortingCriterion>
+        <TargetSortingCriterion_PropertyMultiplier Name="PropertyMultiplier">
+            <ScoreModifier Name="OffensiveMilitaryPowerIfWeakestTargeting">-1</ScoreModifier>
+        </TargetSortingCriterion_PropertyMultiplier>
+        <TargetSortingCriterion Name="Role" ScoreModifiersDefaultValue="1" IgnoredWhenCheckingTargetValidity="true"/>
+        <TargetSortingCriterion_PropertyMultiplier Name="PropertyMultiplier">
+            <ScoreModifier Name="TargetersCount">-1</ScoreModifier>
+            <ScoreModifier Name="TargetingWeightBonus">1</ScoreModifier>
+        </TargetSortingCriterion_PropertyMultiplier>
+    </WeaponModule>
+    
+    <WeaponModule Name="ModuleWeaponKineticRailgun3" Type="KineticRailgun" Family="KineticRailgun" Level="5">
+        <Cost ResourceName="SystemProduction">320</Cost>
+        <!-- ** START AI DATA ** -->
+        <!-- Weapons types -->
+        <AIBattleSituations Situation="ProjectileWeapon" Mode="Use" Value="1"/>
+        <!-- Armor types -->
+        <AIBattleSituations Situation="EnergyDefense" Mode="Against" Value="1"/>
+        <AIBattleSituations Situation="ProjectileDefense" Mode="Against" Value="1"/>
+        <!-- Specific weapons -->
+        <AIBattleSituations Situation="Kinetic" Mode="Against" Value="1"/>
+        <AIBattleSituations Situation="Missile" Mode="Against" Value="0.25"/>
+        <AIBattleSituations Situation="Laser" Mode="Against" Value="0.5"/>
+        <AIBattleSituations Situation="Beam" Mode="Against" Value="0.5"/>
+        <!-- Ranges -->
+        <AIBattleSituations Situation="Short" Mode="Use" Value="1"/>
+        <AIBattleSituations Situation="Medium" Mode="Use" Value="0.5"/>
+        <AIBattleSituations Situation="Long" Mode="Use" Value="0.1"/>
+        <AIBattleSituations Situation="Short" Mode="Against" Value="1"/>
+        <AIBattleSituations Situation="Medium" Mode="Against" Value="0.5"/>
+        <AIBattleSituations Situation="Long" Mode="Against" Value="0.1"/>
+        <!-- ** END AI DATA ** -->
+        <!--<DownloadableContentPrerequisite Flags="Prerequisite,Edition,UnlockAvailability">Update5</DownloadableContentPrerequisite>-->
+        <TechnologyPrerequisite Flags="Edition">TechnologyStageMilitary5</TechnologyPrerequisite>
+        <PathPrerequisite Flags="Edition" Inverted="true">ClassShip,CannotHaveWeapon</PathPrerequisite>
+        <PathPrerequisite Flags="ShipHasDestructionModule,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModuleDestruction</PathPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleWeapon"/>
+        <SimulationDescriptorReference Name="ClassModuleWeaponKineticRailgun"/>
+        <SimulationDescriptorReference Name="ModuleWeaponKineticRailgun3"/>
+        <SimulationDescriptorReference Name="ClassModuleIgnoresDefenses"/>
+        <BattleActionReference Name="Weapon_Initialize"/>
+        <BattleActionReference Name="Weapon_SalvoLaunched"/>
+        <BattleActionReference Name="WeaponRailgun_SalvoPrepareHitTarget"/>
+        <BattleActionReference Name="Weapon_SalvoHitTarget"/>
+        <BattleActionReference Name="Weapon_SalvoPostHitTarget"/>
+        <BattleActionReference Name="Weapon_SalvoPostHitTarget_StatisticsRecording"/>
+        <BattleActionReference Name="WeaponRailgun_SalvoPostHitTarget_StatisticsRecording"/>
+        <BattleActionReference Name="Weapon_UpdateAccuracyAfterMiss"/>
+        <AttackPathPrerequisite Inverted="true">EncounterEntityStatusDisabled</AttackPathPrerequisite>
+        <SalvoReference Name="SalvoKineticRailgun3"/>
+        <AvailableRange RangeName="Short" PenaltyPropertyName="ShortRangePenalty"/>
+        <AvailableRange RangeName="Medium" PenaltyPropertyName="MediumRangePenalty"/>
+        <AvailableRange RangeName="Long" PenaltyPropertyName="LongRangePenalty"/>
+        <TargetSortingCriterion Name="Type">
+            <ScoreModifier Name="Ship">1</ScoreModifier>
+        </TargetSortingCriterion>
+        <TargetSortingCriterion_PropertyMultiplier Name="PropertyMultiplier">
+            <ScoreModifier Name="OffensiveMilitaryPowerIfWeakestTargeting">-1</ScoreModifier>
+        </TargetSortingCriterion_PropertyMultiplier>
+        <TargetSortingCriterion Name="Role" ScoreModifiersDefaultValue="1" IgnoredWhenCheckingTargetValidity="true"/>
+        <TargetSortingCriterion_PropertyMultiplier Name="PropertyMultiplier">
+            <ScoreModifier Name="TargetersCount">-1</ScoreModifier>
+            <ScoreModifier Name="TargetingWeightBonus">1</ScoreModifier>
+        </TargetSortingCriterion_PropertyMultiplier>
+    </WeaponModule>
+    
+    <!--########################-->
+    <!--### ENERGY SQUADRONS ###-->
+    <!--########################-->
+    <!--Energy Bomber-->
+    <SquadronModule Name="ModuleSquadronBomberEnergy1" Type="Bomber" Family="BomberEnergy" Level="3">
+        <Cost ResourceName="SystemProduction">80</Cost>
+        <!--AI DATA START-->
+        <AIBattleSituations Situation="EnergyWeapon" Mode="Use" Value="1"/>
+        <AIBattleSituations Situation="Bomber" Mode="Use" Value="1"/>
+        <AIBattleSituations Situation="LargeShip" Mode="Against" Value="1"/>
+        <AIBattleSituations Situation="Fighter" Mode="Against" Value="-0.5"/>
+        <AIBattleSituations Situation="Kinetic" Mode="Against" Value="-0.25"/>
+        <!--AI DATA END-->
+        <!--<DownloadableContentPrerequisite Flags="Prerequisite,Edition,UnlockAvailability">Update5</DownloadableContentPrerequisite>-->
+        <TechnologyPrerequisite Flags="Edition">TechnologyHull5</TechnologyPrerequisite>
+        <PathPrerequisite Flags="ShipHasDestructionModule,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModuleDestruction</PathPrerequisite>
+        <InterpreterPrerequisite Flags="Edition">Path(Context, @'ClassShip,ShipRoleCarrier') or Path(Context, @'ClassShip,ShipRoleMothership') or Path(Context, @'ClassShip,ShipRoleMediumSupport') or Path(Context, @'ClassShip,ShipRoleJuggernaut') or Path(Context, @'ClassShip,ShipRoleBattleship')</InterpreterPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSquadron"/>
+        <SimulationDescriptorReference Name="SquadronTypeSquadronBomber"/>
+        <SimulationDescriptorReference Name="ModuleSquadronBomberEnergy1"/>
+        <SimulationDescriptorReference Name="SquadronTypeBomberEnergy"/>
+        <SimulationDescriptorReference Name="ClassModuleMediumSupportAndCarrierShipOnly"/>
+        <!--BATTLE ACTIONS-->
+        <BattleActionReference Name="BattleActionSquadronInitialize"/>
+        <BattleActionReference Name="BattleActionSquadronInitialize_StatisticsRecording"/>
+        <BattleActionReference Name="Squadron_MatchAction_PrepareAttackShip"/>
+        <BattleActionReference Name="Squadron_MatchAction_AttackShip_HitShield"/>
+        <BattleActionReference Name="Squadron_MatchAction_AttackShip"/>
+        <BattleActionReference Name="Bomber_MatchAction_PostAttack_StatisticsRecording"/>
+        <BattleActionReference Name="Squadron_Destruction_StatisticsRecording"/>
+        <BattleActionReference Name="SquadronBomber_BattleEnd_FeedbackRemainingUnits"/>
+        <StanceSelectorReference Name="BomberStanceSelector"/>
+        <DefaultFormationReference Name="BomberFormationDefault"/>
+        <ProjectilePrefabPath>Prefabs/Game/Weapons/Projectiles/Bombers_EnergyMissile01</ProjectilePrefabPath>
+        <FlakProjectilePrefabPath>Prefabs/Game/Weapons/Projectiles/FlakKineticSquadron01</FlakProjectilePrefabPath>
+    </SquadronModule>
+
+    <SquadronModule Name="ModuleSquadronBomberEnergy2" Type="Bomber" Family="BomberEnergy" Level="5">
+        <Cost ResourceName="SystemProduction">320</Cost>
+        <!--AI DATA START-->
+        <AIBattleSituations Situation="EnergyWeapon" Mode="Use" Value="1"/>
+        <AIBattleSituations Situation="Bomber" Mode="Use" Value="1"/>
+        <AIBattleSituations Situation="LargeShip" Mode="Against" Value="1"/>
+        <AIBattleSituations Situation="Fighter" Mode="Against" Value="-0.5"/>
+        <AIBattleSituations Situation="Kinetic" Mode="Against" Value="-0.25"/>
+        <!--AI DATA END-->
+        <!--<DownloadableContentPrerequisite Flags="Prerequisite,Edition,UnlockAvailability">Update5</DownloadableContentPrerequisite>-->
+        <TechnologyPrerequisite Flags="Edition">TechnologyWeaponModule5</TechnologyPrerequisite>
+        <PathPrerequisite Flags="ShipHasDestructionModule,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModuleDestruction</PathPrerequisite>
+        <InterpreterPrerequisite Flags="Edition">Path(Context, @'ClassShip,ShipRoleCarrier') or Path(Context, @'ClassShip,ShipRoleMothership') or Path(Context, @'ClassShip,ShipRoleMediumSupport') or Path(Context, @'ClassShip,ShipRoleJuggernaut') or Path(Context, @'ClassShip,ShipRoleBattleship')</InterpreterPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSquadron"/>
+        <SimulationDescriptorReference Name="SquadronTypeSquadronBomber"/>
+        <SimulationDescriptorReference Name="ModuleSquadronBomberEnergy2"/>
+        <SimulationDescriptorReference Name="SquadronTypeBomberEnergy"/>
+        <SimulationDescriptorReference Name="ClassModuleMediumSupportAndCarrierShipOnly"/>
+        <!--BATTLE ACTIONS-->
+        <BattleActionReference Name="BattleActionSquadronInitialize"/>
+        <BattleActionReference Name="BattleActionSquadronInitialize_StatisticsRecording"/>
+        <BattleActionReference Name="Squadron_MatchAction_PrepareAttackShip"/>
+        <BattleActionReference Name="Squadron_MatchAction_AttackShip_HitShield"/>
+        <BattleActionReference Name="Squadron_MatchAction_AttackShip"/>
+        <BattleActionReference Name="Bomber_MatchAction_PostAttack_StatisticsRecording"/>
+        <BattleActionReference Name="Squadron_Destruction_StatisticsRecording"/>
+        <BattleActionReference Name="SquadronBomber_BattleEnd_FeedbackRemainingUnits"/>
+        <StanceSelectorReference Name="BomberStanceSelector"/>
+        <DefaultFormationReference Name="BomberFormationDefault"/>
+        <ProjectilePrefabPath>Prefabs/Game/Weapons/Projectiles/Bombers_EnergyMissile02</ProjectilePrefabPath>
+        <FlakProjectilePrefabPath>Prefabs/Game/Weapons/Projectiles/FlakKineticSquadron01</FlakProjectilePrefabPath>
+    </SquadronModule>
+
+    <SquadronModule Name="ModuleSquadronBomberEnergy3Strategic4" Type="Bomber" Family="BomberEnergy" Level="6">
+        <Cost ResourceName="SystemProduction">64</Cost>
+        <!--<Cost ResourceName="Strategic4" Instant="true">1</Cost>-->
+        <CustomCost ResourceName="Strategic4" Instant="true">1 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+        <!--AI DATA START-->
+        <AIBattleSituations Situation="EnergyWeapon" Mode="Use" Value="1"/>
+        <AIBattleSituations Situation="Bomber" Mode="Use" Value="1"/>
+        <AIBattleSituations Situation="LargeShip" Mode="Against" Value="1"/>
+        <AIBattleSituations Situation="Fighter" Mode="Against" Value="-0.5"/>
+        <AIBattleSituations Situation="Kinetic" Mode="Against" Value="-0.25"/>
+        <!--AI DATA END-->
+        <!--<DownloadableContentPrerequisite Flags="Prerequisite,Edition">Update5</DownloadableContentPrerequisite>-->
+        <PathPrerequisite Flags="Edition" Inverted="false">../ClassEmpire/ClassQuests,CompletedExplorationQuest18-19_A</PathPrerequisite>
+        <PathPrerequisite Flags="ShipHasDestructionModule,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModuleDestruction</PathPrerequisite>
+        <InterpreterPrerequisite Flags="Edition">Path(Context, @'ClassShip,ShipRoleCarrier') or Path(Context, @'ClassShip,ShipRoleMothership') or Path(Context, @'ClassShip,ShipRoleMediumSupport') or Path(Context, @'ClassShip,ShipRoleJuggernaut') or Path(Context, @'ClassShip,ShipRoleBattleship')</InterpreterPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSquadron"/>
+        <SimulationDescriptorReference Name="SquadronTypeSquadronBomber"/>
+        <SimulationDescriptorReference Name="ModuleSquadronBomberEnergy3Strategic4"/>
+        <SimulationDescriptorReference Name="SquadronTypeBomberEnergy"/>
+        <SimulationDescriptorReference Name="ClassModuleMediumSupportAndCarrierShipOnly"/>
+        <!--BATTLE ACTIONS-->
+        <BattleActionReference Name="BattleActionSquadronInitialize"/>
+        <BattleActionReference Name="BattleActionSquadronInitialize_StatisticsRecording"/>
+        <BattleActionReference Name="Squadron_MatchAction_PrepareAttackShip"/>
+        <BattleActionReference Name="Squadron_MatchAction_AttackShip_HitShield"/>
+        <BattleActionReference Name="Squadron_MatchAction_AttackShip"/>
+        <BattleActionReference Name="Bomber_MatchAction_PostAttack_StatisticsRecording"/>
+        <BattleActionReference Name="Squadron_Destruction_StatisticsRecording"/>
+        <BattleActionReference Name="SquadronBomber_BattleEnd_FeedbackRemainingUnits"/>
+        <StanceSelectorReference Name="BomberStanceSelector"/>
+        <DefaultFormationReference Name="BomberFormationDefault"/>
+        <ProjectilePrefabPath>Prefabs/Game/Weapons/Projectiles/Bombers_EnergyMissileStrat4</ProjectilePrefabPath>
+        <FlakProjectilePrefabPath>Prefabs/Game/Weapons/Projectiles/FlakKineticSquadron01</FlakProjectilePrefabPath>
+    </SquadronModule>
+    
+    <!--Energy Fighter-->
+    <SquadronModule Name="ModuleSquadronFighterEnergy1" Type="Fighter" Family="FighterEnergy" Level="3">
+        <Cost ResourceName="SystemProduction">80</Cost>
+        <!--AI DATA START-->
+        <AIBattleSituations Situation="EnergyWeapon" Mode="Use" Value="1"/>
+        <AIBattleSituations Situation="Fighter" Mode="Use" Value="1"/>
+        <AIBattleSituations Situation="Kinetic" Mode="Against" Value="-0.5"/>
+        <AIBattleSituations Situation="Bomber" Mode="Against" Value="1"/>
+        <AIBattleSituations Situation="Kinetic" Mode="Against" Value="-0.25"/>
+        <!--AI DATA END-->
+        <!--<DownloadableContentPrerequisite Flags="Prerequisite,Edition,UnlockAvailability">Update5</DownloadableContentPrerequisite>-->
+        <TechnologyPrerequisite Flags="Edition">TechnologyHull4</TechnologyPrerequisite>
+        <PathPrerequisite Flags="ShipHasDestructionModule,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModuleDestruction</PathPrerequisite>
+        <InterpreterPrerequisite Flags="Edition">Path(Context, @'ClassShip,ShipRoleCarrier') or Path(Context, @'ClassShip,ShipRoleMothership') or Path(Context, @'ClassShip,ShipRoleMediumSupport') or Path(Context, @'ClassShip,ShipRoleJuggernaut') or Path(Context, @'ClassShip,ShipRoleBattleship')</InterpreterPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSquadron"/>
+        <SimulationDescriptorReference Name="SquadronTypeSquadronFighter"/>
+        <SimulationDescriptorReference Name="SquadronTypeFighterEnergy"/>
+        <SimulationDescriptorReference Name="ModuleSquadronFighterEnergy1"/>
+        <SimulationDescriptorReference Name="ClassModuleMediumSupportAndCarrierShipOnly"/>
+        <!--BATTLE ACTIONS-->
+        <BattleActionReference Name="BattleActionSquadronInitialize"/>
+        <BattleActionReference Name="BattleActionSquadronInitialize_StatisticsRecording"/>
+        <BattleActionReference Name="Squadron_MatchAction_PrepareAttackShip"/>
+        <BattleActionReference Name="Squadron_MatchAction_AttackShip_HitShield"/>
+        <BattleActionReference Name="Squadron_MatchAction_AttackShip"/>
+        <BattleActionReference Name="Fighter_MatchAction_PostAttackAgainstShip_StatisticsRecording"/>
+        <BattleActionReference Name="Squadron_MatchAction_PrepareAttackOtherSquadron"/>
+        <BattleActionReference Name="Squadron_MatchAction_AttackOtherSquadron"/>
+        <BattleActionReference Name="Fighter_MatchAction_PostAttackAgainstSquadron_StatisticsRecording"/>
+        <BattleActionReference Name="Squadron_Destruction_StatisticsRecording"/>
+        <BattleActionReference Name="SquadronFighter_BattleEnd_FeedbackRemainingUnits"/>
+        <StanceSelectorReference Name="FighterStanceSelector"/>
+        <DefaultFormationReference Name="FightersFormationDefault"/>
+        <ProjectilePrefabPath>Prefabs/Game/Weapons/Projectiles/Fighters_EnergyCommon01</ProjectilePrefabPath>
+        <FlakProjectilePrefabPath>Prefabs/Game/Weapons/Projectiles/FlakKineticSquadron01</FlakProjectilePrefabPath>
+    </SquadronModule>
+    
+    <SquadronModule Name="ModuleSquadronFighterEnergy2" Type="Fighter" Family="FighterEnergy" Level="4">
+        <Cost ResourceName="SystemProduction">320</Cost>
+        <!--AI DATA START-->
+        <AIBattleSituations Situation="EnergyWeapon" Mode="Use" Value="1"/>
+        <AIBattleSituations Situation="Fighter" Mode="Use" Value="1"/>
+        <AIBattleSituations Situation="Kinetic" Mode="Against" Value="-0.5"/>
+        <AIBattleSituations Situation="Bomber" Mode="Against" Value="1"/>
+        <AIBattleSituations Situation="Kinetic" Mode="Against" Value="-0.25"/>
+        <!--AI DATA END-->
+        <!--<DownloadableContentPrerequisite Flags="Prerequisite,Edition,UnlockAvailability">Update5</DownloadableContentPrerequisite>-->
+        <TechnologyPrerequisite Flags="Edition">TechnologyWeaponModule5</TechnologyPrerequisite>
+        <PathPrerequisite Flags="ShipHasDestructionModule,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModuleDestruction</PathPrerequisite>
+        <InterpreterPrerequisite Flags="Edition">Path(Context, @'ClassShip,ShipRoleCarrier') or Path(Context, @'ClassShip,ShipRoleMothership') or Path(Context, @'ClassShip,ShipRoleMediumSupport') or Path(Context, @'ClassShip,ShipRoleJuggernaut') or Path(Context, @'ClassShip,ShipRoleBattleship')</InterpreterPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSquadron"/>
+        <SimulationDescriptorReference Name="SquadronTypeSquadronFighter"/>
+        <SimulationDescriptorReference Name="SquadronTypeFighterEnergy"/>
+        <SimulationDescriptorReference Name="ModuleSquadronFighterEnergy2"/>
+        <SimulationDescriptorReference Name="ClassModuleMediumSupportAndCarrierShipOnly"/>
+        <!--BATTLE ACTIONS-->
+        <BattleActionReference Name="BattleActionSquadronInitialize"/>
+        <BattleActionReference Name="BattleActionSquadronInitialize_StatisticsRecording"/>
+        <BattleActionReference Name="Squadron_MatchAction_PrepareAttackShip"/>
+        <BattleActionReference Name="Squadron_MatchAction_AttackShip_HitShield"/>
+        <BattleActionReference Name="Squadron_MatchAction_AttackShip"/>
+        <BattleActionReference Name="Fighter_MatchAction_PostAttackAgainstShip_StatisticsRecording"/>
+        <BattleActionReference Name="Squadron_MatchAction_PrepareAttackOtherSquadron"/>
+        <BattleActionReference Name="Squadron_MatchAction_AttackOtherSquadron"/>
+        <BattleActionReference Name="Fighter_MatchAction_PostAttackAgainstSquadron_StatisticsRecording"/>
+        <BattleActionReference Name="Squadron_Destruction_StatisticsRecording"/>
+        <BattleActionReference Name="SquadronFighter_BattleEnd_FeedbackRemainingUnits"/>
+        <StanceSelectorReference Name="FighterStanceSelector"/>
+        <DefaultFormationReference Name="FightersFormationDefault"/>
+        <ProjectilePrefabPath>Prefabs/Game/Weapons/Projectiles/Fighters_EnergyCommon02</ProjectilePrefabPath>
+        <FlakProjectilePrefabPath>Prefabs/Game/Weapons/Projectiles/FlakKineticSquadron01</FlakProjectilePrefabPath>
+    </SquadronModule>
+    
+    <SquadronModule Name="ModuleSquadronFighterEnergy3Strategic4" Type="Fighter" Family="FighterEnergy" Level="5">
+        <Cost ResourceName="SystemProduction">64</Cost>
+        <!--<Cost ResourceName="Strategic4" Instant="true">1</Cost>-->
+        <CustomCost ResourceName="Strategic4" Instant="true">1 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+        <!--AI DATA START-->
+        <AIBattleSituations Situation="EnergyWeapon" Mode="Use" Value="1"/>
+        <AIBattleSituations Situation="Fighter" Mode="Use" Value="1"/>
+        <AIBattleSituations Situation="Kinetic" Mode="Against" Value="-0.5"/>
+        <AIBattleSituations Situation="Bomber" Mode="Against" Value="1"/>
+        <AIBattleSituations Situation="Kinetic" Mode="Against" Value="-0.25"/>
+        <!--AI DATA END-->
+        <DownloadableContentPrerequisite Flags="Prerequisite,Edition">Update5</DownloadableContentPrerequisite>
+        <PathPrerequisite Flags="Edition" Inverted="false">../ClassEmpire/ClassQuests,CompletedExplorationQuest18-19_B</PathPrerequisite>
+        <PathPrerequisite Flags="ShipHasDestructionModule,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModuleDestruction</PathPrerequisite>
+        <InterpreterPrerequisite Flags="Edition">Path(Context, @'ClassShip,ShipRoleCarrier') or Path(Context, @'ClassShip,ShipRoleMothership') or Path(Context, @'ClassShip,ShipRoleMediumSupport') or Path(Context, @'ClassShip,ShipRoleJuggernaut') or Path(Context, @'ClassShip,ShipRoleBattleship')</InterpreterPrerequisite>
+        <SimulationDescriptorReference Name="ClassModuleSquadron"/>
+        <SimulationDescriptorReference Name="SquadronTypeSquadronFighter"/>
+        <SimulationDescriptorReference Name="SquadronTypeFighterEnergy"/>
+        <SimulationDescriptorReference Name="ModuleSquadronFighterEnergy3Strategic4"/>
+        <SimulationDescriptorReference Name="ClassModuleMediumSupportAndCarrierShipOnly"/>
+        <!--BATTLE ACTIONS-->
+        <BattleActionReference Name="BattleActionSquadronInitialize"/>
+        <BattleActionReference Name="BattleActionSquadronInitialize_StatisticsRecording"/>
+        <BattleActionReference Name="Squadron_MatchAction_PrepareAttackShip"/>
+        <BattleActionReference Name="Squadron_MatchAction_AttackShip_HitShield"/>
+        <BattleActionReference Name="Squadron_MatchAction_AttackShip"/>
+        <BattleActionReference Name="Fighter_MatchAction_PostAttackAgainstShip_StatisticsRecording"/>
+        <BattleActionReference Name="Squadron_MatchAction_PrepareAttackOtherSquadron"/>
+        <BattleActionReference Name="Squadron_MatchAction_AttackOtherSquadron"/>
+        <BattleActionReference Name="Fighter_MatchAction_PostAttackAgainstSquadron_StatisticsRecording"/>
+        <BattleActionReference Name="Squadron_Destruction_StatisticsRecording"/>
+        <BattleActionReference Name="SquadronFighter_BattleEnd_FeedbackRemainingUnits"/>
+        <StanceSelectorReference Name="FighterStanceSelector"/>
+        <DefaultFormationReference Name="FightersFormationDefault"/>
+        <ProjectilePrefabPath>Prefabs/Game/Weapons/Projectiles/Fighters_EnergyStrat4</ProjectilePrefabPath>
+        <FlakProjectilePrefabPath>Prefabs/Game/Weapons/Projectiles/FlakKineticSquadron01</FlakProjectilePrefabPath>
+    </SquadronModule>
+    
+</Datatable>

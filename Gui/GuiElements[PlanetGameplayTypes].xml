@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+
+    <!-- Gameplay type -->
+
+    <PlanetGameplayTypeGuiElement Name="PlanetGameplayTypeGas">
+        <Title>%PlanetGameplayTypeGasTitle</Title>
+        <Description>%PlanetGameplayTypeGasDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Atlased/PlanetGameplayTypes/PlanetGameplayTypeGas"/>
+        </Icons>
+    </PlanetGameplayTypeGuiElement>
+
+    <PlanetGameplayTypeGuiElement Name="PlanetGameplayTypeCold">
+        <Title>%PlanetGameplayTypeColdTitle</Title>
+        <Description>%PlanetGameplayTypeColdDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Atlased/PlanetGameplayTypes/PlanetGameplayTypeCold"/>
+        </Icons>
+    </PlanetGameplayTypeGuiElement>
+
+    <PlanetGameplayTypeGuiElement Name="PlanetGameplayTypeTemperate">
+        <Title>%PlanetGameplayTypeTemperateTitle</Title>
+        <Description>%PlanetGameplayTypeTemperateDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Atlased/PlanetGameplayTypes/PlanetGameplayTypeTemperate"/>
+        </Icons>
+    </PlanetGameplayTypeGuiElement>
+
+    <PlanetGameplayTypeGuiElement Name="PlanetGameplayTypeHot">
+        <Title>%PlanetGameplayTypeHotTitle</Title>
+        <Description>%PlanetGameplayTypeHotDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Atlased/PlanetGameplayTypes/PlanetGameplayTypeHot"/>
+        </Icons>
+    </PlanetGameplayTypeGuiElement>
+	
+	<PlanetGameplayTypeGuiElement Name="PlanetGameplayTypeTeeming">
+		<Title>%PlanetGameplayTypeTeemingTitle</Title>
+		<Description>%PlanetGameplayTypeTeemingDescription</Description>
+		<Icons>
+			<Icon Size="Small" Path="Bitmaps/Atlased/PlanetGameplayTypes/PlanetGameplayTypeTeeming"/>
+		</Icons>
+        <TypeTitle>%PlanetScreenPlanetGameplayTypeBiodiversityTitle</TypeTitle>
+	</PlanetGameplayTypeGuiElement>
+  
+  <PlanetGameplayTypeGuiElement Name="PlanetGameplayTypeMild">
+		<Title>%PlanetGameplayTypeMildTitle</Title>
+		<Description>%PlanetGameplayTypeMildDescription</Description>
+		<Icons>
+      <Icon Size="Small" Path="PlanetGameplayTypeMild" />
+		</Icons>
+        <TypeTitle>%PlanetScreenPlanetGameplayTypeBiodiversityTitle</TypeTitle>
+	</PlanetGameplayTypeGuiElement>
+	
+	<PlanetGameplayTypeGuiElement Name="PlanetGameplayTypeMeager">
+		<Title>%PlanetGameplayTypeMeagerTitle</Title>
+		<Description>%PlanetGameplayTypeMeagerDescription</Description>
+		<Icons>
+			<Icon Size="Small" Path="Bitmaps/Atlased/PlanetGameplayTypes/PlanetGameplayTypeMeager"/>
+		</Icons>
+        <TypeTitle>%PlanetScreenPlanetGameplayTypeBiodiversityTitle</TypeTitle>
+    </PlanetGameplayTypeGuiElement>
+
+    <PlanetGameplayTypeGuiElement Name="PlanetGameplayTypeTree">
+        <Title>%PlanetGameplayTypeTreeTitle</Title>
+        <Description>%PlanetGameplayTypeTreeDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Atlased/Affinities/AffinityGuardiansSmall"/>
+        </Icons>
+    </PlanetGameplayTypeGuiElement>
+
+    <PlanetGameplayTypeGuiElement Name="PlanetGameplayTypeLush">
+      <Title>%PlanetGameplayTypeLushTitle</Title>
+      <Description>%PlanetGameplayTypeLushDescription</Description>
+      <Icons>
+        <Icon Size="Small" Path="PlanetGameplayTypeLush"/>
+      </Icons>
+    </PlanetGameplayTypeGuiElement>
+
+    <PlanetGameplayTypeGuiElement Name="PlanetGameplayTypeWater">
+      <Title>%PlanetGameplayTypeWaterTitle</Title>
+      <Description>%PlanetGameplayTypeWaterDescription</Description>
+      <Icons>
+        <Icon Size="Small" Path="Bitmaps/Atlased/PlanetGameplayTypes/PlanetGameplayTypeWater"/>
+      </Icons>
+    </PlanetGameplayTypeGuiElement>
+
+    <PlanetGameplayTypeGuiElement Name="PlanetGameplayTypeCraggy">
+      <Title>%PlanetGameplayTypeCraggyTitle</Title>
+      <Description>%PlanetGameplayTypeCraggyDescription</Description>
+      <Icons>
+        <Icon Size="Small" Path="PlanetGameplayTypeCraggy"/>
+      </Icons>
+    </PlanetGameplayTypeGuiElement>
+
+    <PlanetGameplayTypeGuiElement Name="PlanetGameplayTypeDry">
+      <Title>%PlanetGameplayTypeDryTitle</Title>
+      <Description>%PlanetGameplayTypeDryDescription</Description>
+      <Icons>
+        <Icon Size="Small" Path="Bitmaps/Atlased/PlanetGameplayTypes/PlanetGameplayTypeDry"/>
+      </Icons>
+    </PlanetGameplayTypeGuiElement>
+
+    <PlanetGameplayTypeGuiElement Name="PlanetGameplayTypeStable">
+      <Title>%PlanetGameplayTypeStableTitle</Title>
+      <Description>%PlanetGameplayTypeStableDescription</Description>
+      <Icons>
+        <Icon Size="Small" Path="PlanetGameplayTypeStable" />
+      </Icons>
+    </PlanetGameplayTypeGuiElement>
+</Datatable>

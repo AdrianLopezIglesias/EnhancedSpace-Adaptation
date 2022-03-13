@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+   
+    <SimulationDescriptor Name="EmpireImprovementFood1"      Type="EmpireImprovement">
+        <Modifier TargetProperty="SystemGrowth" Operation="Percent" Value="0.15"  Path="ClassEmpire/ClassColonizedStarSystem" />
+    </SimulationDescriptor>
+
+   <SimulationDescriptor Name="EmpireImprovementScience1"      Type="EmpireImprovement">
+      
+      <Modifier TargetProperty="SystemFIDSIFromEmpireImprovementScience1"     Operation="Addition" Value="35"  Path="ClassEmpire/ClassColonizedStarSystem" TooltipOverride="%SystemFIDSIFromEmpireImprovementScience1"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="EmpireImprovementScience2"      Type="EmpireImprovement">
+      <Modifier TargetProperty="SystemResearch"   Operation="Percent"  Value="0.20" Path="ClassEmpire/ClassColonizedStarSystem" />
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="EmpireImprovementScience3"      Type="EmpireImprovement">
+      <BinaryModifier TargetProperty="SystemFIDSIFromEmpireImprovementScience3"     Operation="Addition" Left="0.025" BinaryOperation="Multiplication" Right="$(SystemLevel)" SearchValueFromPath="true" Path="ClassEmpire/ClassColonizedStarSystem" TooltipOverride="%SystemFIDSIFromEmpireImprovementScience3" />
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="EmpireImprovementDust1"      Type="EmpireImprovement">
+      <Modifier TargetProperty="SystemMoney" Operation="Percent" Value="0.05"  Path="ClassEmpire/ClassColonizedStarSystem,StarSystemImprovementLevel1" TooltipOverride="%TooltipOverrideEmpireImprovementDust1_1" />
+      <Modifier TargetProperty="SystemMoney" Operation="Percent" Value="0.10"  Path="ClassEmpire/ClassColonizedStarSystem,StarSystemImprovementLevel2" TooltipOverride="%TooltipOverrideEmpireImprovementDust1_2" />
+      <Modifier TargetProperty="SystemMoney" Operation="Percent" Value="0.20"  Path="ClassEmpire/ClassColonizedStarSystem,StarSystemImprovementLevel3" TooltipOverride="%TooltipOverrideEmpireImprovementDust1_3" />
+      <Modifier TargetProperty="SystemMoney" Operation="Percent" Value="0.40"  Path="ClassEmpire/ClassColonizedStarSystem,StarSystemImprovementLevel4" TooltipOverride="%TooltipOverrideEmpireImprovementDust1_4" />
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="EmpireImprovementDust2"      Type="EmpireImprovement">
+      <Modifier TargetProperty="SystemMoney" Operation="Percent" Value="0.20"  Path="ClassEmpire/ClassColonizedStarSystem" />
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="EmpireImprovementDust3"      Type="EmpireImprovement">
+      <BinaryModifier TargetProperty="SystemMoney"              Operation="Percent"  Left="0.40" BinaryOperation="Multiplication" Right="$(NumberOfTradingCompanies)" Path="ClassEmpire/ClassColonizedStarSystem" SearchValueFromPath="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="EmpireImprovementDust4"      Type="EmpireImprovement">
+      <BinaryModifier TargetProperty="SystemResearch"              Operation="Percent"  Left="0.40" BinaryOperation="Multiplication" Right="$(NumberOfTradingCompanies)" Path="ClassEmpire/ClassColonizedStarSystem" SearchValueFromPath="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="EmpireImprovementInfluence1"    Type="EmpireImprovement">
+      <Modifier TargetProperty="BasePressureMultiplier" Operation="Percent" Value="0.20" Path="../ClassEmpire/ClassDiplomacy" TooltipOverride="%TooltipOverrideEmpireImprovementInfluence1" />
+      <Modifier TargetProperty="SystemEmpirePoint"      Operation="Percent" Value="0.15"  Path="ClassEmpire/ClassColonizedStarSystem" />
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="EmpireImprovementArkShipMovement1" Type="EmpireImprovement">
+      <Modifier TargetProperty="MaximumMovement" Operation="Addition" Value="5" Path="AffinityGameplayVampirilis,ClassEmpire/ClassGarrisonFleet/ClassShip,ShipRoleMothership" />
+   </SimulationDescriptor>
+   <SimulationDescriptor Name="EmpireImprovementArkShipMovement2" Type="EmpireImprovement">
+      <Modifier TargetProperty="MaximumMovement" Operation="Addition" Value="5" Path="AffinityGameplayVampirilis,ClassEmpire/ClassGarrisonFleet/ClassShip,ShipRoleMothership" />
+   </SimulationDescriptor>
+   <SimulationDescriptor Name="EmpireImprovementArkShipMovement3" Type="EmpireImprovement">
+      <Modifier TargetProperty="MaximumMovement" Operation="Addition" Value="10" Path="AffinityGameplayVampirilis,ClassEmpire/ClassGarrisonFleet/ClassShip,ShipRoleMothership" />
+   </SimulationDescriptor>
+
+  </Datatable>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+
+
+   <SimulationDescriptor Name="EmpireImprovementFreeMovement1"       Type="EmpireImprovement">
+      <Modifier TargetProperty="FreeMovementSpeed"                Operation="Addition"    Value="0.2"    Path="ClassEmpire/ClassGarrisonFleet/ClassShip" TooltipHidden="true" />
+      <Modifier TargetProperty="BaseFreeMovementSpeed"            Operation="Addition"    Value="0.2"    Path="ClassEmpire" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="EmpireImprovementFreeMovement2"       Type="EmpireImprovement">
+      <Modifier TargetProperty="FreeMovementSpeed"                Operation="Addition"    Value="0.6"    Path="ClassEmpire/ClassGarrisonFleet/ClassShip" TooltipHidden="true" />
+      <Modifier TargetProperty="BaseFreeMovementSpeed"            Operation="Addition"    Value="0.6"    Path="ClassEmpire" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="EmpireImprovementDiplomacyBonus5Unfallen"       Type="EmpireImprovement">
+        <BinaryModifier TargetProperty="EmpireResearch" Operation="Percent" Left="0.10" BinaryOperation="Multiplication" Right="$(PeacefulRelationshipCount)" Path="ClassEmpire" ValueMustBePositive="true"/>
+        <BinaryModifier TargetProperty="EmpireMoney"    Operation="Percent" Left="0.20" BinaryOperation="Multiplication" Right="$(PeacefulRelationshipCount)" Path="ClassEmpire" ValueMustBePositive="true"/>
+    </SimulationDescriptor>
+
+   <SimulationDescriptor Name="EmpireImprovementGasImprovement" Type="EmpireImprovement">
+      <Modifier TargetProperty="MaximumPopulation"         Operation="Addition" Value="1" Path="ClassEmpire/ClassColonizedStarSystem/PlanetGameplayTypeGas" />
+      <Modifier TargetProperty="MaximumPopulation"         Operation="Addition" Value="1" Path="ClassEmpire/ClassColonizedStarSystem/PlanetSizeGasLarge" />
+      <Modifier TargetProperty="MaximumPopulation"         Operation="Addition" Value="2" Path="ClassEmpire/ClassColonizedStarSystem/PlanetSizeGasHuge" />
+   </SimulationDescriptor>
+   
+    <SimulationDescriptor Name="EmpireImprovementAutomatedShipMovement1" Type="EmpireImprovement">
+        <Modifier TargetProperty="MaximumMovement" Operation="Addition" Value="3" Path="!AffinityGameplayVampirilis,ClassEmpire/ClassGarrisonFleet/ClassShip,AutomatedShip" />
+    </SimulationDescriptor>
+    <SimulationDescriptor Name="EmpireImprovementAutomatedShipMovement2" Type="EmpireImprovement">
+        <Modifier TargetProperty="MaximumMovement" Operation="Addition" Value="3" Path="!AffinityGameplayVampirilis,ClassEmpire/ClassGarrisonFleet/ClassShip,AutomatedShip" />
+    </SimulationDescriptor>
+    <SimulationDescriptor Name="EmpireImprovementAutomatedShipMovement3" Type="EmpireImprovement">
+        <Modifier TargetProperty="MaximumMovement" Operation="Addition" Value="6" Path="!AffinityGameplayVampirilis,ClassEmpire/ClassGarrisonFleet/ClassShip,AutomatedShip" />
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="EmpireImprovementQuestVenetians08" Type="EmpireImprovement">
+      <Modifier TargetProperty="DepositValue"				Operation="Percent"		Value="1.5"			Path="ClassEmpire/ClassColonizedStarSystem/ClassPlanet/ClassResourceDeposit,ResourceTypeLuxury" />
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="EmpireImprovementQuestTimeLords09" Type="EmpireImprovement">
+      <Modifier TargetProperty="DepositValue"				Operation="Percent"						Value="1.5"			Path="ClassEmpire/ClassColonizedStarSystem/ClassPlanet/ClassResourceDeposit,ResourceTypeStrategic" />
+    </SimulationDescriptor>
+  
+    <SimulationDescriptor Name="EmpireImprovementQuestUnitedEmpire07" Type="EmpireImprovement" >
+        <Modifier TargetProperty="ShipProductionCostReduction" Operation="Addition" Value="-0.2" Path="ClassEmpire/ClassColonizedStarSystem"/>
+        <Modifier TargetProperty="PreventsEnemyRetreat" Operation="Addition" Value="1" Path="ClassEmpire//ClassShip"  TooltipOverride="%SheredynNoRetreat"/>
+        <Modifier TargetProperty="PreventsEnemyRetreat" Operation="Addition" Value="1" Path="ClassEmpire" TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="EmpireImprovementQuestUnitedEmpire08" Type="EmpireImprovement" >
+        <Modifier TargetProperty="DiplomacyCostReduction" Operation="Percent" Value="-0.2" Path="ClassEmpire"/>
+        <Modifier TargetProperty="RatioOfProductionSpentGainedAsEmpirePoint" Operation="Addition" Value="0.1" Path="ClassEmpire" TooltipOverride="%ProductionSpentGainedAsEmpirePointUnlockedTooltip"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="EmpireImprovementQuestUnitedEmpire09" Type="EmpireImprovement" >
+        <Modifier TargetProperty="NetEmpireResearch" Operation="Percent" Value="0.15" Path="ClassEmpire" Priority="10"/>
+        <BinaryModifier TargetProperty="EmpireEmpirePoint" Operation="Addition" Left="0.1" BinaryOperation="Multiplication" Right="$(EmpireResearch)" Path="ClassEmpire" SearchValueFromPath="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="EmpireImprovementGasColonizationAlt"                 Type="EmpireImprovement">
+      <!--<Modifier TargetProperty="RawMaximumPopulation"         Operation="Addition" Value="1" Path="ClassEmpire/ClassColonizedStarSystem/ClassPlanet,PlanetGameplayTypeGas" />-->
+      <!--<Modifier TargetProperty="RawMaximumPopulation"         Operation="Addition" Value="1" Path="ClassEmpire/ClassColonizedStarSystem/ClassPlanet,PlanetSizeGasHuge" />-->
+    </SimulationDescriptor>
+
+  <SimulationDescriptor Name="EmpireImprovementArmyCap1"      Type="EmpireImprovement">
+    <Modifier TargetProperty="MaximumCommandPoints"               Operation="Addition" Value="4"  Path="ClassEmpire" />
+    <Modifier TargetProperty="MaximumManpowerPerGroundBattleTurn" Operation="Addition" Value="500"  Path="ClassEmpire" />
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="EmpireImprovementArmyCap2"      Type="EmpireImprovement">
+    <Modifier TargetProperty="MaximumCommandPoints" Operation="Addition" Value="5"  Path="ClassEmpire" />
+    <Modifier TargetProperty="MaximumManpowerPerGroundBattleTurn" Operation="Addition" Value="750"  Path="ClassEmpire" />
+  </SimulationDescriptor>
+
+  <SimulationDescriptor Name="EmpireImprovementArmyCap2Cravers"      Type="EmpireImprovement">
+    <Modifier TargetProperty="MaximumCommandPoints" Operation="Addition" Value="5"  Path="ClassEmpire" />
+    <Modifier TargetProperty="GarrisonMoneyUpkeep" Operation="Percent"   Value="-0.25"  Path="ClassEmpire/ClassGarrison" />
+    <Modifier TargetProperty="MaximumManpowerPerGroundBattleTurn" Operation="Addition" Value="850"  Path="ClassEmpire" />
+  </SimulationDescriptor>
+
+
+  <SimulationDescriptor Name="EmpireImprovementArmyCap3"      Type="EmpireImprovement">
+        <Modifier TargetProperty="PlayDeckUnlockedSlotsCount"   Value="1" Operation="Addition"   Path="ClassEmpire"    />
+        <BinaryModifier TargetProperty="MaximumCommandPoints" Operation="Addition" Left="1.5"  BinaryOperation="Multiplication" Right="$(HullTypes)" Path="ClassEmpire" />
+        <Modifier TargetProperty="MaximumManpowerPerGroundBattleTurn" Operation="Addition" Value="1000"  Path="ClassEmpire" />
+
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="EmpireImprovementArmyCap4"      Type="EmpireImprovement">
+        <Modifier TargetProperty="PlayDeckUnlockedSlotsCount"   Value="1" Operation="Addition"   Path="ClassEmpire"    />
+        <Modifier TargetProperty="MaximumCommandPoints" Operation="Addition" Value="5"  Path="ClassEmpire" />
+        <BinaryModifier TargetProperty="MaximumCommandPoints" Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Level5Systems)" Path="ClassEmpire" SearchValueFromPath="true" TooltipOverride="%OverrideCCPerLevel5System"/>
+    </SimulationDescriptor>
+
+
+    <SimulationDescriptor Name="EmpireImprovementArmyCap4Cravers"      Type="EmpireImprovement">
+        <Modifier TargetProperty="PlayDeckUnlockedSlotsCount"   Value="1" Operation="Addition"   Path="ClassEmpire"    />
+        <Modifier TargetProperty="MaximumCommandPoints"       Operation="Addition" Value="8"  Path="ClassEmpire" />
+        <BinaryModifier TargetProperty="MaximumCommandPoints" Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Level5Systems)" Path="ClassEmpire" SearchValueFromPath="true" TooltipOverride="%OverrideCCPerLevel5System"/>
+        <BinaryModifier TargetProperty="SystemProduction"     Operation="Addition" Left="50"  BinaryOperation="Multiplication" Right="$(WarCount)" Path="ClassEmpire/ClassColonizedStarSystem" />
+    </SimulationDescriptor>
+
+  
+    <SimulationDescriptor Name="EmpireImprovementEmpireManpowerStockBoost1"            Type="EmpireImprovement">
+        <BinaryModifier TargetProperty="MaximumEmpireManpowerStock"   Operation="Addition" Left="75"  BinaryOperation="Multiplication" Right="$(OwnedSystems)" Path="ClassEmpire" TooltipOverride="%ManpowerStockBoost1" />
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="EmpireImprovementEmpireManpowerStockBoost2"            Type="EmpireImprovement">
+      <BinaryModifier TargetProperty="MaximumEmpireManpowerStock"   Operation="Addition"   Left="150"  BinaryOperation="Multiplication" Right="$(OwnedSystems)" Path="ClassEmpire" TooltipOverride="%ManpowerStockBoost2" />
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="EmpireImprovementEmpireManpowerStockBoost3"            Type="EmpireImprovement">
+        <BinaryModifier TargetProperty="MaximumEmpireManpowerStock"   Operation="Addition" Left="250"  BinaryOperation="Multiplication" Right="$(OwnedSystems)" Path="ClassEmpire" TooltipOverride="%ManpowerStockBoost3"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="EmpireImprovementEmpireManpowerStockBoost4"            Type="EmpireImprovement">
+      <BinaryModifier TargetProperty="MaximumEmpireManpowerStock"   Operation="Addition" Left="500"  BinaryOperation="Multiplication" Right="$(OwnedSystems)" Path="ClassEmpire" TooltipOverride="%ManpowerStockBoost4"/>
+    </SimulationDescriptor>
+
+   <SimulationDescriptor Name="EmpireImprovementDamageBonusTroop1"      Type="EmpireImprovement">
+      <Modifier TargetProperty="TroopDamageBonuses"           Operation="Addition" Value="0.5" Path="ClassEmpire" TooltipHidden="false" />
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="EmpireImprovementHealthBonusTroop1"      Type="EmpireImprovement">
+      <Modifier TargetProperty="TroopHealthBonuses"           Operation="Addition" Value="0.75" Path="ClassEmpire" TooltipHidden="false" />
+   </SimulationDescriptor>
+   
+    <SimulationDescriptor Name="EmpireImprovementGlobalBonusTroops1"      Type="EmpireImprovement">
+        <Modifier TargetProperty="TroopDamageBonuses"           Operation="Addition" Value="0.75" Path="ClassEmpire" TooltipHidden="false" />
+        <Modifier TargetProperty="TroopHealthBonuses"           Operation="Addition" Value="1" Path="ClassEmpire" TooltipHidden="false" />
+        <Modifier TargetProperty="MaximumManpowerPerGroundBattleTurn" Operation="Addition" Value="1500"  Path="ClassEmpire" />
+    </SimulationDescriptor>
+
+  </Datatable>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+
+    <SimulationDescriptor Name="SpecialNodeEffectBlackHole" Type="SpecialNodeEffect" IsSerializable="false">
+        <Modifier TargetProperty="SystemResearchPercent"       Operation="Addition" Value="0.1" TooltipHidden="true" />
+        <Modifier TargetProperty="SystemResearchPercent"       Operation="Addition" Value="0.1" Path="../ClassHackingBeacon/../ClassEmpire/ClassColonizedStarSystem,ColonizedStarSystemStateColony" TooltipHiddenIfPathInvalid="true" />
+        <Modifier TargetProperty="SystemResearch"              Operation="Percent"  Value="0.1" Path="../ClassEmpire/ClassColonizedStarSystem,FAKEFORGUISystems"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="SpecialNodeEffectAsteroidField" Type="SpecialNodeEffect" IsSerializable="false">
+        <Modifier TargetProperty="SystemProductionPercent"     Operation="Addition" Value="0.1" TooltipHidden="true" />
+        <Modifier TargetProperty="SystemProductionPercent"     Operation="Addition" Value="0.1" Path="../ClassHackingBeacon/../ClassEmpire/ClassColonizedStarSystem,ColonizedStarSystemStateColony" TooltipHiddenIfPathInvalid="true" />
+        <Modifier TargetProperty="SystemProduction"            Operation="Percent"  Value="0.1" Path="../ClassEmpire/ClassColonizedStarSystem,FAKEFORGUISystems"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="SpecialNodeEffectCollapsingStar" Type="SpecialNodeEffect" IsSerializable="false">
+        <Modifier TargetProperty="SystemEmpirePointPercent"    Operation="Addition" Value="0.1" TooltipHidden="true"  />
+        <Modifier TargetProperty="SystemEmpirePointPercent"    Operation="Addition" Value="0.1" Path="../ClassHackingBeacon/../ClassEmpire/ClassColonizedStarSystem,ColonizedStarSystemStateColony" TooltipHiddenIfPathInvalid="true" />
+        <Modifier TargetProperty="SystemEmpirePoint"           Operation="Percent"  Value="0.1" Path="../ClassEmpire/ClassColonizedStarSystem,FAKEFORGUISystems" />
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="SpecialNodeEffectSolarNebula" Type="SpecialNodeEffect" IsSerializable="false">
+        <Modifier TargetProperty="SystemMoneyPercent"          Operation="Addition" Value="0.1" TooltipHidden="true" />
+        <Modifier TargetProperty="SystemMoneyPercent"          Operation="Addition" Value="0.1" Path="../ClassHackingBeacon/../ClassEmpire/ClassColonizedStarSystem,ColonizedStarSystemStateColony" TooltipHiddenIfPathInvalid="true" />
+        <Modifier TargetProperty="SystemMoney"                 Operation="Percent"  Value="0.1" Path="../ClassEmpire/ClassColonizedStarSystem,FAKEFORGUISystems"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="SpecialNodeEffectNeutronStar" Type="SpecialNodeEffect" IsSerializable="false">
+        <Modifier TargetProperty="SystemMoneyPercent"          Operation="Addition" Value="0.05" TooltipHidden="true" />
+        <Modifier TargetProperty="SystemEmpirePointPercent"    Operation="Addition" Value="0.05" TooltipHidden="true" />
+        <Modifier TargetProperty="SystemMoneyPercent"          Operation="Addition" Value="0.05" Path="../ClassHackingBeacon/../ClassEmpire/ClassColonizedStarSystem,ColonizedStarSystemStateColony" TooltipHiddenIfPathInvalid="true" />
+        <Modifier TargetProperty="SystemEmpirePointPercent"    Operation="Addition" Value="0.05" Path="../ClassHackingBeacon/../ClassEmpire/ClassColonizedStarSystem,ColonizedStarSystemStateColony" TooltipHiddenIfPathInvalid="true" />
+        <Modifier TargetProperty="SystemMoney"                 Operation="Percent"  Value="0.05" Path="../ClassEmpire/ClassColonizedStarSystem,FAKEFORGUISystems"/>
+        <Modifier TargetProperty="SystemEmpirePoint"           Operation="Percent"  Value="0.05" Path="../ClassEmpire/ClassColonizedStarSystem,FAKEFORGUISystems"/>
+	</SimulationDescriptor>
+
+    <SimulationDescriptor Name="SpecialNodeEffectSpaceClouds" Type="SpecialNodeEffect" IsSerializable="false">
+        <Modifier TargetProperty="SystemMoneyPercent"          Operation="Addition" Value="0.02" TooltipHidden="true" />
+        <Modifier TargetProperty="SystemEmpirePointPercent"    Operation="Addition" Value="0.02" TooltipHidden="true" />
+        <Modifier TargetProperty="SystemProductionPercent"     Operation="Addition" Value="0.02" TooltipHidden="true" />
+        <Modifier TargetProperty="SystemResearchPercent"       Operation="Addition" Value="0.02" TooltipHidden="true" />
+        <Modifier TargetProperty="SystemMoneyPercent"          Operation="Addition" Value="0.02" Path="../ClassHackingBeacon/../ClassEmpire/ClassColonizedStarSystem,ColonizedStarSystemStateColony" TooltipHiddenIfPathInvalid="true" />
+        <Modifier TargetProperty="SystemEmpirePointPercent"    Operation="Addition" Value="0.02" Path="../ClassHackingBeacon/../ClassEmpire/ClassColonizedStarSystem,ColonizedStarSystemStateColony" TooltipHiddenIfPathInvalid="true" />
+        <Modifier TargetProperty="SystemProductionPercent"     Operation="Addition" Value="0.02" Path="../ClassHackingBeacon/../ClassEmpire/ClassColonizedStarSystem,ColonizedStarSystemStateColony" TooltipHiddenIfPathInvalid="true" />
+        <Modifier TargetProperty="SystemResearchPercent"       Operation="Addition" Value="0.02" Path="../ClassHackingBeacon/../ClassEmpire/ClassColonizedStarSystem,ColonizedStarSystemStateColony" TooltipHiddenIfPathInvalid="true" />
+        <Modifier TargetProperty="SystemMoney"                 Operation="Percent"  Value="0.02" Path="../ClassEmpire/ClassColonizedStarSystem,FAKEFORGUISystems"/>
+        <Modifier TargetProperty="SystemEmpirePoint"           Operation="Percent"  Value="0.02" Path="../ClassEmpire/ClassColonizedStarSystem,FAKEFORGUISystems"/>
+        <Modifier TargetProperty="SystemProduction"            Operation="Percent"  Value="0.02" Path="../ClassEmpire/ClassColonizedStarSystem,FAKEFORGUISystems"/>
+        <Modifier TargetProperty="SystemResearch"              Operation="Percent"  Value="0.02" Path="../ClassEmpire/ClassColonizedStarSystem,FAKEFORGUISystems"/>
+    </SimulationDescriptor>
+    
+    <SimulationDescriptor Name="SpecialNodeEffectVaulters" Type="SpecialNodeEffect" IsSerializable="false">
+        <Modifier TargetProperty="SystemMoneyPercent"          Operation="Addition" Value="0.15" TooltipHidden="true" />
+        <Modifier TargetProperty="HealthRegenerationRatio" Operation="Addition" Value="0.2" TooltipHidden="true" />
+        <Modifier TargetProperty="DockedFleetsHealthRegenerationRatio" Operation="Addition" Value="0.2" TooltipOverride="%StarSystemImprovementUniqueCuriosity3EffectOverride"/>
+
+        <Modifier TargetProperty="SystemMoney"          Operation="Percent" Value="0.15" Path="../ClassEmpire/ClassColonizedStarSystem,FAKEFORGUISystems"/>
+    </SimulationDescriptor>
+   
+</Datatable>

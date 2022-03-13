@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+
+    <!-- ****************************************** -->
+    <!-- *****   FIDSI boost for MotherShip    **** -->
+    <!-- ****************************************** -->
+
+    <!--FIDSI-->
+    <SimulationDescriptor Name ="ModuleStarSystemEffectFromMothership" Type="ModuleStarSystemEffectFromMothership">
+        <Property Name="SystemLifeforceFlat"   BaseValue="0"/>
+        <Property Name="SystemProductionFlat"   BaseValue="0"/>
+        <Property Name="SystemProductionPercent"   BaseValue="0"/>
+        <Property Name="SystemMoneyFlat"        BaseValue="0"/>
+        <Property Name="SystemMoneyPercent"        BaseValue="0"/>
+        <Property Name="SystemResearchFlat"     BaseValue="0"/>
+        <Property Name="SystemResearchPercent"     BaseValue="0"/>
+        <Property Name="SystemEmpirePointFlat"  BaseValue="0"/>
+        <Property Name="SystemEmpirePointPercent"  BaseValue="0"/>
+    </SimulationDescriptor>
+
+    <!-- Dust -->
+    <SimulationDescriptor Name="ModuleMothershipDust1" Type="ModuleMothershipDust">
+        <Modifier TargetProperty="SystemMoneyFlat"  Operation="Addition" Value="10" Path="ModuleStarSystemEffectFromMothership"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleMothershipDust2" Type="ModuleMothershipDust">
+        <Modifier TargetProperty="SystemMoneyFlat"         Operation="Addition" Value="20" Path="ModuleStarSystemEffectFromMothership"/>
+        <Modifier TargetProperty="SystemMoneyPercent"      Operation="Addition" Value="0.01" Path="ModuleStarSystemEffectFromMothership"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleMothershipDust3" Type="ModuleMothershipDust">
+        <Modifier TargetProperty="SystemMoneyFlat"         Operation="Addition" Value="35" Path="ModuleStarSystemEffectFromMothership"/>
+        <Modifier TargetProperty="SystemMoneyPercent"      Operation="Addition" Value="0.05" Path="ModuleStarSystemEffectFromMothership"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleMothershipDust4" Type="ModuleMothershipDust">
+        <Modifier TargetProperty="SystemMoneyFlat"         Operation="Addition" Value="50"     Path="ModuleStarSystemEffectFromMothership"/>
+        <Modifier TargetProperty="SystemMoneyPercent"      Operation="Addition" Value="0.10"   Path="ModuleStarSystemEffectFromMothership"/>
+    </SimulationDescriptor>
+
+    <!-- Industry -->
+    <SimulationDescriptor Name="ModuleMothershipIndustry1" Type="ModuleMothershipIndustry">
+        <Modifier TargetProperty="SystemProductionFlat"  Operation="Addition" Value="10" Path="ModuleStarSystemEffectFromMothership"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleMothershipIndustry2" Type="ModuleMothershipIndustry">
+        <Modifier TargetProperty="SystemProductionFlat"         Operation="Addition" Value="20" Path="ModuleStarSystemEffectFromMothership"/>
+        <Modifier TargetProperty="SystemProductionPercent"      Operation="Addition" Value="0.01" Path="ModuleStarSystemEffectFromMothership"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleMothershipIndustry3" Type="ModuleMothershipIndustry">
+        <Modifier TargetProperty="SystemProductionFlat"         Operation="Addition" Value="35" Path="ModuleStarSystemEffectFromMothership"/>
+        <Modifier TargetProperty="SystemProductionPercent"      Operation="Addition" Value="0.05" Path="ModuleStarSystemEffectFromMothership"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleMothershipIndustry4" Type="ModuleMothershipIndustry">
+        <Modifier TargetProperty="SystemProductionFlat"         Operation="Addition" Value="50"     Path="ModuleStarSystemEffectFromMothership"/>
+        <Modifier TargetProperty="SystemProductionPercent"      Operation="Addition" Value="0.1"   Path="ModuleStarSystemEffectFromMothership"/>
+    </SimulationDescriptor>
+
+    <!-- Influence -->
+    <SimulationDescriptor Name="ModuleMothershipInfluence1" Type="ModuleMothershipInfluence">
+        <Modifier TargetProperty="SystemEmpirePointFlat"  Operation="Addition" Value="10" Path="ModuleStarSystemEffectFromMothership"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleMothershipInfluence2" Type="ModuleMothershipInfluence">
+        <Modifier TargetProperty="SystemEmpirePointFlat"         Operation="Addition" Value="35" Path="ModuleStarSystemEffectFromMothership"/>
+        <Modifier TargetProperty="SystemEmpirePointPercent"      Operation="Addition" Value="0.05" Path="ModuleStarSystemEffectFromMothership"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleMothershipInfluence3" Type="ModuleMothershipInfluence">
+        <Modifier TargetProperty="SystemEmpirePointFlat"         Operation="Addition" Value="50" Path="ModuleStarSystemEffectFromMothership"/>
+        <Modifier TargetProperty="SystemEmpirePointPercent"      Operation="Addition" Value="0.10" Path="ModuleStarSystemEffectFromMothership"/>
+    </SimulationDescriptor>
+
+
+    <!-- Lifeforce -->
+    <SimulationDescriptor Name="ModuleMothershipLifeforce1" Type="ModuleMothershipLifeforce">
+        <Modifier TargetProperty="SystemLifeforceFlat"  Operation="Addition" Value="10" Path="ModuleStarSystemEffectFromMothership"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleMothershipLifeforce2" Type="ModuleMothershipLifeforce">
+        <Modifier TargetProperty="SystemLifeforceFlat"         Operation="Addition" Value="25" Path="ModuleStarSystemEffectFromMothership"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleMothershipLifeforce3" Type="ModuleMothershipLifeforce">
+        <Modifier TargetProperty="SystemLifeforceFlat"         Operation="Addition" Value="40" Path="ModuleStarSystemEffectFromMothership"/>
+    </SimulationDescriptor>
+
+    <!-- Science -->
+    <SimulationDescriptor Name="ModuleMothershipScience1" Type="ModuleMothershipScience">
+        <Modifier TargetProperty="SystemResearchFlat"  Operation="Addition" Value="10" Path="ModuleStarSystemEffectFromMothership"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleMothershipScience2" Type="ModuleMothershipScience">
+        <Modifier TargetProperty="SystemResearchFlat"         Operation="Addition" Value="20" Path="ModuleStarSystemEffectFromMothership"/>
+        <Modifier TargetProperty="SystemResearchPercent"      Operation="Addition" Value="0.01" Path="ModuleStarSystemEffectFromMothership"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleMothershipScience3" Type="ModuleMothershipScience">
+        <Modifier TargetProperty="SystemResearchFlat"         Operation="Addition" Value="35" Path="ModuleStarSystemEffectFromMothership"/>
+        <Modifier TargetProperty="SystemResearchPercent"      Operation="Addition" Value="0.05" Path="ModuleStarSystemEffectFromMothership"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleMothershipScience4" Type="ModuleMothershipScience">
+        <Modifier TargetProperty="SystemResearchFlat"         Operation="Addition" Value="50"     Path="ModuleStarSystemEffectFromMothership"/>
+        <Modifier TargetProperty="SystemResearchPercent"      Operation="Addition" Value="0.1"   Path="ModuleStarSystemEffectFromMothership"/>
+    </SimulationDescriptor>
+
+</Datatable>

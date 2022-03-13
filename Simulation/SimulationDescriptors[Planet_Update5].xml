@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+
+    <SimulationDescriptor Name="PlanetAnomaly48" Type="PlanetAnomaly" >
+        <Modifier           TargetProperty="PlanetRawIndustry"      Operation="Addition" Value="3"      Path="ClassPlanet"/>
+        <Modifier           TargetProperty="PlanetRawScience"       Operation="Addition" Value="1"      Path="ClassPlanet"/>
+        <BinaryModifier     TargetProperty="MaximumSystemManpower"  Operation="Addition" Left="30"      BinaryOperation="Multiplication" Right="$(Population)" Path="./ClassColonizedStarSystem" TooltipHidden="true"    />
+        <BinaryModifier     TargetProperty="MaximumSystemManpower"  Operation="Addition" Left="30"      BinaryOperation="Multiplication" Right="$(Population)" Path="./ClassColonizedStarSystem/ClassColonizedPlanet" />
+    </SimulationDescriptor>
+
+</Datatable>

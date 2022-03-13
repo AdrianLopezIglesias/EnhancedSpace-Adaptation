@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/FactionTrait.xsd">
+
+    <!--#################################################### COMMANDS ####################################################### 
+    ##
+    ##    TransferResources:  ResourceName,Amount
+    ##                          -ResourceName:string @see Public/Simulation/ResourceDefinitions.xml
+    ##                          -Amount:float
+    ##
+    ##    SetGovernment:      GovernmentDefinition
+    ##                          -GovernmentDefinition:string @see Public/Simulation/GovernmentDefinitions.xml
+    ##
+    ##    UnlockPolitics:     PoliticsDefinitionName
+    ##                          -PoliticsDefinitionName:string @see Public/Simulation/PoliticsDefinitions.xml
+    ##
+    ##    CreateSenator:      PoliticsDefinitionName,InitialSupport,InitialPower
+    ##                          -PoliticsDefinitionName:string @see Public/Simulation/PoliticsDefinitions.xml
+    ##                          -InitialSupport:float 0.0-1.0
+    ##                          -InitialPower:float 0.0-infinity
+    ##
+    ##    UnlockLaw:          LawDefinitionName
+    ##                          - LawDefinitionName: string @see Public/Simulation/LawDefinition.xml
+    ##
+    ##    ActivateLaw:        LawDefinitionName
+    ##                          - LawDefinitionName: string @see Public/Simulation/LawDefinition.xml
+    ##                          
+    ##    CreateHomeSystemImprovement: ConstructibleElementName
+    ##                          -ConstructibleElementName:string @see Public/Simulation/ConstructibleElement_Industry[*].xml
+    ##                          
+    ##    CreateFleet         ShipDesignName,[ShipDesignName*]
+    ##                          - ShipDesignName:string[] @see Public/Simulation/ShipDesignDefinition.xml
+    ##
+    ##    StartTemporaryEffect: TemporaryEffectDefinitionName
+    ##                          - TemporaryEffectDefinitionName: string @see Public/Simulation/TemporaryEffectDefinitions.xml
+    ##                            TemporaryEffectDefinition's Path starts from the home system.
+    ##
+    ##    UnlockTechnology:   ConstructibleElementName
+    ##                          - ConstructibleElementName: string @see Public/Simulation/ConstructibleElement_Science[*].xml
+    ##
+    ##    UnlockShipDesign:   ShipDesignDefinitionName
+    ##                          - ShipDesignDefinitionName: string @see Public/Simulation/ShipDesignDefinitions.xml
+    ##
+    ##    SetHomePlanetDepletion: Percentage 
+    ##                          - Percentage:float (0 -> 1)
+    ##
+    ##    SetHomeSystemManpowerPercentage: Percentage 
+    ##                          - Percentage:float (0 -> 1)
+    ##
+    ##    SetFleetsManpowerPercentage: Percentage 
+    ##                          - Percentage:float (0 -> 1)
+    ##
+    ##                          
+    ##############################################################################################################################-->
+
+    <!-- All the commands can have a priority if they must be executed after others. -->
+    <!-- Note that unlike in other XMLs a lower priority command is executed AFTER a higher priority command: 1 -> 0 -> -1 -->
+
+    <!-- ########################################## -->
+    <!-- ######        MAJOR FACTIONS        ###### -->
+    <!-- ########################################## -->
+
+
+
+    <!-- UmbralChoir -->
+    <FactionAffinity Name="AffinityGameplayUmbralChoir" SubCategory="MajorFactionAffinity" Hidden="false" Custom="true" Cost="100">
+        <Command Name="TransferResources"               Arguments="EmpireManpower,200"/>
+        <Command Name="TransferResources"               Arguments="EmpireMoney,400"/>
+        <Command Name="TransferResources"               Arguments="EmpireEmpirePoint,50"/>
+        <Command Name="TransferResources"               Arguments="SystemInfluence,75"/>
+
+        <Command Name="UnlockBattleAction"              Arguments="Group_ComputeShipExperience"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_OnEnemyShipDestruction"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_SetInitialMilitaryPower"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_ComputeEndBattleStatus"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_Retreat"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_Retreat_RecoverMovementPoint"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_ReinforcementFlotilla_OnOwnShipDestruction"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_MainFlotilla_OnOwnShipDestruction"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_SetInitialMoraleBonus"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_OnEnemyFlotillaDestruction"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_OnFlotillaDestruction"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_ReportFlotillaDamageAppliedCurrentPhase"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_PhaseRepairShipCoreSection"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_RepairShipCoreSection"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_OnEnemyShipDeactivation"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_MainFlotilla_OnOwnShipDeactivation"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_SetShipAliveCount"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_ReduceShipAliveCount"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_ReportFlotillaInvisibilityStatusCurrentPhase"/>
+
+		<Command Name="UnlockTechnology"                Arguments="TechnologyDefinitionTerransStartingShipDesigns"/>
+		
+        <Command Name="SetHomeSystemManpowerPercentage" Arguments="1" Priority="-1"/>
+        <Command Name="SetFleetsManpowerPercentage"     Arguments="1" Priority="-1"/>
+
+        <!--HOME SYSTEM DEFAULT BUILDING -->
+        <Command Name="CreateHomeSystemImprovement"     Arguments="StarSystemImprovementHomeSystem"/>
+        <Command Name="CreateHomeSystemImprovement"     Arguments="StarSystemImprovementColonyBase"/>
+
+        <Command Name="UnlockPlay"                      Arguments="PlayDefensiveShortHullPlatingIncrease" Priority="0"/>
+        <Command Name="UnlockPlay"                      Arguments="PlayDefensiveLongShieldIncrease" Priority="-1"/>
+        <Command Name="UnlockPlay"                      Arguments="PlayPostBalancedOpponentRecycling" Priority="-5"/>
+        <Command Name="UnlockPlay"                      Arguments="PlayOffensiveMediumProjectilePenertrationIncrease" Priority="-5"/>
+        <Command Name="UnlockPlay"                      Arguments="PlayOffensiveBalancedShieldPenetrationIncrease" Priority="-5"/>
+
+        <!--COLONY DEFAULT BUILDING -->
+        <ColonyImprovementReference                     Name="StarSystemImprovementColonyBase"/>
+        <SimulationDescriptorReference Name="AffinityUmbralChoir"/>
+        <SimulationDescriptorReference Name="AffinityGameplayUmbralChoir"/>
+        <StartingFleet>Explorer,Explorer</StartingFleet>
+        <UnlockedAbstractShipDesigns>Colonizer,Explorer,SmallAttack,SmallSupport,MediumAttack,MediumDefense,LargeCarrier,ScienceJuggernaut,MilitaryJuggernaut,SupportJuggernaut,Battleship,Obliterator</UnlockedAbstractShipDesigns>
+        <DefaultColonizer>ShipDesignDecolonizationUmbralChoir</DefaultColonizer>
+        <AutomatedShip>ShipDesignAutomatedShipUmbralChoir</AutomatedShip>
+        
+    </FactionAffinity>
+
+    <!-- MinorHacking -->
+    <FactionAffinity Name="AffinityGameplayMinorHacking" SubCategory="MinorFactionAffinity" Hidden="false" Cost="80">
+        <Command Name="TransferResources"               Arguments="EmpireManpower,1000"/>
+        <Command Name="SetHomeSystemManpowerPercentage" Arguments="1"/>
+        <Command Name="UnlockPlay"                      Arguments="PlayDefensiveBalancedShortRangeDefense"/>
+        <Command Name="UnlockPlay"                      Arguments="PlayDefensiveShortHullPlatingIncrease"/>
+
+        <Command Name="UnlockBattleAction"              Arguments="Group_ComputeShipExperience"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_OnEnemyShipDestruction"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_SetInitialMilitaryPower"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_ComputeEndBattleStatus"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_Retreat"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_Retreat_RecoverMovementPoint"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_ReinforcementFlotilla_OnOwnShipDestruction"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_MainFlotilla_OnOwnShipDestruction"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_SetInitialMoraleBonus"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_OnEnemyFlotillaDestruction"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_OnFlotillaDestruction"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_ReportFlotillaDamageAppliedCurrentPhase"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_PhaseRepairShipCoreSection"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_RepairShipCoreSection"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_OnEnemyShipDeactivation"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_MainFlotilla_OnOwnShipDeactivation"/>
+        <Command Name="UnlockBattleAction"              Arguments="Group_ReportFlotillaInvisibilityStatusCurrentPhase"/>
+
+        <SimulationDescriptorReference Name="AffinityMinorHacking"/>
+        <AutomatedShip>ShipDesignAutomatedShip</AutomatedShip>
+    </FactionAffinity>
+    
+</Datatable>

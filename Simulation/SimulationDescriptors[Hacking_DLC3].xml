@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+
+   <!-- Accelerator -->
+   <SimulationDescriptor Name="HackingProgramEffectSpeedupHacking" Type="HackingProgramEffect">
+      <Modifier TargetProperty="HackingSpeedMultiplierForSelf" Operation="Addition" Value="0.3"/>
+   </SimulationDescriptor>
+   
+   <!-- Piggyback -->
+    <SimulationDescriptor Name="HackingProgramEffectDecreaseHackerPPAllocation" Type="HackingProgramEffect">
+        <Modifier TargetProperty="FinalProcessingPowerAllocation" Operation="Percent" Value="-0.5" Path="ClassEmpire/ClassHacking/!CostCannotBeBoostedByPrograms,ClassHackingProgram"/>
+    </SimulationDescriptor>
+
+   <!-- Divert -->
+   <SimulationDescriptor Name="RerouteOffenseHackingProgramEffect" Type="RerouteOffenseHackingProgramEffect">
+      <Modifier TargetProperty="BailiffPriority" Operation="Subtraction" Value="100" TooltipHidden="true"/>
+   </SimulationDescriptor>
+   
+   <!-- Overload -->
+   <SimulationDescriptor Name="HackingProgramEffectInstantIncreasePPAllocation" Type="HackingProgramEffect">
+      <Modifier TargetProperty="FinalProcessingPowerAllocation" Operation="Percent" Value="1" Path="../ClassEmpire/ClassHacking/ClassHackingProgram" TooltipOverride="%HackingOffensiveProgramIncreasedPPAllocationEffectOverride"/>
+   </SimulationDescriptor>
+   
+   
+   
+   
+   <!-- Lockdown-->
+   <SimulationDescriptor Name="HackingProgramEffectSlowndownTrace" Type="HackingProgramEffect">
+      <Modifier TargetProperty="HackingNodeSpeed" Operation="Percent" Value="-0.25"/>
+   </SimulationDescriptor>
+
+   <!-- Encrypt -->
+   <SimulationDescriptor Name="HackingProgramEffectSlowDownHacking" Type="HackingProgramEffect">
+      <Modifier TargetProperty="HackingSpeedMultiplierForOthers" Operation="Subtraction" Value="0.5"/>
+   </SimulationDescriptor>
+   
+   <!-- Interogate -->
+    <SimulationDescriptor Name="HackingProgramEffectIncreaseHackerPPAllocation" Type="HackingProgramEffect">
+        <Modifier TargetProperty="FinalProcessingPowerAllocation" Operation="Percent" Value="0.5" Path="ClassEmpire/ClassHacking/!CostCannotBeBoostedByPrograms,ClassHackingProgram"/>
+    </SimulationDescriptor>
+
+   <!-- Firewall -->
+   <SimulationDescriptor Name="HackingProgramEffectHackingDefense" Type="HackingProgramEffect">
+      <Modifier TargetProperty="HackingOperationOutcomeDefenseLevel" Operation="Addition" Value="1" TooltipOverride="%HackingProgramEffectHackingDefenseEffectOverride"/>
+   </SimulationDescriptor>
+
+   <!-- track -->
+   
+</Datatable>

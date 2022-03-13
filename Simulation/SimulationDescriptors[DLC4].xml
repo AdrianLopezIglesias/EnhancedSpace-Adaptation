@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+
+   <SimulationDescriptor Name="AcademyRoleGrandAdmiral" Type="AcademyRole">
+         
+   </SimulationDescriptor>
+
+    <SimulationDescriptor Name="AcademyRoleLibrarian" Type="AcademyRole">
+
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="AcademyRoleMasterOfDust" Type="AcademyRole">
+
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="AcademyRoleVaultKeeper" Type="AcademyRole">
+
+    </SimulationDescriptor>
+
+
+    <SimulationDescriptor Name="SystemConvertedForAcademy" Type="SystemConvertedForAcademy">
+      <Property Name="GifterEmpire" BaseValue="-1" MinValue="Negative"/>
+    
+      <!--This Property "GiveFactor" is currently setted in code with the result of this formula-->
+      <!--0.5 + Property(Empire, @ClassEmpire, AcademySystemsTitheModifier)-->
+      <Property  Name="GiveFactor" BaseValue="0.5" MinValue="0" MaxValue="1"/>
+
+      <Property  Name="GivedNetDust" BaseValue="0.0" IsSealed="true"/>
+      <Property  Name="GivedNetScience" BaseValue="0.0" IsSealed="true"/>
+      <Property  Name="GivedNetEmpirePoint" BaseValue="0.0" IsSealed="true"/>
+      
+      <Property  Name="GivedNetStrategic1" BaseValue="0.0" IsSealed="true"/>
+      <Property  Name="GivedNetStrategic2" BaseValue="0.0" IsSealed="true"/>
+      <Property  Name="GivedNetStrategic3" BaseValue="0.0" IsSealed="true"/>
+      <Property  Name="GivedNetStrategic4" BaseValue="0.0" IsSealed="true"/>
+      <Property  Name="GivedNetStrategic5" BaseValue="0.0" IsSealed="true"/>
+      <Property  Name="GivedNetStrategic6" BaseValue="0.0" IsSealed="true"/>
+
+      <Property  Name="GivedNetLuxury1" BaseValue="0.0" IsSealed="true"/>
+      <Property  Name="GivedNetLuxury2" BaseValue="0.0" IsSealed="true"/>
+      <Property  Name="GivedNetLuxury3" BaseValue="0.0" IsSealed="true"/>
+      <Property  Name="GivedNetLuxury4" BaseValue="0.0" IsSealed="true"/>
+      <Property  Name="GivedNetLuxury5" BaseValue="0.0" IsSealed="true"/>
+      <Property  Name="GivedNetLuxury6" BaseValue="0.0" IsSealed="true"/>
+      <Property  Name="GivedNetLuxury7" BaseValue="0.0" IsSealed="true"/>
+      <Property  Name="GivedNetLuxury8" BaseValue="0.0" IsSealed="true"/>
+      <Property  Name="GivedNetLuxury9" BaseValue="0.0" IsSealed="true"/>
+      <Property  Name="GivedNetLuxury10" BaseValue="0.0" IsSealed="true"/>
+      <Property  Name="GivedNetLuxury11" BaseValue="0.0" IsSealed="true"/>
+      <Property  Name="GivedNetLuxury12" BaseValue="0.0" IsSealed="true"/>
+      <Property  Name="GivedNetLuxury13" BaseValue="0.0" IsSealed="true"/>
+      <Property  Name="GivedNetLuxury14" BaseValue="0.0" IsSealed="true"/>
+      <Property  Name="GivedNetLuxury15" BaseValue="0.0" IsSealed="true"/>
+      <Property  Name="GivedNetLuxury16" BaseValue="0.0" IsSealed="true"/>
+      <Property  Name="GivedNetLuxury17" BaseValue="0.0" IsSealed="true"/>
+      <Property  Name="GivedNetLuxury18" BaseValue="0.0" IsSealed="true"/>
+      <Property  Name="GivedNetLuxury19" BaseValue="0.0" IsSealed="true"/>
+      <Property  Name="GivedNetLuxury19" BaseValue="0.0" IsSealed="true"/>
+      <Property  Name="GivedNetLuxury20" BaseValue="0.0" IsSealed="true"/>
+      <Property  Name="GivedNetLuxury21" BaseValue="0.0" IsSealed="true"/>
+      <Property  Name="GivedNetLuxury22" BaseValue="0.0" IsSealed="true"/>
+      <Property  Name="GivedNetLuxury23" BaseValue="0.0" IsSealed="true"/>
+      <Property  Name="GivedNetLuxury24" BaseValue="0.0" IsSealed="true"/>
+
+      <BinaryModifier TargetProperty="NetSystemMoney" Operation="Multiplication" Left="1.0" BinaryOperation="Subtraction" Right="$(GiveFactor)" Path="ClassColonizedStarSystem" Priority="1000"/>
+      <BinaryModifier TargetProperty="NetSystemResearch" Operation="Multiplication" Left="1.0" BinaryOperation="Subtraction" Right="$(GiveFactor)" Path="ClassColonizedStarSystem" Priority="1000"/>
+      <BinaryModifier TargetProperty="NetSystemEmpirePoint" Operation="Multiplication" Left="1.0" BinaryOperation="Subtraction" Right="$(GiveFactor)" Path="ClassColonizedStarSystem" Priority="1000"/>
+      
+      <BinaryModifier TargetProperty="NetStrategic1" Operation="Multiplication" Left="1.0" BinaryOperation="Subtraction" Right="$(GiveFactor)" Path="ClassColonizedStarSystem" Priority="1000"/>
+      <BinaryModifier TargetProperty="NetStrategic2" Operation="Multiplication" Left="1.0" BinaryOperation="Subtraction" Right="$(GiveFactor)" Path="ClassColonizedStarSystem" Priority="1000"/>
+      <BinaryModifier TargetProperty="NetStrategic3" Operation="Multiplication" Left="1.0" BinaryOperation="Subtraction" Right="$(GiveFactor)" Path="ClassColonizedStarSystem" Priority="1000"/>
+      <BinaryModifier TargetProperty="NetStrategic4" Operation="Multiplication" Left="1.0" BinaryOperation="Subtraction" Right="$(GiveFactor)" Path="ClassColonizedStarSystem" Priority="1000"/>
+      <BinaryModifier TargetProperty="NetStrategic5" Operation="Multiplication" Left="1.0" BinaryOperation="Subtraction" Right="$(GiveFactor)" Path="ClassColonizedStarSystem" Priority="1000"/>
+      <BinaryModifier TargetProperty="NetStrategic6" Operation="Multiplication" Left="1.0" BinaryOperation="Subtraction" Right="$(GiveFactor)" Path="ClassColonizedStarSystem" Priority="1000"/>
+
+      <BinaryModifier TargetProperty="NetLuxury1" Operation="Multiplication" Left="1.0" BinaryOperation="Subtraction" Right="$(GiveFactor)" Path="ClassColonizedStarSystem" Priority="1000"/>
+      <BinaryModifier TargetProperty="NetLuxury2" Operation="Multiplication" Left="1.0" BinaryOperation="Subtraction" Right="$(GiveFactor)" Path="ClassColonizedStarSystem" Priority="1000"/>
+      <BinaryModifier TargetProperty="NetLuxury3" Operation="Multiplication" Left="1.0" BinaryOperation="Subtraction" Right="$(GiveFactor)" Path="ClassColonizedStarSystem" Priority="1000"/>
+      <BinaryModifier TargetProperty="NetLuxury4" Operation="Multiplication" Left="1.0" BinaryOperation="Subtraction" Right="$(GiveFactor)" Path="ClassColonizedStarSystem" Priority="1000"/>
+      <BinaryModifier TargetProperty="NetLuxury5" Operation="Multiplication" Left="1.0" BinaryOperation="Subtraction" Right="$(GiveFactor)" Path="ClassColonizedStarSystem" Priority="1000"/>
+      <BinaryModifier TargetProperty="NetLuxury6" Operation="Multiplication" Left="1.0" BinaryOperation="Subtraction" Right="$(GiveFactor)" Path="ClassColonizedStarSystem" Priority="1000"/>
+      <BinaryModifier TargetProperty="NetLuxury7" Operation="Multiplication" Left="1.0" BinaryOperation="Subtraction" Right="$(GiveFactor)" Path="ClassColonizedStarSystem" Priority="1000"/>
+      <BinaryModifier TargetProperty="NetLuxury8" Operation="Multiplication" Left="1.0" BinaryOperation="Subtraction" Right="$(GiveFactor)" Path="ClassColonizedStarSystem" Priority="1000"/>
+      <BinaryModifier TargetProperty="NetLuxury9" Operation="Multiplication" Left="1.0" BinaryOperation="Subtraction" Right="$(GiveFactor)" Path="ClassColonizedStarSystem" Priority="1000"/>
+      <BinaryModifier TargetProperty="NetLuxury10" Operation="Multiplication" Left="1.0" BinaryOperation="Subtraction" Right="$(GiveFactor)" Path="ClassColonizedStarSystem" Priority="1000"/>
+      <BinaryModifier TargetProperty="NetLuxury11" Operation="Multiplication" Left="1.0" BinaryOperation="Subtraction" Right="$(GiveFactor)" Path="ClassColonizedStarSystem" Priority="1000"/>
+      <BinaryModifier TargetProperty="NetLuxury12" Operation="Multiplication" Left="1.0" BinaryOperation="Subtraction" Right="$(GiveFactor)" Path="ClassColonizedStarSystem" Priority="1000"/>
+      <BinaryModifier TargetProperty="NetLuxury13" Operation="Multiplication" Left="1.0" BinaryOperation="Subtraction" Right="$(GiveFactor)" Path="ClassColonizedStarSystem" Priority="1000"/>
+      <BinaryModifier TargetProperty="NetLuxury14" Operation="Multiplication" Left="1.0" BinaryOperation="Subtraction" Right="$(GiveFactor)" Path="ClassColonizedStarSystem" Priority="1000"/>
+      <BinaryModifier TargetProperty="NetLuxury15" Operation="Multiplication" Left="1.0" BinaryOperation="Subtraction" Right="$(GiveFactor)" Path="ClassColonizedStarSystem" Priority="1000"/>
+      <BinaryModifier TargetProperty="NetLuxury16" Operation="Multiplication" Left="1.0" BinaryOperation="Subtraction" Right="$(GiveFactor)" Path="ClassColonizedStarSystem" Priority="1000"/>
+      <BinaryModifier TargetProperty="NetLuxury17" Operation="Multiplication" Left="1.0" BinaryOperation="Subtraction" Right="$(GiveFactor)" Path="ClassColonizedStarSystem" Priority="1000"/>
+      <BinaryModifier TargetProperty="NetLuxury18" Operation="Multiplication" Left="1.0" BinaryOperation="Subtraction" Right="$(GiveFactor)" Path="ClassColonizedStarSystem" Priority="1000"/>
+      <BinaryModifier TargetProperty="NetLuxury19" Operation="Multiplication" Left="1.0" BinaryOperation="Subtraction" Right="$(GiveFactor)" Path="ClassColonizedStarSystem" Priority="1000"/>
+      <BinaryModifier TargetProperty="NetLuxury20" Operation="Multiplication" Left="1.0" BinaryOperation="Subtraction" Right="$(GiveFactor)" Path="ClassColonizedStarSystem" Priority="1000"/>
+      <BinaryModifier TargetProperty="NetLuxury21" Operation="Multiplication" Left="1.0" BinaryOperation="Subtraction" Right="$(GiveFactor)" Path="ClassColonizedStarSystem" Priority="1000"/>
+      <BinaryModifier TargetProperty="NetLuxury22" Operation="Multiplication" Left="1.0" BinaryOperation="Subtraction" Right="$(GiveFactor)" Path="ClassColonizedStarSystem" Priority="1000"/>
+      <BinaryModifier TargetProperty="NetLuxury23" Operation="Multiplication" Left="1.0" BinaryOperation="Subtraction" Right="$(GiveFactor)" Path="ClassColonizedStarSystem" Priority="1000"/>
+      <BinaryModifier TargetProperty="NetLuxury24" Operation="Multiplication" Left="1.0" BinaryOperation="Subtraction" Right="$(GiveFactor)" Path="ClassColonizedStarSystem" Priority="1000"/>
+      
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="FleetOrbitingAcademyNode"  Type="Academy"/>
+
+    <SimulationDescriptor Name="OwnFleetCollectingRelics"  Type="OwnFleetCollectingRelics" IsSerializable="false"/>
+
+    <SimulationDescriptor Name="RelicSystemInteraction" Type="RelicSystemInteraction">
+
+      <Property Name="EmpireIndustryRelics"            BaseValue="0" MinValue="0" IsSealed="true" />
+      <Property Name="EmpireDustRelics"                BaseValue="0" MinValue="0" IsSealed="true" />
+      <Property Name="EmpireFoodRelics"                BaseValue="0" MinValue="0" IsSealed="true" />
+      <Property Name="EmpireInfluenceRelics"           BaseValue="0" MinValue="0" IsSealed="true" />
+      
+      <Property Name="EmpirePointProductionBoostMultiplier" BaseValue="0.15" MinValue="0"/>
+      <Property Name="EmpireFoodProductionBoostMultiplier" BaseValue="0.15" MinValue="0"/>
+      <Property Name="EmpireDustProductionBoostMultiplier" BaseValue="0.15" MinValue="0"/>
+      <Property Name="EmpireIndustryProductionBoostMultiplier" BaseValue="0.15" MinValue="0"/>
+      
+      <Property Name="EmpirePointProductionBoost" BaseValue="0" MinValue="0"/>
+      <Property Name="EmpireFoodProductionBoost" BaseValue="0" MinValue="0"/>
+      <Property Name="EmpireDustProductionBoost" BaseValue="0" MinValue="0"/>
+      <Property Name="EmpireIndustryProductionBoost" BaseValue="0" MinValue="0"/>
+      
+      <BinaryModifier TargetProperty="EmpirePointProductionBoost"       Operation="Addition" Left="$(EmpirePointProductionBoostMultiplier)" BinaryOperation="Multiplication" Right="$(EmpireInfluenceRelics)" />
+      <BinaryModifier TargetProperty="EmpireFoodProductionBoost"        Operation="Addition" Left="$(EmpireFoodProductionBoostMultiplier)" BinaryOperation="Multiplication" Right="$(EmpireFoodRelics)" />
+      <BinaryModifier TargetProperty="EmpireDustProductionBoost"        Operation="Addition" Left="$(EmpireDustProductionBoostMultiplier)" BinaryOperation="Multiplication" Right="$(EmpireDustRelics)" />
+      <BinaryModifier TargetProperty="EmpireIndustryProductionBoost"    Operation="Addition" Left="$(EmpireIndustryProductionBoostMultiplier)" BinaryOperation="Multiplication" Right="$(EmpireIndustryRelics)" />
+
+      <Modifier   TargetProperty="NetSystemEmpirePoint"   Operation="Percent" Value="$(EmpirePointProductionBoost)" TooltipHidden="false" Path="ClassEmpire/ClassColonizedStarSystem" ValueMustBePositive="true"/>
+      <Modifier   TargetProperty="NetSystemGrowth"        Operation="Percent" Value="$(EmpireFoodProductionBoost)" TooltipHidden="false" Path="ClassEmpire/ClassColonizedStarSystem" ValueMustBePositive="true"/>
+      <Modifier   TargetProperty="NetSystemMoney"         Operation="Percent" Value="$(EmpireDustProductionBoost)" TooltipHidden="false" Path="ClassEmpire/ClassColonizedStarSystem" ValueMustBePositive="true"/>
+      <Modifier   TargetProperty="NetSystemProduction"    Operation="Percent" Value="$(EmpireIndustryProductionBoost)" TooltipHidden="false" Path="ClassEmpire/ClassColonizedStarSystem" ValueMustBePositive="true"/>
+
+      <Modifier TargetProperty="NetEmpireRelics"  Operation="Addition"    Value="$(EmpireIndustryRelics)"       TooltipHidden="true"/>
+      <Modifier TargetProperty="NetEmpireRelics"  Operation="Addition"    Value="$(EmpireDustRelics)"           TooltipHidden="true"/>
+      <Modifier TargetProperty="NetEmpireRelics"  Operation="Addition"    Value="$(EmpireFoodRelics)"           TooltipHidden="true"/>
+      <Modifier TargetProperty="NetEmpireRelics"  Operation="Addition"    Value="$(EmpireInfluenceRelics)"      TooltipHidden="true"/>
+
+      <Modifier TargetProperty="FIDIRelics"  Operation="Addition"    Value="$(EmpireIndustryRelics)"      />
+      <Modifier TargetProperty="FIDIRelics"  Operation="Addition"    Value="$(EmpireDustRelics)"          />
+      <Modifier TargetProperty="FIDIRelics"  Operation="Addition"    Value="$(EmpireFoodRelics)"          />
+      <Modifier TargetProperty="FIDIRelics"  Operation="Addition"    Value="$(EmpireInfluenceRelics)"     />
+     
+    </SimulationDescriptor>
+
+</Datatable>

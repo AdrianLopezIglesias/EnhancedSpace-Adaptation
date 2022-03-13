@@ -1,0 +1,2466 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/HeroSkillDefinition.xsd">
+
+	<!--
+    -   Note: be careful with alternatives, as the skills get replaced only in the skill tree, not in the hero unlocked skills set.
+    -   That means that if you set a prerequisite that checks dynamic properties, you can unlock the skill and then its alternative once the context has changed,
+    -   because it will not change the unlocked skill, only the skills showed in the skill tree
+    -->
+
+	<!--GENERIC BRANCH SKILLS-->
+
+   <HeroSkillDefinition Name="HeroSkill04BranchGeneric">
+      <Tags>ColonizedStarSystem</Tags>
+      <SkillLevel Name="HeroSkill04BranchGeneric_01">
+         <SystemSimulationDescriptorReference Name="HeroSkillSystem5_SystemManpower_Flat_2"/>
+         <MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+      </SkillLevel>
+      <SkillLevel Name="HeroSkill04BranchGeneric_02">
+         <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+         <SystemSimulationDescriptorReference Name="HeroSkillSystem5_SystemManpower_Flat_3"/>
+         <MasteryLevel Class="HeroMasteryWit" Levels="2"/>
+      </SkillLevel>
+   </HeroSkillDefinition>
+
+   <HeroSkillDefinition Name="HeroSkill02BranchGeneric">
+      <SkillLevel Name="HeroSkill02BranchGeneric_01">
+         <ShipSimulationDescriptorReference Name="HeroSkillShip47_FleetExplorationFleetXP_Flat_1"/>
+         <MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+      </SkillLevel>
+      <SkillLevel Name="HeroSkill02BranchGeneric_02">
+         <ShipSimulationDescriptorReference Name="HeroSkillShip47_FleetExplorationFleetXP_Flat_2"/>
+         <MasteryLevel Class="HeroMasteryCuriosity" Levels="2"/>
+      </SkillLevel>
+      <SkillLevel Name="HeroSkill02BranchGeneric_03">
+         <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+         <ShipSimulationDescriptorReference Name="HeroSkillShip47_FleetExplorationFleetXP_Flat_3"/>
+         <MasteryLevel Class="HeroMasteryCuriosity" Levels="3"/>
+      </SkillLevel>
+   </HeroSkillDefinition>
+   
+	<HeroSkillDefinition Name="HeroSkill01BranchGeneric">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill01BranchGeneric_01">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem79_IndustryFood_Perpop_1"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill01BranchGeneric_02">
+         <SystemSimulationDescriptorReference Name="HeroSkillSystem79_IndustryFood_Perpop_2"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="2"/>
+		</SkillLevel>
+      <SkillLevel Name="HeroSkill01BranchGeneric_03">
+         <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+         <SystemSimulationDescriptorReference Name="HeroSkillSystem79_IndustryFood_Perpop_3"/>
+         <MasteryLevel Class="HeroMasteryLabour" Levels="3"/>
+      </SkillLevel>
+	</HeroSkillDefinition>
+
+   <HeroSkillDefinition Name="HeroSkill06BranchGeneric">
+      <SkillLevel Name="HeroSkill06BranchGeneric_01">
+         <ShipSimulationDescriptorReference Name="HeroSkillShip22_FleetDamage_Percent_1"/>
+         <MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+      </SkillLevel>
+      <SkillLevel Name="HeroSkill06BranchGeneric_02">
+         <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+         <ShipSimulationDescriptorReference Name="HeroSkillShip22_FleetDamage_Percent_2"/>
+         <MasteryLevel Class="HeroMasteryCommand" Levels="2"/>
+      </SkillLevel>
+   </HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill03BranchGeneric">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill03BranchGeneric_01">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem51_Approval_Flat_1"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill03BranchGeneric_02">
+         <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem51_Approval_Flat_2"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+   <HeroSkillDefinition Name="HeroSkill07BranchGeneric">
+      <SkillLevel Name="HeroSkill07BranchGeneric_01">
+         <ShipSimulationDescriptorReference Name="HeroSkill15_HeroesUpkeepReduction"/>
+         <ShipSimulationDescriptorReference Name="HeroSkillShip15_HeroUpkeep_Multiplier_4"/>
+         <MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+      </SkillLevel>
+      <SkillLevel Name="HeroSkill07BranchGeneric_01">
+         <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+         <ShipSimulationDescriptorReference Name="HeroSkill15_HeroesUpkeepReduction_2"/>
+         <ShipSimulationDescriptorReference Name="HeroSkillShip15_HeroUpkeep_Multiplier_4"/>
+         <MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+      </SkillLevel>
+   </HeroSkillDefinition>
+   
+	<HeroSkillDefinition Name="HeroSkill05BranchGeneric">
+		<SkillLevel Name="HeroSkill05BranchGeneric_01">
+			<HeroSimulationDescriptorReference Name="HeroSkill17_HeroUpkeepHeroCooldown_Percent_3" />
+         <ShipSimulationDescriptorReference Name="HeroSkillShip_Multiplier_1"/>
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem17_GovernorUpkeepReduction_Percent_3" />
+      <MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill05BranchGeneric_02">
+			<HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+			<HeroSimulationDescriptorReference Name="HeroSkill17_HeroUpkeepHeroCooldown_Percent_4"/>
+			<ShipSimulationDescriptorReference Name="HeroSkillShip_Multiplier_1"/>
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem17_GovernorUpkeepReduction_Percent_4" />
+      <MasteryLevel Class="HeroMasteryCuriosity" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	
+
+
+	<!--ADMIRAL BRANCH SKILLS-->
+	<HeroSkillDefinition Name="HeroSkill01BranchAdmiral">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill01BranchAdmiral_01">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem71_Industry_PerPlanetFlat_1"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill01BranchAdmiral_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem71_Industry_PerPlanetFlat_2"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill02BranchAdmiral">
+		<SkillLevel Name="HeroSkill02BranchAdmiral_01">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip23_FleetDefense_Percent_1"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill02BranchAdmiral_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip23_FleetDefense_Percent_2"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill03BranchAdmiral">
+		<SkillLevel Name="HeroSkill03BranchAdmiral_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SenateSimulationDescriptorReference Name="HeroSkillSenator14_Diplomacy_Percent"/>
+			<ShipSimulationDescriptorReference Name="HeroSkillShip7_SystemManpower_Percent_2"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill04BranchAdmiral">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill04BranchAdmiral_01">
+         <SenateSimulationDescriptorReference Name="HeroSkillSystem_Admiral08_Senator"/>
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem72_Industry_Percent_3"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill04BranchAdmiral_02">
+		  <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+			<SenateSimulationDescriptorReference Name="HeroSkillSystem_Admiral08_Senator"/>
+		  <SystemSimulationDescriptorReference Name="HeroSkillSystem72_Industry_Percent_4"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill05BranchAdmiral">
+		<SkillLevel Name="HeroSkill05BranchAdmiral_01">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip27_FleetDefense_Percent_3"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill05BranchAdmiral_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip27_FleetDefense_Percent_4"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill06BranchAdmiral">
+		<SkillLevel Name="HeroSkill06BranchAdmiral_01">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip18_FleetDamage_Percent_3"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill06BranchAdmiral_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip18_FleetDamage_Percent_4"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill07BranchAdmiral">
+		<SkillLevel Name="HeroSkill07BranchAdmiral_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip48_FleetDefenseFleetDamage_Percent_4"/>
+			<ShipSimulationDescriptorReference Name="HeroSkillShip42_FleetXP_Force_4"/>
+			<EncounterPlayReference Name="PlayOffensiveBalancedDamageIncrease"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<!--ADVENTURER BRANCH SKILLS-->
+	<HeroSkillDefinition Name="HeroSkill01BranchAdventurer">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill01BranchAdventurer_01">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem90_Science_Flat_1"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill01BranchAdventurer_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem90_Science_Flat_2"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill02BranchAdventurer">
+		<SkillLevel Name="HeroSkill02BranchAdventurer_01">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip34_FleetExploration_MultiplierFlat_1"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill02BranchAdventurer_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip34_FleetExploration_MultiplierFlat_2"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill03BranchAdventurer">
+		<SkillLevel Name="HeroSkill03BranchAdventurer_01">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem106_InfluenceTroopBonus_PercentPerpop_2"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill03BranchAdventurer_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem106_InfluenceTroopBonus_PercentPerpop_3"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill04BranchAdventurer">
+		<SkillLevel Name="HeroSkill04BranchAdventurer_01">
+			<SenateSimulationDescriptorReference Name="HeroSkillSenator36_FleetExploration_Flat_3"/>
+			<ShipSimulationDescriptorReference Name="HeroSkillShip36_FleetExploration_Flat_2"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkillSenatorBranchAdventurer">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SenateSimulationDescriptorReference Name="HeroSkillSenator36_FleetExploration_Flat_3"/>
+			<ShipSimulationDescriptorReference Name="HeroSkillShip36_FleetExploration_Flat_3"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill05BranchAdventurer">
+		<SkillLevel Name="HeroSkill05BranchAdventurer_01">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip18_FleetDamage_Percent_2"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill05BranchAdventurer_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip18_FleetDamage_Percent_3"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill06BranchAdventurer">
+		<SkillLevel Name="HeroSkill06BranchAdventurer_01">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip28_FleetDefense_Percent_3"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill06BranchAdventurer_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip28_FleetDefense_Percent_4"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill07BranchAdventurer">
+		<SkillLevel Name="HeroSkill07BranchAdventurer_01">
+			<HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+         <ShipSimulationDescriptorReference Name="HeroSkill16_HeroCooldown_Percent_4"/>
+			<HeroSimulationDescriptorReference Name="HeroSkill16_HeroCooldown_Percent_4_OutOfTerritory"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<!--ADMINISTRATOR BRANCH SKILLS-->
+	<HeroSkillDefinition Name="HeroSkill01BranchAdministrator">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill01BranchAdministrator_01">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem64_Food_PerPlanetFlat_1"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill01BranchAdministrator_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem64_Food_PerPlanetFlat_2"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill02BranchAdministrator">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02BranchAdministrator_01">
+         <ShipSimulationDescriptorReference Name="HeroSkillShip7_SystemManpower_Percent_1"/>
+         <MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+      </SkillLevel>
+      <SkillLevel Name="HeroSkill02BranchAdministrator_02">
+         <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+         <ShipSimulationDescriptorReference Name="HeroSkillShip7_SystemManpower_Percent_2"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill03BranchAdministrator">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill03BranchAdministrator_01">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem73_Industry_Perpop_3"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill03BranchAdministrator_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem73_Industry_Perpop_4"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill04BranchAdministrator">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill04BranchAdministrator_01">
+			<SenateSimulationDescriptorReference Name="HeroSkillSenator98_StrategicLuxury_Flat_3"/>
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem98_StrategicLuxury_Flat_2"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill04BranchAdministrator_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SenateSimulationDescriptorReference Name="HeroSkillSenator98_StrategicLuxury_Flat_3"/>
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem98_StrategicLuxury_Flat_3"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill05BranchAdministrator">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill05BranchAdministrator_01">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem50_Approval_Percent_3"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill05BranchAdministrator_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem50_Approval_Percent_4"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill06BranchAdministrator">
+		<SkillLevel Name="HeroSkill06BranchAdministrator_01">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip43_FleetExplorationFleetDefense_PercentFlat_3"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill06BranchAdministrator_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip43_FleetExplorationFleetDefense_PercentFlat_4"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill07BranchAdministrator">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill07BranchAdministrator_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem103_FID_Percent_4"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<!--CORPORATE BRANCH SKILLS-->
+	<HeroSkillDefinition Name="HeroSkill01BranchCorporate">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill01BranchCorporate_01">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem58_Dust_PerPlanetFlat_1"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill01BranchCorporate_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem58_Dust_PerPlanetFlat_2"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill02BranchCorporate">
+		<SkillLevel Name="HeroSkill02BranchCorporate_01">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip18_FleetDamage_Percent_1"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill02BranchCorporate_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip18_FleetDamage_Percent_2"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill03BranchCorporate">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill03BranchCorporate_01">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem90_Science_Flat_2"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+        <SkillLevel Name="HeroSkill03BranchCorporate_02">
+            <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+            <SystemSimulationDescriptorReference Name="HeroSkillSystem90_Science_Flat_3"/>
+            <MasteryLevel Class="HeroMasteryWit" Levels="2"/>
+        </SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill04BranchCorporate">
+		<SkillLevel Name="HeroSkill04BranchCorporate_01">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip107_FleetDefense_Percent_2"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+        <SkillLevel Name="HeroSkill04BranchCorporate_02">
+            <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+            <ShipSimulationDescriptorReference Name="HeroSkillShip107_FleetDefense_Percent_3"/>
+            <MasteryLevel Class="HeroMasteryCommand" Levels="2"/>
+        </SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill05BranchCorporate">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill05BranchCorporate_01">
+			<SenateSimulationDescriptorReference Name="HeroSkillSenator101_Influence_PerTradeCompany"/>
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem81_Influence_PercentFlat_2"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+        <SkillLevel Name="HeroSkill05BranchCorporate_02">
+            <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+            <SenateSimulationDescriptorReference Name="HeroSkillSenator101_Influence_PerTradeCompany"/>
+            <SystemSimulationDescriptorReference Name="HeroSkillSystem81_Influence_PercentFlat_3"/>
+            <MasteryLevel Class="HeroMasteryWit" Levels="2"/>
+        </SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill06BranchCorporate">
+		<SkillLevel Name="HeroSkill06BranchCorporate_01">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip45_FleetExplorationFleetUpkeep_Percent_1"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+		</SkillLevel>
+        <SkillLevel Name="HeroSkill06BranchCorporate_02">
+            <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+            <ShipSimulationDescriptorReference Name="HeroSkillShip45_FleetExplorationFleetUpkeep_Percent_2"/>
+            <MasteryLevel Class="HeroMasteryCuriosity" Levels="2"/>
+        </SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill07BranchCorporate">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill07BranchCorporate_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem52_Approval_Force_4"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+    <HeroSkillDefinition Name="HeroSkill07BranchCorporateUmbralChoir">
+        <Tags>ColonizedStarSystem</Tags>
+        <SkillLevel Name="HeroSkill07BranchCorporate_01UmbralChoir">
+            <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+            <SystemSimulationDescriptorReference Name="HeroSkillSystem52_Approval_Force_4UmbralChoir"/>
+            <MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+
+	<!--SOPHONS BRANCH SKILLS-->
+	<HeroSkillDefinition Name="HeroSkill01BranchSophons">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill01BranchSophons_01">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem94_Science_PerHeroLevelFlat_1"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill01BranchSophons_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem94_Science_PerHeroLevelFlat_2"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill02BranchSophons">
+		<SkillLevel Name="HeroSkill02BranchSophons_01">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip35_FleetExploration_Flat_1"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill02BranchSophons_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip35_FleetExploration_Flat_2"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill03BranchSophons">
+		<SkillLevel Name="HeroSkill03BranchSophons_01">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip20_FleetDamage_Percent_2"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill03BranchSophons_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip20_FleetDamage_Percent_3"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill04BranchSophons">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill04BranchSophons_01">
+			<SenateSimulationDescriptorReference Name="HeroSkillSenator51_Approval_Flat_3"/>
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem56_Approval_PerAnomaly_3"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill04BranchSophons_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SenateSimulationDescriptorReference Name="HeroSkillSenator51_Approval_Flat_3"/>
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem56_Approval_PerAnomaly_4"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill05BranchSophons">
+		<SkillLevel Name="HeroSkill05BranchSophons_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip37_FleetExploration_Flat_3"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill06BranchSophons">
+		<SkillLevel Name="HeroSkill06BranchSophons_01">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip108_FleetExplorationFleetDefense_PercentFlat_3"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill06BranchSophons_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip108_FleetExplorationFleetDefense_PercentFlat_4"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill07BranchSophons">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill07BranchSophons_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem89_Science_Percent_4"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<!--CRAVERS BRANCH SKILLS-->
+	<HeroSkillDefinition Name="HeroSkill01BranchCravers">
+		<SkillLevel Name="HeroSkill01BranchCravers_01">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip19_FleetDamage_Percent_1"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill01BranchCravers_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip19_FleetDamage_Percent_2"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill02BranchCravers">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02BranchCravers_01">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem78_IndustryFood_PerPlanetFlat_1"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill02BranchCravers_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem78_IndustryFood_PerPlanetFlat_2"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill03BranchCravers">
+		<SkillLevel Name="HeroSkill03BranchCravers_01">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip44_FleetExplorationFleetDefense_PercentFlat_2"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill03BranchCravers_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip44_FleetExplorationFleetDefense_PercentFlat_3"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill04BranchCravers">
+		<SkillLevel Name="HeroSkill04BranchCravers_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem82_Influence_Percent_2"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill05BranchCravers">
+		<SkillLevel Name="HeroSkill05BranchCravers_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip112_FleetDamage_Percent_3"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill06BranchCravers">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill06BranchCravers_01">
+			<SenateSimulationDescriptorReference Name="HeroSkillSenator10_TroopBonus_Percent_4"/>
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem10_TroopBonus_Percent_3"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill06BranchCravers_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SenateSimulationDescriptorReference Name="HeroSkillSenator10_TroopBonus_Percent_4"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem10_TroopBonus_Percent_4"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill07BranchCravers">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill07BranchCravers_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem104_FIDSI_PercentFlat_4"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<!--TERRANS BRANCH SKILLS-->
+	<HeroSkillDefinition Name="HeroSkill01BranchTerrans">
+		<SkillLevel Name="HeroSkill01BranchTerrans_01">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip29_FleetDefense_Percent_1"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill01BranchTerrans_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip29_FleetDefense_Percent_2"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill02BranchTerrans">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02BranchTerrans_01">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem80_Influence_Perpop_1"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill02BranchTerrans_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem80_Influence_Perpop_2"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill03BranchTerrans">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill03BranchTerrans_01">
+         <ShipSimulationDescriptorReference Name="HeroSkillShip8_SystemManpower_Percent_3"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill03BranchTerrans_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+         <ShipSimulationDescriptorReference Name="HeroSkillShip8_SystemManpower_Percent_4"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill04BranchTerrans">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill04BranchTerrans_01">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem76_Industry_PerPlanetFlat_1"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill04BranchTerrans_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem76_Industry_PerPlanetFlat_2"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill05BranchTerrans">
+		<SkillLevel Name="HeroSkill05BranchTerrans_01">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip21_FleetDamage_PerCommandPoint_3"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill05BranchTerrans_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip21_FleetDamage_PerCommandPoint_4"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill06BranchTerrans">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill06BranchTerrans_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem97_Strategic_Flat_3"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill07BranchTerrans">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill07BranchTerrans_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SenateSimulationDescriptorReference Name="HeroSkillSenator77_Industry_PerHeroLevel_4"/>
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem77_Industry_PerHeroLevel_4"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<!-- HORATIO BRANCH SKILLS -->
+	<HeroSkillDefinition Name="HeroSkill01BranchHoratio">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill01BranchHoratio_01">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem70_ApprovalFood_PercentFlat_1"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill01BranchHoratio_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem70_ApprovalFood_PercentFlat_2"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill02BranchHoratio">
+		<SkillLevel Name="HeroSkill02BranchHoratio_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip39_FleetExploration_PercentFlat_1"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill03BranchHoratio">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill03BranchHoratio_01">
+         <ShipSimulationDescriptorReference Name="HeroSkillShip8_SystemManpower_Percent_3"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill03BranchHoratio_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+         <ShipSimulationDescriptorReference Name="HeroSkillShip8_SystemManpower_Percent_4"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill04BranchHoratio">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill04BranchHoratio_01">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem66_Food_Perpop_3"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill04BranchHoratio_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem66_Food_Perpop_4"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill05BranchHoratio">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill05BranchHoratio_01">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem86_Luxury_Flat_3"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill05BranchHoratio_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem86_Luxury_Flat_4"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill06BranchHoratio">
+		<SkillLevel Name="HeroSkill06BranchHoratio_01">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip29_FleetDefense_Percent_3"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill06BranchHoratio_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip29_FleetDefense_Percent_4"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill07BranchHoratio">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill07BranchHoratio_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SenateSimulationDescriptorReference Name="HeroSkillSenator87_Luxury_Percent_4"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem87_Luxury_Percent_4"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<!--Venetians BRANCH SKILLS-->
+	<HeroSkillDefinition Name="HeroSkill01BranchVenetians">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill01BranchVenetians_01">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem62_Dust_PerPlanetFlat_1"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill01BranchVenetians_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem62_Dust_PerPlanetFlat_2"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill02BranchVenetians">
+		<SkillLevel Name="HeroSkill02BranchVenetians_01">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip109_FleetDefense_Percent_1"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill02BranchVenetians_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip109_FleetDefense_Percent_2"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill03BranchVenetians">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill03BranchVenetians_01">
+			<HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+			<SenateSimulationDescriptorReference Name="HeroSkillSenatorPercent99_TradeCompanies_Percent"/>
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem82_Influence_Percent_2"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill04BranchVenetians">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill04BranchVenetians_01">
+         <ShipSimulationDescriptorReference Name="HeroSkillShip33_FleetDefense_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill04BranchVenetians_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+         <ShipSimulationDescriptorReference Name="HeroSkillShip33_FleetDefense_Percent_1"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill05BranchVenetians">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill05BranchVenetians_01">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem85_InfluenceDust_Flat_3"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill05BranchVenetians_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem85_InfluenceDust_Flat_4"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill06BranchVenetians">
+		<SkillLevel Name="HeroSkill06BranchVenetians_01">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip46_FleetExplorationFleetUpkeep_PercentFlat_3"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill06BranchVenetians_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip46_FleetExplorationFleetUpkeep_PercentFlat_4"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill07BranchVenetians">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill07BranchVenetians_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem100_TradeCompanies_Percent_4"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<!--VAMPIRILIS BRANCH SKILLS-->
+	<HeroSkillDefinition Name="HeroSkill01BranchVampirilis">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill01BranchVampirilis_01">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem69_Food_PerHeroLevelFlat_1"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill01BranchVampirilis_02">
+			<HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem69_Food_PerHeroLevelFlat_2"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill02BranchVampirilis"> 
+		<SkillLevel Name="HeroSkill02BranchVampirilis_01">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip26_FleetDefense_Percent_1"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill02BranchVampirilis_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip26_FleetDefense_Percent_2"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill03BranchVampirilis">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill03BranchVampirilis_01">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem61_Dust_Percent_2"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill03BranchVampirilis_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem61_Dust_Percent_3"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill04BranchVampirilis">
+		<SkillLevel Name="HeroSkill04BranchVampirilis_01">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip20_FleetDamage_Percent_2"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill04BranchVampirilis_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip20_FleetDamage_Percent_3"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill05BranchVampirilis">
+		<SkillLevel Name="HeroSkill05BranchVampirilis_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip37_FleetExploration_Flat_3"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill06BranchVampirilis">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill06BranchVampirilis_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SenateSimulationDescriptorReference Name="HeroSkillSenator105_FIDSI_PerHeroLevel_3"/>
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem105_FIDSI_PerHeroLevel_3"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill07BranchVampirilis">
+		<SkillLevel Name="HeroSkill07BranchVampirilis_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip49_FleetDefenseFleetDamage_Percent_4"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<!--TimeLords BRANCH SKILLS-->
+	<HeroSkillDefinition Name="HeroSkill01BranchTimeLords">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill01BranchTimeLords_01">
+			<SystemSimulationDescriptorReference Name="HeroSkillShip41_FleetUpkeep_Percent_2"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill01BranchTimeLords_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillShip41_FleetUpkeep_Percent_3"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill02BranchTimeLords">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02BranchTimeLords_01">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem74_Industry_Flat_1"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill02BranchTimeLords_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem74_Industry_Flat_2"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill03BranchTimeLords">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill03BranchTimeLords_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem91_Science_PerAnomalyFlat_2"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill04BranchTimeLords">
+		<SkillLevel Name="HeroSkill04BranchTimeLords_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip25_FleetDefense_Percent_2"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill05BranchTimeLords">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill05BranchTimeLords_01">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem94_Science_PerHeroLevelFlat_3"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill05BranchTimeLords_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem94_Science_PerHeroLevelFlat_4"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill06BranchTimeLords">
+		<SkillLevel Name="HeroSkill06BranchTimeLords_01">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip111_FleetDamage_Percent_3"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill06BranchTimeLords_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip111_FleetDamage_Percent_4"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill07BranchTimeLords">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill07BranchTimeLords_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SenateSimulationDescriptorReference Name="HeroSkillSenator75_Industry_PerAnomaly_4"/>
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem75_Industry_PerAnomaly_4"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+<!--Unfallen BRANCH SKILLS-->
+	<HeroSkillDefinition Name="HeroSkill01BranchUnfallen">
+		<SkillLevel Name="HeroSkill01BranchUnfallen_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip31_FleetDefense_PerCommandPoint_1"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill02BranchUnfallen">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02BranchUnfallen_01">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem68_Food_Percent_1"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill02BranchUnfallen_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem68_Food_Percent_2"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill03BranchUnfallen">
+		<SkillLevel Name="HeroSkill03BranchUnfallen_01">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip29_FleetDefense_Percent_2"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill03BranchUnfallen_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip29_FleetDefense_Percent_3"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill04BranchUnfallen">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill04BranchUnfallen_01">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem84_Influence_PerHeroLevelFlat_2"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill04BranchUnfallen_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem84_Influence_PerHeroLevelFlat_3"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill05BranchUnfallen">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill05BranchUnfallen_01">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem80_Influence_Perpop_3"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill05BranchUnfallen_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem80_Influence_Perpop_4"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill06BranchUnfallen">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill06BranchUnfallen_01">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem66_Food_Perpop_3"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill06BranchUnfallen_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem66_Food_Perpop_4"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill07BranchUnfallen">
+		<SkillLevel Name="HeroSkill07BranchUnfallen_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SenateSimulationDescriptorReference Name="HeroSkillSenator24_FleetDefense_Percent_4"/>
+			<ShipSimulationDescriptorReference Name="HeroSkillShip24_FleetDefense_Percent_4"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+
+	<!--MINORFACTION01 BRANCH SKILLS-->
+	<HeroSkillDefinition Name="HeroSkill01BranchMinorFaction01">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill01BranchMinorFaction01_01">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem84_Influence_PerHeroLevelFlat_1"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill01BranchMinorFaction01_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem84_Influence_PerHeroLevelFlat_2"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill02BranchMinorFaction01">
+		<SkillLevel Name="HeroSkill02BranchMinorFaction01_01">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip46_FleetExplorationFleetUpkeep_PercentFlat_2"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill02BranchMinorFaction01_02">
+			<HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+			<ShipSimulationDescriptorReference Name="HeroSkillShip46_FleetExplorationFleetUpkeep_PercentFlat_3"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill03BranchMinorFaction01">
+		<SkillLevel Name="HeroSkill03BranchMinorFaction01_01">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip112_FleetDamage_Percent_2"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill03BranchMinorFaction01_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip112_FleetDamage_Percent_3"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill04BranchMinorFaction01">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill04BranchMinorFaction01_01">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem68_Food_Percent_3"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill04BranchMinorFaction01_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem68_Food_Percent_4"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill05BranchMinorFaction01">
+		<SkillLevel Name="HeroSkill05BranchMinorFaction01_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SenateSimulationDescriptorReference Name="HeroSkillSenator1_ShipCostReduction_Percent_3"/>
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem1_ShipCostReduction_Percent_3"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill06BranchMinorFaction01">
+		<SkillLevel Name="HeroSkill06BranchMinorFaction01_01">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip110_FleetDefense_Percent_3"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill06BranchMinorFaction01_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip110_FleetDefense_Percent_4"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill07BranchMinorFaction01">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill07BranchMinorFaction01_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem55_Approval_Perpop_4"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<!--MinorFaction02 BRANCH SKILLS-->
+	<HeroSkillDefinition Name="HeroSkill01BranchMinorFaction02">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill01BranchMinorFaction02_01">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem53_Approval_Perpop_1"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill01BranchMinorFaction02_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem53_Approval_Perpop_2"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill02BranchMinorFaction02">
+		<SkillLevel Name="HeroSkill02BranchMinorFaction02_01">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip30_FleetDefense_Flat_1"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill02BranchMinorFaction02_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip30_FleetDefense_Flat_2"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill03BranchMinorFaction02"> 
+      <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill03BranchMinorFaction02_01">
+         <ShipSimulationDescriptorReference Name="HeroSkillShip41_FleetUpkeep_Percent_2"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill03BranchMinorFaction02_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+         <ShipSimulationDescriptorReference Name="HeroSkillShip41_FleetUpkeep_Percent_3"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill04BranchMinorFaction02">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill04BranchMinorFaction02_01">
+         <ShipSimulationDescriptorReference Name="HeroSkillSystem11_TroopBonus_Perpop_2"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill04BranchMinorFaction02_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+         <ShipSimulationDescriptorReference Name="HeroSkillSystem11_TroopBonus_Perpop_3"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill05BranchMinorFaction02">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill05BranchMinorFaction02_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SenateSimulationDescriptorReference Name="HeroSkillSenator3_ElectionActionCostReduction_Percent"/>
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem80_Influence_Perpop_3"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill06BranchMinorFaction02">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill06BranchMinorFaction02_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem102_Upkeep_Percent_3"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill07BranchMinorFaction02">
+		<SkillLevel Name="HeroSkill07BranchMinorFaction02_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip31_FleetDefense_PerCommandPoint_4"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<!--MinorFaction03 BRANCH SKILLS-->
+	<HeroSkillDefinition Name="HeroSkill01BranchMinorFaction03">
+		<SkillLevel Name="HeroSkill01BranchMinorFaction03_01">
+         <SystemSimulationDescriptorReference Name="HeroSkillSystem91_Science_PerAnomalyFlat_1"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill01BranchMinorFaction03_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+         <SystemSimulationDescriptorReference Name="HeroSkillSystem91_Science_PerAnomalyFlat_2"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill02BranchMinorFaction03">
+		<SkillLevel Name="HeroSkill02BranchMinorFaction03_01">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip113_FleetExploration_Flat_1"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill02BranchMinorFaction03_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip113_FleetExploration_Flat_2"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill03BranchMinorFaction03">
+		<SkillLevel Name="HeroSkill03BranchMinorFaction03_01">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip26_FleetDefense_Percent_2"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill03BranchMinorFaction03_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip26_FleetDefense_Percent_3"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill04BranchMinorFaction03">
+		<SkillLevel Name="HeroSkill04BranchMinorFaction03_01">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip25_FleetDefense_Percent_3"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill04BranchMinorFaction03_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip25_FleetDefense_Percent_4"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill05BranchMinorFaction03">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill05BranchMinorFaction03_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem89_Science_Percent_3"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill06BranchMinorFaction03">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill06BranchMinorFaction03_01">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem88_Science_PerPlanetFlat_3"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill06BranchMinorFaction03_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem88_Science_PerPlanetFlat_4"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill07BranchMinorFaction03">
+		<SkillLevel Name="HeroSkill07BranchMinorFaction03_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SenateSimulationDescriptorReference Name="HeroSkillSenator111_FleetDamage_Percent_4"/>
+			<ShipSimulationDescriptorReference Name="HeroSkillShip111_FleetDamage_Percent_4"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<!--MinorFaction04 BRANCH SKILLS-->
+	<HeroSkillDefinition Name="HeroSkill01BranchMinorFaction04">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill01BranchMinorFaction04_01">
+         <ShipSimulationDescriptorReference Name="HeroSkillShip30_FleetDefense_Flat_1"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill01BranchMinorFaction04_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+         <ShipSimulationDescriptorReference Name="HeroSkillShip30_FleetDefense_Flat_2"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill02BranchMinorFaction04">
+		<SkillLevel Name="HeroSkill02BranchMinorFaction04_01">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip21_FleetDamage_PerCommandPoint_1"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill02BranchMinorFaction04_02">
+			<HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+			<ShipSimulationDescriptorReference Name="HeroSkillShip21_FleetDamage_PerCommandPoint_2"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill03BranchMinorFaction04">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill03BranchMinorFaction04_01">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem69_Food_PerHeroLevelFlat_2"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill03BranchMinorFaction04_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem69_Food_PerHeroLevelFlat_3"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill04BranchMinorFaction04">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill04BranchMinorFaction04_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem74_Industry_Flat_2"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill05BranchMinorFaction04">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill05BranchMinorFaction04_01">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem6_SystemManpower_Percent_3"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill05BranchMinorFaction04_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem6_SystemManpower_Percent_4"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill06BranchMinorFaction04">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill06BranchMinorFaction04_01">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip8_SystemManpower_Percent_3"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill06BranchMinorFaction04_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip8_SystemManpower_Percent_4"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill07BranchMinorFaction04">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill07BranchMinorFaction04_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SenateSimulationDescriptorReference Name="HeroSkillSenator73_Industry_Perpop_4"/>
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem73_Industry_Perpop_4"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<!--ENDLESS BRANCH SKILLS-->
+	<HeroSkillDefinition Name="HeroSkill01BranchEndless">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill01BranchEndless_01">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem91_Science_PerAnomalyFlat_1"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill01BranchEndless_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem91_Science_PerAnomalyFlat_2"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill02BranchEndless">
+		<SkillLevel Name="HeroSkill02BranchEndless_01">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip35_FleetExploration_Flat_1"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill02BranchEndless_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip35_FleetExploration_Flat_2"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill03BranchEndless"> 
+		<SkillLevel Name="HeroSkill03BranchEndless_01">
+         <SystemSimulationDescriptorReference Name="HeroSkillSystem78_IndustryFood_PerPlanetFlat_2"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill03BranchEndless_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+         <SystemSimulationDescriptorReference Name="HeroSkillSystem78_IndustryFood_PerPlanetFlat_3"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill04BranchEndless">
+		<SkillLevel Name="HeroSkill04BranchEndless_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip25_FleetDefense_Percent_2"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill05BranchEndless">
+		<SkillLevel Name="HeroSkill05BranchEndless_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip111_FleetDamage_Percent_3"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill05BranchEndless_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip111_FleetDamage_Percent_4"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill06BranchEndless">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill06BranchEndless_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip9_SystemManpower_Percent_4"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<!--############################-->
+	<!--### HERO SPECIFIC SKILLS ###-->
+	<!--############################-->
+	<!-- Sophons01 -->
+	<HeroSkillDefinition Name="HeroSkill01Sophons01">
+		<SkillLevel Name="HeroSkill01Sophons01_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip25_FleetDefense_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Sophons01">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Sophons01_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem75_Industry_PerAnomaly_0"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<!-- Sophons02 -->
+	<HeroSkillDefinition Name="HeroSkill01Sophons02">
+		<SkillLevel Name="HeroSkill01Sophons02_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip38_FleetExploration_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Sophons02">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Sophons02_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem95_Science_PerAnomaly_0"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<!-- Sophons03 -->
+	<HeroSkillDefinition Name="HeroSkill01Sophons03">
+		<SkillLevel Name="HeroSkill01Sophons03_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip23_FleetDefense_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Sophons03">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Sophons03_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem60_Dust_Perpop_0"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<!-- Sophons04 -->
+	<HeroSkillDefinition Name="HeroSkill01Sophons04">
+		<SkillLevel Name="HeroSkill01Sophons04_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip23_FleetDefense_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Sophons04">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Sophons04_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem96_Science_Perpop_0"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<!-- Sophons05 -->
+	<HeroSkillDefinition Name="HeroSkill01Sophons05">
+		<SkillLevel Name="HeroSkill01Sophons05_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip40_FleetExploration_Flat_0"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Sophons05">
+		<Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Sophons05_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem80_Influence_Perpop_0"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<!-- Cravers01 -->
+	<HeroSkillDefinition Name="HeroSkill01Cravers01">
+		<SkillLevel Name="HeroSkill01Cravers01_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip23_FleetDefense_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Cravers01">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Cravers01_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem73_Industry_Perpop_0"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<!-- Cravers02 -->
+	<HeroSkillDefinition Name="HeroSkill01Cravers02">
+		<SkillLevel Name="HeroSkill01Cravers02_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip22_FleetDamage_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Cravers02">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Cravers02_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem1_ShipCostReduction_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<!-- Cravers03 -->
+	<HeroSkillDefinition Name="HeroSkill01Cravers03">
+		<SkillLevel Name="HeroSkill01Cravers03_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip22_FleetDamage_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Cravers03">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Cravers03_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem80_Influence_Perpop_0"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<!-- Cravers04 -->
+	<HeroSkillDefinition Name="HeroSkill01Cravers04">
+		<SkillLevel Name="HeroSkill01Cravers04_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip37_FleetExploration_Flat_0"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Cravers04">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Cravers04_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem82_Influence_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+    <!-- CraversPrime -->
+    <HeroSkillDefinition Name="HeroSkill01CraversPrime">
+        <Tags>ColonizedStarSystem</Tags>
+        <SkillLevel Name="HeroSkill01CraversPrime_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem73_Industry_Perpop_0"/>
+            <MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+    <HeroSkillDefinition Name="HeroSkill02CraversPrime">
+        <SkillLevel Name="HeroSkill02CraversPrime_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip47_FleetExplorationFleetXP_Flat_0"/>
+            <MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+
+	<!-- Terrans01 -->
+	<HeroSkillDefinition Name="HeroSkill01Terrans01">
+		<SkillLevel Name="HeroSkill01Terrans01_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip37_FleetExploration_Flat_0"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Terrans01">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Terrans01_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem68_Food_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<!-- Terrans02 -->
+	<HeroSkillDefinition Name="HeroSkill01Terrans02">
+		<SkillLevel Name="HeroSkill01Terrans02_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip22_FleetDamage_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Terrans02">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Terrans02_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem10_TroopBonus_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<!-- Terrans03 -->
+	<HeroSkillDefinition Name="HeroSkill01Terrans03">
+		<SkillLevel Name="HeroSkill01Terrans03_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip18_FleetDamage_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Terrans03">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Terrans03_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem89_Science_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<!-- Terrans04 -->
+	<HeroSkillDefinition Name="HeroSkill01Terrans04">
+		<SkillLevel Name="HeroSkill01Terrans04_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip27_FleetDefense_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Terrans04">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Terrans04_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem72_Industry_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<!-- Terrans05 -->
+	<HeroSkillDefinition Name="HeroSkill01Terrans05">
+		<SkillLevel Name="HeroSkill01Terrans05_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip21_FleetDamage_PerCommandPoint_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Terrans05">
+		<Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Terrans05_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem10_TroopBonus_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<!-- Venetians01 -->
+	<HeroSkillDefinition Name="HeroSkill01Venetians01">
+		<SkillLevel Name="HeroSkill01Venetians01_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip23_FleetDefense_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Venetians01">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Venetians01_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem1_ShipCostReduction_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<!-- Venetians02 -->
+	<HeroSkillDefinition Name="HeroSkill01Venetians02">
+		<SkillLevel Name="HeroSkill01Venetians02_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip37_FleetExploration_Flat_0"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Venetians02">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Venetians02_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem2_BuildingCostReduction_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<!-- Venetians03 -->
+	<HeroSkillDefinition Name="HeroSkill01Venetians03">
+		<SkillLevel Name="HeroSkill01Venetians03_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip37_FleetExploration_Flat_0"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Venetians03">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Venetians03_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem63_Dust_PerAnomaly_0"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<!-- Venetians04 -->
+	<HeroSkillDefinition Name="HeroSkill01Venetians04">
+		<SkillLevel Name="HeroSkill01Venetians04_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip23_FleetDefense_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Venetians04">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Venetians04_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem60_Dust_Perpop_0"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<!-- Venetians05 -->
+	<HeroSkillDefinition Name="HeroSkill01Venetians05">
+		<SkillLevel Name="HeroSkill01Venetians05_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip33_FleetDefense_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Venetians05">
+		<Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Venetians05_1">
+            <ShipSimulationDescriptorReference Name="HeroSkillShip41_FleetUpkeep_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<!-- Vampirilis01 -->
+	<HeroSkillDefinition Name="HeroSkill01Vampirilis01">
+		<SkillLevel Name="HeroSkill01Vampirilis01_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip23_FleetDefense_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Vampirilis01">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Vampirilis01_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem78_IndustryFood_PerPlanetFlat_0"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<!-- Vampirilis02 -->
+	<HeroSkillDefinition Name="HeroSkill01Vampirilis02">
+		<SkillLevel Name="HeroSkill01Vampirilis02_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip18_FleetDamage_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Vampirilis02">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Vampirilis02_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem83_Influence_Flat_0"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<!-- Vampirilis03 -->
+	<HeroSkillDefinition Name="HeroSkill01Vampirilis03">
+		<SkillLevel Name="HeroSkill01Vampirilis03_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip37_FleetExploration_Flat_0"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Vampirilis03">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Vampirilis03_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem95_Science_PerAnomaly_0"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<!-- Vampirilis04 -->
+	<HeroSkillDefinition Name="HeroSkill01Vampirilis04">
+		<SkillLevel Name="HeroSkill01Vampirilis04_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip22_FleetDamage_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Vampirilis04">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Vampirilis04_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem1_ShipCostReduction_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<!-- Horatio01 -->
+	<HeroSkillDefinition Name="HeroSkill01Horatio01">
+		<SkillLevel Name="HeroSkill01Horatio01_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip37_FleetExploration_Flat_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Horatio01">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Horatio01_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem67_Food_Perpop_0"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<!-- Horatio02 -->
+	<HeroSkillDefinition Name="HeroSkill01Horatio02">
+		<SkillLevel Name="HeroSkill01Horatio02_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip32_FleetDefense_Flat_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Horatio02">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Horatio02_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem92_Science_Perpop_0"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<!-- Horatio03 -->
+	<HeroSkillDefinition Name="HeroSkill01Horatio03">
+		<SkillLevel Name="HeroSkill01Horatio03_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip18_FleetDamage_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Horatio03">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Horatio03_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem1_ShipCostReduction_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<!-- Horatio04 -->
+	<HeroSkillDefinition Name="HeroSkill01Horatio04">
+		<SkillLevel Name="HeroSkill01Horatio04_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip23_FleetDefense_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Horatio04">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Horatio04_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem54_Approval_Perpop_0"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<!-- TimeLords01 -->
+	<HeroSkillDefinition Name="HeroSkill01TimeLords01">
+		<SkillLevel Name="HeroSkill01TimeLords01_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip111_FleetDamage_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02TimeLords01">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02TimeLords01_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem95_Science_PerAnomaly_0"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<!-- TimeLords02 -->
+	<HeroSkillDefinition Name="HeroSkill01TimeLords02">
+		<SkillLevel Name="HeroSkill01TimeLords02_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip25_FleetDefense_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02TimeLords02">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02TimeLords02_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem73_Industry_Perpop_0"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<!-- TimeLords03 -->
+	<HeroSkillDefinition Name="HeroSkill01TimeLords03">
+		<SkillLevel Name="HeroSkill01TimeLords03_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip112_FleetDamage_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02TimeLords03">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02TimeLords03_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem1_ShipCostReduction_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<!-- TimeLords04 -->
+	<HeroSkillDefinition Name="HeroSkill01TimeLords04">
+		<SkillLevel Name="HeroSkill01TimeLords04_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip29_FleetDefense_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02TimeLords04">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02TimeLords04_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem96_Science_Perpop_0"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<!-- Unfallen01 -->
+	<HeroSkillDefinition Name="HeroSkill01Unfallen01">
+		<SkillLevel Name="HeroSkill01Unfallen01_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip47_FleetExplorationFleetXP_Flat_0"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Unfallen01">
+		<Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Unfallen01_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem69_Food_PerHeroLevelFlat_0"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<!-- Unfallen02 -->
+	<HeroSkillDefinition Name="HeroSkill01Unfallen02">
+		<SkillLevel Name="HeroSkill01Unfallen02_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip24_FleetDefense_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Unfallen02">
+		<Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Unfallen02_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem59_Dust_Flat_0"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<!-- Unfallen03 -->
+	<HeroSkillDefinition Name="HeroSkill01Unfallen03">
+		<SkillLevel Name="HeroSkill01Unfallen03_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip33_FleetDefense_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Unfallen03">
+		<Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Unfallen03_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem51_Approval_Flat_0"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<!-- Unfallen04 -->
+	<HeroSkillDefinition Name="HeroSkill01Unfallen04">
+		<SkillLevel Name="HeroSkill01Unfallen04_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip18_FleetDamage_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Unfallen04">
+		<Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Unfallen04_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem13_SystemManpower_Flat_0"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<!-- Benthys01 -->
+	<HeroSkillDefinition Name="HeroSkill01Benthys01">
+		<SkillLevel Name="HeroSkill01Benthys01_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip38_FleetExploration_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Benthys01">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Benthys01_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem51_Approval_Flat_0"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<!-- Deuyivans01 -->
+	<HeroSkillDefinition Name="HeroSkill01Deuyivans01">
+		<SkillLevel Name="HeroSkill01Deuyivans01_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip26_FleetDefense_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Deuyivans01">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Deuyivans01_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem90_Science_Flat_0"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<!-- Haroshems01 -->
+	<HeroSkillDefinition Name="HeroSkill01Haroshems01">
+		<SkillLevel Name="HeroSkill01Haroshems01_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip25_FleetDefense_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Haroshems01">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Haroshems01_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem2_BuildingCostReduction_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+    
+    <!-- Haroshems02 -->
+    <!-- UPDATE7 -->
+    <HeroSkillDefinition Name="HeroSkill01Haroshems02">
+        <SkillLevel Name="HeroSkill01Haroshems02_1">
+            <ShipSimulationDescriptorReference Name="HeroSkillShip47_FleetExplorationFleetXP_Flat_0"/>
+            <MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+    <HeroSkillDefinition Name="HeroSkill02Haroshems02">
+        <Tags>ColonizedStarSystem</Tags>
+        <SkillLevel Name="HeroSkill02Haroshems02_1">
+            <SystemSimulationDescriptorReference Name="HeroSkillSystem92_Science_Perpop_0"/>
+            <MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+
+	<!-- Hisshos01 -->
+	<HeroSkillDefinition Name="HeroSkill01Hisshos01">
+		<SkillLevel Name="HeroSkill01Hisshos01_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip19_FleetDamage_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Hisshos01">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Hisshos01_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem74_Industry_Flat_0"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<!-- Mavros01 -->
+	<HeroSkillDefinition Name="HeroSkill01Mavros01">
+		<SkillLevel Name="HeroSkill01Mavros01_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip20_FleetDamage_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Mavros01">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Mavros01_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem1_ShipCostReduction_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<!-- Bots01 -->
+	<HeroSkillDefinition Name="HeroSkill01Bots01">
+		<SkillLevel Name="HeroSkill01Bots01_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip23_FleetDefense_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Bots01">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Bots01_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem65_Food_PerAnomaly_0"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<!-- Amoeba01 -->
+	<HeroSkillDefinition Name="HeroSkill01Amoeba01">
+		<SkillLevel Name="HeroSkill01Amoeba01_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip24_FleetDefense_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Amoeba01">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Amoeba01_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem80_Influence_Perpop_0"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<!-- Pilgrims01 -->
+	<HeroSkillDefinition Name="HeroSkill01Pilgrims01">
+		<SkillLevel Name="HeroSkill01Pilgrims01_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip38_FleetExploration_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Pilgrims01">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Pilgrims01_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem93_Science_PerPlanet_0"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<!-- Zvali01 -->
+	<HeroSkillDefinition Name="HeroSkill01Zvali01">
+		<SkillLevel Name="HeroSkill01Zvali01_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip33_FleetDefense_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Zvali01">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Zvali01_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem57_Approval_PerSystemLevel_0"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<!-- Gnashasts01 -->
+	<HeroSkillDefinition Name="HeroSkill01Gnashasts01">
+		<SkillLevel Name="HeroSkill01Gnashasts01_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip23_FleetDefense_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Gnashasts01">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Gnashasts01_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem12_Bombardment_Flat_0"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<!-- Tikanans01 -->
+	<HeroSkillDefinition Name="HeroSkill01Tikanans01">
+		<SkillLevel Name="HeroSkill01Tikanans01_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip41_FleetUpkeep_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Tikanans01">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Tikanans01_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem13_SystemManpower_Flat_0"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<!-- Eyders01 -->
+	<HeroSkillDefinition Name="HeroSkill01Eyders01">
+		<SkillLevel Name="HeroSkill01Eyders01_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip37_FleetExploration_Flat_0"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Eyders01">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Eyders01_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem59_Dust_Flat_0"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<!-- Niris01 -->
+	<HeroSkillDefinition Name="HeroSkill01Niris01">
+		<SkillLevel Name="HeroSkill01Niris01_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip23_FleetDefense_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Niris01">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Niris01_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem51_Approval_Flat_0"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<!-- Bhagabas01 -->
+	<HeroSkillDefinition Name="HeroSkill01Bhagabas01">
+		<SkillLevel Name="HeroSkill01Bhagabas01_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip24_FleetDefense_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Bhagabas01">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Bhagabas01_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem82_Influence_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<!-- Remnant01 -->
+	<HeroSkillDefinition Name="HeroSkill01Remnant01">
+		<SkillLevel Name="HeroSkill01Remnant01_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip37_FleetExploration_Flat_0"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Remnant01">
+		<Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Remnant01_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem105_FIDSI_PerHeroLevel_0"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<!-- Pulsos01 -->
+	<HeroSkillDefinition Name="HeroSkill01Pulsos01">
+		<SkillLevel Name="HeroSkill01Pulsos01_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip32_FleetDefense_Flat_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02Pulsos01">
+		<Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02Pulsos01_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem95_Science_PerAnomaly_0"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<!-- Endless01 -->
+	<HeroSkillDefinition Name="HeroSkill01QuestEndless01">
+		<SkillLevel Name="HeroSkill01QuestEndless01_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip22_FleetDamage_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02QuestEndless01">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02QuestEndless01_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem73_Industry_Perpop_0"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<!--Endless02-->
+	<HeroSkillDefinition Name="HeroSkill01QuestEndless02">
+		<SkillLevel Name="HeroSkill01QuestEndless02_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip34_FleetExploration_MultiplierFlat_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02QuestEndless02">
+		<Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02QuestEndless02_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem95_Science_PerAnomaly_0"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+    <!-- TERRANS QUEST 01 -->
+	<HeroSkillDefinition Name="HeroSkill01TerransQuest01">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill01TerransQuest01_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip8_SystemManpower_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02TerransQuest01">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02TerransQuest01_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem1_ShipCostReduction_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+    <!-- TERRANS QUEST 02 -->
+    <HeroSkillDefinition Name="HeroSkill01TerransQuest02">
+        <SkillLevel Name="HeroSkill01TerransQuest02_1">
+            <ShipSimulationDescriptorReference Name="HeroSkillShip23_FleetDefense_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+    <HeroSkillDefinition Name="HeroSkill02TerransQuest02">
+        <Tags>ColonizedStarSystem</Tags>
+        <SkillLevel Name="HeroSkill02TerransQuest02_1">
+            <SystemSimulationDescriptorReference Name="HeroSkillSystem82_Influence_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+
+    <!-- TERRANS QUEST 02 -->
+    <HeroSkillDefinition Name="HeroSkill01TerransQuest03">
+        <SkillLevel Name="HeroSkill01TerransQuest03_1">
+            <ShipSimulationDescriptorReference Name="HeroSkillShip40_FleetExploration_Flat_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+    <HeroSkillDefinition Name="HeroSkill02TerransQuest03">
+        <Tags>ColonizedStarSystem</Tags>
+        <SkillLevel Name="HeroSkill02TerransQuest03_1">
+            <SystemSimulationDescriptorReference Name="HeroSkillSystem90_Science_Flat_0"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+
+    <!-- HORATIO QUEST 04 -->
+    <HeroSkillDefinition Name="HeroSkill01HoratioQuest04">
+        <SkillLevel Name="HeroSkill01HoratioQuest04_1">
+            <ShipSimulationDescriptorReference Name="HeroSkillShip40_FleetExploration_Flat_0"/>
+            <MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+    <HeroSkillDefinition Name="HeroSkill02HoratioQuest04">
+        <Tags>ColonizedStarSystem</Tags>
+        <SkillLevel Name="HeroSkill02HoratioQuest04_1">
+            <SystemSimulationDescriptorReference Name="HeroSkillSystem90_Science_Flat_0"/>
+            <MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+	
+	<!-- QUEST VIRUS 01 -->
+	<HeroSkillDefinition Name="HeroSkill01QuestVirus01">
+		<SkillLevel Name="HeroSkill01QuestVirus01_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip32_FleetDefense_Flat_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02QuestVirus01">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02QuestVirus01_1">
+			<HeroSimulationDescriptorReference Name="HeroSkill_QuestTag"/>
+            <SystemSimulationDescriptorReference Name="HeroSkillSystem96_Science_Perpop_0"/>
+            <MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+    <!-- Pirate01 -->
+    <HeroSkillDefinition Name="HeroSkill01Pirate01">
+        <SkillLevel Name="HeroSkill01Pirate01_1">
+            <ShipSimulationDescriptorReference Name="HeroSkillShip115_FleetDamage_Percent_0"/>
+            <MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+    <HeroSkillDefinition Name="HeroSkill02Pirate01">
+        <Tags>ColonizedStarSystem</Tags>
+        <SkillLevel Name="HeroSkill02Pirate01_1">
+            <SystemSimulationDescriptorReference Name="HeroSkillSystem72_Industry_Percent_0"/>
+            <MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+
+    <!-- GREENMAN -->
+    <HeroSkillDefinition Name="HeroSkill01Greenman01">
+        <SkillLevel Name="HeroSkill01Greenman01_1">
+            <ShipSimulationDescriptorReference Name="HeroSkillShip37_FleetExploration_Flat_0"/>
+            <MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+    <HeroSkillDefinition Name="HeroSkill02Greenman01">
+        <Tags>ColonizedStarSystem</Tags>
+        <SkillLevel Name="HeroSkill02Greenman01_1">
+            <SystemSimulationDescriptorReference Name="HeroSkillSystem90_Science_Flat_0"/>
+            <MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+
+    <HeroSkillDefinition Name="HeroSkill01Greenman02">
+        <SkillLevel Name="HeroSkill01Greenman02_1">
+            <ShipSimulationDescriptorReference Name="HeroSkillShip8_SystemManpower_Percent_0"/>
+            <MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+    <HeroSkillDefinition Name="HeroSkill02Greenman02">
+        <Tags>ColonizedStarSystem</Tags>
+        <SkillLevel Name="HeroSkill02Greenman02_1">
+            <SystemSimulationDescriptorReference Name="HeroSkillSystem74_Industry_Flat_0"/>
+            <MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+
+    <!-- Free week-end reward 2019 -->
+    <HeroSkillDefinition Name="HeroSkill01Basryxo01">
+        <SkillLevel Name="HeroSkill01Basryxo01_1">
+            <ShipSimulationDescriptorReference Name="HeroSkillShip37_FleetExploration_Flat_0"/>
+            <MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+    <HeroSkillDefinition Name="HeroSkill02Basryxo01">
+        <Tags>ColonizedStarSystem</Tags>
+        <SkillLevel Name="HeroSkill02Basryxo01_1">
+            <SystemSimulationDescriptorReference Name="HeroSkillSystem74_Industry_Flat_0"/>
+            <MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+    
+
+    <!--####################-->
+    <!--#### ENDLESS DAY ###-->
+    <!--####################-->
+
+    <!--Archivist01-->
+    <HeroSkillDefinition Name="HeroSkill01HeroArchivist01">
+        <SkillLevel Name="HeroSkill01HeroArchivist01_1">
+            <ShipSimulationDescriptorReference Name="HeroSkillShip34_FleetExploration_MultiplierFlat_0"/>
+            <MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+    <HeroSkillDefinition Name="HeroSkill02HeroArchivist01">
+        <Tags>ColonizedStarSystem</Tags>
+        <SkillLevel Name="HeroSkill02HeroArchivist01_1">
+            <SystemSimulationDescriptorReference Name="HeroSkillSystem96_Science_Perpop_0"/>
+            <MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+    
+</Datatable>

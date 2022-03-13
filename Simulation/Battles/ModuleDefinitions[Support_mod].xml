@@ -1,0 +1,1304 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../../Schemas/ModuleDefinition.xsd">
+
+    <!-- ********************* -->
+    <!-- ** ANTICARRIER MODULES ** -->
+    <!-- ********************* -->
+   
+    <SupportModule Name="ModuleSupportAntiCarrier1Strategic4" Family="AntiCarrierStrategic4" Level="1">
+       <Cost ResourceName="SystemProduction">64</Cost>
+       <Cost ResourceName="Strategic4" Instant="true">2</Cost>
+       <TechnologyPrerequisite  Flags="Edition">TechnologySupportModule5</TechnologyPrerequisite>
+       <PathPrerequisite Flags="Edition">ClassShip,ShipRoleSupport</PathPrerequisite>
+       <!--<InterpreterPrerequisite Flags="Edition">Path(Context, @ShipRoleSupport) or Path(Context, @ShipRoleHero)</InterpreterPrerequisite>-->
+       <!--<InterpreterPrerequisite Flags="Edition">Property(Context, @'../ClassEmpire', ShipStrategicCostMultiplier) eq 1</InterpreterPrerequisite>-->
+       <SimulationDescriptorReference Name="ClassModuleSupport"/>
+       <SimulationDescriptorReference Name="ClassModuleSupportShipOnly"/>
+       <!--<SimulationDescriptorReference Name="ClassModuleSupportAndHeroShipOnly"/>-->
+       <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+       <CategorizedSimulationDescriptors Category="CategoryAntiCarrier">
+          <SimulationDescriptorReference Name="ModuleSupportAntiCarrier1Strategic4"/>
+          <SimulationDescriptorReference Name="ModuleSupportAntiCarrier"/>
+       </CategorizedSimulationDescriptors>
+       <BattleActionReference Name="BattleActionSupportInitialize"/>
+    </SupportModule>
+
+    <!--<SupportModule Name="ModuleSupportAntiCarrier1Strategic4_none" Family="AntiCarrierStrategic4" Level="1">
+       <Cost ResourceName="SystemProduction">64</Cost>
+       <TechnologyPrerequisite  Flags="Edition">TechnologySupportModule5</TechnologyPrerequisite>
+       <PathPrerequisite Flags="Edition">ClassShip,ShipRoleSupport</PathPrerequisite>
+       --><!--<InterpreterPrerequisite Flags="Edition">Path(Context, @ShipRoleSupport) or Path(Context, @ShipRoleHero)</InterpreterPrerequisite>--><!--
+       <InterpreterPrerequisite Flags="Edition">Property(Context, @'../ClassEmpire', ShipStrategicCostMultiplier) eq 0</InterpreterPrerequisite>
+       <SimulationDescriptorReference Name="ClassModuleSupport"/>
+       <SimulationDescriptorReference Name="ClassModuleSupportShipOnly"/>
+       --><!--<SimulationDescriptorReference Name="ClassModuleSupportAndHeroShipOnly"/>--><!--
+       <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+       <CategorizedSimulationDescriptors Category="CategoryAntiCarrier">
+          <SimulationDescriptorReference Name="ModuleSupportAntiCarrier1Strategic4"/>
+          <SimulationDescriptorReference Name="ModuleSupportAntiCarrier"/>
+       </CategorizedSimulationDescriptors>
+       <BattleActionReference Name="BattleActionSupportInitialize"/>
+    </SupportModule>-->
+   
+    <SupportModule Name="ModuleSupportAntiCarrier2Strategic6" Family="AntiCarrierStrategic4" Level="2">
+       <Cost ResourceName="SystemProduction">128</Cost>
+       <!--<Cost ResourceName="Strategic6" Instant="true">2</Cost>-->
+       <CustomCost ResourceName="Strategic6" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+       <TechnologyPrerequisite  Flags="Edition">TechnologySupportModule6</TechnologyPrerequisite>
+       <PathPrerequisite Flags="Edition">ClassShip,ShipRoleSupport</PathPrerequisite>
+       <!--<InterpreterPrerequisite Flags="Edition">Path(Context, @ShipRoleSupport) or Path(Context, @ShipRoleHero)</InterpreterPrerequisite>-->
+       <SimulationDescriptorReference Name="ClassModuleSupport"/>
+       <SimulationDescriptorReference Name="ClassModuleSupportShipOnly"/>
+       <!--<SimulationDescriptorReference Name="ClassModuleSupportAndHeroShipOnly"/>-->
+       <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+       <CategorizedSimulationDescriptors Category="CategoryAntiCarrier">
+          <SimulationDescriptorReference Name="ModuleSupportAntiCarrier2Strategic6"/>
+          <SimulationDescriptorReference Name="ModuleSupportAntiCarrier"/>
+       </CategorizedSimulationDescriptors>
+       <BattleActionReference Name="BattleActionSupportInitialize"/>
+    </SupportModule>
+
+   <!-- ************************* -->
+   <!-- ** ANTICREW  MODULES ** -->
+   <!-- ************************* -->
+
+   <SupportModule Name="ModuleSupportAntiCrew1Strategic1" Family="AntiCrewStrategic1" Level="1">
+      <Cost ResourceName="SystemProduction">64</Cost>
+      <!--<Cost ResourceName="Strategic1" Instant="true">2</Cost>-->
+      <CustomCost ResourceName="Strategic1" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyDefenseModuleStrategic1</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Edition">ClassShip,ShipRoleSupport</PathPrerequisite>
+      <!--<InterpreterPrerequisite Flags="Edition">Path(Context, @ShipRoleSupport) or Path(Context, @ShipRoleHero)</InterpreterPrerequisite>-->
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleSupportShipOnly"/>
+      <!--<SimulationDescriptorReference Name="ClassModuleSupportAndHeroShipOnly"/>-->
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryAntiCrew">
+         <SimulationDescriptorReference Name="ModuleSupportAntiCrew1Strategic1"/>
+         <SimulationDescriptorReference Name="ModuleSupportAntiCrew"/>
+      </CategorizedSimulationDescriptors>
+      <BattleActionReference Name="BattleActionSupportInitialize"/>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportAntiCrew2Strategic5" Family="AntiCrewStrategic1" Level="2">
+      <Cost ResourceName="SystemProduction">128</Cost>
+      <!--<Cost ResourceName="Strategic5" Instant="true">2</Cost>-->
+      <CustomCost ResourceName="Strategic5" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite   Flags="Edition">TechnologySupportModule1</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Edition">ClassShip,ShipRoleSupport</PathPrerequisite>
+      <!--<InterpreterPrerequisite Flags="Edition">Path(Context, @ShipRoleSupport) or Path(Context, @ShipRoleHero)</InterpreterPrerequisite>-->
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleSupportShipOnly"/>
+      <!--<SimulationDescriptorReference Name="ClassModuleSupportAndHeroShipOnly"/>-->
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryAntiCrew">
+         <SimulationDescriptorReference Name="ModuleSupportAntiCrew2Strategic5"/>
+         <SimulationDescriptorReference Name="ModuleSupportAntiCrew"/>
+      </CategorizedSimulationDescriptors>
+      <BattleActionReference Name="BattleActionSupportInitialize"/>
+   </SupportModule>
+
+   <!-- ********************* -->
+   <!-- ** BAIT MODULES ** -->
+   <!-- ********************* -->
+   <SupportModule Name="ModuleSupportBait1Strategic4" Family="BaitStrategic4" Level="1">
+      <Cost ResourceName="SystemProduction">64</Cost>
+      <!--<Cost ResourceName="Strategic4" Instant="true">2</Cost>-->
+      <CustomCost ResourceName="Strategic4" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite  Flags="Edition">TechnologyImproveHull3</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryBait">
+         <SimulationDescriptorReference Name="ModuleSupportBait1Strategic4"/>
+         <SimulationDescriptorReference Name="ModuleSupportBait"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportBait2Strategic6" Family="BaitStrategic4" Level="2">
+      <Cost ResourceName="SystemProduction">128</Cost>
+      <!--<Cost ResourceName="Strategic6" Instant="true">2</Cost>-->
+      <CustomCost ResourceName="Strategic6" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite  Flags="Edition">TechnologyCuriosityModuleSupportBait2Strategic6</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryBait">
+         <SimulationDescriptorReference Name="ModuleSupportBait2Strategic6"/>
+         <SimulationDescriptorReference Name="ModuleSupportBait"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <!-- ********************* -->
+   <!-- ** COLONIZATION MODULES ** -->
+   <!-- ********************* -->
+
+   <SupportModule Name="ModuleSupportColonization1" Family="ColonizationBase" Level="1">
+      <Cost ResourceName="SystemProduction">200</Cost>
+      <!--<Cost ResourceName="EmpireManpower" Instant="true">200</Cost>-->
+      <CustomCost ResourceName="EmpireManpower" Instant="true">200 * (Property(StockLocation, @../ClassEmpire, ShipManpowerCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipManpowerCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyStageScienceAndExploration1</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Edition">ClassShip,ShipRoleColonizer</PathPrerequisite>
+      <PathPrerequisite Flags="Edition,Discard,UnlockAvailability" Inverted="true">../ClassEmpire,AffinityGameplayVenetians</PathPrerequisite>
+      <PathPrerequisite Flags="Edition,Discard,UnlockAvailability" Inverted="true">../ClassEmpire,AffinityGameplayUnfallen</PathPrerequisite>
+      <PathPrerequisite Flags="Edition,Discard,UnlockAvailability" Inverted="true">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+      <PathPrerequisite Flags="Edition,Discard,UnlockAvailability" Inverted="true">../ClassEmpire,AffinityGameplayUmbralChoir</PathPrerequisite>
+      <PathPrerequisite Flags="NoMoreThanOneColonizationModule,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModule,ModuleSupportColonization</PathPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleColonizerShipOnly"/>
+      <CategorizedSimulationDescriptors Category="CategoryColonization">
+         <SimulationDescriptorReference Name="ModuleSupportColonization1"/>
+         <SimulationDescriptorReference Name="ModuleSupportColonization"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportColonization2Strategic1" Family="ColonizationBase" Level="2">
+      <Cost ResourceName="SystemProduction">80</Cost>
+      <!--<Cost ResourceName="Strategic1" Instant="true">1</Cost>-->
+      <CustomCost ResourceName="Strategic1" Instant="true">1 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite  Flags="Edition">TechnologyUniqueFood1</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Edition">ClassShip,ShipRoleColonizer</PathPrerequisite>
+      <PathPrerequisite Flags="Edition,Discard,UnlockAvailability" Inverted="true">../ClassEmpire,AffinityGameplayVenetians</PathPrerequisite>
+      <PathPrerequisite Flags="Edition,Discard,UnlockAvailability" Inverted="true">../ClassEmpire,AffinityGameplayUnfallen</PathPrerequisite>
+      <PathPrerequisite Flags="Edition,Discard,UnlockAvailability" Inverted="true">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+      <PathPrerequisite Flags="Edition,Discard,UnlockAvailability" Inverted="true">../ClassEmpire,AffinityGameplayUmbralChoir</PathPrerequisite>
+      <PathPrerequisite Flags="NoMoreThanOneColonizationModule,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModule,ModuleSupportColonization</PathPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleColonizerShipOnly"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryColonization">
+         <SimulationDescriptorReference Name="ModuleSupportColonization2Strategic1"/>
+         <SimulationDescriptorReference Name="ModuleSupportColonization"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportColonization3Strategic3" Family="ColonizationBase" Level="3">
+      <!--<Cost ResourceName="Strategic3" Instant="true">1</Cost>-->
+      <CustomCost ResourceName="Strategic3" Instant="true">1 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite   Flags="Edition">TechnologyCuriosityModuleSupportColonization3Strategic3</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Edition">ClassShip,ShipRoleColonizer</PathPrerequisite>
+      <PathPrerequisite Flags="Edition,Discard,UnlockAvailability" Inverted="true">../ClassEmpire,AffinityGameplayVenetians</PathPrerequisite>
+      <PathPrerequisite Flags="Edition,Discard,UnlockAvailability" Inverted="true">../ClassEmpire,AffinityGameplayUnfallen</PathPrerequisite>
+      <PathPrerequisite Flags="Edition,Discard,UnlockAvailability" Inverted="true">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+      <PathPrerequisite Flags="Edition,Discard,UnlockAvailability" Inverted="true">../ClassEmpire,AffinityGameplayUmbralChoir</PathPrerequisite>
+      <PathPrerequisite Flags="NoMoreThanOneColonizationModule,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModule,ModuleSupportColonization</PathPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleColonizerShipOnly"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryColonization">
+         <SimulationDescriptorReference Name="ModuleSupportColonization3Strategic3"/>
+         <SimulationDescriptorReference Name="ModuleSupportColonization"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <!-- ************************* -->
+   <!-- ** CREW  MODULES ** -->
+   <!-- ************************* -->
+
+   <!-- removed-->
+
+
+   <SupportModule Name="ModuleSupportCrew2" Family="CrewBase" Level="2">
+      <Cost ResourceName="SystemProduction">60</Cost>
+      <!--<TechnologyPrerequisite   Flags="Edition">TechnologyCuriosityModuleSupportCrew2</TechnologyPrerequisite>-->
+      <TechnologyPrerequisite Flags="Edition">TechnologyUnknown</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Edition,Discard" Inverted="true">ClassShip,ShipRoleHero</PathPrerequisite>
+      <PathPrerequisite Flags="Edition,Discard" Inverted="true">ClassShip,ShipRoleJuggernaut</PathPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <CategorizedSimulationDescriptors Category="CategoryCrew">
+         <SimulationDescriptorReference Name="ModuleSupportCrew2"/>
+         <SimulationDescriptorReference Name="ModuleSupportCrew"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportCrew2Strategic3" Family="CrewStrategic3" Level="2">
+      <Cost ResourceName="SystemProduction">60</Cost>
+      <Cost ResourceName="Strategic3" Instant="true">1</Cost>
+      <!--<TechnologyPrerequisite   Flags="Edition">TechnologyCuriosityModuleSupportCrew2Strategic3</TechnologyPrerequisite>-->
+      <TechnologyPrerequisite Flags="Edition">TechnologyUnknown</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Edition,Discard" Inverted="true">ClassShip,ShipRoleHero</PathPrerequisite>
+      <PathPrerequisite Flags="Edition,Discard" Inverted="true">ClassShip,ShipRoleJuggernaut</PathPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryCrew">
+         <SimulationDescriptorReference Name="ModuleSupportCrew2Strategic3"/>
+         <SimulationDescriptorReference Name="ModuleSupportCrew"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportCrew4" Family="CrewBase" Level="4">
+      <Cost ResourceName="SystemProduction">90</Cost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyUnknown</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Edition,Discard" Inverted="true">ClassShip,ShipRoleHero</PathPrerequisite>
+      <PathPrerequisite Flags="Edition,Discard" Inverted="true">ClassShip,ShipRoleJuggernaut</PathPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryCrew">
+         <SimulationDescriptorReference Name="ModuleSupportCrew4"/>
+         <SimulationDescriptorReference Name="ModuleSupportCrew"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <!-- end of removed -->
+
+   <!-- modded -->
+
+   <SupportModule Name="ModuleSupportCrew1" Family="CrewBase" GuiCategory="Strategic2" Level="1">
+      <Cost ResourceName="SystemProduction">32</Cost>
+      <!--<Cost ResourceName="Strategic2" Instant="true">2</Cost>-->
+      <CustomCost ResourceName="Strategic2" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyPlaneUnlock</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Edition,Discard" Inverted="true">ClassShip,ShipRoleHero</PathPrerequisite>
+      <PathPrerequisite Flags="Edition,Discard" Inverted="true">ClassShip,ShipRoleJuggernaut</PathPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryCrew">
+         <SimulationDescriptorReference Name="ModuleSupportCrew1"/>
+         <SimulationDescriptorReference Name="ModuleSupportCrew"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportCrew3" Family="CrewBase" GuiCategory="Strategic4"  Level="3">
+      <Cost ResourceName="SystemProduction">64</Cost>
+      <!--<Cost ResourceName="Strategic4" Instant="true">2</Cost>-->
+      <CustomCost ResourceName="Strategic4" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyCrew3Common</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Edition,Discard" Inverted="true">ClassShip,ShipRoleHero</PathPrerequisite>
+      <PathPrerequisite Flags="Edition,Discard" Inverted="true">ClassShip,ShipRoleJuggernaut</PathPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryCrew">
+         <SimulationDescriptorReference Name="ModuleSupportCrew3"/>
+         <SimulationDescriptorReference Name="ModuleSupportCrew"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportCrew3Cravers" Family="CrewBase" GuiCategory="Strategic4"  Level="3">
+      <Cost ResourceName="SystemProduction">64</Cost>
+      <!--<Cost ResourceName="Strategic4" Instant="true">2</Cost>-->
+      <CustomCost ResourceName="Strategic4" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyCrew3Cravers</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Edition,Discard" Inverted="true">ClassShip,ShipRoleHero</PathPrerequisite>
+      <PathPrerequisite Flags="Edition,Discard" Inverted="true">ClassShip,ShipRoleJuggernaut</PathPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryCrew">
+         <SimulationDescriptorReference Name="ModuleSupportCrew3Cravers"/>
+         <SimulationDescriptorReference Name="ModuleSupportCrew"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportCrew3Terrans" Family="CrewBase" GuiCategory="Strategic4"  Level="3">
+      <Cost ResourceName="SystemProduction">64</Cost>
+      <!--<Cost ResourceName="Strategic4" Instant="true">1</Cost>-->
+      <CustomCost ResourceName="Strategic4" Instant="true">1 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyCrew3Terrans</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Edition,Discard" Inverted="true">ClassShip,ShipRoleHero</PathPrerequisite>
+      <PathPrerequisite Flags="Edition,Discard" Inverted="true">ClassShip,ShipRoleJuggernaut</PathPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryCrew">
+         <SimulationDescriptorReference Name="ModuleSupportCrew3Terrans"/>
+         <SimulationDescriptorReference Name="ModuleSupportCrew"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportCrew4Cravers" Family="CrewBase" GuiCategory="Strategic6"  Level="4">
+      <Cost ResourceName="SystemProduction">128</Cost>
+      <!--<Cost ResourceName="Strategic6" Instant="true">2</Cost>-->
+      <CustomCost ResourceName="Strategic6" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyArmyCap4Cravers</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Edition,Discard" Inverted="true">ClassShip,ShipRoleHero</PathPrerequisite>
+      <PathPrerequisite Flags="Edition,Discard" Inverted="true">ClassShip,ShipRoleJuggernaut</PathPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryCrew">
+         <SimulationDescriptorReference Name="ModuleSupportCrew4Cravers"/>
+         <SimulationDescriptorReference Name="ModuleSupportCrew"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportCrew4Strategic6" Family="CrewBase" GuiCategory="Strategic6" Level="4">
+      <Cost ResourceName="SystemProduction">128</Cost>
+      <!--<Cost ResourceName="Strategic6" Instant="true">2</Cost>-->
+      <CustomCost ResourceName="Strategic6" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite   Flags="Edition">TechnologyArmyCap4</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Edition,Discard" Inverted="true">ClassShip,ShipRoleHero</PathPrerequisite>
+      <PathPrerequisite Flags="Edition,Discard" Inverted="true">ClassShip,ShipRoleJuggernaut</PathPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryCrew">
+         <SimulationDescriptorReference Name="ModuleSupportCrew4Strategic6"/>
+         <SimulationDescriptorReference Name="ModuleSupportCrew"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <!-- ***************************** -->
+   <!-- ** ENERGY ENHANCER MODULES ** -->
+   <!-- ***************************** -->
+   
+   
+   <SupportModule Name="ModuleSupportEnergyEnhancer1" Family="EnergyEnhancerBase" Level="1">
+      <Cost ResourceName="SystemProduction">40</Cost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyDefenseModule1ProjectileEnhancer1</TechnologyPrerequisite>
+      <PathPrerequisite Flags="NoMoreThanOneEnergyEnhancerModule,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModule,ModuleSupportEnergyEnhancer</PathPrerequisite>
+      <InterpreterPrerequisite Flags="Edition" Inverted="true">Path(Context, @'ClassShip,ShipRoleColonizer') or Path(Context, @'ClassShip,ShipRoleObliterator')</InterpreterPrerequisite>
+      <!--Descriptor used to apply effect-->
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <CategorizedSimulationDescriptors Category="CategoryEnergyEnhancer">
+         <SimulationDescriptorReference Name="ModuleSupportEnergyEnhancer1"/>
+         <SimulationDescriptorReference Name="ModuleSupportEnergyEnhancer"/>
+         <!--Descriptors used for tooltip-->
+      </CategorizedSimulationDescriptors>
+
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportEnergyEnhancer2Strategic2" Family="EnergyEnhancerBase" Level="2">
+      <Cost ResourceName="SystemProduction">32</Cost>
+      <!--<Cost ResourceName="Strategic2" Instant="true">3</Cost>-->
+      <CustomCost ResourceName="Strategic2" Instant="true">3 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyCuriosityModuleSupportEnergyEnhancer2Strategic2</TechnologyPrerequisite>
+      <PathPrerequisite Flags="NoMoreThanOneEnergyEnhancerModule,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModule,ModuleSupportEnergyEnhancer</PathPrerequisite>
+      <InterpreterPrerequisite Flags="Edition" Inverted="true">Path(Context, @'ClassShip,ShipRoleColonizer') or Path(Context, @'ClassShip,ShipRoleObliterator')</InterpreterPrerequisite>
+      <!--Descriptor used to apply effect-->
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryEnergyEnhancer">
+         <SimulationDescriptorReference Name="ModuleSupportEnergyEnhancer2Strategic2"/>
+         <SimulationDescriptorReference Name="ModuleSupportEnergyEnhancer"/>
+         <!--Descriptors used for tooltip-->
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportEnergyEnhancer3Strategic4" Family="EnergyEnhancerBase" Level="3">
+      <Cost ResourceName="SystemProduction">64</Cost>
+      <!--<Cost ResourceName="Strategic4" Instant="true">3</Cost>-->
+      <CustomCost ResourceName="Strategic4" Instant="true">3 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyWeaponModule3</TechnologyPrerequisite>
+      <PathPrerequisite Flags="NoMoreThanOneEnergyEnhancerModule,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModule,ModuleSupportEnergyEnhancer</PathPrerequisite>
+      <InterpreterPrerequisite Flags="Edition" Inverted="true">Path(Context, @'ClassShip,ShipRoleColonizer') or Path(Context, @'ClassShip,ShipRoleObliterator')</InterpreterPrerequisite>
+      <!--Descriptor used to apply effect-->
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryEnergyEnhancer">
+         <SimulationDescriptorReference Name="ModuleSupportEnergyEnhancer3Strategic4"/>
+         <SimulationDescriptorReference Name="ModuleSupportEnergyEnhancer"/>
+         <!--Descriptors used for tooltip-->
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportEnergyEnhancer4Strategic6" Family="EnergyEnhancerBase" Level="4">
+      <Cost ResourceName="SystemProduction">128</Cost>
+      <!--<Cost ResourceName="Strategic6" Instant="true">3</Cost>-->
+      <CustomCost ResourceName="Strategic6" Instant="true">3 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyCuriosityModuleSupportEnergyEnhancer4Strategic6</TechnologyPrerequisite>
+      <PathPrerequisite Flags="NoMoreThanOneEnergyEnhancerModule,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModule,ModuleSupportEnergyEnhancer</PathPrerequisite>
+      <InterpreterPrerequisite Flags="Edition" Inverted="true">Path(Context, @'ClassShip,ShipRoleColonizer') or Path(Context, @'ClassShip,ShipRoleObliterator')</InterpreterPrerequisite>
+      <!--Descriptor used to apply effect-->
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryEnergyEnhancer">
+         <SimulationDescriptorReference Name="ModuleSupportEnergyEnhancer4Strategic6"/>
+         <SimulationDescriptorReference Name="ModuleSupportEnergyEnhancer"/>
+         <!--Descriptors used for tooltip-->
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <!-- ********************* -->
+   <!-- ** ENGINE MODULES ** -->
+   <!-- ********************* -->
+
+   <!-- Engine Level 1 -->
+   <SupportModule Name="ModuleSupportEngine1" Family="EngineBase" Level="1">
+      <Cost ResourceName="SystemProduction">20</Cost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyStageScienceAndExploration1</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleSupportEngine"/>
+      <CategorizedSimulationDescriptors Category="CategoryEngine">
+         <SimulationDescriptorReference Name="ModuleSupportEngine1"/>
+         <SimulationDescriptorReference Name="ModuleSupportEngine"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+   
+   <!--Engine Level 2-->
+   <SupportModule Name="ModuleSupportEngine2" Family="EngineBase" Level="2">
+      <Cost ResourceName="SystemProduction">40</Cost>
+      <TechnologyPrerequisite  Flags="Edition">TechnologyStageScienceAndExploration2</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleSupportEngine"/>
+      <CategorizedSimulationDescriptors Category="CategoryEngine">
+         <SimulationDescriptorReference Name="ModuleSupportEngine2"/>
+         <SimulationDescriptorReference Name="ModuleSupportEngine"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <!-- Engine titanium level 2 -->
+   <SupportModule Name="ModuleSupportEngine2Strategic1" Family="EngineBase" Level="3">
+      <Cost ResourceName="SystemProduction">32</Cost>
+      <!--<Cost ResourceName="Strategic1" Instant="true">1</Cost>-->
+      <CustomCost ResourceName="Strategic1" Instant="true">1 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyExplorationModule1</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleSupportEngine"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryEngine">
+         <SimulationDescriptorReference Name="ModuleSupportEngine2Strategic1"/>
+         <SimulationDescriptorReference Name="ModuleSupportEngine"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <!-- Engine Hyperium level 2 -->
+   <SupportModule Name="ModuleSupportEngine2Strategic2" Family="EngineBase" Level="3">
+      <Cost ResourceName="SystemProduction">32</Cost>
+      <!--<Cost ResourceName="Strategic2" Instant="true">1</Cost>-->
+      <CustomCost ResourceName="Strategic2" Instant="true">1 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyExplorationModule2</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <SimulationDescriptorReference Name="ClassModuleSupportEngine"/>
+      <CategorizedSimulationDescriptors Category="CategoryEngine">
+         <SimulationDescriptorReference Name="ModuleSupportEngine2Strategic2"/>
+         <SimulationDescriptorReference Name="ModuleSupportEngine"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <!-- Engine adamantium level 3 -->
+   <SupportModule Name="ModuleSupportEngine3Strategic3" Family="EngineBase" Level="4">
+      <Cost ResourceName="SystemProduction">64</Cost>
+      <!--<Cost ResourceName="Strategic3" Instant="true">1</Cost>-->
+      <CustomCost ResourceName="Strategic3" Instant="true">1 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyPopulation1Alt</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleSupportEngine"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryEngine">
+         <SimulationDescriptorReference Name="ModuleSupportEngine"/>
+         <SimulationDescriptorReference Name="ModuleSupportEngine3Strategic3"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <!-- Engine Anti Matter level 3 -->
+   <SupportModule Name="ModuleSupportEngine3Strategic4" Family="EngineBase" Level="4">
+      <Cost ResourceName="SystemProduction">64</Cost>
+      <!--<Cost ResourceName="Strategic4" Instant="true">1</Cost>-->
+      <CustomCost ResourceName="Strategic4" Instant="true">1 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyDefenseModule2</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <SimulationDescriptorReference Name="ClassModuleSupportEngine"/>
+      <CategorizedSimulationDescriptors Category="CategoryEngine">
+         <SimulationDescriptorReference Name="ModuleSupportEngine"/>
+         <SimulationDescriptorReference Name="ModuleSupportEngine3Strategic4"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <!--Engine Level 4-->
+   <SupportModule Name="ModuleSupportEngine4" Family="EngineBase" Level="4">
+      <Cost ResourceName="SystemProduction">320</Cost>
+      <TechnologyPrerequisite  Flags="Edition">TechnologyStageScienceAndExploration5</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleSupportEngine"/>
+      <CategorizedSimulationDescriptors Category="CategoryEngine">
+         <SimulationDescriptorReference Name="ModuleSupportEngine4"/>
+         <SimulationDescriptorReference Name="ModuleSupportEngine"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <!-- Engine orichalcix level 5 -->
+   <SupportModule Name="ModuleSupportEngine4Strategic5" Family="EngineBase" Level="5">
+      <Cost ResourceName="SystemProduction">128</Cost>
+      <!--<Cost ResourceName="Strategic5" Instant="true">1</Cost>-->
+      <CustomCost ResourceName="Strategic5" Instant="true">1 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyMovementBonus</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleSupportEngine"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryEngine">
+         <SimulationDescriptorReference Name="ModuleSupportEngine"/>
+         <SimulationDescriptorReference Name="ModuleSupportEngine4Strategic5"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <!-- Engine quadrinix level 5 -->
+   <SupportModule Name="ModuleSupportEngine4Strategic6" Family="EngineBase" Level="5">
+      <Cost ResourceName="SystemProduction">128</Cost>
+      <!--<Cost ResourceName="Strategic6" Instant="true">1</Cost>-->
+      <CustomCost ResourceName="Strategic6" Instant="true">1 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyFreeMovement2</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleSupportEngine"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryEngine">
+         <SimulationDescriptorReference Name="ModuleSupportEngine"/>
+         <SimulationDescriptorReference Name="ModuleSupportEngine4Strategic6"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+
+   <!-- ************************* -->
+   <!-- ** EXPLORATION MODULES ** -->
+   <!-- ************************* -->
+
+   <SupportModule Name="ModuleSupportExploration1" Family="ExplorationBase" Level="1">
+      <Cost ResourceName="SystemProduction">200</Cost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyStageScienceAndExploration1</TechnologyPrerequisite>
+      <InterpreterPrerequisite Flags="Edition">Path(Context, @ShipRoleExploration) or Path(Context, @ShipRoleHero)</InterpreterPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleExplorerAndHeroShipOnly"/>
+      <CategorizedSimulationDescriptors Category="CategoryExploration">
+         <SimulationDescriptorReference Name="ModuleSupportExploration"/>
+         <SimulationDescriptorReference Name="ModuleSupportExploration1"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportExploration2Strategic1" Family="ExplorationBase" Level="2">
+      <Cost ResourceName="SystemProduction">32</Cost>
+      <!--<Cost ResourceName="Strategic1" Instant="true">3</Cost>-->
+      <CustomCost ResourceName="Strategic1" Instant="true">3 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyExplorationModule1</TechnologyPrerequisite>
+      <InterpreterPrerequisite Flags="Edition">Path(Context, @ShipRoleExploration) or Path(Context, @ShipRoleHero)</InterpreterPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleExplorerAndHeroShipOnly"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryExploration">
+         <SimulationDescriptorReference Name="ModuleSupportExploration"/>
+         <SimulationDescriptorReference Name="ModuleSupportExploration2Strategic1"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportExploration2Strategic2" Family="ExplorationStrategic2" Level="2">
+      <Cost ResourceName="SystemProduction">32</Cost>
+      <!--<Cost ResourceName="Strategic2" Instant="true">4</Cost>-->
+      <CustomCost ResourceName="Strategic2" Instant="true">4 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyExplorationModule2</TechnologyPrerequisite>
+      <InterpreterPrerequisite Flags="Edition">Path(Context, @ShipRoleExploration) or Path(Context, @ShipRoleHero)</InterpreterPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleExplorerAndHeroShipOnly"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryExploration">
+         <SimulationDescriptorReference Name="ModuleSupportExploration"/>
+         <SimulationDescriptorReference Name="ModuleSupportExploration2Strategic2"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportExploration3Strategic3" Family="ExplorationBase" Level="3">
+      <!--<Cost ResourceName="Strategic3" Instant="true">4</Cost>-->
+      <CustomCost ResourceName="Strategic3" Instant="true">3 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyPopulation1Alt</TechnologyPrerequisite>
+      <InterpreterPrerequisite Flags="Edition">Path(Context, @ShipRoleExploration)</InterpreterPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleExplorer"/>
+      <SimulationDescriptorReference Name="ClassModuleExplorerShipOnly"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryExploration">
+         <SimulationDescriptorReference Name="ModuleSupportExploration"/>
+         <SimulationDescriptorReference Name="ModuleSupportExploration3Strategic3"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportExploration3Strategic4" Family="ExplorationStrategic2" Level="3">
+      <!--<Cost ResourceName="Strategic4" Instant="true">4</Cost>-->
+      <CustomCost ResourceName="Strategic4" Instant="true">3 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyDefenseModule2</TechnologyPrerequisite>
+      <InterpreterPrerequisite Flags="Edition">Path(Context, @ShipRoleExploration)</InterpreterPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleExplorer"/>
+      <SimulationDescriptorReference Name="ClassModuleExplorerShipOnly"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryExploration">
+         <SimulationDescriptorReference Name="ModuleSupportExploration"/>
+         <SimulationDescriptorReference Name="ModuleSupportExploration3Strategic4"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <!-- ************************** -->
+   <!-- ** FLEET ENGINE MODULES ** -->
+   <!-- ************************** -->
+
+   <!-- Fleet Engine Level 1 -->
+   <SupportModule Name="ModuleSupportFleetEngine1Strategic2" Family="FleetEngineStrategic2" Level="1">
+      <Cost ResourceName="SystemProduction">32</Cost>
+      <!--<Cost ResourceName="Strategic2" Instant="true">5</Cost>-->
+      <CustomCost ResourceName="Strategic2" Instant="true">5 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyDefenseModuleStrategic2</TechnologyPrerequisite>
+      <!--<PathPrerequisite Flags="Edition">ClassShip,ShipRoleSupport</PathPrerequisite>-->
+      <InterpreterPrerequisite Flags="Edition">Path(Context, @ShipRoleSupport) or Path(Context, @ShipRoleHero)</InterpreterPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <!--<SimulationDescriptorReference Name="ClassModuleSupportShipOnly"/>-->
+      <SimulationDescriptorReference Name="ClassModuleSupportAndHeroShipOnly"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryEngine">
+         <SimulationDescriptorReference Name="ModuleSupportFleetEngine1Strategic2"/>
+         <SimulationDescriptorReference Name="ModuleSupportFleetEngine"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <!-- Fleet Engine Level 2 -->
+   <SupportModule Name="ModuleSupportFleetEngine2Strategic4" Family="FleetEngineStrategic2" Level="2">
+      <Cost ResourceName="SystemProduction">64</Cost>
+      <!--<Cost ResourceName="Strategic4" Instant="true">5</Cost>-->
+      <CustomCost ResourceName="Strategic4" Instant="true">5 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyCuriosityModuleSupportFleetEngine2Strategic4</TechnologyPrerequisite>
+      <!--<PathPrerequisite Flags="Edition">ClassShip,ShipRoleSupport</PathPrerequisite>-->
+      <InterpreterPrerequisite Flags="Edition">Path(Context, @ShipRoleSupport) or Path(Context, @ShipRoleHero)</InterpreterPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <!--<SimulationDescriptorReference Name="ClassModuleSupportShipOnly"/>-->
+      <SimulationDescriptorReference Name="ClassModuleSupportAndHeroShipOnly"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryEngine">
+         <SimulationDescriptorReference Name="ModuleSupportFleetEngine2Strategic4"/>
+         <SimulationDescriptorReference Name="ModuleSupportFleetEngine"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <!-- Fleet Engine Level 3 -->
+   <SupportModule Name="ModuleSupportFleetEngine3Strategic6" Family="FleetEngineStrategic2" Level="3">
+      <Cost ResourceName="SystemProduction">128</Cost>
+      <!--<Cost ResourceName="Strategic6" Instant="true">5</Cost>-->
+      <CustomCost ResourceName="Strategic6" Instant="true">5 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyUniqueDefense1</TechnologyPrerequisite>
+      <!--<PathPrerequisite Flags="Edition">ClassShip,ShipRoleSupport</PathPrerequisite>-->
+      <InterpreterPrerequisite Flags="Edition">Path(Context, @ShipRoleSupport) or Path(Context, @ShipRoleHero)</InterpreterPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <!--<SimulationDescriptorReference Name="ClassModuleSupportShipOnly"/>-->
+      <SimulationDescriptorReference Name="ClassModuleSupportAndHeroShipOnly"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryEngine">
+         <SimulationDescriptorReference Name="ModuleSupportFleetEngine3Strategic6"/>
+         <SimulationDescriptorReference Name="ModuleSupportFleetEngine"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+
+   <!-- ***************************** -->
+   <!-- ** FLOTILLA REPAIR MODULES ** -->
+   <!-- ***************************** -->
+
+
+   <SupportModule Name="ModuleSupportFlotillaRepair1Strategic3" Family="FlotillaRepairStrategic3" Level="1">
+      <Cost ResourceName="SystemProduction">32</Cost>
+      <!--<Cost ResourceName="Strategic3" Instant="true">4</Cost>-->
+      <CustomCost ResourceName="Strategic3" Instant="true">4 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyDefenseModuleStrategic3</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Prerequisite,Edition,Discard,UnlockAvailability" Inverted="true">../ClassEmpire,AffinityGameplayTimeLords</PathPrerequisite>
+      <PathPrerequisite Flags="Edition">ClassShip,ShipRoleSupport</PathPrerequisite>
+      <!--<InterpreterPrerequisite Flags="Edition">Path(Context, @ShipRoleSupport) or Path(Context, @ShipRoleHero)</InterpreterPrerequisite>-->
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleSupportShipOnly"/>
+      <!--<SimulationDescriptorReference Name="ClassModuleSupportAndHeroShipOnly"/>-->
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryFlotillaRepair">
+         <SimulationDescriptorReference Name="ModuleSupportFlotillaRepair"/>
+         <SimulationDescriptorReference Name="ModuleSupportFlotillaRepair1Strategic3"/>
+      </CategorizedSimulationDescriptors>
+      <BattleActionReference Name="BattleActionSupportInitialize"/>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportFlotillaRepair1Strategic3TimeLords" Family="FlotillaRepairStrategic3" Level="1">
+      <Cost ResourceName="SystemProduction">64</Cost>
+      <!--<Cost ResourceName="Strategic3" Instant="true">4</Cost>-->
+      <CustomCost ResourceName="Strategic3" Instant="true">4 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyDefenseModuleStrategic3</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Prerequisite,Edition,Discard,UnlockAvailability,Faction,AffinityGameplayTechnologyTimeLords" Inverted="false">../ClassEmpire,AffinityGameplayTimeLords</PathPrerequisite>
+      <PathPrerequisite Flags="Edition">ClassShip,ShipRoleSupport</PathPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleSupportShipOnly"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryFlotillaRepair">
+         <SimulationDescriptorReference Name="ModuleSupportFlotillaRepair"/>
+         <SimulationDescriptorReference Name="ModuleSupportFlotillaRepair1Strategic3TimeLords"/>
+      </CategorizedSimulationDescriptors>
+      <BattleActionReference Name="BattleActionSupportInitialize"/>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportFlotillaRepair2Strategic5" Family="FlotillaRepairStrategic3" Level="2">
+      <Cost ResourceName="SystemProduction">128</Cost>
+      <!--<Cost ResourceName="Strategic5" Instant="true">4</Cost>-->
+      <CustomCost ResourceName="Strategic5" Instant="true">4 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyCuriosityModuleSupportRepair3Strategic5</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Edition">ClassShip,ShipRoleSupport</PathPrerequisite>
+      <!--<InterpreterPrerequisite Flags="Edition">Path(Context, @ShipRoleSupport) or Path(Context, @ShipRoleHero)</InterpreterPrerequisite>-->
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleSupportShipOnly"/>
+      <!--<SimulationDescriptorReference Name="ClassModuleSupportAndHeroShipOnly"/>-->
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryFlotillaRepair">
+         <SimulationDescriptorReference Name="ModuleSupportFlotillaRepair"/>
+         <SimulationDescriptorReference Name="ModuleSupportFlotillaRepair2Strategic5"/>
+      </CategorizedSimulationDescriptors>
+      <BattleActionReference Name="BattleActionSupportInitialize"/>
+   </SupportModule>
+
+   <!-- ************************* -->
+   <!-- ** FLOTILLA SHIELD MODULES ** -->
+   <!-- ************************* -->
+
+   <SupportModule Name="ModuleSupportFlotillaShield1Strategic2" Family="FlotillaShieldStrategic2" Level="1">
+      <Cost ResourceName="SystemProduction">32</Cost>
+      <!--<Cost ResourceName="Strategic2" Instant="true">4</Cost>-->
+      <CustomCost ResourceName="Strategic2" Instant="true">4 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <AIBattleSituations Situation="EnergyDefense" Mode="Use" Value="1"/>
+      <AIBattleSituations Situation="EnergyWeapon" Mode="Against" Value="1"/>
+      <TechnologyPrerequisite Flags="Edition">TechnologyCuriosityModuleSupportFlotillaShield2Strategic4</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Edition">ClassShip,ShipRoleSupport</PathPrerequisite>
+      <!--<InterpreterPrerequisite Flags="Edition">Path(Context, @ShipRoleSupport) or Path(Context, @ShipRoleHero)</InterpreterPrerequisite>-->
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleSupportShipOnly"/>
+      <!--<SimulationDescriptorReference Name="ClassModuleSupportAndHeroShipOnly"/>-->
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryFlotillaShield">
+         <SimulationDescriptorReference Name="ModuleSupportFlotillaShield"/>
+         <SimulationDescriptorReference Name="ModuleSupportFlotillaShield1Strategic2"/>
+      </CategorizedSimulationDescriptors>
+      <BattleActionReference Name="BattleActionSupportInitialize"/>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportFlotillaShield2Strategic4" Family="FlotillaShieldStrategic2" Level="2">
+      <Cost ResourceName="SystemProduction">64</Cost>
+      <!--<Cost ResourceName="Strategic4" Instant="true">4</Cost>-->
+      <CustomCost ResourceName="Strategic4" Instant="true">4 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <AIBattleSituations Situation="EnergyDefense" Mode="Use" Value="1"/>
+      <AIBattleSituations Situation="EnergyWeapon" Mode="Against" Value="1"/>
+      <TechnologyPrerequisite Flags="Edition">TechnologyDefenseModuleStrategic4</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Edition">ClassShip,ShipRoleSupport</PathPrerequisite>
+      <!--<InterpreterPrerequisite Flags="Edition">Path(Context, @ShipRoleSupport) or Path(Context, @ShipRoleHero)</InterpreterPrerequisite>-->
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleSupportShipOnly"/>
+      <!--<SimulationDescriptorReference Name="ClassModuleSupportAndHeroShipOnly"/>-->
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryFlotillaShield">
+         <SimulationDescriptorReference Name="ModuleSupportFlotillaShield"/>
+         <SimulationDescriptorReference Name="ModuleSupportFlotillaShield2Strategic4"/>
+      </CategorizedSimulationDescriptors>
+      <BattleActionReference Name="BattleActionSupportInitialize"/>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportFlotillaShield3Strategic6" Family="FlotillaShieldStrategic2" Level="3">
+      <Cost ResourceName="SystemProduction">128</Cost>
+      <!--<Cost ResourceName="Strategic6" Instant="true">4</Cost>-->
+      <CustomCost ResourceName="Strategic6" Instant="true">4 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <AIBattleSituations Situation="EnergyDefense" Mode="Use" Value="1"/>
+      <AIBattleSituations Situation="EnergyWeapon" Mode="Against" Value="1"/>
+      <TechnologyPrerequisite Flags="Edition">TechnologyCuriosityModuleSupportShieldReload2Strategic6</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Edition">ClassShip,ShipRoleSupport</PathPrerequisite>
+      <!--<InterpreterPrerequisite Flags="Edition">Path(Context, @ShipRoleSupport) or Path(Context, @ShipRoleHero)</InterpreterPrerequisite>-->
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleSupportShipOnly"/>
+      <!--<SimulationDescriptorReference Name="ClassModuleSupportAndHeroShipOnly"/>-->
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryFlotillaShield">
+         <SimulationDescriptorReference Name="ModuleSupportFlotillaShield"/>
+         <SimulationDescriptorReference Name="ModuleSupportFlotillaShield3Strategic6"/>
+      </CategorizedSimulationDescriptors>
+      <BattleActionReference Name="BattleActionSupportInitialize"/>
+   </SupportModule>
+
+
+   <!-- ********************* -->
+   <!-- ** JAMMER MODULES  ** -->
+   <!-- ********************* -->
+   
+   <SupportModule Name="ModuleSupportJammer1Strategic3" Family="JammerStrategic3" Level="1">
+      <Cost ResourceName="SystemProduction">64</Cost>
+      <!--<Cost ResourceName="Strategic3" Instant="true">2</Cost>-->
+      <CustomCost ResourceName="Strategic3" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite  Flags="Edition">TechnologyImproveHull4</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryJammer">
+         <SimulationDescriptorReference Name="ModuleSupportJammer1Strategic3"/>
+         <SimulationDescriptorReference Name="ModuleSupportJammer"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportJammer2Strategic5" Family="JammerStrategic3" Level="2">
+      <Cost ResourceName="SystemProduction">128</Cost>
+      <!--<Cost ResourceName="Strategic5" Instant="true">2</Cost>-->
+      <CustomCost ResourceName="Strategic5" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite  Flags="Edition">TechnologyCuriosityModuleSupportJammer2Strategic5</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryJammer">
+         <SimulationDescriptorReference Name="ModuleSupportJammer2Strategic5"/>
+         <SimulationDescriptorReference Name="ModuleSupportJammer"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <!-- ********************************* -->
+   <!-- ** PROJECTILE ENHANCER MODULES ** -->
+   <!-- ********************************* -->
+
+   <SupportModule Name="ModuleSupportProjectileEnhancer1" Family="ProjectileEnhancerBase" Level="1">
+      <Cost ResourceName="SystemProduction">40</Cost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyWeaponModule1</TechnologyPrerequisite>
+      <PathPrerequisite Flags="NoMoreThanOneProjectileEnhancerModule,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModule,ModuleSupportProjectileEnhancer</PathPrerequisite>
+      <InterpreterPrerequisite Flags="Edition" Inverted="true">Path(Context, @'ClassShip,ShipRoleColonizer') or Path(Context, @'ClassShip,ShipRoleObliterator')</InterpreterPrerequisite>
+      <!--Descriptor used to apply effect-->
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <CategorizedSimulationDescriptors Category="CategoryProjectileEnhancer">
+         <SimulationDescriptorReference Name="ModuleSupportProjectileEnhancer1"/>
+         <SimulationDescriptorReference Name="ModuleSupportProjectileEnhancer"/>
+         <!--Descriptors used for tooltip-->
+      </CategorizedSimulationDescriptors>
+
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportProjectileEnhancer2Strategic1" Family="ProjectileEnhancerBase" Level="2">
+      <Cost ResourceName="SystemProduction">32</Cost>
+      <!--<Cost ResourceName="Strategic1" Instant="true">3</Cost>-->
+      <CustomCost ResourceName="Strategic1" Instant="true">3 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyCuriosityModuleSupportProjectileEnhancer2Strategic1</TechnologyPrerequisite>
+      <PathPrerequisite Flags="NoMoreThanOneProjectileEnhancerModule,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModule,ModuleSupportProjectileEnhancer</PathPrerequisite>
+      <InterpreterPrerequisite Flags="Edition" Inverted="true">Path(Context, @'ClassShip,ShipRoleColonizer') or Path(Context, @'ClassShip,ShipRoleObliterator')</InterpreterPrerequisite>
+      <!--Descriptor used to apply effect-->
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryProjectileEnhancer">
+         <SimulationDescriptorReference Name="ModuleSupportProjectileEnhancer2Strategic1"/>
+         <SimulationDescriptorReference Name="ModuleSupportProjectileEnhancer"/>
+         <!--Descriptors used for tooltip-->
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportProjectileEnhancer3Strategic3" Family="ProjectileEnhancerBase" Level="3">
+      <Cost ResourceName="SystemProduction">64</Cost>
+      <!--<Cost ResourceName="Strategic3" Instant="true">3</Cost>-->
+      <CustomCost ResourceName="Strategic3" Instant="true">3 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyWeaponModule4</TechnologyPrerequisite>
+      <PathPrerequisite Flags="NoMoreThanOneProjectileEnhancerModule,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModule,ModuleSupportProjectileEnhancer</PathPrerequisite>
+      <InterpreterPrerequisite Flags="Edition" Inverted="true">Path(Context, @'ClassShip,ShipRoleColonizer') or Path(Context, @'ClassShip,ShipRoleObliterator')</InterpreterPrerequisite>
+      <!--Descriptor used to apply effect-->
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryProjectileEnhancer">
+         <SimulationDescriptorReference Name="ModuleSupportProjectileEnhancer3Strategic3"/>
+         <SimulationDescriptorReference Name="ModuleSupportProjectileEnhancer"/>
+         <!--Descriptors used for tooltip-->
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportProjectileEnhancer4Strategic5" Family="ProjectileEnhancerBase" Level="4">
+      <Cost ResourceName="SystemProduction">128</Cost>
+      <!--<Cost ResourceName="Strategic5" Instant="true">3</Cost>-->
+      <CustomCost ResourceName="Strategic5" Instant="true">3 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyCuriosityModuleSupportProjectileEnhancer4Strategic5</TechnologyPrerequisite>
+      <PathPrerequisite Flags="NoMoreThanOneProjectileEnhancerModule,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModule,ModuleSupportProjectileEnhancer</PathPrerequisite>
+      <InterpreterPrerequisite Flags="Edition" Inverted="true">Path(Context, @'ClassShip,ShipRoleColonizer') or Path(Context, @'ClassShip,ShipRoleObliterator')</InterpreterPrerequisite>
+      <!--Descriptor used to apply effect-->
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryProjectileEnhancer">
+         <SimulationDescriptorReference Name="ModuleSupportProjectileEnhancer4Strategic5"/>
+         <SimulationDescriptorReference Name="ModuleSupportProjectileEnhancer"/>
+         <!--Descriptors used for tooltip-->
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <!-- ********************* -->
+   <!-- ** REPAIR MODULES ** -->
+   <!-- ********************* -->
+
+   <SupportModule Name="ModuleSupportRepair1" Family="RepairBase" Level="1">
+      <Cost ResourceName="SystemProduction">20</Cost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyShip1</TechnologyPrerequisite>
+      <!--Descriptor used to apply effect-->
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <CategorizedSimulationDescriptors Category="CategoryRepair">
+         <SimulationDescriptorReference Name="ModuleSupportRepair"/>
+         <SimulationDescriptorReference Name="ModuleSupportRepair1"/>
+         <!--Descriptors used for tooltip-->
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportRepair2Strategic1" Family="RepairBase" Level="2">
+      <Cost ResourceName="SystemProduction">32</Cost>
+      <!--<Cost ResourceName="Strategic1" Instant="true">2</Cost>-->
+      <CustomCost ResourceName="Strategic1" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyDefenseModuleStrategic1</TechnologyPrerequisite>
+      <!--Descriptor used to apply effect-->
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryRepair">
+         <SimulationDescriptorReference Name="ModuleSupportRepair"/>
+         <SimulationDescriptorReference Name="ModuleSupportRepair2Strategic1"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportRepair2Strategic2" Family="RepairBase" Level="3">
+      <Cost ResourceName="SystemProduction">64</Cost>
+      <!--<Cost ResourceName="Strategic3" Instant="true">2</Cost>-->
+      <CustomCost ResourceName="Strategic3" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyCuriosityModuleSupportRepair2Strategic2</TechnologyPrerequisite>
+      <!--Descriptor used to apply effect-->
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryRepair">
+         <SimulationDescriptorReference Name="ModuleSupportRepair"/>
+         <SimulationDescriptorReference Name="ModuleSupportRepair2Strategic2"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportRepair3Strategic5" Family="RepairBase" Level="4">
+      <Cost ResourceName="SystemProduction">128</Cost>
+      <!--<Cost ResourceName="Strategic5" Instant="true">2</Cost>-->
+      <CustomCost ResourceName="Strategic5" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyDefenseModuleStrategic5</TechnologyPrerequisite>
+      <!--Descriptor used to apply effect-->
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryRepair">
+         <SimulationDescriptorReference Name="ModuleSupportRepair"/>
+         <SimulationDescriptorReference Name="ModuleSupportRepair3Strategic5"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <!-- *************************** -->
+   <!-- ** ROOT CREATION MODULES ** -->
+   <!-- *************************** -->
+
+   <SupportModule Name="ModuleSupportRootCreation1" Family="RootCreationBase" Level="1">
+      <Cost ResourceName="SystemProduction">200</Cost>
+      <PathPrerequisite Flags="Edition">ClassShip,ShipRoleRootCreator</PathPrerequisite>
+      <PathPrerequisite Flags="Edition" Inverted="false">../ClassEmpire,AffinityGameplayUnfallen</PathPrerequisite>
+      <PathPrerequisite Flags="NoMoreThanOneColonizationModule,Edition,Disable" Inverted="true">ClassShip/ClassSection/ClassModule,ModuleSupportRootCreation</PathPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ClassModuleRootCreatorShipOnly"/>
+      <CategorizedSimulationDescriptors Category="CategoryColonization">
+         <SimulationDescriptorReference Name="ModuleSupportRootCreation1"/>
+         <SimulationDescriptorReference Name="ModuleSupportRootCreation"/>
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <!-- *************************** -->
+   <!-- ** SHIELD RELOAD MODULES ** -->
+   <!-- *************************** -->
+   
+   <SupportModule Name="ModuleSupportShieldReload1Strategic2" Family="ShieldReloadStrategic4" Level="1">
+      <Cost ResourceName="SystemProduction">32</Cost>
+      <!--<Cost ResourceName="Strategic2" Instant="true">2</Cost>-->
+      <CustomCost ResourceName="Strategic2" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyDefenseModuleStrategic2</TechnologyPrerequisite>
+      <!--Descriptor used to apply effect-->
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryShieldReload">
+         <SimulationDescriptorReference Name="ModuleSupportShieldReload"/>
+         <SimulationDescriptorReference Name="ModuleSupportShieldReload1Strategic2"/>
+         <!--Descriptors used for tooltip-->
+      </CategorizedSimulationDescriptors>
+      <!--Battle action used after a battle-->
+      <!-- need a battle acton -->
+   </SupportModule>
+   
+   <SupportModule Name="ModuleSupportShieldReload1Strategic4" Family="ShieldReloadStrategic4" Level="2">
+      <Cost ResourceName="SystemProduction">64</Cost>
+      <!--<Cost ResourceName="Strategic4" Instant="true">2</Cost>-->
+      <CustomCost ResourceName="Strategic4" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyCuriosityModuleSupportRepair2Strategic1</TechnologyPrerequisite>
+      <!--Descriptor used to apply effect-->
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryShieldReload">
+         <SimulationDescriptorReference Name="ModuleSupportShieldReload"/>
+         <SimulationDescriptorReference Name="ModuleSupportShieldReload1Strategic4"/>
+         <!--Descriptors used for tooltip-->
+      </CategorizedSimulationDescriptors>
+      <!--Battle action used after a battle-->
+      <!-- need a battle acton -->
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportShieldReload2Strategic6" Family="ShieldReloadStrategic4" Level="3">
+      <Cost ResourceName="SystemProduction">128</Cost>
+      <!--<Cost ResourceName="Strategic6" Instant="true">2</Cost>-->
+      <CustomCost ResourceName="Strategic6" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyDefenseModuleStrategic6</TechnologyPrerequisite>
+      <!--Descriptor used to apply effect-->
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategoryShieldReload">
+         <SimulationDescriptorReference Name="ModuleSupportShieldReload"/>
+         <SimulationDescriptorReference Name="ModuleSupportShieldReload2Strategic6"/>
+         <!--Descriptors used for tooltip-->
+      </CategorizedSimulationDescriptors>
+      <!--Battle action used after a battle-->
+      <!-- need a battle acton -->
+   </SupportModule>
+
+   <!-- *************************** -->
+   <!-- ** SIEGE MODULES ** -->
+   <!-- *************************** -->
+
+   <SupportModule Name="ModuleSupportSiege1Strategic1" Family="SiegeStrategic1" Level="1">
+      <Cost ResourceName="SystemProduction">32</Cost>
+      <!--<Cost ResourceName="Strategic1" Instant="true">2</Cost>-->
+      <CustomCost ResourceName="Strategic1" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyDefenseModule1</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Prerequisite,Edition,Discard,UnlockAvailability" Inverted="true">../ClassEmpire,AffinityGameplayMajorHisshos</PathPrerequisite>
+      <!--Descriptor used to apply effect-->
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategorySiege">
+         <SimulationDescriptorReference Name="ModuleSupportSiege"/>
+         <SimulationDescriptorReference Name="ModuleSupportSiege1Strategic1"/>
+         <!--Descriptors used for tooltip-->
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportSiege1Strategic1MajorHisshos" Family="SiegeStrategic1" Level="1" >
+      <Cost ResourceName="SystemProduction">32</Cost>
+      <!--<Cost ResourceName="Strategic1" Instant="true">2</Cost>-->
+      <CustomCost ResourceName="Strategic1" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyDefenseModule1</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Prerequisite,Edition,Discard,UnlockAvailability,Faction,AffinityGameplayTechnologyMajorHisshos" Inverted="false">../ClassEmpire,AffinityGameplayMajorHisshos</PathPrerequisite>
+      <!--Descriptor used to apply effect-->
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategorySiege">
+         <SimulationDescriptorReference Name="ModuleSupportSiege"/>
+         <SimulationDescriptorReference Name="ModuleSupportSiege1Strategic1MajorHisshos"/>
+         <!--Descriptors used for tooltip-->
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportSiege2Strategic3" Family="SiegeStrategic1" Level="2">
+      <Cost ResourceName="SystemProduction">64</Cost>
+      <!--<Cost ResourceName="Strategic3" Instant="true">2</Cost>-->
+      <CustomCost ResourceName="Strategic3" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyWeaponModule4</TechnologyPrerequisite>
+      <!--Descriptor used to apply effect-->
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategorySiege">
+         <SimulationDescriptorReference Name="ModuleSupportSiege"/>
+         <SimulationDescriptorReference Name="ModuleSupportSiege2Strategic3"/>
+         <!--Descriptors used for tooltip-->
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportSiege2Strategic5" Family="SiegeStrategic1" Level="3">
+      <Cost ResourceName="SystemProduction">128</Cost>
+      <!--<Cost ResourceName="Strategic5" Instant="true">2</Cost>-->
+      <CustomCost ResourceName="Strategic5" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologySupportModule1</TechnologyPrerequisite>
+      <!--Descriptor used to apply effect-->
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <CategorizedSimulationDescriptors Category="CategorySiege">
+         <SimulationDescriptorReference Name="ModuleSupportSiege"/>
+         <SimulationDescriptorReference Name="ModuleSupportSiege2Strategic5"/>
+         <!--Descriptors used for tooltip-->
+      </CategorizedSimulationDescriptors>
+   </SupportModule>
+
+   <!-- ********************************** -->
+   <!-- *****      F/B MODULES        **** -->
+   <!-- ********************************** -->
+
+   <SupportModule Name="ModuleSupportSquadronOffenseEnhancer1Strategic4" Family="SquadronOffenseEnhancerStrategic4" Level="1">
+      <Cost ResourceName="SystemProduction">64</Cost>
+      <!--<Cost ResourceName="Strategic4" Instant="true">2</Cost>-->
+      <CustomCost ResourceName="Strategic4" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologySupportModule5</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <SimulationDescriptorReference Name="ModuleSupportSquadronOffenseEnhancer"/>
+      <SimulationDescriptorReference Name="ModuleSupportSquadronOffenseEnhancer1Strategic4"/>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportSquadronOffenseEnhancer2Strategic6" Family="SquadronOffenseEnhancerStrategic4" Level="2">
+      <Cost ResourceName="SystemProduction">128</Cost>
+      <!--<Cost ResourceName="Strategic6" Instant="true">2</Cost>-->
+      <CustomCost ResourceName="Strategic6" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologySupportModule6</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <SimulationDescriptorReference Name="ModuleSupportSquadronOffenseEnhancer"/>
+      <SimulationDescriptorReference Name="ModuleSupportSquadronOffenseEnhancer2Strategic6"/>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportSquadronDefenseEnhancer1Strategic3" Family="SquadronDefenseEnhancerStrategic3" Level="1">
+      <Cost ResourceName="SystemProduction">64</Cost>
+      <!--<Cost ResourceName="Strategic3" Instant="true">2</Cost>-->
+      <CustomCost ResourceName="Strategic3" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologySupportModule5</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <SimulationDescriptorReference Name="ModuleSupportSquadronDefenseEnhancer"/>
+      <SimulationDescriptorReference Name="ModuleSupportSquadronDefenseEnhancer1Strategic3"/>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportSquadronDefenseEnhancer2Strategic5" Family="SquadronDefenseEnhancerStrategic3" Level="2">
+      <Cost ResourceName="SystemProduction">128</Cost>
+      <!--<Cost ResourceName="Strategic5" Instant="true">2</Cost>-->
+      <CustomCost ResourceName="Strategic5" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+      <TechnologyPrerequisite Flags="Edition">TechnologySupportModule6</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+      <SimulationDescriptorReference Name="ModuleSupportSquadronDefenseEnhancer"/>
+      <SimulationDescriptorReference Name="ModuleSupportSquadronDefenseEnhancer2Strategic5"/>
+   </SupportModule>
+
+
+   <!-- ********************************** -->
+   <!-- *****         FLAK            **** -->
+   <!-- ********************************** -->
+
+   <SupportModule Name="ModuleSupportFlakEnhancer1" Family="FlakEnhancer" Level="1">
+      <Cost ResourceName="SystemProduction">40</Cost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyStageMilitary2</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleSupportFlakEnhancer"/>
+      <SimulationDescriptorReference Name="ModuleSupportFlakEnhancer1"/>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportFlakEnhancer2" Family="FlakEnhancer" Level="2">
+      <Cost ResourceName="SystemProduction">160</Cost>
+      <TechnologyPrerequisite Flags="Edition">TechnologyStageMilitary4</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleSupportFlakEnhancer"/>
+      <SimulationDescriptorReference Name="ModuleSupportFlakEnhancer2"/>
+   </SupportModule>
+
+   <SupportModule Name="ModuleSupportFlakEnhancer3" Family="FlakEnhancer" Level="3">
+      <Cost ResourceName="SystemProduction">320</Cost>
+      <TechnologyPrerequisite Flags="Edition">TechnologySquadronModuleFighter2</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="ClassModuleSupport"/>
+      <SimulationDescriptorReference Name="ModuleSupportFlakEnhancer"/>
+      <SimulationDescriptorReference Name="ModuleSupportFlakEnhancer3"/>
+   </SupportModule>
+   
+    <!-- ********************* -->
+    <!-- ** ANALYZER MODULES ** -->
+    <!-- ********************* -->
+    <SupportModule Name="ModuleSupportAnalyzer1" Family="AnalyzerBase" Level="1">
+        <Cost ResourceName="SystemProduction">50</Cost>
+        <TechnologyPrerequisite  Flags="Edition">TechnologyCuriosityModuleSupportAnalyzer2Strategic2</TechnologyPrerequisite>
+        <PathPrerequisite Flags="Edition">ClassShip,ShipRoleSupport</PathPrerequisite>
+		<!--<InterpreterPrerequisite Flags="Edition">Path(Context, @ShipRoleSupport) or Path(Context, @ShipRoleHero)</InterpreterPrerequisite>-->
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleSupportShipOnly"/>
+		<!--<SimulationDescriptorReference Name="ClassModuleSupportAndHeroShipOnly"/>-->
+        <CategorizedSimulationDescriptors Category="CategoryAnalyzer">
+            <SimulationDescriptorReference Name="ModuleSupportAnalyzer1"/>
+            <SimulationDescriptorReference Name="ModuleSupportAnalyzer"/>
+        </CategorizedSimulationDescriptors>
+    </SupportModule>
+
+    <SupportModule Name="ModuleSupportAnalyzer2Strategic2" Family="AnalyzerStrategic2" Level="2">
+        <Cost ResourceName="SystemProduction">70</Cost>
+        <Cost ResourceName="Strategic2" Instant="true">1</Cost>
+        <TechnologyPrerequisite  Flags="Edition">TechnologyCuriosityModuleSupportAnalyzer2Strategic2</TechnologyPrerequisite>
+        <PathPrerequisite Flags="Edition">ClassShip,ShipRoleSupport</PathPrerequisite>
+		<!--<InterpreterPrerequisite Flags="Edition">Path(Context, @ShipRoleSupport) or Path(Context, @ShipRoleHero)</InterpreterPrerequisite>-->
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleSupportShipOnly"/>
+		<!--<SimulationDescriptorReference Name="ClassModuleSupportAndHeroShipOnly"/>-->
+        <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+        <CategorizedSimulationDescriptors Category="CategoryAnalyzer">
+            <SimulationDescriptorReference Name="ModuleSupportAnalyzer2Strategic2"/>
+            <SimulationDescriptorReference Name="ModuleSupportAnalyzer"/>
+        </CategorizedSimulationDescriptors>
+    </SupportModule>
+
+    <!-- ********************* -->
+    <!-- ** JOURNALIST MODULES ** -->
+    <!-- ********************* -->
+    <SupportModule Name="ModuleSupportJournalist1" Family="JournalistBase" Level="1">
+        <Cost ResourceName="SystemProduction">50</Cost>
+        <TechnologyPrerequisite  Flags="Edition">TechnologyCuriosityModuleSupportJournalist1</TechnologyPrerequisite>
+        <PathPrerequisite Flags="Edition">ClassShip,ShipRoleSupport</PathPrerequisite>
+		<!--<InterpreterPrerequisite Flags="Edition">Path(Context, @ShipRoleSupport) or Path(Context, @ShipRoleHero)</InterpreterPrerequisite>-->
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleSupportShipOnly"/>
+		<!--<SimulationDescriptorReference Name="ClassModuleSupportAndHeroShipOnly"/>-->
+        <CategorizedSimulationDescriptors Category="CategoryJournalist">
+            <SimulationDescriptorReference Name="ModuleSupportJournalist1"/>
+            <SimulationDescriptorReference Name="ModuleSupportJournalist"/>
+        </CategorizedSimulationDescriptors>
+        <!-- REQUIRE BATTLE ACTION (GROUP BATTLE ACTION AND THEN MODIFY VALUE) -->
+    </SupportModule>
+
+    <SupportModule Name="ModuleSupportJournalist2Strategic5" Family="JournalistBase" Level="2">
+        <Cost ResourceName="SystemProduction">70</Cost>
+        <Cost ResourceName="Strategic5" Instant="true">1</Cost>
+        <TechnologyPrerequisite  Flags="Edition">TechnologyCuriosityModuleSupportJournalist1</TechnologyPrerequisite>
+        <PathPrerequisite Flags="Edition">ClassShip,ShipRoleSupport</PathPrerequisite>
+		<!--<InterpreterPrerequisite Flags="Edition">Path(Context, @ShipRoleSupport) or Path(Context, @ShipRoleHero)</InterpreterPrerequisite>-->
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleSupportShipOnly"/>
+		<!--<SimulationDescriptorReference Name="ClassModuleSupportAndHeroShipOnly"/>-->
+        <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+        <CategorizedSimulationDescriptors Category="CategoryJournalist">
+            <SimulationDescriptorReference Name="ModuleSupportJournalist2Strategic5"/>
+            <SimulationDescriptorReference Name="ModuleSupportJournalist"/>
+        </CategorizedSimulationDescriptors>
+    </SupportModule>
+
+    <!-- ********************* -->
+    <!-- ** RECYCLING MODULES ** -->
+    <!-- ********************* -->
+    <SupportModule Name="ModuleSupportRecycling1" Family="RecyclingBase" Level="1">
+        <Cost ResourceName="SystemProduction">50</Cost>
+        <TechnologyPrerequisite  Flags="Edition">TechnologyCuriosityModuleSupportRecycling1</TechnologyPrerequisite>
+        <PathPrerequisite Flags="Edition">ClassShip,ShipRoleSupport</PathPrerequisite>
+		<!--<InterpreterPrerequisite Flags="Edition">Path(Context, @ShipRoleSupport) or Path(Context, @ShipRoleHero)</InterpreterPrerequisite>-->
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleSupportShipOnly"/>
+		<!--<SimulationDescriptorReference Name="ClassModuleSupportAndHeroShipOnly"/>-->
+        <CategorizedSimulationDescriptors Category="CategoryRecycling">
+            <SimulationDescriptorReference Name="ModuleSupportRecycling1"/>
+            <SimulationDescriptorReference Name="ModuleSupportRecycling"/>
+        </CategorizedSimulationDescriptors>
+    </SupportModule>
+
+    <SupportModule Name="ModuleSupportRecycling2Strategic3" Family="RecyclingStrategic4" Level="2">
+        <Cost ResourceName="SystemProduction">70</Cost>
+        <Cost ResourceName="Strategic3" Instant="true">1</Cost>
+        <TechnologyPrerequisite  Flags="Edition">TechnologyCuriosityModuleSupportRecycling1</TechnologyPrerequisite>
+        <PathPrerequisite Flags="Edition">ClassShip,ShipRoleSupport</PathPrerequisite>
+		<!--<InterpreterPrerequisite Flags="Edition">Path(Context, @ShipRoleSupport) or Path(Context, @ShipRoleHero)</InterpreterPrerequisite>-->
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleSupportShipOnly"/>
+		<!--<SimulationDescriptorReference Name="ClassModuleSupportAndHeroShipOnly"/>-->
+        <SimulationDescriptorReference Name="ModuleTypeStrategic" />
+        <CategorizedSimulationDescriptors Category="CategoryRecycling">
+            <SimulationDescriptorReference Name="ModuleSupportRecycling2Strategic3"/>
+            <SimulationDescriptorReference Name="ModuleSupportRecycling"/>
+        </CategorizedSimulationDescriptors>
+    </SupportModule>  
+      
+	<!-- ********************************** -->
+	<!-- *****  HISSHO ZONE ENHANCER   **** -->
+	<!-- ********************************** -->
+
+    <SupportModule Name="ModuleSupportHonorZoneEnhancer01" Family="HonorZoneEnhancerBase" Level="1" >
+        <Cost ResourceName="SystemProduction">80</Cost>
+        <TechnologyPrerequisite Flags="Edition">TechnologyJuggernautTractorBeam</TechnologyPrerequisite>
+        <PathPrerequisite Flags="Edition">ClassShip,ShipSizeJuggernaut</PathPrerequisite>
+        <PathPrerequisite Flags="Prerequisite,Edition,Discard,UnlockAvailability,Faction,AffinityGameplayTechnologyMajorHisshos" Inverted="false">../ClassEmpire,AffinityGameplayMajorHisshos</PathPrerequisite>
+        <!--Descriptor used to apply effect-->
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleJuggernautOnly"/>
+        <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+            <SimulationDescriptorReference Name="ModuleSupportHonorZoneEnhancer"/>
+            <SimulationDescriptorReference Name="ModuleSupportHonorZoneEnhancer01"/>
+            <!--Descriptors used for tooltip-->
+        </CategorizedSimulationDescriptors>
+    </SupportModule>
+
+    <SupportModule Name="ModuleSupportHonorZoneEnhancer02" Family="HonorZoneEnhancerBase" Level="2" GuiCategory="Strategic5" >
+        <Cost ResourceName="SystemProduction">128</Cost>
+        <!--<Cost ResourceName="Strategic5" Instant="true">2</Cost>-->
+        <CustomCost ResourceName="Strategic5" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
+        <TechnologyPrerequisite Flags="Edition">TechnologyJuggernautFactionModule</TechnologyPrerequisite>
+        <PathPrerequisite Flags="Edition">ClassShip,ShipSizeJuggernaut</PathPrerequisite>
+        <PathPrerequisite Flags="Prerequisite,Edition,Discard,UnlockAvailability,Faction,AffinityGameplayTechnologyMajorHisshos" Inverted="false">../ClassEmpire,AffinityGameplayMajorHisshos</PathPrerequisite>
+        <!--Descriptor used to apply effect-->
+        <SimulationDescriptorReference Name="ClassModuleSupport"/>
+        <SimulationDescriptorReference Name="ClassModuleJuggernautOnly"/>
+        <CategorizedSimulationDescriptors Category="CategoryJuggernaut">
+            <SimulationDescriptorReference Name="ModuleSupportHonorZoneEnhancer"/>
+            <SimulationDescriptorReference Name="ModuleSupportHonorZoneEnhancer02"/>
+            <!--Descriptors used for tooltip-->
+        </CategorizedSimulationDescriptors>
+    </SupportModule>
+    
+</Datatable>

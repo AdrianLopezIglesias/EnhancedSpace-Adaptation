@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Generator.Definitions.PlanetaryResourceDefinition.xsd">
+
+    <PlanetaryResourceDefinition Name="Strategic1">
+        <Category>StrategicResource</Category>
+        <Tier>Common</Tier>
+        <Tag>Curiosity_PlanetResource_Strategic01</Tag>
+        <MaybeVisible>true</MaybeVisible>
+        <TagWhenVisible>StrategicDeposit1</TagWhenVisible>
+        <PlanetFilterNot>PlanetGameplayTier3</PlanetFilterNot>
+        <PlanetFilterNot>PlanetGameplayTypeStable</PlanetFilterNot>
+        <PlanetFilterNot>PlanetGameplayTypeLush</PlanetFilterNot>
+        <PlanetFilterNot>PlanetTypeDestroyed</PlanetFilterNot>
+    </PlanetaryResourceDefinition>
+
+    <PlanetaryResourceDefinition Name="Strategic2">
+        <Category>StrategicResource</Category>
+        <Tier>Common</Tier>
+        <Tag>Curiosity_PlanetResource_Strategic02</Tag>
+        <MaybeVisible>true</MaybeVisible>
+        <TagWhenVisible>StrategicDeposit2</TagWhenVisible>
+        <PlanetFilterNot>PlanetGameplayTier3</PlanetFilterNot>
+        <PlanetFilterNot>PlanetGameplayTypeCraggy</PlanetFilterNot>
+        <PlanetFilterNot>PlanetGameplayTypeWater</PlanetFilterNot>
+        <PlanetFilterNot>PlanetTypeDestroyed</PlanetFilterNot>
+    </PlanetaryResourceDefinition>
+
+    <PlanetaryResourceDefinition Name="Strategic3">
+        <Category>StrategicResource</Category>
+        <Tier>Uncommon</Tier>
+        <Tag>Curiosity_PlanetResource_Strategic03</Tag>
+        <MaybeVisible>false</MaybeVisible>
+        <PlanetFilterNot>PlanetGameplayTier1</PlanetFilterNot>
+        <PlanetFilterNot>PlanetGameplayTypeStable</PlanetFilterNot>
+        <PlanetFilterNot>PlanetGameplayTypeWater</PlanetFilterNot>
+        <PlanetFilterNot>PlanetTypeDestroyed</PlanetFilterNot>
+    </PlanetaryResourceDefinition>
+
+    <PlanetaryResourceDefinition Name="Strategic4">
+        <Category>StrategicResource</Category>
+        <Tier>Uncommon</Tier>
+        <Tag>Curiosity_PlanetResource_Strategic04</Tag>
+        <MaybeVisible>false</MaybeVisible>
+        <PlanetFilterNot>PlanetGameplayTier1</PlanetFilterNot>
+        <PlanetFilterNot>PlanetGameplayTypeCraggy</PlanetFilterNot>
+        <PlanetFilterNot>PlanetGameplayTypeLush</PlanetFilterNot>
+        <PlanetFilterNot>PlanetTypeDestroyed</PlanetFilterNot>
+    </PlanetaryResourceDefinition>
+
+    <PlanetaryResourceDefinition Name="Strategic5">
+        <Category>StrategicResource</Category>
+        <Tier>Rare</Tier>
+        <Tag>Curiosity_PlanetResource_Strategic05</Tag>
+        <MaybeVisible>false</MaybeVisible>
+        <PlanetFilterNot>PlanetGameplayTier1</PlanetFilterNot>
+        <PlanetFilterNot>PlanetGameplayTypeHot</PlanetFilterNot>
+        <PlanetFilterNot>PlanetTypeDestroyed</PlanetFilterNot>
+    </PlanetaryResourceDefinition>
+
+    <PlanetaryResourceDefinition Name="Strategic6">
+        <Category>StrategicResource</Category>
+        <Tier>Rare</Tier>
+        <Tag>Curiosity_PlanetResource_Strategic06</Tag>
+        <MaybeVisible>false</MaybeVisible>
+        <PlanetFilterNot>PlanetGameplayTier1</PlanetFilterNot>
+        <PlanetFilterNot>PlanetGameplayTypeCold</PlanetFilterNot>
+        <PlanetFilterNot>PlanetTypeDestroyed</PlanetFilterNot>
+    </PlanetaryResourceDefinition>
+
+    <PlanetaryResourceDefinition Name="Luxury1">
+        <Category>LuxuryResource</Category>
+        <Tier>Common</Tier>
+        <Tag>Curiosity_PlanetResource_Luxury01</Tag>
+        <MaybeVisible>true</MaybeVisible>
+        <TagWhenVisible>LuxuryDeposit1</TagWhenVisible>
+        <PlanetFilterNot>PlanetGameplayTypeMeager</PlanetFilterNot>
+        <PlanetFilterNot>PlanetGameplayTypeDry</PlanetFilterNot>
+        <PlanetFilterNot>PlanetTypeDestroyed</PlanetFilterNot>
+    </PlanetaryResourceDefinition>
+
+    <PlanetaryResourceDefinition Name="Luxury2">
+        <Category>LuxuryResource</Category>
+        <Tier>Common</Tier>
+        <Tag>Curiosity_PlanetResource_Luxury02</Tag>
+        <MaybeVisible>true</MaybeVisible>
+        <TagWhenVisible>LuxuryDeposit2</TagWhenVisible>
+        <PlanetFilterNot>PlanetGameplayTypeMeager</PlanetFilterNot>
+        <PlanetFilterNot>PlanetTypeDestroyed</PlanetFilterNot>
+    </PlanetaryResourceDefinition>
+
+    <PlanetaryResourceDefinition Name="Luxury3">
+        <Category>LuxuryResource</Category>
+        <Tier>Common</Tier>
+        <Tag>Curiosity_PlanetResource_Luxury03</Tag>
+        <MaybeVisible>true</MaybeVisible>
+        <TagWhenVisible>LuxuryDeposit3</TagWhenVisible>
+        <PlanetFilterMust>PlanetGameplayTypeLush</PlanetFilterMust>
+        <PlanetFilterNot>PlanetGameplayTypeMeager</PlanetFilterNot>
+        <PlanetFilterNot>PlanetTypeDestroyed</PlanetFilterNot>
+    </PlanetaryResourceDefinition>
+
+    <PlanetaryResourceDefinition Name="Luxury4">
+        <Category>LuxuryResource</Category>
+        <Tier>Common</Tier>
+        <Tag>Curiosity_PlanetResource_Luxury04</Tag>
+        <MaybeVisible>true</MaybeVisible>
+        <TagWhenVisible>LuxuryDeposit4</TagWhenVisible>
+        <PlanetFilterNot>PlanetGameplayTypeMeager</PlanetFilterNot>
+        <PlanetFilterNot>PlanetTypeDestroyed</PlanetFilterNot>
+    </PlanetaryResourceDefinition>
+
+    <PlanetaryResourceDefinition Name="Luxury5">
+        <Category>LuxuryResource</Category>
+        <Tier>Common</Tier>
+        <Tag>Curiosity_PlanetResource_Luxury05</Tag>
+        <MaybeVisible>true</MaybeVisible>
+        <TagWhenVisible>LuxuryDeposit5</TagWhenVisible>
+        <PlanetFilterNot>PlanetGameplayTypeMeager</PlanetFilterNot>
+        <PlanetFilterNot>PlanetTypeDestroyed</PlanetFilterNot>
+    </PlanetaryResourceDefinition>
+
+    <PlanetaryResourceDefinition Name="Luxury6">
+        <Category>LuxuryResource</Category>
+        <Tier>Common</Tier>
+        <Tag>Curiosity_PlanetResource_Luxury06</Tag>
+        <MaybeVisible>true</MaybeVisible>
+        <TagWhenVisible>LuxuryDeposit6</TagWhenVisible>
+        <PlanetFilterNot>PlanetGameplayTypeMeager</PlanetFilterNot>
+        <PlanetFilterNot>PlanetTypeDestroyed</PlanetFilterNot>
+    </PlanetaryResourceDefinition>
+
+    <PlanetaryResourceDefinition Name="Luxury7">
+        <Category>LuxuryResource</Category>
+        <Tier>Common</Tier>
+        <Tag>Curiosity_PlanetResource_Luxury07</Tag>
+        <MaybeVisible>true</MaybeVisible>
+        <TagWhenVisible>LuxuryDeposit7</TagWhenVisible>
+        <PlanetFilterNot>PlanetGameplayTypeMeager</PlanetFilterNot>
+        <PlanetFilterNot>PlanetTypeDestroyed</PlanetFilterNot>
+    </PlanetaryResourceDefinition>
+
+    <PlanetaryResourceDefinition Name="Luxury8">
+        <Category>LuxuryResource</Category>
+        <Tier>Common</Tier>
+        <Tag>Curiosity_PlanetResource_Luxury08</Tag>
+        <MaybeVisible>true</MaybeVisible>
+        <TagWhenVisible>LuxuryDeposit8</TagWhenVisible>
+        <PlanetFilterNot>PlanetGameplayTypeMeager</PlanetFilterNot>
+        <PlanetFilterNot>PlanetTypeDestroyed</PlanetFilterNot>
+    </PlanetaryResourceDefinition>
+
+    <PlanetaryResourceDefinition Name="Luxury9">
+        <Category>LuxuryResource</Category>
+        <Tier>Uncommon</Tier>
+        <Tag>Curiosity_PlanetResource_Luxury09</Tag>
+        <MaybeVisible>false</MaybeVisible>
+        <PlanetFilterNot>PlanetGameplayTypeMild</PlanetFilterNot>
+        <PlanetFilterNot>PlanetGameplayTypeMeager</PlanetFilterNot>
+        <PlanetFilterNot>PlanetTypeDestroyed</PlanetFilterNot>
+    </PlanetaryResourceDefinition>
+
+    <PlanetaryResourceDefinition Name="Luxury10">
+        <Category>LuxuryResource</Category>
+        <Tier>Uncommon</Tier>
+        <Tag>Curiosity_PlanetResource_Luxury10</Tag>
+        <MaybeVisible>false</MaybeVisible>
+        <PlanetFilterMust>PlanetGameplayTypeCraggy</PlanetFilterMust>
+        <PlanetFilterNot>PlanetTypeDestroyed</PlanetFilterNot>
+    </PlanetaryResourceDefinition>
+
+    <PlanetaryResourceDefinition Name="Luxury11">
+        <Category>LuxuryResource</Category>
+        <Tier>Uncommon</Tier>
+        <Tag>Curiosity_PlanetResource_Luxury11</Tag>
+        <MaybeVisible>false</MaybeVisible>
+        <PlanetFilterMust>PlanetGameplayTypeLush</PlanetFilterMust>
+        <PlanetFilterNot>PlanetTypeDestroyed</PlanetFilterNot>
+    </PlanetaryResourceDefinition>
+
+    <PlanetaryResourceDefinition Name="Luxury12">
+        <Category>LuxuryResource</Category>
+        <Tier>Uncommon</Tier>
+        <Tag>Curiosity_PlanetResource_Luxury12</Tag>
+        <MaybeVisible>false</MaybeVisible>
+        <PlanetFilterMust>PlanetGameplayTypeStable</PlanetFilterMust>
+        <PlanetFilterNot>PlanetTypeDestroyed</PlanetFilterNot>
+    </PlanetaryResourceDefinition>
+
+    <PlanetaryResourceDefinition Name="Luxury13">
+        <Category>LuxuryResource</Category>
+        <Tier>Uncommon</Tier>
+        <Tag>Curiosity_PlanetResource_Luxury13</Tag>
+        <MaybeVisible>false</MaybeVisible>
+        <PlanetFilterMust>PlanetGameplayTypeGas</PlanetFilterMust>
+        <PlanetFilterNot>PlanetTypeDestroyed</PlanetFilterNot>
+    </PlanetaryResourceDefinition>
+
+    <PlanetaryResourceDefinition Name="Luxury14">
+        <Category>LuxuryResource</Category>
+        <Tier>Uncommon</Tier>
+        <Tag>Curiosity_PlanetResource_Luxury14</Tag>
+        <MaybeVisible>false</MaybeVisible>
+        <PlanetFilterNot>PlanetGameplayTypeTeeming</PlanetFilterNot>
+        <PlanetFilterNot>PlanetGameplayTypeMeager</PlanetFilterNot>
+        <PlanetFilterNot>PlanetTypeDestroyed</PlanetFilterNot>
+    </PlanetaryResourceDefinition>
+
+    <PlanetaryResourceDefinition Name="Luxury15">
+        <Category>LuxuryResource</Category>
+        <Tier>Uncommon</Tier>
+        <Tag>Curiosity_PlanetResource_Luxury15</Tag>
+        <MaybeVisible>false</MaybeVisible>
+        <PlanetFilterNot>PlanetGameplayTypeTeeming</PlanetFilterNot>
+        <PlanetFilterNot>PlanetTypeDestroyed</PlanetFilterNot>
+    </PlanetaryResourceDefinition>
+
+    <PlanetaryResourceDefinition Name="Luxury16">
+        <Category>LuxuryResource</Category>
+        <Tier>Uncommon</Tier>
+        <Tag>Curiosity_PlanetResource_Luxury16</Tag>
+        <MaybeVisible>false</MaybeVisible>
+        <PlanetFilterMust>PlanetGameplayTypeTemperate</PlanetFilterMust>
+        <PlanetFilterNot>PlanetGameplayTypeTeeming</PlanetFilterNot>
+        <PlanetFilterNot>PlanetTypeDestroyed</PlanetFilterNot>
+    </PlanetaryResourceDefinition>
+
+    <PlanetaryResourceDefinition Name="Luxury17">
+        <Category>LuxuryResource</Category>
+        <Tier>Rare</Tier>
+        <Tag>Curiosity_PlanetResource_Luxury17</Tag>
+        <MaybeVisible>false</MaybeVisible>
+        <PlanetFilterMust>PlanetGameplayTypeMeager</PlanetFilterMust>
+        <PlanetFilterMust>PlanetGameplayTypeStable</PlanetFilterMust>
+        <PlanetFilterNot>PlanetTypeDestroyed</PlanetFilterNot>
+    </PlanetaryResourceDefinition>
+
+    <PlanetaryResourceDefinition Name="Luxury18">
+        <Category>LuxuryResource</Category>
+        <Tier>Rare</Tier>
+        <Tag>Curiosity_PlanetResource_Luxury18</Tag>
+        <MaybeVisible>false</MaybeVisible>
+      <PlanetFilterMust>PlanetGameplayTypeMeager</PlanetFilterMust>
+      <PlanetFilterMust>PlanetGameplayTypeCraggy</PlanetFilterMust>
+        <PlanetFilterNot>PlanetTypeDestroyed</PlanetFilterNot>
+    </PlanetaryResourceDefinition>
+
+    <PlanetaryResourceDefinition Name="Luxury19">
+        <Category>LuxuryResource</Category>
+        <Tier>Rare</Tier>
+        <Tag>Curiosity_PlanetResource_Luxury19</Tag>
+        <MaybeVisible>false</MaybeVisible>
+       <PlanetFilterMust>PlanetGameplayTypeWater</PlanetFilterMust>
+        <PlanetFilterNot>PlanetTypeDestroyed</PlanetFilterNot>
+    </PlanetaryResourceDefinition>
+
+    <PlanetaryResourceDefinition Name="Luxury20">
+        <Category>LuxuryResource</Category>
+        <Tier>Rare</Tier>
+        <Tag>Curiosity_PlanetResource_Luxury20</Tag>
+        <MaybeVisible>false</MaybeVisible>
+        <PlanetFilterMust>PlanetGameplayTypeStable</PlanetFilterMust>
+        <PlanetFilterNot>PlanetTypeDestroyed</PlanetFilterNot>
+    </PlanetaryResourceDefinition>
+
+    <PlanetaryResourceDefinition Name="Luxury21">
+        <Category>LuxuryResource</Category>
+        <Tier>Rare</Tier>
+        <Tag>Curiosity_PlanetResource_Luxury21</Tag>
+        <MaybeVisible>false</MaybeVisible>
+        <PlanetFilterMust>PlanetGameplayTypeMeager</PlanetFilterMust>
+        <PlanetFilterMust>PlanetGameplayTypeStable</PlanetFilterMust>
+        <PlanetFilterNot>PlanetTypeDestroyed</PlanetFilterNot>
+    </PlanetaryResourceDefinition>
+
+    <PlanetaryResourceDefinition Name="Luxury22">
+        <Category>LuxuryResource</Category>
+        <Tier>Rare</Tier>
+        <Tag>Curiosity_PlanetResource_Luxury22</Tag>
+        <MaybeVisible>false</MaybeVisible>
+      <PlanetFilterMust>PlanetGameplayTypeWater</PlanetFilterMust>
+        <PlanetFilterNot>PlanetTypeDestroyed</PlanetFilterNot>
+    </PlanetaryResourceDefinition>
+
+    <PlanetaryResourceDefinition Name="Luxury23">
+        <Category>LuxuryResource</Category>
+        <Tier>Rare</Tier>
+        <Tag>Curiosity_PlanetResource_Luxury23</Tag>
+        <MaybeVisible>false</MaybeVisible>
+        <PlanetFilterMust>PlanetGameplayTypeMeager</PlanetFilterMust>
+        <PlanetFilterMust>PlanetGameplayTypeDry</PlanetFilterMust>
+        <PlanetFilterNot>PlanetTypeDestroyed</PlanetFilterNot>
+    </PlanetaryResourceDefinition>
+
+    <PlanetaryResourceDefinition Name="Luxury24">
+        <Category>LuxuryResource</Category>
+        <Tier>Rare</Tier>
+        <Tag>Curiosity_PlanetResource_Luxury24</Tag>
+        <MaybeVisible>false</MaybeVisible>
+        <PlanetFilterMust>PlanetGameplayTypeGas</PlanetFilterMust>
+        <PlanetFilterNot>PlanetTypeDestroyed</PlanetFilterNot>
+    </PlanetaryResourceDefinition>
+
+</Datatable>

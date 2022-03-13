@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Generator.Definitions.PlanetPopulationCapacityGroupDefinition.xsd">
+
+  <PopulationCapacityGroup Model="Standard" Rank="1">
+    <PlanetSizeType Size="Tiny" Type="Lava"/>
+    <PlanetSizeType Size="Tiny" Type="Swamp"/>
+    <PlanetSizeType Size="Tiny" Type="Ash"/>
+    <PlanetSizeType Size="Tiny" Type="Ice"/>
+    <PlanetSizeType Size="Small" Type="Lava"/>
+    <PlanetSizeType Size="Small" Type="Swamp"/>
+
+  </PopulationCapacityGroup>
+
+    <PopulationCapacityGroup Model="Standard" Rank="2">
+        <PlanetSizeType Size="Tiny" Type="Snow"/>
+        <PlanetSizeType Size="Tiny" Type="Desert"/>
+        <PlanetSizeType Size="Tiny" Type="Arctic"/>
+        <PlanetSizeType Size="Tiny" Type="Arid"/>
+        <PlanetSizeType Size="Small" Type="Ash"/>
+        <PlanetSizeType Size="Small" Type="Ice"/>
+        <PlanetSizeType Size="Small" Type="Arid"/>
+        <PlanetSizeType Size="Small" Type="Snow"/>
+        <PlanetSizeType Size="Small" Type="Desert"/>
+        <PlanetSizeType Size="Small" Type="Arctic"/>
+        <PlanetSizeType Size="Medium" Type="Lava"/>
+        <PlanetSizeType Size="Medium" Type="Swamp"/>
+        <PlanetSizeType Size="Medium" Type="Ash"/>
+        <PlanetSizeType Size="Medium" Type="Ice"/>
+        <PlanetSizeType Size="Large" Type="Lava"/>
+        <PlanetSizeType Size="Large" Type="Swamp"/>
+    </PopulationCapacityGroup>
+
+    <PopulationCapacityGroup Model="Standard" Rank="3">
+        <PlanetSizeType Size="Tiny" Type="Boreal"/>
+        <PlanetSizeType Size="Tiny" Type="Jungle"/>
+        <PlanetSizeType Size="Tiny" Type="Tundra"/>
+        <PlanetSizeType Size="Tiny" Type="Veldt"/>
+        <PlanetSizeType Size="Tiny" Type="Monsoon"/>
+        <PlanetSizeType Size="Tiny" Type="Tropical"/>
+        <PlanetSizeType Size="Tiny" Type="Steppes"/>
+        <PlanetSizeType Size="Tiny" Type="Terran"/>
+        <PlanetSizeType Size="Tiny" Type="Forest"/>
+        <PlanetSizeType Size="Tiny" Type="Ocean"/>
+        <PlanetSizeType Size="Tiny" Type="Atoll"/>
+        <PlanetSizeType Size="Small" Type="Boreal"/>
+        <PlanetSizeType Size="Small" Type="Jungle"/>
+        <PlanetSizeType Size="Small" Type="Tundra"/>
+        <PlanetSizeType Size="Small" Type="Veldt"/>
+        <PlanetSizeType Size="Small" Type="Monsoon"/>
+        <PlanetSizeType Size="Small" Type="Tropical"/>
+        <PlanetSizeType Size="Small" Type="Steppes"/>
+        <PlanetSizeType Size="Medium" Type="Arid"/>
+        <PlanetSizeType Size="Medium" Type="Snow"/>
+        <PlanetSizeType Size="Medium" Type="Desert"/>
+        <PlanetSizeType Size="Medium" Type="Arctic"/>
+        <PlanetSizeType Size="Large" Type="Ash"/>
+        <PlanetSizeType Size="Large" Type="Ice"/>
+        <PlanetSizeType Size="Large" Type="Snow"/>
+        <PlanetSizeType Size="Large" Type="Desert"/>
+        <PlanetSizeType Size="Large" Type="Arid"/>
+        <PlanetSizeType Size="Large" Type="Arctic"/>
+        <PlanetSizeType Size="Huge" Type="Lava"/>
+        <PlanetSizeType Size="Huge" Type="Swamp"/>
+        <PlanetSizeType Size="Huge" Type="Ash"/>
+        <PlanetSizeType Size="Huge" Type="Ice"/>
+    </PopulationCapacityGroup>
+
+    <PopulationCapacityGroup Model="Standard" Rank="4">
+        <PlanetSizeType Size="Small" Type="Terran"/>
+        <PlanetSizeType Size="Small" Type="Forest"/>
+        <PlanetSizeType Size="Small" Type="Ocean"/>
+        <PlanetSizeType Size="Small" Type="Atoll"/>
+        <PlanetSizeType Size="Medium" Type="Boreal"/>
+        <PlanetSizeType Size="Medium" Type="Jungle"/>
+        <PlanetSizeType Size="Medium" Type="Tundra"/>
+        <PlanetSizeType Size="Medium" Type="Veldt"/>
+        <PlanetSizeType Size="Medium" Type="Monsoon"/>
+        <PlanetSizeType Size="Medium" Type="Tropical"/>
+        <PlanetSizeType Size="Medium" Type="Steppes"/>
+        <PlanetSizeType Size="Medium" Type="Terran"/>
+        <PlanetSizeType Size="Medium" Type="Forest"/>
+        <PlanetSizeType Size="Medium" Type="Ocean"/>
+        <PlanetSizeType Size="Medium" Type="Tundra"/>
+        <PlanetSizeType Size="Large" Type="Boreal"/>
+        <PlanetSizeType Size="Large" Type="Jungle"/>
+        <PlanetSizeType Size="Large" Type="Tundra"/>
+        <PlanetSizeType Size="Large" Type="Veldt"/>
+        <PlanetSizeType Size="Large" Type="Monsoon"/>
+        <PlanetSizeType Size="Large" Type="Tropical"/>
+        <PlanetSizeType Size="Large" Type="Steppes"/>
+        <PlanetSizeType Size="Huge" Type="Arid"/>
+        <PlanetSizeType Size="Huge" Type="Snow"/>
+        <PlanetSizeType Size="Huge" Type="Desert"/>
+        <PlanetSizeType Size="Huge" Type="Arctic"/>
+    </PopulationCapacityGroup>
+
+    <PopulationCapacityGroup Model="Standard" Rank="5">
+        <PlanetSizeType Size="Large" Type="Terran"/>
+        <PlanetSizeType Size="Large" Type="Forest"/>
+        <PlanetSizeType Size="Large" Type="Ocean"/>
+        <PlanetSizeType Size="Large" Type="Atoll"/>
+        <PlanetSizeType Size="Huge" Type="Boreal"/>
+        <PlanetSizeType Size="Huge" Type="Jungle"/>
+        <PlanetSizeType Size="Huge" Type="Tundra"/>
+        <PlanetSizeType Size="Huge" Type="Veldt"/>
+        <PlanetSizeType Size="Huge" Type="Monsoon"/>
+        <PlanetSizeType Size="Huge" Type="Tropical"/>
+        <PlanetSizeType Size="Huge" Type="Steppes"/>
+        <PlanetSizeType Size="Huge" Type="Terran"/>
+        <PlanetSizeType Size="Huge" Type="Forest"/>
+        <PlanetSizeType Size="Huge" Type="Ocean"/>
+        <PlanetSizeType Size="Huge" Type="Atoll"/>
+    </PopulationCapacityGroup>
+</Datatable>

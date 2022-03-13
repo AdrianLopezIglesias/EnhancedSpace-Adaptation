@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/HeroSkillDefinition.xsd">
+
+	<!--UMBRALCHOIR BRANCH SKILLS-->
+	<HeroSkillDefinition Name="HeroSkill01BranchUmbralChoir">
+		<SkillLevel Name="HeroSkill01BranchUmbralChoir_01">
+            <ShipSimulationDescriptorReference Name="HeroSkillShip33_FleetDefense_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill01BranchUmbralChoir_02">
+            <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+            <ShipSimulationDescriptorReference Name="HeroSkillShip33_FleetDefense_Percent_1"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill02BranchUmbralChoir">
+		<SkillLevel Name="HeroSkill02BranchUmbralChoir_01">
+            <SystemSimulationDescriptorReference Name="HeroSkillSystem120_ProcessingPower_Flat_0"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill02BranchUmbralChoir_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+            <SystemSimulationDescriptorReference Name="HeroSkillSystem120_ProcessingPower_Flat_1"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill03BranchUmbralChoir">
+		<SkillLevel Name="HeroSkill03BranchUmbralChoir_01">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip113_FleetExploration_Flat_1"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill03BranchUmbralChoir_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <ShipSimulationDescriptorReference Name="HeroSkillShip113_FleetExploration_Flat_2"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill04BranchUmbralChoir">
+    <Tags>ColonizedStarSystem</Tags>
+    <SkillLevel Name="HeroSkill04BranchUmbralChoir_01">
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem72_Industry_Percent_1"/>
+      <MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+    </SkillLevel>
+    <SkillLevel Name="HeroSkill04BranchUmbralChoir_02">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem72_Industry_Percent_2"/>
+      <MasteryLevel Class="HeroMasteryLabour" Levels="2"/>
+    </SkillLevel>
+	</HeroSkillDefinition>
+
+	<HeroSkillDefinition Name="HeroSkill05BranchUmbralChoir">
+        <SkillLevel Name="HeroSkill05BranchUmbralChoir_01">
+            <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+            <ShipSimulationDescriptorReference Name="HeroSkillShip123_FleetVisionStrength_Flat_3"/>
+            <MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+        </SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill06BranchUmbralChoir">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill06BranchUmbralChoir_01">
+            <SenateSimulationDescriptorReference Name="HeroSkillSenator121_HackingSpeed_Percent_3"/>
+            <SystemSimulationDescriptorReference Name="HeroSkillSystem121_HackingSpeed_Percent_3"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+		<SkillLevel Name="HeroSkill06BranchUmbralChoir_02">
+            <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+            <SenateSimulationDescriptorReference Name="HeroSkillSenator121_HackingSpeed_Percent_3"/>
+            <SystemSimulationDescriptorReference Name="HeroSkillSystem121_HackingSpeed_Percent_4"/>
+            <MasteryLevel Class="HeroMasteryWit" Levels="2"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	
+	<HeroSkillDefinition Name="HeroSkill07BranchUmbralChoir">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill07BranchUmbralChoir_01">
+      <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+      <SystemSimulationDescriptorReference Name="HeroSkillSystem122_FIDSI_Flat_4"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+	<!--############################-->
+	<!--### HERO SPECIFIC SKILLS ###-->
+	<!--############################-->
+	<!-- UmbralChoir01 -->
+	<HeroSkillDefinition Name="HeroSkill01UmbralChoir01">
+		<SkillLevel Name="HeroSkill01UmbralChoir01_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip25_FleetDefense_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02UmbralChoir01">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02UmbralChoir01_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem93_Science_PerPlanet_0"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<!-- UmbralChoir02 -->
+	<HeroSkillDefinition Name="HeroSkill01UmbralChoir02">
+		<SkillLevel Name="HeroSkill01UmbralChoir02_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip23_FleetDefense_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02UmbralChoir02">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02UmbralChoir02_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem83_Influence_Flat_0"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<!-- UmbralChoir03 -->
+	<HeroSkillDefinition Name="HeroSkill01UmbralChoir03">
+		<SkillLevel Name="HeroSkill01UmbralChoir03_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip112_FleetDamage_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02UmbralChoir03">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02UmbralChoir03_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem60_Dust_Perpop_0"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<!-- UmbralChoir04 -->
+	<HeroSkillDefinition Name="HeroSkill01UmbralChoir04">
+		<SkillLevel Name="HeroSkill01UmbralChoir04_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip34_FleetExploration_MultiplierFlat_0"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02UmbralChoir04">
+        <Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02UmbralChoir04_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem68_Food_Percent_0"/>
+			<MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<!-- UmbralChoir05 -->
+	<HeroSkillDefinition Name="HeroSkill01UmbralChoir05">
+		<SkillLevel Name="HeroSkill01UmbralChoir05_1">
+			<ShipSimulationDescriptorReference Name="HeroSkillShip37_FleetExploration_Flat_0"/>
+			<MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+	<HeroSkillDefinition Name="HeroSkill02UmbralChoir05">
+		<Tags>ColonizedStarSystem</Tags>
+		<SkillLevel Name="HeroSkill02UmbralChoir05_1">
+			<SystemSimulationDescriptorReference Name="HeroSkillSystem80_Influence_Perpop_0"/>
+			<MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+		</SkillLevel>
+	</HeroSkillDefinition>
+
+</Datatable>

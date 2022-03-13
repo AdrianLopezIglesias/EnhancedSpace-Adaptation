@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/MajorFaction.xsd">
+
+    <!-- ########################################## -->
+    <!-- ######        MAJOR FACTIONS        ###### -->
+    <!-- ########################################## -->
+
+   <!-- Unfallen -->
+    <MajorFaction Name="FactionUnfallen" Standard="true" Author="AMPLITUDE Studios" Priority="70" Difficulty="Advanced" DifficultyAgainst="Normal">
+        <Affinity Name="AffinityGameplayUnfallen"/>
+
+        <Trait Name="IsMajorFaction"/>
+
+        <Trait Name="FactionTraitMinorGuardians"/>
+        <Trait Name="FactionTraitTechnologyDefinitionEmpireDevelopment1"/>
+        <Trait Name="FactionTraitTechnologyDefinitionEmpireDevelopment2"/>
+        <Trait Name="FactionTraitGuardians"/>
+        <Trait Name="FactionTraitNaive2"/>
+        <Trait Name="FactionTraitMutualUnderstanding1"/>
+        <Trait Name="FactionTraitNativeObliteratorProtection"/>
+        <Trait Name="FactionTraitStartWithTitanium"/>
+        
+        <TraitStartingSenate Priority="1">
+            <Government Name="GovernmentDemocracy"/>
+            <PoliticsWeight Politics="Politics01" Weight="0"/>
+            <PoliticsWeight Politics="Politics02" Weight="0"/>
+            <PoliticsWeight Politics="Politics03" Weight="2"/>
+            <PoliticsWeight Politics="Politics04" Weight="1"/>
+            <PoliticsWeight Politics="Politics05" Weight="0"/>
+            <PoliticsWeight Politics="Politics06" Weight="0"/>
+        </TraitStartingSenate>
+
+        <Bailiff Name="DefaultMoneyBailiff"/>
+        <Bailiff Name="DefaultEmpirePointBailiff"/>
+        <Bailiff Name="DefaultProcessingPowerBailiff"/>
+
+        <MajorPopulation Affinity="AffinityUnfallen"     Count="2"/>
+    </MajorFaction>
+ 
+</Datatable>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/HeroSkillTreeDefinition.xsd">
+
+    <!--TEMPLARS TREE-->
+    <HeroSkillTreeDefinition Name="HeroSkillTreeTemplars">
+        <Stage Level="0">
+            <Skill>
+                <SkillDefinition Name="HeroSkill01BranchTemplars"/><!--Approval/Food on system-->
+            </Skill>
+            <Skill>
+                <SkillDefinition Name="HeroSkill02BranchTemplars"/><!--Movement/vision on fleet-->
+            </Skill>
+        </Stage>
+        <Stage Level="4">
+            <Skill>
+              <SkillDefinition Name="HeroSkill03BranchTemplars"/><!--influence on system-->
+              <RequiredSkill Name="HeroSkill01BranchTemplars"/>
+            </Skill>
+            <Skill>
+              <SkillDefinition Name="HeroSkill05BranchTemplars"/><!--max probe and restock probe on ship-->
+              <RequiredSkill Name="HeroSkill02BranchTemplars"/>
+            </Skill>
+        </Stage>
+        <Stage Level="8">
+            <Skill>
+                <SkillDefinition Name="HeroSkill07BranchTemplars"/><!--FIDSI per temple on system-->
+                <RequiredSkill Name="HeroSkill03BranchTemplars"/>
+            </Skill>
+            <Skill>
+                <SkillDefinition Name="HeroSkill06BranchTemplars"/><!--vision range & upkeep cost on academy control nodes-->
+                <RequiredSkill Name="HeroSkill05BranchTemplars"/>
+            </Skill>
+        </Stage>
+        <Stage Level="12">
+            <Skill>
+              <SkillDefinition Name="HeroSkill04BranchTemplars"/><!--health shield evasion and damage on ship with temples-->
+               <RequiredSkill Name="HeroSkill07BranchTemplars"/>
+               <RequiredSkill Name="HeroSkill06BranchTemplars"/>
+            </Skill>
+        </Stage>
+    </HeroSkillTreeDefinition>
+  
+    <!-- RELICS TREE -->
+    <HeroSkillTreeDefinition Name="HeroSkillTreeRelics">
+          <Stage Level="0">
+              <Skill>
+                  <SkillDefinition Name="HeroSkill01BranchRelic"/>
+              </Skill>
+          </Stage>
+          <Stage Level="2">
+              <Skill>
+                  <SkillDefinition Name="HeroSkill02BranchRelic"/>
+                  <RequiredSkill Name="HeroSkill01BranchRelic"/>
+              </Skill>
+          </Stage>
+          <Stage Level="4">
+              <Skill>
+                  <SkillDefinition Name="HeroSkill03BranchRelic"/>
+                  <RequiredSkill Name="HeroSkill02BranchRelic"/>
+              </Skill>
+          </Stage>
+          <Stage Level="6">
+              <Skill>
+                  <SkillDefinition Name="HeroSkill04BranchRelic"/>
+                  <RequiredSkill Name="HeroSkill03BranchRelic"/>
+              </Skill>
+          </Stage>
+      </HeroSkillTreeDefinition>
+    
+</Datatable>

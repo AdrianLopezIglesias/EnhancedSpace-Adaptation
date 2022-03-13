@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../../Schemas/LevelUpRuleDefinition.xsd">
+
+    <LevelUpRule Name="ShipLevelUpRule" LevelMax="15">
+        <SimulationDescriptorReference Name="ShipLevelUpRule"/>
+    </LevelUpRule>
+
+    <LevelUpRule Name="HeroLevelUpRule" LevelMax="-1">
+        <SimulationDescriptorReference Name="HeroLevelUpRule"/>
+    </LevelUpRule>
+
+    <LevelUpRule Name="HeroShipLevelUpRule" LevelMax="-1">
+        <SimulationDescriptorReference Name="HeroShipLevelUpRule"/>
+    </LevelUpRule>
+
+    <LevelUpRule Name="ColonizedStarSystemLevelUpRule" LevelMax="5">
+        <SimulationDescriptorReference Name="ColonizedStarSystemLevelUpRule"/>
+    </LevelUpRule>
+    
+</Datatable>

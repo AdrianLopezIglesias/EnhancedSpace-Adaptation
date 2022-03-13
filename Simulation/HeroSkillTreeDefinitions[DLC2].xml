@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/HeroSkillTreeDefinition.xsd">
+    <!--MajorHisshos TREE-->
+    <HeroSkillTreeDefinition Name="HeroSkillTreeMajorHisshos">
+        <Stage Level="0">
+            <Skill>
+                <SkillDefinition Name="HeroSkill01BranchMajorHisshos"/>
+            </Skill>
+            <Skill>
+                <SkillDefinition Name="HeroSkill02BranchMajorHisshos"/>
+            </Skill>
+        </Stage>
+        <Stage Level="3">
+            <Skill>
+                <SkillDefinition Name="HeroSkill03BranchMajorHisshos"/>
+                <RequiredSkill Name="HeroSkill01BranchMajorHisshos"/>
+            </Skill>
+            <Skill>
+                <SkillDefinition Name="HeroSkill04BranchMajorHisshos"/>
+                <RequiredSkill Name="HeroSkill02BranchMajorHisshos"/>
+            </Skill>
+        </Stage>
+        <Stage Level="6">
+            <Skill>
+                <SkillDefinition Name="HeroSkill05BranchMajorHisshos"/>
+                <RequiredSkill Name="HeroSkill03BranchMajorHisshos"/>
+            </Skill>
+            <Skill>
+                <SkillDefinition Name="HeroSkill06BranchMajorHisshos"/>
+                <RequiredSkill Name="HeroSkill04BranchMajorHisshos"/>
+            </Skill>
+        </Stage>
+        <Stage Level="9">
+            <Skill>
+                <SkillDefinition Name="HeroSkill07BranchMajorHisshos"/>
+                <RequiredSkill Name="HeroSkill05BranchMajorHisshos"/>
+                <RequiredSkill Name="HeroSkill06BranchMajorHisshos"/>
+            </Skill>
+        </Stage>
+    </HeroSkillTreeDefinition>
+</Datatable>

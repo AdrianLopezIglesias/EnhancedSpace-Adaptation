@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+
+    <!-- Better Speed Quest Modules  -->    
+    <SimulationDescriptor Name="ModuleIncreasedSpeedQuest" Type="ModuleIncreasedSpeedQuest">
+        <Property Name="MaximumMovement"/>
+        <Property Name="GlobalSpeedBonus"/>
+
+        <Modifier TargetProperty="MaximumMovement"                 Operation="Addition"    Value="$(MaximumMovement)"                   Path="../ClassShip"/>
+        <Modifier TargetProperty="MaximumMovement"                 Operation="Percent"     Value="$(GlobalSpeedBonus)"                  Path="../ClassShip"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleIncreasedSpeedQuest01" Type="ModuleIncreasedSpeedQuest">
+        <Modifier TargetProperty="MaximumMovement"                  Operation="Addition"    Value="3"       Path="ModuleIncreasedSpeedQuest"/>
+        <Modifier TargetProperty="GlobalSpeedBonus"                 Operation="Addition"    Value="0.25"    Path="ModuleIncreasedSpeedQuest"/>
+    </SimulationDescriptor>
+
+</Datatable>

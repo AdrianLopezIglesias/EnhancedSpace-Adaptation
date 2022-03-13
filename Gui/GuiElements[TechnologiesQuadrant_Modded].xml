@@ -1,0 +1,3591 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+
+  <!-- ###################################### -->
+  <!-- ###################################### -->
+  <!-- ###################################### -->
+  <!-- ###################################### -->
+  <!-- #######          MILITARY      ####### -->
+  <!-- ###################################### -->
+  <!-- ###################################### -->
+  <!-- ###################################### -->
+  <!-- ###################################### -->
+
+  <!-- ###################################### -->
+  <!-- #######          STAGE 1       ####### -->
+  <!-- ###################################### -->
+
+  <!-- ############## LEFT  ############## -->
+
+
+  <!-- SPECIALIZED ISOTOPES -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary1" X="-1.786" Y="0">
+    <Title>%TechnologyDefinitionMilitary1Title</Title>
+    <Description>%TechnologyDefinitionMilitary1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary1Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+  <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary1Vampirilis" X="-1.786" Y="0">
+    <Title>%TechnologyDefinitionMilitary1VampirilisTitle</Title>
+    <Description>%TechnologyDefinitionMilitary1VampirilisDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary1Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary1Vaulters" X="-1.786" Y="0">
+    <Title>%TechnologyDefinitionMilitary1VaultersTitle</Title>
+    <Description>%TechnologyDefinitionMilitary1VaultersDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary1Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- ############## RIGHT  ############## -->
+
+  <!-- UNSTABLE ISOTOPE MANIPULATION -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary2" X="1.786" Y="0">
+    <Title>%TechnologyDefinitionMilitary2Title</Title>
+    <Description>%TechnologyDefinitionMilitary2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary2Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+
+  <!-- ###################################### -->
+  <!-- #######          STAGE 2       ####### -->
+  <!-- ###################################### -->
+
+
+  <!-- ############## LEFT  ############## -->
+
+
+  <!-- UNSTABLE ISOTOPE MACHINING -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary3" X="-3" Y="0">
+    <Title>%TechnologyDefinitionMilitary3Title</Title>
+    <Description>%TechnologyDefinitionMilitary3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary3Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- UNSTABLE ISOTOPE MACHINING -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary3Unfallen" X="-3" Y="0">
+    <Title>%TechnologyDefinitionMilitary3Title</Title>
+    <Description>%TechnologyDefinitionMilitary3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary3Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- UNSTABLE ISOTOPE MACHINING VODYANI -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary3Vampirilis" X="-3" Y="0">
+    <Title>%TechnologyDefinitionMilitary3VampirilisTitle</Title>
+    <Description>%TechnologyDefinitionMilitary3VampirilisDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary3Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+
+  <!-- FOCUSED PLASMA -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary4" X="-1.67" Y="0">
+    <Title>%TechnologyDefinitionMilitary4Title</Title>
+    <Description>%TechnologyDefinitionMilitary4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary4Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary4Vaulters" X="-1.67" Y="0">
+    <Title>%TechnologyDefinitionMilitary4VaultersTitle</Title>
+    <Description>%TechnologyDefinitionMilitary4VaultersDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary4Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+
+
+  <!-- ############## RIGHT  ############## -->
+
+  <!-- ADVANCED FUSION POWER -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary5" X="1.67" Y="0">
+    <Title>%TechnologyDefinitionMilitary5Title</Title>
+    <Description>%TechnologyDefinitionMilitary5Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary5Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- IMPROVED FLEET MANAGEMENT -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary6" X="3" Y="0">
+    <Title>%TechnologyDefinitionMilitary6Title</Title>
+    <Description>%TechnologyDefinitionMilitary6Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary6Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary6Unfallen" X="3" Y="0">
+    <Title>%TechnologyDefinitionMilitary6UnfallenTitle</Title>
+    <Description>%TechnologyDefinitionMilitary6UnfallenDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary6Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+
+  <!-- ###################################### -->
+  <!-- #######          STAGE 3       ####### -->
+  <!-- ###################################### -->
+
+  <!-- ############## LEFT  ############## -->
+
+  <!-- IMPROVED FLEET MANAGEMENT -->
+
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary33" X="-4.371" Y="0">
+    <Title>%TechnologyDefinitionMilitary33Title</Title>
+    <Description>%TechnologyDefinitionMilitary33Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary33Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+   
+  <!-- TITANIUM ELECTROPLATING -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary10" X="-2.89" Y="0">
+    <Title>%TechnologyDefinitionMilitary10Title</Title>
+    <Description>%TechnologyDefinitionMilitary10Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary10Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+   <!-- ADVANCED FUSION POWER -->
+   <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary8" X="-1.61" Y="0">
+      <Title>%TechnologyDefinitionMilitary8Title</Title>
+      <Description>%TechnologyDefinitionMilitary8Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary8Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+  <!-- ############## RIGHT  ############## -->
+
+   <!-- HYPERIUM MAGNETICS -->
+   <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary9" X="1.61" Y="0">
+      <Title>%TechnologyDefinitionMilitary9Title</Title>
+      <Description>%TechnologyDefinitionMilitary9Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary9Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+  <!-- SURVIVAL SUITS -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary11" X="2.89" Y="0">
+    <Title>%TechnologyDefinitionMilitary11Title</Title>
+    <Description>%TechnologyDefinitionMilitary11Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary11Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionMilitaryJuggernaut1" IsJuggernautTechnology="true" X="4.178" Y="0">
+      <Title>%TechnologyDefinitionMilitaryJuggernaut1Title</Title>
+      <Description>%TechnologyDefinitionMilitaryJuggernaut1Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitaryJuggernaut1Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+  <!-- ###################################### -->
+  <!-- #######          STAGE 4       ####### -->
+  <!-- ###################################### -->
+
+  <!-- ############## LEFT  ############## -->
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary19" X="-5.3428" Y="0">
+    <Title>%TechnologyDefinitionMilitary19Title</Title>
+    <Description>%TechnologyDefinitionMilitary19Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary19Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary19Corsairs" X="-5.3428" Y="0">
+    <Title>%TechnologyDefinitionMilitary19Title</Title>
+    <Description>%TechnologyDefinitionMilitary19Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary19Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary19Cravers" X="-5.3428" Y="0">
+    <Title>%TechnologyDefinitionMilitary19CraversTitle</Title>
+    <Description>%TechnologyDefinitionMilitary19CraversDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary19Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary19CraversCorsairs" X="-5.3428" Y="0">
+    <Title>%TechnologyDefinitionMilitary19CraversTitle</Title>
+    <Description>%TechnologyDefinitionMilitary19CraversDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary19Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+  
+  <!-- FOCUSED PLASMA -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary14" X="-4.086" Y="0">
+    <Title>%TechnologyDefinitionMilitary14Title</Title>
+    <Description>%TechnologyDefinitionMilitary14Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary14Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary14Terrans" X="-4.086" Y="0">
+    <Title>%TechnologyDefinitionMilitary14TerransTitle</Title>
+    <Description>%TechnologyDefinitionMilitary14TerransDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary14Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary14Unfallen" X="-4.086" Y="0">
+    <Title>%TechnologyDefinitionMilitary14UnfallenTitle</Title>
+    <Description>%TechnologyDefinitionMilitary14UnfallenDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary14Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary16" X="-2.83" Y="0">
+    <Title>%TechnologyDefinitionMilitary16Title</Title>
+    <Description>%TechnologyDefinitionMilitary16Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary16Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary20" X="-1.57" Y="0">
+      <Title>%TechnologyDefinitionMilitary20Title</Title>
+      <Description>%TechnologyDefinitionMilitary20Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary20Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+
+   <!-- ############## RIGHT  ############## -->
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary21" X="1.57" Y="0">
+      <Title>%TechnologyDefinitionMilitary21Title</Title>
+      <Description>%TechnologyDefinitionMilitary21Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary21Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <!-- ANTIMATTER CHANNELING -->
+   <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary17" X="2.83" Y="0">
+      <Title>%TechnologyDefinitionMilitary17Title</Title>
+      <Description>%TechnologyDefinitionMilitary17Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary17Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary13" X="4.08" Y="0">
+      <Title>%TechnologyDefinitionMilitary13Title</Title>
+      <Description>%TechnologyDefinitionMilitary13Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary13Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary13Cravers" X="4.08" Y="0">
+      <Title>%TechnologyDefinitionMilitary13CraversTitle</Title>
+      <Description>%TechnologyDefinitionMilitary13CraversDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary13Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary13Terrans" X="4.08" Y="0">
+      <Title>%TechnologyDefinitionMilitary13TerransTitle</Title>
+      <Description>%TechnologyDefinitionMilitary13TerransDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary13Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionMilitaryJuggernaut2" IsJuggernautTechnology="true" X="5.5" Y="0">
+      <Title>%TechnologyDefinitionMilitaryJuggernaut2Title</Title>
+      <Description>%TechnologyDefinitionMilitaryJuggernaut2Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitaryJuggernaut2Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+  <!-- ###################################### -->
+  <!-- #######          STAGE 5       ####### -->
+  <!-- ###################################### -->
+
+  <!-- ############## LEFT   ############## -->
+
+  <!-- ADVANCED FUSION POWER -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary15" X="-6.5" Y="0">
+    <Title>%TechnologyDefinitionMilitary15Title</Title>
+    <Description>%TechnologyDefinitionMilitary15Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary15Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary15Vampirilis" X="-6.5" Y="0">
+    <Title>%TechnologyDefinitionMilitary15VampirilisTitle</Title>
+    <Description>%TechnologyDefinitionMilitary15VampirilisDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary15Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary27" X="-5.26" Y="0">
+      <Title>%TechnologyDefinitionMilitary27Title</Title>
+      <Description>%TechnologyDefinitionMilitary27Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary27Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration26" X="-4.02" Y="0">
+      <Title>%TechnologyDefinitionScienceAndExploration26Title</Title>
+      <Description>%TechnologyDefinitionScienceAndExploration26Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration26Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration26TimeLords" X="-4.02" Y="0">
+      <Title>%TechnologyDefinitionScienceAndExploration26TimeLordsTitle</Title>
+      <Description>%TechnologyDefinitionScienceAndExploration26TimeLordsDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration26Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary24" X="-2.78" Y="0">
+    <Title>%TechnologyDefinitionMilitary24Title</Title>
+    <Description>%TechnologyDefinitionMilitary24Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary24Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary22" X="-1.55" Y="0">
+      <Title>%TechnologyDefinitionMilitary22Title</Title>
+      <Description>%TechnologyDefinitionMilitary22Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary22Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+  <!-- ############## RIGHT   ############## -->
+
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary23" X="1.55" Y="0">
+      <Title>%TechnologyDefinitionMilitary23Title</Title>
+      <Description>%TechnologyDefinitionMilitary23Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary23Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary25" X="2.78" Y="0">
+    <Title>%TechnologyDefinitionMilitary25Title</Title>
+    <Description>%TechnologyDefinitionMilitary25Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary25Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+  
+  <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary26" X="4.02" Y="0">
+    <Title>%TechnologyDefinitionMilitary26Title</Title>
+    <Description>%TechnologyDefinitionMilitary26Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary26Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary26Cravers" X="4.02" Y="0">
+    <Title>%TechnologyDefinitionMilitary26CraversTitle</Title>
+    <Description>%TechnologyDefinitionMilitary26CraversDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary26Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+
+   <!-- HARDENED ALLOYS -->
+   <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary7" X="5.05" Y="0">
+      <Title>%TechnologyDefinitionMilitary7Title</Title>
+      <Description>%TechnologyDefinitionMilitary7Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary7Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <!-- CHITINOUS ALLOYS CRAVERS -->
+   <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary7Cravers" X="5.05" Y="0">
+      <Title>%TechnologyDefinitionMilitary7CraversTitle</Title>
+      <Description>%TechnologyDefinitionMilitary7CraversDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary7Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionMilitaryJuggernaut5" IsJuggernautTechnology="true" X="6" Y="0">
+      <Title>%TechnologyDefinitionMilitaryJuggernaut5Title</Title>
+      <Description>%TechnologyDefinitionMilitaryJuggernaut5Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitaryJuggernaut5Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionMilitaryJuggernaut4" IsJuggernautTechnology="true" X="6.99" Y="0">
+      <Title>%TechnologyDefinitionMilitaryJuggernaut4Title</Title>
+      <Description>%TechnologyDefinitionMilitaryJuggernaut4Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitaryJuggernaut4Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+ 
+
+
+  <!-- ############### -->
+  <!-- ##  STAGE 6  ## -->
+  <!-- ############### -->
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionMilitaryVictory" X="0" Y="-1.34">
+    <Title>%TechnologyDefinitionMilitaryVictoryTitle</Title>
+    <Description>%TechnologyDefinitionMilitaryVictoryDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitaryVictorySmall" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+
+  <!-- ###################################### -->
+  <!-- ###################################### -->
+  <!-- ###################################### -->
+  <!-- ###################################### -->
+  <!-- #######        EMPIRE DEV      ####### -->
+  <!-- ###################################### -->
+  <!-- ###################################### -->
+  <!-- ###################################### -->
+  <!-- ###################################### -->
+
+  <!-- ############## UP ############## -->
+
+  <!-- EFFICIENT SHIELDING -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique1Sophons" X="1.67" Y="0">
+    <Title>%TechnologyDefinitionUnique1SophonsTitle</Title>
+    <Description>%TechnologyDefinitionUnique1SophonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique1Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique1Horatio" X="1.67" Y="0">
+    <Title>%TechnologyDefinitionUnique1HoratioTitle</Title>
+    <Description>%TechnologyDefinitionUnique1HoratioDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique1Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique1Cravers" X="1.67" Y="0">
+    <Title>%TechnologyDefinitionUnique1CraversTitle</Title>
+    <Description>%TechnologyDefinitionUnique1CraversDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique1Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique1Terrans" X="1.67" Y="0">
+    <Title>%TechnologyDefinitionUnique1TerransTitle</Title>
+    <Description>%TechnologyDefinitionUnique1TerransDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique1Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique1Vampirilis" X="1.67" Y="0">
+    <Title>%TechnologyDefinitionUnique1VampirilisTitle</Title>
+    <Description>%TechnologyDefinitionUnique1VampirilisDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique1Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique1Venetians" X="1.67" Y="0">
+    <Title>%TechnologyDefinitionUnique1VenetiansTitle</Title>
+    <Description>%TechnologyDefinitionUnique1VenetiansDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique1Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique1Unfallen" X="1.67" Y="0">
+    <Title>%TechnologyDefinitionUnique1UnfallenTitle</Title>
+    <Description>%TechnologyDefinitionUnique1UnfallenDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique1Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique1TimeLords" X="1.67" Y="0">
+    <Title>%TechnologyDefinitionUnique1TimeLordsTitle</Title>
+    <Description>%TechnologyDefinitionUnique1TimeLordsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique1Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique1Vaulters" X="1.67" Y="0">
+    <Title>%TechnologyDefinitionUnique1SophonsTitle</Title>
+    <Description>%TechnologyDefinitionUnique1SophonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique1Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique1MajorHisshos" X="1.67" Y="0">
+    <Title>%TechnologyDefinitionUnique1SophonsTitle</Title>
+    <Description>%TechnologyDefinitionUnique1SophonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique1Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionUnique1UmbralChoir" X="1.67" Y="0">
+      <Title>%TechnologyDefinitionUnique1SophonsTitle</Title>
+      <Description>%TechnologyDefinitionUnique1SophonsDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique1Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionUnique1Templars" X="1.67" Y="0">
+      <Title>%TechnologyDefinitionUnique1SophonsTitle</Title>
+      <Description>%TechnologyDefinitionUnique1SophonsDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique1Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+
+  <!-- ############## DOWN ############## -->
+  <!-- BOTANICAL SCANNING -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment1" X="-1.786" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopment1Title</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopment1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment1Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment1Horatio" X="-1.786" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopment1HoratioTitle</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopment1HoratioDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment1Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment1MajorHisshos" X="-1.786" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopment1Title</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopment1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment1Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- ###################################### -->
+  <!-- #######          STAGE 2       ####### -->
+  <!-- ###################################### -->
+
+  <!-- ######################### UP ######################### -->
+
+  <!-- depleted isotopes-->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique3Sophons" X="3" Y="0">
+    <Title>%TechnologyDefinitionUnique3SophonsTitle</Title>
+    <Description>%TechnologyDefinitionUnique3SophonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique3Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique3Horatio" X="3" Y="0">
+    <Title>%TechnologyDefinitionUnique3HoratioTitle</Title>
+    <Description>%TechnologyDefinitionUnique3HoratioDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique3Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique3Cravers" X="3" Y="0">
+    <Title>%TechnologyDefinitionUnique3CraversTitle</Title>
+    <Description>%TechnologyDefinitionUnique3CraversDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique3Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique3Terrans" X="3" Y="0">
+    <Title>%TechnologyDefinitionUnique3TerransTitle</Title>
+    <Description>%TechnologyDefinitionUnique3TerransDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique3Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique3Vampirilis" X="3" Y="0">
+    <Title>%TechnologyDefinitionUnique3VampirilisTitle</Title>
+    <Description>%TechnologyDefinitionUnique3VampirilisDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique3Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique3Venetians" X="3" Y="0">
+    <Title>%TechnologyDefinitionUnique3VenetiansTitle</Title>
+    <Description>%TechnologyDefinitionUnique3VenetiansDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique3Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique3Unfallen" X="3" Y="0">
+    <Title>%TechnologyDefinitionUnique3UnfallenTitle</Title>
+    <Description>%TechnologyDefinitionUnique3UnfallenDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique3Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique3TimeLords" X="3" Y="0">
+    <Title>%TechnologyDefinitionUnique3TimeLordsTitle</Title>
+    <Description>%TechnologyDefinitionUnique3TimeLordsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique3Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- AUTONOMOUS CONSTRUCTION -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique2Sophons" X="1.66" Y="0">
+    <Title>%TechnologyDefinitionUnique2SophonsTitle</Title>
+    <Description>%TechnologyDefinitionUnique2SophonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique2Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique2Horatio" X="1.66" Y="0">
+    <Title>%TechnologyDefinitionUnique2HoratioTitle</Title>
+    <Description>%TechnologyDefinitionUnique2HoratioDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique2Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique2Cravers" X="1.66" Y="0">
+    <Title>%TechnologyDefinitionUnique2CraversTitle</Title>
+    <Description>%TechnologyDefinitionUnique2CraversDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique2Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique2Terrans" X="1.66" Y="0">
+    <Title>%TechnologyDefinitionUnique2TerransTitle</Title>
+    <Description>%TechnologyDefinitionUnique2TerransDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique2Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique2Vampirilis" X="1.66" Y="0">
+    <Title>%TechnologyDefinitionUnique2VampirilisTitle</Title>
+    <Description>%TechnologyDefinitionUnique2VampirilisDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique2Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique2Venetians" X="1.66" Y="0">
+    <Title>%TechnologyDefinitionUnique2VenetiansTitle</Title>
+    <Description>%TechnologyDefinitionUnique2VenetiansDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique2Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique2Unfallen" X="1.66" Y="0">
+    <Title>%TechnologyDefinitionUnique2UnfallenTitle</Title>
+    <Description>%TechnologyDefinitionUnique2UnfallenDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique2Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique2TimeLords" X="1.66" Y="0">
+    <Title>%TechnologyDefinitionUnique2TimeLordsTitle</Title>
+    <Description>%TechnologyDefinitionUnique2TimeLordsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique2Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment3UmbralChoir" X="1.66" Y="0">
+      <Title>%TechnologyDefinitionEmpireDevelopment3SophonsTitle</Title>
+      <Description>%TechnologyDefinitionEmpireDevelopment3SophonsDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment3Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+
+  <!-- depleted isotopes-->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique3Vaulters" X="3" Y="0">
+    <Title>%TechnologyDefinitionUnique3SophonsTitle</Title>
+    <Description>%TechnologyDefinitionUnique3SophonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique3Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- AUTONOMOUS CONSTRUCTION -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique2Vaulters" X="1.66" Y="0">
+    <Title>%TechnologyDefinitionUnique2SophonsTitle</Title>
+    <Description>%TechnologyDefinitionUnique2SophonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique2Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- depleted isotopes-->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique3MajorHisshos" X="3" Y="0">
+    <Title>%TechnologyDefinitionUnique3SophonsTitle</Title>
+    <Description>%TechnologyDefinitionUnique3SophonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique3Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- AUTONOMOUS CONSTRUCTION -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique2MajorHisshos" X="1.66" Y="0">
+    <Title>%TechnologyDefinitionUnique2SophonsTitle</Title>
+    <Description>%TechnologyDefinitionUnique2SophonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique2Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionUnique3UmbralChoir" X="3" Y="0">
+      <Title>%TechnologyDefinitionUnique3SophonsTitle</Title>
+      <Description>%TechnologyDefinitionUnique3SophonsDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique3Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionUnique2UmbralChoir" X="1.66" Y="0">
+      <Title>%TechnologyDefinitionUnique2SophonsTitle</Title>
+      <Description>%TechnologyDefinitionUnique2SophonsDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique2Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionUnique3Templars" X="3" Y="0">
+      <Title>%TechnologyDefinitionUnique3SophonsTitle</Title>
+      <Description>%TechnologyDefinitionUnique3SophonsDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique3Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionUnique2Templars" X="1.66" Y="0">
+      <Title>%TechnologyDefinitionUnique2SophonsTitle</Title>
+      <Description>%TechnologyDefinitionUnique2SophonsDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique2Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+
+   <!-- ############## DOWN ############## -->
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionUnique10Sophons" X="-1.66" Y="0">
+      <Title>%TechnologyDefinitionUnique10SophonsTitle</Title>
+      <Description>%TechnologyDefinitionUnique10SophonsDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique10SophonsSmall" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionUnique10Horatio" X="-1.66" Y="0">
+      <Title>%TechnologyDefinitionUnique10HoratioTitle</Title>
+      <Description>%TechnologyDefinitionUnique10HoratioDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique10HoratioSmall" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionUnique10Venetians" X="-1.66" Y="0">
+      <Title>%TechnologyDefinitionUnique10VenetiansTitle</Title>
+      <Description>%TechnologyDefinitionUnique10VenetiansDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique10VenetiansSmall" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionUnique10Terrans" X="-1.66" Y="0">
+      <Title>%TechnologyDefinitionUnique10TerransTitle</Title>
+      <Description>%TechnologyDefinitionUnique10TerransDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique10TerransSmall" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionUnique10Cravers" X="-1.66" Y="0">
+      <Title>%TechnologyDefinitionUnique10CraversTitle</Title>
+      <Description>%TechnologyDefinitionUnique10CraversDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique10CraversSmall" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionUnique10Vampirilis" X="-1.66" Y="0">
+      <Title>%TechnologyDefinitionUnique10VampirilisTitle</Title>
+      <Description>%TechnologyDefinitionUnique10VampirilisDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique10VampirilisSmall" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionUnique10TimeLords" X="-1.66" Y="0">
+      <Title>%TechnologyDefinitionUnique10TimeLordsTitle</Title>
+      <Description>%TechnologyDefinitionUnique10TimeLordsDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique10TimeLordsSmall" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionUnique10Unfallen" X="-1.66" Y="0">
+      <Title>%TechnologyDefinitionUnique10UnfallenTitle</Title>
+      <Description>%TechnologyDefinitionUnique10UnfallenDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique10UnfallenSmall" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionUnique10Vaulters"  X="-1.66" Y="0">
+      <Title>%TechnologyDefinitionUnique10VaultersTitle</Title>
+      <Description>%TechnologyDefinitionUnique10VaultersDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique10Vaulters" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionUnique10VaultersNoPortals"  X="-1.66" Y="0">
+      <Title>%TechnologyDefinitionUnique10VaultersTitle</Title>
+      <Description>%TechnologyDefinitionUnique10VaultersDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique10Vaulters" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionUnique10VaultersNoVaultersPopulation"  X="-1.66" Y="0">
+      <Title>%TechnologyDefinitionUnique10VaultersTitle</Title>
+      <Description>%TechnologyDefinitionUnique10VaultersDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique10Vaulters" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionUnique10MajorHisshos"  X="-1.66" Y="0">
+      <Title>%TechnologyDefinitionUnique10MajorHisshosTitle</Title>
+      <Description>%TechnologyDefinitionUnique10MajorHisshosDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique10MajorHisshos" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionUnique10MajorHisshosNoPortals"  X="-1.66" Y="0">
+      <Title>%TechnologyDefinitionUnique10MajorHisshosTitle</Title>
+      <Description>%TechnologyDefinitionUnique10MajorHisshosDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique10MajorHisshos" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionUnique10MajorHisshosNoMajorHisshosPopulation"  X="-1.66" Y="0">
+      <Title>%TechnologyDefinitionUnique10MajorHisshosTitle</Title>
+      <Description>%TechnologyDefinitionUnique10MajorHisshosDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique10MajorHisshos" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionUnique10UmbralChoir" X="-1.66" Y="0">
+      <Title>%TechnologyDefinitionUnique10UmbralChoirTitle</Title>
+      <Description>%TechnologyDefinitionUnique10UmbralChoirDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique10UmbralChoirSmall" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionUnique10Templars" X="-1.66" Y="0">
+      <Title>%TechnologyDefinitionUnique10TemplarsTitle</Title>
+      <Description>%TechnologyDefinitionUnique10TemplarsDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique10TemplarsSmall" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+
+  <!-- ADAPTATIVE BUREAUCRACIES -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment5" X="-3.4" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopment5Title</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopment5Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment5Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment5TimeLords" X="-3.4" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopment5TimeLordsTitle</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopment5TimeLordsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment5Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment5Unfallen" X="-3.4" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopment5UnfallenTitle</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopment5UnfallenDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment5Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- ###################################### -->
+  <!-- #######          STAGE 3       ####### -->
+  <!-- ###################################### -->
+
+
+
+  <!-- depleted isotopes-->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique5Sophons" X="4.5" Y="0">
+    <Title>%TechnologyDefinitionUnique5SophonsTitle</Title>
+    <Description>%TechnologyDefinitionUnique5SophonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique5Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique5Horatio" X="4.5" Y="0">
+    <Title>%TechnologyDefinitionUnique5HoratioTitle</Title>
+    <Description>%TechnologyDefinitionUnique5HoratioDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique5Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique5Cravers" X="4.5" Y="0">
+    <Title>%TechnologyDefinitionUnique5CraversTitle</Title>
+    <Description>%TechnologyDefinitionUnique5CraversDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique5Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique5Terrans" X="4.5" Y="0">
+    <Title>%TechnologyDefinitionUnique5TerransTitle</Title>
+    <Description>%TechnologyDefinitionUnique5TerransDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique5Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique5Vampirilis" X="4.5" Y="0">
+    <Title>%TechnologyDefinitionUnique5VampirilisTitle</Title>
+    <Description>%TechnologyDefinitionUnique5VampirilisDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique5Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique5Venetians" X="4.5" Y="0">
+    <Title>%TechnologyDefinitionUnique5VenetiansTitle</Title>
+    <Description>%TechnologyDefinitionUnique5VenetiansDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique5Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique5Unfallen" X="4.5" Y="0">
+    <Title>%TechnologyDefinitionUnique5UnfallenTitle</Title>
+    <Description>%TechnologyDefinitionUnique5UnfallenDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique5Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique5TimeLords" X="4.5" Y="0">
+    <Title>%TechnologyDefinitionUnique5TimeLordsTitle</Title>
+    <Description>%TechnologyDefinitionUnique5TimeLordsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique5Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- depleted isotopes-->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique4Sophons" X="2.786" Y="0">
+    <Title>%TechnologyDefinitionUnique4SophonsTitle</Title>
+    <Description>%TechnologyDefinitionUnique4SophonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique4Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique4Horatio" X="2.786" Y="0">
+    <Title>%TechnologyDefinitionUnique4HoratioTitle</Title>
+    <Description>%TechnologyDefinitionUnique4HoratioDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique4Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique4Cravers" X="2.786" Y="0">
+    <Title>%TechnologyDefinitionUnique4CraversTitle</Title>
+    <Description>%TechnologyDefinitionUnique4CraversDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique4Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique4Terrans" X="2.786" Y="0">
+    <Title>%TechnologyDefinitionUnique4TerransTitle</Title>
+    <Description>%TechnologyDefinitionUnique4TerransDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique4Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique4Vampirilis" X="2.786" Y="0">
+    <Title>%TechnologyDefinitionUnique4VampirilisTitle</Title>
+    <Description>%TechnologyDefinitionUnique4VampirilisDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique4Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique4Venetians" X="2.786" Y="0">
+    <Title>%TechnologyDefinitionUnique4VenetiansTitle</Title>
+    <Description>%TechnologyDefinitionUnique4VenetiansDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique4Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique4Unfallen" X="2.786" Y="0">
+    <Title>%TechnologyDefinitionUnique4UnfallenTitle</Title>
+    <Description>%TechnologyDefinitionUnique4UnfallenDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique4Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique4TimeLords" X="2.786" Y="0">
+    <Title>%TechnologyDefinitionUnique4TimeLordsTitle</Title>
+    <Description>%TechnologyDefinitionUnique4TimeLordsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique4Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- depleted isotopes-->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique5Vaulters" X="4.5" Y="0">
+    <Title>%TechnologyDefinitionUnique5SophonsTitle</Title>
+    <Description>%TechnologyDefinitionUnique5SophonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique5Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- depleted isotopes-->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique4Vaulters" X="2.786" Y="0">
+    <Title>%TechnologyDefinitionUnique4SophonsTitle</Title>
+    <Description>%TechnologyDefinitionUnique4SophonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique4Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- depleted isotopes-->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique5MajorHisshos" X="4.5" Y="0">
+    <Title>%TechnologyDefinitionUnique5SophonsTitle</Title>
+    <Description>%TechnologyDefinitionUnique5SophonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique5Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- depleted isotopes-->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique4MajorHisshos" X="2.786" Y="0">
+    <Title>%TechnologyDefinitionUnique4SophonsTitle</Title>
+    <Description>%TechnologyDefinitionUnique4SophonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique4Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionUnique5UmbralChoir" X="4.5" Y="0">
+      <Title>%TechnologyDefinitionUnique5SophonsTitle</Title>
+      <Description>%TechnologyDefinitionUnique5SophonsDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique5Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionUnique4UmbralChoir" X="2.786" Y="0">
+      <Title>%TechnologyDefinitionUnique4SophonsTitle</Title>
+      <Description>%TechnologyDefinitionUnique4SophonsDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique4Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionUnique5Templars" X="4.5" Y="0">
+      <Title>%TechnologyDefinitionUnique5SophonsTitle</Title>
+      <Description>%TechnologyDefinitionUnique5SophonsDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique5Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionUnique4Templars" X="2.786" Y="0">
+      <Title>%TechnologyDefinitionUnique4SophonsTitle</Title>
+      <Description>%TechnologyDefinitionUnique4SophonsDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique4Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopmentJuggernaut1" IsJuggernautTechnology="true" X="1.071" Y="0">
+      <Title>%TechnologyDefinitionEmpireDevelopmentJuggernaut1Title</Title>
+      <Description>%TechnologyDefinitionEmpireDevelopmentJuggernaut1Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopmentJuggernaut1Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+   
+   <!--######################### DOWN #########################-->
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopmentJuggernaut2" IsJuggernautTechnology="true" X="-1.071" Y="0">
+      <Title>%TechnologyDefinitionEmpireDevelopmentJuggernaut2Title</Title>
+      <Description>%TechnologyDefinitionEmpireDevelopmentJuggernaut2Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopmentJuggernaut2Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <!-- XENOBIOLOGY -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment4" X="-2.72" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopment4Title</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopment4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment4Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment4Vampirilis" X="-2.72" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopment4VampirilisTitle</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopment4VampirilisDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment4Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment17" X="-4.37" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopment17Title</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopment17Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment17Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment17TimeLords" X="-4.37" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopment17TimeLordsTitle</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopment17TimeLordsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment17Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment17Unfallen" X="-4.37" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopment17UnfallenTitle</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopment17UnfallenDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment17Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment17Terrans" X="-4.37" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopment17TerransTitle</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopment17TerransDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment17Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment17TerransTimeLords" X="-4.37" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopment17TerransTimeLordsTitle</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopment17TerransTimeLordsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment17Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment17TerransUnfallen" X="-4.37" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopment17TerransUnfallenTitle</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopment17TerransUnfallenDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment17Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+
+  <!-- ###################################### -->
+  <!-- #######          STAGE 4       ####### -->
+  <!-- ###################################### -->
+
+  <!-- ######################### UP ######################### -->
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique7Sophons" X="5.5" Y="0">
+    <Title>%TechnologyDefinitionUnique7Title</Title>
+    <Description>%TechnologyDefinitionUnique7Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique7Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique7Horatio" X="5.5" Y="0">
+    <Title>%TechnologyDefinitionUnique7Title</Title>
+    <Description>%TechnologyDefinitionUnique7Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique7Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique7Cravers" X="5.5" Y="0">
+    <Title>%TechnologyDefinitionUnique7Title</Title>
+    <Description>%TechnologyDefinitionUnique7Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique7Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique7Terrans" X="5.5" Y="0">
+    <Title>%TechnologyDefinitionUnique7Title</Title>
+    <Description>%TechnologyDefinitionUnique7Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique7Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique7Vampirilis" X="5.5" Y="0">
+    <Title>%TechnologyDefinitionUnique7Title</Title>
+    <Description>%TechnologyDefinitionUnique7Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique7Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique7Venetians" X="5.5" Y="0">
+    <Title>%TechnologyDefinitionUnique7Title</Title>
+    <Description>%TechnologyDefinitionUnique7Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique7Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique7Unfallen" X="5.5" Y="0">
+    <Title>%TechnologyDefinitionUnique7Title</Title>
+    <Description>%TechnologyDefinitionUnique7Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique7Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique7TimeLords" X="5.5" Y="0">
+    <Title>%TechnologyDefinitionUnique7Title</Title>
+    <Description>%TechnologyDefinitionUnique7Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique7Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique7Vaulters" X="5.5" Y="0">
+    <Title>%TechnologyDefinitionUnique7Title</Title>
+    <Description>%TechnologyDefinitionUnique7Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique7Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique7MajorHisshos" X="5.5" Y="0">
+    <Title>%TechnologyDefinitionUnique7Title</Title>
+    <Description>%TechnologyDefinitionUnique7Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique7Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+   
+   <TechnologyGuiElement2 Name="TechnologyDefinitionUnique7UmbralChoir" X="5.5" Y="0">
+      <Title>%TechnologyDefinitionUnique7Title</Title>
+      <Description>%TechnologyDefinitionUnique7Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique7Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionUnique7Templars" X="5.5" Y="0">
+      <Title>%TechnologyDefinitionUnique7Title</Title>
+      <Description>%TechnologyDefinitionUnique7Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique7Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+  
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique8Sophons" X="4.45" Y="0">
+    <Title>%TechnologyDefinitionUnique8Title</Title>
+    <Description>%TechnologyDefinitionUnique8Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique8Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique8Horatio" X="4.45" Y="0">
+    <Title>%TechnologyDefinitionUnique8Title</Title>
+    <Description>%TechnologyDefinitionUnique8Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique8Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique8Cravers" X="4.45" Y="0">
+    <Title>%TechnologyDefinitionUnique8Title</Title>
+    <Description>%TechnologyDefinitionUnique8Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique8Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique8Terrans" X="4.45" Y="0">
+    <Title>%TechnologyDefinitionUnique8Title</Title>
+    <Description>%TechnologyDefinitionUnique8Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique8Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique8Vampirilis" X="4.45" Y="0">
+    <Title>%TechnologyDefinitionUnique8Title</Title>
+    <Description>%TechnologyDefinitionUnique8Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique8Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique8Venetians" X="4.45" Y="0">
+    <Title>%TechnologyDefinitionUnique8Title</Title>
+    <Description>%TechnologyDefinitionUnique8Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique8Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique8Unfallen" X="4.45" Y="0">
+    <Title>%TechnologyDefinitionUnique8Title</Title>
+    <Description>%TechnologyDefinitionUnique8Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique8Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique8TimeLords" X="4.45" Y="0">
+    <Title>%TechnologyDefinitionUnique8Title</Title>
+    <Description>%TechnologyDefinitionUnique8Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique8Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique8SophonsVampirilis" X="4.45" Y="0">
+    <Title>%TechnologyDefinitionUnique8Title</Title>
+    <Description>%TechnologyDefinitionUnique8Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique8Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique8HoratioVampirilis" X="4.45" Y="0">
+    <Title>%TechnologyDefinitionUnique8Title</Title>
+    <Description>%TechnologyDefinitionUnique8Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique8Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique8CraversVampirilis" X="4.45" Y="0">
+    <Title>%TechnologyDefinitionUnique8Title</Title>
+    <Description>%TechnologyDefinitionUnique8Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique8Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique8TerransVampirilis" X="4.45" Y="0">
+    <Title>%TechnologyDefinitionUnique8Title</Title>
+    <Description>%TechnologyDefinitionUnique8Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique8Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique8VampirilisVampirilis" X="4.45" Y="0">
+    <Title>%TechnologyDefinitionUnique8Title</Title>
+    <Description>%TechnologyDefinitionUnique8Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique8Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique8VenetiansVampirilis" X="4.45" Y="0">
+    <Title>%TechnologyDefinitionUnique8Title</Title>
+    <Description>%TechnologyDefinitionUnique8Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique8Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique8UnfallenVampirilis" X="4.45" Y="0">
+    <Title>%TechnologyDefinitionUnique8Title</Title>
+    <Description>%TechnologyDefinitionUnique8Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique8Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique8TimeLordsVampirilis" X="4.45" Y="0">
+    <Title>%TechnologyDefinitionUnique8Title</Title>
+    <Description>%TechnologyDefinitionUnique8Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique8Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique8Vaulters" X="4.45" Y="0">
+    <Title>%TechnologyDefinitionUnique8Title</Title>
+    <Description>%TechnologyDefinitionUnique8Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique8Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique8VaultersVampirilis" X="4.45" Y="0">
+    <Title>%TechnologyDefinitionUnique8Title</Title>
+    <Description>%TechnologyDefinitionUnique8Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique8Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique8MajorHisshos" X="4.45" Y="0">
+    <Title>%TechnologyDefinitionUnique8Title</Title>
+    <Description>%TechnologyDefinitionUnique8Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique8Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique8MajorHisshosVampirilis" X="4.45" Y="0">
+    <Title>%TechnologyDefinitionUnique8Title</Title>
+    <Description>%TechnologyDefinitionUnique8Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique8Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique8UmbralChoir" X="4.45" Y="0">
+     <Title>%TechnologyDefinitionUnique8Title</Title>
+     <Description>%TechnologyDefinitionUnique8Description</Description>
+     <Icons>
+        <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique8Small" />
+     </Icons>
+  </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionUnique8Templars" X="4.45" Y="0">
+      <Title>%TechnologyDefinitionUnique8Title</Title>
+      <Description>%TechnologyDefinitionUnique8Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique8Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+   
+  <!-- depleted isotopes-->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique6Sophons" X="3.404" Y="0">
+    <Title>%TechnologyDefinitionUnique6Title</Title>
+    <Description>%TechnologyDefinitionUnique6Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique6Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique6Horatio" X="3.404" Y="0">
+    <Title>%TechnologyDefinitionUnique6Title</Title>
+    <Description>%TechnologyDefinitionUnique6Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique6Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique6Cravers" X="3.404" Y="0">
+    <Title>%TechnologyDefinitionUnique6Title</Title>
+    <Description>%TechnologyDefinitionUnique6Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique6Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique6Terrans" X="3.404" Y="0">
+    <Title>%TechnologyDefinitionUnique6Title</Title>
+    <Description>%TechnologyDefinitionUnique6Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique6Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique6Vampirilis" X="3.404" Y="0">
+    <Title>%TechnologyDefinitionUnique6Title</Title>
+    <Description>%TechnologyDefinitionUnique6Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique6Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique6Venetians" X="3.404" Y="0">
+    <Title>%TechnologyDefinitionUnique6Title</Title>
+    <Description>%TechnologyDefinitionUnique6Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique6Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique6Unfallen" X="3.404" Y="0">
+    <Title>%TechnologyDefinitionUnique6Title</Title>
+    <Description>%TechnologyDefinitionUnique6Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique6Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique6TimeLords" X="3.404" Y="0">
+    <Title>%TechnologyDefinitionUnique6Title</Title>
+    <Description>%TechnologyDefinitionUnique6Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique6Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- depleted isotopes-->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique6Vaulters" X="3.404" Y="0">
+    <Title>%TechnologyDefinitionUnique6Title</Title>
+    <Description>%TechnologyDefinitionUnique6Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique6Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- depleted isotopes-->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique6MajorHisshos" X="3.404" Y="0">
+    <Title>%TechnologyDefinitionUnique6Title</Title>
+    <Description>%TechnologyDefinitionUnique6Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique6Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionUnique6UmbralChoir" X="3.404" Y="0">
+      <Title>%TechnologyDefinitionUnique6Title</Title>
+      <Description>%TechnologyDefinitionUnique6Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique6Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionUnique6Templars" X="3.404" Y="0">
+      <Title>%TechnologyDefinitionUnique6Title</Title>
+      <Description>%TechnologyDefinitionUnique6Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique6Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <!-- ????-->
+   <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment18" X="2.357" Y="0">
+      <Title>%TechnologyDefinitionEmpireDevelopment18Title</Title>
+      <Description>%TechnologyDefinitionEmpireDevelopment18Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment18Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration33" X="1.3095" Y="0">
+      <Title>%TechnologyDefinitionScienceAndExploration33Title</Title>
+      <Description>%TechnologyDefinitionScienceAndExploration33Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration33Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <!-- ############## DOWN #################-->
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopmentJuggernaut3" IsJuggernautTechnology="true" X="-1.3095" Y="0">
+      <Title>%TechnologyDefinitionEmpireDevelopmentJuggernaut3Title</Title>
+      <Description>%TechnologyDefinitionEmpireDevelopmentJuggernaut3Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopmentJuggernaut3Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment9" X="-2.65" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopment9Title</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopment9Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment9Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment6" X="-3.99" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopment6Title</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopment6Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment6Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment6Terrans" X="-3.99" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopment6TerransTitle</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopment6TerransDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment6Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment6Cravers" X="-3.99" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopment6Title</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopment6Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment6Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment12" X="-5.343" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopment12Title</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopment12Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment12Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment12Venetians" X="-5.343" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopment12VenetiansTitle</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopment12VenetiansDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment12Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment12Unfallen" X="-5.343" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopment12UnfallenTitle</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopment12UnfallenDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment12Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+
+  <!-- ###################################### -->
+  <!-- #######          STAGE 5       ####### -->
+  <!-- ###################################### -->
+
+  <!-- ######################### UP ######################### -->
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration27" X="6.5" Y="0">
+      <Title>%TechnologyDefinitionScienceAndExploration27Title</Title>
+      <Description>%TechnologyDefinitionScienceAndExploration27Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration27Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+   
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique9Sophons" X="5.262" Y="0">
+    <Title>%TechnologyDefinitionUnique9Title</Title>
+    <Description>%TechnologyDefinitionUnique9Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique9Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique9Horatio" X="5.262" Y="0">
+    <Title>%TechnologyDefinitionUnique9Title</Title>
+    <Description>%TechnologyDefinitionUnique9Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique9Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique9Cravers" X="5.262" Y="0">
+    <Title>%TechnologyDefinitionUnique9Title</Title>
+    <Description>%TechnologyDefinitionUnique9Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique9Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique9Terrans" X="5.262" Y="0">
+    <Title>%TechnologyDefinitionUnique9Title</Title>
+    <Description>%TechnologyDefinitionUnique9Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique9Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique9Vampirilis" X="5.262" Y="0">
+    <Title>%TechnologyDefinitionUnique9Title</Title>
+    <Description>%TechnologyDefinitionUnique9Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique9Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique9Venetians" X="5.262" Y="0">
+    <Title>%TechnologyDefinitionUnique9Title</Title>
+    <Description>%TechnologyDefinitionUnique9Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique9Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique9Unfallen" X="5.262" Y="0">
+    <Title>%TechnologyDefinitionUnique9Title</Title>
+    <Description>%TechnologyDefinitionUnique9Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique9Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique9TimeLords" X="5.262" Y="0">
+    <Title>%TechnologyDefinitionUnique9Title</Title>
+    <Description>%TechnologyDefinitionUnique9Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique9Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique9SophonsVampirilis" X="5.262" Y="0">
+    <Title>%TechnologyDefinitionUnique9Title</Title>
+    <Description>%TechnologyDefinitionUnique9Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique9Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique9HoratioVampirilis" X="5.262" Y="0">
+    <Title>%TechnologyDefinitionUnique9Title</Title>
+    <Description>%TechnologyDefinitionUnique9Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique9Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique9CraversVampirilis" X="5.262" Y="0">
+    <Title>%TechnologyDefinitionUnique9Title</Title>
+    <Description>%TechnologyDefinitionUnique9Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique9Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique9TerransVampirilis" X="5.262" Y="0">
+    <Title>%TechnologyDefinitionUnique9Title</Title>
+    <Description>%TechnologyDefinitionUnique9Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique9Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique9VampirilisVampirilis" X="5.262" Y="0">
+    <Title>%TechnologyDefinitionUnique9Title</Title>
+    <Description>%TechnologyDefinitionUnique9Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique9Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique9VenetiansVampirilis" X="5.262" Y="0">
+    <Title>%TechnologyDefinitionUnique9Title</Title>
+    <Description>%TechnologyDefinitionUnique9Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique9Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique9UnfallenVampirilis" X="5.262" Y="0">
+    <Title>%TechnologyDefinitionUnique9Title</Title>
+    <Description>%TechnologyDefinitionUnique9Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique9Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique9TimeLordsVampirilis" X="5.262" Y="0">
+    <Title>%TechnologyDefinitionUnique9Title</Title>
+    <Description>%TechnologyDefinitionUnique9Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique9Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique9Vaulters" X="5.262" Y="0">
+    <Title>%TechnologyDefinitionUnique9Title</Title>
+    <Description>%TechnologyDefinitionUnique9Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique9Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique9VaultersVampirilis" X="5.262" Y="0">
+    <Title>%TechnologyDefinitionUnique9Title</Title>
+    <Description>%TechnologyDefinitionUnique9Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique9Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique9MajorHisshos" X="5.262" Y="0">
+    <Title>%TechnologyDefinitionUnique9Title</Title>
+    <Description>%TechnologyDefinitionUnique9Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique9Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique9MajorHisshosVampirilis" X="5.262" Y="0">
+    <Title>%TechnologyDefinitionUnique9Title</Title>
+    <Description>%TechnologyDefinitionUnique9Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique9Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionUnique9UmbralChoir" X="5.262" Y="0">
+      <Title>%TechnologyDefinitionUnique9Title</Title>
+      <Description>%TechnologyDefinitionUnique9Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique9Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionUnique9Templars" X="5.262" Y="0">
+      <Title>%TechnologyDefinitionUnique9Title</Title>
+      <Description>%TechnologyDefinitionUnique9Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique9Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary31" X="4.02" Y="0">
+    <Title>%TechnologyDefinitionMilitary31Title</Title>
+    <Description>%TechnologyDefinitionMilitary31Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary31Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary31TimeLords" X="4.02" Y="0">
+    <Title>%TechnologyDefinitionMilitary31TimeLordsTitle</Title>
+    <Description>%TechnologyDefinitionMilitary31TimeLordsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary31Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary32" X="2.79" Y="0">
+      <Title>%TechnologyDefinitionMilitary32Title</Title>
+      <Description>%TechnologyDefinitionMilitary32Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary32Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary32Cravers" X="2.79" Y="0">
+      <Title>%TechnologyDefinitionMilitary32CraversTitle</Title>
+      <Description>%TechnologyDefinitionMilitary32CraversDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary32Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopmentJuggernaut5" IsJuggernautTechnology="true" X="1.548" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopmentJuggernaut5Title</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopmentJuggernaut5Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopmentJuggernaut5Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+   
+  <!-- DOWN -->
+   
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopmentJuggernaut4" IsJuggernautTechnology="true" X="-1.548" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopmentJuggernaut4Title</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopmentJuggernaut4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopmentJuggernaut4Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment14" X="-2.79" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopment14Title</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopment14Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment14Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment14Vampirilis" X="-2.79" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopment14VampirilisTitle</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopment14VampirilisDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment14Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment7" X="-4.02" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopment7Title</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopment7Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment7Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment7Vaulters" X="-4.02" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopment7VaultersTitle</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopment7VaultersDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment7Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment7MajorHisshos" X="-4.02" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopment7MajorHisshosTitle</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopment7MajorHisshosDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment7Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment11" X="-5.26" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopment11Title</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopment11Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment11Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+
+
+
+  <!-- ????-->
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment13" X="-6.5" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopment13Title</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopment13Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment13Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment13Vampirilis" X="-6.5" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopment13VampirilisTitle</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopment13VampirilisDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment13Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+
+
+
+
+
+  <!-- ???? (Victory Wonder Unlock) -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopmentWonderVictory" X="4" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopmentVictoryWonderTitle</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopmentVictoryWonderDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopmentVictorySmall" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+
+  <!-- ###################################### -->
+  <!-- #######          STAGE 6       ####### -->
+  <!-- ###################################### -->
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopmentVictory" X="0" Y="-1.34">
+    <Title>%TechnologyDefinitionEmpireDevelopmentVictoryTitle</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopmentVictoryDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopmentVictorySmall" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+
+
+
+
+  <!-- ###################################### -->
+  <!-- ###################################### -->
+  <!-- ###################################### -->
+  <!-- ###################################### -->
+  <!-- #######          SCIENCE       ####### -->
+  <!-- ###################################### -->
+  <!-- ###################################### -->
+  <!-- ###################################### -->
+  <!-- ###################################### -->
+
+
+  <!-- ###################################### -->
+  <!-- #######          STAGE 1       ####### -->
+  <!-- ###################################### -->
+
+  <!-- ############## LEFT ############## -->
+
+  <!-- ??? -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration1" X="1.60" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration1Title</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration1Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- ??? -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration1Unfallen" X="1.60" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration1UnfallenTitle</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration1UnfallenDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration1Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration1TimeLords" X="1.60" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration1TimeLordsTitle</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration1TimeLordsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration1Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- ############## RIGHT ############## -->
+
+
+  <!-- ????? -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration2" X="-1.60" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration2Title</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration2Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- ????? -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration2Unfallen" X="-1.60" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration2UnfallenTitle</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration2UnfallenDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration2Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration2TimeLords" X="-1.60" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration2TimeLordsTitle</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration2TimeLordsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration2Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+
+  <!-- ###################################### -->
+  <!-- #######          STAGE 2       ####### -->
+  <!-- ###################################### -->
+
+
+  <!-- ############## LEFT ############## -->
+
+
+  <!-- ?????  -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration25" X="3.25" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration25Title</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration25Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration25Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration25Unfallen" X="3.25" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration25UnfallenTitle</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration25UnfallenDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration25Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration25TimeLords" X="3.25" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration25TimeLordsTitle</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration25TimeLordsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration25Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- Normal Colo-->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration28" X="1.25" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration28Title</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration28Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration28Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration28Sophons" X="1.25" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration28SophonsTitle</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration28SophonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration28Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration28Horatio" X="1.25" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration28HoratioTitle</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration28HoratioDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration28Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration28TimeLords2" X="1.25" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration28TimeLords2Title</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration28TimeLords2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration28Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- Timelords Colo-->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration28TimeLords" X="1.25" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration28TimeLordsTitle</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration28TimeLordsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration28Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration28TimeLordsTimeLords" X="1.25" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration28TimeLordsTimeLordsTitle</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration28TimeLordsTimeLordsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration28Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration28TimeLordsHoratio" X="1.25" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration28TimeLordsHoratioTitle</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration28TimeLordsHoratioDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration28Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration28TimeLordsSophons" X="1.25" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration28TimeLordsSophonsTitle</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration28TimeLordsSophonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration28Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration28Unfallen" X="1.25" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration28UnfallenTitle</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration28UnfallenDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration28Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration28UnfallenTimeLords" X="1.25" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration28UnfallenTimeLordsTitle</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration28UnfallenTimeLordsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration28Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration28UnfallenHoratio" X="1.25" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration28UnfallenHoratioTitle</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration28UnfallenHoratioDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration28Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration28UnfallenSophons" X="1.25" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration28UnfallenSophonsTitle</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration28UnfallenSophonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration28Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- ############## RIGHT ############## -->
+
+
+  <!-- Rare Earth Foams  -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration5" X="-1.25" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration5Title</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration5Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration5Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration5Unfallen" X="-1.25" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration5UnfallenTitle</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration5UnfallenDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration5Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration5TimeLords" X="-1.25" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration5TimeLordsTitle</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration5TimeLordsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration5Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration5Vampirilis" X="-1.25" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration5VampirilisTitle</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration5VampirilisDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration6Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- PEV-SCALE ACCELERATORS -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration4" X="-3.25" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration4Title</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration4Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- PEV-SCALE ACCELERATORS -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration4Unfallen" X="-3.25" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration4UnfallenTitle</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration4UnfallenDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration4Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration4TimeLords" X="-3.25" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration4TimeLordsTitle</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration4TimeLordsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration4Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration4Vaulters" X="-3.25" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration4VaultersTitle</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration4VaultersDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration4Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+
+  
+
+
+
+  <!-- ###################################### -->
+  <!-- #######          STAGE 3      ####### -->
+  <!-- ###################################### -->
+
+  <!-- ############## LEFT ############## -->
+  
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExplorationJuggernaut1" IsJuggernautTechnology="true" X="4.18" Y="0">
+      <Title>%TechnologyDefinitionScienceAndExplorationJuggernaut1Title</Title>
+      <Description>%TechnologyDefinitionScienceAndExplorationJuggernaut1Description</Description>
+      <Icons>
+          <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExplorationJuggernaut1Small" />
+      </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- STAGE 3 INTER-SPECIES HR -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment2" X="2.89" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopment2Title</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopment2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment2Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+
+
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration7" X="1.607" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration7Title</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration7Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration7Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration7Sophons" X="1.607" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration7SophonsTitle</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration7SophonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration7Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration7Unfallen" X="1.607" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration7UnfallenTitle</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration7UnfallenDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration7Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration7UnfallenSophons" X="1.607" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration7UnfallenSophonsTitle</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration7UnfallenSophonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration7Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+  
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration7TimeLordsSophons" X="1.607" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration7TimeLordsSophonsTitle</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration7TimeLordsSophonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration7Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration6TimeLords" X="1.607" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration6TimeLordsTitle</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration6TimeLordsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration6Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+
+
+
+  <!-- ############## RIGHT ############## -->
+
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration7TimeLords" X="-1.607" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration7TimeLordsTitle</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration7TimeLordsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration7Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration9" X="-1.607" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration9Title</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration9Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration9Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration9Unfallen" X="-1.607" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration9UnfallenTitle</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration9UnfallenDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration9Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration9Vampirilis" X="-1.607" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration9VampirilisTitle</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration9VampirilisDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration9Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+  
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration6" X="-3.05" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration6Title</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration6Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration6Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration6Unfallen" X="-3.05" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration6UnfallenTitle</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration6UnfallenDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration6Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration9TimeLords" X="-3.05" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration9TimeLordsTitle</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration9TimeLordsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration9Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration6Vaulters" X="-3.05" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration6VaultersTitle</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration6VaultersDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration6Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration6VaultersNoPortals" X="-3.05" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration6VaultersTitle</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration6VaultersDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration6Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration6VaultersNoVaultersPopulation" X="-3.05" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration6VaultersTitle</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration6VaultersDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration6Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+   
+   <!-- ???? -->
+   <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration20Vampirilis" X="-3.05" Y="0">
+      <Title>%TechnologyDefinitionScienceAndExploration20VampirilisTitle</Title>
+      <Description>%TechnologyDefinitionScienceAndExploration20VampirilisDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration20Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+  
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExplorationJuggernaut3" IsJuggernautTechnology="true" X="-4.5" Y="0">
+      <Title>%TechnologyDefinitionScienceAndExplorationJuggernaut3Title</Title>
+      <Description>%TechnologyDefinitionScienceAndExplorationJuggernaut3Description</Description>
+      <Icons>
+          <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExplorationJuggernaut3Small" />
+      </Icons>
+  </TechnologyGuiElement2>
+
+
+ <!-- ###################################### -->
+    <!-- #######          STAGE 4       ####### -->
+    <!-- ###################################### -->
+
+    <!-- ############## LEFT  ############## -->
+   
+    <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration17" X="5.5" Y="0">
+        <Title>%TechnologyDefinitionScienceAndExploration17Title</Title>
+        <Description>%TechnologyDefinitionScienceAndExploration17Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration17Small" />
+        </Icons>
+    </TechnologyGuiElement2>
+
+    <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration17Vampirilis" X="5.5" Y="0">
+        <Title>%TechnologyDefinitionScienceAndExploration17VampirilisTitle</Title>
+        <Description>%TechnologyDefinitionScienceAndExploration17VampirilisDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration17Small" />
+        </Icons>
+    </TechnologyGuiElement2>
+
+
+  
+      <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment3" X="4.45" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopment3Title</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopment3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment3Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment3Horatio" X="4.45" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopment3HoratioTitle</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopment3HoratioDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment3Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment3Sophons" X="4.45" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopment3SophonsTitle</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopment3SophonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment3Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration12" X="3.4" Y="0">
+      <Title>%TechnologyDefinitionScienceAndExploration12Title</Title>
+      <Description>%TechnologyDefinitionScienceAndExploration12Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration12Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+  <!-- ADAPTATIVE COLONIES -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration16Vampirilis" X="2.36" Y="0">
+      <Title>%TechnologyDefinitionScienceAndExploration16VampirilisTitle</Title>
+      <Description>%TechnologyDefinitionScienceAndExploration16VampirilisDescription</Description>
+      <Icons>
+          <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration16Small" />
+      </Icons>
+  </TechnologyGuiElement2>
+      
+   <!-- ADAPTATIVE COLONIES -->
+   <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration10" X="2.36" Y="0">
+      <Title>%TechnologyDefinitionScienceAndExploration10Title</Title>
+      <Description>%TechnologyDefinitionScienceAndExploration10Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration10Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration10Unique" X="2.36" Y="0">
+      <Title>%TechnologyDefinitionScienceAndExploration10Title</Title>
+      <Description>%TechnologyDefinitionScienceAndExploration10Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration10Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration10Vampirilis" X="1.33" Y="0">
+      <Title>%TechnologyDefinitionScienceAndExploration10VampirilisTitle</Title>
+      <Description>%TechnologyDefinitionScienceAndExploration10VampirilisDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration10Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration10VampirilisUnique" X="1.33" Y="0">
+      <Title>%TechnologyDefinitionScienceAndExploration10VampirilisTitle</Title>
+      <Description>%TechnologyDefinitionScienceAndExploration10VampirilisDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration10Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration8" X="1.33" Y="0">
+      <Title>%TechnologyDefinitionScienceAndExploration8Title</Title>
+      <Description>%TechnologyDefinitionScienceAndExploration8Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration8Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration8Horatio" X="1.33" Y="0">
+      <Title>%TechnologyDefinitionScienceAndExploration8HoratioTitle</Title>
+      <Description>%TechnologyDefinitionScienceAndExploration8HoratioDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration8Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+   
+   <!-- ##### RIGHT #########-->
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary18" X="-1.57" Y="0">
+      <Title>%TechnologyDefinitionMilitary18Title</Title>
+      <Description>%TechnologyDefinitionMilitary18Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary18Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionMilitary18Vaulters" X="-1.57" Y="0">
+      <Title>%TechnologyDefinitionMilitary18VaultersTitle</Title>
+      <Description>%TechnologyDefinitionMilitary18VaultersDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitary18Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+    <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration11" X="-2.82" Y="0">
+        <Title>%TechnologyDefinitionScienceAndExploration11Title</Title>
+        <Description>%TechnologyDefinitionScienceAndExploration11Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration11Small" />
+        </Icons>
+    </TechnologyGuiElement2>
+    
+      <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration31" X="-4.08" Y="0">
+        <Title>%TechnologyDefinitionScienceAndExploration31Title</Title>
+        <Description>%TechnologyDefinitionScienceAndExploration31Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration31Small" />
+        </Icons>
+    </TechnologyGuiElement2>
+
+    <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration31Vampirilis" X="-4.08" Y="0">
+        <Title>%TechnologyDefinitionScienceAndExploration31VampirilisTitle</Title>
+        <Description>%TechnologyDefinitionScienceAndExploration31VampirilisDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration31Small" />
+        </Icons>
+    </TechnologyGuiElement2>
+
+    <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration31TimeLords" X="-4.08" Y="0">
+        <Title>%TechnologyDefinitionScienceAndExploration31TimeLordsTitle</Title>
+        <Description>%TechnologyDefinitionScienceAndExploration31TimeLordsDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration31Small" />
+        </Icons>
+    </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionTimeBubble1" X="-4.8" Y="0">
+      <Title>%TechnologyDefinitionTimeBubble1Title</Title>
+      <Description>%TechnologyDefinitionTimeBubble1Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionTimeBubble1Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+  
+    <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExplorationJuggernaut4" IsJuggernautTechnology="true" X="-5.5" Y="0">
+      <Title>%TechnologyDefinitionScienceAndExplorationJuggernaut4Title</Title>
+      <Description>%TechnologyDefinitionScienceAndExplorationJuggernaut4Description</Description>
+      <Icons>
+          <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExplorationJuggernaut4Small" />
+      </Icons>
+  </TechnologyGuiElement2>
+
+
+  <!-- ###################################### -->
+  <!-- #######          STAGE 5       ####### -->
+  <!-- ###################################### -->
+
+  <!-- ############## LEFT ############## -->
+      
+   <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment16" X="6.63" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopment16Title</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopment16Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment16Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment16Vampirilis" X="6.63" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopment16VampirilisTitle</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopment16VampirilisDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment16Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment16Venetians" X="6.63" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopment16VenetiansTitle</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopment16VenetiansDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment16Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment16VampirilisVenetians" X="6.63" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopment16VampirilisVenetiansTitle</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopment16VampirilisVenetiansDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment16Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+   
+    <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment16UmbralChoir" X="6.63" Y="0">
+        <Title>%TechnologyDefinitionEmpireDevelopment16Title</Title>
+        <Description>%TechnologyDefinitionEmpireDevelopment16Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment16Small" />
+        </Icons>
+    </TechnologyGuiElement2>
+   
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment15" X="5.57" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopment15Title</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopment15Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment15Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEmpireDevelopment15Unfallen" X="5.57" Y="0">
+    <Title>%TechnologyDefinitionEmpireDevelopment15UnfallenTitle</Title>
+    <Description>%TechnologyDefinitionEmpireDevelopment15UnfallenDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment15Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+   
+   <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration29" X="4.51" Y="0">
+      <Title>%TechnologyDefinitionScienceAndExploration29Title</Title>
+      <Description>%TechnologyDefinitionScienceAndExploration29Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration29Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration13Vampirilis" X="4.51" Y="0">
+      <Title>%TechnologyDefinitionScienceAndExploration13VampirilisTitle</Title>
+      <Description>%TechnologyDefinitionScienceAndExploration13VampirilisDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration13Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+   
+     <!-- ???? -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration13" X="3.44" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration13Title</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration13Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration13Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration19Vampirilis" X="3.44" Y="0">
+      <Title>%TechnologyDefinitionScienceAndExploration19VampirilisTitle</Title>
+      <Description>%TechnologyDefinitionScienceAndExploration19VampirilisDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration19Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+   
+     <!-- ADAPTATIVE COLONIES -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration21" X="2.38" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration21Title</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration21Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration21Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration21Vampirilis" X="2.38" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration21VampirilisTitle</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration21VampirilisDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration21Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration30" X="1.32" Y="0">
+      <Title>%TechnologyDefinitionScienceAndExploration30Title</Title>
+      <Description>%TechnologyDefinitionScienceAndExploration30Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration30Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+  
+  <!-- ############## RIGHT ############## -->
+  
+    <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration14" X="-1.5" Y="0">
+        <Title>%TechnologyDefinitionScienceAndExploration14Title</Title>
+        <Description>%TechnologyDefinitionScienceAndExploration14Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration14Small" />
+        </Icons>
+    </TechnologyGuiElement2>
+
+    <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration14Vampirilis" X="-1.5" Y="0">
+        <Title>%TechnologyDefinitionScienceAndExploration14VampirilisTitle</Title>
+        <Description>%TechnologyDefinitionScienceAndExploration14VampirilisDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration14Small" />
+        </Icons>
+    </TechnologyGuiElement2>
+
+    <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration14Vaulters" X="-1.5" Y="0">
+      <Title>%TechnologyDefinitionScienceAndExploration14VaultersTitle</Title>
+      <Description>%TechnologyDefinitionScienceAndExploration14VaultersDescription</Description>
+      <Icons>
+        <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration14Small" />
+      </Icons>
+    </TechnologyGuiElement2>
+   
+     <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration32" X="-2.6" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration32Title</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration32Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration32Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration32Vampirilis" X="-2.6" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration32VampirilisTitle</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration32VampirilisDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration32Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration32Vaulters" X="-2.6" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration32VaultersTitle</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration32VaultersDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration32Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration23" X="-3.75" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExploration23Title</Title>
+    <Description>%TechnologyDefinitionScienceAndExploration23Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration23Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExploration34" X="-4.8" Y="0">
+      <Title>%TechnologyDefinitionScienceAndExploration34Title</Title>
+      <Description>%TechnologyDefinitionScienceAndExploration34Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExploration34Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+   
+  <TechnologyGuiElement2 Name="TechnologyDefinitionTimeBubble2" X="-5.7" Y="0">
+    <Title>%TechnologyDefinitionTimeBubble2Title</Title>
+    <Description>%TechnologyDefinitionTimeBubble2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionTimeBubble2Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique11Vaulters" X="-5.7" Y="0">
+    <Title>%TechnologyDefinitionUnique11VaultersTitle</Title>
+    <Description>%TechnologyDefinitionUnique11VaultersDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique11Vaulters" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique11VaultersNoSuperColonizer" X="-5.7" Y="0">
+    <Title>%TechnologyDefinitionUnique11VaultersTitle</Title>
+    <Description>%TechnologyDefinitionUnique11VaultersDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique11Vaulters" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionUnique11NoVaultersSuperColonizer" X="-5.7" Y="0">
+    <Title>%TechnologyDefinitionUnique11VaultersTitle</Title>
+    <Description>%TechnologyDefinitionUnique11VaultersDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionUnique11Vaulters" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExplorationJuggernaut5" IsJuggernautTechnology="true" X="-6.5" Y="0">
+    <Title>%TechnologyDefinitionScienceAndExplorationJuggernaut5Title</Title>
+    <Description>%TechnologyDefinitionScienceAndExplorationJuggernaut5Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExplorationJuggernaut5Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  
+  <!-- ###################################### -->
+  <!-- #######          STAGE 6       ####### -->
+  <!-- ###################################### -->
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionScienceAndExplorationVictory" X="0" Y="-1.34">
+    <Title>%TechnologyDefinitionScienceAndExplorationVictoryTitle</Title>
+    <Description>%TechnologyDefinitionScienceAndExplorationVictoryDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionScienceAndExplorationVictorySmall" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- ###################################### -->
+  <!-- ###################################### -->
+  <!-- ###################################### -->
+  <!-- ###################################### -->
+  <!-- #######        IND/ TRADE      ####### -->
+  <!-- ###################################### -->
+  <!-- ###################################### -->
+  <!-- ###################################### -->
+  <!-- ###################################### -->
+
+  <!-- ###################################### -->
+  <!-- #######          STAGE 1       ####### -->
+  <!-- ###################################### -->
+
+  <!-- ############## UP  ############## -->
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade2" X="-1.78" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade2Title</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade2Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+  
+  <!-- ############## DOWN  ############## -->
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade5" X="1.78" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade5Title</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade5Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade5Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade5Vampirilis" X="1.78" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade5VampirilisTitle</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade5VampirilisDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade5Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+
+  <!-- ###################################### -->
+  <!-- #######          STAGE 2       ####### -->
+  <!-- ###################################### -->
+
+  <!-- ############## UP  ############## -->
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade25" X="-3.25" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade25Title</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade25Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade25Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade25Unfallen" X="-3.25" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade25UnfallenTitle</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade25UnfallenDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade25Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade25Horatio" X="-3.25" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade25Title</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade25Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade25Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade25TimeLords" X="-3.25" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade25TimeLordsTitle</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade25TimeLordsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade25Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade25Vaulters" X="-3.25" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade25VaultersTitle</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade25VaultersDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade25Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade25MajorHisshos" X="-3.25" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade25Title</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade25Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade25Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- N-WAY FUSION -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade1" X="-1.67" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade1Title</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade1Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade1Sophons" X="-1.67" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade1SophonsTitle</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade1SophonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade1Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+
+  <!-- ############## DOWN  ############## -->
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade4" X="1.67" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade4Title</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade4Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade4TimeLords" X="1.67" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade4TimeLordsTitle</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade4TimeLordsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade4Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+    
+
+  <!-- MARKETPLACE -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade3" X="3.25" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade3Title</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade3Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+
+
+
+
+
+  <!-- ###################################### -->
+  <!-- #######          STAGE 3       ####### -->
+  <!-- ###################################### -->
+
+  <!-- ############## UP  ############## -->
+
+  <!-- XENOMINEROLOGY -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade8" X="-4.178" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade8Title</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade8Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade8Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade8TimeLords" X="-4.178" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade8TimeLordsTitle</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade8TimeLordsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade8Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade8Unfallen" X="-4.1778" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade8UnfallenTitle</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade8UnfallenDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade8Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade8Horatio" X="-4.178" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade8Title</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade8Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade8Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+  
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTradeJuggernaut3" IsJuggernautTechnology="true" X="-3.086" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTradeJuggernaut3Title</Title>
+    <Description>%TechnologyDefinitionEconomyAndTradeJuggernaut3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTradeJuggernaut3Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- INFINITE VARIABLE -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade7" X="-1.6" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade7Title</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade7Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade7Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade7Horatio" X="-1.6" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade7HoratioTitle</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade7HoratioDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade7Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade7Vampirilis" X="-1.6" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade7VampirilisTitle</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade7VampirilisDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade7Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade7VampirilisHoratio" X="-1.6" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade7VampirilisHoratioTitle</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade7VampirilisHoratioDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade7Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- ############## DOWN  ############## -->
+
+
+  <!-- RELATIVISTICS ECONOMY -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade9" X="1.286" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade9Title</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade9Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade9Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTradeJuggernaut2" IsJuggernautTechnology="true" X="2.89" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTradeJuggernaut2Title</Title>
+    <Description>%TechnologyDefinitionEconomyAndTradeJuggernaut2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTradeJuggernaut2Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- NEW NAME 1-->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade6" X="4.178" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade6Title</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade6Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade6Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade6Venetians" X="4.178" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade6VenetiansTitle</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade6VenetiansDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade6Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade6Vampirilis" X="4.178" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade6VampirilisTitle</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade6VampirilisDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade6Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade6VampirilisVenetians" X="4.178" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade6VampirilisVenetiansTitle</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade6VampirilisVenetiansDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade6Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+
+  <!-- ###################################### -->
+  <!-- #######          STAGE 4       ####### -->
+  <!-- ###################################### -->
+
+
+  <!-- ############## UP  ############## -->
+
+  
+  <!-- ############## OBLITERATOR ############## -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionMilitaryJuggernaut3" IsJuggernautTechnology="true" X="-5.163" Y="0">
+    <Title>%TechnologyDefinitionMilitaryJuggernaut3Title</Title>
+    <Description>%TechnologyDefinitionMilitaryJuggernaut3Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitaryJuggernaut3Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTradeJuggernaut4" IsJuggernautTechnology="true" X="-3.771" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTradeJuggernaut4Title</Title>
+    <Description>%TechnologyDefinitionEconomyAndTradeJuggernaut4Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTradeJuggernaut4Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade11" X="-2.82" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade11Title</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade11Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade11Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade11Vampirilis" X="-2.82" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade11VampirilisTitle</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade11VampirilisDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade11Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade11Vaulters" X="-2.82" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade11VaultersTitle</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade11VaultersDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade11Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+  
+
+  <!-- ????-->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade14" X="-1.57" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade14Title</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade14Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade14Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade14Vampirilis" X="-1.57" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade14VampirilisTitle</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade14VampirilisDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade14Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- ############## DOWN  ############## -->
+
+  <!-- ????-->
+
+  
+  <!-- ????-->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade12" X="1.57" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade12Title</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade12Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade12Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade12Venetians" X="1.57" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade12VenetiansTitle</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade12VenetiansDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade12Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- ????-->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade13" X="2.82" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade13Title</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade13Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade13Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- ????-->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade13Vampirilis" X="2.82" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade13VampirilisTitle</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade13VampirilisDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade13Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade23" X="4.08" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade23Title</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade23Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade23Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade23Vampirilis" X="4.08" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade23VampirilisTitle</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade23VampirilisDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade23Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- ????-->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade27" X="5.34" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade27Title</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade27Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade27Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+
+
+
+
+  <!-- ###################################### -->
+  <!-- #######          STAGE 5       ####### -->
+  <!-- ###################################### -->
+
+
+  <!-- ############## UP  ############## -->
+  
+    <!-- ############## OBLITERATOR ############## -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionMilitaryJuggernaut6" IsJuggernautTechnology="true" X="-6.63" Y="0">
+    <Title>%TechnologyDefinitionMilitaryJuggernaut6Title</Title>
+    <Description>%TechnologyDefinitionMilitaryJuggernaut6Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitaryJuggernaut6Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionMilitaryJuggernaut7" IsJuggernautTechnology="true" X="-5.57" Y="0">
+    <Title>%TechnologyDefinitionMilitaryJuggernaut7Title</Title>
+    <Description>%TechnologyDefinitionMilitaryJuggernaut7Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionMilitaryJuggernaut7Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- ????-->
+
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade26" X="-4.5" Y="0">
+      <Title>%TechnologyDefinitionEconomyAndTrade26Title</Title>
+      <Description>%TechnologyDefinitionEconomyAndTrade26Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade26Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade24" X="-3.45" Y="0">
+      <Title>%TechnologyDefinitionEconomyAndTrade24Title</Title>
+      <Description>%TechnologyDefinitionEconomyAndTrade24Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade24Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade24Vampirilis" X="-3.45" Y="0">
+      <Title>%TechnologyDefinitionEconomyAndTrade24VampirilisTitle</Title>
+      <Description>%TechnologyDefinitionEconomyAndTrade24VampirilisDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade24Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade24TimeLords" X="-3.45" Y="0">
+      <Title>%TechnologyDefinitionEconomyAndTrade24TimeLordsTitle</Title>
+      <Description>%TechnologyDefinitionEconomyAndTrade24TimeLordsDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade24Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade24VampirilisTimeLords" X="-3.45" Y="0">
+      <Title>%TechnologyDefinitionEconomyAndTrade24VampirilisTimeLordsTitle</Title>
+      <Description>%TechnologyDefinitionEconomyAndTrade24VampirilisTimeLordsDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade24Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+  <!-- ????-->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade19" X="-2.39" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade19Title</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade19Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade19Small" />
+    </Icons>
+
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade19Vaulters" X="-2.39" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade19VaultersTitle</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade19VaultersDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade19Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- ????-->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade18" X="-1.33" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade18Title</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade18Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade18Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- ############## DOWN  ############## -->
+
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade15" X="1.33" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade15Title</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade15Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade15Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+  
+  <!-- ????-->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade20" X="2.39" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade20Title</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade20Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade20Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade20Venetians" X="2.39" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade20VenetiansTitle</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade20VenetiansDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade20Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+  
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade16" X="3.45" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade16Title</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade16Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade16Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade17" X="4.51" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade17Title</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade17Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade17Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- ????-->
+   <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade22" X="5.57" Y="0">
+      <Title>%TechnologyDefinitionEconomyAndTrade22Title</Title>
+      <Description>%TechnologyDefinitionEconomyAndTrade22Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade22Small" />
+      </Icons>
+   </TechnologyGuiElement2>
+   
+  <!-- ????-->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade21" X="6.63" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade21Title</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade21Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade21Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade21Sophons" X="6.63" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade21SophonsTitle</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade21SophonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade21Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade21Vampirilis" X="6.63" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade21VampirilisTitle</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade21VampirilisDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade21Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade21VampirilisSophons" X="6.63" Y="0">
+    <Title>%TechnologyDefinitionEconomyAndTrade21VampirilisSophonsTitle</Title>
+    <Description>%TechnologyDefinitionEconomyAndTrade21VampirilisSophonsDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade21Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTrade21VampirilisUmbralChoir" X="6.63" Y="0">
+      <Title>%TechnologyDefinitionEconomyAndTrade21VampirilisSophonsTitle</Title>
+      <Description>%TechnologyDefinitionEconomyAndTrade21VampirilisSophonsDescription</Description>
+      <Icons>
+          <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTrade21Small" />
+      </Icons>
+  </TechnologyGuiElement2>
+
+
+  
+
+
+
+
+
+  <!-- ###################################### -->
+  <!-- #######          STAGE 6       ####### -->
+  <!-- ###################################### -->
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionEconomyAndTradeVictory" X="0" Y="-1.34">
+    <Title>%TechnologyDefinitionEconomyAndTradeVictoryTitle</Title>
+    <Description>%TechnologyDefinitionEconomyAndTradeVictoryDescription</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEconomyAndTradeVictorySmall" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+
+</Datatable>

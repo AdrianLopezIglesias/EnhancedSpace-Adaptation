@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+
+
+  <!-- ############# -->
+  <!-- ##  QUEST  ## -->
+  <!-- ############# -->
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionQuestCravers05" X="-2" Y="0">
+    <Title>%TechnologyDefinitionQuestCravers05Title</Title>
+    <Description>%TechnologyDefinitionQuestCravers05Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyQuestModulesShieldStrategic1Era2" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- QUEST: Chapter 2 Sophons - Military -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionQuestSophons04" X="-4" Y="0">
+    <Title>%TechnologyDefinitionQuestSophons04Title</Title>
+    <Description>%TechnologyDefinitionQuestSophons04Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefenseSophonsSmall" />
+      <Icon Size="SmallInverted" Path="Bitmaps/Atlased/Technologies/TechnologyDefenseSophonsSmallInverted" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- QUEST: UE Chapter 2.1 -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionQuestUE03" X="-4" Y="0">
+    <Title>%TechnologyDefinitionQuestUE03Title</Title>
+    <Description>%TechnologyDefinitionQuestUE03Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyModulesStrategic2Era2QuestSmall" />
+      <Icon Size="SmallInverted" Path="Bitmaps/Atlased/Technologies/TechnologyModulesStrategic2Era2QuestSmallInverted" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- QUEST: Chapter 2 VAMPIRILIS - Military -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionQuestVampirilis04" X="-4" Y="0">
+    <Title>%TechnologyDefinitionQuestVampirilis04Title</Title>
+    <Description>%TechnologyDefinitionQuestVampirilis04Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefenseSophonsSmall" />
+      <Icon Size="SmallInverted" Path="Bitmaps/Atlased/Technologies/TechnologyDefenseSophonsSmallInverted" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionQuestHisshos05" IsJuggernautTechnology="true" X="5.05" Y="0">
+    <Title>%TechnologyDefinitionQuestHisshos05Title</Title>
+    <Description>%TechnologyDefinitionQuestHisshos05Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionQuestHisshos05Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionQuestHisshos06" IsJuggernautTechnology="true" X="5.05" Y="0">
+    <Title>%TechnologyDefinitionQuestHisshos06Title</Title>
+    <Description>%TechnologyDefinitionQuestHisshos06Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionQuestHisshos06Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- ############# -->
+  <!-- ##  QUEST  ## -->
+  <!-- ############# -->
+
+  <!-- Hoce Memorial -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionQuestExploration01" X="-2" Y="0">
+    <Title>%TechnologyDefinitionQuestExploration01Title</Title>
+    <Description>%TechnologyDefinitionQuestExploration01Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyQuest01Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- Hoce Memorial -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionQuestMF01" X="-2" Y="0">
+    <Title>%TechnologyDefinitionQuestMF01Title</Title>
+    <Description>%TechnologyDefinitionQuestMF01Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyQuest01Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- QUEST: Chapter 2 Sophons - Science -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionQuestSophons06" X="2" Y="0">
+    <Title>%TechnologyDefinitionQuestSophons06Title</Title>
+    <Description>%TechnologyDefinitionQuestSophons06Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyPropagandaSophonsSmall" />
+      <Icon Size="SmallInverted" Path="Bitmaps/Atlased/Technologies/TechnologyPropagandaSophonsSmallInverted" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- QUEST: ANTENA -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionQuestCravers03" X="0" Y="0">
+    <Title>%TechnologyDefinitionQuestCravers03Title</Title>
+    <Description>%TechnologyDefinitionQuestCravers03Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyIndustryCraversSmall" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- QUEST: Building -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionQuestCravers04" X="0" Y="0">
+    <Title>%TechnologyDefinitionQuestCravers04Title</Title>
+    <Description>%TechnologyDefinitionQuestCravers04Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyHeroCraversSmall" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!-- QUEST: Population 02 - Approval -->
+  <TechnologyGuiElement2 Name="TechnologyDefinitionQuestPopulation01" X="-3" Y="0">
+    <Title>%TechnologyDefinitionQuestPopulation01Title</Title>
+    <Description>%TechnologyDefinitionQuestPopulation01Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologySophonsProbe01Small" />
+      <Icon Size="SmallInverted" Path="Bitmaps/Atlased/Technologies/TechnologySophonsProbe01SmallInverted" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <!--############################-->
+  <!--## FREE CONTENT VAULTERS  ##-->
+  <!--############################-->
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionMetaplot1" X="-3" Y="0">
+    <Title>%TechnologyDefinitionMetaplot1Title</Title>
+    <Description>%TechnologyDefinitionMetaplot1Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment7Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+  <TechnologyGuiElement2 Name="TechnologyDefinitionMetaplot2" X="-3" Y="0">
+    <Title>%TechnologyDefinitionMetaplot2Title</Title>
+    <Description>%TechnologyDefinitionMetaplot2Description</Description>
+    <Icons>
+      <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionEmpireDevelopment7Small" />
+    </Icons>
+  </TechnologyGuiElement2>
+
+    <!-- ############# -->
+    <!-- ##  QUEST  ## -->
+    <!-- ############# -->
+
+    <!-- QUEST: FREE MOVE SOPHONS -->
+    <TechnologyGuiElement2 Name="TechnologyDefinitionQuestSophons02" X="2" Y="0">
+        <Title>%TechnologyDefinitionQuestSophons02Title</Title>
+        <Description>%TechnologyDefinitionQuestSophons02Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyDefinitionFreeMoveSophons01Small" />
+        </Icons>
+    </TechnologyGuiElement2>
+
+    <!-- ############# -->
+    <!-- ##  QUEST  ## -->
+    <!-- ############# -->
+
+    <!-- UE QUEST Chapter 2.1 Industry -->
+    <TechnologyGuiElement2 Name="TechnologyDefinitionQuestUE04" X="-3" Y="0">
+        <Title>%TechnologyDefinitionQuestUE04Title</Title>
+        <Description>%TechnologyDefinitionQuestUE04Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyQuestUE01" />
+            <Icon Size="SmallInverted" Path="Bitmaps/Atlased/Technologies/TechnologyQuestUE01" />
+        </Icons>
+    </TechnologyGuiElement2>
+   
+    <!-- Venetians: SystemImprovement: increase Dust on Home Systems -->
+    <TechnologyGuiElement2 Name="TechnologyDefinitionVenetians02" X="-2" Y="0">
+        <Title>%TechnologyDefinitionVenetians02Title</Title>
+        <Description>%TechnologyDefinitionVenetians02Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Atlased/Technologies/TechnologyVenetians02Small" />
+        </Icons>
+    </TechnologyGuiElement2>
+
+
+</Datatable>

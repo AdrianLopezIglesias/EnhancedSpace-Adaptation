@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+
+    <SimulationDescriptor Name="PopulationCollectionBonusSheredyn3" Type="PopulationCollectionBonus">
+        <Modifier TargetProperty="MaximumCommandPoints"   Value="3"  Operation="Addition" Path="ClassEmpire"/>
+        <BinaryModifier TargetProperty="NetSystemEmpirePoint"   Operation="Addition"        Left="5" BinaryOperation="Multiplication" Right="$(SystemManpowerStock100Threshold)" Path="../ClassEmpire/ClassColonizedStarSystem" SearchValueFromPath="true"/>
+    </SimulationDescriptor>
+
+
+    <SimulationDescriptor Name="PopulationCollectionBonusTimeLords3" Type="PopulationCollectionBonus">
+       <Modifier TargetProperty="WormholeSpeed"         Operation="Percent" Value="1" Path="./ClassEmpire/ClassGarrisonFleet/ClassShip" TooltipHidden="true"/>
+       <Modifier TargetProperty="BaseWormholeSpeed"     Operation="Percent" Value="1" Path="./ClassEmpire" TooltipHidden="true"/>
+    </SimulationDescriptor>
+   
+</Datatable>

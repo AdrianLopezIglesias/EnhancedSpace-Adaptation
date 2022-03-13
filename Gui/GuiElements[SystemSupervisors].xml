@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+
+    <!-- Note : Hidden supervisors (i.e.: IA stuff) don't have GuiElements, that's why they are not shown in the UI droplist -->
+    
+    <GuiElement Name="SystemSupervisorBalanced">
+        <Description>%SystemSupervisorBalancedDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="SystemPolicyBalanced" />
+        </Icons>
+    </GuiElement>
+
+</Datatable>

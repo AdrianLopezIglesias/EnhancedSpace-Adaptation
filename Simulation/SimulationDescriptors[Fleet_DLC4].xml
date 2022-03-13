@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+
+    <!-- Academy Master Fleet -->
+    <SimulationDescriptor Name="AcademyMasterFleet" Type="AcademyMasterFleet">
+      <Modifier TargetProperty="MaximumShipManpower" Operation="Force" Value="0" Priority="1000" Path="ClassGarrison/ClassShip"/>
+      <Modifier TargetProperty="SiegePower"          Operation="Force" Value="0" Priority="1000" Path="ClassGarrison/ClassShip"/>
+       
+      <Modifier       TargetProperty="GarrisonMoneyUpkeep"    Operation="Force" Value="0"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="TradableMasterFleet" Type="TradableMasterFleet">
+       
+      <Modifier       TargetProperty="GarrisonMoneyUpkeep"    Operation="Force" Value="0"/>
+      <Modifier       TargetProperty="GarrisonMoneyUpkeep"    Operation="Force" Value="0" Path="ClassGarrison/ClassShip" Priority="10"/>
+    </SimulationDescriptor>
+
+  </Datatable>

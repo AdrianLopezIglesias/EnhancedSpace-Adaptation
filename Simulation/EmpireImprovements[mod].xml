@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/EmpireImprovementDefinition.xsd">
+
+  <EmpireImprovementDefinition Name="EmpireImprovementFood1" Category="CategoryEmpireImprovement" SubCategory="SubCategoryFood" >
+    <TechnologyPrerequisite>TechnologyImproveGasPlanet</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="EmpireImprovementFood1" />
+  </EmpireImprovementDefinition>
+
+   <EmpireImprovementDefinition Name="EmpireImprovementScience1" Category="CategoryEmpireImprovement" SubCategory="SubCategoryFIDSI" >
+      <TechnologyPrerequisite>TechnologyStellarDiscovery</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="EmpireImprovementScience1" />
+   </EmpireImprovementDefinition>
+
+   <EmpireImprovementDefinition Name="EmpireImprovementScience2" Category="CategoryEmpireImprovement" SubCategory="SubCategoryScience" >
+      <TechnologyPrerequisite>TechnologyScience7</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="EmpireImprovementScience2" />
+   </EmpireImprovementDefinition>
+
+   <EmpireImprovementDefinition Name="EmpireImprovementScience3" Category="CategoryEmpireImprovement" SubCategory="SubCategoryFIDSI" >
+      <TechnologyPrerequisite>TechnologyScience5</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="EmpireImprovementScience3" />
+   </EmpireImprovementDefinition>
+
+   <EmpireImprovementDefinition Name="EmpireImprovementInfluence1" Category="CategoryEmpireImprovement" SubCategory="SubCategoryDiplomacy" >
+      <TechnologyPrerequisite>TechnologyUniqueInfluence1</TechnologyPrerequisite>
+      <PathPrerequisite Flags="UnlockAvailability" Inverted="true">AffinityGameplayVaulters</PathPrerequisite>
+      <SimulationDescriptorReference Name="EmpireImprovementInfluence1" />
+   </EmpireImprovementDefinition>
+
+   <EmpireImprovementDefinition Name="EmpireImprovementInfluence1Vaulters" Category="CategoryEmpireImprovement" SubCategory="SubCategoryDiplomacy" >
+      <TechnologyPrerequisite>TechnologyUniqueInfluence1Vaulters</TechnologyPrerequisite>
+      <PathPrerequisite Flags="UnlockAvailability" Inverted="true">!AffinityGameplayVaulters</PathPrerequisite>
+      <SimulationDescriptorReference Name="EmpireImprovementInfluence1" />
+   </EmpireImprovementDefinition>
+
+   <EmpireImprovementDefinition Name="EmpireImprovementDust1" Category="CategoryEmpireImprovement" SubCategory="SubCategoryDust" >
+      <TechnologyPrerequisite>TechnologyDust2</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="EmpireImprovementDust1" />
+   </EmpireImprovementDefinition>
+
+   <EmpireImprovementDefinition Name="EmpireImprovementDust2" Category="CategoryEmpireImprovement" SubCategory="SubCategoryDust" >
+      <TechnologyPrerequisite>TechnologyUniqueIndustry1</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="EmpireImprovementDust2" />
+   </EmpireImprovementDefinition>
+
+   <EmpireImprovementDefinition Name="EmpireImprovementDust3" Category="CategoryEmpireImprovement" SubCategory="SubCategoryBuyout" >
+      <TechnologyPrerequisite>TechnologyIndToDust2</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="EmpireImprovementDust3" />
+   </EmpireImprovementDefinition>
+
+   <EmpireImprovementDefinition Name="EmpireImprovementDust4" Category="CategoryEmpireImprovement" SubCategory="SubCategoryScience" >
+      <TechnologyPrerequisite>TechnologyIndToScience2</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="EmpireImprovementDust4" />
+   </EmpireImprovementDefinition>
+   
+   <EmpireImprovementDefinition Name="EmpireImprovementArkShipMovement1" Category="CategoryMovementBonus" SubCategory="SubCategoryEmpire">
+      <TechnologyPrerequisite>TechnologyStageEmpireDevelopment3</TechnologyPrerequisite>
+      <PathPrerequisite Flags="UnlockAvailability" Inverted="true">!AffinityGameplayVampirilis</PathPrerequisite>
+      <SimulationDescriptorReference Name="EmpireImprovementArkShipMovement1" />
+   </EmpireImprovementDefinition>
+
+   <EmpireImprovementDefinition Name="EmpireImprovementArkShipMovement2" Category="CategoryMovementBonus" SubCategory="SubCategoryEmpire">
+      <TechnologyPrerequisite>TechnologyStageEmpireDevelopment4</TechnologyPrerequisite>
+      <PathPrerequisite Flags="UnlockAvailability" Inverted="true">!AffinityGameplayVampirilis</PathPrerequisite>
+      <SimulationDescriptorReference Name="EmpireImprovementArkShipMovement2" />
+   </EmpireImprovementDefinition>
+
+   <EmpireImprovementDefinition Name="EmpireImprovementArkShipMovement3" Category="CategoryMovementBonus" SubCategory="SubCategoryEmpire">
+      <TechnologyPrerequisite>TechnologyStageEmpireDevelopment5</TechnologyPrerequisite>
+      <PathPrerequisite Flags="UnlockAvailability" Inverted="true">!AffinityGameplayVampirilis</PathPrerequisite>
+      <SimulationDescriptorReference Name="EmpireImprovementArkShipMovement3" />
+   </EmpireImprovementDefinition>
+
+</Datatable>

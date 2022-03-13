@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+
+    <SimulationDescriptor Name="PlanetAnomalyRemainsEncounterLarge" Type="PlanetAnomaly">
+        <Modifier TargetProperty="PlanetRawDust"    Value="5" Operation="Subtraction" Path="ClassPlanet"/>
+        <Modifier TargetProperty="PlanetRawScience" Value="5" Operation="Addition" Path="ClassPlanet"/>
+    </SimulationDescriptor>
+    <SimulationDescriptor Name="PlanetAnomalyRemainsEncounterMedium" Type="PlanetAnomaly">
+        <Modifier TargetProperty="PlanetRawDust"    Value="3" Operation="Subtraction" Path="ClassPlanet"/>
+        <Modifier TargetProperty="PlanetRawScience" Value="3" Operation="Addition" Path="ClassPlanet"/>
+    </SimulationDescriptor>
+    <SimulationDescriptor Name="PlanetAnomalyRemainsEncounterSmall" Type="PlanetAnomaly">
+        <Modifier TargetProperty="PlanetRawDust"    Value="1" Operation="Subtraction" Path="ClassPlanet"/>
+        <Modifier TargetProperty="PlanetRawScience" Value="1" Operation="Addition" Path="ClassPlanet"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="PlanetAnomalyRemainsMinorFaction" Type="PlanetAnomaly">
+        <Modifier           TargetProperty="PlanetRawDust"      Operation="Addition" Value="1"   Path="ClassPlanet"/>
+        <Modifier           TargetProperty="PlanetRawScience"   Operation="Addition" Value="1"   Path="ClassPlanet"/>
+        <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="1" BinaryOperation="Multiplication" Right="$(Population)"      />
+        <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="1" TooltipHidden="true" />
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="PlanetAnomalyRemainsPirateLairLarge" Type="PlanetAnomaly">
+        <Modifier   TargetProperty="PlanetRawDust"      Operation="Addition" Value="5"   Path="ClassPlanet"/>
+        <Modifier   TargetProperty="PlanetRawIndustry"  Operation="Addition" Value="5"   Path="ClassPlanet"/>
+    </SimulationDescriptor>
+    <SimulationDescriptor Name="PlanetAnomalyRemainsPirateLairMedium" Type="PlanetAnomaly">
+        <Modifier   TargetProperty="PlanetRawDust"      Operation="Addition" Value="3"   Path="ClassPlanet"/>
+        <Modifier   TargetProperty="PlanetRawIndustry"  Operation="Addition" Value="3"   Path="ClassPlanet"/>
+    </SimulationDescriptor>
+    <SimulationDescriptor Name="PlanetAnomalyRemainsPirateLairSmall" Type="PlanetAnomaly">
+        <Modifier   TargetProperty="PlanetRawDust"      Operation="Addition" Value="1"   Path="ClassPlanet"/>
+        <Modifier   TargetProperty="PlanetRawIndustry"  Operation="Addition" Value="1"   Path="ClassPlanet"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="PlanetAnomalyRemainsGroundBattleLarge" Type="PlanetAnomaly">
+        <Modifier TargetProperty="PlanetRawFood"    Value="5" Operation="Subtraction" Path="ClassPlanet"/>
+        <Modifier TargetProperty="PlanetRawScience" Value="5" Operation="Addition" Path="ClassPlanet"/>
+    </SimulationDescriptor>
+    <SimulationDescriptor Name="PlanetAnomalyRemainsGroundBattleMedium" Type="PlanetAnomaly">
+        <Modifier TargetProperty="PlanetRawFood"    Value="3" Operation="Subtraction" Path="ClassPlanet"/>
+        <Modifier TargetProperty="PlanetRawScience" Value="3" Operation="Addition" Path="ClassPlanet"/>
+    </SimulationDescriptor>
+    <SimulationDescriptor Name="PlanetAnomalyRemainsGroundBattleSmall" Type="PlanetAnomaly">
+        <Modifier TargetProperty="PlanetRawFood"    Value="1" Operation="Subtraction" Path="ClassPlanet"/>
+        <Modifier TargetProperty="PlanetRawScience" Value="1" Operation="Addition" Path="ClassPlanet"/>
+    </SimulationDescriptor>
+</Datatable>

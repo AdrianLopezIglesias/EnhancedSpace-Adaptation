@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+
+    <SimulationDescriptor Name="LawEffectP04L00DictatorshipMajorHisshos" Type="LawEffect">
+        <Modifier TargetProperty="PlanetInitialFIDSPenalty"     Operation="Addition"    Value="0.50"    Path="../ClassEmpire/ClassColonizedStarSystem/ClassColonizedPlanet"  TooltipHidden="true"/>
+        <Modifier TargetProperty="BoostToHonorInGroundBattle"                    Operation="Addition"    Value="0.15"      Path="../ClassEmpire"/>
+        <Modifier TargetProperty="BoostToHonorInShipBattle"                      Operation="Addition"    Value="0.15"      Path="../ClassEmpire"/>
+    </SimulationDescriptor>
+</Datatable>

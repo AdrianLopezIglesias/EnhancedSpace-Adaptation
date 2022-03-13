@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+
+    <GuiElement Name="OwnedPlanets">
+        <Title>%ClassPlanetTitle</Title>
+    </GuiElement>
+
+    <GuiElement Name="OwnedMeagerPlanets">
+        <Title>%PlanetGameplayTypeMeagerTitle</Title>
+    </GuiElement>
+  
+    <GuiElement Name="OwnedMildPlanets">
+        <Title>%PlanetGameplayTypeMildTitle</Title>
+    </GuiElement>
+
+    <GuiElement Name="OwnedTeemingPlanets">
+        <Title>%PlanetGameplayTypeTeemingTitle</Title>
+    </GuiElement>
+
+    <GuiElement Name="OwnedHotPlanets">
+        <Title>%PlanetGameplayTypeHotTitle</Title>
+    </GuiElement>
+  
+    <GuiElement Name="OwnedTemperatePlanets">
+        <Title>%PlanetGameplayTypeTemperateTitle</Title>
+    </GuiElement>
+
+    <GuiElement Name="OwnedColdPlanets">
+        <Title>%PlanetGameplayTypeColdTitle</Title>
+    </GuiElement>
+  
+   <GuiElement Name="OwnedLushPlanets">
+        <Title>%PlanetGameplayTypeLushTitle</Title>
+    </GuiElement>
+
+  <GuiElement Name="OwnedWaterPlanets">
+        <Title>%PlanetGameplayTypeWaterTitle</Title>
+    </GuiElement>
+
+  <GuiElement Name="OwnedCraggyPlanets">
+        <Title>%PlanetGameplayTypeCraggyTitle</Title>
+    </GuiElement>
+
+  <GuiElement Name="OwnedDryPlanets">
+        <Title>%PlanetGameplayTypeDryTitle</Title>
+    </GuiElement>
+  
+  <GuiElement Name="OwnedStablePlanets">
+        <Title>%PlanetGameplayTypeStableTitle</Title>
+    </GuiElement>
+  
+  <GuiElement Name="OwnedTreePlanets">
+        <Title>%PlanetGameplayTypeTreeTitle</Title>
+    </GuiElement>
+
+    <GuiElement Name="FAKEFORGUISystems">
+        <Title>%fakeforguiSystems</Title>
+    </GuiElement>
+
+   <GuiElement Name="FAKEFORGUIEmpire">
+      <Title>%fakeforguiEmpire</Title>
+   </GuiElement>
+        
+    <GuiElement Name="ClassMiningProbe">
+        <Title>%ClassMiningProbeTitle</Title>
+    </GuiElement>
+   
+    <ExtendedGuiElement Name="SystemEnrollmentRate">
+        <Title>%GroundBattlePopulationToManPowerPermanentConversionRateTitle</Title>
+    </ExtendedGuiElement>
+
+    <ExtendedGuiElement Name="OverPopulationFoodPenalties">
+    	<Title>%FoodPenaltiesFromOverPopulation</Title>
+    	<SymbolString>[OverPopulation]</SymbolString>
+    </ExtendedGuiElement>
+
+    <GuiElement Name="SystemFIDSIFromEmpireImprovementScience1">
+       <Title>%EmpireImprovementScience1Title</Title>
+    </GuiElement>
+
+   <GuiElement Name="SystemFIDSIFromEmpireImprovementScience3">
+      <Title>%EmpireImprovementScience3Title</Title>
+   </GuiElement>
+
+   <GuiElement Name="SystemFIDSIFromStarSystemImprovementFIDSI2">
+      <Title>%StarSystemImprovementFIDSI2Title</Title>
+   </GuiElement>
+
+   <GuiElement Name="SystemFIDSIFromStarSystemImprovementFIDSI2">
+      <Title>%StarSystemImprovementFIDSI2Title</Title>
+   </GuiElement>
+
+   <GuiElement Name="PlanetFIDSIFromStarSystemImprovementFIDSIUnique">
+      <Title>%StarSystemImprovementUniqueStartingImprovementTitle</Title>
+   </GuiElement>
+
+   <GuiElement Name="PlanetFIDSIFromStarSystemImprovementFIDSI1">
+      <Title>%StarSystemImprovementFIDSI1Title</Title>
+   </GuiElement>
+
+   <GuiElement Name="PlanetFIDSIFromWonder4">
+      <Title>%StarSystemImprovementWonder4Title</Title>
+   </GuiElement>
+
+   <GuiElement Name="PlanetFIDSIFromVictoryWonder1">
+      <Title>%StarSystemImprovementVictoryWonder1Title</Title>
+   </GuiElement>
+
+   <GuiElement Name="PlanetFIDSFromSystemLevel2">
+      <Title>%ColonyLevel2Title</Title>
+   </GuiElement>
+
+   <GuiElement Name="PlanetFIDSFromSystemLevel3">
+      <Title>%ColonyLevel3Title</Title>
+   </GuiElement>
+
+   <GuiElement Name="PlanetFIDSFromSystemLevel4">
+      <Title>%ColonyLevel4Title</Title>
+   </GuiElement>
+   
+   <GuiElement Name="PlanetRawFoodFromLuxury1">
+      <Title>%RecipeImprovementBuiltTitle</Title>
+   </GuiElement>
+
+   <GuiElement Name="PlanetRawIndustryFromLuxury2">
+      <Title>%RecipeImprovementBuiltTitle</Title>
+   </GuiElement>
+
+   <GuiElement Name="PlanetRawDustFromLuxury3">
+      <Title>%RecipeImprovementBuiltTitle</Title>
+   </GuiElement>
+
+   <GuiElement Name="PlanetRawScienceFromLuxury4">
+      <Title>%RecipeImprovementBuiltTitle</Title>
+   </GuiElement>
+
+   <GuiElement Name="PlanetRawPrestigeFromLuxury5">
+      <Title>%RecipeImprovementBuiltTitle</Title>
+   </GuiElement>
+
+</Datatable>

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/1001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/1001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/PopulationCollectionBonusTrait.xsd">
+    
+    
+    
+  <PopulationCollectionBonusTrait Name="PopulationCollectionBonusTraitSowers" Cost="0" ShowInCustom="false">
+    <CollectionBonus Threshold="5">
+      <SimulationDescriptorReference Name="PopulationCollectionBonusSowers1"/>
+      <SimulationDescriptorReference Name="PopulationCollectionBonusLevel1"/>
+    </CollectionBonus>
+
+    <CollectionBonus Threshold="10">
+      <SimulationDescriptorReference Name="PopulationCollectionBonusSowers2"/>
+      <SimulationDescriptorReference Name="PopulationCollectionBonusLevel2"/>
+    </CollectionBonus>
+
+    <CollectionBonus Threshold="20">
+        <SimulationDescriptorReference Name="PopulationCollectionBonusSowers3"/>
+        <SimulationDescriptorReference Name="PopulationCollectionBonusLevel3"/>
+    </CollectionBonus>
+  </PopulationCollectionBonusTrait>
+    
+    
+
+    <PopulationCollectionBonusTrait Name="PopulationCollectionBonusTraitKalTikMas" Cost="0" ShowInCustom="false">
+        <CollectionBonus Threshold="5">
+            <SimulationDescriptorReference Name="PopulationCollectionBonusKalTikMas1"/>
+            <SimulationDescriptorReference Name="PopulationCollectionBonusLevel1"/>
+        </CollectionBonus>
+
+        <CollectionBonus Threshold="10">
+            <SimulationDescriptorReference Name="PopulationCollectionBonusKalTikMas2"/>
+            <SimulationDescriptorReference Name="PopulationCollectionBonusLevel2"/>
+        </CollectionBonus>
+
+        <CollectionBonus Threshold="20">
+            <SimulationDescriptorReference Name="PopulationCollectionBonusKalTikMas3"/>
+            <SimulationDescriptorReference Name="PopulationCollectionBonusLevel3"/>
+        </CollectionBonus>
+    </PopulationCollectionBonusTrait>
+    
+    
+
+    <PopulationCollectionBonusTrait Name="PopulationCollectionBonusTraitSefaloros" Cost="0" ShowInCustom="false">
+        <CollectionBonus Threshold="5">
+            <SimulationDescriptorReference Name="PopulationCollectionBonusSefaloros1"/>
+            <SimulationDescriptorReference Name="PopulationCollectionBonusLevel1"/>
+        </CollectionBonus>
+
+        <CollectionBonus Threshold="10">
+            <SimulationDescriptorReference Name="PopulationCollectionBonusSefaloros2"/>
+            <SimulationDescriptorReference Name="PopulationCollectionBonusLevel2"/>
+        </CollectionBonus>
+
+        <CollectionBonus Threshold="20">
+            <SimulationDescriptorReference Name="PopulationCollectionBonusSefaloros3"/>
+            <SimulationDescriptorReference Name="PopulationCollectionBonusLevel3"/>
+        </CollectionBonus>
+    </PopulationCollectionBonusTrait>
+    
+    
+
+    <PopulationCollectionBonusTrait Name="PopulationCollectionBonusTraitGalvrans" Cost="0" ShowInCustom="false">
+        <CollectionBonus Threshold="5">
+            <SimulationDescriptorReference Name="PopulationCollectionBonusGalvrans1"/>
+            <SimulationDescriptorReference Name="PopulationCollectionBonusLevel1"/>
+        </CollectionBonus>
+
+        <CollectionBonus Threshold="10">
+            <SimulationDescriptorReference Name="PopulationCollectionBonusGalvrans2"/>
+            <SimulationDescriptorReference Name="PopulationCollectionBonusLevel2"/>
+        </CollectionBonus>
+
+        <CollectionBonus Threshold="20">
+            <SimulationDescriptorReference Name="PopulationCollectionBonusGalvrans3"/>
+            <SimulationDescriptorReference Name="PopulationCollectionBonusLevel3"/>
+        </CollectionBonus>
+    </PopulationCollectionBonusTrait>
+    
+</Datatable>

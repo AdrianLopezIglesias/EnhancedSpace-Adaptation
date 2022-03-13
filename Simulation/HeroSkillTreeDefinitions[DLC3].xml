@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/HeroSkillTreeDefinition.xsd">
+
+    <!--UMBRAL CHOIR TREE-->
+    <HeroSkillTreeDefinition Name="HeroSkillTreeUmbralChoir">
+        <Stage Level="0">
+            <Skill>
+                <SkillDefinition Name="HeroSkill02BranchUmbralChoir"/>
+            </Skill>
+            <Skill>
+                <SkillDefinition Name="HeroSkill01BranchUmbralChoir"/>
+            </Skill>
+        </Stage>
+        <Stage Level="3">
+            <Skill>
+                <SkillDefinition Name="HeroSkill04BranchUmbralChoir"/>
+                <RequiredSkill Name="HeroSkill02BranchUmbralChoir"/>
+            </Skill>
+            <Skill>
+                <SkillDefinition Name="HeroSkill03BranchUmbralChoir"/>
+                <RequiredSkill Name="HeroSkill01BranchUmbralChoir"/>
+            </Skill>
+        </Stage>
+        <Stage Level="6">
+            <Skill>
+                <SkillDefinition Name="HeroSkill07BranchUmbralChoir"/>
+                <RequiredSkill Name="HeroSkill04BranchUmbralChoir"/>
+            </Skill>
+            <Skill>
+                <SkillDefinition Name="HeroSkill05BranchUmbralChoir"/>
+                <RequiredSkill Name="HeroSkill03BranchUmbralChoir"/>
+            </Skill>
+        </Stage>
+        <Stage Level="9">
+            <Skill>
+                <SkillDefinition Name="HeroSkill06BranchUmbralChoir"/>
+                <RequiredSkill Name="HeroSkill07BranchUmbralChoir"/>
+                <RequiredSkill Name="HeroSkill05BranchUmbralChoir"/>
+            </Skill>
+        </Stage>
+    </HeroSkillTreeDefinition>
+    
+</Datatable>

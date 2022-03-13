@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/EmpireImprovementDefinition.xsd">
+
+  <EmpireImprovementDefinition Name="EmpireImprovementArmyCap2" Category="CategoryCommandPoints" SubCategory="SubCategoryFleet">
+    <TechnologyPrerequisite>TechnologyArmyCap2</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Prerequisite,Edition,Discard,UnlockAvailability" Inverted="true">../ClassEmpire,AffinityGameplayCravers</PathPrerequisite>
+    <SimulationDescriptorReference Name="EmpireImprovementArmyCap2" />
+  </EmpireImprovementDefinition>
+
+  <EmpireImprovementDefinition Name="EmpireImprovementArmyCap2Cravers" Category="CategoryCommandPoints" SubCategory="SubCategoryFleet">
+    <TechnologyPrerequisite>TechnologyArmyCap2</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Edition,Discard,UnlockAvailability" Inverted="true">../ClassEmpire,!AffinityGameplayCravers</PathPrerequisite>
+    <SimulationDescriptorReference Name="EmpireImprovementArmyCap2Cravers" />
+  </EmpireImprovementDefinition>
+
+  <EmpireImprovementDefinition Name="EmpireImprovementArmyCap3" Category="CategoryCommandPoints" SubCategory="SubCategoryFleet">
+    <TechnologyPrerequisite>TechnologyArmyCap3</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="EmpireImprovementArmyCap3" />
+  </EmpireImprovementDefinition>
+
+  <EmpireImprovementDefinition Name="EmpireImprovementGasColonization" Category="CategoryPlanetColonization" SubCategory="PlanetColonization">
+    <TechnologyPrerequisite>TechnologyColonizationGasPlanetNonVampirilis</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Edition,Discard,UnlockAvailability" Inverted="true">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+    <SimulationDescriptorReference Name="EmpireImprovementGasColonization" />
+  </EmpireImprovementDefinition>
+
+   <EmpireImprovementDefinition Name="EmpireImprovementGasColonizationVampirilis" Category="CategoryPlanetColonization" SubCategory="PlanetColonization">
+      <TechnologyPrerequisite>TechnologyColonizationGasPlanetVampirilis</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Prerequisite,Edition,Discard,UnlockAvailability" Inverted="true">../ClassEmpire,!AffinityGameplayVampirilis</PathPrerequisite>
+      <SimulationDescriptorReference Name="EmpireImprovementGasColonization" />
+   </EmpireImprovementDefinition>
+
+   <EmpireImprovementDefinition Name="EmpireImprovementGasImprovement" Category="CategoryEmpireImprovement" SubCategory="SubCategoryPopulation">
+      <TechnologyPrerequisite>TechnologyImproveGasPlanet</TechnologyPrerequisite>
+      <PathPrerequisite Flags="Prerequisite,Edition,Discard,UnlockAvailability" Inverted="true">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite,Edition,Discard,UnlockAvailability" Inverted="true">../ClassEmpire,AffinityGameplayUmbralChoir</PathPrerequisite>
+      <SimulationDescriptorReference Name="EmpireImprovementGasImprovement" />
+   </EmpireImprovementDefinition>
+   
+  <EmpireImprovementDefinition Name="EmpireImprovementDamageBonusTroop1" Category="CategoryTroop" SubCategory="SubCategoryMilitary">
+      <TechnologyPrerequisite>TechnologyArmyCap2</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="EmpireImprovementDamageBonusTroop1" />
+  </EmpireImprovementDefinition>
+
+  <EmpireImprovementDefinition Name="EmpireImprovementHealthBonusTroop1" Category="CategoryTroop" SubCategory="SubCategoryMilitary">
+      <TechnologyPrerequisite>TechnologyArmyCap3</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="EmpireImprovementHealthBonusTroop1" />
+  </EmpireImprovementDefinition>
+
+   <EmpireImprovementDefinition Name="EmpireImprovementGlobalBonusTroops1" Category="CategoryTroop" SubCategory="SubCategoryMilitary">
+      <TechnologyPrerequisite>TechnologyImprovementGlobalBonusTroops</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="EmpireImprovementGlobalBonusTroops1" />
+   </EmpireImprovementDefinition>
+
+  <EmpireImprovementDefinition Name="EmpireImprovementFreeMovement1" Category="CategoryMovementBonus" SubCategory="SubCategoryExploration">
+    <TechnologyPrerequisite>TechnologyFreeMovement</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Edition,Discard,UnlockAvailability" Inverted="true">../ClassEmpire,AffinityGameplayVaulters</PathPrerequisite>
+    <SimulationDescriptorReference Name="EmpireImprovementFreeMovement1" />
+  </EmpireImprovementDefinition>
+   
+  <EmpireImprovementDefinition Name="EmpireImprovementFreeMovementVaulters" Category="CategoryMovementBonus" SubCategory="SubCategoryExploration">
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyFreeMovement</TechnologyPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Edition,Discard,UnlockAvailability" Inverted="true">../ClassEmpire,!AffinityGameplayVaulters</PathPrerequisite>
+    <SimulationDescriptorReference Name="EmpireImprovementFreeMovementVaulters" />
+  </EmpireImprovementDefinition>
+
+  <!-- Additional Command Points-->
+  <EmpireImprovementDefinition Name="EmpireImprovementArmyCap7" Category="CategoryCommandPoints" SubCategory="SubCategoryFleet">
+    <TechnologyPrerequisite>TechnologyUnknown</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="EmpireImprovementArmyCap7" />
+  </EmpireImprovementDefinition>
+
+  <EmpireImprovementDefinition Name="EmpireImprovementArmyCap8" Category="CategoryCommandPoints" SubCategory="SubCategoryFleet">
+    <TechnologyPrerequisite>TechnologyUnknown</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="EmpireImprovementArmyCap8" />
+  </EmpireImprovementDefinition>
+
+  <EmpireImprovementDefinition Name="EmpireImprovementArmyCap9" Category="CategoryCommandPoints" SubCategory="SubCategoryFleet">
+    <TechnologyPrerequisite>TechnologyUnknown</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="EmpireImprovementArmyCap9" />
+  </EmpireImprovementDefinition>
+
+  <EmpireImprovementDefinition Name="EmpireImprovementArmyCap10" Category="CategoryCommandPoints" SubCategory="SubCategoryFleet">
+    <TechnologyPrerequisite>TechnologyUnknown</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="EmpireImprovementArmyCap10" />
+  </EmpireImprovementDefinition>
+
+  <EmpireImprovementDefinition Name="EmpireImprovementArmyCap11" Category="CategoryCommandPoints" SubCategory="SubCategoryFleet">
+    <TechnologyPrerequisite>TechnologyUnknown</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="EmpireImprovementArmyCap11" />
+  </EmpireImprovementDefinition>
+</Datatable>

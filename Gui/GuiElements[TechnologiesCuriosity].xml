@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+
+    <!-- ############################################# -->
+    <!-- #######        DEFENSE  MODULE        ####### -->
+    <!-- ############################################# -->
+    
+    <!-- Hull Plating  -->
+    <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleDefenseHullPlating3" X="2" Y="0">
+        <Title>%ModuleDefenseHullPlating3Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>
+   
+    <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleDefenseHullPlating2Strategic1" X="3.5" Y="0">
+        <Title>%ModuleDefenseHullPlating2Strategic1Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>
+
+    <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleDefenseHullPlating3Strategic3" X="5" Y="0">
+        <Title>%ModuleDefenseHullPlating3Strategic3Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>
+
+    <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleDefenseHullPlating5" X="6.5" Y="0">
+        <Title>%ModuleDefenseHullPlating5Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>
+    
+    <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleDefenseHullPlating4Strategic5" X="8" Y="0">
+        <Title>%ModuleDefenseHullPlating4Strategic5Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>
+
+    <!-- Shield -->
+
+    <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleDefenseShield3" X="-2" Y="0">
+        <Title>%ModuleDefenseShield3Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>
+   
+    <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleDefenseShield2Strategic2" X="-3.5" Y="0">
+        <Title>%ModuleDefenseShield2Strategic2Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>
+
+    <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleDefenseShield3Strategic4" X="-5" Y="0">
+        <Title>%ModuleDefenseShield3Strategic4Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>
+
+    <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleDefenseShield5" X="-6.5" Y="0">
+        <Title>%ModuleDefenseShield5Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>
+   
+    <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleDefenseShield4Strategic6" X="-8" Y="0">
+        <Title>%ModuleDefenseShield4Strategic6Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>
+
+
+
+    <!-- ############################################# -->
+    <!-- #######        WEAPON   MODULE        ####### -->
+    <!-- ############################################# -->
+
+    <!-- Kinetic -->
+    <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleWeaponKinetic3" X="1.5" Y="0">
+        <Title>%ModuleWeaponKinetic3Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>
+
+    <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleWeaponKinetic2Strategic1" X="2.2" Y="0">
+        <Title>%ModuleWeaponKinetic2Strategic1Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>
+
+    <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleWeaponKinetic3Strategic3" X="2.9" Y="0">
+        <Title>%ModuleWeaponKinetic3Strategic3Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>
+
+    <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleWeaponKinetic5" X="3.6" Y="0">
+        <Title>%ModuleWeaponKinetic5Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>
+
+    <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleWeaponKinetic4Strategic5" X="4.3" Y="0">
+        <Title>%ModuleWeaponKinetic4Strategic5Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>
+
+
+    <!-- Missile -->
+    <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleWeaponMissile2" X="5.7" Y="0">
+        <Title>%ModuleWeaponMissile2Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>
+
+    <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleWeaponMissile2Strategic1" X="6.4" Y="0">
+        <Title>%ModuleWeaponMissile2Strategic1Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>
+
+    <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleWeaponMissile3Strategic3" X="7.1" Y="0">
+        <Title>%ModuleWeaponMissile3Strategic3Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>
+
+    <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleWeaponMissile4" X="7.8" Y="0">
+        <Title>%ModuleWeaponMissile4Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>
+
+    <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleWeaponMissile4Strategic5" X="8.5" Y="0">
+        <Title>%ModuleWeaponMissile4Strategic5Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>
+
+
+    <!-- Laser -->
+    <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleWeaponLaser3" X="-1.5" Y="0">
+        <Title>%ModuleWeaponLaser3Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>
+   
+    <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleWeaponLaser2Strategic2" X="-2.2" Y="0">
+        <Title>%ModuleWeaponLaser2Strategic2Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>
+
+    <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleWeaponLaser3Strategic4" X="-2.9" Y="0">
+        <Title>%ModuleWeaponLaser3Strategic4Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>
+   
+    <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleWeaponLaser5" X="-3.6" Y="0">
+        <Title>%ModuleWeaponLaser5Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>
+
+    <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleWeaponLaser4Strategic6" X="-4.3" Y="0">
+        <Title>%ModuleWeaponLaser4Strategic6Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>
+
+    <!-- Beam -->
+    <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleWeaponBeam2" X="-5.7" Y="0">
+        <Title>%ModuleWeaponBeam2Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>
+
+    <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleWeaponBeam2Strategic2" X="-6.4" Y="0">
+        <Title>%ModuleWeaponBeam2Strategic2Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>
+
+    <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleWeaponBeam3Strategic4" X="-7.1" Y="0">
+        <Title>%ModuleWeaponBeam3Strategic4Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>
+
+    <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleWeaponBeam4" X="-7.8" Y="0">
+        <Title>%ModuleWeaponBeam4Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>
+
+    <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleWeaponBeam4Strategic6" X="-8.5" Y="0">
+        <Title>%ModuleWeaponBeam4Strategic6Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>
+    
+
+    <!-- ############################################# -->
+    <!-- #######        SUPPORT  MODULE        ####### -->
+    <!-- ############################################# -->
+
+    <!-- Colonization 3  -->
+    <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleSupportColonization3Strategic3" X="1.5" Y="0">
+        <Title>%ModuleSupportColonization3Strategic3Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>
+   
+    <!-- Bait 2  -->
+    <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleSupportBait2Strategic6" X="2.5" Y="0">
+        <Title>%ModuleSupportBait2Strategic6Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>
+
+   <!-- Jammer 2 -->
+   <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleSupportJammer2Strategic5" X="3.5" Y="0">
+      <Title>%ModuleSupportJammer2Strategic5Title</Title>
+      <Description>%TechnologyDefinitionCuriosityDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+      </Icons>
+   </TechnologyGuiElement2>
+   
+    <!-- Energy Enhancer -->
+    <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleSupportEnergyEnhancer2Strategic2" X="4.5" Y="0">
+        <Title>%ModuleSupportEnergyEnhancer2Strategic2Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>
+
+    <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleSupportEnergyEnhancer4Strategic6" X="5.5" Y="0">
+        <Title>%ModuleSupportEnergyEnhancer4Strategic6Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>
+
+   <!-- Projectile Enhancer -->
+   <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleSupportProjectileEnhancer2Strategic1" X="6.5" Y="0">
+      <Title>%ModuleSupportProjectileEnhancer2Strategic1Title</Title>
+      <Description>%TechnologyDefinitionCuriosityDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleSupportProjectileEnhancer4Strategic5" X="7.5" Y="0">
+      <Title>%ModuleSupportProjectileEnhancer4Strategic5Title</Title>
+      <Description>%TechnologyDefinitionCuriosityDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <!-- Fleet Engine -->
+    <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleSupportFleetEngine2Strategic4" X="8.5" Y="0">
+        <Title>%ModuleSupportFleetEngine2Strategic4Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>
+
+    <!-- Repair -->
+   <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleSupportRepair2Strategic2" X="9.5" Y="0">
+      <Title>%ModuleSupportRepair2Strategic2Title</Title>
+      <Description>%TechnologyDefinitionCuriosityDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleSupportRepair3Strategic5" X="10.5" Y="0">
+      <Title>%ModuleSupportFlotillaRepair2Strategic5Title</Title>
+      <Description>%TechnologyDefinitionCuriosityDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <!-- Flotilla Shield -->
+   <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleSupportFlotillaShield2Strategic4" X="11.5" Y="0">
+      <Title>%ModuleSupportFlotillaShield1Strategic2Title</Title>
+      <Description>%TechnologyDefinitionCuriosityDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+      </Icons>
+   </TechnologyGuiElement2>
+   
+   <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleSupportRepair2Strategic1" X="12.5" Y="0">
+      <Title>%ModuleSupportShieldReload1Strategic4Title</Title>
+      <Description>%TechnologyDefinitionCuriosityDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+      </Icons>
+   </TechnologyGuiElement2>
+
+   <!-- Shield Reload -->
+    <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleSupportShieldReload2Strategic6" X="13.5" Y="0">
+        <Title>%ModuleSupportShieldReload2Strategic6Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>
+
+   <!-- Anti Carrier 2  -->
+   <!--<TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleSupportAntiCarrier2Strategic6" X="13.5" Y="0">
+      <Title>%ModuleSupportAntiCarrier2Strategic6Title</Title>
+      <Description>%TechnologyDefinitionCuriosityDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+      </Icons>
+   </TechnologyGuiElement2>-->
+   
+   <!-- Analyzer 2  -->
+   <!--<TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleSupportAnalyzer2Strategic2" X="1.5" Y="0">
+        <Title>%ModuleSupportAnalyzer2Strategic2Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>-->
+
+   <!-- Anti Crew 2  -->
+   <!--<TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleSupportAntiCrew2Strategic5" X="3.5" Y="0">
+        <Title>%ModuleSupportAntiCrew2Strategic5Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>-->
+
+   <!-- Crews -->
+   <!--<TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleSupportCrew2" X="6.5" Y="0">
+        <Title>%ModuleSupportCrew2Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>-->
+
+   <!--<TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleSupportCrew2Strategic3" X="7.5" Y="0">
+        <Title>%ModuleSupportCrew2Strategic3Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>-->
+
+   <!--<TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleSupportCrew4Strategic6" X="8.5" Y="0">
+        <Title>%ModuleSupportCrew4Strategic6Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>-->
+
+   <!-- Journalist 1 -->
+   <!--<TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleSupportJournalist1" X="12.5" Y="0">
+        <Title>%ModuleSupportJournalist1Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>-->
+
+   <!-- Recycling -->
+   <!--<TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleSupportRecycling1" X="17.5" Y="0">
+        <Title>%ModuleSupportRecycling1Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>-->
+
+
+   <!-- Siege -->
+    <!--<TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleSupportSiege2Strategic5" X="22.5" Y="0">
+        <Title>%ModuleSupportSiege2Strategic5Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>-->
+
+    <!-- Flak -->
+    <!--<TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleSupportFlakEnhancer1" X="23.5" Y="0">
+        <Title>%ModuleSupportFlakEnhancer1Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>
+
+    <TechnologyGuiElement2 Name="TechnologyDefinitionCuriosityModuleSupportFlakScrambler1" X="24.5" Y="0">
+        <Title>%ModuleSupportFlakScrambler1Title</Title>
+        <Description>%TechnologyDefinitionCuriosityDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="TechnologyCuriosityLarge" />
+        </Icons>
+    </TechnologyGuiElement2>-->
+    
+</Datatable>

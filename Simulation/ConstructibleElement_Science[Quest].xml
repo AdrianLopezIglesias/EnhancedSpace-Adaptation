@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/ScienceConstructibleElement.xsd">
+
+    <!-- ######### SOPHONS ##########-->
+    
+    <!-- Chapter1-Science Sophon Free Move 01-->
+    <TechnologyDefinition Name="TechnologyDefinitionQuestSophons02" TechnologyStage="TechnologyStageDefinitionScienceAndExploration2" Category="CategoryTechnologyQuest" Visibility="Hidden">
+        <Tags>NoOmniscience</Tags>
+        <CustomCost ResourceName="EmpireResearch">0</CustomCost>
+        <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyQuestSophons02"/>
+    </TechnologyDefinition>
+             
+    <!--DEFENSE BUILDING (Chapter 2.3 Military)-->
+    <TechnologyDefinition Name="TechnologyDefinitionQuestSophons04" Category="CategoryTechnologyQuest"  Visibility="Hidden" >
+        <Tags>NoOmniscience</Tags>
+        <CustomCost ResourceName="EmpireResearch">0</CustomCost>
+        <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyQuestSophons04"/>
+    </TechnologyDefinition>
+    
+   <!--PROPAGANDA BUILDING (Chapter 2.3 Diplomacy)-->
+    <TechnologyDefinition Name="TechnologyDefinitionQuestSophons06" Category="CategoryTechnologyQuest" Visibility="Hidden" >
+        <Tags>NoOmniscience</Tags>
+        <CustomCost ResourceName="EmpireResearch">0</CustomCost>
+        <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyQuestSophons06"/>
+    </TechnologyDefinition>
+
+    <!-- Sophon Crappy ENFER-->
+    <TechnologyDefinition Name="TechnologyDefinitionQuestSophons07" Category="CategoryTechnologyQuest" Visibility="Hidden" >
+        <Tags>NoOmniscience</Tags>
+        <CustomCost ResourceName="EmpireResearch">0</CustomCost>
+        <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyQuestSophons07"/>
+    </TechnologyDefinition>  
+ 
+    <!-- ######### CRAVERS ##########-->
+    
+    <!--ANTENA (Chapter 1.1 C1 Industry) No REWARD -->
+    <TechnologyDefinition Name="TechnologyDefinitionQuestCravers03" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment2" Category="CategoryTechnologyQuest" Visibility="Hidden" >
+        <CustomCost ResourceName="EmpireResearch">0</CustomCost>
+        <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyQuestCravers03"/>
+    </TechnologyDefinition>
+
+    <!--Virtual Body (Cravers - Chapter 2.1 Religious C2) NO REWARD -->
+    <TechnologyDefinition Name="TechnologyDefinitionQuestCravers04" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment2" Category="CategoryTechnologyQuest" Visibility="Hidden" >
+        <CustomCost ResourceName="EmpireResearch">0</CustomCost>
+        <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyQuestCravers04"/>
+    </TechnologyDefinition>
+    
+    <!-- Shield Module if Era 2-->
+    <TechnologyDefinition Name="TechnologyDefinitionQuestCravers05" TechnologyStage="TechnologyStageDefinitionMilitary2" Category="CategoryTechnologyQuest" Visibility="Hidden">
+        <CustomCost ResourceName="EmpireResearch">0</CustomCost>
+        <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyQuestCravers05"/>
+    </TechnologyDefinition>         
+    
+    <!-- ######### VENETIANS ##########-->
+
+    <!-- Venetians -->
+    <TechnologyDefinition Name="TechnologyDefinitionQuestVenetians02" Category="CategoryTechnologyQuest" Visibility="Hidden" >
+        <CustomCost ResourceName="EmpireResearch">0</CustomCost>
+        <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyQuestVenetians02"/>
+    </TechnologyDefinition>    
+   
+    <!-- ######### VAMPIRILIS ##########--> 
+    
+     <!-- Chapter2: Exotic Ration V.2: increase power of immediat enrollment -->
+    <TechnologyDefinition Name="TechnologyDefinitionQuestVampirilis04" TechnologyStage="TechnologyStageDefinitionMilitary3" Category="CategoryTechnologyQuest" Visibility="Hidden">
+        <CustomCost ResourceName="EmpireResearch">0</CustomCost>
+        <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyQuestVampirilis04"/>
+    </TechnologyDefinition>
+
+    <TechnologyDefinition Name="TechnologyDefinitionQuestVampirilis08" TechnologyStage="TechnologyStageDefinitionMilitary1" Category="CategoryTechnologyQuest" Visibility="Hidden">
+        <CustomCost ResourceName="EmpireResearch">0</CustomCost>
+        <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyQuestVampirilis08"/>
+    </TechnologyDefinition>
+    
+    <!-- ######### UNITED EMPIRE ##########-->
+  
+    <!-- UNITED EMPIRE Weapons -->
+    <TechnologyDefinition Name="TechnologyDefinitionQuestUE03" TechnologyStage="TechnologyStageDefinitionMilitary3" Category="CategoryTechnologyQuest" Visibility="Hidden">
+        <CustomCost ResourceName="EmpireResearch">0</CustomCost>
+        <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyQuestUE03"/>
+        <SimulationDescriptorReference Name="TechnologyCounter"/>
+    </TechnologyDefinition>
+
+    <!-- UNITED EMPIRE: plus 20 Industry per Systems -->
+    <TechnologyDefinition Name="TechnologyDefinitionQuestUE04" TechnologyStage="TechnologyStageDefinitionEconomyAndTrade3" Category="CategoryTechnologyQuest" ScoreProvider="TechnologyUnlocked" Visibility="Hidden" >
+        <CustomCost ResourceName="EmpireResearch">0</CustomCost>
+        <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyQuestUE04"/>
+    </TechnologyDefinition>
+
+    <!-- UNITED EMPIRE -->
+    <TechnologyDefinition Name="TechnologyDefinitionQuestUE05" TechnologyStage="TechnologyStageDefinitionScienceAndExploration3" Category="CategoryTechnologyQuest" ScoreProvider="TechnologyUnlocked" Visibility="Hidden" >
+        <CustomCost ResourceName="EmpireResearch">0</CustomCost>
+        <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyQuestUE05"/>
+    </TechnologyDefinition>
+        
+    <!-- UNITED EMPIRE Support -->
+    <TechnologyDefinition Name="TechnologyDefinitionQuestUE06" Category="CategoryTechnologyQuest" Visibility="Hidden">
+        <CustomCost ResourceName="EmpireResearch">0</CustomCost>
+        <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyQuestUE06"/>     
+    </TechnologyDefinition>
+
+    <TechnologyDefinition Name="TechnologyDefinitionQuestUnitedEmpire07" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment5" Category="CategoryTechnologyQuest" Visibility="Hidden">
+        <CustomCost ResourceName="EmpireResearch">0</CustomCost>
+        <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyQuestUnitedEmpire07"/>
+    </TechnologyDefinition>
+  
+    <TechnologyDefinition Name="TechnologyDefinitionQuestUnitedEmpire10" TechnologyStage="TechnologyStageDefinitionMilitary1" Category="CategoryTechnologyMilitary" Visibility="VisibleWhenUnlocked">
+        <CustomCost ResourceName="EmpireResearch">0</CustomCost>
+        <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyQuestUnitedEmpire10"/>
+        <SimulationDescriptorReference Name="TechnologyPlayDeckQuest01"/>
+    </TechnologyDefinition>	
+
+    <!-- ############################-->
+    <!-- ## POPULATION QUEST LINE ###-->
+    <!-- ############################-->
+
+    <!-- Approval Wonder -->
+    <TechnologyDefinition Name="TechnologyDefinitionQuestPopulation01" Category="CategoryTechnologyQuest" Visibility="Hidden">
+        <CustomCost ResourceName="EmpireResearch">0</CustomCost>
+        <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyQuestPopulation01"/>  
+    </TechnologyDefinition>
+
+    <!-- Sower Wonder -->
+    <TechnologyDefinition Name="TechnologyDefinitionQuestPopulation02" Category="CategoryTechnologyQuest" Visibility="Hidden" >
+        <CustomCost ResourceName="EmpireResearch">0</CustomCost>
+        <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyQuestPopulation02"/>
+    </TechnologyDefinition>
+
+    <!-- Science Wonder -->
+    <TechnologyDefinition Name="TechnologyDefinitionQuestPopulation03" Category="CategoryTechnologyQuest" Visibility="Hidden">
+        <CustomCost ResourceName="EmpireResearch">0</CustomCost>
+        <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyQuestPopulation03"/>
+        <SimulationDescriptorReference Name="TechnologyCounter"/>
+    </TechnologyDefinition>
+
+    <!-- Hoce Memorial -->
+    <TechnologyDefinition Name="TechnologyDefinitionQuestExploration01" Category="CategoryTechnologyQuest" Visibility="Hidden" >
+        <CustomCost ResourceName="EmpireResearch">0</CustomCost>
+        <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyQuestExploration01"/>
+    </TechnologyDefinition>
+ 
+    <!-- #### QUEST MINOR FACTION ####-->
+    
+    <TechnologyDefinition Name="TechnologyDefinitionQuestMF01" Category="CategoryTechnologyQuest" Visibility="Hidden">       
+        <CustomCost ResourceName="EmpireResearch">0</CustomCost>
+        <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyQuestMF01"/>
+    </TechnologyDefinition>
+
+
+    <!--########################-->
+    <!--## Global Quest # 5 ####-->
+    <!--########################-->
+
+    <!-- Hidden Technology Science -->
+    <TechnologyDefinition Name="TechnologyDefinitionQuestGlobalCompet05" Category="CategoryTechnologyQuest" Visibility="Hidden">
+        <CustomCost ResourceName="EmpireResearch">0</CustomCost>
+        <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyQuestGlobalCompet05"/>
+        <SimulationDescriptorReference Name="TechnologyCounter"/>
+    </TechnologyDefinition>
+
+    <!--UC QUESTLINE-->
+    <TechnologyDefinition Name="TechnologyDefinitionQuestUC01" TechnologyStage="TechnologyStageDefinitionEmpireDevelopment1" Visibility="Hidden">
+       <CustomCost ResourceName="EmpireResearch">0</CustomCost>
+       <SimulationDescriptorReference Name="TechnologyQuestUC01"/>
+    </TechnologyDefinition>
+
+</Datatable>

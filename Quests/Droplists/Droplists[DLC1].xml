@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../../Schemas/Droplist.xsd">
+
+    <!--########################################-->
+    <!--#### REGULAR DEEDS RESOURCE REWARDS ####-->
+    <!--########################################-->
+
+    <!--#### Empire Development ####-->
+
+
+  <Droplist Name="DroplistRegularDeedsStage2Quadrant4Bis1" Selector="Weighted" RetryOnFailure="true">
+    <Resource Name="EmpireEmpirePoint" Quantity="500" Weight="2"/>
+    <Resource Name="Strategic1"  Quantity="60" Weight="2"/>
+    <Resource Name="Strategic3"  Quantity="20" Weight="1"/>
+  </Droplist>
+
+  <Droplist Name="DroplistRegularDeedsStage2Quadrant4Bis2" Selector="Weighted" RetryOnFailure="true">
+    <Resource Name="EmpireEmpirePoint" Quantity="750" Weight="2"/>
+    <Resource Name="Strategic2"  Quantity="60" Weight="2"/>
+    <Resource Name="Strategic4"  Quantity="20" Weight="1"/>
+  </Droplist>
+
+
+  <Droplist Name="DroplistRegularDeedsStage3Quadrant4Bis" Selector="Weighted" RetryOnFailure="true">
+    <!---50% retrofit cost reduction-->
+    <Unlock Name="EmpireImprovementDeeds03" SimulationTag="CompletedQuestEmpire_Stage5B" Weight="3"/>
+  </Droplist> 
+
+  <Droplist Name="DroplistRegularDeedsStage4Quadrant4Bis" Selector="Weighted" RetryOnFailure="true">
+    <!-- 50% Diplomatic pressure -->
+    <Unlock Name="EmpireImprovementDeeds01" SimulationTag="CompletedQuestEmpire_Stage5A" Weight="3"/>
+  </Droplist>
+
+  <Droplist Name="DroplistRegularDeedsStage5Quadrant4Bis" Selector="Weighted" RetryOnFailure="true">
+    <!---50% Diplomatic cost reduction-->
+    <Unlock Name="EmpireImprovementDeeds02" SimulationTag="CompletedQuestEmpire_Stage4A" Weight="3"/>
+    <!---50% Law Upkeep-->
+    <Unlock Name="EmpireImprovementDeeds04" SimulationTag="CompletedQuestEmpire_Stage4B" Weight="3"/>
+  </Droplist>
+  
+  <!-- #### Science & Explo Quadrant #####-->
+  
+  <Droplist Name="DroplistRegularDeedsStage1Quadrant3Bis" Selector="Weighted" RetryOnFailure="true">       
+      <Resource Name="EmpireResearch"             Quantity="200"    Weight="2"/>
+      <Resource Name="EmpireResearch"             Quantity="350"   Weight="2"/>
+      <Resource Name="EmpireResearch"             Quantity="550"   Weight="1"/>
+  </Droplist>
+
+  <Droplist Name="DroplistRegularDeedsStage2Quadrant3Bis" Selector="Weighted" RetryOnFailure="true">
+      <Unlock Name="EmpireImprovementDeeds05" SimulationTag="CompletedQuestScience_Stage5A" Weight="1"/>
+      <Unlock Name="EmpireImprovementDeeds06" SimulationTag="CompletedQuestScience_Stage5B" Weight="1"/>
+  </Droplist>
+
+  <Droplist Name="DroplistRegularDeedsStage4Quadrant3Bis" Selector="Weighted" RetryOnFailure="true">
+    <Unlock Name="EmpireImprovementDeeds05" SimulationTag="CompletedQuestScience_Stage5A" Weight="1"/>
+    <Unlock Name="EmpireImprovementDeeds06" SimulationTag="CompletedQuestScience_Stage5B" Weight="1"/>
+  </Droplist>
+
+  <Droplist Name="DroplistRegularDeedsStage5Quadrant3Bis" Selector="Weighted" RetryOnFailure="true">
+    <Unlock Name="EmpireImprovementDeeds07" SimulationTag="CompletedQuestScience_Stage5C" Weight="3"/>
+  </Droplist>
+
+  
+  <!-- #### Economy & Trade Quadrant ####-->
+  
+  
+  <Droplist Name="DroplistRegularDeedsStage1Quadrant2Bis1" Selector="Weighted" RetryOnFailure="true">
+    <Resource Name="EmpireMoney" Quantity="500" Weight="2"/>
+    <Resource Name="Strategic1"  Quantity="60" Weight="2"/>
+    <Resource Name="Strategic3"  Quantity="20" Weight="1"/>
+  </Droplist>
+
+  <Droplist Name="DroplistRegularDeedsStage1Quadrant2Bis2" Selector="Weighted" RetryOnFailure="true">
+    <Resource Name="EmpireMoney" Quantity="750" Weight="2"/>
+    <Resource Name="Strategic2"  Quantity="60" Weight="2"/>
+    <Resource Name="Strategic4"  Quantity="20" Weight="1"/>
+  </Droplist>
+
+
+  <Droplist Name="DroplistRegularDeedsStage2Quadrant2Bis" Selector="Weighted">
+    <Unlock Name="StarSystemImprovementDeeds04" SimulationTag="CompletedQuestEconomy_Stage3A" Weight="3"/>
+  </Droplist>
+
+  <Droplist Name="DroplistRegularDeedsStage3Quadrant2Bis" Selector="Weighted">
+    <Unlock Name="StarSystemImprovementDeeds03" SimulationTag="CompletedQuestEconomy_Stage3B" Weight="3"/>
+  </Droplist>
+
+  <Droplist Name="DroplistRegularDeedsStage5Quadrant2Bis" Selector="Weighted">
+    <Unlock Name="StarSystemImprovementDeeds02" SimulationTag="CompletedQuestEconomy_Stage3C" Weight="3"/>
+  </Droplist>
+  
+  <!-- #### Military Quadrant ####-->
+
+  <Droplist Name="DroplistRegularDeedsStage1Quadrant1Bis" Selector="Weighted">
+    <Unlock Name="EmpireImprovementDeeds08"           SimulationTag="CompletedQuestMilitary_Stage4C" Weight="3"/>
+    <!--<Unlock Name="StarSystemImprovementDeeds01" SimulationTag="CompletedQuestMilitary_Stage3B" Weight="3"/>-->
+  </Droplist>
+
+  <Droplist Name="DroplistRegularDeedsStage2Quadrant1Bis" Selector="Weighted">
+     <Unlock Name="ModuleSupportDeeds01"         SimulationTag="CompletedQuestMilitary_Stage3A" Weight="3"/>
+  </Droplist>
+
+  <Droplist Name="DroplistRegularDeedsStage3Quadrant1Bis" Selector="Weighted">
+    <Unlock Name="ModuleDefenseShieldDeeds01"         SimulationTag="CompletedQuestMilitary_Stage4B" Weight="3"/>
+  </Droplist>
+
+  <Droplist Name="DroplistRegularDeedsStage5Quadrant1Bis" Selector="Weighted" Fallback="DroplistRegularDeedsStage4Quadrant2">
+    <Unlock Name="ModuleWeaponBeamDeeds01"            SimulationTag="CompletedQuestMilitary_Stage4A" Weight="3"/>
+  </Droplist>
+
+</Datatable>

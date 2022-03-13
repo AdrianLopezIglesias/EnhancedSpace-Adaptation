@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+
+	<!-- INGREDIENTS -->
+    <!-- Tiers 1 -->
+    <SimulationDescriptor Name="RecipeIngredientEffect01" Type="RecipeIngredient">
+        <Modifier TargetProperty="RecipeIngredientEffectTier1Luxury1" Operation="Addition" Value="1" Path="./ClassColonizedStarSystem" Priority="-1"/>
+        <Modifier TargetProperty="GroundBattleDefenderTroopsMaxHealthMultiplier" Operation="Percent" Value="0.2" Path="./ClassColonizedStarSystem" Priority="-1"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="RecipeIngredientEffect02" Type="RecipeIngredient">
+        <Modifier TargetProperty="RecipeIngredientEffectTier1Luxury2" Operation="Addition" Value="1" Path="./ClassColonizedStarSystem" Priority="-1"/>
+        <Modifier TargetProperty="HealthRegenerationRatio"                  Operation="Addition"    Value="0.03"       Path="./ClassColonizedStarSystem/ClassGarrison/ClassShip" TooltipHidden="true" />
+        <Modifier TargetProperty="DockedFleetsHealthRegenerationRatio"      Operation="Addition"    Value="0.03"       Path="./ClassColonizedStarSystem" TooltipOverride="%Recipe02" />
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="RecipeIngredientEffect03" Type="RecipeIngredient">
+        <Modifier TargetProperty="RecipeIngredientEffectTier1Luxury3" Operation="Addition" Value="1" Path="./ClassColonizedStarSystem" Priority="-1"/>
+        <Modifier TargetProperty="SystemMoneyUpkeep"                  Operation="Percent"  Value="-0.05" Path="./ClassColonizedStarSystem" Priority="-1"/>
+    </SimulationDescriptor>
+    
+    <SimulationDescriptor Name="RecipeIngredientEffect04" Type="RecipeIngredient">
+        <Modifier TargetProperty="RecipeIngredientEffectTier1Luxury4" Operation="Addition" Value="1" Path="./ClassColonizedStarSystem" Priority="-1"/>
+
+        <!--<Modifier TargetProperty="RecipeIngredientEffectTier2Luxury12Bis" Operation="Percent" Value="0.1" Path="FAKEFORGUI/ClassColonizedStarSystem" Priority="-1"/>
+        <Modifier TargetProperty="RecipeIngredientEffectTier2Luxury12Bis" Operation="Addition" Value="0.1" Path="./ClassColonizedStarSystem" Priority="-1" TooltipHidden="true"/>-->
+        <Modifier TargetProperty="VisionRange"                        Operation="Addition" Value="2" Path="./ClassColonizedStarSystem" Priority="-1"/>   
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="RecipeIngredientEffect05" Type="RecipeIngredient">
+        <Modifier TargetProperty="RecipeIngredientEffectTier1Luxury5" Operation="Addition" Value="1" Path="./ClassColonizedStarSystem" Priority="-1"/>
+        <Modifier TargetProperty="InfluenceConversionMultiplier"      Operation="Addition" Value="0.33" Path="./ClassColonizedStarSystem" Priority="-1"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="RecipeIngredientEffect06" Type="RecipeIngredient">
+        <BinaryModifier TargetProperty="RecipeIngredientEffectTier1Luxury6" Operation="Addition" Left="1" BinaryOperation="Multiplication" Right="$(Population)" Path="./ClassColonizedStarSystem" SearchValueFromPath="true" Priority="-1"/>
+        <BinaryModifier TargetProperty="RecipeIngredientEffectTier1Luxury6FIDSHisshos" Operation="Addition"    Left="0.5" BinaryOperation="Multiplication" Right="$(Population)" Path="./ClassColonizedStarSystem,ObedienceStatusStarSystem3" SearchValueFromPath="true" Priority="-1"/>
+        <BinaryModifier TargetProperty="RecipeIngredientEffectTier1Luxury6FIDSHisshos" Operation="Addition"    Left="1" BinaryOperation="Multiplication" Right="$(Population)" Path="./ClassColonizedStarSystem,ObedienceStatusStarSystem4" SearchValueFromPath="true" Priority="-1"/>
+
+    </SimulationDescriptor>
+        
+    <SimulationDescriptor Name="RecipeIngredientEffect07" Type="RecipeIngredient">
+      <BinaryModifier TargetProperty="RecipeIngredientEffectATier1Luxury7" Operation="Addition" Left="150" BinaryOperation="Multiplication" Right="$(SystemLevel)" Path="./ClassColonizedStarSystem" SearchValueFromPath="true" Priority="-1"/>
+      <Modifier       TargetProperty="RecipeIngredientEffectBTier1Luxury7" Operation="Addition" Value="15"   Path="./ClassColonizedStarSystem" Priority="-1"/>
+      <Modifier       TargetProperty="RecipeIngredientEffectCTier1Luxury7" Operation="Addition" Value="100"  Path="./ClassColonizedStarSystem" Priority="-1"/>
+      <!--<Modifier       TargetProperty="RecipeIngredientEffectDTier1Luxury7" Operation="Addition" Value="75"  Path="./ClassColonizedStarSystem" Priority="-1" TooltipHidden="true"/>-->
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="RecipeIngredientEffect08" Type="RecipeIngredient">
+        <Modifier TargetProperty="RecipeIngredientEffectATier1Luxury8" Operation="Addition" Value="0.15" Path="./ClassColonizedStarSystem" Priority="-1"/>
+        <Modifier TargetProperty="RecipeIngredientEffectBTier1Luxury8" Operation="Addition" Value="0.15" Path="./ClassColonizedStarSystem" Priority="-1"/>
+    </SimulationDescriptor>
+
+    <!-- Tiers 2 -->
+    <SimulationDescriptor Name="RecipeIngredientEffect09" Type="RecipeIngredient">
+        <Modifier TargetProperty="RecipeIngredientEffectTier2Luxury9" Operation="Addition" Value="75" Path="./ClassColonizedStarSystem" Priority="-1"/>
+        <Modifier TargetProperty="GroundBattleDefenderTroopsMaxHealthMultiplier" Operation="Percent" Value="0.4" Path="./ClassColonizedStarSystem" Priority="-1"/>
+    </SimulationDescriptor>
+    
+    <SimulationDescriptor Name="RecipeIngredientEffect10" Type="RecipeIngredient">
+        <Modifier TargetProperty="RecipeIngredientEffectTier2Luxury10" Operation="Addition" Value="75" Path="./ClassColonizedStarSystem" Priority="-1"/>
+        <Modifier TargetProperty="HealthRegenerationRatio"             Operation="Addition"    Value="0.06"       Path="./ClassColonizedStarSystem/ClassGarrison/ClassShip" TooltipHidden="true" />
+        <Modifier TargetProperty="DockedFleetsHealthRegenerationRatio" Operation="Addition"    Value="0.06"       Path="./ClassColonizedStarSystem" TooltipOverride="%Recipe10"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="RecipeIngredientEffect11" Type="RecipeIngredient">
+        <Modifier TargetProperty="RecipeIngredientEffectTier2Luxury11" Operation="Addition" Value="75" Path="./ClassColonizedStarSystem" Priority="-1"/>
+        <Modifier TargetProperty="SystemMoneyUpkeep"                   Operation="Percent"  Value="-0.10" Path="./ClassColonizedStarSystem" Priority="-1"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="RecipeIngredientEffect12" Type="RecipeIngredient">
+        <Modifier TargetProperty="RecipeIngredientEffectTier2Luxury12" Operation="Addition" Value="75" Path="./ClassColonizedStarSystem" Priority="-1"/>
+        <Modifier TargetProperty="VisionRange"                         Operation="Addition" Value="4" Path="./ClassColonizedStarSystem" Priority="-1"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="RecipeIngredientEffect13" Type="RecipeIngredient">
+        <Modifier TargetProperty="RecipeIngredientEffectTier2Luxury13" Operation="Addition" Value="75" Path="./ClassColonizedStarSystem" Priority="-1"/>
+        <Modifier TargetProperty="InfluenceConversionMultiplier"       Operation="Addition" Value="0.66" Path="./ClassColonizedStarSystem" Priority="-1"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="RecipeIngredientEffect14" Type="RecipeIngredient">
+        <Modifier TargetProperty="OverPopulationPenaltiesReduction"   Operation="Addition" Value="-0.50" Path="./ClassColonizedStarSystem"/>
+        <Modifier TargetProperty="RecipeIngredientEffectTier2Luxury14FIDSHisshos"     Operation="Addition" Value="15" Path="./ClassColonizedStarSystem,ObedienceStatusStarSystem3" Priority="-1"/>
+        <Modifier TargetProperty="RecipeIngredientEffectTier2Luxury14FIDSHisshos"     Operation="Addition" Value="20" Path="./ClassColonizedStarSystem,ObedienceStatusStarSystem4" Priority="-1"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="RecipeIngredientEffect15" Type="RecipeIngredient">
+        <Modifier TargetProperty="RecipeIngredientEffectTier2Luxury15" Operation="Addition" Value="0.5"     Path="./ClassColonizedStarSystem" Priority="-2" TooltipHidden="true"/>
+        <Modifier TargetProperty="RecipeIngredientEffectTier2Luxury15" Operation="Multiplication" Value="2" Path="./ClassColonizedStarSystem" Priority="-1"/>
+    </SimulationDescriptor>
+    
+    <SimulationDescriptor Name="RecipeIngredientEffect16" Type="RecipeIngredient">
+        <Modifier TargetProperty="RecipeIngredientEffectTier2Luxury16" Operation="Addition" Value="$(TradingRouteSystemBaseIncome)" Path="./ClassColonizedStarSystem" SearchValueFromPath="true" TooltipHidden="true" Priority="-1"/>
+    </SimulationDescriptor>
+
+    <!-- INGREDIENT TIERS 3 -->    
+    <SimulationDescriptor Name="RecipeIngredientEffect17" Type="RecipeIngredient">
+        <BinaryModifier TargetProperty="RecipeIngredientEffectTier3Luxury17" Operation="Addition" Left="0.03" BinaryOperation="Multiplication" Right="$(SystemLevel)" Path="./ClassColonizedStarSystem" SearchValueFromPath="true" Priority="-1"/>
+        <Modifier TargetProperty="GroundBattleDefenderTroopsMaxHealthMultiplier" Operation="Percent" Value="0.6" Path="./ClassColonizedStarSystem" Priority="-1"/>
+    </SimulationDescriptor>
+    
+    <SimulationDescriptor Name="RecipeIngredientEffect18" Type="RecipeIngredient">
+        <BinaryModifier TargetProperty="RecipeIngredientEffectTier3Luxury18" Operation="Addition" Left="0.03" BinaryOperation="Multiplication" Right="$(SystemLevel)" Path="./ClassColonizedStarSystem" SearchValueFromPath="true" Priority="-1"/>
+        <Modifier TargetProperty="HealthRegenerationRatio"                  Operation="Addition"    Value="0.09"       Path="./ClassColonizedStarSystem/ClassGarrison/ClassShip" TooltipHidden="true" />
+        <Modifier TargetProperty="DockedFleetsHealthRegenerationRatio"      Operation="Addition"    Value="0.09"       Path="./ClassColonizedStarSystem" TooltipOverride="%Recipe18" />
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="RecipeIngredientEffect19" Type="RecipeIngredient">
+        <BinaryModifier TargetProperty="RecipeIngredientEffectTier3Luxury19" Operation="Addition" Left="0.03" BinaryOperation="Multiplication" Right="$(SystemLevel)" Path="./ClassColonizedStarSystem" SearchValueFromPath="true" Priority="-1"/>
+        <Modifier TargetProperty="SystemMoneyUpkeep"                         Operation="Percent"  Value="-0.15" Path="./ClassColonizedStarSystem" Priority="-1"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="RecipeIngredientEffect20" Type="RecipeIngredient">
+        <BinaryModifier TargetProperty="RecipeIngredientEffectTier3Luxury20" Operation="Addition" Left="0.03" BinaryOperation="Multiplication" Right="$(SystemLevel)" Path="./ClassColonizedStarSystem" SearchValueFromPath="true" Priority="-1"/>
+        <Modifier TargetProperty="VisionRange"                               Operation="Addition" Value="6" Path="./ClassColonizedStarSystem" Priority="-1"/>
+        
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="RecipeIngredientEffect21" Type="RecipeIngredient">
+        <BinaryModifier TargetProperty="RecipeIngredientEffectTier3Luxury21" Operation="Addition" Left="0.03" BinaryOperation="Multiplication" Right="$(SystemLevel)" Path="./ClassColonizedStarSystem" SearchValueFromPath="true" Priority="-1"/>
+        <Modifier TargetProperty="InfluenceConversionMultiplier"             Operation="Addition" Value="1" Path="./ClassColonizedStarSystem" Priority="-1"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="RecipeIngredientEffect22" Type="RecipeIngredient">
+        <Modifier TargetProperty="RecipeIngredientEffectTier3Luxury22" Operation="Addition" Value="-0.33" Path="./ClassColonizedStarSystem" Priority="-1"/>
+        <BinaryModifier TargetProperty="RecipeIngredientEffectTier3Luxury22FIDSHisshos" Operation="Addition" Left="0.2" BinaryOperation="Multiplication" Right="$(SystemLevel)" Path="./ClassColonizedStarSystem,ObedienceStatusStarSystem3" SearchValueFromPath="true" Priority="-1"/>
+        <BinaryModifier TargetProperty="RecipeIngredientEffectTier3Luxury22FIDSHisshos" Operation="Addition" Left="0.3" BinaryOperation="Multiplication" Right="$(SystemLevel)" Path="./ClassColonizedStarSystem,ObedienceStatusStarSystem4" SearchValueFromPath="true" Priority="-1"/>
+    </SimulationDescriptor>    
+  
+    <SimulationDescriptor Name="RecipeIngredientEffect23" Type="RecipeIngredient">
+        <Modifier TargetProperty="RecipeIngredientEffectATier3Luxury23" Operation="Addition" Value="1" Path="./ClassColonizedStarSystem" Priority="-1"/>
+        <BinaryModifier TargetProperty="RecipeIngredientEffectBTier3Luxury23" Operation="Addition" Left="0.05" BinaryOperation="Multiplication" Right="$(SystemLevel)" Path="./ClassColonizedStarSystem" SearchValueFromPath="true" Priority="-1"/>
+    </SimulationDescriptor>   
+
+    <SimulationDescriptor Name="RecipeIngredientEffect24" Type="RecipeIngredient">
+        <Modifier TargetProperty="RecipeIngredientEffectTier3Luxury24" Operation="Addition" Value="1" Path="./ClassColonizedStarSystem" Priority="-1"/>
+    </SimulationDescriptor>
+    
+    <!-- INGREDIENT STRATEGIC VAULTERS-->
+
+    <SimulationDescriptor Name="RecipeIngredientEffectStrategic01" Type="RecipeIngredient">
+        <Modifier TargetProperty="RecipeIngredientEffectATier1Strategic1" Operation="Addition" Value="1" Path="./ClassColonizedStarSystem" Priority="-1"/>
+        <Modifier TargetProperty="RecipeIngredientEffectBTier1Strategic1" Operation="Addition" Value="1" Path="./ClassColonizedStarSystem" Priority="-1"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="RecipeIngredientEffectStrategic02" Type="RecipeIngredient">
+        <Modifier TargetProperty="RecipeIngredientEffectATier1Strategic2" Operation="Addition" Value="1" Path="./ClassColonizedStarSystem" Priority="-1"/>
+        <Modifier TargetProperty="RecipeIngredientEffectBTier1Strategic2" Operation="Addition" Value="1" Path="./ClassColonizedStarSystem" Priority="-1"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="RecipeIngredientEffectStrategic03" Type="RecipeIngredient">
+        <Modifier TargetProperty="RecipeIngredientEffectATier2Strategic3" Operation="Addition" Value="30" Path="./ClassColonizedStarSystem" Priority="-1"/>
+        <Modifier TargetProperty="RecipeIngredientEffectBTier2Strategic3" Operation="Addition" Value="30" Path="./ClassColonizedStarSystem" Priority="-1"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="RecipeIngredientEffectStrategic04" Type="RecipeIngredient">
+        <Modifier TargetProperty="RecipeIngredientEffectATier2Strategic4" Operation="Addition" Value="30" Path="./ClassColonizedStarSystem" Priority="-1"/>
+        <Modifier TargetProperty="RecipeIngredientEffectBTier2Strategic4" Operation="Addition" Value="30" Path="./ClassColonizedStarSystem" Priority="-1"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="RecipeIngredientEffectStrategic05" Type="RecipeIngredient">
+        <BinaryModifier TargetProperty="RecipeIngredientEffectATier3Strategic5" Operation="Addition" Left="0.005" BinaryOperation="Multiplication" Right="$(SystemLevel)" Path="./ClassColonizedStarSystem" SearchValueFromPath="true" Priority="-1"/>
+        <BinaryModifier TargetProperty="RecipeIngredientEffectBTier3Strategic5" Operation="Addition" Left="0.005" BinaryOperation="Multiplication" Right="$(SystemLevel)" Path="./ClassColonizedStarSystem" SearchValueFromPath="true" Priority="-1"/>
+        <BinaryModifier TargetProperty="RecipeIngredientEffectCTier3Strategic5" Operation="Addition" Left="0.005" BinaryOperation="Multiplication" Right="$(SystemLevel)" Path="./ClassColonizedStarSystem" SearchValueFromPath="true" Priority="-1"/>
+        <BinaryModifier TargetProperty="RecipeIngredientEffectDTier3Strategic5" Operation="Addition" Left="0.005" BinaryOperation="Multiplication" Right="$(SystemLevel)" Path="./ClassColonizedStarSystem" SearchValueFromPath="true" Priority="-1"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="RecipeIngredientEffectStrategic06" Type="RecipeIngredient" >        
+        <Modifier TargetProperty="RecipeIngredientEffectGUITier3Strategic6"  Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem"/>
+        <Modifier TargetProperty="RecipeIngredientEffectTier1Luxury1"    Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
+        <Modifier TargetProperty="RecipeIngredientEffectTier1Luxury2"    Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
+        <Modifier TargetProperty="RecipeIngredientEffectTier1Luxury3"    Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
+        <Modifier TargetProperty="RecipeIngredientEffectTier1Luxury4"    Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
+        <Modifier TargetProperty="RecipeIngredientEffectTier1Luxury5"    Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
+        <Modifier TargetProperty="RecipeIngredientEffectTier1Luxury6"    Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
+        <Modifier TargetProperty="RecipeIngredientEffectTier1Luxury6FIDSHisshos"        Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
+        <!--<Modifier TargetProperty="RecipeIngredientEffectATier1Luxury7"    Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>-->
+        <!--<Modifier TargetProperty="RecipeIngredientEffectBTier1Luxury7"    Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>-->
+        <!--<Modifier TargetProperty="RecipeIngredientEffectATier1Luxury8"   Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>-->
+        <!--<Modifier TargetProperty="RecipeIngredientEffectBTier1Luxury8"   Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>-->
+        <Modifier TargetProperty="RecipeIngredientEffectTier2Luxury9"    Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
+        <Modifier TargetProperty="RecipeIngredientEffectTier2Luxury10"    Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
+        <Modifier TargetProperty="RecipeIngredientEffectTier2Luxury11"    Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
+        <Modifier TargetProperty="RecipeIngredientEffectTier2Luxury12"    Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
+        <Modifier TargetProperty="RecipeIngredientEffectTier2Luxury13"    Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
+        <Modifier TargetProperty="RecipeIngredientEffectTier2Luxury14"    Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
+        <Modifier TargetProperty="RecipeIngredientEffectTier2Luxury14FIDSHisshos"    Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
+        <!--<Modifier TargetProperty="RecipeIngredientEffectTier2Luxury15"    Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>-->
+        <!--<Modifier TargetProperty="RecipeIngredientEffectTier2Luxury16"    Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>-->
+        <Modifier TargetProperty="RecipeIngredientEffectTier3Luxury17"    Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
+        <Modifier TargetProperty="RecipeIngredientEffectTier3Luxury18"    Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
+        <Modifier TargetProperty="RecipeIngredientEffectTier3Luxury19"    Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
+        <Modifier TargetProperty="RecipeIngredientEffectTier3Luxury20"    Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
+        <Modifier TargetProperty="RecipeIngredientEffectTier3Luxury21"    Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
+        <Modifier TargetProperty="RecipeIngredientEffectTier3Luxury22"    Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
+        <Modifier TargetProperty="RecipeIngredientEffectTier3Luxury22FIDSHisshos"    Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
+        <!--<Modifier TargetProperty="RecipeIngredientEffectATier3Luxury23"    Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>-->
+        <!--<Modifier TargetProperty="RecipeIngredientEffectBTier3Luxury23"    Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>-->
+        <!--<Modifier TargetProperty="RecipeIngredientEffectTier3Luxury24"    Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>-->
+
+        <Modifier TargetProperty="RecipeIngredientEffectATier1Strategic1"    Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
+        <Modifier TargetProperty="RecipeIngredientEffectBTier1Strategic1"    Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
+        <Modifier TargetProperty="RecipeIngredientEffectATier1Strategic2"    Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
+        <Modifier TargetProperty="RecipeIngredientEffectBTier1Strategic2"    Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
+        <Modifier TargetProperty="RecipeIngredientEffectATier2Strategic3"     Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
+        <Modifier TargetProperty="RecipeIngredientEffectATier2Strategic4"     Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
+        <Modifier TargetProperty="RecipeIngredientEffectATier3Strategic5"    Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
+        <Modifier TargetProperty="RecipeIngredientEffectBTier3Strategic5"    Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
+        <Modifier TargetProperty="RecipeIngredientEffectCTier3Strategic5"    Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
+        <Modifier TargetProperty="RecipeIngredientEffectDTier3Strategic5"    Operation="Multiplication" Value="1.5"   Path="./ClassColonizedStarSystem" TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ClassRecipeImprovement" Type="ClassRecipeImprovement">
+        <Property Name="NbConstructedRecipes" BaseValue="1 "/>
+    </SimulationDescriptor>
+
+   <!-- feedback level up effect  -->
+   <SimulationDescriptor Name="RecipeSlotEra2Descriptor" Type="RecipeSlotEra">
+      <Modifier TargetProperty="PlanetRawFIDS"                      Operation="Addition"     Value="2"     Path="ClassColonizedStarSystem/ClassPlanet"    />
+      <Modifier TargetProperty="SystemMoneyUpkeep"                  Operation="Percent"      Value="-0.10" Path="ClassColonizedStarSystem"/>
+      <Modifier TargetProperty="OverPopulationPenaltiesReduction"   Operation="Addition"     Value="-0.10" Path="ClassColonizedStarSystem"/>
+   </SimulationDescriptor>
+   <SimulationDescriptor Name="RecipeSlotEra3Descriptor" Type="RecipeSlotEra">
+      <Modifier TargetProperty="PlanetRawFIDS"                      Operation="Addition"     Value="2"  Path="ClassColonizedStarSystem/ClassPlanet"    />
+      <Modifier TargetProperty="SystemMoneyUpkeep"                  Operation="Percent"      Value="-0.10" Path="ClassColonizedStarSystem"/>
+      <Modifier TargetProperty="OverPopulationPenaltiesReduction"   Operation="Addition"     Value="-0.10" Path="ClassColonizedStarSystem"/>
+   </SimulationDescriptor>
+   <SimulationDescriptor Name="RecipeSlotEra4Descriptor" Type="RecipeSlotEra">
+      <Modifier TargetProperty="PlanetRawFIDS"                      Operation="Addition"     Value="4"  Path="ClassColonizedStarSystem/ClassPlanet"    />
+      <Modifier TargetProperty="SystemMoneyUpkeep"                  Operation="Percent"      Value="-0.10" Path="ClassColonizedStarSystem"/>
+      <Modifier TargetProperty="OverPopulationPenaltiesReduction"   Operation="Addition"     Value="-0.10" Path="ClassColonizedStarSystem"/>
+   </SimulationDescriptor>
+</Datatable>

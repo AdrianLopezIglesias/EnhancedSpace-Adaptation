@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+
+    <EntityActionGuiElement Name="KillTraitorsSystemAction2">
+        <Title>%KillTraitorsSystemActionTitle</Title>
+        <Description>%KillTraitorsSystemActionDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="KillTraitorsSystemActionSmall" />
+        </Icons>
+    </EntityActionGuiElement>
+   
+    <EntityActionGuiElement Name="KillTraitorsSystemAction3">
+        <Title>%KillTraitorsSystemActionTitle</Title>
+        <Description>%KillTraitorsSystemActionDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="KillTraitorsSystemActionSmall" />
+        </Icons>
+    </EntityActionGuiElement>
+
+    <EntityActionGuiElement Name="KillTraitorsSystemAction4">
+        <Title>%KillTraitorsSystemActionTitle</Title>
+        <Description>%KillTraitorsSystemActionDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="KillTraitorsSystemActionSmall" />
+        </Icons>
+    </EntityActionGuiElement>
+
+</Datatable>

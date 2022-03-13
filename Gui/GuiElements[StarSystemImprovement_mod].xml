@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+
+    <!-- DEFENSE -->
+    <GuiElement Name="StarSystemImprovementDefense4">
+        <Title>%StarSystemImprovementDefense4Title</Title>
+        <Description>%StarSystemImprovementDefense4Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/StarSystem/StarSystemImprovementDefense4Small" />
+            <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/StarSystem/StarSystemImprovementDefense4Large" />
+        </Icons>
+    </GuiElement>
+   
+   <!-- FOOD -->
+
+   <GuiElement Name="StarSystemImprovementFood7">
+      <Title>%StarSystemImprovementFood7Title</Title>
+      <Description>%StarSystemImprovementFood7Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Improvements/StarSystemImprovementFood7" />
+         <Icon Size="Large" Path="Improvements/StarSystemImprovementFood7" />
+      </Icons>
+   </GuiElement>
+
+   <GuiElement Name="StarSystemImprovementFood8">
+      <Title>%StarSystemImprovementFood8Title</Title>
+      <Description>%StarSystemImprovementFood8Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Improvements/StarSystemImprovementFood8" />
+         <Icon Size="Large" Path="Improvements/StarSystemImprovementFood8" />
+      </Icons>
+   </GuiElement>
+
+   <GuiElement Name="StarSystemImprovementFood9">
+      <Title>%StarSystemImprovementFood9Title</Title>
+      <Description>%StarSystemImprovementFood9Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Improvements/StarSystemImprovementFood9" />
+         <Icon Size="Large" Path="Improvements/StarSystemImprovementFood9" />
+      </Icons>
+   </GuiElement>
+
+   <!-- DUST -->
+
+   <GuiElement Name="StarSystemImprovementDust8">
+      <Title>%StarSystemImprovementDust8Title</Title>
+      <Description>%StarSystemImprovementDust8Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Improvements/StarSystemImprovementDust8" />
+         <Icon Size="Large" Path="Improvements/StarSystemImprovementDust8" />
+      </Icons>
+   </GuiElement>
+
+   <GuiElement Name="StarSystemImprovementDust9">
+      <Title>%StarSystemImprovementDust9Title</Title>
+      <Description>%StarSystemImprovementDust9Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Improvements/StarSystemImprovementDust9" />
+         <Icon Size="Large" Path="Improvements/StarSystemImprovementDust9" />
+      </Icons>
+   </GuiElement>
+
+   <GuiElement Name="StarSystemImprovementDust10">
+      <Title>%StarSystemImprovementDust10Title</Title>
+      <Description>%StarSystemImprovementDust10Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Improvements/StarSystemImprovementDust10" />
+         <Icon Size="Large" Path="Improvements/StarSystemImprovementDust10" />
+      </Icons>
+   </GuiElement>
+
+   <!-- INDUSTRY -->
+
+   <GuiElement Name="StarSystemImprovementIndustry7">
+      <Title>%StarSystemImprovementIndustry7Title</Title>
+      <Description>%StarSystemImprovementIndustry7Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Improvements/StarSystemImprovementIndustry7" />
+         <Icon Size="Large" Path="Improvements/StarSystemImprovementIndustry7" />
+      </Icons>
+   </GuiElement>
+
+   <GuiElement Name="StarSystemImprovementIndustry8">
+      <Title>%StarSystemImprovementIndustry8Title</Title>
+      <Description>%StarSystemImprovementIndustry8Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Improvements/StarSystemImprovementIndustry8" />
+         <Icon Size="Large" Path="Improvements/StarSystemImprovementIndustry8" />
+      </Icons>
+   </GuiElement>
+
+   <GuiElement Name="StarSystemImprovementIndustry9">
+      <Title>%StarSystemImprovementIndustry9Title</Title>
+      <Description>%StarSystemImprovementIndustry9Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Improvements/StarSystemImprovementIndustry9" />
+         <Icon Size="Large" Path="Improvements/StarSystemImprovementIndustry9" />
+      </Icons>
+   </GuiElement>
+
+   <GuiElement Name="StarSystemImprovementIndustry10">
+      <Title>%StarSystemImprovementIndustry10Title</Title>
+      <Description>%StarSystemImprovementIndustry10Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Improvements/StarSystemImprovementIndustry10" />
+         <Icon Size="Large" Path="Improvements/StarSystemImprovementIndustry10" />
+      </Icons>
+   </GuiElement>
+
+   <GuiElement Name="StarSystemImprovementIndustry10Horatio">
+      <Title>%StarSystemImprovementIndustry10HoratioTitle</Title>
+      <Description>%StarSystemImprovementIndustry10HoratioDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Improvements/StarSystemImprovementIndustry10" />
+         <Icon Size="Large" Path="Improvements/StarSystemImprovementIndustry10" />
+      </Icons>
+   </GuiElement>
+
+   <!-- APPROVAL -->
+
+   <GuiElement Name="StarSystemImprovementApproval6">
+      <Title>%StarSystemImprovementApproval6Title</Title>
+      <Description>%StarSystemImprovementApproval6Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Improvements/StarSystemImprovementApproval6" />
+         <Icon Size="Large" Path="Improvements/StarSystemImprovementApproval6" />
+      </Icons>
+   </GuiElement>
+
+   <ExtendedGuiElement Name="PopulationCountForHappinessSSI06">
+      <Title>%StarSystemImprovementApproval6Title</Title>
+      <SymbolString>[happinessColored]</SymbolString>
+   </ExtendedGuiElement>
+
+   <GuiElement Name="StarSystemImprovementApproval7">
+      <Title>%StarSystemImprovementApproval7Title</Title>
+      <Description>%StarSystemImprovementApproval7Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Improvements/StarSystemImprovementApproval7" />
+         <Icon Size="Large" Path="Improvements/StarSystemImprovementApproval7" />
+      </Icons>
+   </GuiElement>
+
+   <GuiElement Name="StarSystemImprovementApproval8">
+      <Title>%StarSystemImprovementApproval8Title</Title>
+      <Description>%StarSystemImprovementApproval8Description</Description>
+      <Icons>
+         <Icon Size="Small" Path="Improvements/StarSystemImprovementApproval8" />
+         <Icon Size="Large" Path="Improvements/StarSystemImprovementApproval8" />
+      </Icons>
+   </GuiElement>
+
+   <ExtendedGuiElement Name="StarSystemImprovementEnrollment">
+      <Title>%StarSystemImprovementEnrollmentTitle</Title>
+      <Description>%StarSystemImprovementEnrollmentDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/StarSystem/StarSystemImprovementEnrollmentSmall" />
+         <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/StarSystem/StarSystemImprovementEnrollmentLarge" />
+      </Icons>
+      <TooltipElement>
+         <EffectOverride>%StarSystemImprovementEnrollmentResourcesDescription</EffectOverride>
+      </TooltipElement>
+   </ExtendedGuiElement>
+
+   <ExtendedGuiElement Name="StarSystemImprovementEnrollmentVampirilis">
+      <Title>%StarSystemImprovementEnrollmentVampirilisTitle</Title>
+      <Description>%StarSystemImprovementEnrollmentVampirilisDescription</Description>
+      <Icons>
+         <Icon Size="Small" Path="Bitmaps/Dynamic/Improvements/StarSystem/StarSystemImprovementEnrollmentSmall" />
+         <Icon Size="Large" Path="Bitmaps/Dynamic/Improvements/StarSystem/StarSystemImprovementEnrollmentLarge" />
+      </Icons>
+      <TooltipElement>
+         <EffectOverride>%StarSystemImprovementEnrollmentVampirilisResourcesDescription</EffectOverride>
+      </TooltipElement>
+   </ExtendedGuiElement>
+
+
+</Datatable>

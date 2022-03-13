@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/PopulationEventDefinition.xsd">
+
+    <!--
+            Category    Up to the designers.
+            Scale       System|Empire
+            Tags        Used for trait's event filters.
+    -->
+    
+    <!-- /!\ Those are code-driven. Don't change their name whitout a programmer's consent. -->
+    <!--Doesn't work but useless -->
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventHeroRecruited"  Category="PoliticalEventHero" Scale="Empire" Duration="20" Power="7">
+        <Tags>HeroRecruited</Tags>
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventHeroRecruited_Politics01"  Category="PoliticalEventHero" Scale="Empire" Duration="20" Power="1">
+        <Tags>HeroRecruited</Tags>
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+    
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventHeroRecruited_Politics02"  Category="PoliticalEventHero" Scale="Empire" Duration="20" Power="1">
+        <Tags>HeroRecruited</Tags>
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventHeroRecruited_Politics03"  Category="PoliticalEventHero" Scale="Empire" Duration="20" Power="1">
+        <Tags>HeroRecruited</Tags>
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventHeroRecruited_Politics04"  Category="PoliticalEventHero" Scale="Empire" Duration="20" Power="1">
+        <Tags>HeroRecruited</Tags>
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventHeroRecruited_Politics05"  Category="PoliticalEventHero" Scale="Empire" Duration="20" Power="1">
+        <Tags>HeroRecruited</Tags>
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventHeroRecruited_Politics06"  Category="PoliticalEventHero" Scale="Empire" Duration="20" Power="1">
+        <Tags>HeroRecruited</Tags>
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventHeroAssignedToFleet_Politics01"  Category="PoliticalEventHero" Scale="Empire" Duration="10" Power="1">
+        <Tags>HeroRecruited</Tags>
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventHeroAssignedToFleet_Politics02"  Category="PoliticalEventHero" Scale="Empire" Duration="10" Power="1">
+        <Tags>HeroRecruited</Tags>
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventHeroAssignedToFleet_Politics03"  Category="PoliticalEventHero" Scale="Empire" Duration="10" Power="1">
+        <Tags>HeroRecruited</Tags>
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventHeroAssignedToFleet_Politics04"  Category="PoliticalEventHero" Scale="Empire" Duration="10" Power="1">
+        <Tags>HeroRecruited</Tags>
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventHeroAssignedToFleet_Politics05"  Category="PoliticalEventHero" Scale="Empire" Duration="10" Power="1">
+        <Tags>HeroRecruited</Tags>
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventHeroAssignedToFleet_Politics06"  Category="PoliticalEventHero" Scale="Empire" Duration="10" Power="1">
+        <Tags>HeroRecruited</Tags>
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventHeroAssignedToSystem"  Category="PoliticalEventHero" Scale="Empire" Duration="0" Power="0">
+        <StoppingCondition_MothershipDetached NoDecay="true"/>
+        <Tags>HeroRecruited</Tags>
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventHeroInjured"  Category="PoliticalEventHero" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+</Datatable>

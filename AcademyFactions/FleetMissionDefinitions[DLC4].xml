@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/FleetMissionDefinition.xsd">
+
+    <FleetMissionDefinition Name="AcademyDefendSystemIdle" BehaviorTree="Defend" ActionLevel="None"/>
+    <FleetMissionDefinition Name="AcademyDefendSystem" BehaviorTree="Defend" ActionLevel="Attack"/>
+    <FleetMissionDefinition Name="AcademyDefendSystemAndBlockade" BehaviorTree="Defend" ActionLevel="Blockade"/>
+    <FleetMissionDefinition Name="AcademyDefendSystemAndBlockadeOnly" BehaviorTree="Defend" ActionLevel="OnlyBlockade"/>
+
+    <FleetMissionDefinition Name="AcademyRoam" BehaviorTree="AcademyRoam" ActionLevel="None" RoamDistance="60" CanRoamOutsideConstellation="true"/>
+    <FleetMissionDefinition Name="AcademyRoamAndAttack" BehaviorTree="AcademyRoam" ActionLevel="Attack" RoamDistance="60" CanRoamOutsideConstellation="true"/>
+    <FleetMissionDefinition Name="AcademyRoamAndBlockade" BehaviorTree="AcademyRoam" ActionLevel="Blockade" RoamDistance="60" CanRoamOutsideConstellation="true"/>
+    <FleetMissionDefinition Name="AcademyRoamAndBlockadeOnly" BehaviorTree="AcademyRoam" ActionLevel="OnlyBlockade" RoamDistance="60" CanRoamOutsideConstellation="true"/>
+    
+    <FleetMissionDefinition Name="AcademyLongRoam" BehaviorTree="AcademyRoam" ActionLevel="None" RoamDistance="180" CanRoamOutsideConstellation="true"/>
+    <FleetMissionDefinition Name="AcademyLongRoamAndAttack" BehaviorTree="AcademyRoam" ActionLevel="Attack" RoamDistance="180" CanRoamOutsideConstellation="true"/>
+    <FleetMissionDefinition Name="AcademyLongRoamAndBlockade" BehaviorTree="AcademyRoam" ActionLevel="Blockade" RoamDistance="180" CanRoamOutsideConstellation="true"/>
+    <FleetMissionDefinition Name="AcademyLongRoamAndBlockadeOnly" BehaviorTree="AcademyRoam" ActionLevel="OnlyBlockade" RoamDistance="180" CanRoamOutsideConstellation="true"/>
+
+    <FleetMissionDefinition Name="AcademyAggressive" BehaviorTree="AcademyRoam" ActionLevel="Attack" RoamDistance="60" CanRoamOutsideConstellation="true"/>
+    <FleetMissionDefinition Name="AcademyDefensive" BehaviorTree="AcademyDefensive" ActionLevel="Blockade" RoamDistance="60" CanRoamOutsideConstellation="true"/>
+    <FleetMissionDefinition Name="AcademyRetakeHome" BehaviorTree="AcademyInvade" ActionLevel="AcademyInvade" RoamDistance="60" CanRoamOutsideConstellation="true"/>
+    <FleetMissionDefinition Name="AcademyRecoverColony" BehaviorTree="AcademyInvade" ActionLevel="AcademyInvade" RoamDistance="60" CanRoamOutsideConstellation="true"/>
+    <FleetMissionDefinition Name="AcademyGoToAndInvade" BehaviorTree="AcademyInvade" ActionLevel="AcademyInvade" RoamDistance="60" CanRoamOutsideConstellation="true"/>
+    
+</Datatable>

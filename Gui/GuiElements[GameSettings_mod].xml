@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+
+
+    <GuiElement Name="SettingEndTurnTimerDuration75">
+        <Title>%SettingEndTurnTimerDuration75Description</Title>
+        <Description>%SettingEndTurnTimerDuration75Description</Description>
+    </GuiElement>
+
+    <GuiElement Name="SettingEndTurnTimerEraAdditionalDuration5">
+        <Title>%SettingEndTurnTimerEraAdditionalDuration5Description</Title>
+        <Description>%SettingEndTurnTimerEraAdditionalDuration5Description</Description>
+    </GuiElement>
+
+   <GuiElement Name="SettingEndTurnTimerEraAdditionalDuration10">
+      <Title>%SettingEndTurnTimerEraAdditionalDuration10Description</Title>
+      <Description>%SettingEndTurnTimerEraAdditionalDuration10Description</Description>
+   </GuiElement>
+
+   <GuiElement Name="SettingEndTurnTimerEraAdditionalDuration30">
+      <Title>%SettingEndTurnTimerEraAdditionalDuration30Description</Title>
+      <Description>%SettingEndTurnTimerEraAdditionalDuration30Description</Description>
+   </GuiElement>
+
+   <GuiElement Name="SettingEndTurnTimerSystemAdditionalDuration5">
+      <Title>%SettingEndTurnTimerSystemAdditionalDuration5Description</Title>
+      <Description>%SettingEndTurnTimerSystemAdditionalDuration5Description</Description>
+   </GuiElement>
+
+   <GuiElement Name="SettingEndTurnTimerSystemAdditionalDuration15">
+      <Title>%SettingEndTurnTimerSystemAdditionalDuration15Description</Title>
+      <Description>%SettingEndTurnTimerSystemAdditionalDuration15Description</Description>
+   </GuiElement>
+  
+    <GuiElement Name="SettingMaxOvertime30">
+       <Title>%SettingMaxOvertime30Description</Title>
+       <Description>%SettingMaxOvertime30Description</Description>
+    </GuiElement>
+
+   <GuiElement Name="SettingMaxOvertime45">
+      <Title>%SettingMaxOvertime45Description</Title>
+      <Description>%SettingMaxOvertime45Description</Description>
+   </GuiElement>
+   
+    <GuiElement Name="SettingEndTurnTimerLastPlayerDuration10">
+        <Title>%SettingEndTurnTimerLastPlayerDuration10Description</Title>
+        <Description>%SettingEndTurnTimerLastPlayerDuration10Description</Description>
+    </GuiElement>
+   
+    <GuiElement Name="SettingBattleAutoStartTimerDuration40">
+        <Title>%SettingBattleAutoStartTimerDuration40Description</Title>
+        <Description>%SettingBattleAutoStartTimerDuration40Description</Description>
+    </GuiElement>
+
+    <GuiElement Name="SettingBattleAutoStartTimerDuration50">
+        <Title>%SettingBattleAutoStartTimerDuration50Description</Title>
+        <Description>%SettingBattleAutoStartTimerDuration50Description</Description>
+    </GuiElement>
+
+    <GuiElement Name="SettingDepositMultiplier">
+        <Title>%SettingDepositMultiplierTitle</Title>
+        <Description>%SettingDepositMultiplierDescription</Description>
+    </GuiElement>
+
+    <GuiElement Name="SettingDepositMultiplierVeryVeryLow">
+        <Title>%SettingDepositMultiplierVeryVeryLowTitle</Title>
+        <Description>%SettingDepositMultiplierVeryVeryLowDescription</Description>
+    </GuiElement>
+
+   <GuiElement Name="SettingDepositMultiplierVeryLow">
+      <Title>%SettingDepositMultiplierVeryLowTitle</Title>
+      <Description>%SettingDepositMultiplierVeryLowDescription</Description>
+   </GuiElement>
+
+   <GuiElement Name="SettingDepositMultiplierLow">
+      <Title>%SettingDepositMultiplierLowTitle</Title>
+      <Description>%SettingDepositMultiplierLowDescription</Description>
+   </GuiElement>
+
+   <GuiElement Name="SettingDepositMultiplierNormal">
+      <Title>%SettingDepositMultiplierNormalTitle</Title>
+      <Description>%SettingDepositMultiplierNormalDescription</Description>
+   </GuiElement>
+
+   <GuiElement Name="SettingDepositMultiplierHigh">
+      <Title>%SettingDepositMultiplierHighTitle</Title>
+      <Description>%SettingDepositMultiplierHighDescription</Description>
+   </GuiElement>
+
+   <GuiElement Name="SettingDepositMultiplierVeryHigh">
+      <Title>%SettingDepositMultiplierVeryHighTitle</Title>
+      <Description>%SettingDepositMultiplierVeryHighDescription</Description>
+   </GuiElement>
+
+   <GuiElement Name="SettingDepositMultiplierVeryVeryHigh">
+      <Title>%SettingDepositMultiplierVeryVeryHighTitle</Title>
+      <Description>%SettingDepositMultiplierVeryVeryHighDescription</Description>
+   </GuiElement>
+
+
+
+</Datatable>

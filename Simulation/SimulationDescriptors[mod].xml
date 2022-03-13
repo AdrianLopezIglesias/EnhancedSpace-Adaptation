@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+
+  
+    <SimulationDescriptor Name="TemporaryEffectCreateMajorPopulationMemoryCounter" Type="CreateMajorPopulationMemoryCounter">
+        <Modifier TargetProperty="CreateMajorPopulationMemoryCounter" Operation="Addition" Value="1" Path="ClassColonizedStarSystem" TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+   <SimulationDescriptor Name="TemporaryEffectStarSystemImprovementEnrollment" Type="StarSystemImprovementEnrollment">
+      <BinaryModifier TargetProperty="EnrollmentManpowerCreated"      Operation="Addition" Left="$(SystemEnrollmentRate)" BinaryOperation="Addition" Right="100"   Path="ClassColonizedStarSystem" SearchValueFromPath="true" />
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="TemporaryEffectStarSystemImprovementEnrollmentVampirilis" Type="StarSystemImprovementEnrollment">
+      <BinaryModifier TargetProperty="EnrollmentManpowerCreated"      Operation="Addition" Left="$(SystemEnrollmentRate)" BinaryOperation="Addition" Right="350"   Path="ClassColonizedStarSystem" SearchValueFromPath="true" />
+   </SimulationDescriptor>
+
+</Datatable>

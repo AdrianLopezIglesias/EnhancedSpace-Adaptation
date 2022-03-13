@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/GameSettingDefinition.xsd">
+
+    <!-- TIME MANAGEMENT -->
+    <!-- Indentation is for a better understanding of the dependencies -->
+
+    <GameSettingDefinition Name="AnimationSpeedMultiplier" Type="int" Default="1">
+        <ItemDefinition Name="1" IsRecommended="true" />
+        <ItemDefinition Name="2" />
+        <ItemDefinition Name="4" />
+    </GameSettingDefinition>
+
+    <!-- End Turn Timer -->
+
+    <GameSettingDefinition Name="EndTurnTimer" Type="bool" Default="False" SessionSpecific="True">
+        <ItemDefinition Name="False" />
+        <ItemDefinition Name="True" />
+    </GameSettingDefinition>
+
+            <GameSettingDefinition Name="AllPlayerTimer" Type="bool" Default="False" SessionSpecific="True">
+                <Visible Value="True">
+                    <If GameSetting="EndTurnTimer" Value="True" />
+                </Visible>
+                <ItemDefinition Name="False" />
+                <ItemDefinition Name="True" />
+            </GameSettingDefinition>
+
+                    <GameSettingDefinition Name="EndTurnTimerDuration" Type="int" Default="60" SessionSpecific="True">
+                        <Visible Value="True">
+                            <If GameSetting="EndTurnTimer" Value="True" />
+                        </Visible>
+                        <Enable Value="True">
+                            <If GameSetting="AllPlayerTimer" Value="True" />
+                        </Enable>
+                        <ItemDefinition Name="30" />
+                        <ItemDefinition Name="45" />
+                        <ItemDefinition Name="60" />
+                        <ItemDefinition Name="75" />
+                        <ItemDefinition Name="90" />
+                        <ItemDefinition Name="120" />
+                        <ItemDefinition Name="180" />
+                    </GameSettingDefinition>
+
+                    <GameSettingDefinition Name="EndTurnTimerEraAdditionalDuration" Type="int" Default="40" SessionSpecific="True">
+                        <Visible Value="True">
+                            <If GameSetting="EndTurnTimer" Value="True" />
+                        </Visible>
+                        <Enable Value="True">
+                            <If GameSetting="AllPlayerTimer" Value="True" />
+                        </Enable>
+                        <ItemDefinition Name="0" />
+                        <ItemDefinition Name="5" />
+                        <ItemDefinition Name="10" />
+                        <ItemDefinition Name="20" />
+                        <ItemDefinition Name="30" />
+                        <ItemDefinition Name="40" />
+                        <ItemDefinition Name="60" />
+                        <ItemDefinition Name="80" />
+                    </GameSettingDefinition>
+
+                    <GameSettingDefinition Name="EndTurnTimerSystemAdditionalDuration" Type="int" Default="10" SessionSpecific="True">
+                        <Visible Value="True">
+                            <If GameSetting="EndTurnTimer" Value="True" />
+                        </Visible>
+                        <Enable Value="True">
+                            <If GameSetting="AllPlayerTimer" Value="True" />
+                        </Enable>
+                        <ItemDefinition Name="0" />
+                        <ItemDefinition Name="5" />
+                        <ItemDefinition Name="10" />
+                        <ItemDefinition Name="15" />
+                        <ItemDefinition Name="20" />
+                        <ItemDefinition Name="30" />
+                    </GameSettingDefinition>
+
+                    <GameSettingDefinition Name="MaxOvertime" Type="int" Default="180" SessionSpecific="True">
+                        <Visible Value="True">
+                            <If GameSetting="EndTurnTimer" Value="True" />
+                        </Visible>
+                        <Enable Value="True">
+                            <If GameSetting="AllPlayerTimer" Value="True" />
+                            <If GameSetting="LastPlayerTimer" Value="False" />
+                            <If GameSetting="OvertimeMode" Value="True" />
+                        </Enable>
+                        <ItemDefinition Name="30" />
+                        <ItemDefinition Name="45" />
+                        <ItemDefinition Name="60" />
+                        <ItemDefinition Name="120" />
+                        <ItemDefinition Name="180" />
+                        <ItemDefinition Name="240" />
+                        <ItemDefinition Name="300" />
+                    </GameSettingDefinition>
+
+            <GameSettingDefinition Name="LastPlayerTimer" Type="bool" Default="False" SessionSpecific="True">
+                <Visible Value="True">
+                    <If GameSetting="EndTurnTimer" Value="True" />
+                </Visible>
+                <Enable Value="True">
+                    <If GameSetting="OvertimeMode" Value="False" />
+                </Enable>
+                <ItemDefinition Name="False" />
+                <ItemDefinition Name="True" />
+            </GameSettingDefinition>
+
+                    <GameSettingDefinition Name="EndTurnTimerLastPlayerDuration" Type="int" Default="60" SessionSpecific="True">
+                        <Visible Value="True">
+                            <If GameSetting="EndTurnTimer" Value="True" />
+                        </Visible>
+                        <Enable Value="True">
+                            <If GameSetting="OvertimeMode" Value="False" />
+                            <If GameSetting="LastPlayerTimer" Value="True" />
+                        </Enable>
+                        <ItemDefinition Name="10" />
+                        <ItemDefinition Name="20" />
+                        <ItemDefinition Name="30" />
+                        <ItemDefinition Name="45" />
+                        <ItemDefinition Name="60" />
+                        <ItemDefinition Name="90" />
+                    </GameSettingDefinition>
+
+    <!-- Space Battle Timer -->
+
+    <GameSettingDefinition Name="SpaceBattleTimer" Type="bool" Default="False" SessionSpecific="True">
+        <ItemDefinition Name="False" />
+        <ItemDefinition Name="True" />
+    </GameSettingDefinition>
+
+            <GameSettingDefinition Name="SpaceBattleTimerDuration" Type="int" Default="15" SessionSpecific="True">
+                <Visible Value="True">
+                    <If GameSetting="SpaceBattleTimer" Value="True" />
+                </Visible>
+                <ItemDefinition Name="15" />
+                <ItemDefinition Name="30" />
+                <ItemDefinition Name="45" />
+                <ItemDefinition Name="60" />
+            </GameSettingDefinition>
+
+    <!-- Ground Battle Timer -->
+
+    <GameSettingDefinition Name="GroundBattleAutoStartTimer" Type="bool" Default="False" SessionSpecific="True">
+        <ItemDefinition Name="False" />
+        <ItemDefinition Name="True" />
+    </GameSettingDefinition>
+
+            <GameSettingDefinition Name="GroundBattleAutoStartTimerDuration" Type="int" Default="15" SessionSpecific="True">
+                <Visible Value="True">
+                    <If GameSetting="GroundBattleAutoStartTimer" Value="True" />
+                </Visible>
+                <ItemDefinition Name="15" />
+                <ItemDefinition Name="30" />
+                <ItemDefinition Name="45" />
+                <ItemDefinition Name="60" />
+            </GameSettingDefinition>
+
+    <GameSettingDefinition Name="BattleAutoStartTimer" Type="bool" Default="False" SessionSpecific="True">
+        <ItemDefinition Name="False" />
+        <ItemDefinition Name="True" />
+    </GameSettingDefinition>
+
+            <GameSettingDefinition Name="BattleAutoStartTimerDuration" Type="int" Default="20" SessionSpecific="True">
+                <Visible Value="True">
+                    <If GameSetting="BattleAutoStartTimer" Value="True" />
+                </Visible>
+                <ItemDefinition Name="10" />
+                <ItemDefinition Name="15" />
+                <ItemDefinition Name="20" />
+                <ItemDefinition Name="30" />
+                <ItemDefinition Name="40" />
+                <ItemDefinition Name="50" />
+            </GameSettingDefinition>
+
+  
+</Datatable>

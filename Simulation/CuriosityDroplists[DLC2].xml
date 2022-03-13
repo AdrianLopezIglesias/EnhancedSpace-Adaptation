@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/CuriosityDroplist.xsd">
+
+    <!-- These droplist can contain only the following types: Improvement, Population, Resource, Module, Play, Unlock (descriptor) and Fleet -->
+    
+	<CuriosityDroplist Name="CuriosityDroplistRemains_Encounter">
+        <Resource Name="EmpireResearch"             Quantity="60"   Weight="10"/>
+        <Resource Name="EmpireMoney"                Quantity="60"   Weight="10"/>
+        <Resource Name="Strategic1"                 Quantity="20"   Weight="10"/>
+        <Resource Name="Strategic2"                 Quantity="20"   Weight="10"/>
+        <Resource Name="EmpireResearch"             Quantity="100"  Weight="5"/>
+        <Resource Name="EmpireMoney"                Quantity="100"  Weight="5"/>
+        <Resource Name="EmpireEmpirePoint"          Quantity="50"   Weight="5"/>
+        <Resource Name="Strategic1"                 Quantity="30"   Weight="5"/>
+        <Resource Name="Strategic2"                 Quantity="30"   Weight="5"/>
+		<PirateFleet Weight="5">
+			<ShipDesign>MFPrimitiveSmallAttackAvg</ShipDesign>
+            <Mission Name="RoamAndAttack"/>
+		</PirateFleet>
+        <Fleet Weight="7">
+            <ShipDesign>MFPiratesSmallAttackAvg</ShipDesign>
+        </Fleet>
+	</CuriosityDroplist>
+
+    <CuriosityDroplist Name="CuriosityDroplistRemains_GroundBattle">
+        <Resource Name="EmpireResearch"             Quantity="60"   Weight="10"/>
+        <Resource Name="EmpireMoney"                Quantity="60"   Weight="10"/>
+        <Resource Name="Strategic1"                 Quantity="20"   Weight="10"/>
+        <Resource Name="Strategic2"                 Quantity="20"   Weight="10"/>
+        <Resource Name="EmpireResearch"             Quantity="100"  Weight="5"/>
+        <Resource Name="EmpireMoney"                Quantity="100"  Weight="5"/>
+        <Resource Name="EmpireEmpirePoint"          Quantity="50"   Weight="5"/>
+        <Resource Name="Strategic1"                 Quantity="30"   Weight="5"/>
+        <Resource Name="Strategic2"                 Quantity="30"   Weight="5"/>
+    </CuriosityDroplist>
+
+    <CuriosityDroplist Name="CuriosityDroplistRemains_PirateLair">
+        <Resource Name="EmpireResearch"             Quantity="60"   Weight="10"/>
+        <Resource Name="EmpireMoney"                Quantity="60"   Weight="10"/>
+        <Resource Name="Strategic1"                 Quantity="20"   Weight="10"/>
+        <Resource Name="Strategic2"                 Quantity="20"   Weight="10"/>
+        <Resource Name="EmpireResearch"             Quantity="100"  Weight="5"/>
+        <Resource Name="EmpireMoney"                Quantity="100"  Weight="5"/>
+        <Resource Name="EmpireEmpirePoint"          Quantity="50"   Weight="5"/>
+        <Resource Name="Strategic1"                 Quantity="30"   Weight="5"/>
+        <Resource Name="Strategic2"                 Quantity="30"   Weight="5"/>
+    </CuriosityDroplist>
+
+    <CuriosityDroplist Name="CuriosityDroplistRemains_MinorFaction">
+        <Unlock Name="EmpireImprovementStarSystemImprovementCuriosity1" SimulationDescriptorReference="EmpireImprovementStarSystemImprovementCuriosity1"
+				Weight="6" Constrained="true" ApplyOnEmpire="true"/>
+        <Unlock Name="EmpireImprovementStarSystemImprovementUniqueCuriosity1" SimulationDescriptorReference="EmpireImprovementStarSystemImprovementUniqueCuriosity1"
+				Weight="3" Constrained="true" ApplyOnEmpire="true"/>
+    </CuriosityDroplist>
+
+</Datatable>

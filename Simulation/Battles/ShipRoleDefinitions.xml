@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../../Schemas/ShipRoleDefinition.xsd">
+
+    <ShipRoleDefinition Name="ShipRoleExploration">
+        <Cost ResourceName="SystemProduction">0</Cost>
+        <SimulationDescriptorReference Name="ShipRoleExploration"/>
+        <SimulationDescriptorReference Name="ShipRoleTypeCivilian"/>
+		<SimulationDescriptorReference Name="ShipStatBonus1Movement2"/>
+		<!--<SimulationDescriptorReference Name="ShipStatBonus2ProbeRegeneration"/>-->
+        <PopulationEvent Name="PopulationPoliticalEventExplorationShip"/>
+        <TradableDefinition Name="TradableShipExplorer"/>
+    </ShipRoleDefinition>
+
+
+</Datatable>

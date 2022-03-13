@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Generator.Definitions.PlanetGameplayTypeDefinition.xsd">
+
+  <PlanetGameplayTypeDefinition PlanetType="PlanetTypeDestroyed"/>
+  
+  <!-- FOOD BRANCH : -->
+
+  <PlanetGameplayTypeDefinition PlanetType="PlanetTypeSwamp">
+    <GameplayType>PlanetGameplayTier2</GameplayType>
+    <GameplayType>PlanetGameplayTypeTemperate</GameplayType>
+    <GameplayType>PlanetGameplayTypeMild</GameplayType>
+    <GameplayType>PlanetGameplayTypeLush</GameplayType>
+
+    <GameplayType>PlanetGameplayTypeTree</GameplayType>
+  </PlanetGameplayTypeDefinition>
+
+  <PlanetGameplayTypeDefinition PlanetType="PlanetTypeMonsoon">
+    <GameplayType>PlanetGameplayTier2</GameplayType>
+    <GameplayType>PlanetGameplayTypeTemperate</GameplayType>
+    <GameplayType>PlanetGameplayTypeMild</GameplayType>
+    <GameplayType>PlanetGameplayTypeLush</GameplayType>
+
+    <GameplayType>PlanetGameplayTypeTree</GameplayType>
+  </PlanetGameplayTypeDefinition>
+
+  <PlanetGameplayTypeDefinition PlanetType="PlanetTypeJungle">
+    <GameplayType>PlanetGameplayTier1</GameplayType>
+    <GameplayType>PlanetGameplayTypeTemperate</GameplayType>
+    <GameplayType>PlanetGameplayTypeTeeming</GameplayType>
+    <GameplayType>PlanetGameplayTypeLush</GameplayType>
+
+    <GameplayType>PlanetGameplayTypeTree</GameplayType>
+  </PlanetGameplayTypeDefinition>
+
+  <PlanetGameplayTypeDefinition PlanetType="PlanetTypeForest">
+    <GameplayType>PlanetGameplayTier1</GameplayType>
+    <GameplayType>PlanetGameplayTypeTemperate</GameplayType>
+    <GameplayType>PlanetGameplayTypeTeeming</GameplayType>
+    <GameplayType>PlanetGameplayTypeLush</GameplayType>
+    
+    <GameplayType>PlanetGameplayTypeTree</GameplayType>
+  </PlanetGameplayTypeDefinition>
+
+  <!-- INFLUENCE BRANCH : -->
+
+  <PlanetGameplayTypeDefinition PlanetType="PlanetTypeTropical">
+    <GameplayType>PlanetGameplayTier2</GameplayType>
+    <GameplayType>PlanetGameplayTypeTemperate</GameplayType>
+    <GameplayType>PlanetGameplayTypeMild</GameplayType>
+    <GameplayType>PlanetGameplayTypeWater</GameplayType>
+
+    <GameplayType>PlanetGameplayTypeTree</GameplayType>
+  </PlanetGameplayTypeDefinition>
+
+  <PlanetGameplayTypeDefinition PlanetType="PlanetTypeAtoll">
+    <GameplayType>PlanetGameplayTier2</GameplayType>
+    <GameplayType>PlanetGameplayTypeTemperate</GameplayType>
+    <GameplayType>PlanetGameplayTypeMild</GameplayType>
+    <GameplayType>PlanetGameplayTypeWater</GameplayType>
+
+    <GameplayType>PlanetGameplayTypeTree</GameplayType>
+  </PlanetGameplayTypeDefinition>
+
+  <PlanetGameplayTypeDefinition PlanetType="PlanetTypeOcean">
+    <GameplayType>PlanetGameplayTier1</GameplayType>
+    <GameplayType>PlanetGameplayTypeTemperate</GameplayType>
+    <GameplayType>PlanetGameplayTypeTeeming</GameplayType>
+    <GameplayType>PlanetGameplayTypeWater</GameplayType>
+
+    <GameplayType>PlanetGameplayTypeTree</GameplayType>
+  </PlanetGameplayTypeDefinition>
+
+  <PlanetGameplayTypeDefinition PlanetType="PlanetTypeTerran">
+    <GameplayType>PlanetGameplayTier1</GameplayType>
+    <GameplayType>PlanetGameplayTypeTemperate</GameplayType>
+    <GameplayType>PlanetGameplayTypeTeeming</GameplayType>
+    <GameplayType>PlanetGameplayTypeWater</GameplayType>
+
+    <GameplayType>PlanetGameplayTypeTree</GameplayType>
+  </PlanetGameplayTypeDefinition>
+
+  <!-- SCIENCE BRANCH : -->
+
+  <PlanetGameplayTypeDefinition PlanetType="PlanetTypeSnow">
+    <GameplayType>PlanetGameplayTier2</GameplayType>
+    <GameplayType>PlanetGameplayTypeTemperate</GameplayType>
+    <GameplayType>PlanetGameplayTypeMild</GameplayType>
+    <GameplayType>PlanetGameplayTypeStable</GameplayType>
+  </PlanetGameplayTypeDefinition>
+  
+  <PlanetGameplayTypeDefinition PlanetType="PlanetTypeArctic">
+    <GameplayType>PlanetGameplayTier2</GameplayType>
+    <GameplayType>PlanetGameplayTypeTemperate</GameplayType>
+    <GameplayType>PlanetGameplayTypeMild</GameplayType>
+    <GameplayType>PlanetGameplayTypeStable</GameplayType>
+  </PlanetGameplayTypeDefinition>
+
+  <PlanetGameplayTypeDefinition PlanetType="PlanetTypeIce">
+    <GameplayType>PlanetGameplayTier3</GameplayType>
+    <GameplayType>PlanetGameplayTypeCold</GameplayType>
+    <GameplayType>PlanetGameplayTypeMeager</GameplayType>
+    <GameplayType>PlanetGameplayTypeStable</GameplayType>
+  </PlanetGameplayTypeDefinition>
+
+  <PlanetGameplayTypeDefinition PlanetType="PlanetTypeBarren">
+    <GameplayType>PlanetGameplayTier3</GameplayType>
+    <GameplayType>PlanetGameplayTypeCold</GameplayType>
+    <GameplayType>PlanetGameplayTypeMeager</GameplayType>
+    <GameplayType>PlanetGameplayTypeStable</GameplayType>
+  </PlanetGameplayTypeDefinition>
+  
+  <!-- DUST BRANCH : -->
+
+  <PlanetGameplayTypeDefinition PlanetType="PlanetTypeTundra">
+    <GameplayType>PlanetGameplayTier2</GameplayType>
+    <GameplayType>PlanetGameplayTypeTemperate</GameplayType>
+    <GameplayType>PlanetGameplayTypeMild</GameplayType>
+    <GameplayType>PlanetGameplayTypeDry</GameplayType>
+
+    <GameplayType>PlanetGameplayTypeTree</GameplayType>
+  </PlanetGameplayTypeDefinition>
+
+  <PlanetGameplayTypeDefinition PlanetType="PlanetTypeVeldt">    <!-- Savannah -->
+    <GameplayType>PlanetGameplayTier2</GameplayType>
+    <GameplayType>PlanetGameplayTypeTemperate</GameplayType>
+    <GameplayType>PlanetGameplayTypeMild</GameplayType>
+    <GameplayType>PlanetGameplayTypeDry</GameplayType>
+
+    <GameplayType>PlanetGameplayTypeTree</GameplayType>
+  </PlanetGameplayTypeDefinition>
+
+  <PlanetGameplayTypeDefinition PlanetType="PlanetTypeArid">
+    <GameplayType>PlanetGameplayTier3</GameplayType>
+    <GameplayType>PlanetGameplayTypeTemperate</GameplayType>
+    <GameplayType>PlanetGameplayTypeMeager</GameplayType>
+    <GameplayType>PlanetGameplayTypeDry</GameplayType>
+  </PlanetGameplayTypeDefinition>
+
+  <PlanetGameplayTypeDefinition PlanetType="PlanetTypeDesert">
+    <GameplayType>PlanetGameplayTier3</GameplayType>
+    <GameplayType>PlanetGameplayTypeTemperate</GameplayType>
+    <GameplayType>PlanetGameplayTypeMeager</GameplayType>
+    <GameplayType>PlanetGameplayTypeDry</GameplayType>
+  </PlanetGameplayTypeDefinition>
+
+  <!-- INDUSTRY BRANCH -->
+
+  <PlanetGameplayTypeDefinition PlanetType="PlanetTypeSteppes">
+    <GameplayType>PlanetGameplayTier2</GameplayType>
+    <GameplayType>PlanetGameplayTypeTemperate</GameplayType>
+    <GameplayType>PlanetGameplayTypeMild</GameplayType>
+    <GameplayType>PlanetGameplayTypeCraggy</GameplayType>
+
+    <GameplayType>PlanetGameplayTypeTree</GameplayType>
+  </PlanetGameplayTypeDefinition>
+
+  <PlanetGameplayTypeDefinition PlanetType="PlanetTypeBoreal"> <!-- Alpine -->
+    <GameplayType>PlanetGameplayTier2</GameplayType>
+    <GameplayType>PlanetGameplayTypeTemperate</GameplayType>
+    <GameplayType>PlanetGameplayTypeMild</GameplayType>
+    <GameplayType>PlanetGameplayTypeCraggy</GameplayType>
+    
+    <GameplayType>PlanetGameplayTypeTree</GameplayType>
+  </PlanetGameplayTypeDefinition>
+
+  <PlanetGameplayTypeDefinition PlanetType="PlanetTypeAsh">
+    <GameplayType>PlanetGameplayTier3</GameplayType>
+    <GameplayType>PlanetGameplayTypeHot</GameplayType>
+    <GameplayType>PlanetGameplayTypeMeager</GameplayType>
+    <GameplayType>PlanetGameplayTypeCraggy</GameplayType>
+  </PlanetGameplayTypeDefinition>
+
+  <PlanetGameplayTypeDefinition PlanetType="PlanetTypeLava">
+    <GameplayType>PlanetGameplayTier3</GameplayType>
+    <GameplayType>PlanetGameplayTypeHot</GameplayType>
+    <GameplayType>PlanetGameplayTypeMeager</GameplayType>
+    <GameplayType>PlanetGameplayTypeCraggy</GameplayType>
+  </PlanetGameplayTypeDefinition>
+
+  <!-- GAS BRANCH : -->
+
+  <PlanetGameplayTypeDefinition PlanetType="PlanetTypeGasFrozen">
+    <GameplayType>PlanetGameplayTier3</GameplayType>
+    <GameplayType>PlanetGameplayTypeCold</GameplayType>
+    <GameplayType>PlanetGameplayTypeMeager</GameplayType>
+    <GameplayType>PlanetGameplayTypeGas</GameplayType>
+  </PlanetGameplayTypeDefinition>
+
+  <PlanetGameplayTypeDefinition PlanetType="PlanetTypeGasCold">
+    <GameplayType>PlanetGameplayTier3</GameplayType>
+    <GameplayType>PlanetGameplayTypeCold</GameplayType>
+    <GameplayType>PlanetGameplayTypeMeager</GameplayType>
+    <GameplayType>PlanetGameplayTypeGas</GameplayType>
+  </PlanetGameplayTypeDefinition>
+
+  <PlanetGameplayTypeDefinition PlanetType="PlanetTypeGasTemperate">
+    <GameplayType>PlanetGameplayTier3</GameplayType>
+    <GameplayType>PlanetGameplayTypeCold</GameplayType>
+    <GameplayType>PlanetGameplayTypeMeager</GameplayType>
+    <GameplayType>PlanetGameplayTypeGas</GameplayType>
+  </PlanetGameplayTypeDefinition>
+
+  <PlanetGameplayTypeDefinition PlanetType="PlanetTypeGasWarm">
+    <GameplayType>PlanetGameplayTier3</GameplayType>
+    <GameplayType>PlanetGameplayTypeHot</GameplayType>
+    <GameplayType>PlanetGameplayTypeMeager</GameplayType>
+    <GameplayType>PlanetGameplayTypeGas</GameplayType>
+  </PlanetGameplayTypeDefinition>
+
+  <PlanetGameplayTypeDefinition PlanetType="PlanetTypeGasHot">
+    <GameplayType>PlanetGameplayTier3</GameplayType>
+    <GameplayType>PlanetGameplayTypeHot</GameplayType>
+    <GameplayType>PlanetGameplayTypeMeager</GameplayType>
+    <GameplayType>PlanetGameplayTypeGas</GameplayType>
+  </PlanetGameplayTypeDefinition>
+
+  <PlanetGameplayTypeDefinition PlanetType="PlanetTypeGasBurning">
+    <GameplayType>PlanetGameplayTier3</GameplayType>
+    <GameplayType>PlanetGameplayTypeHot</GameplayType>
+    <GameplayType>PlanetGameplayTypeMeager</GameplayType>
+    <GameplayType>PlanetGameplayTypeGas</GameplayType>
+  </PlanetGameplayTypeDefinition>
+   
+   <PlanetGameplayTypeDefinition PlanetType="PlanetTypeFake">
+      <GameplayType>PlanetGameplayTypeStable</GameplayType>
+      <GameplayType>PlanetGameplayTypeCold</GameplayType>
+      <GameplayType>PlanetGameplayTypeMeager</GameplayType>
+      <GameplayType>PlanetGameplayTier3</GameplayType>
+      <GameplayType>CannotBeDestroyed</GameplayType>
+    </PlanetGameplayTypeDefinition>
+
+  <!-- Class 0  - Megastructures -->
+
+  <!-- Custom planet type for modding purposes. Override this one, and create one for each type you want to use, up to 20. -->
+    <PlanetGameplayTypeDefinition PlanetType="PlanetTypeCustom01">
+      <GameplayType>PlanetGameplayTypeHot</GameplayType>
+      <GameplayType>PlanetGameplayTier0</GameplayType>
+    </PlanetGameplayTypeDefinition>
+
+    <!--<PlanetGameplayTypeDefinition PlanetType="PlanetTypeCustom02">
+      <GameplayType>PlanetGameplayTypeHot</GameplayType>
+      <GameplayType>PlanetGameplayTier0</GameplayType>
+    </PlanetGameplayTypeDefinition>
+
+    <PlanetGameplayTypeDefinition PlanetType="PlanetTypeCustom03">
+      <GameplayType>PlanetGameplayTypeHot</GameplayType>
+      <GameplayType>PlanetGameplayTier1</GameplayType>
+    </PlanetGameplayTypeDefinition>
+
+    <PlanetGameplayTypeDefinition PlanetType="PlanetTypeCustom04">
+      <GameplayType>PlanetGameplayTypeHot</GameplayType>
+      <GameplayType>PlanetGameplayTier1</GameplayType>
+    </PlanetGameplayTypeDefinition>
+
+    <PlanetGameplayTypeDefinition PlanetType="PlanetTypeCustom05">
+      <GameplayType>PlanetGameplayTypeHot</GameplayType>
+      <GameplayType>PlanetGameplayTier1</GameplayType>
+    </PlanetGameplayTypeDefinition>-->
+
+</Datatable>

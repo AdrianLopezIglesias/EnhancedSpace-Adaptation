@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/GroundBattleStrategyDefinition.xsd">
+
+    <!-- Context:
+    - AttackerEmpire: access to ClassEmpire of the Displayed Attacking empire
+    - AttackerLostSystem: access to ClassStarSystem if the attacker still has ownership on it.
+    - DefenderEmpire:  access to ClassEmpire of the Defender empire
+    - DefenderSystem: access to ClassStarSystem of the Defender empire-->
+
+    <!-- Hisshos special defense strategy. -->
+    <GroundBattleStrategyDefinition Name="GroundBattleDefenderStrategyHisshosHonor" Opponent="Defender">
+        <InterpreterPrerequisite Flags="Discard">Path(DefenderSystem,@'ClassColonizedStarSystem,HonorActionSystemDefenseEffect')</InterpreterPrerequisite>
+        <PathPrerequisite Flags="GroundBattlePlaysHacked" Inverted="true">../ClassEmpire,TemporaryEffectGroundBattlePlaysHacked</PathPrerequisite>
+        <SimulationDescriptorReference Name="GroundBattleDefenderStrategyHisshosHonor"/>
+    </GroundBattleStrategyDefinition>
+
+    <GroundBattleStrategyDefinition Name="GroundBattleDefenderStrategyZoneEffectHisshosHonor" Opponent="Defender">
+        <InterpreterPrerequisite Flags="Discard">Path(DefenderSystem,@'ClassColonizedStarSystem,ZoneEffectHonorActionSystemDefenseEffectJuggernautVersion')</InterpreterPrerequisite>
+        <PathPrerequisite Flags="GroundBattlePlaysHacked" Inverted="true">../ClassEmpire,TemporaryEffectGroundBattlePlaysHacked</PathPrerequisite>
+        <SimulationDescriptorReference Name="GroundBattleDefenderStrategyZoneEffectHisshosHonor"/>
+    </GroundBattleStrategyDefinition>
+
+</Datatable>

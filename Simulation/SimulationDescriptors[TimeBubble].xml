@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+
+    <!-- DEFINITION-BASED CLASSES (applied on the TimeBubble, based on TimeBubbleDefinition name) -->
+    <SimulationDescriptor Name="ClassTimeBubbleAcceleratingTime"    Type="ClassTimeBubble">
+        <Modifier TargetProperty="HackingSpeedMultiplierFromTimeBubble" Operation="Percent" Value="1" TooltipHidden="true"/>
+    </SimulationDescriptor>
+    <SimulationDescriptor Name="ClassTimeBubbleSlowingTime"         Type="ClassTimeBubble">
+        <Modifier TargetProperty="HackingSpeedMultiplierFromTimeBubble" Operation="Percent" Value="-0.5" TooltipHidden="true"/>
+    </SimulationDescriptor>
+    <SimulationDescriptor Name="ClassTimeBubbleFreezeTime"          Type="ClassTimeBubble">
+        <Modifier   TargetProperty="EmpireResearch"  Operation="Percent" Value="0.10" Path="../ClassEmpire" ValueMustBePositive="true"/>
+        <!--<Modifier TargetProperty="HackingSpeedMultiplierFromTimeBubble" Operation="Percent" Value="-1" TooltipHidden="true"/>-->
+    </SimulationDescriptor>
+    <SimulationDescriptor Name="ClassTimeBubbleFastForwardTime"     Type="ClassTimeBubble">
+        <Modifier   TargetProperty="EmpireMoney"        Operation="Percent" Value="0.10" Path="../ClassEmpire" ValueMustBePositive="true"/>
+        <!--<Modifier TargetProperty="HackingSpeedMultiplierFromTimeBubble" Operation="Percent" Value="2" TooltipHidden="true"/>-->
+    </SimulationDescriptor>
+    <SimulationDescriptor Name="ClassTimeBubbleBackInTime"          Type="ClassTimeBubble">
+        <Modifier   TargetProperty="EmpireEmpirePoint"     Operation="Percent" Value="0.10" Path="../ClassEmpire" ValueMustBePositive="true"/>
+        <!--<Modifier TargetProperty="HackingSpeedMultiplierFromTimeBubble" Operation="Percent" Value="-0.75" TooltipHidden="true"/>-->
+    </SimulationDescriptor>
+
+
+    <!-- EFFECTS (applied on targets-star system node, colonized star systems, fleets) -->
+	<SimulationDescriptor Name="TimeBubbleAcceleratingTime" Type="TimeBubble">
+
+		<!-- Star System effects -->
+		<Modifier       TargetProperty="SystemFIDSIPercentFromTimeBubble"   Operation="Addition"    Value="0.25"    Path="ClassStarSystem"/>
+        <Modifier       TargetProperty="PlanetDepletionMultiplier"          Operation="Addition"    Value="1"       Path="ClassStarSystem/ClassPlanet"  Priority="1"/>
+        <Modifier       TargetProperty="NetDustOverTime"				    Operation="Percent"	    Value="1"	    Path="ClassStarSystem/StarSystemImprovementUniqueTimeLords" TooltipHidden="true"/>
+
+        <!-- Fleet/hangar effects  -->
+        <Modifier       TargetProperty="AssignmentCooldownDecrementPerTurn" Operation="Percent"     Value="1"       Path="ClassGarrison/ClassHero"/>
+        <Modifier       TargetProperty="ExperienceMultiplier"          	    Operation="Addition"    Value="1"       Path="ClassGarrison/ClassHero"/>
+        <Modifier       TargetProperty="ExperiencePerTurn"          	      Operation="Percent"     Value="1"       Path="ClassGarrison/ClassShip"/>
+        <Modifier       TargetProperty="AssignmentCooldownDecrementPerTurn" Operation="Percent"     Value="1"       Path="ClassStarSystem/ClassGarrison/ClassHero" TooltipHidden="true"/>
+        <Modifier       TargetProperty="ExperienceMultiplier"          	    Operation="Addition"    Value="1"       Path="ClassStarSystem/ClassGarrison/ClassHero" TooltipHidden="true"/>
+        <Modifier       TargetProperty="ExperiencePerTurn"          	      Operation="Percent"     Value="1"       Path="ClassStarSystem/ClassGarrison/ClassShip" TooltipHidden="true"/>
+
+        <Modifier       TargetProperty="HackingSpeedMultiplierFromTimeBubble"   Operation="Percent" Value="1"     Path="FAKE,ClassStarSystem"/>
+
+    </SimulationDescriptor>
+
+	<SimulationDescriptor Name="TimeBubbleSlowingTime" Type="TimeBubble">
+
+        <!-- Star System effects -->
+        <Modifier       TargetProperty="SystemFIDSIPercentFromTimeBubble"   Operation="Addition"    Value="-0.25"   Path="ClassStarSystem"/>
+        <Modifier       TargetProperty="PlanetDepletionMultiplier"          Operation="Addition"    Value="-0.5"    Path="ClassStarSystem/ClassPlanet"  Priority="1"/>
+        <Modifier       TargetProperty="NetDustOverTime"				            Operation="Percent"	    Value="-0.5"	  Path="ClassStarSystem/StarSystemImprovementUniqueTimeLords"  TooltipHidden="true"/>
+
+        <!-- Fleet/hangar effects  -->
+        <Modifier       TargetProperty="AssignmentCooldownDecrementPerTurn" Operation="Percent"     Value="-0.5"    Path="ClassGarrison/ClassHero"/>
+        <Modifier       TargetProperty="ExperienceMultiplier"          	    Operation="Addition"    Value="-0.5"    Path="ClassGarrison/ClassHero"/>
+        <Modifier       TargetProperty="ExperiencePerTurn"          	      Operation="Percent"     Value="-0.5"    Path="ClassGarrison/ClassShip"/>
+        <Modifier       TargetProperty="AssignmentCooldownDecrementPerTurn" Operation="Percent"     Value="-0.5"    Path="ClassStarSystem/ClassGarrison/ClassHero" TooltipHidden="true"/>
+        <Modifier       TargetProperty="ExperienceMultiplier"          	    Operation="Addition"    Value="-0.5"    Path="ClassStarSystem/ClassGarrison/ClassHero" TooltipHidden="true"/>
+        <Modifier       TargetProperty="ExperiencePerTurn"          	      Operation="Percent"     Value="-0.5"    Path="ClassStarSystem/ClassGarrison/ClassShip" TooltipHidden="true"/>
+
+        <Modifier       TargetProperty="HackingSpeedMultiplierFromTimeBubble"   Operation="Percent" Value="-0.25"    Path="FAKE,ClassStarSystem"/>
+
+    </SimulationDescriptor>
+
+	<SimulationDescriptor Name="TimeBubbleFreezeTime" Type="TimeBubble">
+
+        <!-- Star System effects -->
+		<Modifier       TargetProperty="NetSystemEmpirePoint"  	              Operation="Force"       Value="0"     	Path="ClassStarSystem"  Priority="1000" TooltipHidden="true"/> 
+		<Modifier       TargetProperty="NetSystemGrowth"  		                Operation="Force"       Value="0"     	Path="ClassStarSystem"  Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetSystemInfluence"  	            Operation="Force"       Value="0"     	Path="ClassStarSystem"  Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetSystemLifeforce"  	            Operation="Force"       Value="0"     	Path="ClassStarSystem"  Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetSystemMigrationGrown"          Operation="Force"       Value="0"     	Path="ClassStarSystem"  Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetSystemMoney"  		              Operation="Force"       Value="0"     	Path="ClassStarSystem"  Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetSystemProduction"  	          Operation="Force"       Value="0"     	Path="ClassStarSystem"  Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetSystemResearch"  	            Operation="Force"       Value="0"     	Path="ClassStarSystem"  Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetSystemProduction"  	          Operation="Force"       Value="0"     	Path="ClassStarSystem"  Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="ShouldTakeGrowthForManpower"  	  Operation="Force"       Value="0"     	Path="ClassStarSystem"  Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="PlanetDepletionPerTurn"           Operation="Force"       Value="0"       Path="ClassStarSystem/ClassPlanet"  Priority="2" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetDustOverTime"				          Operation="Force"	      Value="0"		    Path="ClassStarSystem/StarSystemImprovementUniqueTimeLords" TooltipHidden="true"/>
+
+
+        <Modifier       TargetProperty="NetStrategic1"                      Operation="Force"       Value="0"       Path="ClassColonizedStarSystem" Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetStrategic2"                      Operation="Force"       Value="0"       Path="ClassColonizedStarSystem" Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetStrategic3"                      Operation="Force"       Value="0"       Path="ClassColonizedStarSystem" Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetStrategic4"                      Operation="Force"       Value="0"       Path="ClassColonizedStarSystem" Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetStrategic5"                      Operation="Force"       Value="0"       Path="ClassColonizedStarSystem" Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetStrategic6"                      Operation="Force"       Value="0"       Path="ClassColonizedStarSystem" Priority="1000" TooltipHidden="true"/>
+
+        <Modifier       TargetProperty="NetLuxury1"                         Operation="Force"       Value="0"       Path="ClassColonizedStarSystem" Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetLuxury2"                         Operation="Force"       Value="0"       Path="ClassColonizedStarSystem" Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetLuxury3"                         Operation="Force"       Value="0"       Path="ClassColonizedStarSystem" Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetLuxury1"                         Operation="Force"       Value="0"       Path="ClassColonizedStarSystem" Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetLuxury1"                         Operation="Force"       Value="0"       Path="ClassColonizedStarSystem" Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetLuxury4"                         Operation="Force"       Value="0"       Path="ClassColonizedStarSystem" Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetLuxury1"                         Operation="Force"       Value="0"       Path="ClassColonizedStarSystem" Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetLuxury5"                         Operation="Force"       Value="0"       Path="ClassColonizedStarSystem" Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetLuxury6"                         Operation="Force"       Value="0"       Path="ClassColonizedStarSystem" Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetLuxury7"                         Operation="Force"       Value="0"       Path="ClassColonizedStarSystem" Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetLuxury8"                         Operation="Force"       Value="0"       Path="ClassColonizedStarSystem" Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetLuxury9"                         Operation="Force"       Value="0"       Path="ClassColonizedStarSystem" Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetLuxury10"                        Operation="Force"       Value="0"       Path="ClassColonizedStarSystem" Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetLuxury11"                        Operation="Force"       Value="0"       Path="ClassColonizedStarSystem" Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetLuxury12"                        Operation="Force"       Value="0"       Path="ClassColonizedStarSystem" Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetLuxury13"                        Operation="Force"       Value="0"       Path="ClassColonizedStarSystem" Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetLuxury11"                        Operation="Force"       Value="0"       Path="ClassColonizedStarSystem" Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetLuxury11"                        Operation="Force"       Value="0"       Path="ClassColonizedStarSystem" Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetLuxury14"                        Operation="Force"       Value="0"       Path="ClassColonizedStarSystem" Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetLuxury11"                        Operation="Force"       Value="0"       Path="ClassColonizedStarSystem" Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetLuxury15"                        Operation="Force"       Value="0"       Path="ClassColonizedStarSystem" Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetLuxury16"                        Operation="Force"       Value="0"       Path="ClassColonizedStarSystem" Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetLuxury17"                        Operation="Force"       Value="0"       Path="ClassColonizedStarSystem" Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetLuxury18"                        Operation="Force"       Value="0"       Path="ClassColonizedStarSystem" Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetLuxury20"                        Operation="Force"       Value="0"       Path="ClassColonizedStarSystem" Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetLuxury21"                        Operation="Force"       Value="0"       Path="ClassColonizedStarSystem" Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetLuxury22"                        Operation="Force"       Value="0"       Path="ClassColonizedStarSystem" Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetLuxury23"                        Operation="Force"       Value="0"       Path="ClassColonizedStarSystem" Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetLuxury24"                        Operation="Force"       Value="0"       Path="ClassColonizedStarSystem" Priority="1000" TooltipHidden="true"/>
+
+        <!-- Fleet/hangar effects  -->
+        <Modifier       TargetProperty="NetStrategic1"                      Operation="Force"       Value="0"       Path="ClassGarrison" Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetStrategic2"                      Operation="Force"       Value="0"       Path="ClassGarrison" Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetStrategic3"                      Operation="Force"       Value="0"       Path="ClassGarrison" Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetStrategic4"                      Operation="Force"       Value="0"       Path="ClassGarrison" Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetStrategic5"                      Operation="Force"       Value="0"       Path="ClassGarrison" Priority="1000" TooltipHidden="true"/>
+        <Modifier       TargetProperty="NetStrategic6"                      Operation="Force"       Value="0"       Path="ClassGarrison" Priority="1000" TooltipHidden="true"/>
+
+        <Modifier       TargetProperty="HackingSpeedMultiplierFromTimeBubble"   Operation="Percent" Value="-1"     Path="FAKE,ClassStarSystem"/>
+	</SimulationDescriptor>
+
+	<SimulationDescriptor Name="TimeBubbleFastForwardTime" Type="TimeBubble">
+
+        <!-- Star System effects -->
+        <Modifier       TargetProperty="AssignmentCooldownBaseDuration" Operation="Force"       Value="0"       Path="ClassStarSystem/ClassHero" TooltipHidden="true"/>
+
+        <!-- Fleet/hangar effects  -->
+        <Modifier       TargetProperty="AssignmentCooldownBaseDuration" Operation="Force"       Value="0"       Path="ClassGarrison/ClassHero"   TooltipHidden="true"/>
+
+        <Modifier       TargetProperty="HackingSpeedMultiplierFromTimeBubble"   Operation="Percent" Value="2"     Path="FAKE,ClassStarSystem"/>
+        
+	</SimulationDescriptor>
+
+    <SimulationDescriptor Name="TimeBubbleBackInTime" Type="TimeBubble">
+        <Modifier       TargetProperty="HackingSpeedMultiplierFromTimeBubble"   Operation="Percent" Value="-0.75"     Path="FAKE,ClassStarSystem"/>
+    </SimulationDescriptor>
+
+</Datatable>

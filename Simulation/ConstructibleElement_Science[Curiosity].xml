@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/ScienceConstructibleElement.xsd">
+
+
+    <!-- ############################################# -->
+    <!-- #######        DEFENSE  MODULE        ####### -->
+    <!-- ############################################# -->
+    <!-- Hull Plating  -->
+
+   <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleDefenseHullPlating2Strategic1" TechnologyStage="TechnologyStageDefinitionEconomyAndTrade6"   Visibility="VisibleWhenUnlocked">
+      <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+      <SimulationDescriptorReference Name="TechnologyCuriosityModuleDefenseHullPlating2Strategic1"/>
+   </TechnologyDefinition>
+
+    <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleDefenseHullPlating3" TechnologyStage="TechnologyStageDefinitionEconomyAndTrade6"   Visibility="VisibleWhenUnlocked">
+        <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleDefenseHullPlating3"/>
+    </TechnologyDefinition>
+
+    <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleDefenseHullPlating3Strategic3" TechnologyStage="TechnologyStageDefinitionEconomyAndTrade6"   Visibility="VisibleWhenUnlocked">
+       <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleDefenseHullPlating3Strategic3"/>
+    </TechnologyDefinition>
+
+    <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleDefenseHullPlating4Strategic5" TechnologyStage="TechnologyStageDefinitionEconomyAndTrade6"   Visibility="VisibleWhenUnlocked">
+       <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleDefenseHullPlating4Strategic5"/>
+    </TechnologyDefinition>
+
+    <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleDefenseHullPlating5" TechnologyStage="TechnologyStageDefinitionEconomyAndTrade6"   Visibility="VisibleWhenUnlocked">
+       <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleDefenseHullPlating5"/>
+    </TechnologyDefinition>
+    
+    <!-- Shield -->
+    <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleDefenseShield2Strategic2" TechnologyStage="TechnologyStageDefinitionScienceAndExploration6"   Visibility="VisibleWhenUnlocked">
+       <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleDefenseShield2Strategic2"/>
+    </TechnologyDefinition>
+
+    <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleDefenseShield3" TechnologyStage="TechnologyStageDefinitionScienceAndExploration6"   Visibility="VisibleWhenUnlocked">
+       <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleDefenseShield3"/>
+    </TechnologyDefinition>
+       
+    <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleDefenseShield3Strategic4" TechnologyStage="TechnologyStageDefinitionScienceAndExploration6"   Visibility="VisibleWhenUnlocked">
+       <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleDefenseShield3Strategic4"/>
+    </TechnologyDefinition>
+
+    <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleDefenseShield4Strategic6" TechnologyStage="TechnologyStageDefinitionScienceAndExploration6"   Visibility="VisibleWhenUnlocked">
+       <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleDefenseShield4Strategic6"/>
+    </TechnologyDefinition>
+
+
+	<TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleDefenseShield5" TechnologyStage="TechnologyStageDefinitionScienceAndExploration6"   Visibility="VisibleWhenUnlocked">
+      <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+		<SimulationDescriptorReference Name="TechnologyCuriosityModuleDefenseShield5"/>
+	</TechnologyDefinition>
+	
+
+    <!-- ############################################# -->
+    <!-- #######        WEAPON   MODULE        ####### -->
+    <!-- ############################################# -->
+    
+    <!-- Kinetic -->
+    <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleWeaponKinetic3" TechnologyStage="TechnologyStageDefinitionMilitary6"   Visibility="VisibleWhenUnlocked">
+       <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleWeaponKinetic3"/>
+    </TechnologyDefinition>
+
+    <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleWeaponKinetic2Strategic1" TechnologyStage="TechnologyStageDefinitionMilitary6"   Visibility="VisibleWhenUnlocked">
+       <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleWeaponKinetic2Strategic1"/>
+    </TechnologyDefinition>
+
+    <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleWeaponKinetic3Strategic3" TechnologyStage="TechnologyStageDefinitionMilitary6"   Visibility="VisibleWhenUnlocked">
+       <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleWeaponKinetic3Strategic3"/>
+    </TechnologyDefinition>
+
+    <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleWeaponKinetic4Strategic5" TechnologyStage="TechnologyStageDefinitionMilitary6"   Visibility="VisibleWhenUnlocked">
+       <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleWeaponKinetic4Strategic5"/>
+    </TechnologyDefinition>
+
+    <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleWeaponKinetic5" TechnologyStage="TechnologyStageDefinitionMilitary6"   Visibility="VisibleWhenUnlocked">
+       <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleWeaponKinetic5"/>
+    </TechnologyDefinition>
+   
+    <!-- Missile -->
+
+
+    <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleWeaponMissile2" TechnologyStage="TechnologyStageDefinitionMilitary6"   Visibility="VisibleWhenUnlocked">
+       <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleWeaponMissile2"/>
+    </TechnologyDefinition>
+    
+    <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleWeaponMissile2Strategic1" TechnologyStage="TechnologyStageDefinitionMilitary6"   Visibility="VisibleWhenUnlocked">
+       <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleWeaponMissile2Strategic1"/>
+    </TechnologyDefinition>
+
+    <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleWeaponMissile3Strategic3" TechnologyStage="TechnologyStageDefinitionMilitary6"   Visibility="VisibleWhenUnlocked">
+       <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleWeaponMissile3Strategic3"/>
+    </TechnologyDefinition>
+
+    <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleWeaponMissile4" TechnologyStage="TechnologyStageDefinitionMilitary6"   Visibility="VisibleWhenUnlocked">
+       <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleWeaponMissile4"/>
+    </TechnologyDefinition>
+
+    <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleWeaponMissile4Strategic5" TechnologyStage="TechnologyStageDefinitionMilitary6"   Visibility="VisibleWhenUnlocked">
+       <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleWeaponMissile4Strategic5"/>
+    </TechnologyDefinition>
+
+    
+    <!-- Laser -->
+    <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleWeaponLaser2Strategic2" TechnologyStage="TechnologyStageDefinitionEconomyAndTrade6"   Visibility="VisibleWhenUnlocked">
+       <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleWeaponLaser2Strategic2"/>
+    </TechnologyDefinition>
+
+    <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleWeaponLaser3" TechnologyStage="TechnologyStageDefinitionEconomyAndTrade6"   Visibility="VisibleWhenUnlocked">
+       <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleWeaponLaser3"/>
+    </TechnologyDefinition>
+
+    <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleWeaponLaser3Strategic4" TechnologyStage="TechnologyStageDefinitionEconomyAndTrade6"   Visibility="VisibleWhenUnlocked">
+       <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleWeaponLaser3Strategic4"/>
+    </TechnologyDefinition>
+
+    <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleWeaponLaser4Strategic6" TechnologyStage="TechnologyStageDefinitionEconomyAndTrade6"   Visibility="VisibleWhenUnlocked">
+       <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleWeaponLaser4Strategic6"/>
+    </TechnologyDefinition>
+
+    <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleWeaponLaser5" TechnologyStage="TechnologyStageDefinitionEconomyAndTrade6"   Visibility="VisibleWhenUnlocked">
+       <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleWeaponLaser5"/>
+    </TechnologyDefinition>
+
+    
+    <!-- Beam -->
+
+    
+    <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleWeaponBeam2" TechnologyStage="TechnologyStageDefinitionEconomyAndTrade6"   Visibility="VisibleWhenUnlocked">
+       <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleWeaponBeam2"/>
+    </TechnologyDefinition>
+
+    <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleWeaponBeam2Strategic2" TechnologyStage="TechnologyStageDefinitionEconomyAndTrade6"   Visibility="VisibleWhenUnlocked">
+       <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleWeaponBeam2Strategic2"/>
+    </TechnologyDefinition>
+
+    <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleWeaponBeam3Strategic4" TechnologyStage="TechnologyStageDefinitionEconomyAndTrade6"   Visibility="VisibleWhenUnlocked">
+       <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleWeaponBeam3Strategic4"/>
+    </TechnologyDefinition>
+
+    <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleWeaponBeam4" TechnologyStage="TechnologyStageDefinitionEconomyAndTrade6"   Visibility="VisibleWhenUnlocked">
+       <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleWeaponBeam4"/>
+    </TechnologyDefinition>
+
+    <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleWeaponBeam4Strategic6" TechnologyStage="TechnologyStageDefinitionEconomyAndTrade6"   Visibility="VisibleWhenUnlocked">
+       <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleWeaponBeam4Strategic6"/>
+    </TechnologyDefinition>
+    
+
+    <!-- ############################################# -->
+    <!-- #######        SUPPORT  MODULE        ####### -->
+    <!-- ############################################# -->
+
+   <!-- Colonization 3  -->
+   <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleSupportColonization3Strategic3" TechnologyStage="TechnologyStageDefinitionScienceAndExploration6"  Visibility="VisibleWhenUnlocked" >
+      <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+      <SimulationDescriptorReference Name="TechnologyCuriosityModuleSupportColonization3Strategic3"/>
+   </TechnologyDefinition>
+
+   <!-- Bait 2  -->
+   <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleSupportBait2Strategic6" TechnologyStage="TechnologyStageDefinitionScienceAndExploration6"   Visibility="VisibleWhenUnlocked">
+      <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+      <SimulationDescriptorReference Name="TechnologyCuriosityModuleSupportBait2Strategic6"/>
+   </TechnologyDefinition>
+
+   <!-- Jammer 2 -->
+   <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleSupportJammer2Strategic5" TechnologyStage="TechnologyStageDefinitionScienceAndExploration6"  Visibility="VisibleWhenUnlocked" >
+      <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+      <SimulationDescriptorReference Name="TechnologyCuriosityModuleSupportJammer2Strategic5"/>
+   </TechnologyDefinition>
+
+
+   <!-- Energy Enhancer -->
+   <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleSupportEnergyEnhancer2Strategic2"  TechnologyStage="TechnologyStageDefinitionScienceAndExploration6"    Visibility="VisibleWhenUnlocked" >
+      <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+      <SimulationDescriptorReference Name="TechnologyCuriosityModuleSupportEnergyEnhancer2Strategic2"/>
+   </TechnologyDefinition>
+
+   <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleSupportEnergyEnhancer4Strategic6"  TechnologyStage="TechnologyStageDefinitionScienceAndExploration6"    Visibility="VisibleWhenUnlocked" >
+      <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+      <SimulationDescriptorReference Name="TechnologyCuriosityModuleSupportEnergyEnhancer4Strategic6"/>
+   </TechnologyDefinition>
+
+    <!-- Projectile Enhancer -->
+    <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleSupportProjectileEnhancer2Strategic1"  TechnologyStage="TechnologyStageDefinitionScienceAndExploration6"    Visibility="VisibleWhenUnlocked" >
+       <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleSupportProjectileEnhancer2Strategic1"/>
+    </TechnologyDefinition>
+
+    <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleSupportProjectileEnhancer4Strategic5"  TechnologyStage="TechnologyStageDefinitionScienceAndExploration6"    Visibility="VisibleWhenUnlocked" >
+       <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleSupportProjectileEnhancer4Strategic5"/>
+    </TechnologyDefinition>
+
+   <!-- Fleet Engine -->
+    <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleSupportFleetEngine2Strategic4"  TechnologyStage="TechnologyStageDefinitionScienceAndExploration6"   Visibility="VisibleWhenUnlocked" >
+       <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleSupportFleetEngine2Strategic4"/>
+    </TechnologyDefinition>
+    
+    <!-- Repair -->
+
+   <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleSupportRepair2Strategic2"  TechnologyStage="TechnologyStageDefinitionScienceAndExploration6"    Visibility="VisibleWhenUnlocked" >
+      <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+      <SimulationDescriptorReference Name="TechnologyCuriosityModuleSupportRepair2Strategic2"/>
+   </TechnologyDefinition>
+   
+    <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleSupportRepair3Strategic5"  TechnologyStage="TechnologyStageDefinitionScienceAndExploration6"    Visibility="VisibleWhenUnlocked" >
+       <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleSupportRepair3Strategic5"/>
+    </TechnologyDefinition>
+
+   <!-- Flotilla Shield -->
+   <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleSupportFlotillaShield2Strategic4"  TechnologyStage="TechnologyStageDefinitionScienceAndExploration6"    Visibility="VisibleWhenUnlocked" >
+      <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+      <SimulationDescriptorReference Name="TechnologyCuriosityModuleSupportFlotillaShield2Strategic4"/>
+   </TechnologyDefinition>
+   
+   <!-- repair 1 > shield 2 -->
+    <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleSupportRepair2Strategic1"  TechnologyStage="TechnologyStageDefinitionScienceAndExploration6"    Visibility="VisibleWhenUnlocked" >
+       <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleSupportRepair2Strategic1"/>
+    </TechnologyDefinition>
+
+   
+   <!-- Shield Reload > flotilla shield reload 3 -->
+   <TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleSupportShieldReload2Strategic6"  TechnologyStage="TechnologyStageDefinitionScienceAndExploration6"    Visibility="VisibleWhenUnlocked" >
+      <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+      <SimulationDescriptorReference Name="TechnologyCuriosityModuleSupportShieldReload2Strategic6"/>
+   </TechnologyDefinition>
+
+
+   <!-- Anti Carrier 2 -->
+   <!--<TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleSupportAntiCarrier2Strategic6" TechnologyStage="TechnologyStageDefinitionScienceAndExploration6"   Visibility="VisibleWhenUnlocked">
+      <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+      <SimulationDescriptorReference Name="TechnologyCuriosityModuleSupportAntiCarrier2Strategic6"/>
+   </TechnologyDefinition>-->
+
+   <!-- Anti Crew 2  -->
+    <!--<TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleSupportAntiCrew2Strategic5" TechnologyStage="TechnologyStageDefinitionScienceAndExploration6"   Visibility="VisibleWhenUnlocked">
+    <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleSupportAntiCrew2Strategic5"/>
+    </TechnologyDefinition>-->
+   
+   <!-- Flak -->
+   <!--<TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleSupportFlakEnhancer1" TechnologyStage="TechnologyStageDefinitionScienceAndExploration6"   Visibility="VisibleWhenUnlocked">
+   <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+		<SimulationDescriptorReference Name="TechnologyCuriosityModuleSupportFlakEnhancer1"/>
+	</TechnologyDefinition>-->
+  
+    <!-- Analyzer 2  -->
+    <!--<TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleSupportAnalyzer2Strategic2" TechnologyStage="TechnologyStageDefinitionScienceAndExploration6"   Visibility="VisibleWhenUnlocked">
+    <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleSupportAnalyzer2Strategic2"/>
+    </TechnologyDefinition>-->
+
+
+
+    <!-- Crews -->
+    <!--<TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleSupportCrew2" TechnologyStage="TechnologyStageDefinitionScienceAndExploration6"  Visibility="VisibleWhenUnlocked" >
+    <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleSupportCrew2"/>
+    </TechnologyDefinition>-->
+
+    <!--<TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleSupportCrew2Strategic3" TechnologyStage="TechnologyStageDefinitionScienceAndExploration6"  Visibility="VisibleWhenUnlocked" >
+    <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleSupportCrew2Strategic3"/>
+    </TechnologyDefinition>-->
+
+    <!--<TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleSupportCrew4Strategic6" TechnologyStage="TechnologyStageDefinitionScienceAndExploration6"  Visibility="VisibleWhenUnlocked" >
+    <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleSupportCrew4Strategic6"/>
+    </TechnologyDefinition>-->
+   
+       <!-- Journalist 1 -->
+    <!--<TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleSupportJournalist1" TechnologyStage="TechnologyStageDefinitionScienceAndExploration6"  Visibility="VisibleWhenUnlocked" >
+    <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleSupportJournalist1"/>
+    </TechnologyDefinition>-->
+
+    <!-- Recycling -->
+    <!--<TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleSupportRecycling1"  TechnologyStage="TechnologyStageDefinitionScienceAndExploration6"    Visibility="VisibleWhenUnlocked" >
+    <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleSupportRecycling1"/>
+    </TechnologyDefinition>-->
+
+
+    <!-- Siege -->
+    <!--<TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleSupportSiege2Strategic5"  TechnologyStage="TechnologyStageDefinitionScienceAndExploration6"    Visibility="VisibleWhenUnlocked" >
+    <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+        <SimulationDescriptorReference Name="TechnologyCuriosityModuleSupportSiege2Strategic5"/>
+    </TechnologyDefinition>-->
+	
+   
+	<!--<TechnologyDefinition Name="TechnologyDefinitionCuriosityModuleSupportFlakScrambler1" TechnologyStage="TechnologyStageDefinitionScienceAndExploration6"   Visibility="VisibleWhenUnlocked">
+   <PathPrerequisite Flags="DiplomaticTradable">false</PathPrerequisite>
+		<SimulationDescriptorReference Name="TechnologyCuriosityModuleSupportFlakScrambler1"/>
+	</TechnologyDefinition>-->
+
+
+
+
+</Datatable>

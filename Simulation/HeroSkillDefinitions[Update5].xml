@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/HeroSkillDefinition.xsd">    <!--Vaulters BRANCH SKILLS-->
+    
+    <!-- BURRA TECHSEEKER -->
+
+    <HeroSkillDefinition Name="HeroSkill01HeroBurraTechseeker01">
+        <SkillLevel Name="HeroSkill01HeroBurraTechseeker01_1">
+            <HeroSimulationDescriptorReference Name="HeroSkill_HeroUpdate5"/> <!-- THIS IS A TAG -->
+            <ShipSimulationDescriptorReference Name="HeroSkillShip41_FleetUpkeep_Percent_0"/>
+            <MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+    <HeroSkillDefinition Name="HeroSkill02HeroBurraTechseeker01">
+        <Tags>ColonizedStarSystem</Tags>
+        <SkillLevel Name="HeroSkill02HeroBurraTechseeker01_1">
+            <SystemSimulationDescriptorReference Name="HeroSkillSystem93_Science_PerPlanet_0"/>
+            <MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+    
+</Datatable>

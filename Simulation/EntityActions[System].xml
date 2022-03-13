@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/EntityActionDefinition.xsd">
+  
+  <!-- Double growth taken from colony-->
+  <OutpostActionDefinition Name="OutpostActionIncreaseProductionTimeLords" Duration="10" RequiresMigrationFlux="false">    <!-- fix for vanilla bug -->
+
+
+    <EntityPrerequisites Location="Self">
+      <PathPrerequisite Flags="Prerequisite,SystemIsBeingGuarded" Inverted="true">BlockadedColonizedStarSystem</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite,SystemIsBeingDecolonized" Inverted="true">DecolonizedColonizedStarSystem</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite" Inverted="true">OutpostActionIncreaseProductionTimeLordsEffect</PathPrerequisite>
+    </EntityPrerequisites>
+
+
+    <EntityModifiers Location="Self">
+      <SimulationAlteration DescriptorReference="OutpostActionIncreaseProductionTimeLordsEffect"/>
+    </EntityModifiers>
+
+    <CustomCost Instant="true" ResourceName="Strategic2">5  + 5 * Property(StockLocation, @../ClassEmpire, SystemCount)</CustomCost>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassEmpire/PopulationMajor,ClassPopulationEmpireAffinityTimeLords</PathPrerequisite>
+    <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassEmpire,AffinityGameplayMajorHisshos</PathPrerequisite>
+
+  </OutpostActionDefinition>
+  
+  
+    <!-- Add flat growth on outpost -->
+    <OutpostActionDefinition Name="OutpostActionBoostGrowthWithDust" Duration="10">
+
+        <EntityPrerequisites Location="Self">
+            <PathPrerequisite Flags="Prerequisite,SystemIsBeingGuarded" Inverted="true">BlockadedColonizedStarSystem</PathPrerequisite>
+            <PathPrerequisite Flags="Prerequisite,SystemIsBeingDecolonized" Inverted="true">DecolonizedColonizedStarSystem</PathPrerequisite>
+            <PathPrerequisite Flags="Prerequisite" Inverted="true">OutpostActionIncreaseLocalGrowthEffect</PathPrerequisite>
+        </EntityPrerequisites>
+        
+        <EntityModifiers Location="Self">
+            <SimulationAlteration DescriptorReference="OutpostActionIncreaseLocalGrowthEffect"/>
+        </EntityModifiers>
+        
+        <CustomCost Instant="true" ResourceName="EmpireMoney">50 + 100 * Property(StockLocation, @../ClassEmpire, SystemCount)</CustomCost>
+        <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassEmpire/PopulationMajor,ClassPopulationEmpireAffinityTimeLords</PathPrerequisite>
+        <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassEmpire,AffinityGameplayMajorHisshos</PathPrerequisite>
+        <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassEmpire,AffinityGameplayVenetians</PathPrerequisite>
+
+    </OutpostActionDefinition>
+
+    <OutpostActionDefinition Name="OutpostActionBoostGrowthWithDustVenetians" Duration="10">
+
+      <EntityPrerequisites Location="Self">
+        <PathPrerequisite Flags="Prerequisite,SystemIsBeingGuarded" Inverted="true">BlockadedColonizedStarSystem</PathPrerequisite>
+        <PathPrerequisite Flags="Prerequisite,SystemIsBeingDecolonized" Inverted="true">DecolonizedColonizedStarSystem</PathPrerequisite>
+        <PathPrerequisite Flags="Prerequisite" Inverted="true">OutpostActionIncreaseLocalGrowthEffect</PathPrerequisite>
+      </EntityPrerequisites>
+
+      <EntityModifiers Location="Self">
+        <SimulationAlteration DescriptorReference="OutpostActionIncreaseLocalGrowthVenetiansEffect"/>
+      </EntityModifiers>
+
+      <CustomCost Instant="true" ResourceName="EmpireMoney">100 + 125 * Property(StockLocation, @../ClassEmpire, SystemCount)</CustomCost>
+      <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassEmpire/PopulationMajor,ClassPopulationEmpireAffinityTimeLords</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassEmpire,AffinityGameplayMajorHisshos</PathPrerequisite>
+      <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">../ClassEmpire,AffinityGameplayVenetians</PathPrerequisite>
+
+    </OutpostActionDefinition>
+
+</Datatable>

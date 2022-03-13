@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+
+   <SimulationDescriptor Name="TechnologyColonization1"    Type="Technology" IsSerializable="false">
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"        Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeTundra" TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"        Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeSnow"   TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="TechnologyColonization1Unfallen"    Type="Technology" IsSerializable="false">
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"        Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeTundra" TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"        Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeSnow"   TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="TechnologyColonization1TimeLords"    Type="Technology" IsSerializable="false">
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"        Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeSnow"   TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="TechnologyColonization2"    Type="Technology" IsSerializable="false">
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"        Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeBoreal"  TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"        Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeSteppes" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="TechnologyColonization2Unfallen"    Type="Technology" IsSerializable="false">
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"        Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeBoreal"  TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"        Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeSteppes" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="TechnologyColonization2TimeLords"    Type="Technology" IsSerializable="false">
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"        Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeSteppes" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="TechnologyColonization3"                Type="Technology" IsSerializable="false">
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"        Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeArctic" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="TechnologyColonization3Unfallen"                Type="Technology" IsSerializable="false">
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"        Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeArctic" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="TechnologyColonization3TimeLords"                Type="Technology" IsSerializable="false">
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"        Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeTundra" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="TechnologyColonization4"                Type="Technology" IsSerializable="false">
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"        Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeVeldt" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="TechnologyColonization4Unfallen"                Type="Technology" IsSerializable="false">
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"        Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeVeldt" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="TechnologyColonization4TimeLords"                Type="Technology" IsSerializable="false">
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"        Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeVeldt" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="TechnologyColonization5"                Type="Technology" IsSerializable="false">
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"        Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeIce" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="TechnologyColonization5Unfallen"                Type="Technology" IsSerializable="false">
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"        Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeIce" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="TechnologyColonization5TimeLords"                Type="Technology" IsSerializable="false">
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"        Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeSwamp" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+
+   <SimulationDescriptor Name="TechnologyColonization6"                Type="Technology" IsSerializable="false">
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"        Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeBarren" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="TechnologyColonization6Unfallen"                Type="Technology" IsSerializable="false">
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"        Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeBarren" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="TechnologyColonization6TimeLords"                Type="Technology" IsSerializable="false">
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"        Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeAtoll" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="TechnologyColonization7"                Type="Technology" IsSerializable="false">
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"        Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeArid" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="TechnologyColonization7Unfallen"                Type="Technology" IsSerializable="false">
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"        Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeArid" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="TechnologyColonization7TimeLords"                Type="Technology" IsSerializable="false">
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"        Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeTropical" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="TechnologyColonization8"                Type="Technology" IsSerializable="false">
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"        Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeDesert" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="TechnologyColonization8Unfallen"                Type="Technology" IsSerializable="false">
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"        Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeDesert" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="TechnologyColonization9"                Type="Technology" IsSerializable="false">
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"        Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeIce" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="TechnologyColonization9Unfallen"                Type="Technology" IsSerializable="false">
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"        Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeIce" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="TechnologyColonization9TimeLords"                Type="Technology" IsSerializable="false">
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"        Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeMonsoon" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="TechnologyColonization11"                Type="Technology" IsSerializable="false">
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"        Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeAsh" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="TechnologyColonization11Unfallen"                Type="Technology" IsSerializable="false">
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"        Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeAsh" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="TechnologyColonization11TimeLords"                Type="Technology" IsSerializable="false">
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"        Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeJungle" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="TechnologyColonization11Horatio"                Type="Technology" IsSerializable="false">
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"        Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeAsh" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+
+   <SimulationDescriptor Name="TechnologyColonization12"           Type="Technology" IsSerializable="false">
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"         Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeTropical" TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"         Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeSwamp"    TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="TechnologyColonization12Unfallen"   Type="Technology" IsSerializable="false">
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"         Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeTropical" TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"         Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeSwamp"    TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="TechnologyColonization12TimeLords"  Type="Technology" IsSerializable="false">
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"         Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeTerran" TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"         Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeOcean" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="TechnologyColonization13"                Type="Technology" IsSerializable="false">
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"        Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeLava" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="TechnologyColonization13Unfallen"                Type="Technology" IsSerializable="false">
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"        Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeLava" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="TechnologyColonization13TimeLords"                Type="Technology" IsSerializable="false">
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"        Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeForest" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="TechnologyColonization13Horatio"                Type="Technology" IsSerializable="false">
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"        Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetTypeLava" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="TechnologyColonizationGasPlanetNonVampirilis"   Type="Technology" IsSerializable="false">
+      <Modifier TargetProperty="PlanetInitialFIDSPenalty"        Operation="Force"     Value="0"    Path="../ClassEmpire/ClassColonizedStarSystem/PlanetGameplayTypeGas" TooltipHidden="true"/>
+   </SimulationDescriptor>
+   
+
+</Datatable>

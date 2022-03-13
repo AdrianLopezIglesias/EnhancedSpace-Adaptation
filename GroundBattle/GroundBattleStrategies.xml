@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/GroundBattleStrategyDefinition.xsd">
+
+    <!-- Context:
+    - AttackerEmpire: access to ClassEmpire of the Displayed Attacking empire
+    - AttackerLostSystem: access to ClassStarSystem if the attacker still has ownership on it.
+    - DefenderEmpire:  access to ClassEmpire of the Defender empire
+    - DefenderSystem: access to ClassStarSystem of the Defender empire-->
+  
+  
+    <!-- ########################-->
+    <!--   MAJOR FACTION OPTIONS -->
+    <!-- ########################-->
+
+
+    <GroundBattleStrategyDefinition Name="GroundBattleAttackerStrategy3" Opponent="Attacker">
+      <PathPrerequisite Flags="Discard">../ClassEmpire,EmpireTypeMajor</PathPrerequisite>
+      <PathPrerequisite Flags="Discard">../ClassEmpire,!EmpireTypeMajor</PathPrerequisite>
+    </GroundBattleStrategyDefinition>
+    <GroundBattleStrategyDefinition Name="GroundBattleDefenderStrategy3" Opponent="Defender">
+      <PathPrerequisite Flags="Discard">../ClassEmpire,EmpireTypeMajor</PathPrerequisite>
+      <PathPrerequisite Flags="Discard">../ClassEmpire,!EmpireTypeMajor</PathPrerequisite>
+    </GroundBattleStrategyDefinition>
+    <GroundBattleStrategyDefinition Name="GroundBattleDefenderStrategy3Bhagabas" Opponent="Defender">
+      <PathPrerequisite Flags="Discard">../ClassEmpire,EmpireTypeMajor</PathPrerequisite>
+      <PathPrerequisite Flags="Discard">../ClassEmpire,!EmpireTypeMajor</PathPrerequisite>
+    </GroundBattleStrategyDefinition>
+  
+    <!-- ########################-->
+    <!--          OFFENCE        -->
+    <!-- ########################-->
+        
+    <!-- Infiltration -->
+  
+    <GroundBattleStrategyDefinition Name="GroundBattleAttackerStrategy1" Opponent="Attacker">
+        <PathPrerequisite Flags="Discard">../ClassEmpire,EmpireTypeMajor</PathPrerequisite>
+        <SimulationDescriptorReference Name="GroundBattleAttackerStrategy1"/>
+    </GroundBattleStrategyDefinition>
+    
+    <!-- Armored spearhead -->
+    <GroundBattleStrategyDefinition Name="GroundBattleAttackerStrategy2" Opponent="Attacker">
+        <PathPrerequisite Flags="Discard">../ClassEmpire,EmpireTypeMajor</PathPrerequisite>
+		    <PathPrerequisite Flags="Discard" Inverted="true">../ClassEmpire,EmpireTypeMajor/ClassPopulationEmpire,PopulationCollectionBonusTikanans3</PathPrerequisite>
+        <SimulationDescriptorReference  Name="GroundBattleAttackerStrategy2"/>
+    </GroundBattleStrategyDefinition>
+  
+	  <GroundBattleStrategyDefinition Name="GroundBattleAttackerStrategy2Tikanans" Opponent="Attacker">
+		  <PathPrerequisite Flags="Discard">../ClassEmpire,EmpireTypeMajor/ClassPopulationEmpire,PopulationCollectionBonusTikanans3</PathPrerequisite>
+		  <SimulationDescriptorReference  Name="GroundBattleAttackerStrategy2Tikanans"/>
+	  </GroundBattleStrategyDefinition>
+
+    <!-- Carpet bombing --> 
+
+    <GroundBattleStrategyDefinition Name="GroundBattleAttackerStrategy4" Opponent="Attacker">
+      <PathPrerequisite Flags="Discard">../ClassEmpire,EmpireTypeMajor/ClassPopulationEmpire</PathPrerequisite>
+      <SimulationDescriptorReference  Name="GroundBattleAttackerStrategy4"/>
+    </GroundBattleStrategyDefinition>
+
+    <!-- Orbital bombardment -->
+    <GroundBattleStrategyDefinition Name="GroundBattleAttackerStrategy3_1" Opponent="Attacker">
+      <PathPrerequisite Flags="Discard">../ClassEmpire,EmpireTypeMajor</PathPrerequisite>
+      <InterpreterPrerequisite Flags="Disable,NotEnoughSiegePower">Property(DefenderSystem, @ClassColonizedStarSystem, OrbitingSiegePower, true) ge 80</InterpreterPrerequisite>
+      <InterpreterPrerequisite Flags="Discard">Property(DefenderSystem, @ClassColonizedStarSystem, OrbitingSiegePower, true) lt 300</InterpreterPrerequisite>
+      <SimulationDescriptorReference Name="GroundBattleAttackerStrategy3_1"/>
+    </GroundBattleStrategyDefinition>
+
+    <GroundBattleStrategyDefinition Name="GroundBattleAttackerStrategy3_2" Opponent="Attacker">
+      <PathPrerequisite Flags="Discard">../ClassEmpire,EmpireTypeMajor</PathPrerequisite>
+      <InterpreterPrerequisite Flags="Discard">Property(DefenderSystem, @ClassColonizedStarSystem, OrbitingSiegePower, true) ge 300</InterpreterPrerequisite>
+      <InterpreterPrerequisite Flags="Discard">Property(DefenderSystem, @ClassColonizedStarSystem, OrbitingSiegePower, true) lt 600</InterpreterPrerequisite>
+      <SimulationDescriptorReference Name="GroundBattleAttackerStrategy3_2"/>
+    </GroundBattleStrategyDefinition>
+
+    <GroundBattleStrategyDefinition Name="GroundBattleAttackerStrategy3_3" Opponent="Attacker">
+      <PathPrerequisite Flags="Discard">../ClassEmpire,EmpireTypeMajor</PathPrerequisite>
+      <InterpreterPrerequisite Flags="Discard">Property(DefenderSystem, @ClassColonizedStarSystem, OrbitingSiegePower, true) ge 600</InterpreterPrerequisite>
+      <SimulationDescriptorReference Name="GroundBattleAttackerStrategy3_3"/>
+    </GroundBattleStrategyDefinition>
+  
+  
+  
+    <!-- ########################-->
+    <!--           DEFENCE       -->
+    <!-- ########################-->
+
+    <!-- Draft > Guerilla tactics -->
+
+    <GroundBattleStrategyDefinition Name="GroundBattleDefenderStrategy1" Opponent="Defender">
+        <PathPrerequisite Flags="Discard">../ClassEmpire,EmpireTypeMajor</PathPrerequisite>
+        <InterpreterPrerequisite Flags="Disable,NoPopulationOnSystem">Property(DefenderSystem, @ClassColonizedStarSystem, Population) gt 1</InterpreterPrerequisite>
+        <PathPrerequisite Flags="Discard" Inverted="true">../ClassEmpire,EmpireImprovementQuestUnitedEmpire11</PathPrerequisite>
+        <PathPrerequisite Flags="GroundBattlePlaysHacked" Inverted="true">../ClassEmpire,TemporaryEffectGroundBattlePlaysHacked</PathPrerequisite>
+        <SimulationDescriptorReference Name="GroundBattleDefenderStrategy1"/>
+    </GroundBattleStrategyDefinition>
+
+    <GroundBattleStrategyDefinition Name="GroundBattleDefenderStrategy1Terrans" Opponent="Defender">
+        <PathPrerequisite Flags="Discard">../ClassEmpire,EmpireTypeMajor</PathPrerequisite>
+        <InterpreterPrerequisite Flags="Disable,NoPopulationOnSystem">Property(DefenderSystem, @ClassColonizedStarSystem, Population) gt 1</InterpreterPrerequisite>
+        <PathPrerequisite Flags="Discard">../ClassEmpire,EmpireImprovementQuestUnitedEmpire11</PathPrerequisite>
+        <PathPrerequisite Flags="GroundBattlePlaysHacked" Inverted="true">../ClassEmpire,TemporaryEffectGroundBattlePlaysHacked</PathPrerequisite>
+        <SimulationDescriptorReference Name="GroundBattleDefenderStrategy1Terrans"/>
+    </GroundBattleStrategyDefinition>
+  
+    <!-- Defend system / Combined arms -->
+
+    <GroundBattleStrategyDefinition Name="GroundBattleDefenderStrategy2" Opponent="Defender">
+        <PathPrerequisite Flags="Discard">../ClassEmpire,EmpireTypeMajor</PathPrerequisite>
+		  <PathPrerequisite Flags="Discard" Inverted="true">../ClassEmpire,EmpireTypeMajor/ClassPopulationEmpire,PopulationCollectionBonusGnashasts3</PathPrerequisite>
+        <PathPrerequisite Flags="GroundBattlePlaysHacked" Inverted="true">../ClassEmpire,TemporaryEffectGroundBattlePlaysHacked</PathPrerequisite>
+        <SimulationDescriptorReference Name="GroundBattleDefenderStrategy2"/>
+    </GroundBattleStrategyDefinition>
+	
+	  <GroundBattleStrategyDefinition Name="GroundBattleDefenderStrategy2Gnashasts" Opponent="Defender">
+		  <PathPrerequisite Flags="Discard">../ClassEmpire,EmpireTypeMajor/ClassPopulationEmpire,PopulationCollectionBonusGnashasts3</PathPrerequisite>
+        <PathPrerequisite Flags="GroundBattlePlaysHacked" Inverted="true">../ClassEmpire,TemporaryEffectGroundBattlePlaysHacked</PathPrerequisite>
+		  <SimulationDescriptorReference Name="GroundBattleDefenderStrategy2Gnashasts"/>
+	  </GroundBattleStrategyDefinition>
+
+    <!-- Indirect fire support --> 
+  
+    <GroundBattleStrategyDefinition Name="GroundBattleDefenderStrategy4" Opponent="Defender">
+        <PathPrerequisite Flags="Discard">../ClassEmpire,EmpireTypeMajor</PathPrerequisite>
+        <PathPrerequisite Flags="GroundBattlePlaysHacked" Inverted="true">../ClassEmpire,TemporaryEffectGroundBattlePlaysHacked</PathPrerequisite>
+        <SimulationDescriptorReference Name="GroundBattleDefenderStrategy4"/>
+    </GroundBattleStrategyDefinition>
+    
+    <!-- SURRENDER -->
+
+    <GroundBattleStrategyDefinition Name="GroundBattleDefenderStrategy3B" Opponent="Defender">
+        <PathPrerequisite Flags="Discard">../ClassEmpire,EmpireTypeMajor</PathPrerequisite>
+		  <PathPrerequisite Flags="Discard" Inverted="true">../ClassEmpire,EmpireTypeMajor/ClassPopulationEmpire,PopulationCollectionBonusBhagabas3</PathPrerequisite>
+        <PathPrerequisite Flags="GroundBattlePlaysHacked" Inverted="true">../ClassEmpire,TemporaryEffectGroundBattlePlaysHacked</PathPrerequisite>
+        <SimulationDescriptorReference Name="GroundBattleDefenderStrategy3B"/> 
+        <InvasionEffect Opponent="Attacker">
+            <SimulationDescriptorReference Name="InvasionEffectSurrenderAttacker"/>
+        </InvasionEffect>
+        <InvasionEffect Opponent="Defender">
+            <SimulationDescriptorReference Name="InvasionEffectSurrenderDefender"/>
+        </InvasionEffect>
+    </GroundBattleStrategyDefinition>
+	
+	  <GroundBattleStrategyDefinition Name="GroundBattleDefenderStrategy3BBhagabas" Opponent="Defender">
+		  <PathPrerequisite Flags="Discard">../ClassEmpire,EmpireTypeMajor/ClassPopulationEmpire,PopulationCollectionBonusBhagabas3</PathPrerequisite>
+        <PathPrerequisite Flags="GroundBattlePlaysHacked" Inverted="true">../ClassEmpire,TemporaryEffectGroundBattlePlaysHacked</PathPrerequisite>
+		  <SimulationDescriptorReference Name="GroundBattleDefenderStrategy3BBhagabas"/>
+        
+          <InvasionEffect Opponent="Attacker">
+              <SimulationDescriptorReference Name="InvasionEffectSurrenderAttackerBhagabas"/>
+          </InvasionEffect>
+          <InvasionEffect Opponent="Defender">
+              <SimulationDescriptorReference Name="InvasionEffectSurrenderDefenderBhagabas"/>
+          </InvasionEffect>
+	  </GroundBattleStrategyDefinition>
+
+    <!--MINOR FACTION OPTIONS-->
+    <!--DIFFICULTY: NORMAL-->
+    <GroundBattleStrategyDefinition Name="GroundBattleAttackerStrategyMinorFaction" Opponent="Attacker">
+        <PathPrerequisite Flags="Discard">../ClassEmpire,EmpireTypeMinor,MinorFactionDifficultyNormal</PathPrerequisite>
+        <SimulationDescriptorReference Name="GroundBattleAttackerStrategyMinorFaction"/>
+    </GroundBattleStrategyDefinition>
+    
+    <GroundBattleStrategyDefinition Name="GroundBattleDefenderStrategyMinorFaction" Opponent="Defender">
+        <PathPrerequisite Flags="Discard">../ClassEmpire,EmpireTypeMinor,MinorFactionDifficultyNormal</PathPrerequisite>
+        <PathPrerequisite Flags="GroundBattlePlaysHacked" Inverted="true">../ClassEmpire,TemporaryEffectGroundBattlePlaysHacked</PathPrerequisite>
+        <SimulationDescriptorReference Name="GroundBattleDefenderStrategyMinorFaction"/>
+    </GroundBattleStrategyDefinition>
+
+    <!--<GroundBattleStrategyDefinition Name="GroundBattleDefenderStrategyMinorFaction2" Opponent="Defender">
+      <PathPrerequisite Flags="Discard">../ClassEmpire,EmpireTypeMinor,MinorFactionDifficultyNormal</PathPrerequisite>
+      <SimulationDescriptorReference Name="GroundBattleDefenderStrategyMinorFaction2"/>
+    </GroundBattleStrategyDefinition>-->
+  
+    <!--DIFFICULTY: EASY-->
+    <GroundBattleStrategyDefinition Name="GroundBattleAttackerStrategyMinorFactionEasy" Opponent="Attacker">
+        <PathPrerequisite Flags="Discard">../ClassEmpire,EmpireTypeMinor,MinorFactionDifficultyEasy</PathPrerequisite>
+        <SimulationDescriptorReference Name="GroundBattleAttackerStrategyMinorFactionEasy"/>
+    </GroundBattleStrategyDefinition>
+
+    <GroundBattleStrategyDefinition Name="GroundBattleDefenderStrategyMinorFactionEasy" Opponent="Defender">
+        <PathPrerequisite Flags="Discard">../ClassEmpire,EmpireTypeMinor,MinorFactionDifficultyEasy</PathPrerequisite>
+        <PathPrerequisite Flags="GroundBattlePlaysHacked" Inverted="true">../ClassEmpire,TemporaryEffectGroundBattlePlaysHacked</PathPrerequisite>
+        <SimulationDescriptorReference Name="GroundBattleDefenderStrategyMinorFactionEasy"/>
+    </GroundBattleStrategyDefinition>
+
+    <!--<GroundBattleStrategyDefinition Name="GroundBattleDefenderStrategyMinorFactionEasy2" Opponent="Defender">
+      <PathPrerequisite Flags="Discard">../ClassEmpire,EmpireTypeMinor,MinorFactionDifficultyEasy</PathPrerequisite>
+      <SimulationDescriptorReference Name="GroundBattleDefenderStrategyMinorFactionEasy2"/>
+    </GroundBattleStrategyDefinition>-->
+
+    <!--DIFFICULTY: HARD-->
+    <GroundBattleStrategyDefinition Name="GroundBattleAttackerStrategyMinorFactionHard" Opponent="Attacker">
+        <PathPrerequisite Flags="Discard">../ClassEmpire,EmpireTypeMinor,MinorFactionDifficultyHard</PathPrerequisite>
+        <SimulationDescriptorReference Name="GroundBattleAttackerStrategyMinorFactionHard"/>
+    </GroundBattleStrategyDefinition>
+
+    <GroundBattleStrategyDefinition Name="GroundBattleDefenderStrategyMinorFactionHard" Opponent="Defender">
+        <PathPrerequisite Flags="Discard">../ClassEmpire,EmpireTypeMinor,MinorFactionDifficultyHard</PathPrerequisite>
+        <PathPrerequisite Flags="GroundBattlePlaysHacked" Inverted="true">../ClassEmpire,TemporaryEffectGroundBattlePlaysHacked</PathPrerequisite>
+        <SimulationDescriptorReference Name="GroundBattleDefenderStrategyMinorFactionHard"/>
+    </GroundBattleStrategyDefinition>
+
+    <!--<GroundBattleStrategyDefinition Name="GroundBattleDefenderStrategyMinorFactionHard2" Opponent="Defender">
+      <PathPrerequisite Flags="Discard">../ClassEmpire,EmpireTypeMinor,MinorFactionDifficultyHard</PathPrerequisite>
+      <SimulationDescriptorReference Name="GroundBattleDefenderStrategyMinorFactionHard2"/>
+    </GroundBattleStrategyDefinition>-->
+  
+    <!--PIRATES OPTIONS-->
+    <GroundBattleStrategyDefinition Name="GroundBattleAttackerStrategyPirateEmpire" Opponent="Attacker">
+        <PathPrerequisite Flags="Discard">../ClassEmpire,EmpireTypePirate</PathPrerequisite>
+        <SimulationDescriptorReference Name="GroundBattleAttackerStrategyPirateEmpire"/>
+    </GroundBattleStrategyDefinition>
+
+    <GroundBattleStrategyDefinition Name="GroundBattleDefenderStrategyPirateEmpire" Opponent="Defender">
+        <PathPrerequisite Flags="Discard">../ClassEmpire,EmpireTypePirate</PathPrerequisite>
+        <PathPrerequisite Flags="GroundBattlePlaysHacked" Inverted="true">../ClassEmpire,TemporaryEffectGroundBattlePlaysHacked</PathPrerequisite>
+        <SimulationDescriptorReference Name="GroundBattleDefenderStrategyPirateEmpire"/>
+    </GroundBattleStrategyDefinition>
+
+    <!--<GroundBattleStrategyDefinition Name="GroundBattleDefenderStrategyPirateEmpire2" Opponent="Defender">
+      <PathPrerequisite Flags="Discard">../ClassEmpire,EmpireTypePirate</PathPrerequisite>
+      <SimulationDescriptorReference Name="GroundBattleDefenderStrategyPirateEmpire2"/>
+    </GroundBattleStrategyDefinition>-->
+
+</Datatable>

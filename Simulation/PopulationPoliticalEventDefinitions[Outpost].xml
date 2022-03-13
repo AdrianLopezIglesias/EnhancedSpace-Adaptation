@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/PopulationEventDefinition.xsd">
+
+    <!--
+            Category    Up to the designers.
+            Scale       System|Empire
+            Tags        Used for trait's event filters.
+    -->
+    
+    <!-- /!\ Those are code-driven. Don't change their name whitout a programmer's consent. -->
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventLoneOutpostCreated"  Category="PoliticalEventOutpost" Scale="Empire" Duration="20" Power="5">
+        <Tags>OutpostCreated</Tags>
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventSharedOutpostCreated"  Category="PoliticalEventOutpost" Scale="Empire" Duration="20" Power="5">
+        <Tags>OutpostCreated</Tags>
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+       
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventOutpostTurnedToColony"  Category="PoliticalEventOutpost" Scale="Empire" Duration="30" Power="2">
+        <Tags/>
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+
+   
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventOutpostLost"  Category="PoliticalEventOutpost" Scale="Empire" Duration="20" Power="1">
+        <Tags/>
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+
+  <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventOutpostConcurrenced"  Category="PoliticalEventOutpost" Scale="Empire" Duration="20" Power="1">
+      <Tags>OutpostCreated</Tags>
+    <Politics Name="Politics06"/>
+  </PopulationPoliticalEventDefinition>
+    
+    <!-- Abandonned Control ? -->
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventOutpostAbandonned"  Category="PoliticalEventOutpost" Scale="Empire" Duration="20" Power="1">
+        <Tags/>
+        <!--<Politics Name="Politics03"/>-->
+    </PopulationPoliticalEventDefinition>
+    
+
+</Datatable>

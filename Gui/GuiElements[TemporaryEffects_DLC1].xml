@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
+
+<!-- The GUIElements that start with "TemporaryEffect" are the one that will be fedback indepently from the effects see the golden Age for the Vaulters for example -->
+  
+    <GuiElement Name="FleetUpkeepIncreaseFromDemand">
+        <Title>%TemporaryEffectFleetUpkeepIncreaseFromDemand</Title>
+    </GuiElement>
+
+</Datatable>

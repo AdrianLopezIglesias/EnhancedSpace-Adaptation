@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../../Schemas/ShipDesignDefinition.xsd">
+
+    <!--*****************-->
+    <!--**** Horatio ****-->
+    <!--*****************-->
+    
+    <ShipDesignDefinition Name="Horatio_Explorer">
+        <HullReference Name="HullSmall04Horatio"/>
+        <ShipRoleReference Name="ShipRoleExploration"/>
+
+		<!--Core Section-->
+		<SlotBinding SlotName="CoreSection.WeaponDefenseSupport01">
+            <ModuleReference Name="ModuleWeaponLaser1"/>
+		</SlotBinding>
+		
+		<!--N Section-->
+
+		<!--NE Section-->
+		<SlotBinding SlotName="SectionNE.DefenseSupport01">
+      <ModuleReference Name="ModuleSupportExploration1"/>
+    </SlotBinding>
+		
+		<!--E Section-->
+
+		<!--SE Section-->
+		<SlotBinding SlotName="SectionSE.DefenseSupport01">
+      <ModuleReference Name="ModuleSupportEngine1"/>
+    </SlotBinding>
+
+		<!--S Section-->
+		<SlotBinding SlotName="SectionS.Support01">
+			<ModuleReference Name="ModuleSupportEngine1"/>
+		</SlotBinding>
+
+        <PathPrerequisite>../ClassEmpire,!AffinityGameplayVampirilis</PathPrerequisite>
+	</ShipDesignDefinition>
+
+</Datatable>

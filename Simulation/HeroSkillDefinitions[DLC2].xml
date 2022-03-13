@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/HeroSkillDefinition.xsd">    <!--MajorHisshos BRANCH SKILLS-->
+    
+    <!-- MajorHisshos -->
+    <HeroSkillDefinition Name="HeroSkill01BranchMajorHisshos">
+        <Tags>ColonizedStarSystem</Tags>
+        <SkillLevel Name="HeroSkill01BranchMajorHisshos_01">
+            <SystemSimulationDescriptorReference Name="HeroSkillSystem78_IndustryFood_PerPlanetFlat_1"/>
+            <MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+        </SkillLevel>
+        <SkillLevel Name="HeroSkill01BranchMajorHisshos_02">
+            <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+            <SystemSimulationDescriptorReference Name="HeroSkillSystem78_IndustryFood_PerPlanetFlat_2"/>
+            <MasteryLevel Class="HeroMasteryLabour" Levels="2"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+    
+    <HeroSkillDefinition Name="HeroSkill02BranchMajorHisshos">
+        <SkillLevel Name="HeroSkill02BranchMajorHisshos_01">
+            <ShipSimulationDescriptorReference Name="HeroSkillShip41_FleetUpkeep_Percent_0"/>
+            <MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+        </SkillLevel>
+        <SkillLevel Name="HeroSkill02BranchMajorHisshos_02">
+            <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+            <ShipSimulationDescriptorReference Name="HeroSkillShip41_FleetUpkeep_Percent_2"/>
+            <MasteryLevel Class="HeroMasteryCuriosity" Levels="2"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+
+    <HeroSkillDefinition Name="HeroSkill03BranchMajorHisshos">
+        <Tags>ColonizedStarSystem</Tags>
+        <SkillLevel Name="HeroSkill03BranchMajorHisshos_02">
+            <SystemSimulationDescriptorReference Name="HeroSkillSystem61_Dust_Percent_2"/>
+            <MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+        </SkillLevel>
+        <SkillLevel Name="HeroSkill03BranchMajorHisshos_03">
+            <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+            <SystemSimulationDescriptorReference Name="HeroSkillSystem61_Dust_Percent_3"/>
+            <MasteryLevel Class="HeroMasteryWit" Levels="2"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+
+    <HeroSkillDefinition Name="HeroSkill04BranchMajorHisshos">
+        <SkillLevel Name="HeroSkill04BranchMajorHisshos_01">
+            <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+            <ShipSimulationDescriptorReference Name="HeroSkillShip111_FleetDamage_Percent_2"/>
+            <MasteryLevel Class="HeroMasteryCommand" Levels="2"/>
+        </SkillLevel>
+        <SkillLevel Name="HeroSkill04BranchMajorHisshos_02">
+            <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+            <ShipSimulationDescriptorReference Name="HeroSkillShip111_FleetDamage_Percent_3"/>
+            <MasteryLevel Class="HeroMasteryCommand" Levels="2"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+
+    <HeroSkillDefinition Name="HeroSkill05BranchMajorHisshos">
+        <SkillLevel Name="HeroSkill05BranchMajorHisshos_01">
+            <SenateSimulationDescriptorReference Name="HeroSkillSenator119_ShipCostReduction_Percent_3"/>
+            <SystemSimulationDescriptorReference Name="HeroSkillSystem119_ShipCostReduction_Percent_3"/>
+            <MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+        </SkillLevel>
+        <SkillLevel Name="HeroSkill05BranchMajorHisshos_02">
+            <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+            <SenateSimulationDescriptorReference Name="HeroSkillSenator119_ShipCostReduction_Percent_3"/>
+            <SystemSimulationDescriptorReference Name="HeroSkillSystem119_ShipCostReduction_Percent_4"/>
+            <MasteryLevel Class="HeroMasteryLabour" Levels="2"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+
+    <HeroSkillDefinition Name="HeroSkill06BranchMajorHisshos">
+        <SkillLevel Name="HeroSkill06BranchMajorHisshos_01">
+            <ShipSimulationDescriptorReference Name="HeroSkillShip37_FleetExploration_Flat_3"/>
+            <MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+
+    <HeroSkillDefinition Name="HeroSkill07BranchMajorHisshos">
+        <SkillLevel Name="HeroSkill07BranchMajorHisshos_01">
+            <HeroSimulationDescriptorReference Name="HeroSkillComplete"/>
+            <ShipSimulationDescriptorReference Name="HeroSkillShip118_FleetDamage_Percent_4"/>
+            <MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+
+    <!-- Starting skills -->
+    <HeroSkillDefinition Name="HeroSkill01MajorHisshos01">
+        <SkillLevel Name="HeroSkill01MajorHisshos01_1">
+            <ShipSimulationDescriptorReference Name="HeroSkillShip111_FleetDamage_Percent_0"/>
+            <MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+    <HeroSkillDefinition Name="HeroSkill02MajorHisshos01">
+        <Tags>ColonizedStarSystem</Tags>
+        <SkillLevel Name="HeroSkill02MajorHisshos01_1">
+            <SystemSimulationDescriptorReference Name="HeroSkillSystem1_ShipCostReduction_Percent_0"/>
+            <MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+
+    <HeroSkillDefinition Name="HeroSkill01MajorHisshos02">
+        <SkillLevel Name="HeroSkill01MajorHisshos02_1">
+            <ShipSimulationDescriptorReference Name="HeroSkillShip38_FleetExploration_Percent_0"/>
+            <MasteryLevel Class="HeroMasteryCuriosity" Levels="1"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+    <HeroSkillDefinition Name="HeroSkill02MajorHisshos02">
+        <Tags>ColonizedStarSystem</Tags>
+        <SkillLevel Name="HeroSkill02MajorHisshos02_1">
+            <SystemSimulationDescriptorReference Name="HeroSkillSystem96_Science_Perpop_0"/>
+            <MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+
+    <HeroSkillDefinition Name="HeroSkill01MajorHisshos03">
+        <SkillLevel Name="HeroSkill01MajorHisshos03_1">
+            <ShipSimulationDescriptorReference Name="HeroSkillShip32_FleetDefense_Flat_0"/>
+            <MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+    <HeroSkillDefinition Name="HeroSkill02MajorHisshos03">
+        <Tags>ColonizedStarSystem</Tags>
+        <SkillLevel Name="HeroSkill02MajorHisshos03_1">
+            <SystemSimulationDescriptorReference Name="HeroSkillSystem80_Influence_Perpop_0"/>
+            <MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+
+    <HeroSkillDefinition Name="HeroSkill01MajorHisshos04">
+        <SkillLevel Name="HeroSkill01MajorHisshos04_1">
+            <ShipSimulationDescriptorReference Name="HeroSkillShip111_FleetDamage_Percent_0"/>
+            <MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+    <HeroSkillDefinition Name="HeroSkill02MajorHisshos04">
+        <Tags>ColonizedStarSystem</Tags>
+        <SkillLevel Name="HeroSkill02MajorHisshos04_1">
+            <SystemSimulationDescriptorReference Name="HeroSkillSystem73_Industry_Perpop_0"/>
+            <MasteryLevel Class="HeroMasteryLabour" Levels="1"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+
+    <!-- Illo -->
+    <HeroSkillDefinition Name="HeroSkill01Illo01">
+        <SkillLevel Name="HeroSkill01Illo01_1">
+            <ShipSimulationDescriptorReference Name="HeroSkillShip32_FleetDefense_Flat_0"/>           
+            <MasteryLevel Class="HeroMasteryCommand" Levels="1"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+    <HeroSkillDefinition Name="HeroSkill02Illo01">
+        <Tags>ColonizedStarSystem</Tags>
+        <SkillLevel Name="HeroSkill02Illo01_1">
+            <SystemSimulationDescriptorReference Name="HeroSkillSystem93_Science_PerPlanet_0"/>          
+            <MasteryLevel Class="HeroMasteryWit" Levels="1"/>
+        </SkillLevel>
+    </HeroSkillDefinition>
+</Datatable>

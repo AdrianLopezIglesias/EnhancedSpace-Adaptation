@@ -1,0 +1,1166 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/PopulationEventDefinition.xsd">
+
+    <!-- SHIP ROLES -->   
+    
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventMilitaryShip" Category="PoliticalEventShip" Scale="System" Duration="15" Power="0.5">
+        <Tags></Tags>
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventCivilianShip" Category="PoliticalEventShip" Scale="System" Duration="20" Power="4">
+        <Tags></Tags>
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+	<PopulationPoliticalEventDefinition Name="PopulationPoliticalEventReligiousShip" Category="PoliticalEventShip" Scale="System" Duration="20" Power="1.5">
+		<Tags></Tags>
+		<Politics Name="Politics05"/>
+	</PopulationPoliticalEventDefinition>
+
+    
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventExplorationShip" Category="PoliticalEventShip" Scale="System" Duration="20" Power="5">
+        <Tags></Tags>
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+
+    <!-- LEVEL UP -->
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventSystemLevelUp" Category="PoliticalEventSystemManagement" Scale="System" Duration="30" Power="1">
+        <Tags></Tags>
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+    
+ <!-- BUYOUT -->
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventConstructionBuyout" Category="PoliticalEventConstruction" Scale="System" Duration="10" Power="1">
+        <Tags></Tags>
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+    
+    <!-- TECHNOLOGY ERAS -->
+    
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventTechnologyEra"  Category="PoliticalEventTechnologyEra" Scale="Empire" Duration="60" Power="2">
+       <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventUnlockStage"  Category="PoliticalEventTechnologyEra" Scale="Empire" Duration="20" Power="5">
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+
+    <!-- SCRAP -->
+    
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventImprovementScrapped"  Category="PoliticalEventScrap" Scale="System" Duration="0" Power="0">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventShipScrapped"  Category="PoliticalEventScrap" Scale="Empire" Duration="0" Power="0">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+
+    <!--####  SYSTEM IMPROVEMENTS  ####-->
+
+    <!--Food-->
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionFood1" Category="PoliticalEventConstruction" Scale="System" Duration="20" Power="2">
+        <Tags>BuildingConstruction,Construction,FoodBuilding</Tags>
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+
+    <!--Industry-->
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionIndustry1" Category="PoliticalEventConstruction" Scale="System" Duration="20" Power="2">
+        <Tags>BuildingConstruction,Construction</Tags>
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition> 
+
+    <!--SCIENCE-->
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventScienceBuildingConstruction1" Category="PoliticalEventConstruction" Scale="System" Duration="20" Power="1">
+        <Tags>BuildingConstruction,Construction</Tags>
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+
+    <!--DUST-->
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionDust1" Category="PoliticalEventConstruction" Scale="System" Duration="20" Power="2">
+        <Tags>BuildingConstruction,Construction</Tags>
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionTrade1" Category="PoliticalEventConstruction" Scale="System" Duration="20" Power="2">
+        <Tags>BuildingConstruction,Construction</Tags>
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionInfluence1" Category="PoliticalEventConstruction" Scale="System" Duration="20" Power="2">
+        <Tags>BuildingConstruction,Construction</Tags>
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+
+    <!--Approval-->
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionApproval1" Category="PoliticalEventConstruction" Scale="System" Duration="20" Power="2">
+        <Tags>BuildingConstruction,Construction,ApprovalBuilding</Tags>
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+   
+       <!--Population slot-->
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionPopulationSlot1" Category="PoliticalEventConstruction" Scale="System" Duration="20" Power="1">
+        <Tags>BuildingConstruction,Construction</Tags>
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+
+    <!--Defense-->
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionDefense1"  Category="PoliticalEventConstruction" Scale="System" Duration="20" Power="2">
+        <Tags>BuildingConstruction,Construction</Tags>
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+
+    <!--BuyoutBuilding-->
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionBuyout1" Category="PoliticalEventConstruction" Scale="System" Duration="20" Power="2">
+        <Tags/>
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+
+    <!--#### UNIQUE AND WONDER ####-->
+    
+
+    <!--Wonder-->
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionDenarqueUniversity"  Category="PoliticalEventConstruction" Scale="Empire" Duration="20" Power="1">
+        <Tags></Tags>
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+
+    <!--UNIQUE-->
+       
+         <!--INFLUENCE-->
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionUniqueInfluence1"  Category="PoliticalEventConstruction" Scale="Empire" Duration="20" Power="20">
+        <Tags>BuildingConstruction,Construction</Tags>
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+
+    <!--DEFENSE -->
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionUniqueDefense1"  Category="PoliticalEventConstruction" Scale="Empire" Duration="20" Power="20">
+        <Tags>BuildingConstruction,Construction</Tags>
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+
+    <!--DUST-->
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionUniqueDust1"  Category="PoliticalEventConstruction" Scale="Empire" Duration="20" Power="20">
+        <Tags>BuildingConstruction,Construction</Tags>
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+
+    <!--INDUSTRY-->
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionUniqueIndustry1"  Category="PoliticalEventConstruction" Scale="Empire" Duration="20" Power="20">
+        <Tags>BuildingConstruction,Construction</Tags>
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+    
+        <!--FOOD-->
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionUniqueFood1"  Category="PoliticalEventConstruction" Scale="Empire" Duration="20" Power="20">
+        <Tags>BuildingConstruction,Construction</Tags>
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+    
+    <!--TRADE -->
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionUniqueTrade1"  Category="PoliticalEventConstruction" Scale="Empire" Duration="20" Power="20">
+        <Tags>BuildingConstruction,Construction</Tags>
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+
+    <!--SCIENCE -->
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionUniqueScience1"  Category="PoliticalEventConstruction" Scale="Empire" Duration="20" Power="20">
+        <Tags>BuildingConstruction,Construction</Tags>
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+
+    <!--SHIP-->
+         <!--PROBE-->    
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventSendingProbe1"  Category="PoliticalEventExploration" Scale="Empire" Duration="10" Power="1">
+       <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+    <!--SHIP-->
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionShip1"  Category="PoliticalEventConstruction" Scale="System" Duration="10" Power="1">
+        <Tags>Ship</Tags>
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionShip2"  Category="PoliticalEventConstruction" Scale="System" Duration="10" Power="1">
+        <Tags>Ship</Tags>
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+    
+   
+
+    <!--PLANETARY IMRPOVEMENT-->
+        <!--FOOD-->
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventPlanetaryImprovementFood1"  Category="PoliticalEventConstruction" Scale="System" Duration="20" Power="1">
+        <Tags>PlanetaryFood</Tags>
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+
+  
+
+    <!--INDUSTRY-->
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventPlanetaryImprovementIndustry1"  Category="PoliticalEventConstruction" Scale="System" Duration="20" Power="1">
+        <Tags>PlanetaryIndustry</Tags>
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>  
+    
+    
+    <!--SCIENCE-->
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventPlanetaryImprovementScience1"  Category="PoliticalEventConstruction" Scale="System" Duration="20" Power="1">
+        <Tags>PlanetaryScience</Tags>
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+   
+    <!--DUST-->
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventPlanetaryImprovementDust1"  Category="PoliticalEventConstruction" Scale="System" Duration="20" Power="1">
+        <Tags>PlanetaryDust</Tags>
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+
+
+    <!--INFLUENCE-->
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventPlanetaryImprovementInfluence1"  Category="PoliticalEventConstruction" Scale="System" Duration="20" Power="1">
+        <Tags>PlanetaryInfluence</Tags>
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+    
+    <!--RESOURCES-->
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventPlanetImprovementResource1"  Category="PoliticalEventConstruction" Scale="System" Duration="20" Power="1">
+        <Tags/>
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition> 
+
+    <!--COLONIZATION-->
+    <!--FOOD-->
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventColonizationTerran"  Category="PoliticalEventColonization" Scale="System" Duration="10" Power="2">
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventColonizationOcean"  Category="PoliticalEventColonization" Scale="System" Duration="10" Power="2">
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventColonizationForest"  Category="PoliticalEventColonization" Scale="System" Duration="10" Power="2">
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+    
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventColonizationSteppes"  Category="PoliticalEventColonization" Scale="System" Duration="10" Power="2">
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventColonizationSwamp"  Category="PoliticalEventColonization" Scale="System" Duration="10" Power="2">
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventColonizationMonsoon"  Category="PoliticalEventColonization" Scale="System" Duration="10" Power="2">
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventColonizationVeldt"  Category="PoliticalEventColonization" Scale="System" Duration="10" Power="2">
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventColonizationArid"  Category="PoliticalEventColonization" Scale="System" Duration="10" Power="2">
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>-->
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventColonizationAtoll"  Category="PoliticalEventColonization" Scale="System" Duration="10" Power="2">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition> 
+    
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventColonizationTropical"  Category="PoliticalEventColonization" Scale="System" Duration="10" Power="2">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+    
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventColonizationJungle"  Category="PoliticalEventColonization" Scale="System" Duration="10" Power="2">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventColonizationWithDeposit"  Category="PoliticalEventColonization" Scale="System" Duration="10" Power="2">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+
+
+
+    <!--SCIENCE-->
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventColonizationBarren"  Category="PoliticalEventColonization" Scale="System" Duration="40" Power="0">
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+
+   <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventColonizationSnow"  Category="PoliticalEventColonization" Scale="System" Duration="40" Power="0">
+       <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventColonizationArctic"  Category="PoliticalEventColonization" Scale="System" Duration="40" Power="0">
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventColonizationTundra"  Category="PoliticalEventColonization" Scale="System" Duration="1" Power="0">
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventColonizationBoreal"  Category="PoliticalEventColonization" Scale="System" Duration="1" Power="0">
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>-->
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventColonizationIce"  Category="PoliticalEventColonization" Scale="System" Duration="40" Power="0">
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+    
+    <!--Dust-->
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventColonizationDesert"  Category="PoliticalEventColonization" Scale="System" Duration="40" Power="0">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventColonizationLava"  Category="PoliticalEventColonization" Scale="System" Duration="40" Power="0">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventColonizationAsh"  Category="PoliticalEventColonization" Scale="System" Duration="40" Power="0">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+
+    <!--GAS-->
+    
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventColonizationGasFrozen"  Category="PoliticalEventColonization" Scale="System" Duration="40" Power="0">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventColonizationGasCold"  Category="PoliticalEventColonization" Scale="System" Duration="40" Power="0">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventColonizationGasTemperate"  Category="PoliticalEventColonization" Scale="System" Duration="40" Power="0">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventColonizationGasWarm"  Category="PoliticalEventColonization" Scale="System" Duration="40" Power="0">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventColonizationGasHot"  Category="PoliticalEventColonization" Scale="System" Duration="40" Power="0">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventColonizationGasBurning"  Category="PoliticalEventColonization" Scale="System" Duration="40" Power="0">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+
+  
+  
+
+    <!-- MINOR EMPIRES -->
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventMinorEmpireBribed" Category="PoliticalEventMinorEmpire" Scale="Empire" Duration="20" Power="0.5">
+        <Tags/>
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventMinorWarDeclared" Category="PoliticalEventMinorEmpire" Scale="Empire" Duration="20" Power="1">
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventMinorPeaceDeclared" Category="PoliticalEventMinorEmpire" Scale="Empire" Duration="20" Power="1">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventMinorEmpireAssimilated" Category="PoliticalEventMinorEmpire" Scale="Empire" Duration="20" Power="1">
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventMinorBrainWash" Category="PoliticalEventMinorEmpire" Scale="Empire" Duration="20" Power="1">
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventMinorQuestEmpireAction" Category="PoliticalEventMinorEmpire" Scale="Empire" Duration="20" Power="1">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventMinorMigrationAction" Category="PoliticalEventMinorEmpire" Scale="Empire" Duration="20" Power="1">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventMinorEssence" Category="PoliticalEventMinorEmpire" Scale="Empire" Duration="20" Power="1">
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventMinorDevlopementGrants" Category="PoliticalEventMinorEmpire" Scale="Empire" Duration="20" Power="1">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventMinorRecruitShips" Category="PoliticalEventMinorEmpire" Scale="Empire" Duration="20" Power="1">
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+
+    <!-- MISC -->
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNewPopulationInEmpire" Category="PoliticalEventPopulation" Scale="Empire" Duration="30" Power="2">
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+
+    <!-- NARRATIVE EVENT -->
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative01" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="20" Power="1">
+        <Tags></Tags>
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative02" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="20" Power="1">
+        <Tags></Tags>
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative03" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="20" Power="1">
+        <Tags></Tags>
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative04" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="20" Power="1">
+        <Tags></Tags>
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative05" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="20" Power="1">
+        <Tags></Tags>
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative06" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="20" Power="1">
+        <Tags></Tags>
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative07" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="20" Power="1">
+        <Tags></Tags>
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative08" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="20" Power="1">
+        <Tags></Tags>
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative09" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="20" Power="1">
+        <Tags></Tags>
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative10" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="20" Power="1">
+        <Tags></Tags>
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative11" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="20" Power="1">
+        <Tags></Tags>
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative12" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Tags></Tags>
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative13" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="20" Power="1">
+        <Tags></Tags>
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative13Bis" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="20" Power="1">
+        <Tags></Tags>
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative14" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="20" Power="1">     
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+    
+    <!--NOT USED-->
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative15" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative16" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="5" Power="1">
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative17" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="5" Power="1">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative18" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative19" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative20" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative21" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative22" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative23" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative24" Category="PoliticalEventSystemManagement" Scale="System" Duration="10" Power="1">
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative25" Category="PoliticalEventSystemManagement" Scale="System" Duration="10" Power="1">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative26" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative27" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative28" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative29" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+    
+      <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative33" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative34" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative35" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="2">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative36" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative37" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+    
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative38" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+  
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative39" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+       
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative40" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+   
+  <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative43" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+    <Politics Name="Politics02"/>
+  </PopulationPoliticalEventDefinition>
+
+  <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative44" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+    <Politics Name="Politics05"/>
+  </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative45" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative46" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative47" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative48" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative49" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative50" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative51" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative52" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative53" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative54" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative55" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>   
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative57" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative58" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative59" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition> 
+
+    <!-- #####################################-->
+    <!-- #########     HALLOWEEN   ###########-->
+    <!-- #####################################-->
+
+   
+
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative70" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative71" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative72" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventNarrative73" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+    
+    <!-- LORE QUEST -->
+    <PopulationPoliticalEventDefinition Name="PopulationEventSophons01Military" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventSophons01Science" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventSophons01Pacifist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationEventSophons02.1Military" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventSophons02.2Military" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventSophons02.3Military" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventSophons02.1Science" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventSophons02.2Science" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventSophons02.3Science" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventSophons02.1Pacifist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventSophons02.2Pacifist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventSophons02.3Pacifist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationEventSophons03.1Military" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventSophons03.1Scientist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventSophons03.1Pacifist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventSophons03.2Military" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventSophons03.2Scientist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventSophons03.2Pacifist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventSophons03.3Military" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventSophons03.3Scientist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventSophons03.3Pacifist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventSophons04Military" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventSophons04Scientist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventSophons04Pacifist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+    
+    <!--CRAVERS LORE QUEST-->
+    <PopulationPoliticalEventDefinition Name="PopulationEventCravers01Industry" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventCravers01Religious" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationEventCravers01.1Industry" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventCravers01.1Religious" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationEventCravers02.1Industry" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventCravers02.1Religious" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationEventCravers02.2Industry" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventCravers02.2Religious" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+    
+    <PopulationPoliticalEventDefinition Name="PopulationEventCravers031Industry" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventCravers031Religious" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationEventCravers04Industry" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationEventCravers04Religious" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationEventVampirilis01Religious" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationEventVampirilis01.2Religious" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationEventVampirilis02Religious" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+    <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationEventVampirilis03Religious" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationEventVampirilis04Religious" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+    
+    <PopulationPoliticalEventDefinition Name="PopulationEventVampirilis05Religious" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+
+
+    <!--UE LORE QUEST-->
+    <PopulationPoliticalEventDefinition Name="PopulationEventUE01.1Military" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventUE01.1Industry" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventUE01.1Science" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+    
+    <PopulationPoliticalEventDefinition Name="PopulationEventUE01.2Military" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventUE01.2Industry" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventUE01.2Science" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+    
+    <PopulationPoliticalEventDefinition Name="PopulationEventUE02.1Military" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventUE02.1Industry" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventUE02.1Science" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics02"/>       
+    </PopulationPoliticalEventDefinition>
+    
+    <PopulationPoliticalEventDefinition Name="PopulationEventUE02.2Military" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventUE02.2Industry" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventUE02.2Science" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationEventUE03Military" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventUE03Industry" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventUE03Science" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationEventUE04.1Military" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventUE04.2Military" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventUE04.1Industry" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventUE04.2Industry" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventUE04.1Science" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationEventHoratio01-Ecologist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventHoratio01-Religious" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventHoratio01-Industrialist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationEventHoratio02-Ecologist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventHoratio02-Religious" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventHoratio02-Industrialist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationEventHoratio03-Ecologist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventHoratio03-Religious" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventHoratio03-Industrialist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationEventHoratio04-Ecologist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventHoratio04-Religious" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventHoratio04-Industrialist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationEventHoratio05-Ecologist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventHoratio05-Religious" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventHoratio05-Industrialist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationEventTimeLords01-Ecologist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventTimeLords01-Industrialist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventTimeLords01-Pacifist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationEventTimeLords02-Ecologist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventTimeLords02-Industrialist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventTimeLords02-Pacifist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationEventTimeLords03-Ecologist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventTimeLords03-Industrialist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventTimeLords03-Pacifist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventTimeLords03Bis-Pacifist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationEventTimeLords04-Ecologist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventTimeLords04-Industrialist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventTimeLords04-Pacifist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationEventTimeLords05-Ecologist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventTimeLords05-Industrialist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventTimeLords05-Pacifist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventTimeLords05Bis-Pacifist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationEventTimeLords06-Industrialist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventTimeLords06-Pacifist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationEventUnfallen01-Science" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventUnfallen01-Ecologist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventUnfallen02-Pacifist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventUnfallen02-Militarist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventUnfallen03-Science" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventUnfallen03-Ecologist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventUnfallen04-Science" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventUnfallen04-Ecologist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventUnfallen05-Pacifist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventUnfallen05-Militarist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="15" Power="1">
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventUnfallen06-Science" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventUnfallen06-Ecologist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="30" Power="1">
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+    
+    <PopulationPoliticalEventDefinition Name="PopulationEventExplorationQuest17-Militarist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationEventMetaplot01-Religious" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventMetaplot01-Scientist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+    
+    <PopulationPoliticalEventDefinition Name="PopulationEventMetaplot02-Religious" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventMetaplot02-Scientist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+    
+    <!--GLOBAL QUEST - COOP & COMPET-->
+    <PopulationPoliticalEventDefinition Name="PopulationEventAcademyAndGlobalQuests_Industrialist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventAcademyAndGlobalQuests_Scientist"     Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventAcademyAndGlobalQuests_Pacifist"      Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventAcademyAndGlobalQuests_Ecologist"     Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+    <!--<PopulationPoliticalEventDefinition Name="PopulationEventAcademyAndGlobalQuests_Religious"     Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>-->
+    <PopulationPoliticalEventDefinition Name="PopulationEventAcademyAndGlobalQuests_Militarist"    Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+
+    <PopulationPoliticalEventDefinition Name="PopulationEventGlobalQuest01-Compet_Militarist"    Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventGlobalQuest02-Compet_Ecologist"     Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventGlobalQuest03-Compet_Industrialist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventGlobalQuest01-Coop_Pacifist"      Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventGlobalQuest02-Coop_Scientist"     Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventAcademyQuest03-A-Coop_Militarist"    Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventAcademyQuest03-B-Coop_Ecologist"     Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventAcademyQuest04-A-Compet_Industrialist" Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventAcademyQuest04-B-Compet_Pacifist"      Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventMetaplotQuest-TeamPlay-Chapter1_Religious"     Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventMetaplotQuest-TeamPlay-Chapter1_Scientist"     Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventMetaplotQuest-TeamPlay-Chapter2_Religious"     Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationEventMetaplotQuest-TeamPlay-Chapter2_Scientist"     Category="PoliticalEventSystemManagement" Scale="Empire" Duration="10" Power="1">
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+    
+	
+	<!-- SIMPLE BUILDING EVENTS : SYSTEM SCALE-->
+	<PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionIndustrialist" Category="PoliticalEventConstruction" Scale="System" Duration="20" Power="1">
+		<Politics Name="Politics01"/>
+	</PopulationPoliticalEventDefinition>
+	<PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionScientist" Category="PoliticalEventConstruction" Scale="System" Duration="20" Power="1">
+		<Politics Name="Politics02"/>
+	</PopulationPoliticalEventDefinition>
+	<PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionPacifist" Category="PoliticalEventConstruction" Scale="System" Duration="20" Power="1">
+		<Politics Name="Politics03"/>
+	</PopulationPoliticalEventDefinition>
+	<PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionEcologist" Category="PoliticalEventConstruction" Scale="System" Duration="20" Power="1">
+		<Politics Name="Politics04"/>
+	</PopulationPoliticalEventDefinition>
+	<PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionReligious" Category="PoliticalEventConstruction" Scale="System" Duration="20" Power="1">
+		<Politics Name="Politics05"/>
+	</PopulationPoliticalEventDefinition>
+	<PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionMilitarist" Category="PoliticalEventConstruction" Scale="System" Duration="20" Power="1">
+		<Politics Name="Politics06"/>
+	</PopulationPoliticalEventDefinition>
+
+	<!-- UNIQUE BUILDING EVENTS : EMPIRE SCALE-->
+
+	<PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionUniqueSophons" Category="PoliticalEventConstruction" Scale="Empire" Duration="20" Power="1">
+		<Politics Name="Politics02"/>
+	</PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionUniqueCravers" Category="PoliticalEventConstruction" Scale="Empire" Duration="20" Power="1">
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionUniqueVenetians" Category="PoliticalEventConstruction" Scale="Empire" Duration="20" Power="1">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionUniqueVampirilis" Category="PoliticalEventConstruction" Scale="Empire" Duration="20" Power="1">
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionUniqueTerrans" Category="PoliticalEventConstruction" Scale="Empire" Duration="20" Power="1">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionUniqueTimelords" Category="PoliticalEventConstruction" Scale="Empire" Duration="20" Power="1">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+	<PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionUniqueUnfallen" Category="PoliticalEventConstruction" Scale="Empire" Duration="20" Power="1">
+		<Politics Name="Politics03"/>
+	</PopulationPoliticalEventDefinition>
+
+
+
+
+	<!-- WONDER BUILDING EVENTS --> <!--TO DELETE-->
+	<PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionWonderIndustrialist" Category="PoliticalEventConstruction" Scale="Empire" Duration="20" Power="1">
+		<Politics Name="Politics01"/>
+	</PopulationPoliticalEventDefinition>
+	<PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionWonderScientist" Category="PoliticalEventConstruction" Scale="Empire" Duration="20" Power="1">
+		<Politics Name="Politics02"/>
+	</PopulationPoliticalEventDefinition>
+	<PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionWonderPacifist" Category="PoliticalEventConstruction" Scale="Empire" Duration="20" Power="1">
+		<Politics Name="Politics03"/>
+	</PopulationPoliticalEventDefinition>
+	<PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionWonderEcologist" Category="PoliticalEventConstruction" Scale="Empire" Duration="20" Power="1">
+		<Politics Name="Politics04"/>
+	</PopulationPoliticalEventDefinition>
+	<PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionWonderReligious" Category="PoliticalEventConstruction" Scale="Empire" Duration="40" Power="2">
+		<Politics Name="Politics05"/>
+	</PopulationPoliticalEventDefinition>
+	<PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionWonderMilitarist" Category="PoliticalEventConstruction" Scale="Empire" Duration="20" Power="1">
+		<Politics Name="Politics06"/>
+	</PopulationPoliticalEventDefinition>
+
+    
+    
+<!--DEPRECATED-->
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionUniqueIndustrialist" Category="PoliticalEventConstruction" Scale="Empire" Duration="20" Power="1">
+        <Politics Name="Politics01"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionUniqueScientist" Category="PoliticalEventConstruction" Scale="Empire" Duration="20" Power="1">
+        <Politics Name="Politics02"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionUniquePacifist" Category="PoliticalEventConstruction" Scale="Empire" Duration="20" Power="1">
+        <Politics Name="Politics03"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionUniqueEcologist" Category="PoliticalEventConstruction" Scale="Empire" Duration="20" Power="1">
+        <Politics Name="Politics04"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionUniqueReligious" Category="PoliticalEventConstruction" Scale="Empire" Duration="20" Power="1">
+        <Politics Name="Politics05"/>
+    </PopulationPoliticalEventDefinition>
+    <PopulationPoliticalEventDefinition Name="PopulationPoliticalEventBuildingConstructionUniqueMilitarist" Category="PoliticalEventConstruction" Scale="Empire" Duration="20" Power="1">
+        <Politics Name="Politics06"/>
+    </PopulationPoliticalEventDefinition>
+    
+    
+
+
+</Datatable>

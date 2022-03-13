@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/TechnologyLinkDefinition.xsd">
+  
+  <!-- removing the extra ugly link -->
+
+  <TechnologyLinkDefinition Name="TechnologyLinkDefinitionScienceAndExploration28To6" Category="TechnologyLinkTypeCostReduction" PrerequisiteResolution="OR">
+  </TechnologyLinkDefinition>
+
+  <TechnologyLinkDefinition Name="TechnologyLinkDefinitionScienceAndExploration28To6Unfallen" Category="TechnologyLinkTypeCostReduction" PrerequisiteResolution="OR">
+  </TechnologyLinkDefinition>
+
+  <!--<TechnologyLinkDefinition Name="TechnologyLinkDefinitionScienceAndExploration28To6TimeLords" Category="TechnologyLinkTypeCostReduction" PrerequisiteResolution="OR">
+  </TechnologyLinkDefinition>-->
+
+  <TechnologyLinkDefinition Name="TechnologyLinkDefinitionScienceAndExploration28To6HoratioTimeLords" Category="TechnologyLinkTypeCostReduction" PrerequisiteResolution="OR">
+  </TechnologyLinkDefinition>
+
+  <TechnologyLinkDefinition Name="TechnologyLinkDefinitionScienceAndExploration28To6SophonsTimeLords" Category="TechnologyLinkTypeCostReduction" PrerequisiteResolution="OR">
+  </TechnologyLinkDefinition>
+
+   <TechnologyLinkDefinition Name="TechnologyLinkDefinitionScienceAndExploration28To6UmbralChoirTimeLords" Category="TechnologyLinkTypeCostReduction" PrerequisiteResolution="OR">
+   </TechnologyLinkDefinition>
+   
+  <!--<TechnologyLinkDefinition Name="TechnologyLinkDefinitionScienceAndExploration28To6TimeLordsTimeLords" Category="TechnologyLinkTypeCostReduction" PrerequisiteResolution="OR">
+  </TechnologyLinkDefinition>-->
+
+    <TechnologyLinkDefinition Name="TechnologyLinkDefinitionScienceAndExploration25To6Vaulters" Category="TechnologyLinkTypeCostReduction" PrerequisiteResolution="OR">
+    </TechnologyLinkDefinition>
+    
+    <TechnologyLinkDefinition Name="TechnologyLinkDefinitionScienceAndExploration25To6VaultersNoPortals" Category="TechnologyLinkTypeCostReduction" PrerequisiteResolution="OR">
+    </TechnologyLinkDefinition>
+    
+    <TechnologyLinkDefinition Name="TechnologyLinkDefinitionScienceAndExploration25To6VaultersNoVaultersPopulation" Category="TechnologyLinkTypeCostReduction" PrerequisiteResolution="OR">
+    </TechnologyLinkDefinition>
+
+    <TechnologyLinkDefinition Name="TechnologyLinkDefinitionScienceAndExploration28To6Vaulters" Category="TechnologyLinkTypeCostReduction" PrerequisiteResolution="OR">
+    </TechnologyLinkDefinition>
+
+    <TechnologyLinkDefinition Name="TechnologyLinkDefinitionScienceAndExploration28To6VaultersNoPortals" Category="TechnologyLinkTypeCostReduction" PrerequisiteResolution="OR">
+    </TechnologyLinkDefinition>
+
+    <TechnologyLinkDefinition Name="TechnologyLinkDefinitionScienceAndExploration28To6VaultersNoVaultersPopulation" Category="TechnologyLinkTypeCostReduction" PrerequisiteResolution="OR">
+    </TechnologyLinkDefinition>
+
+  <!--  1 to 5 link -->
+   
+   <TechnologyLinkDefinition Name="TechnologyLinkDefinitionEmpireDevelopment1To5" Category="TechnologyLinkTypeCostReduction" PrerequisiteResolution="OR">
+   </TechnologyLinkDefinition>
+
+   <TechnologyLinkDefinition Name="TechnologyLinkDefinitionEmpireDevelopment1To5Unfallen" Category="TechnologyLinkTypeCostReduction" PrerequisiteResolution="OR">
+   </TechnologyLinkDefinition>
+
+   <TechnologyLinkDefinition Name="TechnologyLinkDefinitionEmpireDevelopment1To5TimeLords" Category="TechnologyLinkTypeCostReduction" PrerequisiteResolution="OR">
+   </TechnologyLinkDefinition>
+
+   <TechnologyLinkDefinition Name="TechnologyLinkDefinitionEmpireDevelopment1To5Horatio" Category="TechnologyLinkTypeCostReduction" PrerequisiteResolution="OR">
+   </TechnologyLinkDefinition>
+
+   <TechnologyLinkDefinition Name="TechnologyLinkDefinitionEmpireDevelopment1To5MajorHisshos" Category="TechnologyLinkTypeCostReduction" PrerequisiteResolution="OR">
+   </TechnologyLinkDefinition>
+
+   <!-- New ind to sci2 or ind to dust2 exlusive link -->
+   
+  <TechnologyLinkDefinition Name="TechnologyLinkDefinitionEconomyAndTrade16EconomyAndTrade17" Category="TechnologyLinkTypeExclusion" PrerequisiteResolution="OR">
+      <TechnologyPrerequisite Flags="TechnologyLinkAvailability">TechnologyIndToDust2</TechnologyPrerequisite>
+      <TechnologyPrerequisite Flags="TechnologyLinkAvailability">TechnologyIndToScience2</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="TechnologyLinkExclusionEconomyAndTrade16EconomyAndTrade17"/>
+  </TechnologyLinkDefinition>
+
+   <!-- MILITARY -->
+
+   <!-- STAGE 3 -->
+   
+   <TechnologyLinkDefinition Name="TechnologyLinkDefinitionMilitary8Military9" Category="TechnologyLinkTypeExclusion" PrerequisiteResolution="OR">
+      <!--<TechnologyPrerequisite Flags="TechnologyLinkAvailability">TechnologyWeaponModuleStrategic1</TechnologyPrerequisite>
+      <TechnologyPrerequisite Flags="TechnologyLinkAvailability">TechnologyWeaponModuleStrategic2</TechnologyPrerequisite>-->
+      <!--<SimulationDescriptorReference Name="TechnologyLinkExclusionMilitary8Military9"/>-->
+   </TechnologyLinkDefinition>
+
+   <!-- STAGE 4 -->
+
+   <TechnologyLinkDefinition Name="TechnologyLinkDefinitionMilitary20Military21" Category="TechnologyLinkTypeExclusion" PrerequisiteResolution="OR">
+      <!--<TechnologyPrerequisite Flags="TechnologyLinkAvailability">TechnologyWeaponModuleStrategic3</TechnologyPrerequisite>
+      <TechnologyPrerequisite Flags="TechnologyLinkAvailability">TechnologyWeaponModuleStrategic4</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="TechnologyLinkExclusionMilitary20Military21"/>-->
+   </TechnologyLinkDefinition>
+
+   <!-- STAGE 5 -->
+   <TechnologyLinkDefinition Name="TechnologyLinkDefinitionMilitary22Military23" Category="TechnologyLinkTypeExclusion" PrerequisiteResolution="OR">
+      <!--<TechnologyPrerequisite Flags="TechnologyLinkAvailability">TechnologyWeaponModuleStrategic5</TechnologyPrerequisite>
+      <TechnologyPrerequisite Flags="TechnologyLinkAvailability">TechnologyWeaponModuleStrategic6</TechnologyPrerequisite>
+      <SimulationDescriptorReference Name="TechnologyLinkExclusionMilitary22Military23"/>-->
+   </TechnologyLinkDefinition>
+
+</Datatable>

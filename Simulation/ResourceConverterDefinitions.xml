@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/ResourceConverterDefinition.xsd">
+
+    <!-- InterpreterModifier has access to the following variables: -->
+    <!--  Input: resource amount -->
+    <!--  StockLocation: simulation object of the empire/system where the check is done -->
+
+    <!-- Additional variable for PressureGain converters: OtherEmpire (sim obj of the empire with whom the diplomatic resource exchange is done) -->
+    <ResourceConverterDefinition ResourceName="EmpireMoney">
+        <ToConverter To="CancelLaw">
+            <InterpreterModifier>$(Input) * 0.1 * Property(StockLocation, @../ClassEmpire, GameSpeedMultiplier) * Property(StockLocation, @../ClassEmpire/ClassSenate, LawCancelCostMultiplier) </InterpreterModifier>
+        </ToConverter>
+        <ToConverter To="CancelCompletedLaw">
+            <InterpreterModifier>$(Input) * 0</InterpreterModifier>
+        </ToConverter>
+        <ToConverter To="TradingRouteExperienceGain">
+            <Modifier Value="1"/>
+        </ToConverter>
+        <ToConverter To="EmpireLifeforce">
+            <InterpreterModifier>$(Input)</InterpreterModifier>
+        </ToConverter>
+        <ToConverter To="PressureGain">
+            <InterpreterModifier>Min(100, 100 * $(Input) / Max(1, (5 * Property(StockLocation, @ClassEmpire, NetEmpireMoney) + Property(StockLocation, @ClassEmpire, BankAccount))) * ((5 * Property(StockLocation, @ClassEmpire, NetEmpireMoney) + Property(StockLocation, @ClassEmpire, BankAccount)) + (5 * Property(OtherEmpire, NetEmpireMoney) + Property(OtherEmpire, BankAccount))) / Max(1, Max((5 * Property(StockLocation, @ClassEmpire, NetEmpireMoney) + Property(StockLocation, @ClassEmpire, BankAccount)), (5 * Property(OtherEmpire, NetEmpireMoney) + Property(OtherEmpire, BankAccount)))))</InterpreterModifier>
+        </ToConverter>
+    </ResourceConverterDefinition>
+
+    <ResourceConverterDefinition ResourceName="EmpireResearch">
+        <ToConverter To="Buyout">
+            <InterpreterModifier>$(Input)</InterpreterModifier>
+        </ToConverter>
+        <ToConverter To="TradingRouteExperienceGain">
+            <Modifier Value="1"/>
+        </ToConverter>
+    </ResourceConverterDefinition>
+
+    <ResourceConverterDefinition ResourceName="Buyout">
+        <ToConverter To="EmpireMoney">
+            <InterpreterModifier>
+                (($(Input)) ^ 1.2125 + 50) * Property(StockLocation, @../ClassEmpire,BuyoutActivated) * Property(StockLocation, @../ClassEmpire, DustInflation)
+            </InterpreterModifier>
+        </ToConverter>
+        <ToConverter To="EmpireEmpirePoint">
+            <InterpreterModifier>
+              <!-- PRODUCTION --> ((($(Input)) ^ 1.1 + 100) * Count(StockLocation, @'ClassColonizedStarSystem') * 2) +
+              <!-- ONE OF THE TWO FORMULAS WILL AUTO CANCEL -->
+              <!-- RESEARCH   --> ((($(Input)) ^ 1.1 + 100) * Count(StockLocation, @'ClassEmpire') * 2)
+			</InterpreterModifier>
+        </ToConverter>
+        <ToConverter To="MinorEmpireShipMoney">
+            <InterpreterModifier>$(Input) * 1.4</InterpreterModifier>
+        </ToConverter>
+        <ToConverter To="MinorEmpireImprovementMoney">
+            <InterpreterModifier>$(Input)</InterpreterModifier>
+        </ToConverter>
+        <ToConverter To="MarketplaceEmpireMoney">
+            <InterpreterModifier>$(Input)</InterpreterModifier>
+        </ToConverter>
+        <ToConverter To="MarketplaceEmpireEmpirePoint">
+            <InterpreterModifier>$(Input)</InterpreterModifier>
+        </ToConverter>
+    </ResourceConverterDefinition>
+    
+</Datatable>

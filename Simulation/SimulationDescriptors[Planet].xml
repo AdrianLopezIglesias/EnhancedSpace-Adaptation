@@ -1,0 +1,1098 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
+
+   
+    <!-- FOOD BRANCH : -->
+
+    <SimulationDescriptor Name="PlanetTypeSwamp" Type="PlanetType" >
+      <Property Name="PlanetClass" BaseValue="1" />
+
+      <Modifier TargetProperty="PlanetInitialFood"            Operation="Addition" Value="4" TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialIndustry"        Operation="Addition" Value="3"  TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialDust"            Operation="Addition" Value="2"  TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialScience"         Operation="Addition" Value="2"  TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialPrestige"        Operation="Addition" Value="3"  TooltipHidden="true"/>
+
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="PlanetTypeMonsoon" Type="PlanetType" >
+      <Property Name="PlanetClass" BaseValue="2" />
+
+      <Modifier TargetProperty="PlanetInitialFood"            Operation="Addition" Value="5" TooltipHidden="true" />
+      <Modifier TargetProperty="PlanetInitialIndustry"        Operation="Addition" Value="3" TooltipHidden="true" />
+      <Modifier TargetProperty="PlanetInitialDust"            Operation="Addition" Value="1" TooltipHidden="true" />
+      <Modifier TargetProperty="PlanetInitialScience"         Operation="Addition" Value="2" TooltipHidden="true" />
+      <Modifier TargetProperty="PlanetInitialPrestige"        Operation="Addition" Value="3" TooltipHidden="true" />
+
+      <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Population)" TooltipHidden="true"     />
+      <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="2"  />
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="PlanetTypeJungle" Type="PlanetType" >
+      <Property Name="PlanetClass" BaseValue="2" />
+
+      <Modifier TargetProperty="PlanetInitialFood"            Operation="Addition" Value="6"  TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialIndustry"        Operation="Addition" Value="3"  TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialDust"            Operation="Addition" Value="0"  TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialScience"         Operation="Addition" Value="2"  TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialPrestige"        Operation="Addition" Value="4"  TooltipHidden="true"/>
+
+      <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="5" BinaryOperation="Multiplication" Right="$(Population)" TooltipHidden="true"     />
+      <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="5"  />
+
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="PlanetTypeForest" Type="PlanetType" >
+      <Property Name="PlanetClass" BaseValue="1" />
+
+      <Modifier TargetProperty="PlanetInitialFood"            Operation="Addition" Value="8"  TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialIndustry"        Operation="Addition" Value="2"  TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialDust"            Operation="Addition" Value="0"  TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialScience"         Operation="Addition" Value="2"  TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialPrestige"        Operation="Addition" Value="4"  TooltipHidden="true"/>
+    
+      <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="8" BinaryOperation="Multiplication" Right="$(Population)" TooltipHidden="true"     />
+      <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="8"  />
+    
+    </SimulationDescriptor>
+
+    <!-- INFLUENCE BRANCH : -->
+
+    <SimulationDescriptor Name="PlanetTypeTropical" Type="PlanetType" >
+      <Property Name="PlanetClass" BaseValue="2" />
+
+      <Modifier TargetProperty="PlanetInitialFood"            Operation="Addition" Value="3"  TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialIndustry"        Operation="Addition" Value="3"  TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialDust"            Operation="Addition" Value="2"  TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialScience"         Operation="Addition" Value="2"  TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialPrestige"        Operation="Addition" Value="4"  TooltipHidden="true"/>
+
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="PlanetTypeAtoll" Type="PlanetType" >
+        <Property Name="PlanetClass" BaseValue="1" />
+
+        <Modifier TargetProperty="PlanetInitialFood"            Operation="Addition" Value="3" TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetInitialIndustry"        Operation="Addition" Value="3" TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetInitialDust"            Operation="Addition" Value="1" TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetInitialScience"         Operation="Addition" Value="2" TooltipHidden="true"/> 
+        <Modifier TargetProperty="PlanetInitialPrestige"        Operation="Addition" Value="5" TooltipHidden="true"/>
+
+      <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Population)" TooltipHidden="true"     />
+      <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="2"  />
+
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="PlanetTypeOcean" Type="PlanetType" >
+        <Property Name="PlanetClass" BaseValue="1" />
+
+        <Modifier TargetProperty="PlanetInitialFood"            Operation="Addition" Value="4"  TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetInitialIndustry"        Operation="Addition" Value="3"  TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetInitialDust"            Operation="Addition" Value="0"  TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetInitialScience"         Operation="Addition" Value="2"  TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetInitialPrestige"        Operation="Addition" Value="6"  TooltipHidden="true"/>
+      
+      <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="5" BinaryOperation="Multiplication" Right="$(Population)" TooltipHidden="true"     />
+      <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="5"  />
+
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="PlanetTypeTerran" Type="PlanetType" >
+        <Property Name="PlanetClass" BaseValue="1" />
+
+        <Modifier TargetProperty="PlanetInitialFood"            Operation="Addition" Value="4"  TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetInitialIndustry"        Operation="Addition" Value="2"  TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetInitialDust"            Operation="Addition" Value="0"  TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetInitialScience"         Operation="Addition" Value="2"  TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetInitialPrestige"        Operation="Addition" Value="8"  TooltipHidden="true"/>
+      
+      <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="8" BinaryOperation="Multiplication" Right="$(Population)" TooltipHidden="true"     />
+      <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="8"  />
+    </SimulationDescriptor>
+
+    <!-- INDUSTRY BRANCH : -->
+
+    <SimulationDescriptor Name="PlanetTypeSteppes" Type="PlanetType" >
+        <Property Name="PlanetClass" BaseValue="2" />
+
+        <Modifier TargetProperty="PlanetInitialFood"            Operation="Addition" Value="2"  TooltipHidden="true"    />
+        <Modifier TargetProperty="PlanetInitialIndustry"        Operation="Addition" Value="4"  TooltipHidden="true"    />
+        <Modifier TargetProperty="PlanetInitialDust"            Operation="Addition" Value="3"  TooltipHidden="true"    />
+        <Modifier TargetProperty="PlanetInitialScience"         Operation="Addition" Value="3"  TooltipHidden="true"    />
+        <Modifier TargetProperty="PlanetInitialPrestige"        Operation="Addition" Value="2"  TooltipHidden="true"    />
+
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="PlanetTypeBoreal" Type="PlanetType" >
+      <Property Name="PlanetClass" BaseValue="2" />
+
+      <Modifier TargetProperty="PlanetInitialFood"            Operation="Addition" Value="1" TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialIndustry"        Operation="Addition" Value="6" TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialDust"            Operation="Addition" Value="3" TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialScience"         Operation="Addition" Value="3" TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialPrestige"        Operation="Addition" Value="1" TooltipHidden="true"/>
+
+      <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="-2" BinaryOperation="Multiplication" Right="$(Population)" TooltipHidden="true"     />
+      <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="-2"  />
+
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="PlanetTypeAsh" Type="PlanetType" >
+      <Property Name="PlanetClass" BaseValue="4" />
+
+      <Modifier TargetProperty="PlanetInitialFood"            Operation="Addition" Value="0"      TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialIndustry"        Operation="Addition" Value="11"     TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialDust"            Operation="Addition" Value="2"      TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialScience"         Operation="Addition" Value="2"      TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialPrestige"        Operation="Addition" Value="0"      TooltipHidden="true"/>
+
+      <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="-5" BinaryOperation="Multiplication" Right="$(Population)" TooltipHidden="true"     />
+      <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="-5"  />
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="PlanetTypeLava" Type="PlanetType" >
+      <Property Name="PlanetClass" BaseValue="4" />
+
+      <Modifier TargetProperty="PlanetInitialFood"            Operation="Addition" Value="0"  TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialIndustry"        Operation="Addition" Value="14" TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialDust"            Operation="Addition" Value="1"  TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialScience"         Operation="Addition" Value="1"  TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialPrestige"        Operation="Addition" Value="0"  TooltipHidden="true"/>
+
+      <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="-8" BinaryOperation="Multiplication" Right="$(Population)" TooltipHidden="true"     />
+      <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="-8"  />
+    </SimulationDescriptor>
+
+    <!-- DUST BRANCH : -->
+
+    <SimulationDescriptor Name="PlanetTypeTundra" Type="PlanetType" >
+        <Property Name="PlanetClass" BaseValue="2" />
+
+        <Modifier TargetProperty="PlanetInitialFood"            Operation="Addition" Value="2"  TooltipHidden="true" />
+        <Modifier TargetProperty="PlanetInitialIndustry"        Operation="Addition" Value="3"  TooltipHidden="true" />
+        <Modifier TargetProperty="PlanetInitialDust"            Operation="Addition" Value="4"  TooltipHidden="true" />
+        <Modifier TargetProperty="PlanetInitialScience"         Operation="Addition" Value="3"  TooltipHidden="true" />
+        <Modifier TargetProperty="PlanetInitialPrestige"        Operation="Addition" Value="2"  TooltipHidden="true" />
+
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="PlanetTypeVeldt" Type="PlanetType" >
+      <Property Name="PlanetClass" BaseValue="2" />
+
+      <Modifier TargetProperty="PlanetInitialFood"            Operation="Addition" Value="1"  TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialIndustry"        Operation="Addition" Value="3"  TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialDust"            Operation="Addition" Value="6"  TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialScience"         Operation="Addition" Value="3"  TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialPrestige"        Operation="Addition" Value="1"  TooltipHidden="true"/>
+
+      <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="-2" BinaryOperation="Multiplication" Right="$(Population)" TooltipHidden="true"     />
+      <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="-2"  />
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="PlanetTypeArid" Type="PlanetType" >
+      <Property Name="PlanetClass" BaseValue="3" />
+
+      <Modifier TargetProperty="PlanetInitialFood"            Operation="Addition" Value="0"  TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialIndustry"        Operation="Addition" Value="2"  TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialDust"            Operation="Addition" Value="11" TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialScience"         Operation="Addition" Value="2"  TooltipHidden="true"/>
+      <Modifier TargetProperty="PlanetInitialPrestige"        Operation="Addition" Value="0"  TooltipHidden="true"/>
+
+      <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="-5" BinaryOperation="Multiplication" Right="$(Population)" TooltipHidden="true"   />
+      <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="-5"  />
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="PlanetTypeDesert" Type="PlanetType">
+      <Property Name="PlanetClass" BaseValue="3" />
+
+      <Modifier TargetProperty="PlanetInitialFood"            Operation="Addition" Value="0"  TooltipHidden="true"    />
+      <Modifier TargetProperty="PlanetInitialIndustry"        Operation="Addition" Value="1"  TooltipHidden="true"    />
+      <Modifier TargetProperty="PlanetInitialDust"            Operation="Addition" Value="14" TooltipHidden="true"    />
+      <Modifier TargetProperty="PlanetInitialScience"         Operation="Addition" Value="1"  TooltipHidden="true"    />
+      <Modifier TargetProperty="PlanetInitialPrestige"        Operation="Addition" Value="0"  TooltipHidden="true"    />
+
+      <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="-8" BinaryOperation="Multiplication" Right="$(Population)" TooltipHidden="true"     />
+      <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="-8"  />
+    </SimulationDescriptor>
+
+    <!-- SCIENCE BRANCH : -->
+
+    <SimulationDescriptor Name="PlanetTypeSnow" Type="PlanetType" >
+        <Property Name="PlanetClass" BaseValue="3" />
+
+        <Modifier TargetProperty="PlanetInitialFood"            Operation="Addition" Value="2"  TooltipHidden="true" />
+        <Modifier TargetProperty="PlanetInitialIndustry"        Operation="Addition" Value="3"  TooltipHidden="true" />
+        <Modifier TargetProperty="PlanetInitialDust"            Operation="Addition" Value="3"  TooltipHidden="true" />
+        <Modifier TargetProperty="PlanetInitialScience"         Operation="Addition" Value="4"  TooltipHidden="true" />
+        <Modifier TargetProperty="PlanetInitialPrestige"        Operation="Addition" Value="2"  TooltipHidden="true" />
+
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="PlanetTypeArctic" Type="PlanetType" >
+        <Property Name="PlanetClass" BaseValue="3" />
+
+        <Modifier TargetProperty="PlanetInitialFood"            Operation="Addition" Value="1"  TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetInitialIndustry"        Operation="Addition" Value="3"  TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetInitialDust"            Operation="Addition" Value="3"  TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetInitialScience"         Operation="Addition" Value="6"  TooltipHidden="true" />
+        <Modifier TargetProperty="PlanetInitialPrestige"        Operation="Addition" Value="1"  TooltipHidden="true"/>
+
+        <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="-2" BinaryOperation="Multiplication" Right="$(Population)" TooltipHidden="true"     />
+        <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="-2"  />
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="PlanetTypeIce" Type="PlanetType" >
+        <Property Name="PlanetClass" BaseValue="2" />
+
+        <Modifier TargetProperty="PlanetInitialFood"            Operation="Addition" Value="0" TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetInitialIndustry"        Operation="Addition" Value="2"  TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetInitialDust"            Operation="Addition" Value="2"  TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetInitialScience"         Operation="Addition" Value="11"  TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetInitialPrestige"        Operation="Addition" Value="0"  TooltipHidden="true"/>
+
+        <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="-5" BinaryOperation="Multiplication" Right="$(Population)" TooltipHidden="true"     />
+        <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="-5"  />
+    </SimulationDescriptor>
+  
+    <SimulationDescriptor Name="PlanetTypeBarren" Type="PlanetType" >
+        <Property Name="PlanetClass" BaseValue="4" />
+
+        <Modifier TargetProperty="PlanetInitialFood"            Operation="Addition" Value="0"  TooltipHidden="true" />
+        <Modifier TargetProperty="PlanetInitialIndustry"        Operation="Addition" Value="1"  TooltipHidden="true" />
+        <Modifier TargetProperty="PlanetInitialDust"            Operation="Addition" Value="1"  TooltipHidden="true" />
+        <Modifier TargetProperty="PlanetInitialScience"         Operation="Addition" Value="14" TooltipHidden="true" />
+        <Modifier TargetProperty="PlanetInitialPrestige"        Operation="Addition" Value="0"  TooltipHidden="true" />
+
+        <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="-8" BinaryOperation="Multiplication" Right="$(Population)" TooltipHidden="true"     />
+        <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="-8"  />
+    </SimulationDescriptor>
+
+    <!-- GAS PLANETS -->
+  
+    <SimulationDescriptor Name="PlanetTypeGasFrozen" Type="PlanetType" >
+        <Property Name="PlanetClass" BaseValue="4" />
+
+        <Modifier TargetProperty="PlanetInitialFood"            Operation="Addition" Value="0"  TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetInitialIndustry"        Operation="Addition" Value="0"  TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetInitialDust"            Operation="Addition" Value="0"  TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetInitialScience"         Operation="Addition" Value="30" TooltipHidden="true" />
+        <Modifier TargetProperty="PlanetInitialPrestige"        Operation="Addition" Value="0"  TooltipHidden="true"/>
+
+        <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="-12" BinaryOperation="Multiplication" Right="$(Population)" TooltipHidden="true"     />
+        <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="-12"  />
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="PlanetTypeGasCold" Type="PlanetType" >
+        <Property Name="PlanetClass" BaseValue="4" />
+
+        <Modifier TargetProperty="PlanetInitialFood"            Operation="Addition" Value="0"  TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetInitialIndustry"        Operation="Addition" Value="0"  TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetInitialDust"            Operation="Addition" Value="10"  TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetInitialScience"         Operation="Addition" Value="20" TooltipHidden="true" />
+        <Modifier TargetProperty="PlanetInitialPrestige"        Operation="Addition" Value="0"  TooltipHidden="true"/>
+
+        <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="-12" BinaryOperation="Multiplication" Right="$(Population)" TooltipHidden="true"     />
+        <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="-12"  />
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="PlanetTypeGasTemperate" Type="PlanetType" >
+        <Property Name="PlanetClass" BaseValue="4" />
+
+        <Modifier TargetProperty="PlanetInitialFood"            Operation="Addition" Value="0"  TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetInitialIndustry"        Operation="Addition" Value="5"  TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetInitialDust"            Operation="Addition" Value="10" TooltipHidden="true"    />
+        <Modifier TargetProperty="PlanetInitialScience"         Operation="Addition" Value="15"  TooltipHidden="true"    />
+        <Modifier TargetProperty="PlanetInitialPrestige"        Operation="Addition" Value="0"  TooltipHidden="true"    />
+
+        <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="-12" BinaryOperation="Multiplication" Right="$(Population)" TooltipHidden="true"     />
+        <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="-12"  />
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="PlanetTypeGasWarm" Type="PlanetType" >
+        <Property Name="PlanetClass" BaseValue="4" />
+
+        <Modifier TargetProperty="PlanetInitialFood"            Operation="Addition" Value="0"  TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetInitialIndustry"        Operation="Addition" Value="15"  TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetInitialDust"            Operation="Addition" Value="10" TooltipHidden="true" />
+        <Modifier TargetProperty="PlanetInitialScience"         Operation="Addition" Value="5"  TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetInitialPrestige"        Operation="Addition" Value="0"  TooltipHidden="true"/>
+
+        <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="-12" BinaryOperation="Multiplication" Right="$(Population)" TooltipHidden="true"     />
+        <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="-12"  />
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="PlanetTypeGasHot" Type="PlanetType" >
+        <Property Name="PlanetClass" BaseValue="4" />
+
+        <Modifier TargetProperty="PlanetInitialFood"            Operation="Addition" Value="0"  TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetInitialIndustry"        Operation="Addition" Value="20" TooltipHidden="true" />
+        <Modifier TargetProperty="PlanetInitialDust"            Operation="Addition" Value="10"  TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetInitialScience"         Operation="Addition" Value="0"  TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetInitialPrestige"        Operation="Addition" Value="0"  TooltipHidden="true"/>
+
+        <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="-12" BinaryOperation="Multiplication" Right="$(Population)" TooltipHidden="true"     />
+        <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="-12"  />
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="PlanetTypeGasBurning" Type="PlanetType" >
+        <Property Name="PlanetClass" BaseValue="4" />
+
+        <Modifier TargetProperty="PlanetInitialFood"            Operation="Addition" Value="0"  TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetInitialIndustry"        Operation="Addition" Value="30" TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetInitialDust"            Operation="Addition" Value="0"  TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetInitialScience"         Operation="Addition" Value="0"  TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetInitialPrestige"        Operation="Addition" Value="0"  TooltipHidden="true"/>
+
+        <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="-12" BinaryOperation="Multiplication" Right="$(Population)" TooltipHidden="true"     />
+        <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="-12"  />
+    </SimulationDescriptor>
+
+
+    <SimulationDescriptor Name="PlanetTypeDestroyed" Type="PlanetType" >
+        <Property Name="PlanetClass" BaseValue="5" />
+
+        <Modifier TargetProperty="PlanetRawFood"            Operation="Force" Value="0" TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetRawIndustry"        Operation="Force" Value="0" TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetRawDust"            Operation="Force" Value="0" TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetRawScience"         Operation="Force" Value="0" TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetRawPrestige"        Operation="Force" Value="0" TooltipHidden="true"/>
+        <Modifier TargetProperty="Happiness"                Operation="Force" Value="0" TooltipHidden="true"/>
+        <Modifier TargetProperty="HappinessRaw"             Operation="Force" Value="0" TooltipHidden="true" />
+        <Modifier TargetProperty="RawMaximumPopulation"     Operation="Force" Value="0" TooltipHidden="true"/>
+
+        <Modifier TargetProperty="PlanetIsDestroyed"        Operation="Addition" Value="1" TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+
+    <SimulationDescriptor Name="PlanetTypeDestroyedGas" Type="PlanetType" >
+        <Property Name="PlanetClass" BaseValue="5" />
+
+        <Modifier TargetProperty="PlanetRawFood"            Operation="Force" Value="0" TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetRawIndustry"        Operation="Force" Value="0" TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetRawDust"            Operation="Force" Value="0" TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetRawScience"         Operation="Force" Value="0" TooltipHidden="true"/>
+        <Modifier TargetProperty="PlanetRawPrestige"        Operation="Force" Value="0" TooltipHidden="true"/>
+        <Modifier TargetProperty="Happiness"                Operation="Force" Value="0" TooltipHidden="true"/>
+        <Modifier TargetProperty="HappinessRaw"             Operation="Force" Value="0" TooltipHidden="true" />
+        <Modifier TargetProperty="RawMaximumPopulation"     Operation="Force" Value="0" TooltipHidden="true"/>
+
+        <Modifier TargetProperty="PlanetIsDestroyed"        Operation="Addition" Value="1" TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+
+    <!-- Planet Size list -->
+    <SimulationDescriptor Name="PlanetSizeHuge" Type="PlanetSize" >
+        <Property Name="OwnedHugePlanets"                           BaseValue="1" />
+        
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="7"       Operation="Addition" Path="ClassPlanet,!PlanetGameplayTypeGas"         TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="5"       Operation="Addition" Path="ClassPlanet,PlanetGameplayTypeGas"          TooltipHidden="true"/>
+      
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="3"       Operation="Addition" Path="PlanetTypeJungle"    TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="3"       Operation="Addition" Path="PlanetTypeForest"    TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="3"       Operation="Addition" Path="PlanetTypeOcean"     TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="3"       Operation="Addition" Path="PlanetTypeTerran"    TooltipHidden="true"/>
+      
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeSwamp"     TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeMonsoon"   TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeTropical"  TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeAtoll"     TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeSteppes"   TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeBoreal"    TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeTundra"    TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeVeldt"     TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeSnow"      TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeArctic"    TooltipHidden="true"/>
+      
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeAsh"       TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeLava"      TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeArid"      TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeDesert"    TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeIce"       TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeBarren"    TooltipHidden="true"/>
+
+        <!-- DLC3 -->
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeFake"      TooltipHidden="true"/>
+
+        <Modifier TargetProperty="PlanetDepletionMax"       Value="200" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="PlanetSizeGasLarge" Type="PlanetSizeGas"/>
+    <SimulationDescriptor Name="PlanetSizeGasHuge"  Type="PlanetSizeGas"/>
+
+
+    <SimulationDescriptor Name="PlanetSizeLarge" Type="PlanetSize" >
+        <Property Name="OwnedLargePlanets"                           BaseValue="1" />
+
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="5"       Operation="Addition" Path="ClassPlanet,!PlanetGameplayTypeGas"         TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="4"       Operation="Addition" Path="ClassPlanet,PlanetGameplayTypeGas"          TooltipHidden="true"/>
+
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="3"       Operation="Addition" Path="PlanetTypeJungle"    TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="3"       Operation="Addition" Path="PlanetTypeForest"    TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="3"       Operation="Addition" Path="PlanetTypeOcean"     TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="3"       Operation="Addition" Path="PlanetTypeTerran"    TooltipHidden="true"/>
+
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeSwamp"     TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeMonsoon"   TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeTropical"  TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeAtoll"     TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeSteppes"   TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeBoreal"    TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeTundra"    TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeVeldt"     TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeSnow"      TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeArctic"    TooltipHidden="true"/>
+
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeAsh"       TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeLava"      TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeArid"      TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeDesert"    TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeIce"       TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeBarren"    TooltipHidden="true"/>
+
+        <!-- DLC3 -->
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeFake"      TooltipHidden="true"/>
+
+        <Modifier TargetProperty="PlanetDepletionMax"       Value="180" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="PlanetSizeMedium" Type="PlanetSize" >
+       <Modifier TargetProperty="RawMaximumPopulation"     Value="3"       Operation="Addition" Path="ClassPlanet,!PlanetGameplayTypeGas"         TooltipHidden="true"/>
+       <Modifier TargetProperty="RawMaximumPopulation"     Value="3"       Operation="Addition" Path="ClassPlanet,PlanetGameplayTypeGas"          TooltipHidden="true"/>
+
+       <Modifier TargetProperty="RawMaximumPopulation"     Value="3"       Operation="Addition" Path="PlanetTypeJungle"    TooltipHidden="true"/>
+       <Modifier TargetProperty="RawMaximumPopulation"     Value="3"       Operation="Addition" Path="PlanetTypeForest"    TooltipHidden="true"/>
+       <Modifier TargetProperty="RawMaximumPopulation"     Value="3"       Operation="Addition" Path="PlanetTypeOcean"     TooltipHidden="true"/>
+       <Modifier TargetProperty="RawMaximumPopulation"     Value="3"       Operation="Addition" Path="PlanetTypeTerran"    TooltipHidden="true"/>
+
+       <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeSwamp"     TooltipHidden="true"/>
+       <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeMonsoon"   TooltipHidden="true"/>
+       <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeTropical"  TooltipHidden="true"/>
+       <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeAtoll"     TooltipHidden="true"/>
+       <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeSteppes"   TooltipHidden="true"/>
+       <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeBoreal"    TooltipHidden="true"/>
+       <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeTundra"    TooltipHidden="true"/>
+       <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeVeldt"     TooltipHidden="true"/>
+       <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeSnow"      TooltipHidden="true"/>
+       <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeArctic"    TooltipHidden="true"/>
+
+       <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeAsh"       TooltipHidden="true"/>
+       <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeLava"      TooltipHidden="true"/>
+       <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeArid"      TooltipHidden="true"/>
+       <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeDesert"    TooltipHidden="true"/>
+       <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeIce"       TooltipHidden="true"/>
+       <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeBarren"    TooltipHidden="true"/>
+
+       <!-- DLC3 -->
+       <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeFake"      TooltipHidden="true"/>
+
+       <Modifier TargetProperty="PlanetDepletionMax"       Value="150" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="PlanetSizeSmall" Type="PlanetSize" >
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="ClassPlanet,!PlanetGameplayTypeGas"         TooltipHidden="true"/>
+
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="3"       Operation="Addition" Path="PlanetTypeJungle"    TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="3"       Operation="Addition" Path="PlanetTypeForest"    TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="3"       Operation="Addition" Path="PlanetTypeOcean"     TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="3"       Operation="Addition" Path="PlanetTypeTerran"    TooltipHidden="true"/>
+
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeSwamp"     TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeMonsoon"   TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeTropical"  TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeAtoll"     TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeSteppes"   TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeBoreal"    TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeTundra"    TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeVeldt"     TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeSnow"      TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeArctic"    TooltipHidden="true"/>
+
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeAsh"       TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeLava"      TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeArid"      TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeDesert"    TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeIce"       TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeBarren"    TooltipHidden="true"/>
+
+        <!-- DLC3 -->
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeFake"      TooltipHidden="true"/>
+
+        <Modifier TargetProperty="PlanetDepletionMax"       Value="120" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
+    
+        <Modifier TargetProperty="PlanetIsSmall"            Operation="Force"     Value="1"   Path="ClassPlanet/ClassPopulationPlanet"    TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="PlanetSizeTiny" Type="PlanetSize" >
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="ClassPlanet,!PlanetGameplayTypeGas"         TooltipHidden="true"/>
+
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="3"       Operation="Addition" Path="PlanetTypeJungle"    TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="3"       Operation="Addition" Path="PlanetTypeForest"    TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="3"       Operation="Addition" Path="PlanetTypeOcean"     TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="3"       Operation="Addition" Path="PlanetTypeTerran"    TooltipHidden="true"/>
+
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeSwamp"     TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeMonsoon"   TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeTropical"  TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeAtoll"     TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeSteppes"   TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeBoreal"    TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeTundra"    TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeVeldt"     TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeSnow"      TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeArctic"    TooltipHidden="true"/>
+
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeAsh"       TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeLava"      TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeArid"      TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeDesert"    TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeIce"       TooltipHidden="true"/>
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="1"       Operation="Addition" Path="PlanetTypeBarren"    TooltipHidden="true"/>
+
+        <!-- DLC3 -->
+        <Modifier TargetProperty="RawMaximumPopulation"     Value="2"       Operation="Addition" Path="PlanetTypeFake"      TooltipHidden="true"/>
+        
+        <Modifier TargetProperty="PlanetDepletionMax"       Value="100" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <!-- ECONOMIC GAMEPLAY DESCRIPTOR -->
+    <SimulationDescriptor Name="PlanetGameplayTypeCold"          Type="PlanetGameplayType" >
+      <Property Name="OwnedColdPlanets"                           BaseValue="1"/>
+      <Modifier   TargetProperty="PlanetIsCold"           Operation="Force"     Value="1"   Path="ClassPlanet/ClassPopulationPlanet"    TooltipHidden="true"/>
+    </SimulationDescriptor>
+  
+    <SimulationDescriptor Name="PlanetGameplayTypeTemperate"     Type="PlanetGameplayType" >
+      <Property Name="OwnedTemperatePlanets"                           BaseValue="1"/>
+      <Modifier   TargetProperty="PlanetIsTemperate"      Operation="Force"     Value="1"   Path="ClassPlanet/ClassPopulationPlanet"    TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="PlanetGameplayTypeHot"           Type="PlanetGameplayType" >
+      <Property Name="OwnedHotPlanets"                           BaseValue="1" />
+      <Modifier   TargetProperty="PlanetIsHot"            Operation="Force"     Value="1"   Path="ClassPlanet/ClassPopulationPlanet"    TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="PlanetGameplayTypeTeeming"       Type="PlanetGameplayType" >
+      <Property Name="OwnedTeemingPlanets"                           BaseValue="1" />
+      <Modifier   TargetProperty="PlanetIsTeeming"        Operation="Force"     Value="1"   Path="ClassPlanet/ClassPopulationPlanet"    TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="PlanetGameplayTypeMild"       Type="PlanetGameplayType" >
+      <Property Name="OwnedMildPlanets"                           BaseValue="1" />
+      <Modifier   TargetProperty="PlanetIsMild"        Operation="Force"     Value="1"   Path="ClassPlanet/ClassPopulationPlanet"    TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="PlanetGameplayTypeMeager"        Type="PlanetGameplayType" >
+      <Property Name="OwnedMeagerPlanets"                           BaseValue="1" />
+      <Modifier   TargetProperty="PlanetIsMeager"         Operation="Force"     Value="1"   Path="ClassPlanet/ClassPopulationPlanet"    TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="PlanetGameplayTypeTree"          Type="PlanetGameplayType" >
+      <Property Name="OwnedTreePlanets"                           BaseValue="1"/>
+      <Modifier   TargetProperty="PlanetIsTree"        Operation="Force"     Value="1"   Path="ClassPlanet/ClassPopulationPlanet"    TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="PlanetGameplayTypeLush"          Type="PlanetGameplayType" >
+      <Property Name="OwnedLushPlanets"                           BaseValue="1"/>
+      <Modifier   TargetProperty="PlanetIsLush"        Operation="Force"     Value="1"   Path="ClassPlanet/ClassPopulationPlanet"    TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="PlanetGameplayTypeWater"          Type="PlanetGameplayType" >
+      <Property Name="OwnedWaterPlanets"                           BaseValue="1"/>
+      <Modifier   TargetProperty="PlanetIsWater"        Operation="Force"     Value="1"   Path="ClassPlanet/ClassPopulationPlanet"    TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="PlanetGameplayTypeCraggy"          Type="PlanetGameplayType" >
+      <Property Name="OwnedCraggyPlanets"                           BaseValue="1"/>
+      <Modifier   TargetProperty="PlanetIsCraggy"        Operation="Force"     Value="1"   Path="ClassPlanet/ClassPopulationPlanet"    TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="PlanetGameplayTypeDry"          Type="PlanetGameplayType" >
+      <Property Name="OwnedDryPlanets"                           BaseValue="1"/>
+      <Modifier   TargetProperty="PlanetIsDry"        Operation="Force"     Value="1"   Path="ClassPlanet/ClassPopulationPlanet"    TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="PlanetGameplayTypeStable"          Type="PlanetGameplayType" >
+      <Property Name="OwnedStablePlanets"                           BaseValue="1"/>
+      <Modifier   TargetProperty="PlanetIsStable"        Operation="Force"     Value="1"   Path="ClassPlanet/ClassPopulationPlanet"    TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="PlanetGameplayTypeGas"         Type="PlanetGameplayType" >
+      <Property Name="OwnedGasPlanets"                           BaseValue="1" />
+      <Modifier   TargetProperty="PlanetIsGas"                   Operation="Force"       Value="1"   Path="ClassPlanet/ClassPopulationPlanet"    TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+   
+   
+   <!-- ANOMALIES -->
+
+   <!-- Dust Nebula -->
+   <SimulationDescriptor Name="PlanetAnomalyNaturalWonder1" Type="PlanetAnomaly">
+      <Modifier   TargetProperty="PlanetRawDust"  Value="6"    Operation="Addition" Path="ClassPlanet"/>
+      <Modifier   TargetProperty="SystemMoney"    Value="50"   Operation="Addition" Path="./ClassStarSystem"/>
+   </SimulationDescriptor>
+
+   <!-- Seventeen Thousand Islands Bridge-->
+   <SimulationDescriptor Name="PlanetAnomalyNaturalWonder2" Type="PlanetAnomaly">
+      <Modifier       TargetProperty="RawMaximumPopulation"   Value="2"           Operation="Addition" Path="ClassPlanet" />
+      <Modifier       TargetProperty="PlanetRawFIDSI"         Value="2"           Operation="Addition" Path="ClassPlanet"/>
+   </SimulationDescriptor>
+
+   <!-- Fallen Gardens -->
+   <SimulationDescriptor Name="PlanetAnomalyNaturalWonder3" Type="PlanetAnomaly">
+      <Modifier   TargetProperty="PlanetRawIndustry"              Value="6"        Operation="Addition" Path="ClassPlanet"/>
+      <Modifier   TargetProperty="ShipProductionCostReduction"    Value="-0.05"    Operation="Addition" Path="./ClassColonizedStarSystem"/>
+   </SimulationDescriptor>
+
+   <!-- Platform of Ys -->
+   <SimulationDescriptor Name="PlanetAnomalyNaturalWonder4" Type="PlanetAnomaly">
+      <Modifier       TargetProperty="RawMaximumPopulation"   Value="2"           Operation="Addition" Path="ClassPlanet" />
+      <Modifier       TargetProperty="MaximumSystemManpower"  Value="750"         Operation="Addition" Path="./ClassColonizedStarSystem"/>
+   </SimulationDescriptor>
+
+   <!-- Tree of World -->
+   <SimulationDescriptor Name="PlanetAnomalyNaturalWonder5" Type="PlanetAnomaly">
+      <Modifier    TargetProperty="PlanetRawFood"      Value="4"           Operation="Addition" Path="ClassPlanet" />
+      <Modifier    TargetProperty="SystemGrowth"       Value="20"          Operation="Addition" Path="./ClassColonizedStarSystem"/>
+      <BinaryModifier     TargetProperty="Happiness"   Operation="Addition" Left="6" BinaryOperation="Multiplication" Right="$(Population)" Path="ClassPlanet" />
+      <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="6" TooltipHidden="true" Path="ClassPlanet" />
+   </SimulationDescriptor>
+
+   <!-- Tunneled Slipgates -->
+   <SimulationDescriptor Name="PlanetAnomalyNaturalWonder6" Type="PlanetAnomaly">
+      <Modifier    TargetProperty="BlockadeImpactFactor"               Value="0"           Operation="Force"          Path="./ClassColonizedStarSystem,BlockadedColonizedStarSystem" Priority="-1"/>
+      <Modifier    TargetProperty="BlockadeImpactFactor"               Value="0"           Operation="Force"          Path="./ClassColonizedStarSystem,BesiegedColonizedStarSystem" Priority="-1" TooltipHidden="true"/>
+      <Modifier    TargetProperty="TradingRouteIncomeModifier"         Value="1"           Operation="Addition"       Path="./ClassColonizedStarSystem" Priority="1"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomalyGuardian" Type="PlanetAnomaly">
+      <Modifier    TargetProperty="Guardians"               Value="1"          Operation="Addition"          	Path="ClassPlanet" TooltipHidden="true"/>
+      <Modifier    TargetProperty="RawMaximumPopulation"   Value="1"           Operation="Addition"       	Path="ClassPlanet" />
+   </SimulationDescriptor>
+   
+   
+   <SimulationDescriptor Name="PlanetAnomalyAcademy" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="ExperiencePerTurn" Operation="Addition" Value="25" Path="ClassHero"/>
+      <!--Used for feedback-->
+      <Modifier TargetProperty="ExperiencePerTurn" Operation="Addition" Value="25" Path="../ClassColonizedStarSystem/ClassHero" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomalyEndlessWonder1" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawScience"  Operation="Addition" Value="5" Path="ClassPlanet" />
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomalyEndlessWonder2" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawScience"  Operation="Addition" Value="6" Path="ClassPlanet" />
+      <Modifier TargetProperty="PlanetRawDust"     Operation="Addition" Value="6" Path="ClassPlanet" />
+   </SimulationDescriptor>
+   
+   <SimulationDescriptor Name="PlanetAnomaly01" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawFood"                Value="3" Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="PlanetRawDust"                Value="3" Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="PlanetRawScience"             Value="3" Operation="Addition" Path="ClassPlanet"/>
+      <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)"      />
+      <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="4" TooltipHidden="true" />
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomaly02" Type="PlanetAnomaly" >
+      <Modifier           TargetProperty="PlanetRawDust" Value="3" Operation="Addition" Path="ClassPlanet"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomaly03" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="RawMaximumPopulation" Value="1"   Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="PlanetRawFood"        Value="2"   Operation="Addition" Path="ClassPlanet"/>
+      <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Population)"      />
+      <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="2" TooltipHidden="true" />
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomaly04" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawFood" Value="3" Operation="Addition" Path="ClassPlanet"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomaly05" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawIndustry" Value="3" Operation="Addition" Path="ClassPlanet"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomaly06" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawFood"     Value="1" Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="PlanetRawScience"  Value="3" Operation="Addition" Path="ClassPlanet"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomaly07" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawDust"    Value="2" Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="PlanetRawScience" Value="2" Operation="Addition" Path="ClassPlanet"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomaly08" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawDust"     Value="2" Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="PlanetRawIndustry" Value="2" Operation="Addition" Path="ClassPlanet"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomaly09" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="RawMaximumPopulation" Value="1" Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="PlanetRawDust" Value="1" Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="PlanetRawScience" Value="1" Operation="Addition" Path="ClassPlanet"/>
+      <BinaryModifier     TargetProperty="MaximumSystemManpower"  Operation="Addition" Left="20"      BinaryOperation="Multiplication" Right="$(Population)" Path="./ClassColonizedStarSystem" TooltipHidden="true"    />
+      <BinaryModifier     TargetProperty="MaximumSystemManpower"  Operation="Addition" Left="20"      BinaryOperation="Multiplication" Right="$(Population)" Path="./ClassColonizedStarSystem/ClassColonizedPlanet" />
+   </SimulationDescriptor>
+
+
+   <SimulationDescriptor Name="PlanetAnomaly10" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawScience"           Value="4"  Operation="Addition" Path="ClassPlanet"/>
+      <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="-4" BinaryOperation="Multiplication" Right="$(Population)"      />
+      <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="-4" TooltipHidden="true" />
+   </SimulationDescriptor>
+
+
+   <SimulationDescriptor Name="PlanetAnomaly10Reduced" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawScience"             Value="4" Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="ReducedAnomalyCount"          Value="1" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+
+
+   <SimulationDescriptor Name="PlanetAnomaly11" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawFood"        Value="2"   Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="PlanetRawIndustry"    Value="1"   Operation="Addition" Path="ClassPlanet"/>
+      <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="-3" BinaryOperation="Multiplication" Right="$(Population)"      />
+      <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="-3" TooltipHidden="true" />
+   </SimulationDescriptor>
+
+
+   <SimulationDescriptor Name="PlanetAnomaly11Reduced" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawFood" Value="2"  Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="PlanetRawIndustry"    Value="1"   Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="ReducedAnomalyCount"          Value="1" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomaly12" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawIndustry" Value="4"  Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="PlanetRawFood"     Value="-2" Operation="Addition" Path="ClassPlanet"/>
+      <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="-2" BinaryOperation="Multiplication" Right="$(Population)"      />
+      <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="-2" TooltipHidden="true" />
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomaly12Reduced" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawIndustry" Value="4" Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="ReducedAnomalyCount"          Value="1" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomaly13" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawScience" Value="-3"   Operation="Addition" Path="ClassPlanet" Priority="1"/>
+      <Modifier TargetProperty="PlanetRawDust"    Value="3"   Operation="Addition" Path="ClassPlanet"/>
+      <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Population)"      />
+      <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="2" TooltipHidden="true" />
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomaly13Reduced" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawDust"    Value="3"  Operation="Addition" Path="ClassPlanet"/>
+      <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Population)"      />
+      <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="2" TooltipHidden="true" />
+      <Modifier TargetProperty="ReducedAnomalyCount"          Value="1" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomaly14" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawFood"            Value="3" Operation="Addition" Path="ClassPlanet"/>
+   </SimulationDescriptor>
+
+
+   <SimulationDescriptor Name="PlanetAnomaly15" Type="PlanetAnomaly" >
+      <Modifier           TargetProperty="PlanetRawScience"    Value="-3" Operation="Addition" Path="ClassPlanet"/>
+      <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)"      />
+      <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="4" TooltipHidden="true" />
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomaly15Reduced" Type="PlanetAnomaly" >
+      <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)"      />
+      <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="4" TooltipHidden="true" />
+      <Modifier TargetProperty="ReducedAnomalyCount"          Value="1" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomaly16" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawIndustry" Value="3" Operation="Addition" Path="ClassPlanet"/>
+      <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="-4" BinaryOperation="Multiplication" Right="$(Population)"      />
+      <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="-4" TooltipHidden="true" />
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomaly16Reduced" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawIndustry" Value="3" Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="ReducedAnomalyCount"          Value="1" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomaly17" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawDust"     Value="-3" Operation="Addition" Path="ClassPlanet"/>
+      <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="-2" BinaryOperation="Multiplication" Right="$(Population)"      />
+      <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="-2" TooltipHidden="true" />
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomaly17Reduced" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="ReducedAnomalyCount"          Value="1" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor    Name="PlanetAnomaly18" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawFood"    Value="-3" Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="PlanetRawScience" Value="2" Operation="Addition" Path="ClassPlanet"/>
+   </SimulationDescriptor>
+
+
+   <SimulationDescriptor    Name="PlanetAnomaly18Reduced" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawScience" Value="2" Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="ReducedAnomalyCount"          Value="1" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomaly19" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawIndustry" Value="3" Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="PlanetRawScience"  Value="-2" Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="PlanetRawDust"     Value="-2" Operation="Addition" Path="ClassPlanet"/>
+      <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="-3" BinaryOperation="Multiplication" Right="$(Population)"      />
+      <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="-3" TooltipHidden="true" />
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomaly19Reduced" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawIndustry" Value="3" Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="ReducedAnomalyCount"          Value="1" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomaly20" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawFood"     Value="-1" Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="PlanetRawIndustry" Value="-2" Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="PlanetRawDust"     Value="-2" Operation="Addition" Path="ClassPlanet"/>
+      <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="-2" BinaryOperation="Multiplication" Right="$(Population)"      />
+      <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="-2" TooltipHidden="true" />
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomaly20Reduced" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="ReducedAnomalyCount"          Value="1" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomaly21" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawIndustry" Value="-2" Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="PlanetRawScience"  Value="-2" Operation="Addition" Path="ClassPlanet"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomaly21Reduced" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="ReducedAnomalyCount"          Value="1" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomaly22" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawIndustry" Value="-2" Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="PlanetRawDust"     Value="-2" Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="PlanetRawScience"  Value="-2" Operation="Addition" Path="ClassPlanet"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomaly22Reduced" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="ReducedAnomalyCount"          Value="1" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomaly23" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawIndustry" Value="-2" Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="PlanetRawDust"     Value="-1" Operation="Addition" Path="ClassPlanet"/>
+      <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="-4" BinaryOperation="Multiplication" Right="$(Population)"      />
+      <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="-4" TooltipHidden="true" />
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomaly23Reduced" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="ReducedAnomalyCount"          Value="1" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomaly24" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawFood"     Value="-3" Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="PlanetRawScience"  Value="-3" Operation="Addition" Path="ClassPlanet"/>
+      <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="-4" BinaryOperation="Multiplication" Right="$(Population)"      />
+      <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="-4" TooltipHidden="true" />
+   </SimulationDescriptor>
+
+
+   <SimulationDescriptor Name="PlanetAnomaly24Reduced" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="ReducedAnomalyCount"          Value="1" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomaly25" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="RawMaximumPopulation" Value="1" Operation="Addition" Path="ClassPlanet"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomaly25Explored" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="RawMaximumPopulation" Value="1" Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="PlanetRawIndustry"    Value="4" Operation="Addition" Path="ClassPlanet"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomaly26" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="RawMaximumPopulation" Value="1" Operation="Addition" Path="ClassPlanet"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomaly26Explored" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="RawMaximumPopulation" Value="2" Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="PlanetRawIndustry"    Value="6" Operation="Addition" Path="ClassPlanet"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomaly27" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="RawMaximumPopulation" Value="1" Operation="Addition" Path="ClassPlanet"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomaly27Explored" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="RawMaximumPopulation" Value="2" Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="PlanetRawIndustry"    Value="8" Operation="Addition" Path="ClassPlanet"/>
+   </SimulationDescriptor>
+
+
+   <!-- Hostile Fauna -->
+   <SimulationDescriptor Name="PlanetAnomaly28" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawFood"                   Value="3"    Operation="Addition" Path="ClassPlanet"/>
+      <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="-3" BinaryOperation="Multiplication" Right="$(Population)"      />
+      <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="-3" TooltipHidden="true" />
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomaly28Reduced" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawFood"                   Value="4"    Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="ReducedAnomalyCount"          Value="1" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <!-- Ancient Ruins -->
+   <SimulationDescriptor Name="PlanetAnomaly29" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawDust"                    Value="3"   Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="PlanetRawScience"                 Value="1"   Operation="Addition" Path="ClassPlanet"/>
+   </SimulationDescriptor>
+
+   <!-- Dust Lode -->
+   <SimulationDescriptor Name="PlanetAnomaly30" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawDust"                    Value="6"   Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="PlanetRawScience"                 Value="2"   Operation="Addition" Path="ClassPlanet"/>
+   </SimulationDescriptor>
+
+   <!-- Coral Reefs -->
+   <SimulationDescriptor Name="PlanetAnomaly31" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawFood"                    Value="2"   Operation="Addition" Path="ClassPlanet"/>
+      <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Population)"      />
+      <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="2" TooltipHidden="true" />
+   </SimulationDescriptor>
+
+   <!-- Cyber Flora  -->
+   <SimulationDescriptor Name="PlanetAnomaly32" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawFood"                    Value="3"   Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="PlanetRawScience"                 Value="3"   Operation="Addition" Path="ClassPlanet"/>
+   </SimulationDescriptor>
+
+   <!-- Strange Fossile  -->
+   <SimulationDescriptor Name="PlanetAnomaly33" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawScience"                 Value="4"   Operation="Addition" Path="ClassPlanet"/>
+   </SimulationDescriptor>
+
+   <!-- Microfactories  -->
+   <SimulationDescriptor Name="PlanetAnomaly34" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawFood"                    Value="5"   Operation="Addition" Path="ClassPlanet"/>
+   </SimulationDescriptor>
+
+   <!-- Mutated Flora   -->
+   <SimulationDescriptor Name="PlanetAnomaly35" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawFood"                    Value="2"   Operation="Addition" Path="ClassPlanet"/>
+      <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Population)"      />
+      <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="2" TooltipHidden="true" />
+   </SimulationDescriptor>
+
+   <!-- Low Gravity   -->
+   <SimulationDescriptor Name="PlanetAnomaly36" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawIndustry"                Value="2"   Operation="Addition" Path="ClassPlanet"/>
+      <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Population)"      />
+      <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="2" TooltipHidden="true" />
+   </SimulationDescriptor>
+
+   <!-- Deserted Cities   -->
+   <SimulationDescriptor Name="PlanetAnomaly37" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawIndustry"                Value="3"       Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="PlanetRawScience"                 Value="3"       Operation="Addition" Path="ClassPlanet"/>
+   </SimulationDescriptor>
+
+   <!-- Molten Spring   -->
+   <SimulationDescriptor Name="PlanetAnomaly38" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawIndustry"                Value="2"       Operation="Addition" Path="ClassPlanet"/>
+      <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="-2" BinaryOperation="Multiplication" Right="$(Population)"      />
+      <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="-2" TooltipHidden="true" />
+   </SimulationDescriptor>
+
+   <!-- Shattered Crust    -->
+   <SimulationDescriptor Name="PlanetAnomaly39" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawDust"                    Value="-2"       Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="PlanetRawIndustry"                Value="3"       Operation="Addition" Path="ClassPlanet"/>
+      <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="-2" BinaryOperation="Multiplication" Right="$(Population)"      />
+      <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="-2" TooltipHidden="true" />
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomaly39Reduced" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawIndustry"                Value="3"       Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="ReducedAnomalyCount"          Value="1" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <!-- Komatiite Volcano    -->
+   <SimulationDescriptor Name="PlanetAnomaly40" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawIndustry"                Value="4"       Operation="Addition" Path="ClassPlanet"/>
+   </SimulationDescriptor>
+
+   <!--  Propotitious Seasons   -->
+   <SimulationDescriptor Name="PlanetAnomaly41" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawFood"                    Value="3"       Operation="Addition" Path="ClassPlanet"/>
+      <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Population)"      />
+      <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="2" TooltipHidden="true" />
+   </SimulationDescriptor>
+
+   <!--  Humeris Insidentis   -->
+   <SimulationDescriptor Name="PlanetAnomaly42" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawScience"                 Value="4"       Operation="Addition" Path="ClassPlanet"/>
+   </SimulationDescriptor>
+
+   <!--  Poor Soils  -->
+   <SimulationDescriptor Name="PlanetAnomaly43" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawFood"                    Value="-3"       Operation="Addition" Path="ClassPlanet"/>
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomaly43Reduced" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="ReducedAnomalyCount"          Value="1" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <!--  High Gravity  -->
+   <SimulationDescriptor Name="PlanetAnomaly44" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawIndustry"                Value="-3"       Operation="Addition" Path="ClassPlanet"/>
+      <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="-2" BinaryOperation="Multiplication" Right="$(Population)"      />
+      <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="-2" TooltipHidden="true" />
+   </SimulationDescriptor>
+
+   <SimulationDescriptor Name="PlanetAnomaly44Reduced" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="ReducedAnomalyCount"          Value="1" Operation="Addition" Path="ClassPlanet" TooltipHidden="true"/>
+   </SimulationDescriptor>
+
+   <!--  Behmoth Song -->
+   <SimulationDescriptor Name="PlanetAnomaly45" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawDust"                    Value="3"       Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="PlanetRawPrestige"                Value="2"       Operation="Addition" Path="ClassPlanet"/>
+   </SimulationDescriptor>
+
+   <!--  Talking World -->
+   <SimulationDescriptor Name="PlanetAnomaly46" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawDust"                    Value="2"       Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="PlanetRawPrestige"                Value="3"       Operation="Addition" Path="ClassPlanet"/>
+   </SimulationDescriptor>
+
+   <!--  Fearful Symmetry -->
+   <SimulationDescriptor Name="PlanetAnomaly47" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawScience"                 Value="5"       Operation="Addition" Path="ClassPlanet"/>
+   </SimulationDescriptor>
+
+   <!--  EDNLESS DAY -->
+
+   <SimulationDescriptor Name="PlanetAnomaly49" Type="PlanetAnomaly" >
+      <Modifier TargetProperty="PlanetRawDust"                Value="4" Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="PlanetRawScience"             Value="1" Operation="Addition" Path="ClassPlanet"/>
+      <Modifier TargetProperty="PlanetRawScience"             Value="1" Operation="Addition" Path="ClassPlanet"/>
+
+      <BinaryModifier     TargetProperty="Happiness"          Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Population)" TooltipHidden="true"     />
+      <Modifier           TargetProperty="HappinessRaw"       Operation="Addition" Value="2"  />
+   </SimulationDescriptor>
+
+    <!-- Custom planet types for modding purposes. Add them to some GalaxyGeneratorWeightTable such as "StarTypeBlue_PlanetTypes" to find them in-game. -->
+    <!-- You will also need to create/modify several GalaxyGeneratorWeightTables, PlanetGameplayTypeDefinition, PlanetColonizationConstructibleElement, FactionTrait for home planet, a GuiElement, and other things. See all the references of existing planet types for more info! -->
+    <!-- You can override these descriptors with a mod, so they have actual stats instead of 0 FIDSI. -->
+    <!-- You should also create a PlanetRemappingDefinition, whose "Name" you can find by exporting the data via the Resources Export tool. -->
+    <!-- There are 20 visuals in-game, so you can have 20 custom planets named exactly the same way as this one, or the visuals won't work. -->
+    <SimulationDescriptor Name="PlanetTypeCustom01" Type="PlanetType">
+        <Property Name="PlanetClass" BaseValue="1" />
+    </SimulationDescriptor>
+    
+
+</Datatable>

@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/ContextualDiplomaticTermDefinition.xsd">
+
+    <!-- ######################### -->
+    <!-- ###### TRESPASSING ###### --> <!-- Reference term: use this as an example (also commented for explanations) -->
+    <!-- ######################### -->
+    <ContextualDiplomaticTermDefinition Name="ContextualFleetRemoval" IsSubterm="false" Cooldown="10"> <!-- Cooldown is the downtime between sending the same term -->
+        
+        <DiplomaticRelationStatePrerequisite Flags="Discard" Inverted="true">DiplomaticRelationStateUnkown</DiplomaticRelationStatePrerequisite>
+        <DiplomaticMetaPrerequisite Flags="Discard" Operator="OR"> <!-- Here we check the diplomatic relations between the 2 empires -->
+            <DiplomaticRelationStatePrerequisite>DiplomaticRelationStateColdWar</DiplomaticRelationStatePrerequisite>
+            <DiplomaticRelationStatePrerequisite>DiplomaticRelationStatePeace</DiplomaticRelationStatePrerequisite>
+        </DiplomaticMetaPrerequisite>
+        
+        <Condition_FleetsInInfluence> <!-- This is the game context that we need to enable the term (done in code) -->
+            <InterpreterPrerequisite>Property(Context, OffensiveMilitaryPower) ge 60</InterpreterPrerequisite> <!-- This prerequisite is checked on the fleets -->
+        </Condition_FleetsInInfluence>
+
+        <Choice Name="ContextualFleetRemovalAccept" IsPositive="true">
+            <Effect_RemoveFleetsFromInfluence> <!-- This is the gameplay affect that happens if the term is accepted (done in code) -->
+                <InterpreterPrerequisite>Property(Context, OffensiveMilitaryPower) ge 60</InterpreterPrerequisite> <!-- Same prerequisite as the Condition_FleetsInInfluence -->
+            </Effect_RemoveFleetsFromInfluence>
+            <Effect_ApplyDiplomaticEffect Target="CurrentEmpire"> <!-- These are sim effects which we apply -->
+                <DiplomaticPressureEffectReference Name="PressureReductionOnInitiator"/>
+            </Effect_ApplyDiplomaticEffect>
+            
+            <!-- Commented following Romain's input on 10/11 // Uncomment to add reactions back after acceptation -->
+            <!--<ResultingTermReference Name="ContextualFleetRemovalAccepted"/> --><!-- This links to the reactions linked to this choice -->
+
+            <PopulationEvent Name="PopulationEventContextualDiplomacyPacifist"/> <!-- This is the political impact linked to making this choice -->
+        </Choice>
+
+        <Choice Name="ContextualFleetRemovalRefuse" IsPositive="false">
+            <Effect_ApplyDiplomaticEffect Target="CurrentEmpire">
+                <DiplomaticPressureEffectReference Name="PressureIncreaseOnInitiator"/>
+            </Effect_ApplyDiplomaticEffect>
+
+            <ResultingTermReference Name="ContextualFleetRemovalRefused"/>
+
+            <PopulationEvent Name="PopulationEventContextualDiplomacyMilitarist"/>
+        </Choice>
+
+        <DiplomaticAbilityWhenActive Name="ProtectFleetsUnderInfluence" ApplyOn="FirstEmpireTowardsSecondEmpire"/>
+    </ContextualDiplomaticTermDefinition>
+
+    <!-- Accept = remove fleets -->
+    <ContextualDiplomaticTermDefinition Name="ContextualFleetRemovalAccepted" IsSubterm="true">
+
+        <Choice Name="ContextualFleetRemovalAcceptedAcknowledge" IsPositive="true">
+            <Effect_ApplyDiplomaticEffect Target="CurrentEmpire">
+                <DiplomaticPressureEffectReference Name="PressureReductionOnInitiator"/>
+            </Effect_ApplyDiplomaticEffect>
+
+            <PopulationEvent Name="PopulationEventContextualDiplomacyPacifist"/>
+        </Choice>
+
+        <Choice Name="ContextualFleetRemovalAcceptedRidicule" IsPositive="false">
+            <Effect_ApplyDiplomaticEffect Target="CurrentEmpire">
+                <DiplomaticPressureEffectReference Name="PressureIncreaseOnInitiator"/>
+            </Effect_ApplyDiplomaticEffect>
+            
+            <PopulationEvent Name="PopulationEventContextualDiplomacyMilitarist"/>
+        </Choice>
+        
+    </ContextualDiplomaticTermDefinition>
+
+    <ContextualDiplomaticTermDefinition Name="ContextualFleetRemovalRefused" IsSubterm="true">
+
+        <Choice Name="ContextualFleetRemovalRefusedDenounce" IsPositive="false">
+            <Effect_ApplyDiplomaticEffect Target="OtherEmpireOnOtherEmpires">
+                <DiplomaticPressureEffectReference Name="PressureReductionOnInitiator"/>
+            </Effect_ApplyDiplomaticEffect>
+            
+            <PopulationEvent Name="PopulationEventContextualDiplomacyReligious"/>
+        </Choice>
+
+        <Choice Name="ContextualFleetRemovalRefusedCoverup" IsPositive="true">
+            <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">ClassEmpire,AffinityGameplayMajorHisshos</PathPrerequisite> 
+            <Effect_ApplyTemporaryEffect Target="CurrentEmpire">
+                <TemporaryEffectReference Name="HappinessMalusFromDiplomacyWeak"/>
+            </Effect_ApplyTemporaryEffect>
+            <Effect_ApplyDiplomaticEffect Target="CurrentEmpire">
+                <DiplomaticPressureEffectReference Name="CloseBordersCostReductionWithOtherEmpire"/>
+            </Effect_ApplyDiplomaticEffect>
+            
+            <PopulationEvent Name="PopulationEventContextualDiplomacyPacifist"/>
+        </Choice>
+
+        <Choice Name="ContextualFleetRemovalRefusedCoverupMajorHisshos" IsPositive="true">
+            <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">ClassEmpire,AffinityGameplayMajorHisshos</PathPrerequisite>
+            <Effect_ApplyTemporaryEffect Target="CurrentEmpire">
+                <TemporaryEffectReference Name="HonorMalusFromDiplomacyWeak"/>
+            </Effect_ApplyTemporaryEffect>
+            <Effect_ApplyDiplomaticEffect Target="CurrentEmpire">
+                <DiplomaticPressureEffectReference Name="CloseBordersCostReductionWithOtherEmpire"/>
+            </Effect_ApplyDiplomaticEffect>
+
+            <PopulationEvent Name="PopulationEventContextualDiplomacyPacifist"/>
+        </Choice>
+
+    </ContextualDiplomaticTermDefinition>
+
+
+    <!-- ######################### -->
+    <!-- ###### COLONIZING ###### -->
+    <!-- ######################### -->
+    <ContextualDiplomaticTermDefinition Name="ContextualColonizationConcurrence" IsSubterm="false" Cooldown="1">
+
+        <DiplomaticRelationStatePrerequisite Flags="Discard" Inverted="true">DiplomaticRelationStateUnkown</DiplomaticRelationStatePrerequisite>
+        <DiplomaticMetaPrerequisite Flags="Discard" Operator="OR">
+            <DiplomaticRelationStatePrerequisite>DiplomaticRelationStateColdWar</DiplomaticRelationStatePrerequisite>
+            <DiplomaticRelationStatePrerequisite>DiplomaticRelationStatePeace</DiplomaticRelationStatePrerequisite>
+        </DiplomaticMetaPrerequisite>
+        <Condition_NeighboursColonized MaximumDelay="2"/> <!-- Specify MaximumDelay for "Timer" type contextual terms -->
+
+        <Choice Name="ContextualColonizationConcurrenceAccept" IsPositive="true">
+            <Effect_RemoveNeighbours/>
+            <Effect_RestrictInteraction PropertyName="TurnsBeforeNeighbourColonizationIsAllowed" Description="%ContextualDiplomacyRestrictNeighbourColonizationEffectTitle" Duration="10"/>
+            <Effect_ApplyDiplomaticEffect Target="CurrentEmpire">
+                <DiplomaticPressureEffectReference Name="PressureReductionOnInitiator"/>
+            </Effect_ApplyDiplomaticEffect>
+            <Effect_ResetEmpireHistory ResetColonization="true"/>
+
+            <!-- Commented following Romain's input on 10/11 // Uncomment to add reactions back after acceptation -->
+            <!--<ResultingTermReference Name="ContextualColonizationConcurrenceAccepted"/>-->
+            
+            <PopulationEvent Name="PopulationEventContextualDiplomacyPacifist"/>
+        </Choice>
+
+        <Choice Name="ContextualColonizationConcurrenceRefuse" IsPositive="false">
+            <Effect_ApplyDiplomaticEffect Target="CurrentEmpire">
+                <DiplomaticPressureEffectReference Name="PressureIncreaseOnInitiator"/>
+            </Effect_ApplyDiplomaticEffect>
+            <Effect_ResetEmpireHistory ResetColonization="true"/>
+            
+            <ResultingTermReference Name="ContextualColonizationConcurrenceRefused"/>
+            
+            <PopulationEvent Name="PopulationEventContextualDiplomacyEcologist"/>
+        </Choice>
+        
+    </ContextualDiplomaticTermDefinition>
+
+    <!-- Copy of 'ContextualColonizationConcurrence' but with a different condition. -->
+    <ContextualDiplomaticTermDefinition Name="ContextualColonizationConcurrenceVampirilis" IsSubterm="false">
+
+        <DiplomaticMetaPrerequisite Flags="Discard" Operator="OR">
+            <DiplomaticRelationStatePrerequisite>DiplomaticRelationStateColdWar</DiplomaticRelationStatePrerequisite>
+            <DiplomaticRelationStatePrerequisite>DiplomaticRelationStatePeace</DiplomaticRelationStatePrerequisite>
+        </DiplomaticMetaPrerequisite>
+        <Condition_NeighboursExploited MaximumDelay="2"/> <!-- Condition is different: only arks. -->
+
+        <Choice Name="ContextualColonizationConcurrenceAccept" IsPositive="true">
+            <Effect_RemoveNeighbours/>
+            <Effect_RestrictInteraction PropertyName="TurnsBeforeNeighbourColonizationIsAllowed" Description="%ContextualDiplomacyRestrictNeighbourColonizationEffectTitle" Duration="10"/>
+            <Effect_ApplyDiplomaticEffect Target="CurrentEmpire">
+                <DiplomaticPressureEffectReference Name="PressureReductionOnInitiator"/>
+            </Effect_ApplyDiplomaticEffect>
+
+            <!-- Resulting terms are the same! This is just a different start. -->
+            <ResultingTermReference Name="ContextualColonizationConcurrenceAccepted"/>
+
+            <PopulationEvent Name="PopulationEventContextualDiplomacyPacifist"/>
+        </Choice>
+
+        <Choice Name="ContextualColonizationConcurrenceRefuse" IsPositive="false">
+            <Effect_ApplyDiplomaticEffect Target="CurrentEmpire">
+                <DiplomaticPressureEffectReference Name="PressureIncreaseOnInitiator"/>
+            </Effect_ApplyDiplomaticEffect>
+
+            <ResultingTermReference Name="ContextualColonizationConcurrenceRefused"/>
+
+            <PopulationEvent Name="PopulationEventContextualDiplomacyEcologist"/>
+        </Choice>
+
+    </ContextualDiplomaticTermDefinition>
+
+    <!-- Accept = decolonize neighbour, prevent re-colonization -->
+    <ContextualDiplomaticTermDefinition Name="ContextualColonizationConcurrenceAccepted" IsSubterm="true">
+
+        <Choice Name="ContextualColonizationConcurrenceAcceptedCommend" IsPositive="true">
+            <Effect_ApplyDiplomaticEffect Target="CurrentEmpire">
+                <DiplomaticPressureEffectReference Name="PeacefulTreatyCostReductionWithOtherEmpire"/>
+            </Effect_ApplyDiplomaticEffect>
+        
+            <PopulationEvent Name="PopulationEventContextualDiplomacyPacifist"/>
+        </Choice>
+
+        <Choice Name="ContextualColonizationConcurrenceAcceptedExodus" IsPositive="false">
+            <Effect_ApplyTemporaryEffect Target="CurrentEmpire">
+                <TemporaryEffectReference Name="FoodDecreaseOnHomeSystemFromDiplomacy"/>
+            </Effect_ApplyTemporaryEffect>
+            <Effect_ApplyDiplomaticEffect Target="CurrentEmpire">
+                <DiplomaticPressureEffectReference Name="BonusFoodOnNeighbours"/>
+            </Effect_ApplyDiplomaticEffect>
+            <Effect_ApplyDiplomaticEffect Target="CurrentEmpire">
+                <DiplomaticPressureEffectReference Name="PressureIncreaseOnInitiator"/>
+            </Effect_ApplyDiplomaticEffect>
+            
+            <PopulationEvent Name="PopulationEventContextualDiplomacyEcologist"/>
+        </Choice>
+        
+    </ContextualDiplomaticTermDefinition>
+
+    <ContextualDiplomaticTermDefinition Name="ContextualColonizationConcurrenceRefused" IsSubterm="true">
+
+        <Choice Name="ContextualColonizationConcurrenceRefusedCondemn" IsPositive="false">
+            <Effect_ApplyDiplomaticEffect Target="CurrentEmpire">
+                <DiplomaticPressureEffectReference Name="WarDeclarationCostReductionWithOtherEmpire50"/>
+            </Effect_ApplyDiplomaticEffect>
+            
+            <PopulationEvent Name="PopulationEventContextualDiplomacyMilitarist"/>
+        </Choice>
+
+        <Choice Name="ContextualColonizationConcurrenceRefusedLeverage" IsPositive="false">
+            <Effect_ApplyDiplomaticEffect Target="CurrentEmpire">
+                <DiplomaticPressureEffectReference Name="PressureIncreaseOnInitiator"/>
+            </Effect_ApplyDiplomaticEffect>
+            
+            <PopulationEvent Name="PopulationEventContextualDiplomacyReligious"/>
+        </Choice>
+
+    </ContextualDiplomaticTermDefinition>
+
+
+    <!-- ########################## -->
+    <!-- ###### CW FLEET ATK ###### -->
+    <!-- ########################## -->
+    <ContextualDiplomaticTermDefinition Name="ContextualFleetDefense" IsSubterm="false" Cooldown="3">
+
+        <DiplomaticRelationStatePrerequisite Flags="Discard" Inverted="true">DiplomaticRelationStateUnkown</DiplomaticRelationStatePrerequisite>
+        <DiplomaticRelationStatePrerequisite Flags="Discard">DiplomaticRelationStateColdWar</DiplomaticRelationStatePrerequisite>
+        <Condition_FleetsDestroyed MaximumDelay="2"/>
+
+        <Choice Name="ContextualFleetDefenseAccept" IsPositive="true">
+            <Effect_RestrictAttack PropertyName="TurnsBeforeAttackIsAllowed" Description="%ContextualDiplomacyRestrictAttackEffectTitle" Duration="10"/>
+            <Effect_ApplyDiplomaticEffect Target="CurrentEmpire">
+                <DiplomaticPressureEffectReference Name="PressureReductionOnInitiator"/>
+            </Effect_ApplyDiplomaticEffect>
+            <Effect_ResetEmpireHistory ResetAttack="true"/>
+
+            <!-- Commented following Romain's input on 10/11 // Uncomment to add reactions back after acceptation -->
+            <!--<ResultingTermReference Name="ContextualFleetDefenseAccepted"/>-->
+            
+            <PopulationEvent Name="PopulationEventContextualDiplomacyPacifist"/>
+        </Choice>
+
+        <Choice Name="ContextualFleetDefenseRefuse" IsPositive="false">
+            <Effect_ApplyDiplomaticEffect Target="CurrentEmpire">
+                <DiplomaticPressureEffectReference Name="PressureIncreaseOnInitiator"/>
+            </Effect_ApplyDiplomaticEffect>
+            <Effect_ResetEmpireHistory ResetAttack="true"/>
+
+            <ResultingTermReference Name="ContextualFleetDefenseRefused"/>
+            
+            <PopulationEvent Name="PopulationEventContextualDiplomacyMilitarist"/>
+        </Choice>
+
+    </ContextualDiplomaticTermDefinition>
+
+    <!-- Accept = no longer possible to attack -->
+    <ContextualDiplomaticTermDefinition Name="ContextualFleetDefenseAccepted" IsSubterm="true">
+
+        <Choice Name="ContextualFleetDefenseAcceptedAcknowledge" IsPositive="true">
+            <Effect_ApplyDiplomaticEffect Target="CurrentEmpire">
+                <DiplomaticPressureEffectReference Name="PressureReductionOnInitiator"/>
+            </Effect_ApplyDiplomaticEffect>
+            
+            <PopulationEvent Name="PopulationEventContextualDiplomacyPacifist"/>
+        </Choice>
+
+        <Choice Name="ContextualFleetDefenseAcceptedIgnore" IsPositive="false">
+            <Effect_ApplyDiplomaticEffect Target="CurrentEmpire">
+                <DiplomaticPressureEffectReference Name="BonusDamageOnNeighbours"/>
+            </Effect_ApplyDiplomaticEffect>
+            
+            <PopulationEvent Name="PopulationEventContextualDiplomacyMilitarist"/>
+        </Choice>
+
+    </ContextualDiplomaticTermDefinition>
+
+    <ContextualDiplomaticTermDefinition Name="ContextualFleetDefenseRefused" IsSubterm="true">
+
+        <Choice Name="ContextualFleetDefenseRefusedReact" IsPositive="false">
+            <Effect_ApplyDiplomaticEffect Target="CurrentEmpire">
+                <DiplomaticPressureEffectReference Name="BonusEvasionOnNeighbours"/>
+            </Effect_ApplyDiplomaticEffect>
+        
+            <PopulationEvent Name="PopulationEventContextualDiplomacyIndustrialist"/>
+        </Choice>
+
+        <Choice Name="ContextualFleetDefenseRefusedMobilize" IsPositive="false">
+            <Effect_ApplyDiplomaticEffect Target="CurrentEmpire">
+                <DiplomaticPressureEffectReference Name="BonusManpowerOnNeighbours"/>
+            </Effect_ApplyDiplomaticEffect>
+        
+            <PopulationEvent Name="PopulationEventContextualDiplomacyMilitarist"/>
+        </Choice>
+
+    </ContextualDiplomaticTermDefinition>
+
+
+    <!-- ################################ -->
+    <!-- ###### PACIFIC CONVERSION ###### -->
+    <!-- ################################ -->
+    <ContextualDiplomaticTermDefinition Name="ContextualPacificConversion" IsSubterm="false" Cooldown="10">
+
+        <DiplomaticRelationStatePrerequisite Flags="Discard" Inverted="true">DiplomaticRelationStateUnkown</DiplomaticRelationStatePrerequisite>
+        <DiplomaticMetaPrerequisite Flags="Discard" Operator="OR">
+            <DiplomaticRelationStatePrerequisite>DiplomaticRelationStateColdWar</DiplomaticRelationStatePrerequisite>
+            <DiplomaticRelationStatePrerequisite>DiplomaticRelationStatePeace</DiplomaticRelationStatePrerequisite>
+        </DiplomaticMetaPrerequisite>
+        <Condition_SystemsUnderConversion/>
+
+        <Choice Name="ContextualPacificConversionAccept" IsPositive="true">
+            <Effect_ResetInfluenceConversion/>
+            <Effect_ApplyDiplomaticEffect Target="CurrentEmpire">
+                <DiplomaticPressureEffectReference Name="PressureReductionOnInitiator"/>
+            </Effect_ApplyDiplomaticEffect>
+
+            <!-- Commented following Romain's input on 10/11 // Uncomment to add reactions back after acceptation -->
+            <!--<ResultingTermReference Name="ContextualPacificConversionAccepted"/>-->
+            
+            <PopulationEvent Name="PopulationEventContextualDiplomacyPacifist"/>
+        </Choice>
+
+        <Choice Name="ContextualPacificConversionRefuse" IsPositive="false">
+            <Effect_ApplyDiplomaticEffect Target="CurrentEmpire">
+                <DiplomaticPressureEffectReference Name="PressureIncreaseOnInitiator"/>
+            </Effect_ApplyDiplomaticEffect>
+
+            <ResultingTermReference Name="ContextualPacificConversionRefused"/>
+            
+            <PopulationEvent Name="PopulationEventContextualDiplomacyReligious"/>
+        </Choice>
+
+    </ContextualDiplomaticTermDefinition>
+
+    <!-- Accept = reset & freeze conversion -->
+    <ContextualDiplomaticTermDefinition Name="ContextualPacificConversionAccepted" IsSubterm="true">
+
+        <Choice Name="ContextualPacificConversionAcceptedCommend" IsPositive="true">
+            <Effect_ApplyDiplomaticEffect Target="CurrentEmpire">
+                <DiplomaticPressureEffectReference Name="PeacefulTreatyCostReductionWithOtherEmpire"/>
+            </Effect_ApplyDiplomaticEffect>
+            
+            <PopulationEvent Name="PopulationEventContextualDiplomacyPacifist"/>
+        </Choice>
+
+        <Choice Name="ContextualPacificConversionAcceptedLeverage" IsPositive="false">
+            <Effect_ApplyDiplomaticEffect Target="CurrentEmpire">
+                <DiplomaticPressureEffectReference Name="PressureIncreaseOnInitiator"/>
+            </Effect_ApplyDiplomaticEffect>
+        
+            <PopulationEvent Name="PopulationEventContextualDiplomacyMilitarist"/>
+        </Choice>
+
+    </ContextualDiplomaticTermDefinition>
+
+    <ContextualDiplomaticTermDefinition Name="ContextualPacificConversionRefused" IsSubterm="true">
+
+        <Choice Name="ContextualPacificConversionRefusedExpose" IsPositive="false">
+            <Effect_ApplyDiplomaticEffect Target="CurrentEmpireOnOtherEmpires">
+                <DiplomaticPressureEffectReference Name="PeaceAndAllianceCostReductionWithAllOtherEmpires"/>
+            </Effect_ApplyDiplomaticEffect>
+            
+            <PopulationEvent Name="PopulationEventContextualDiplomacyPacifist"/>
+        </Choice>
+
+        <Choice Name="ContextualPacificConversionRefusedInvest" IsPositive="true">
+            <Effect_ApplyTemporaryEffect Target="Context">
+                <TemporaryEffectReference Name="PacificConversionInvestment"/>
+            </Effect_ApplyTemporaryEffect>
+        
+            <PopulationEvent Name="PopulationEventContextualDiplomacyReligious"/>
+        </Choice>
+        
+    </ContextualDiplomaticTermDefinition>
+
+
+    <!-- ###################### -->
+    <!-- ###### LEECHING ###### -->
+    <!-- ###################### -->
+    <ContextualDiplomaticTermDefinition Name="ContextualLeeching" IsSubterm="false" Cooldown="10">
+
+        <DiplomaticRelationStatePrerequisite Flags="Discard" Inverted="true">DiplomaticRelationStateUnkown</DiplomaticRelationStatePrerequisite>
+        <DiplomaticMetaPrerequisite Flags="Discard" Operator="OR">
+            <DiplomaticRelationStatePrerequisite>DiplomaticRelationStateWar</DiplomaticRelationStatePrerequisite>
+            <DiplomaticRelationStatePrerequisite>DiplomaticRelationStateColdWar</DiplomaticRelationStatePrerequisite>
+        </DiplomaticMetaPrerequisite>
+        <Condition_SystemsLeeched/>
+
+        <Choice Name="ContextualLeechingAccept" IsPositive="true">
+            <Effect_CancelLeechActions/>
+            <Effect_RestrictInteraction PropertyName="TurnsBeforeLeechingIsAllowed" Description="%ContextualDiplomacyRestrictLeechingEffectTitle" Duration="10"/>
+            <Effect_ApplyDiplomaticEffect Target="CurrentEmpire">
+                <DiplomaticPressureEffectReference Name="PressureReductionOnInitiator"/>
+            </Effect_ApplyDiplomaticEffect>
+
+            <!-- Commented following Romain's input on 10/11 // Uncomment to add reactions back after acceptation -->
+            <!--<ResultingTermReference Name="ContextualLeechingAccepted"/>-->
+            
+            <PopulationEvent Name="PopulationEventContextualDiplomacyPacifist"/>
+        </Choice>
+
+        <Choice Name="ContextualLeechingRefuse" IsPositive="false">
+            <Effect_ApplyDiplomaticEffect Target="CurrentEmpire">
+                <DiplomaticPressureEffectReference Name="PressureIncreaseOnInitiator"/>
+            </Effect_ApplyDiplomaticEffect>
+
+            <ResultingTermReference Name="ContextualLeechingRefused"/>
+            
+            <PopulationEvent Name="PopulationEventContextualDiplomacyReligious"/>
+        </Choice>
+
+    </ContextualDiplomaticTermDefinition>
+
+    <!-- Accept = stop & prevent leeching -->
+    <ContextualDiplomaticTermDefinition Name="ContextualLeechingAccepted" IsSubterm="true">
+
+        <Choice Name="ContextualLeechingAcceptedRecover" IsPositive="true">
+            <Effect_ApplyTemporaryEffect Target="Context">
+                <TemporaryEffectReference Name="FoodIncreaseFromDiplomacyWeak"/>
+            </Effect_ApplyTemporaryEffect>
+            <Effect_ApplyDiplomaticEffect Target="CurrentEmpire">
+                <DiplomaticPressureEffectReference Name="PressureReductionOnInitiator"/>
+            </Effect_ApplyDiplomaticEffect>
+        
+            <PopulationEvent Name="PopulationEventContextualDiplomacyEcologist"/>
+        </Choice>
+
+        <Choice Name="ContextualLeechingAcceptedRidicule" IsPositive="false">
+            <Effect_ApplyDiplomaticEffect Target="CurrentEmpire">
+                <DiplomaticPressureEffectReference Name="PressureIncreaseOnInitiator"/>
+            </Effect_ApplyDiplomaticEffect>
+            
+            <PopulationEvent Name="PopulationEventContextualDiplomacyMilitarist"/>
+        </Choice>
+
+    </ContextualDiplomaticTermDefinition>
+
+    <ContextualDiplomaticTermDefinition Name="ContextualLeechingRefused" IsSubterm="true">
+
+        <Choice Name="ContextualLeechingRefusedDenounce" IsPositive="false">
+            <Effect_ApplyDiplomaticEffect Target="OtherEmpireOnOtherEmpires">
+                <DiplomaticPressureEffectReference Name="PressureReductionOnInitiator"/>
+            </Effect_ApplyDiplomaticEffect>
+            
+            <PopulationEvent Name="PopulationEventContextualDiplomacyReligious"/>
+        </Choice>
+
+        <Choice Name="ContextualLeechingRefusedConductExperiments" IsPositive="true">
+            <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">ClassEmpire,AffinityGameplayMajorHisshos</PathPrerequisite>
+            <Effect_ApplyTemporaryEffect Target="CurrentEmpire">
+                <TemporaryEffectReference Name="HappinessMalusFromDiplomacyMedium"/>
+            </Effect_ApplyTemporaryEffect>
+                <Effect_ApplyTemporaryEffect Target="CurrentEmpire">
+                <TemporaryEffectReference Name="ScienceIncreaseFromDiplomacyMedium"/>
+            </Effect_ApplyTemporaryEffect>            
+            
+            <PopulationEvent Name="PopulationEventContextualDiplomacyScientist"/>
+        </Choice>
+
+        <Choice Name="ContextualLeechingRefusedConductExperimentsMajorHisshos" IsPositive="true">
+            <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">ClassEmpire,AffinityGameplayMajorHisshos</PathPrerequisite>
+            <Effect_ApplyTemporaryEffect Target="CurrentEmpire">
+                <TemporaryEffectReference Name="HonorMalusFromDiplomacyMedium"/>
+            </Effect_ApplyTemporaryEffect>
+            <Effect_ApplyTemporaryEffect Target="CurrentEmpire">
+                <TemporaryEffectReference Name="ScienceIncreaseFromDiplomacyMedium"/>
+            </Effect_ApplyTemporaryEffect>
+
+            <PopulationEvent Name="PopulationEventContextualDiplomacyScientist"/>
+        </Choice>
+
+    </ContextualDiplomaticTermDefinition>
+
+
+    <!-- ######################### -->
+    <!-- ###### TIME BUBBLE ###### -->
+    <!-- ######################### -->
+    <ContextualDiplomaticTermDefinition Name="ContextualTimeBubbles" IsSubterm="false" Cooldown="10">
+
+        <DiplomaticRelationStatePrerequisite Flags="Discard" Inverted="true">DiplomaticRelationStateUnkown</DiplomaticRelationStatePrerequisite>
+        <DiplomaticMetaPrerequisite Flags="Discard" Operator="OR">
+            <DiplomaticRelationStatePrerequisite>DiplomaticRelationStateColdWar</DiplomaticRelationStatePrerequisite>
+            <DiplomaticRelationStatePrerequisite>DiplomaticRelationStatePeace</DiplomaticRelationStatePrerequisite>
+        </DiplomaticMetaPrerequisite>
+        <Condition_TimeBubblesOnSystems/>
+
+        <Choice Name="ContextualTimeBubblesAccept" IsPositive="true">
+            <Effect_RemoveTimeBubbles/>
+            <Effect_RestrictInteraction PropertyName="TurnsBeforeTimeBubblesAreAllowed" Description="%ContextualDiplomacyRestrictTimeBubblesEffectTitle" Duration="10"/>
+            <Effect_ApplyDiplomaticEffect Target="CurrentEmpire">
+                <DiplomaticPressureEffectReference Name="PressureReductionOnInitiator"/>
+            </Effect_ApplyDiplomaticEffect>
+
+            <!-- Commented following Romain's input on 10/11 // Uncomment to add reactions back after acceptation -->
+            <!--<ResultingTermReference Name="ContextualTimeBubblesAccepted"/>-->
+            
+            <PopulationEvent Name="PopulationEventContextualDiplomacyPacifist"/>
+        </Choice>
+
+        <Choice Name="ContextualTimeBubblesRefuse" IsPositive="false">
+            <Effect_ApplyDiplomaticEffect Target="CurrentEmpire">
+                <DiplomaticPressureEffectReference Name="PressureIncreaseOnInitiator"/>
+            </Effect_ApplyDiplomaticEffect>
+
+            <ResultingTermReference Name="ContextualTimeBubblesRefused"/>
+        
+            <PopulationEvent Name="PopulationEventContextualDiplomacyScientist"/>
+        </Choice>
+
+    </ContextualDiplomaticTermDefinition>
+
+    <!-- Accept = remove bubbles & prevent placing bubbles-->
+    <ContextualDiplomaticTermDefinition Name="ContextualTimeBubblesAccepted" IsSubterm="true">
+
+        <Choice Name="ContextualTimeBubblesAcceptedRecover" IsPositive="true">
+            <Effect_ApplyTemporaryEffect Target="Context">
+                <TemporaryEffectReference Name="FoodIncreaseFromDiplomacyWeak"/>
+            </Effect_ApplyTemporaryEffect>
+            <Effect_ApplyDiplomaticEffect Target="CurrentEmpire">
+                <DiplomaticPressureEffectReference Name="PeacefulTreatyCostReductionWithOtherEmpire"/>
+            </Effect_ApplyDiplomaticEffect>
+            
+            <PopulationEvent Name="PopulationEventContextualDiplomacyEcologist"/>
+        </Choice>
+
+        <Choice Name="ContextualTimeBubblesAcceptedRidicule" IsPositive="false">
+            <Effect_ApplyDiplomaticEffect Target="CurrentEmpire">
+                <DiplomaticPressureEffectReference Name="PressureIncreaseOnInitiator"/>
+            </Effect_ApplyDiplomaticEffect>
+            
+            <PopulationEvent Name="PopulationEventContextualDiplomacyMilitarist"/>
+        </Choice>
+
+    </ContextualDiplomaticTermDefinition>
+
+    <ContextualDiplomaticTermDefinition Name="ContextualTimeBubblesRefused" IsSubterm="true">
+
+        <Choice Name="ContextualTimeBubblesRefusedDenounce" IsPositive="false">
+            <Effect_ApplyDiplomaticEffect Target="OtherEmpireOnOtherEmpires">
+                <DiplomaticPressureEffectReference Name="PressureReductionOnInitiator"/>
+            </Effect_ApplyDiplomaticEffect>
+            
+            <PopulationEvent Name="PopulationEventContextualDiplomacyReligious"/>
+        </Choice>
+
+        <Choice Name="ContextualTimeBubblesRefusedConductExperiments" IsPositive="true">
+            <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">ClassEmpire,AffinityGameplayMajorHisshos</PathPrerequisite>
+            <Effect_ApplyTemporaryEffect Target="CurrentEmpire">
+                <TemporaryEffectReference Name="HappinessMalusFromDiplomacyMedium"/>
+            </Effect_ApplyTemporaryEffect>
+            <Effect_ApplyTemporaryEffect Target="CurrentEmpire">
+                <TemporaryEffectReference Name="FIDSIncreaseFromDiplomacy"/>
+            </Effect_ApplyTemporaryEffect>
+            
+            <PopulationEvent Name="PopulationEventContextualDiplomacyScientist"/>
+        </Choice>
+
+        <Choice Name="ContextualTimeBubblesRefusedConductExperimentsMajorHisshos" IsPositive="true">
+            <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">ClassEmpire,AffinityGameplayMajorHisshos</PathPrerequisite>
+            <Effect_ApplyTemporaryEffect Target="CurrentEmpire">
+                <TemporaryEffectReference Name="HonorMalusFromDiplomacyMedium"/>
+            </Effect_ApplyTemporaryEffect>
+            <Effect_ApplyTemporaryEffect Target="CurrentEmpire">
+                <TemporaryEffectReference Name="FIDSIncreaseFromDiplomacy"/>
+            </Effect_ApplyTemporaryEffect>
+
+            <PopulationEvent Name="PopulationEventContextualDiplomacyScientist"/>
+        </Choice>
+
+    </ContextualDiplomaticTermDefinition>
+
+
+    <!-- ############################# -->
+    <!-- ###### UNFALLEN VINING ###### -->
+    <!-- ############################# -->
+    <ContextualDiplomaticTermDefinition Name="ContextualRooting" IsSubterm="false" Cooldown="10">
+
+        <DiplomaticRelationStatePrerequisite Flags="Discard" Inverted="true">DiplomaticRelationStateUnkown</DiplomaticRelationStatePrerequisite>
+        <DiplomaticRelationStatePrerequisite Flags="Discard">DiplomaticRelationStatePeace</DiplomaticRelationStatePrerequisite>
+        <Condition_SystemsRooted/>
+
+        <Choice Name="ContextualRootingAccept" IsPositive="true">
+            <Effect_RemoveSpaceRoots/>
+            <Effect_RestrictInteraction PropertyName="TurnsBeforeRootingIsAllowed" Description="%ContextualDiplomacyRestrictRootingEffectTitle" Duration="10"/>
+            <Effect_ApplyDiplomaticEffect Target="CurrentEmpire">
+                <DiplomaticPressureEffectReference Name="PressureReductionOnInitiator"/>
+            </Effect_ApplyDiplomaticEffect>
+
+            <!-- Commented following Romain's input on 10/11 // Uncomment to add reactions back after acceptation -->
+            <!--<ResultingTermReference Name="ContextualRootingAccepted"/>-->
+        
+            <PopulationEvent Name="PopulationEventContextualDiplomacyPacifist"/>
+        </Choice>
+
+        <Choice Name="ContextualRootingRefuse" IsPositive="false">
+            <Effect_ApplyDiplomaticEffect Target="CurrentEmpire">
+                <DiplomaticPressureEffectReference Name="PressureIncreaseOnInitiator"/>
+            </Effect_ApplyDiplomaticEffect>
+
+            <ResultingTermReference Name="ContextualRootingRefused"/>
+            
+            <PopulationEvent Name="PopulationEventContextualDiplomacyEcologist"/>
+        </Choice>
+
+    </ContextualDiplomaticTermDefinition>
+
+    <!-- Accept = remove roots & prevent placing roots -->
+    <ContextualDiplomaticTermDefinition Name="ContextualRootingAccepted" IsSubterm="true">
+
+        <Choice Name="ContextualRootingAcceptedSalvage" IsPositive="true">
+            <Effect_ApplyTemporaryEffect Target="Context">
+                <TemporaryEffectReference Name="ScienceIncreaseFromDiplomacyWeak"/>
+            </Effect_ApplyTemporaryEffect>
+            <Effect_ApplyDiplomaticEffect Target="CurrentEmpire">
+                <DiplomaticPressureEffectReference Name="PressureReductionOnInitiator"/>
+            </Effect_ApplyDiplomaticEffect>
+            
+            <PopulationEvent Name="PopulationEventContextualDiplomacyEcologist"/>
+        </Choice>
+
+        <Choice Name="ContextualRootingAcceptedRidicule" IsPositive="false">
+            <Effect_ApplyDiplomaticEffect Target="CurrentEmpire">
+                <DiplomaticPressureEffectReference Name="PressureIncreaseOnInitiator"/>
+            </Effect_ApplyDiplomaticEffect>
+            
+            <PopulationEvent Name="PopulationEventContextualDiplomacyMilitarist"/>
+        </Choice>
+
+    </ContextualDiplomaticTermDefinition>
+
+    <ContextualDiplomaticTermDefinition Name="ContextualRootingRefused" IsSubterm="true">
+
+        <Choice Name="ContextualRootingRefusedDenounce" IsPositive="false">
+            <Effect_ApplyDiplomaticEffect Target="OtherEmpireOnOtherEmpires">
+                <DiplomaticPressureEffectReference Name="PressureReductionOnInitiator"/>
+            </Effect_ApplyDiplomaticEffect>
+            
+            <PopulationEvent Name="PopulationEventContextualDiplomacyReligious"/>
+        </Choice>
+
+        <Choice Name="ContextualRootingRefusedConductExperiments" IsPositive="true">
+            <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">ClassEmpire,AffinityGameplayMajorHisshos</PathPrerequisite>
+            <Effect_ApplyTemporaryEffect Target="CurrentEmpire">
+                <TemporaryEffectReference Name="HappinessMalusFromDiplomacyMedium"/>
+            </Effect_ApplyTemporaryEffect>
+            <Effect_ApplyTemporaryEffect Target="CurrentEmpire">
+                <TemporaryEffectReference Name="FoodIncreaseOnEmpireFromDiplomacy"/>
+            </Effect_ApplyTemporaryEffect>
+            
+            <PopulationEvent Name="PopulationEventContextualDiplomacyScientist"/>
+        </Choice>
+
+        <Choice Name="ContextualRootingRefusedConductExperimentsMajorHisshos" IsPositive="true">
+            <PathPrerequisite Flags="Prerequisite,Discard" Inverted="false">ClassEmpire,AffinityGameplayMajorHisshos</PathPrerequisite>
+            <Effect_ApplyTemporaryEffect Target="CurrentEmpire">
+                <TemporaryEffectReference Name="HonorMalusFromDiplomacyMedium"/>
+            </Effect_ApplyTemporaryEffect>
+            <Effect_ApplyTemporaryEffect Target="CurrentEmpire">
+                <TemporaryEffectReference Name="FoodIncreaseOnEmpireFromDiplomacy"/>
+            </Effect_ApplyTemporaryEffect>
+
+            <PopulationEvent Name="PopulationEventContextualDiplomacyScientist"/>
+        </Choice>
+
+    </ContextualDiplomaticTermDefinition>
+
+
+    <!-- Demand tier 1 -->
+    <!-- Cancelled when sender or their allies declares a war, but not when receiver declares it. -->
+    <ContextualDiplomaticTermDefinition Name="LevelOneDemand" IsSubterm="false" CancelOnWarDeclaration="SenderOnly" AutoSelectedProviderDynamicEffect="RefusalPenaltyFIDSEffect">
+        
+        <DiplomaticRelationStatePrerequisite Flags="Discard" Inverted="true">DiplomaticRelationStateUnknown</DiplomaticRelationStatePrerequisite>
+        
+        <!-- Pressure must be greater or equal to min, strictly less than max. Default max is "no max" -->
+        <Condition_Pressure Minimum="60" Maximum="100"/>
+        
+        <Choice Name="LevelOneDemandAccept" IsPositive="true">
+            <!-- Choice becomes unavailable when a war has been declared (but it is already cancelled when sender declares the war because CancelOnWarDeclaration is set to SenderOnly) -->
+            <DiplomaticRelationStatePrerequisite Flags="WarForbidsAcceptingDemand" Inverted="true">DiplomaticRelationStateWar</DiplomaticRelationStatePrerequisite>
+            
+            <!-- Pressure reduction is hidden. -->
+            <Effect_ResetPressure Hidden="true"/>
+            
+            <!-- Dynamic effects have a sublist of effects which can be picked by the player. ApplicationMethod says where the effects are listed in the window. -->
+            <DynamicEffect Name="DynamicEffectLevelOneDemandAccept" ApplicationMethod="ReceiverOnly">
+                <Effect_DiplomaticTerm Name="ResourceDealEffect" GuiCategory="CategoryResource">
+                    <DiplomaticTermReference Name="ResourceDealDemand"/>
+                </Effect_DiplomaticTerm>
+            </DynamicEffect>
+        </Choice>
+        
+        <Choice Name="LevelOneDemandRefuse" IsPositive="false">
+            <Effect_ResetPressure Hidden="true"/>
+            <!-- Penalties were supposed to be optional but now they're automatic. -->
+            <DynamicEffect Name="DynamicEffectLevelOneDemandPenalty" ApplicationMethod="ProviderOnly">
+                <Effect_TemporaryEffect Name="RefusalPenaltyEmpirePointEffect" Target="CurrentEmpire" GuiCategory="CategoryContextualTerm">
+                    <TemporaryEffectReference Name="EmpirePointMalusFromDemand"/>
+                </Effect_TemporaryEffect>
+                <Effect_TemporaryEffect Name="RefusalPenaltyFIDSEffect" Target="CurrentEmpire" GuiCategory="CategoryContextualTerm">
+                    <TemporaryEffectReference Name="FIDSMalusFromDemand"/>
+                </Effect_TemporaryEffect>
+                <Effect_TemporaryEffect Name="RefusalPenaltyShipCostEffect" Target="CurrentEmpire" GuiCategory="CategoryContextualTerm">
+                    <TemporaryEffectReference Name="MilitaryShipCostIncreaseFromDemand"/>
+                </Effect_TemporaryEffect>
+            </DynamicEffect>
+        </Choice>
+
+        <DiplomaticAbilityWhenActive Name="DemandInProgress" ApplyOn="Symmetrical"/>
+    </ContextualDiplomaticTermDefinition>
+
+    <!-- Demand tier 2 -->
+    <ContextualDiplomaticTermDefinition Name="LevelTwoDemand" IsSubterm="false" CancelOnWarDeclaration="SenderOnly" AutoSelectedProviderDynamicEffect="RefusalPenaltyFIDSEffect">
+
+        <DiplomaticRelationStatePrerequisite Flags="Discard" Inverted="true">DiplomaticRelationStateUnknown</DiplomaticRelationStatePrerequisite>
+        <Condition_Pressure Minimum="100"/>
+
+        <!-- Not changing the name of the choice and dynamic effects because same names are displayed. -->
+        <Choice Name="LevelOneDemandAccept" IsPositive="true">
+            <DiplomaticRelationStatePrerequisite Flags="WarForbidsAcceptingDemand" Inverted="true">DiplomaticRelationStateWar</DiplomaticRelationStatePrerequisite>
+
+            <Effect_ResetPressure Hidden="true"/>
+            <DynamicEffect Name="DynamicEffectLevelOneDemandAccept" ApplicationMethod="ReceiverOnly">
+                <Effect_DiplomaticTerm Name="ResourceDealEffect" GuiCategory="CategoryResource">
+                    <DiplomaticTermReference Name="ResourceDealDemand"/>
+                </Effect_DiplomaticTerm>
+                <Effect_DiplomaticTerm Name="TechnologyDealEffect" GuiCategory="CategoryTechnology">
+                    <DiplomaticTermReference Name="TechnologyDealDemand"/>
+                </Effect_DiplomaticTerm>
+                <Effect_DiplomaticTribute Name="TributeEffect" Duration="20" GuiCategory="CategoryResource">
+                    <Tribute ResourceName="EmpireMoney"     Percentage="35"/>
+                    <Tribute ResourceName="EmpireResearch"  Percentage="35"/>
+                </Effect_DiplomaticTribute>
+                <Effect_DiplomaticTribute Name="TributeEffect" Duration="20" GuiCategory="CategoryResource">
+                  <Tribute ResourceName="EmpireResearch"  Percentage="60"/>
+                </Effect_DiplomaticTribute>
+                <Effect_DiplomaticTribute Name="TributeEffect" Duration="20" GuiCategory="CategoryResource">
+                  <Tribute ResourceName="EmpireMoney"     Percentage="60"/>
+                </Effect_DiplomaticTribute>
+            </DynamicEffect>
+            <!-- Second effect has another name. -->
+            <DynamicEffect Name="DynamicEffectLevelTwoDemandAccept" ApplicationMethod="ReceiverOnly">
+                <Effect_DiplomaticTerm>
+                    <DiplomaticTermReference Name="BreakAllianceDemand"/>
+                    <DiplomaticTermReference Name="ProposeColdWarRelationDemand"/>
+                    <DiplomaticTermReference Name="ProposeCancelTradeAgreementDemand"/>
+                    <DiplomaticTermReference Name="ProposeCancelScienceAgreementDemand"/>
+                </Effect_DiplomaticTerm>
+                <Effect_MinorFactionTransfer Name="MinorFactionTransferEffect" GuiCategory="CategoryTreaty"/>
+                <Effect_PopulationMigration Name="PopulationMigrationEffect" PopulationCount="3" GuiCategory="CategoryTreaty"/>
+            </DynamicEffect>
+            <Effect_ApplyDiplomaticEffect Name="WarDeclarationForbiddenEffect" Target="CurrentEmpire" GuiCategory="CategoryTreaty">
+                <DiplomaticPressureEffectReference Name="WarDeclarationForbidden"/>
+            </Effect_ApplyDiplomaticEffect>
+        </Choice>
+        
+        <Choice Name="LevelOneDemandRefuse" IsPositive="false">
+            <Effect_ResetPressure Hidden="true"/>
+            <DynamicEffect Name="DynamicEffectLevelOneDemandPenalty" ApplicationMethod="ProviderOnly">
+                <Effect_TemporaryEffect Name="RefusalPenaltyEmpirePointEffect" Target="CurrentEmpire" GuiCategory="CategoryContextualTerm">
+                    <TemporaryEffectReference Name="EmpirePointMalusFromDemand2"/>
+                </Effect_TemporaryEffect>
+                <Effect_TemporaryEffect Name="RefusalPenaltyFIDSEffect" Target="CurrentEmpire" GuiCategory="CategoryContextualTerm">
+                    <TemporaryEffectReference Name="FIDSMalusFromDemand2"/>
+                </Effect_TemporaryEffect>
+                <Effect_TemporaryEffect Name="RefusalPenaltyShipCostEffect" Target="CurrentEmpire" GuiCategory="CategoryContextualTerm">
+                    <TemporaryEffectReference Name="MilitaryShipCostIncreaseFromDemand2"/>
+                </Effect_TemporaryEffect>
+            </DynamicEffect>
+          <DynamicEffect Name="DynamicEffectLevelTwoDemandPenalty" ApplicationMethod="ProviderOnly">
+            <Effect_HeroLock Name="HeroLockEffect" Duration="10" GuiCategory="CategoryTreaty"/>
+            <Effect_TemporaryEffect Name="RefusalPenaltyShipMovementEffect" Target="CurrentEmpire" GuiCategory="CategoryContextualTerm">
+                <TemporaryEffectReference Name="MilitaryShipMovementReductionFromDemand"/>
+            </Effect_TemporaryEffect>
+            <Effect_TemporaryEffect Name="FleetUpkeepIncreaseFromDemand" Target="CurrentEmpire" GuiCategory="CategoryContextualTerm">
+              <TemporaryEffectReference Name="FleetUpkeepIncreaseFromDemand"/>
+            </Effect_TemporaryEffect>
+          </DynamicEffect>
+        </Choice>
+        <DiplomaticAbilityWhenActive Name="DemandInProgress" ApplyOn="Symmetrical"/>
+    </ContextualDiplomaticTermDefinition>
+    
+</Datatable>
