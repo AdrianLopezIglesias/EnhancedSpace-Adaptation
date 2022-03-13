@@ -6,13 +6,13 @@
     <!--TIED VALUES ARE ALLOWED-->
     <!--RANGE WIDTH IS FREE-->
     <PlanetTemperatureDefinition PlanetType="PlanetTypeGasFrozen"    Temperature="-10"/>
-    <PlanetTemperatureDefinition PlanetType="PlanetTypeBarren"       Temperature="-9"/>
-    <PlanetTemperatureDefinition PlanetType="PlanetTypeIce"          Temperature="-8"/>
-    <PlanetTemperatureDefinition PlanetType="PlanetTypeGasCold"      Temperature="-7"/>
-    <PlanetTemperatureDefinition PlanetType="PlanetTypeArctic"       Temperature="-6"/>
-    <PlanetTemperatureDefinition PlanetType="PlanetTypeSnow"         Temperature="-5"/>
-    <PlanetTemperatureDefinition PlanetType="PlanetTypeBoreal"       Temperature="-4"/>
-    <PlanetTemperatureDefinition PlanetType="PlanetTypeTundra"       Temperature="-3"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeBarren"       Temperature="-10"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeIce"          Temperature="-10"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeGasCold"      Temperature="-10"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeArctic"       Temperature="-10"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeSnow"         Temperature="-10"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeBoreal"       Temperature="-10"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeTundra"       Temperature="-10"/>
     <PlanetTemperatureDefinition PlanetType="PlanetTypeGasTemperate" Temperature="-2"/>
     <PlanetTemperatureDefinition PlanetType="PlanetTypeSteppes"      Temperature="-1"/>
     <PlanetTemperatureDefinition PlanetType="PlanetTypeOcean"        Temperature="0"/>
@@ -24,13 +24,13 @@
     <PlanetTemperatureDefinition PlanetType="PlanetTypeAtoll"        Temperature="1"/>
     <PlanetTemperatureDefinition PlanetType="PlanetTypeTropical"     Temperature="2"/>
     <PlanetTemperatureDefinition PlanetType="PlanetTypeVeldt"        Temperature="3"/>
-    <PlanetTemperatureDefinition PlanetType="PlanetTypeJungle"       Temperature="4"/>
-    <PlanetTemperatureDefinition PlanetType="PlanetTypeGasWarm"      Temperature="5"/>
-    <PlanetTemperatureDefinition PlanetType="PlanetTypeArid"         Temperature="5"/>
-    <PlanetTemperatureDefinition PlanetType="PlanetTypeDesert"       Temperature="6"/>
-    <PlanetTemperatureDefinition PlanetType="PlanetTypeGasHot"       Temperature="7"/>
-    <PlanetTemperatureDefinition PlanetType="PlanetTypeAsh"          Temperature="8"/>
-    <PlanetTemperatureDefinition PlanetType="PlanetTypeLava"         Temperature="9"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeJungle"       Temperature="10"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeGasWarm"      Temperature="10"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeArid"         Temperature="10"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeDesert"       Temperature="10"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeGasHot"       Temperature="10"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeAsh"          Temperature="10"/>
+    <PlanetTemperatureDefinition PlanetType="PlanetTypeLava"         Temperature="10"/>
     <PlanetTemperatureDefinition PlanetType="PlanetTypeGasBurning"   Temperature="10"/>
 
 </Datatable>
