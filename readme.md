@@ -9,6 +9,7 @@ I've just created my own repository for this mod, changing some main things that
 
 ## Changelog
 03/13/2022
+### System Growth
 In every session I found out that I maxed out population really fast, without even trying it, and never needed advanced Food technologies or improvements.
 In order to fix this issue two main changes were added. First allowing the systems to grow really large. Second, making it harder to grow a system. 
 The idea behind this modifications is to incentivise the competitiveness of the Food mechanic, as well pacifist civilizations and make small empires with huge systems a competitive approach. 
@@ -17,3 +18,39 @@ The idea behind this modifications is to incentivise the competitiveness of the 
 - Increased (bastly) the maximum population for each planet
 
 This is still being calibrated and values will be updated. 
+
+### Planet 
+I found the Planet Temperature table from the original mod a little too odd. Snow was considered temperate... 
+This is how is now setted up: 
+Cold planets (8): 
+    PlanetTypeGasFrozen    
+    PlanetTypeBarren       
+    PlanetTypeIce          
+    PlanetTypeGasCold      
+    PlanetTypeArctic       
+    PlanetTypeSnow         
+    PlanetTypeBoreal       
+    PlanetTypeTundra       
+
+Temperate planets (11): 
+    PlanetTypeGasTemperate 
+    PlanetTypeSteppes      
+    PlanetTypeOcean        
+    PlanetTypeFake         
+    PlanetTypeTerran       
+    PlanetTypeForest       
+    PlanetTypeMonsoon      
+    PlanetTypeSwamp        
+    PlanetTypeAtoll        
+    PlanetTypeTropical     
+    PlanetTypeVeldt        
+
+Hot planets (8): 
+    PlanetTypeJungle       
+    PlanetTypeGasWarm      
+    PlanetTypeArid         
+    PlanetTypeDesert       
+    PlanetTypeGasHot       
+    PlanetTypeAsh          
+    PlanetTypeLava         
+    PlanetTypeGasBurning   

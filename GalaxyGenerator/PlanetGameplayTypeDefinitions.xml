@@ -26,7 +26,7 @@
 
   <PlanetGameplayTypeDefinition PlanetType="PlanetTypeJungle">
     <GameplayType>PlanetGameplayTier1</GameplayType>
-    <GameplayType>PlanetGameplayTypeTemperate</GameplayType>
+    <GameplayType>PlanetGameplayTypeHot</GameplayType>
     <GameplayType>PlanetGameplayTypeTeeming</GameplayType>
     <GameplayType>PlanetGameplayTypeLush</GameplayType>
 
@@ -84,14 +84,14 @@
 
   <PlanetGameplayTypeDefinition PlanetType="PlanetTypeSnow">
     <GameplayType>PlanetGameplayTier2</GameplayType>
-    <GameplayType>PlanetGameplayTypeTemperate</GameplayType>
+    <GameplayType>PlanetGameplayTypeCold</GameplayType>
     <GameplayType>PlanetGameplayTypeMild</GameplayType>
     <GameplayType>PlanetGameplayTypeStable</GameplayType>
   </PlanetGameplayTypeDefinition>
   
   <PlanetGameplayTypeDefinition PlanetType="PlanetTypeArctic">
     <GameplayType>PlanetGameplayTier2</GameplayType>
-    <GameplayType>PlanetGameplayTypeTemperate</GameplayType>
+    <GameplayType>PlanetGameplayTypeCold</GameplayType>
     <GameplayType>PlanetGameplayTypeMild</GameplayType>
     <GameplayType>PlanetGameplayTypeStable</GameplayType>
   </PlanetGameplayTypeDefinition>
@@ -114,7 +114,7 @@
 
   <PlanetGameplayTypeDefinition PlanetType="PlanetTypeTundra">
     <GameplayType>PlanetGameplayTier2</GameplayType>
-    <GameplayType>PlanetGameplayTypeTemperate</GameplayType>
+    <GameplayType>PlanetGameplayTypeCold</GameplayType>
     <GameplayType>PlanetGameplayTypeMild</GameplayType>
     <GameplayType>PlanetGameplayTypeDry</GameplayType>
 
@@ -132,14 +132,14 @@
 
   <PlanetGameplayTypeDefinition PlanetType="PlanetTypeArid">
     <GameplayType>PlanetGameplayTier3</GameplayType>
-    <GameplayType>PlanetGameplayTypeTemperate</GameplayType>
+    <GameplayType>PlanetGameplayTypeHot</GameplayType>
     <GameplayType>PlanetGameplayTypeMeager</GameplayType>
     <GameplayType>PlanetGameplayTypeDry</GameplayType>
   </PlanetGameplayTypeDefinition>
 
   <PlanetGameplayTypeDefinition PlanetType="PlanetTypeDesert">
     <GameplayType>PlanetGameplayTier3</GameplayType>
-    <GameplayType>PlanetGameplayTypeTemperate</GameplayType>
+    <GameplayType>PlanetGameplayTypeHot</GameplayType>
     <GameplayType>PlanetGameplayTypeMeager</GameplayType>
     <GameplayType>PlanetGameplayTypeDry</GameplayType>
   </PlanetGameplayTypeDefinition>
@@ -157,7 +157,7 @@
 
   <PlanetGameplayTypeDefinition PlanetType="PlanetTypeBoreal"> <!-- Alpine -->
     <GameplayType>PlanetGameplayTier2</GameplayType>
-    <GameplayType>PlanetGameplayTypeTemperate</GameplayType>
+    <GameplayType>PlanetGameplayTypeCold</GameplayType>
     <GameplayType>PlanetGameplayTypeMild</GameplayType>
     <GameplayType>PlanetGameplayTypeCraggy</GameplayType>
     
