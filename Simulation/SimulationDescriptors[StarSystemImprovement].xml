@@ -1153,6 +1153,78 @@
     <Modifier TargetProperty="ImprovementsProductionCost" Operation="Addition" Value="$(ProductionCost)" Path="./ClassColonizedStarSystem"/>
   </SimulationDescriptor>
 
+
+
+
+
+    <!-- ################################################################################ -->
+    <!-- ################################## PROPAGANDA ################################## -->
+    <!-- ################################################################################ -->
+
+    <StarSystemImprovementDefinition Name="StarSystemImprovementPropagandaNeutral" SubCategory="SubCategoryPropaganda" >
+        <Tags>NoBuyout</Tags>
+        <InProgressSimulationDescriptorReference Name="StarSystemImprovementPropagandaNeutral"/>
+        <ConstructionQueueEntityActionReference Name="NeutralPropagandaSystemAction"/>
+        <InfiniteCost ResourceName="SystemTurnBased"/>
+        <PathPrerequisite Inverted="false" Flags="Prerequisite,Discard">ColonizedStarSystemStateOutpost</PathPrerequisite>
+        <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard,Faction">../ClassEmpire,AffinityVampirilis</PathPrerequisite>
+    </StarSystemImprovementDefinition>
+
+    <StarSystemImprovementDefinition Name="StarSystemImprovementPropagandaPolitics01" SubCategory="SubCategoryPropaganda" >
+        <Tags>NoBuyout</Tags>
+        <InProgressSimulationDescriptorReference Name="StarSystemImprovementPropagandaPolitics01"/>
+        <ConstructionQueueEntityActionReference Name="Politics01PropagandaSystemAction"/>
+        <InfiniteCost ResourceName="SystemTurnBased"/>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Discard" Politics="Politics01">1</SupportPrerequisite>
+        <PathPrerequisite Inverted="false" Flags="Prerequisite,Discard">../ClassEmpire/GovernmentDictatorshipCommon</PathPrerequisite> -->
+    </StarSystemImprovementDefinition>
+
+    <StarSystemImprovementDefinition Name="StarSystemImprovementPropagandaPolitics02" SubCategory="SubCategoryPropaganda" >
+        <Tags>NoBuyout</Tags>
+        <InProgressSimulationDescriptorReference Name="StarSystemImprovementPropagandaPolitics02"/>
+        <ConstructionQueueEntityActionReference Name="Politics02PropagandaSystemAction"/>
+        <InfiniteCost ResourceName="SystemTurnBased"/>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Discard" Politics="Politics02">1</SupportPrerequisite>
+        <Pa#@thPrerequisite Inverted="false" Flags="Prerequisite,Discard">../ClassEmpire/GovernmentDictatorshipCommon</Pa#@thPrerequisite> -->
+    </StarSystemImprovementDefinition>
+
+    <StarSystemImprovementDefinition Name="StarSystemImprovementPropagandaPolitics03" SubCategory="SubCategoryPropaganda" >
+        <Tags>NoBuyout</Tags>
+        <InProgressSimulationDescriptorReference Name="StarSystemImprovementPropagandaPolitics03"/>
+        <ConstructionQueueEntityActionReference Name="Politics03PropagandaSystemAction"/>
+        <InfiniteCost ResourceName="SystemTurnBased"/>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Discard" Politics="Politics03">1</SupportPrerequisite>
+        <PathPrerequisite Inverted="false" Flags="Prerequisite,Discard">../ClassEmpire/GovernmentDictatorshipCommon</PathPrerequisite> -->
+    </StarSystemImprovementDefinition>
+
+    <StarSystemImprovementDefinition Name="StarSystemImprovementPropagandaPolitics04" SubCategory="SubCategoryPropaganda" >
+        <Tags>NoBuyout</Tags>
+        <InProgressSimulationDescriptorReference Name="StarSystemImprovementPropagandaPolitics04"/>
+        <ConstructionQueueEntityActionReference Name="Politics04PropagandaSystemAction"/>
+        <InfiniteCost ResourceName="SystemTurnBased"/>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Discard" Politics="Politics04">1</SupportPrerequisite>
+        <PathPrerequisite Inverted="false" Flags="Prerequisite,Discard">../ClassEmpire/GovernmentDictatorshipCommon</PathPrerequisite> -->
+    </StarSystemImprovementDefinition>
+
+    <StarSystemImprovementDefinition Name="StarSystemImprovementPropagandaPolitics05" SubCategory="SubCategoryPropaganda" >
+        <Tags>NoBuyout</Tags>
+        <InProgressSimulationDescriptorReference Name="StarSystemImprovementPropagandaPolitics05"/>
+        <ConstructionQueueEntityActionReference Name="Politics05PropagandaSystemAction"/>
+        <InfiniteCost ResourceName="SystemTurnBased"/>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Discard" Politics="Politics05">1</SupportPrerequisite>
+        <PathPrerequisite Inverted="false" Flags="Prerequisite,Discard">../ClassEmpire/GovernmentDictatorshipCommon</PathPrerequisite> -->
+    </StarSystemImprovementDefinition>
+
+    <StarSystemImprovementDefinition Name="StarSystemImprovementPropagandaPolitics06" SubCategory="SubCategoryPropaganda" >
+        <Tags>NoBuyout</Tags>
+        <InProgressSimulationDescriptorReference Name="StarSystemImprovementPropagandaPolitics06"/>
+        <ConstructionQueueEntityActionReference Name="Politics06PropagandaSystemAction"/>
+        <InfiniteCost ResourceName="SystemTurnBased"/>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Discard" Politics="Politics06">1</SupportPrerequisite>
+        <PathPrerequisite Inverted="false" Flags="Prerequisite,Discard">../ClassEmpire/GovernmentDictatorshipCommon</PathPrerequisite> -->
+    </StarSystemImprovementDefinition>
+
+@##
    <!-- ############################################################################## -->
    <!-- ######################              MOD             ########################## -->
    <!-- ############################################################################## -->
