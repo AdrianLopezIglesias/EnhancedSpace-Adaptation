@@ -182,7 +182,7 @@
             <KeyValuePair Key="AnomaliesVisibleQuantity">280</KeyValuePair>
             <KeyValuePair Key="AnomaliesQuantity">140</KeyValuePair>
             <KeyValuePair Key="WondersMaxQuantity">10</KeyValuePair>
-            <#KeyValuePair Key="LootQuantity">360</#@KeyValuePair>
+            <KeyValuePair Key="LootQuantity">360</KeyValuePair>
         </ItemDefinition>
     </WorldSettingDefinition>
 
