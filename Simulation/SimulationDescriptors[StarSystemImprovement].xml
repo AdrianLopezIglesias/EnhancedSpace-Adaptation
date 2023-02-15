@@ -1201,6 +1201,8 @@
       <Modifier TargetProperty="NetSystemProduction"  Operation="Multiplication"   Value="0"      Path="ClassColonizedStarSystem"/>
       <Modifier TargetProperty="NetSystemManpower"    Operation="Percent"         Value="0.2"     Path="ClassColonizedStarSystem"/>
       <Modifier TargetProperty="NetPolitics06ElectionScore" Operation="Addition"  Value="0.1"     Path="../ClassEmpire/ClassSenate" TooltipHidden="true"/>
+      <Modifier TargetProperty="GroundBattleDefenderTroopsDamageMultiplier"       Operation="Percent" Value="0.35" Path="ClassColonizedStarSystem"/>
+      <Modifier TargetProperty="MaximumSystemManpower"       Operation="Percent" Value="0.15" Path="ClassColonizedStarSystem"/>
   </SimulationDescriptor>
 
   <SimulationDescriptor Name="StarSystemImprovementPropagandaPolitics07" Type="StarSystemImprovement">
