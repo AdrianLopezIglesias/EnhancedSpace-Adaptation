@@ -2,6 +2,107 @@
 <Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Simulation.SimulationDescriptor.xsd">
 
     
+    <!-- POLITICS 00 - Common -->
+
+    <!-- Law 1-->
+    <SimulationDescriptor Name="LawEffectP00L01" Type="LawEffect"> 
+        <Modifier       TargetProperty="PlanetRawDust"      Operation="Addition"            Value="8"       Path="../ClassEmpire/ClassColonizedStarSystem/ClassColonizedPlanet" />
+        <Modifier       TargetProperty="Happiness"          Operation="Addition"            Value="-20"     Path="../ClassEmpire/ClassColonizedStarSystem"/>
+        <Modifier TargetProperty="DemocracyLawsDiversityHasNeutral" Operation="Addition" Value="1" Path="../ClassEmpire" TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="LawEffectP00L01Republic" Type="LawEffect">
+        <Modifier       TargetProperty="PlanetRawDust"      Operation="Addition"            Value="12" Path="../ClassEmpire/ClassColonizedStarSystem/ClassColonizedPlanet" />
+        <Modifier       TargetProperty="Happiness"          Operation="Addition"           Value="-20"    Path="../ClassEmpire/ClassColonizedStarSystem"/>
+    </SimulationDescriptor>
+
+    <!-- Law 2-->
+    <SimulationDescriptor Name="LawEffectP00L02" Type="LawEffect">
+        <Modifier TargetProperty="SystemMoney"          Operation="Percent"         Value="0.2"     Path="../ClassEmpire/ClassColonizedStarSystem"/>
+        <Modifier TargetProperty="SystemResearch"       Operation="Percent"         Value="-0.2"    Path="../ClassEmpire/ClassColonizedStarSystem"/>
+        <Modifier TargetProperty="DemocracyLawsDiversityHasNeutral" Operation="Addition" Value="1" Path="../ClassEmpire" TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="LawEffectP00L02Republic" Type="LawEffect">
+        <Modifier TargetProperty="SystemMoney"          Operation="Percent"         Value="0.3"     Path="../ClassEmpire/ClassColonizedStarSystem"/>
+        <Modifier TargetProperty="SystemResearch"       Operation="Percent"         Value="-0.2"    Path="../ClassEmpire/ClassColonizedStarSystem"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="LawEffectP00L02Dictatorship" Type="LawEffect">
+        <BinaryModifier TargetProperty="SystemMoney"       Operation="Percent"     Left="0.1"  BinaryOperation="Multiplication" Right="$(WarCount)"    Path="../ClassEmpire/ClassColonizedStarSystem"/>
+    </SimulationDescriptor>
+
+    <!-- Law 3 -->
+    <SimulationDescriptor Name="LawEffectP00L03" Type="LawEffect">
+        <Modifier TargetProperty="MaximumEmpireManpowerStock"           Operation="Percent"         Value="0.2"     Path="../ClassEmpire"/>
+        <Modifier TargetProperty="GrowthForManpower"                    Operation="Percent"         Value="0.1"     Path="../ClassEmpire/ClassColonizedStarSystem" />
+        <Modifier TargetProperty="DemocracyLawsDiversityHasNeutral" Operation="Addition" Value="1" Path="../ClassEmpire" TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="LawEffectP00L03Republic" Type="LawEffect">
+        <Modifier TargetProperty="MaximumEmpireManpowerStock"           Operation="Percent"         Value="0.3"     Path="../ClassEmpire"/>
+        <Modifier TargetProperty="GrowthForManpower"                    Operation="Percent"         Value="0.15"    Path="../ClassEmpire/ClassColonizedStarSystem" />
+    </SimulationDescriptor>
+    
+    <!-- Law 4 -->
+    <SimulationDescriptor Name="LawEffectP00L04" Type="LawEffect">
+        <Modifier TargetProperty="SystemResearch"          Operation="Percent"         Value="0.2"     Path="../ClassEmpire/ClassColonizedStarSystem"/>
+        <Modifier TargetProperty="SystemMoney"             Operation="Percent"         Value="-0.2"    Path="../ClassEmpire/ClassColonizedStarSystem"/>
+        <Modifier TargetProperty="DemocracyLawsDiversityHasNeutral" Operation="Addition" Value="1" Path="../ClassEmpire" TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="LawEffectP00L04Republic" Type="LawEffect">
+        <Modifier TargetProperty="SystemResearch"          Operation="Percent"         Value="0.3"     Path="../ClassEmpire/ClassColonizedStarSystem"/>
+        <Modifier TargetProperty="SystemMoney"             Operation="Percent"         Value="-0.2"    Path="../ClassEmpire/ClassColonizedStarSystem"/>
+    </SimulationDescriptor>
+
+    <!-- Law 5 -->
+    <SimulationDescriptor Name="LawEffectP00L05" Type="LawEffect">
+        <Modifier       TargetProperty="PlanetRawScience"   Operation="Addition" Value="10" Path="../ClassEmpire/ClassColonizedStarSystem/ClassColonizedPlanet" />
+        <BinaryModifier TargetProperty="Happiness"          Operation="Subtraction" Left="3" BinaryOperation="Multiplication" Right="$(Population)" Path="../ClassEmpire/ClassColonizedStarSystem"  SearchValueFromPath="true"/>
+        <BinaryModifier TargetProperty="SystemProduction"   Operation="Subtraction" Left="3" BinaryOperation="Multiplication" Right="$(Population)" Path="../ClassEmpire/ClassColonizedStarSystem"  SearchValueFromPath="true"/>
+        <Modifier TargetProperty="DemocracyLawsDiversityHasNeutral" Operation="Addition" Value="1" Path="../ClassEmpire" TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="LawEffectP00L05Republic" Type="LawEffect">
+        <Modifier       TargetProperty="PlanetRawScience"   Operation="Addition" Value="13" Path="../ClassEmpire/ClassColonizedStarSystem/ClassColonizedPlanet" />
+        <BinaryModifier TargetProperty="Happiness"          Operation="Subtraction" Left="3" BinaryOperation="Multiplication" Right="$(Population)" Path="../ClassEmpire/ClassColonizedStarSystem"  SearchValueFromPath="true"/>
+        <BinaryModifier TargetProperty="SystemProduction"   Operation="Subtraction" Left="3" BinaryOperation="Multiplication" Right="$(Population)" Path="../ClassEmpire/ClassColonizedStarSystem"  SearchValueFromPath="true"/>
+    </SimulationDescriptor>
+
+    <!-- Law 6-->
+    <SimulationDescriptor Name="LawEffectP00L06" Type="LawEffect">
+        <BinaryModifier TargetProperty="Happiness"      Operation="Addition"    Left="2" BinaryOperation="Multiplication" Right="$(Population)" Path="../ClassEmpire/ClassColonizedStarSystem"  SearchValueFromPath="true"/>
+        <BinaryModifier TargetProperty="SystemMoney"    Operation="Subtraction" Left="2" BinaryOperation="Multiplication" Right="$(Population)" Path="../ClassEmpire/ClassColonizedStarSystem"  SearchValueFromPath="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="LawEffectP00L06Republic" Type="LawEffect">
+        <BinaryModifier TargetProperty="Happiness"      Operation="Addition"    Left="3" BinaryOperation="Multiplication" Right="$(Population)" Path="../ClassEmpire/ClassColonizedStarSystem"  SearchValueFromPath="true"/>
+        <BinaryModifier TargetProperty="SystemMoney"    Operation="Subtraction" Left="2" BinaryOperation="Multiplication" Right="$(Population)" Path="../ClassEmpire/ClassColonizedStarSystem"  SearchValueFromPath="true"/>
+        <Modifier TargetProperty="DemocracyLawsDiversityHasNeutral" Operation="Addition" Value="1" Path="../ClassEmpire" TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="LawEffectP00L06Dictatorship" Type="LawEffect">
+        <Modifier TargetProperty="HappinessBonusFromFleetPresence" Operation="Addition" Value="25" Path="../ClassEmpire/ClassColonizedStarSystem" TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <!-- Law 7 -->
+    <SimulationDescriptor Name="LawEffectP00L07" Type="LawEffect">
+        <Modifier TargetProperty="Happiness"            Operation="Addition"        Value="20"      Path="../ClassEmpire/ClassColonizedStarSystem" />
+        <Modifier TargetProperty="SystemProduction"       Operation="Percent"         Value="-0.3"    Path="../ClassEmpire/ClassColonizedStarSystem"/>
+        <Modifier TargetProperty="SystemMoney"       Operation="Percent"         Value="-0.3"    Path="../ClassEmpire/ClassColonizedStarSystem"/>
+        <Modifier TargetProperty="SystemResearch"       Operation="Percent"         Value="-0.3"    Path="../ClassEmpire/ClassColonizedStarSystem"/>
+        <Modifier TargetProperty="DemocracyLawsDiversityHasNeutral" Operation="Addition" Value="1" Path="../ClassEmpire" TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="LawEffectP00L07Republic" Type="LawEffect">
+        <Modifier TargetProperty="Happiness"            Operation="Addition"        Value="30"      Path="../ClassEmpire/ClassColonizedStarSystem" />
+        <Modifier TargetProperty="SystemProduction"       Operation="Percent"         Value="-0.3"    Path="../ClassEmpire/ClassColonizedStarSystem"/>
+        <Modifier TargetProperty="SystemMoney"       Operation="Percent"         Value="-0.3"    Path="../ClassEmpire/ClassColonizedStarSystem"/>
+        <Modifier TargetProperty="SystemResearch"       Operation="Percent"         Value="-0.3"    Path="../ClassEmpire/ClassColonizedStarSystem"/>
+        <Modifier TargetProperty="DemocracyLawsDiversityHasNeutral" Operation="Addition" Value="1" Path="../ClassEmpire" TooltipHidden="true"/>
+    </SimulationDescriptor>
+    
     <!-- ################################################################ -->
     <!-- #################### P01: INDUSTRIALIST ######################## -->
     <!-- ################################################################ -->
