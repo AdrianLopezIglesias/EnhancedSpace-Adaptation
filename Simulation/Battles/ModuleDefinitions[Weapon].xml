@@ -43,7 +43,7 @@
 
     <!-- KINETIC -->
     <WeaponModule Name="ModuleWeaponKinetic1" Type="Kinetic" Family="KineticBase" Level="1">
-        <Cost ResourceName="SystemProduction">20</Cost>
+        <Cost ResourceName="SystemProduction">80</Cost>
 		<!-- ** START AI DATA ** -->
         <!-- Weapons types -->
         <AIBattleSituations Situation="ProjectileWeapon" Mode="Use" Value="1"/>
@@ -115,7 +115,7 @@
     </WeaponModule>
 
    <WeaponModule Name="ModuleWeaponKinetic2" Type="Kinetic" Family="KineticBase" Level="2">
-      <Cost ResourceName="SystemProduction">40</Cost>
+      <Cost ResourceName="SystemProduction">160</Cost>
       <!-- ** START AI DATA ** -->
       <!-- Weapons types -->
       <AIBattleSituations Situation="ProjectileWeapon" Mode="Use" Value="1"/>
@@ -179,7 +179,7 @@
    </WeaponModule>
 
     <WeaponModule Name="ModuleWeaponKinetic3" Type="Kinetic" Family="KineticBase" Level="3">
-       <Cost ResourceName="SystemProduction">80</Cost>
+       <Cost ResourceName="SystemProduction">320</Cost>
        <!-- ** START AI DATA ** -->
        <!-- Weapons types -->
        <AIBattleSituations Situation="ProjectileWeapon" Mode="Use" Value="1"/>
@@ -243,7 +243,7 @@
     </WeaponModule>
 
     <WeaponModule Name="ModuleWeaponKinetic2Strategic1" Type="Kinetic" Family="KineticBase" Level="4">
-        <Cost ResourceName="SystemProduction">32</Cost>
+        <Cost ResourceName="SystemProduction">120</Cost>
         <!--<Cost ResourceName="Strategic1" Instant="true">1</Cost>-->
         <CustomCost ResourceName="Strategic1" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
 		<!-- ** START AI DATA ** -->
@@ -313,7 +313,7 @@
     </WeaponModule>
 
    <WeaponModule Name="ModuleWeaponKinetic3Strategic1" Type="Kinetic" Family="KineticBase" Level="5">
-      <Cost ResourceName="SystemProduction">32</Cost>
+      <Cost ResourceName="SystemProduction">120</Cost>
       <!--<Cost ResourceName="Strategic1" Instant="true">2</Cost>-->
       <CustomCost ResourceName="Strategic1" Instant="true">1 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
       <!-- ** START AI DATA ** -->
@@ -383,7 +383,7 @@
    </WeaponModule>
 
    <WeaponModule Name="ModuleWeaponKinetic4" Type="Kinetic" Family="KineticBase" Level="6">
-      <Cost ResourceName="SystemProduction">160</Cost>
+      <Cost ResourceName="SystemProduction">640</Cost>
       <!-- ** START AI DATA ** -->
       <!-- Weapons types -->
       <AIBattleSituations Situation="ProjectileWeapon" Mode="Use" Value="1"/>
@@ -447,7 +447,7 @@
    </WeaponModule>
    
    <WeaponModule Name="ModuleWeaponKinetic3Strategic3" Type="Kinetic" Family="KineticBase" Level="7">
-        <Cost ResourceName="SystemProduction">64</Cost>
+        <Cost ResourceName="SystemProduction">240</Cost>
         <!--<Cost ResourceName="Strategic3" Instant="true">1</Cost>-->
         <CustomCost ResourceName="Strategic3" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
 		<!-- ** START AI DATA ** -->
@@ -517,7 +517,7 @@
     </WeaponModule>
 
    <WeaponModule Name="ModuleWeaponKinetic4Strategic3" Type="Kinetic" Family="KineticBase" Level="8">
-      <Cost ResourceName="SystemProduction">64</Cost>
+      <Cost ResourceName="SystemProduction">240</Cost>
       <!--<Cost ResourceName="Strategic3" Instant="true">2</Cost>-->
       <CustomCost ResourceName="Strategic3" Instant="true">1 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
       <!-- ** START AI DATA ** -->
@@ -587,7 +587,7 @@
    </WeaponModule>
 
    <WeaponModule Name="ModuleWeaponKinetic5" Type="Kinetic" Family="KineticBase" Level="9">
-      <Cost ResourceName="SystemProduction">320</Cost>
+      <Cost ResourceName="SystemProduction">1280</Cost>
       <!-- ** START AI DATA ** -->
       <!-- Weapons types -->
       <AIBattleSituations Situation="ProjectileWeapon" Mode="Use" Value="1"/>
@@ -653,7 +653,7 @@
    </WeaponModule>
 
    <WeaponModule Name="ModuleWeaponKinetic4Terrans" Type="Kinetic" Family="KineticBase" Level="9">
-      <Cost ResourceName="SystemProduction">320</Cost>
+      <Cost ResourceName="SystemProduction">1280</Cost>
       <!-- ** START AI DATA ** -->
       <!-- Weapons types -->
       <AIBattleSituations Situation="ProjectileWeapon" Mode="Use" Value="1"/>
@@ -720,7 +720,7 @@
    </WeaponModule>
 
    <WeaponModule Name="ModuleWeaponKinetic4Strategic5" Type="Kinetic" Family="KineticBase" Level="10">
-      <Cost ResourceName="SystemProduction">128</Cost>
+      <Cost ResourceName="SystemProduction">540</Cost>
       <!--<Cost ResourceName="Strategic5" Instant="true">1</Cost>-->
       <CustomCost ResourceName="Strategic5" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
       <!-- ** START AI DATA ** -->
@@ -790,7 +790,7 @@
    </WeaponModule>
 
    <WeaponModule Name="ModuleWeaponKinetic5Strategic5" Type="Kinetic" Family="KineticBase" Level="11">
-      <Cost ResourceName="SystemProduction">128</Cost>
+      <Cost ResourceName="SystemProduction">520</Cost>
       <!--<Cost ResourceName="Strategic5" Instant="true">2</Cost>-->
       <CustomCost ResourceName="Strategic5" Instant="true">1 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
       <!-- ** START AI DATA ** -->
@@ -1096,7 +1096,7 @@
     <!-- ******************** -->
 
     <WeaponModule Name="ModuleWeaponMissile1" Type="Missile" Family="MissileBase" Level="1">
-        <Cost ResourceName="SystemProduction">20</Cost>
+        <Cost ResourceName="SystemProduction">120</Cost>
 		<!-- ** START AI DATA ** -->
         <!-- Weapons types -->
         <AIBattleSituations Situation="ProjectileWeapon" Mode="Use" Value="1"/>
@@ -1156,7 +1156,7 @@
     </WeaponModule>
 
     <WeaponModule Name="ModuleWeaponMissile2" Type="Missile" Family="MissileBase" Level="2">
-        <Cost ResourceName="SystemProduction">40</Cost>
+        <Cost ResourceName="SystemProduction">240</Cost>
 		<!-- ** START AI DATA ** -->
         <!-- Weapons types -->
         <AIBattleSituations Situation="ProjectileWeapon" Mode="Use" Value="1"/>
@@ -1217,7 +1217,7 @@
 
 
    <WeaponModule Name="ModuleWeaponMissile3" Type="Missile" Family="MissileBase" Level="3">
-      <Cost ResourceName="SystemProduction">80</Cost>
+      <Cost ResourceName="SystemProduction">480</Cost>
       <!-- ** START AI DATA ** -->
       <!-- Weapons types -->
       <AIBattleSituations Situation="ProjectileWeapon" Mode="Use" Value="1"/>
@@ -1278,7 +1278,7 @@
 
 
    <WeaponModule Name="ModuleWeaponMissile2Strategic1" Type="Missile" Family="MissileBase" Level="4">
-        <Cost ResourceName="SystemProduction">32</Cost>
+        <Cost ResourceName="SystemProduction">180</Cost>
         <!--<Cost ResourceName="Strategic1" Instant="true">2</Cost>-->
         <CustomCost ResourceName="Strategic1" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
 		<!-- ** START AI DATA ** -->
@@ -1345,7 +1345,7 @@
 
 
    <WeaponModule Name="ModuleWeaponMissile3Strategic1" Type="Missile" Family="MissileBase" Level="5">
-      <Cost ResourceName="SystemProduction">32</Cost>
+      <Cost ResourceName="SystemProduction">180</Cost>
       <!--<Cost ResourceName="Strategic1" Instant="true">3</Cost>-->
       <CustomCost ResourceName="Strategic1" Instant="true">1 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
       <!-- ** START AI DATA ** -->
@@ -1411,7 +1411,7 @@
    </WeaponModule>
 
    <WeaponModule Name="ModuleWeaponMissile4" Type="Missile" Family="MissileBase" Level="6">
-      <Cost ResourceName="SystemProduction">160</Cost>
+      <Cost ResourceName="SystemProduction">800</Cost>
       <!-- ** START AI DATA ** -->
       <!-- Weapons types -->
       <AIBattleSituations Situation="ProjectileWeapon" Mode="Use" Value="1"/>
@@ -1471,7 +1471,7 @@
    </WeaponModule>
 
     <WeaponModule Name="ModuleWeaponMissile3Strategic3" Type="Missile" Family="MissileBase" Level="7">
-        <Cost ResourceName="SystemProduction">64</Cost>
+        <Cost ResourceName="SystemProduction">360</Cost>
         <!--<Cost ResourceName="Strategic3" Instant="true">2</Cost>-->
         <CustomCost ResourceName="Strategic3" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
 		<!-- ** START AI DATA ** -->
@@ -1537,7 +1537,7 @@
     </WeaponModule>
 
     <WeaponModule Name="ModuleWeaponMissile4Strategic3" Type="Missile" Family="MissileBase" Level="8">
-        <Cost ResourceName="SystemProduction">64</Cost>
+        <Cost ResourceName="SystemProduction">360</Cost>
         <!--<Cost ResourceName="Strategic3" Instant="true">3</Cost>-->
         <CustomCost ResourceName="Strategic3" Instant="true">1 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
 		<!-- ** START AI DATA ** -->
@@ -1603,7 +1603,7 @@
     </WeaponModule>
 
    <WeaponModule Name="ModuleWeaponMissile5" Type="Missile" Family="MissileBase" Level="9">
-      <Cost ResourceName="SystemProduction">320</Cost>
+      <Cost ResourceName="SystemProduction">1400</Cost>
       <!-- ** START AI DATA ** -->
       <!-- Weapons types -->
       <AIBattleSituations Situation="ProjectileWeapon" Mode="Use" Value="1"/>
@@ -1663,7 +1663,7 @@
    </WeaponModule>
 
     <WeaponModule Name="ModuleWeaponMissile4Strategic5" Type="Missile" Family="MissileBase" Level="10">
-        <Cost ResourceName="SystemProduction">128</Cost>
+        <Cost ResourceName="SystemProduction">800</Cost>
         <!--<Cost ResourceName="Strategic5" Instant="true">2</Cost>-->
         <CustomCost ResourceName="Strategic5" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
 		<!-- ** START AI DATA ** -->
@@ -1729,7 +1729,7 @@
     </WeaponModule>
 
     <WeaponModule Name="ModuleWeaponMissile5Strategic5" Type="Missile" Family="MissileBase" Level="11">
-        <Cost ResourceName="SystemProduction">128</Cost>
+        <Cost ResourceName="SystemProduction">800</Cost>
         <!--<Cost ResourceName="Strategic5" Instant="true">3</Cost>-->
         <CustomCost ResourceName="Strategic5" Instant="true">1 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
 		<!-- ** START AI DATA ** -->
@@ -1801,7 +1801,7 @@
     <!-- ******************** -->
 
     <WeaponModule Name="ModuleWeaponLaser1" Type="Laser" Family="LaserBase" Level="1">
-        <Cost ResourceName="SystemProduction">20</Cost>
+        <Cost ResourceName="SystemProduction">80</Cost>
 		<!-- ** START AI DATA ** -->
         <!-- Weapons types -->
         <AIBattleSituations Situation="EnergyWeapon" Mode="Use" Value="1"/>
@@ -1861,7 +1861,7 @@
     </WeaponModule>
 
     <WeaponModule Name="ModuleWeaponLaser2" Type="Laser" Family="LaserBase" Level="2">
-        <Cost ResourceName="SystemProduction">40</Cost>
+        <Cost ResourceName="SystemProduction">320</Cost>
 		<!-- ** START AI DATA ** -->
         <!-- Weapons types -->
         <AIBattleSituations Situation="EnergyWeapon" Mode="Use" Value="1"/>
@@ -1921,7 +1921,7 @@
     </WeaponModule>
 
    <WeaponModule Name="ModuleWeaponLaser3" Type="Laser" Family="LaserBase" Level="3">
-      <Cost ResourceName="SystemProduction">80</Cost>
+      <Cost ResourceName="SystemProduction">320</Cost>
       <!-- ** START AI DATA ** -->
       <!-- Weapons types -->
       <AIBattleSituations Situation="EnergyWeapon" Mode="Use" Value="1"/>
@@ -1983,7 +1983,7 @@
    </WeaponModule>
 
    <WeaponModule Name="ModuleWeaponLaser2Vampirilis" Type="Laser" Family="LaserBase" Level="3">
-      <Cost ResourceName="SystemProduction">33</Cost>
+      <Cost ResourceName="SystemProduction">140</Cost>
       <!-- ** START AI DATA ** -->
       <!-- Weapons types -->
       <AIBattleSituations Situation="EnergyWeapon" Mode="Use" Value="1"/>
@@ -2045,7 +2045,7 @@
    </WeaponModule>
 
     <WeaponModule Name="ModuleWeaponLaser2Strategic2" Type="Laser" Family="LaserBase" Level="4">
-        <Cost ResourceName="SystemProduction">32</Cost>
+        <Cost ResourceName="SystemProduction">140</Cost>
         <!--<Cost ResourceName="Strategic2" Instant="true">1</Cost>-->
         <CustomCost ResourceName="Strategic2" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
 		<!-- ** START AI DATA ** -->
@@ -2112,7 +2112,7 @@
 
 
     <WeaponModule Name="ModuleWeaponLaser3Strategic2" Type="Laser" Family="LaserBase" Level="5">
-        <Cost ResourceName="SystemProduction">32</Cost>
+        <Cost ResourceName="SystemProduction">140</Cost>
         <!--<Cost ResourceName="Strategic2" Instant="true">2</Cost>-->
         <CustomCost ResourceName="Strategic2" Instant="true">1 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
 		<!-- ** START AI DATA ** -->
@@ -2178,7 +2178,7 @@
     </WeaponModule>
 
    <WeaponModule Name="ModuleWeaponLaser4" Type="Laser" Family="LaserBase" Level="6">
-      <Cost ResourceName="SystemProduction">160</Cost>
+      <Cost ResourceName="SystemProduction">800</Cost>
       <!-- ** START AI DATA ** -->
       <!-- Weapons types -->
       <AIBattleSituations Situation="EnergyWeapon" Mode="Use" Value="1"/>
@@ -2238,7 +2238,7 @@
    </WeaponModule>
    
     <WeaponModule Name="ModuleWeaponLaser3Strategic4" Type="Laser" Family="LaserBase" Level="7">
-        <Cost ResourceName="SystemProduction">64</Cost>
+        <Cost ResourceName="SystemProduction">240</Cost>
         <!--<Cost ResourceName="Strategic4" Instant="true">1</Cost>-->
         <CustomCost ResourceName="Strategic4" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
 		<!-- ** START AI DATA ** -->
@@ -2304,7 +2304,7 @@
     </WeaponModule>
 
     <WeaponModule Name="ModuleWeaponLaser4Strategic4" Type="Laser" Family="LaserBase" Level="8">
-        <Cost ResourceName="SystemProduction">64</Cost>
+        <Cost ResourceName="SystemProduction">240</Cost>
         <!--<Cost ResourceName="Strategic4" Instant="true">2</Cost>-->
         <CustomCost ResourceName="Strategic4" Instant="true">1 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
 		<!-- ** START AI DATA ** -->
@@ -2370,7 +2370,7 @@
     </WeaponModule>
 
    <WeaponModule Name="ModuleWeaponLaser5" Type="Laser" Family="LaserBase" Level="9">
-      <Cost ResourceName="SystemProduction">320</Cost>
+      <Cost ResourceName="SystemProduction">1400</Cost>
       <!-- ** START AI DATA ** -->
       <!-- Weapons types -->
       <AIBattleSituations Situation="EnergyWeapon" Mode="Use" Value="1"/>
@@ -2430,7 +2430,7 @@
    </WeaponModule>
    
     <WeaponModule Name="ModuleWeaponLaser4Strategic6" Type="Laser" Family="LaserBase" Level="10">
-        <Cost ResourceName="SystemProduction">128</Cost>
+        <Cost ResourceName="SystemProduction">520</Cost>
         <!--<Cost ResourceName="Strategic6" Instant="true">1</Cost>-->
         <CustomCost ResourceName="Strategic6" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
 		<!-- ** START AI DATA ** -->
@@ -2496,7 +2496,7 @@
     </WeaponModule>
 
     <WeaponModule Name="ModuleWeaponLaser5Strategic6" Type="Laser" Family="LaserBase" Level="11">
-        <Cost ResourceName="SystemProduction">128</Cost>
+        <Cost ResourceName="SystemProduction">520</Cost>
         <!--<Cost ResourceName="Strategic6" Instant="true">2</Cost>-->
         <CustomCost ResourceName="Strategic6" Instant="true">1 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
 		<!-- ** START AI DATA ** -->
@@ -2567,7 +2567,7 @@
     <!-- ******************** -->
 
     <WeaponModule Name="ModuleWeaponBeam1" Type="Beam" Family="BeamBase" Level="1">
-        <Cost ResourceName="SystemProduction">20</Cost>
+        <Cost ResourceName="SystemProduction">60</Cost>
 		<!-- ** START AI DATA ** -->
         <!-- Weapons types -->
         <AIBattleSituations Situation="EnergyWeapon" Mode="Use" Value="1"/>
@@ -2627,7 +2627,7 @@
     </WeaponModule>
 
     <WeaponModule Name="ModuleWeaponBeam2" Type="Beam" Family="BeamBase" Level="2">
-        <Cost ResourceName="SystemProduction">40</Cost>
+        <Cost ResourceName="SystemProduction">120</Cost>
 		<!-- ** START AI DATA ** -->
         <!-- Weapons types -->
         <AIBattleSituations Situation="EnergyWeapon" Mode="Use" Value="1"/>
@@ -2687,7 +2687,7 @@
     </WeaponModule>
 
    <WeaponModule Name="ModuleWeaponBeam3" Type="Beam" Family="BeamBase" Level="3">
-      <Cost ResourceName="SystemProduction">80</Cost>
+      <Cost ResourceName="SystemProduction">240</Cost>
       <!-- ** START AI DATA ** -->
       <!-- Weapons types -->
       <AIBattleSituations Situation="EnergyWeapon" Mode="Use" Value="1"/>
@@ -2748,7 +2748,7 @@
 
 
    <WeaponModule Name="ModuleWeaponBeam2Strategic2" Type="Beam" Family="BeamBase" Level="4">
-        <Cost ResourceName="SystemProduction">32</Cost>
+        <Cost ResourceName="SystemProduction">90</Cost>
         <!--<Cost ResourceName="Strategic2" Instant="true">2</Cost>-->
         <CustomCost ResourceName="Strategic2" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
 		<!-- ** START AI DATA ** -->
@@ -2815,7 +2815,7 @@
 
 
     <WeaponModule Name="ModuleWeaponBeam3Strategic2" Type="Beam" Family="BeamBase" Level="5">
-        <Cost ResourceName="SystemProduction">32</Cost>
+        <Cost ResourceName="SystemProduction">90</Cost>
         <!--<Cost ResourceName="Strategic2" Instant="true">3</Cost>-->
         <CustomCost ResourceName="Strategic2" Instant="true">1 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
 		<!-- ** START AI DATA ** -->
@@ -2881,7 +2881,7 @@
     </WeaponModule>
 
    <WeaponModule Name="ModuleWeaponBeam4" Type="Beam" Family="BeamBase" Level="6">
-      <Cost ResourceName="SystemProduction">160</Cost>
+      <Cost ResourceName="SystemProduction">450</Cost>
       <!-- ** START AI DATA ** -->
       <!-- Weapons types -->
       <AIBattleSituations Situation="EnergyWeapon" Mode="Use" Value="1"/>
@@ -2941,7 +2941,7 @@
    </WeaponModule>
    
     <WeaponModule Name="ModuleWeaponBeam3Strategic4" Type="Beam" Family="BeamBase" Level="7">
-        <Cost ResourceName="SystemProduction">64</Cost>
+        <Cost ResourceName="SystemProduction">180</Cost>
         <!--<Cost ResourceName="Strategic4" Instant="true">2</Cost>-->
         <CustomCost ResourceName="Strategic4" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
 		<!-- ** START AI DATA ** -->
@@ -3007,7 +3007,7 @@
     </WeaponModule>
    
     <WeaponModule Name="ModuleWeaponBeam4Strategic4" Type="Beam" Family="BeamBase" Level="8">
-        <Cost ResourceName="SystemProduction">64</Cost>
+        <Cost ResourceName="SystemProduction">180</Cost>
         <!--<Cost ResourceName="Strategic4" Instant="true">3</Cost>-->
         <CustomCost ResourceName="Strategic4" Instant="true">1 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
 		<!-- ** START AI DATA ** -->
@@ -3073,7 +3073,7 @@
     </WeaponModule>
 
    <WeaponModule Name="ModuleWeaponBeam5" Type="Beam" Family="BeamBase" Level="9">
-      <Cost ResourceName="SystemProduction">320</Cost>
+      <Cost ResourceName="SystemProduction">1000</Cost>
       <!-- ** START AI DATA ** -->
       <!-- Weapons types -->
       <AIBattleSituations Situation="EnergyWeapon" Mode="Use" Value="1"/>
@@ -3135,7 +3135,7 @@
    </WeaponModule>
 
    <WeaponModule Name="ModuleWeaponBeam5TimeLords" Type="Beam" Family="BeamBase" Level="9">
-      <Cost ResourceName="SystemProduction">320</Cost>
+      <Cost ResourceName="SystemProduction">960</Cost>
       <!-- ** START AI DATA ** -->
       <!-- Weapons types -->
       <AIBattleSituations Situation="EnergyWeapon" Mode="Use" Value="1"/>
@@ -3197,7 +3197,7 @@
    </WeaponModule>
 
     <WeaponModule Name="ModuleWeaponBeam4Strategic6" Type="Beam" Family="BeamBase" Level="10">
-        <Cost ResourceName="SystemProduction">128</Cost>
+        <Cost ResourceName="SystemProduction">390</Cost>
         <!--<Cost ResourceName="Strategic6" Instant="true">2</Cost>-->
         <CustomCost ResourceName="Strategic6" Instant="true">2 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
 		<!-- ** START AI DATA ** -->
@@ -3263,7 +3263,7 @@
     </WeaponModule>
 
     <WeaponModule Name="ModuleWeaponBeam5Strategic6" Type="Beam" Family="BeamBase" Level="11">
-        <Cost ResourceName="SystemProduction">128</Cost>
+        <Cost ResourceName="SystemProduction">390</Cost>
         <!--<Cost ResourceName="Strategic6" Instant="true">3</Cost>-->
         <CustomCost ResourceName="Strategic6" Instant="true">1 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
 		<!-- ** START AI DATA ** -->
@@ -3335,7 +3335,7 @@
     <!-- ******************** -->
 
     <DestructionModule Name="ModuleDestruction1" Type="Destruction" Family="DestructionBase" Level="1">
-        <Cost ResourceName="SystemProduction">160</Cost>
+        <Cost ResourceName="SystemProduction">480</Cost>
         <TechnologyPrerequisite Flags="Edition">TechnologyDestructionModule</TechnologyPrerequisite>
         <InterpreterPrerequisite Flags="Edition">Path(Context, @'ClassShip,ShipRoleCarrier')</InterpreterPrerequisite>
         <GameSettingPrerequisite Flags="Prerequisite,Discard,Edition,UnlockAvailability">AllowSuperWeapons,True</GameSettingPrerequisite>
