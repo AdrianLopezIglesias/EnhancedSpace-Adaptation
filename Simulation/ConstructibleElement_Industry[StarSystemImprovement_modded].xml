@@ -2803,6 +2803,15 @@
       <PathPrerequisite Inverted="false" Flags="Prerequisite,Discard">../ClassEmpire/GovernmentDictatorshipCommon</PathPrerequisite> -->
   </StarSystemImprovementDefinition>
 
+  <StarSystemImprovementDefinition Name="StarSystemImprovementPropagandaPolitics07" SubCategory="SubCategoryPropaganda" >
+      <Tags>NoBuyout</Tags>
+      <InProgressSimulationDescriptorReference Name="StarSystemImprovementPropagandaPolitics07"/>
+      <ConstructionQueueEntityActionReference Name="Politics07PropagandaSystemAction"/>
+      <InfiniteCost ResourceName="SystemTurnBased"/>
+      <!-- <SupportPrerequisite Flags="Prerequisite,Discard" Politics="Politics06">1</SupportPrerequisite>
+      <PathPrerequisite Inverted="false" Flags="Prerequisite,Discard">../ClassEmpire/GovernmentDictatorshipCommon</PathPrerequisite> -->
+  </StarSystemImprovementDefinition>
+
  
 
 </Datatable>

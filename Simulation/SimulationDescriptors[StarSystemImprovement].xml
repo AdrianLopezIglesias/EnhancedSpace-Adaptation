@@ -1203,6 +1203,11 @@
       <Modifier TargetProperty="NetPolitics06ElectionScore" Operation="Addition"  Value="0.1"     Path="../ClassEmpire/ClassSenate" TooltipHidden="true"/>
   </SimulationDescriptor>
 
+  <SimulationDescriptor Name="StarSystemImprovementPropagandaPolitics07" Type="StarSystemImprovement">
+      <Modifier TargetProperty="NetSystemProduction"  Operation="Multiplication"   Value="0"      Path="ClassColonizedStarSystem"/>
+      <BinaryModifier TargetProperty="Happiness"     Operation="Addition" Left="3" BinaryOperation="Multiplication" Right="$(Population)"  Path="ClassColonizedStarSystem"/>
+  </SimulationDescriptor>
+
   <SimulationDescriptor Name="IndestructibleStarSystemImprovement" Type="IndestructibleStarSystemImprovement">
       <Modifier TargetProperty="ObliterationImprovementWeight" Operation="Force" Value="0" TooltipHidden="true"/>
   </SimulationDescriptor>

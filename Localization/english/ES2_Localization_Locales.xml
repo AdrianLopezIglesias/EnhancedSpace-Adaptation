@@ -590,7 +590,8 @@ Hull Weakness: #E3BDAC#500#REVERT# (see defense absorption)</LocalizationPair>
 
    <LocalizationPair Name="%TooltipOverrideEmpireImprovementInfluence1">+20% Diplomatic Pressure</LocalizationPair>
 
-   
+    <LocalizationPair Name="%StarSystemImprovementPropagandaPolitics07Title">Social Propaganda</LocalizationPair>
+  <LocalizationPair Name="%StarSystemImprovementPropagandaPolitics07Description">Everyone is happy, just that</LocalizationPair>
 
    
 
