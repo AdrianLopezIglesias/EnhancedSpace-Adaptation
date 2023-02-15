@@ -189,21 +189,21 @@
     <WorldSettingDefinition Name="GalaxyDensity" Default="Medium">
         <ItemDefinition Name="Low">
             <KeyValuePair Key="GalaxyDensityStatus">0.75</KeyValuePair>
-            <KeyValuePair Key="NodeBallSize">3.5</KeyValuePair>
+            <KeyValuePair Key="NodeBallSize">2.5</KeyValuePair>
             <KeyValuePair Key="InterNodeBallMinimalDistance">0.85</KeyValuePair>
-            <KeyValuePair Key="IntraNodeBallShakeDiameter">5</KeyValuePair>
+            <KeyValuePair Key="IntraNodeBallShakeDiameter">4</KeyValuePair>
         </ItemDefinition>
         <ItemDefinition Name="Medium">
             <KeyValuePair Key="GalaxyDensityStatus">1</KeyValuePair>
-            <KeyValuePair Key="NodeBallSize">3.5</KeyValuePair>
+            <KeyValuePair Key="NodeBallSize">2.5</KeyValuePair>
             <KeyValuePair Key="InterNodeBallMinimalDistance">0.85</KeyValuePair>
-            <KeyValuePair Key="IntraNodeBallShakeDiameter">4.25</KeyValuePair>
+            <KeyValuePair Key="IntraNodeBallShakeDiameter">3.5</KeyValuePair>
         </ItemDefinition>
         <ItemDefinition Name="High">
             <KeyValuePair Key="GalaxyDensityStatus">1.25</KeyValuePair>
-            <KeyValuePair Key="NodeBallSize">3.5</KeyValuePair>
+            <KeyValuePair Key="NodeBallSize">2.5</KeyValuePair>
             <KeyValuePair Key="InterNodeBallMinimalDistance">0.85</KeyValuePair>
-            <KeyValuePair Key="IntraNodeBallShakeDiameter">3.5</KeyValuePair>
+            <KeyValuePair Key="IntraNodeBallShakeDiameter">2.5</KeyValuePair>
         </ItemDefinition>
         <ItemDefinition Name="Random"/>
     </WorldSettingDefinition>
@@ -294,6 +294,36 @@
         </ItemDefinition>
         <ItemDefinition Name="High" >
             <KeyValuePair Key="UpperTargetAverageLinksPerNode">12</KeyValuePair>
+        </ItemDefinition>
+    </WorldSettingDefinition>
+
+        <WorldSettingDefinition Name="ConstellationQuantity" Default="Several">
+        <ItemDefinition Name="One">
+            <KeyValuePair Key="ConstellationQuantityUnique">1</KeyValuePair>
+            <KeyValuePair Key="ConstellationQuantityFew">0</KeyValuePair>
+            <KeyValuePair Key="ConstellationQuantityMany">0</KeyValuePair>
+            <KeyValuePair Key="ShortcutWormholeFraction">0</KeyValuePair>
+            <KeyValuePair Key="BackdoorWormholesQuantity">0</KeyValuePair>
+            <KeyValuePair Key="BackdoorWormholesMinLength">0.25</KeyValuePair>
+            <KeyValuePair Key="MaxWormholesBetweenConstellations">1</KeyValuePair>
+        </ItemDefinition>
+        <ItemDefinition Name="Several" IsRecommended="true">
+            <KeyValuePair Key="ConstellationQuantityUnique">0</KeyValuePair>
+            <KeyValuePair Key="ConstellationQuantityFew">1</KeyValuePair>
+            <KeyValuePair Key="ConstellationQuantityMany">0</KeyValuePair>
+            <KeyValuePair Key="ShortcutWormholeFraction">2</KeyValuePair>
+            <KeyValuePair Key="BackdoorWormholesQuantity">6</KeyValuePair>
+            <KeyValuePair Key="BackdoorWormholesMinLength">1</KeyValuePair>
+            <KeyValuePair Key="MaxWormholesBetweenConstellations">8</KeyValuePair>
+        </ItemDefinition>
+        <ItemDefinition Name="Many">
+            <KeyValuePair Key="ConstellationQuantityUnique">0</KeyValuePair>
+            <KeyValuePair Key="ConstellationQuantityFew">0</KeyValuePair>
+            <KeyValuePair Key="ConstellationQuantityMany">1</KeyValuePair>
+            <KeyValuePair Key="ShortcutWormholeFraction">0</KeyValuePair>
+            <KeyValuePair Key="BackdoorWormholesQuantity">0</KeyValuePair>
+            <KeyValuePair Key="BackdoorWormholesMinLength">0.25</KeyValuePair>
+            <KeyValuePair Key="MaxWormholesBetweenConstellations">3</KeyValuePair>
         </ItemDefinition>
     </WorldSettingDefinition>
 </Datatable>
