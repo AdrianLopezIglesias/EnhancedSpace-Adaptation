@@ -6,11 +6,11 @@
             <KeyValuePair Key="GalaxySizeIndex">1</KeyValuePair>
             <KeyValuePair Key="NominalPlayers"></KeyValuePair>
             <KeyValuePair Key="UniquePlanetQuantity">1</KeyValuePair>
-            <KeyValuePair Key="NodesQuantity">30</KeyValuePair>
+            <KeyValuePair Key="NodesQuantity">50</KeyValuePair>
             <KeyValuePair Key="IsolatedNodesQuantity">15</KeyValuePair>
             <KeyValuePair Key="QuestNodesQuantity">12</KeyValuePair>
             <KeyValuePair Key="QuestNodesPerMajorFaction">4</KeyValuePair>
-            <KeyValuePair Key="SizeScale">0.75</KeyValuePair>
+            <KeyValuePair Key="SizeScale">0.45</KeyValuePair>
             <KeyValuePair Key="MinorFactionsCount">0</KeyValuePair>
             <KeyValuePair Key="LuxuryResourceCommonTypes">4</KeyValuePair>
             <KeyValuePair Key="LuxuryResourceUncommonTypes">2</KeyValuePair>
@@ -32,11 +32,11 @@
             <KeyValuePair Key="GalaxySizeIndex">2</KeyValuePair>
             <KeyValuePair Key="NominalPlayers">4</KeyValuePair>
             <KeyValuePair Key="UniquePlanetQuantity">2</KeyValuePair>
-            <KeyValuePair Key="NodesQuantity">40</KeyValuePair>
+            <KeyValuePair Key="NodesQuantity">60</KeyValuePair>
             <KeyValuePair Key="IsolatedNodesQuantity">20</KeyValuePair>
             <KeyValuePair Key="QuestNodesQuantity">8</KeyValuePair>
             <KeyValuePair Key="QuestNodesPerMajorFaction">4</KeyValuePair>
-            <KeyValuePair Key="SizeScale">0.95</KeyValuePair>
+            <KeyValuePair Key="SizeScale">0.65</KeyValuePair>
             <KeyValuePair Key="MinorFactionsCount">2</KeyValuePair>
             <KeyValuePair Key="LuxuryResourceCommonTypes">6</KeyValuePair>
             <KeyValuePair Key="LuxuryResourceUncommonTypes">3</KeyValuePair>
@@ -58,11 +58,11 @@
             <KeyValuePair Key="GalaxySizeIndex">3</KeyValuePair>
             <KeyValuePair Key="NominalPlayers">6</KeyValuePair>
             <KeyValuePair Key="UniquePlanetQuantity">3</KeyValuePair>
-            <KeyValuePair Key="NodesQuantity">60</KeyValuePair>
+            <KeyValuePair Key="NodesQuantity">80</KeyValuePair>
             <KeyValuePair Key="IsolatedNodesQuantity">30</KeyValuePair>
             <KeyValuePair Key="QuestNodesQuantity">10</KeyValuePair>
             <KeyValuePair Key="QuestNodesPerMajorFaction">4</KeyValuePair>
-            <KeyValuePair Key="SizeScale">1</KeyValuePair>
+            <KeyValuePair Key="SizeScale">0.8</KeyValuePair>
             <KeyValuePair Key="MinorFactionsCount">2</KeyValuePair>
             <KeyValuePair Key="LuxuryResourceCommonTypes">8</KeyValuePair>
             <KeyValuePair Key="LuxuryResourceUncommonTypes">4</KeyValuePair>
@@ -84,11 +84,11 @@
             <KeyValuePair Key="GalaxySizeIndex">4</KeyValuePair>
             <KeyValuePair Key="NominalPlayers">8</KeyValuePair>
             <KeyValuePair Key="UniquePlanetQuantity">4</KeyValuePair>
-            <KeyValuePair Key="NodesQuantity">80</KeyValuePair>
+            <KeyValuePair Key="NodesQuantity">110</KeyValuePair>
             <KeyValuePair Key="IsolatedNodesQuantity">40</KeyValuePair>
             <KeyValuePair Key="QuestNodesQuantity">8</KeyValuePair>
             <KeyValuePair Key="QuestNodesPerMajorFaction">4</KeyValuePair>
-            <KeyValuePair Key="SizeScale">1.025</KeyValuePair>
+            <KeyValuePair Key="SizeScale">0.95</KeyValuePair>
             <KeyValuePair Key="MinorFactionsCount">4</KeyValuePair>
             <KeyValuePair Key="LuxuryResourceCommonTypes">8</KeyValuePair>
             <KeyValuePair Key="LuxuryResourceUncommonTypes">6</KeyValuePair>
@@ -110,11 +110,11 @@
             <KeyValuePair Key="GalaxySizeIndex">5</KeyValuePair>
             <KeyValuePair Key="NominalPlayers">10</KeyValuePair>
             <KeyValuePair Key="UniquePlanetQuantity">5</KeyValuePair>
-            <KeyValuePair Key="NodesQuantity">100</KeyValuePair>
+            <KeyValuePair Key="NodesQuantity">130</KeyValuePair>
             <KeyValuePair Key="IsolatedNodesQuantity">50</KeyValuePair>
             <KeyValuePair Key="QuestNodesQuantity">12</KeyValuePair>
             <KeyValuePair Key="QuestNodesPerMajorFaction">4</KeyValuePair>
-            <KeyValuePair Key="SizeScale">1.1</KeyValuePair>
+            <KeyValuePair Key="SizeScale">1</KeyValuePair>
             <KeyValuePair Key="MinorFactionsCount">6</KeyValuePair>
             <KeyValuePair Key="LuxuryResourceCommonTypes">8</KeyValuePair>
             <KeyValuePair Key="LuxuryResourceUncommonTypes">8</KeyValuePair>
@@ -136,11 +136,11 @@
             <KeyValuePair Key="GalaxySizeIndex">6</KeyValuePair>
             <KeyValuePair Key="NominalPlayers">12</KeyValuePair>
             <KeyValuePair Key="UniquePlanetQuantity">6</KeyValuePair>
-            <KeyValuePair Key="NodesQuantity">120</KeyValuePair>
+            <KeyValuePair Key="NodesQuantity">150</KeyValuePair>
             <KeyValuePair Key="IsolatedNodesQuantity">60</KeyValuePair>
             <KeyValuePair Key="QuestNodesQuantity">12</KeyValuePair>
             <KeyValuePair Key="QuestNodesPerMajorFaction">4</KeyValuePair>
-            <KeyValuePair Key="SizeScale">1.15</KeyValuePair>
+            <KeyValuePair Key="SizeScale">1.1</KeyValuePair>
             <KeyValuePair Key="MinorFactionsCount">8</KeyValuePair>
             <KeyValuePair Key="LuxuryResourceCommonTypes">8</KeyValuePair>
             <KeyValuePair Key="LuxuryResourceUncommonTypes">8</KeyValuePair>
@@ -162,11 +162,11 @@
             <KeyValuePair Key="GalaxySizeIndex">7</KeyValuePair>
             <KeyValuePair Key="NominalPlayers">14</KeyValuePair>
             <KeyValuePair Key="UniquePlanetQuantity">7</KeyValuePair>
-            <KeyValuePair Key="NodesQuantity">140</KeyValuePair>
+            <KeyValuePair Key="NodesQuantity">170zº</KeyValuePair>
             <KeyValuePair Key="IsolatedNodesQuantity">70</KeyValuePair>
             <KeyValuePair Key="QuestNodesQuantity">12</KeyValuePair>
             <KeyValuePair Key="QuestNodesPerMajorFaction">4</KeyValuePair>
-            <KeyValuePair Key="SizeScale">1.2</KeyValuePair>
+            <KeyValuePair Key="SizeScale">1.5</KeyValuePair>
             <KeyValuePair Key="MinorFactionsCount">10</KeyValuePair>
             <KeyValuePair Key="LuxuryResourceCommonTypes">8</KeyValuePair>
             <KeyValuePair Key="LuxuryResourceUncommonTypes">8</KeyValuePair>
@@ -182,7 +182,7 @@
             <KeyValuePair Key="AnomaliesVisibleQuantity">280</KeyValuePair>
             <KeyValuePair Key="AnomaliesQuantity">140</KeyValuePair>
             <KeyValuePair Key="WondersMaxQuantity">10</KeyValuePair>
-            <KeyValuePair Key="LootQuantity">360</KeyValuePair>
+            <#KeyValuePair Key="LootQuantity">360</#@KeyValuePair>
         </ItemDefinition>
     </WorldSettingDefinition>
 
@@ -324,6 +324,21 @@
             <KeyValuePair Key="BackdoorWormholesQuantity">0</KeyValuePair>
             <KeyValuePair Key="BackdoorWormholesMinLength">0.25</KeyValuePair>
             <KeyValuePair Key="MaxWormholesBetweenConstellations">3</KeyValuePair>
+        </ItemDefinition>
+    </WorldSettingDefinition>
+
+    <WorldSettingDefinition Name="SpecialNodesMultiplier" Type="string" Default="Normal">
+        <ItemDefinition Name="None">
+            <KeyValuePair Key="SpecialNodesProbability">0.1</KeyValuePair>
+        </ItemDefinition>
+        <ItemDefinition Name="Rare">
+            <KeyValuePair Key="SpecialNodesProbability">0.3</KeyValuePair>
+        </ItemDefinition>
+        <ItemDefinition Name="Normal">
+            <KeyValuePair Key="SpecialNodesProbability">0.45</KeyValuePair>
+        </ItemDefinition>
+        <ItemDefinition Name="Abundant">
+            <KeyValuePair Key="SpecialNodesProbability">0.6</KeyValuePair>
         </ItemDefinition>
     </WorldSettingDefinition>
 </Datatable>
