@@ -1188,7 +1188,7 @@
   <SimulationDescriptor Name="StarSystemImprovementPropagandaPolitics04" Type="StarSystemImprovement">
       <Modifier TargetProperty="NetSystemProduction"  Operation="Multiplication"  Value="0"       Path="ClassColonizedStarSystem"/>
       <Modifier TargetProperty="SystemGrowth"         Operation="Percent"         Value="0.2"     Path="ClassColonizedStarSystem"/>
-      <BinaryModifier TargetProperty="PlanetFood"     Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedStarSystem/ClassColonizedPlanet@#"  />
+      <BinaryModifier TargetProperty="PlanetFood"     Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedStarSystem/ClassColonizedPlanet"  />
       <Modifier TargetProperty="Happiness"            Operation="Addition"        Value="15"      Path="ClassColonizedStarSystem"/>
       <Modifier TargetProperty="NetPolitics04ElectionScore" Operation="Addition"  Value="0.1"     Path="../ClassEmpire/ClassSenate" TooltipHidden="true"/>
   </SimulationDescriptor>
