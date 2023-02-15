@@ -285,5 +285,15 @@
 
     </WorldSettingDefinition>
 
-
+    <WorldSettingDefinition Name="ConnectivityDensity" Default="Medium">
+        <ItemDefinition Name="Low" >
+            <KeyValuePair Key="UpperTargetAverageLinksPerNode">3</KeyValuePair>
+        </ItemDefinition>
+        <ItemDefinition Name="Medium" >
+            <KeyValuePair Key="UpperTargetAverageLinksPerNode">4</KeyValuePair>
+        </ItemDefinition>
+        <ItemDefinition Name="High" >
+            <KeyValuePair Key="UpperTargetAverageLinksPerNode">6</KeyValuePair>
+        </ItemDefinition>
+    </WorldSettingDefinition>
 </Datatable>
