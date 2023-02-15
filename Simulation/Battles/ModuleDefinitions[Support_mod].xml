@@ -408,7 +408,7 @@
 
    <!-- Engine Level 1 -->
    <SupportModule Name="ModuleSupportEngine1" Family="EngineBase" Level="1">
-      <Cost ResourceName="SystemProduction">40</Cost>
+      <Cost ResourceName="SystemProduction">80</Cost>
       <TechnologyPrerequisite Flags="Edition">TechnologyStageScienceAndExploration1</TechnologyPrerequisite>
       <SimulationDescriptorReference Name="ClassModuleSupport"/>
       <SimulationDescriptorReference Name="ClassModuleSupportEngine"/>
@@ -420,7 +420,7 @@
    
    <!--Engine Level 2-->
    <SupportModule Name="ModuleSupportEngine2" Family="EngineBase" Level="2">
-      <Cost ResourceName="SystemProduction">80</Cost>
+      <Cost ResourceName="SystemProduction">160</Cost>
       <TechnologyPrerequisite  Flags="Edition">TechnologyStageScienceAndExploration2</TechnologyPrerequisite>
       <SimulationDescriptorReference Name="ClassModuleSupport"/>
       <SimulationDescriptorReference Name="ClassModuleSupportEngine"/>
@@ -432,7 +432,7 @@
 
    <!-- Engine titanium level 2 -->
    <SupportModule Name="ModuleSupportEngine2Strategic1" Family="EngineBase" Level="3">
-      <Cost ResourceName="SystemProduction">80</Cost>
+      <Cost ResourceName="SystemProduction">160</Cost>
       <!--<Cost ResourceName="Strategic1" Instant="true">1</Cost>-->
       <CustomCost ResourceName="Strategic1" Instant="true">1 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
       <TechnologyPrerequisite Flags="Edition">TechnologyExplorationModule1</TechnologyPrerequisite>
@@ -447,7 +447,7 @@
 
    <!-- Engine Hyperium level 2 -->
    <SupportModule Name="ModuleSupportEngine2Strategic2" Family="EngineBase" Level="3">
-      <Cost ResourceName="SystemProduction">80</Cost>
+      <Cost ResourceName="SystemProduction">160</Cost>
       <!--<Cost ResourceName="Strategic2" Instant="true">1</Cost>-->
       <CustomCost ResourceName="Strategic2" Instant="true">1 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
       <TechnologyPrerequisite Flags="Edition">TechnologyExplorationModule2</TechnologyPrerequisite>
@@ -462,7 +462,7 @@
 
    <!-- Engine adamantium level 3 -->
    <SupportModule Name="ModuleSupportEngine3Strategic3" Family="EngineBase" Level="4">
-      <Cost ResourceName="SystemProduction">140</Cost>
+      <Cost ResourceName="SystemProduction">280</Cost>
       <!--<Cost ResourceName="Strategic3" Instant="true">1</Cost>-->
       <CustomCost ResourceName="Strategic3" Instant="true">1 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
       <TechnologyPrerequisite Flags="Edition">TechnologyPopulation1Alt</TechnologyPrerequisite>
@@ -477,7 +477,7 @@
 
    <!-- Engine Anti Matter level 3 -->
    <SupportModule Name="ModuleSupportEngine3Strategic4" Family="EngineBase" Level="4">
-      <Cost ResourceName="SystemProduction">140</Cost>
+      <Cost ResourceName="SystemProduction">280</Cost>
       <!--<Cost ResourceName="Strategic4" Instant="true">1</Cost>-->
       <CustomCost ResourceName="Strategic4" Instant="true">1 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
       <TechnologyPrerequisite Flags="Edition">TechnologyDefenseModule2</TechnologyPrerequisite>
@@ -492,7 +492,7 @@
 
    <!--Engine Level 4-->
    <SupportModule Name="ModuleSupportEngine4" Family="EngineBase" Level="4">
-      <Cost ResourceName="SystemProduction">640</Cost>
+      <Cost ResourceName="SystemProduction">1280</Cost>
       <TechnologyPrerequisite  Flags="Edition">TechnologyStageScienceAndExploration5</TechnologyPrerequisite>
       <SimulationDescriptorReference Name="ClassModuleSupport"/>
       <SimulationDescriptorReference Name="ClassModuleSupportEngine"/>
@@ -504,7 +504,7 @@
 
    <!-- Engine orichalcix level 5 -->
    <SupportModule Name="ModuleSupportEngine4Strategic5" Family="EngineBase" Level="5">
-      <Cost ResourceName="SystemProduction">260</Cost>
+      <Cost ResourceName="SystemProduction">520</Cost>
       <!--<Cost ResourceName="Strategic5" Instant="true">1</Cost>-->
       <CustomCost ResourceName="Strategic5" Instant="true">1 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
       <TechnologyPrerequisite Flags="Edition">TechnologyMovementBonus</TechnologyPrerequisite>
@@ -519,7 +519,7 @@
 
    <!-- Engine quadrinix level 5 -->
    <SupportModule Name="ModuleSupportEngine4Strategic6" Family="EngineBase" Level="5">
-      <Cost ResourceName="SystemProduction">260</Cost>
+      <Cost ResourceName="SystemProduction">520</Cost>
       <!--<Cost ResourceName="Strategic6" Instant="true">1</Cost>-->
       <CustomCost ResourceName="Strategic6" Instant="true">1 * (Property(StockLocation, @../ClassEmpire, ShipStrategicCostMultiplier, true) + Property(StockLocation, @ClassColonizedStarSystem, ShipStrategicCostMultiplier, true) )</CustomCost>
       <TechnologyPrerequisite Flags="Edition">TechnologyFreeMovement2</TechnologyPrerequisite>
