@@ -57,7 +57,7 @@
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,!GovernmentRepublic</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassEmpire,FactionTraitManualHomeSystem</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics01">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics01">1</SupportPrerequisite> -->
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 2 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics01">0</PoliticsExperiencePrerequisite>
         <SimulationDescriptorReference Name="LawPolitics01"/>
@@ -72,7 +72,7 @@
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentRepublic</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassEmpire,FactionTraitManualHomeSystem</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics01">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics01">1</SupportPrerequisite> -->
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 2 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics01">0</PoliticsExperiencePrerequisite>
         <SimulationDescriptorReference Name="LawPolitics01"/>
@@ -87,7 +87,7 @@
             <SimulationDescriptorReference Name="LawEffectP01L02" />
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,!GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics01">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics01">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics01">3</PoliticsExperiencePrerequisite>
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 4 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
         <SimulationDescriptorReference Name="LawPolitics01"/>
@@ -101,7 +101,7 @@
             <SimulationDescriptorReference Name="LawEffectP01L02Republic" />
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics01">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics01">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics01">3</PoliticsExperiencePrerequisite>
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 4 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
 
@@ -117,7 +117,7 @@
             <SimulationDescriptorReference Name="LawEffectP01L03" />
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,!GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics01">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics01">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics01">9</PoliticsExperiencePrerequisite>
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 6 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
         <SimulationDescriptorReference Name="LawPolitics01"/>
@@ -131,7 +131,7 @@
             <SimulationDescriptorReference Name="LawEffectP01L03Republic" />
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics01">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics01">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics01">9</PoliticsExperiencePrerequisite>
 
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 6 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
@@ -147,7 +147,7 @@
             <SimulationDescriptorReference Name="LawEffectP01L04" />
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,!GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics01">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics01">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics01">15</PoliticsExperiencePrerequisite>
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 8 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
         <SimulationDescriptorReference Name="LawPolitics01"/>
@@ -162,7 +162,7 @@
             <SimulationDescriptorReference Name="LawEffectP01L04Republic" />
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics01">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics01">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics01">15</PoliticsExperiencePrerequisite>
 
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 8 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
@@ -193,7 +193,7 @@
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,PrimeSenator">ClassSenate/ClassSenator,Politics02,PrimeSenator</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics02">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics02">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics02">0</PoliticsExperiencePrerequisite>
 
         <SimulationDescriptorReference Name="LawPolitics02"/>
@@ -207,7 +207,7 @@
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,PrimeSenator">ClassSenate/ClassSenator,Politics02,PrimeSenator</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentDictatorshipCommon</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics02">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics02">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics02">0</PoliticsExperiencePrerequisite>
 
         <SimulationDescriptorReference Name="LawPolitics02"/>
@@ -222,7 +222,7 @@
             <SimulationDescriptorReference Name="LawEffectP02L01" />
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,!GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics02">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics02">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics02">0</PoliticsExperiencePrerequisite>
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 2 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
 
@@ -238,7 +238,7 @@
             <SimulationDescriptorReference Name="LawEffectP02L01Republic" />
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics02">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics02">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics02">0</PoliticsExperiencePrerequisite>
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 2 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
 
@@ -254,7 +254,7 @@
             <SimulationDescriptorReference Name="LawEffectP02L02" />
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,!GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics02">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics02">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics02">3</PoliticsExperiencePrerequisite>
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 4 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
 
@@ -269,7 +269,7 @@
             <SimulationDescriptorReference Name="LawEffectP02L02Republic" />
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics02">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics02">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics02">3</PoliticsExperiencePrerequisite>
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 4 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
 
@@ -289,7 +289,7 @@
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Faction" Inverted="true">../ClassEmpire,AffinityGameplayVaulters</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,!GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics02">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics02">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics02">9</PoliticsExperiencePrerequisite>
 
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 6 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
@@ -306,7 +306,7 @@
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Faction" Inverted="true">../ClassEmpire,AffinityGameplayVaulters</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics02">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics02">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics02">9</PoliticsExperiencePrerequisite>
 
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 6 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
@@ -323,7 +323,7 @@
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Faction">../ClassEmpire,AffinityGameplayVaulters</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,!GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics02">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics02">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics02">9</PoliticsExperiencePrerequisite>
 
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 6 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
@@ -340,7 +340,7 @@
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Faction">../ClassEmpire,AffinityGameplayVaulters</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics02">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics02">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics02">9</PoliticsExperiencePrerequisite>
 
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 6 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
@@ -356,7 +356,7 @@
             <SimulationDescriptorReference Name="LawEffectP02L04" />
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,!GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics02">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics02">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics02">15</PoliticsExperiencePrerequisite>
 
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 8 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
@@ -371,7 +371,7 @@
             <SimulationDescriptorReference Name="LawEffectP02L04Republic" />
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics02">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics02">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics02">15</PoliticsExperiencePrerequisite>
 
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 8 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
@@ -431,7 +431,7 @@
         <SimulationDescriptorReference Name="LawEffectP03L01" />
       </LawEffectSimulation>
       <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,!GovernmentRepublic</PathPrerequisite>
-      <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics03">1</SupportPrerequisite>
+      <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics03">1</SupportPrerequisite> -->
       <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics03">0</PoliticsExperiencePrerequisite>
       <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 2 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
 
@@ -446,7 +446,7 @@
         <SimulationDescriptorReference Name="LawEffectP03L01Republic" />
       </LawEffectSimulation>
       <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentRepublic</PathPrerequisite>
-      <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics03">1</SupportPrerequisite>
+      <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics03">1</SupportPrerequisite> -->
       <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics03">0</PoliticsExperiencePrerequisite>
       <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 2 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
 
@@ -463,7 +463,7 @@
       </LawEffectSimulation>
       <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,!GovernmentRepublic</PathPrerequisite>
       <PathPrerequisite Flags="Prerequisite,Discard,Faction">../ClassEmpire,!AffinityGameplayMajorHisshos</PathPrerequisite>
-      <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics03">1</SupportPrerequisite>
+      <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics03">1</SupportPrerequisite> -->
       <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics03">3</PoliticsExperiencePrerequisite>
       <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 4 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
 
@@ -479,7 +479,7 @@
       </LawEffectSimulation>
       <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentRepublic</PathPrerequisite>
       <PathPrerequisite Flags="Prerequisite,Discard,Faction">../ClassEmpire,!AffinityGameplayMajorHisshos</PathPrerequisite>
-      <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics03">1</SupportPrerequisite>
+      <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics03">1</SupportPrerequisite> -->
       <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics03">3</PoliticsExperiencePrerequisite>
       <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 4 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
 
@@ -496,7 +496,7 @@
             <SimulationDescriptorReference Name="LawEffectP03L03" />
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,!GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics03">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics03">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics03">9</PoliticsExperiencePrerequisite>
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 6 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
 
@@ -511,7 +511,7 @@
             <SimulationDescriptorReference Name="LawEffectP03L03Republic" />
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics03">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics03">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics03">9</PoliticsExperiencePrerequisite>
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 6 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
 
@@ -526,7 +526,7 @@
             <SimulationDescriptorReference Name="LawEffectP03L04" />
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,!GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics03">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics03">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics03">15</PoliticsExperiencePrerequisite>
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 8 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
  
@@ -541,7 +541,7 @@
             <SimulationDescriptorReference Name="LawEffectP03L04Republic" />
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics03">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics03">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics03">15</PoliticsExperiencePrerequisite>
 
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 8 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
@@ -609,7 +609,7 @@
       <PathPrerequisite Flags="Prerequisite,Discard,Faction" Inverted="true">../ClassEmpire,AffinityGameplayUmbralChoir</PathPrerequisite>
       <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,!GovernmentRepublic</PathPrerequisite>
       <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassEmpire,FactionTraitManualHomeSystem</PathPrerequisite>
-      <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics04">1</SupportPrerequisite>
+      <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics04">1</SupportPrerequisite> -->
       <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 2 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
       <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics04">0</PoliticsExperiencePrerequisite>
       <SimulationDescriptorReference Name="LawPolitics04"/>
@@ -629,7 +629,7 @@
       <PathPrerequisite Flags="Prerequisite,Discard,Faction" Inverted="true">../ClassEmpire,AffinityGameplayUmbralChoir</PathPrerequisite> 
       <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassEmpire,FactionTraitManualHomeSystem</PathPrerequisite>
       <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,!GovernmentRepublic</PathPrerequisite>
-      <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics04">1</SupportPrerequisite>
+      <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics04">1</SupportPrerequisite> -->
       <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 2 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
       <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics04">0</PoliticsExperiencePrerequisite>
       <SimulationDescriptorReference Name="LawPolitics04"/>
@@ -649,7 +649,7 @@
       <PathPrerequisite Flags="Prerequisite,Discard,Faction" Inverted="true">../ClassEmpire,AffinityGameplayUmbralChoir</PathPrerequisite>
       <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassEmpire,FactionTraitManualHomeSystem</PathPrerequisite>
       <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,!GovernmentRepublic</PathPrerequisite>
-      <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics04">1</SupportPrerequisite>
+      <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics04">1</SupportPrerequisite> -->
       <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 2 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
       <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics04">0</PoliticsExperiencePrerequisite>
       <SimulationDescriptorReference Name="LawPolitics04"/>
@@ -668,7 +668,7 @@
       <PathPrerequisite Flags="Prerequisite,Discard,Faction" Inverted="true">../ClassEmpire,AffinityGameplayUmbralChoir</PathPrerequisite>
       <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,!GovernmentRepublic</PathPrerequisite>
       <InterpreterPrerequisite Flags="Prerequisite,Discard">Path(Context,@'../ClassEmpire,FactionTraitManualHomeSystem') or Path(Context,@'../ClassEmpire,AffinityGameplayUnfallen')</InterpreterPrerequisite>
-      <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics04">1</SupportPrerequisite>
+      <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics04">1</SupportPrerequisite> -->
       <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 2 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
       <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics04">0</PoliticsExperiencePrerequisite>
       <SimulationDescriptorReference Name="LawPolitics04"/>
@@ -688,7 +688,7 @@
       <PathPrerequisite Flags="Prerequisite,Discard,Faction" Inverted="true">../ClassEmpire,AffinityGameplayUmbralChoir</PathPrerequisite>
       <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentRepublic</PathPrerequisite>
       <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassEmpire,FactionTraitManualHomeSystem</PathPrerequisite>
-      <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics04">1</SupportPrerequisite>
+      <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics04">1</SupportPrerequisite> -->
       <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 2 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
       <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics04">0</PoliticsExperiencePrerequisite>
       <SimulationDescriptorReference Name="LawPolitics04"/>
@@ -708,7 +708,7 @@
       <PathPrerequisite Flags="Prerequisite,Discard,Faction" Inverted="true">../ClassEmpire,AffinityGameplayUmbralChoir</PathPrerequisite>
       <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentRepublic</PathPrerequisite>
       <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassEmpire,FactionTraitManualHomeSystem</PathPrerequisite>
-      <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics04">1</SupportPrerequisite>
+      <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics04">1</SupportPrerequisite> -->
       <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 2 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
       <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics04">0</PoliticsExperiencePrerequisite>
       <SimulationDescriptorReference Name="LawPolitics04"/>
@@ -728,7 +728,7 @@
       <PathPrerequisite Flags="Prerequisite,Discard,Faction" Inverted="true">../ClassEmpire,AffinityGameplayUmbralChoir</PathPrerequisite>
       <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentRepublic</PathPrerequisite>
       <PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">../ClassEmpire,FactionTraitManualHomeSystem</PathPrerequisite>
-      <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics04">1</SupportPrerequisite>
+      <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics04">1</SupportPrerequisite> -->
       <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 2 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
       <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics04">0</PoliticsExperiencePrerequisite>
       <SimulationDescriptorReference Name="LawPolitics04"/>
@@ -747,7 +747,7 @@
       <PathPrerequisite Flags="Prerequisite,Discard,Faction" Inverted="true">../ClassEmpire,AffinityGameplayUmbralChoir</PathPrerequisite>
       <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentRepublic</PathPrerequisite>
       <InterpreterPrerequisite Flags="Prerequisite,Discard">Path(Context,@'../ClassEmpire,FactionTraitManualHomeSystem') or Path(Context,@'../ClassEmpire,AffinityGameplayUnfallen')</InterpreterPrerequisite>
-      <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics04">1</SupportPrerequisite>
+      <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics04">1</SupportPrerequisite> -->
       <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 2 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
       <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics04">0</PoliticsExperiencePrerequisite>
       <SimulationDescriptorReference Name="LawPolitics04"/>
@@ -763,7 +763,7 @@
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Faction">../ClassEmpire,!AffinityGameplayUmbralChoir</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,!GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics04">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics04">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics04">3</PoliticsExperiencePrerequisite>
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 4 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
 
@@ -779,7 +779,7 @@
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Faction">../ClassEmpire,!AffinityGameplayUmbralChoir</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics04">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics04">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics04">3</PoliticsExperiencePrerequisite>
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 4 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
 
@@ -796,7 +796,7 @@
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Faction">../ClassEmpire,!AffinityGameplayUmbralChoir</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,!GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics04">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics04">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics04">9</PoliticsExperiencePrerequisite>
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 6 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
 
@@ -812,7 +812,7 @@
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Faction">../ClassEmpire,!AffinityGameplayUmbralChoir</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics04">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics04">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics04">9</PoliticsExperiencePrerequisite>
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 6 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
 
@@ -828,7 +828,7 @@
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Faction">../ClassEmpire,!AffinityGameplayUmbralChoir</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,!GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics04">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics04">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics04">15</PoliticsExperiencePrerequisite>
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 8 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
         <SimulationDescriptorReference Name="LawPolitics04"/>
@@ -843,7 +843,7 @@
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Faction">../ClassEmpire,!AffinityGameplayUmbralChoir</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics04">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics04">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics04">15</PoliticsExperiencePrerequisite>
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 8 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
         <SimulationDescriptorReference Name="LawPolitics04"/>
@@ -858,7 +858,7 @@
             <SimulationDescriptorReference Name="LawEffectP03QuestVenetians04" />
         </LawEffectSimulation>       
         <PathPrerequisite           Inverted="false"    Flags="Prerequisite,Discard">../ClassEmpire/ClassQuests,CompletedQuestVenetians04</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics04">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics04">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics04">0</PoliticsExperiencePrerequisite>
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 2 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
         <SimulationDescriptorReference Name="LawPolitics04"/>
@@ -920,7 +920,7 @@
         <PathPrerequisite Flags="Prerequisite,Discard,Faction" Inverted="true">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Faction" Inverted="true">../ClassEmpire,AffinityGameplayUmbralChoir</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,!GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics05">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics05">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics05">0</PoliticsExperiencePrerequisite>
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 2 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
 
@@ -937,7 +937,7 @@
         <PathPrerequisite Flags="Prerequisite,Discard,Faction" Inverted="true">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Faction" Inverted="true">../ClassEmpire,AffinityGameplayUmbralChoir</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics05">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics05">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics05">0</PoliticsExperiencePrerequisite>
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 2 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
 
@@ -954,7 +954,7 @@
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Faction" Inverted="false">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,!GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics05">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics05">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics05">0</PoliticsExperiencePrerequisite>
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 2 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
 
@@ -972,7 +972,7 @@
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Faction" Inverted="false">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics05">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics05">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics05">0</PoliticsExperiencePrerequisite>
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 2 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
 
@@ -987,7 +987,7 @@
             <SimulationDescriptorReference Name="LawEffectP05L02" />
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,!GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics05">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics05">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics05">3</PoliticsExperiencePrerequisite>
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 4 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
 
@@ -1002,7 +1002,7 @@
             <SimulationDescriptorReference Name="LawEffectP05L02Republic" />
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics05">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics05">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics05">3</PoliticsExperiencePrerequisite>
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 4 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
 
@@ -1019,7 +1019,7 @@
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,!GovernmentRepublic</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Faction">../ClassEmpire,!AffinityGameplayMajorHisshos</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics05">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics05">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics05">9</PoliticsExperiencePrerequisite>
 
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 6 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
@@ -1036,7 +1036,7 @@
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentRepublic</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Faction">../ClassEmpire,!AffinityGameplayMajorHisshos</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics05">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics05">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics05">9</PoliticsExperiencePrerequisite>
 
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 6 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
@@ -1055,7 +1055,7 @@
         <PathPrerequisite Flags="Prerequisite,Discard,Faction" Inverted="true">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Faction" Inverted="true">../ClassEmpire,AffinityGameplayTemplars</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,!GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics05">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics05">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics05">15</PoliticsExperiencePrerequisite>
 
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 8 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
@@ -1074,7 +1074,7 @@
         <PathPrerequisite Flags="Prerequisite,Discard,Faction" Inverted="true">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Faction" Inverted="true">../ClassEmpire,AffinityGameplayTemplars</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics05">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics05">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics05">15</PoliticsExperiencePrerequisite>
 
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 8 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
@@ -1092,7 +1092,7 @@
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Faction" Inverted="false">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,!GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics05">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics05">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics05">15</PoliticsExperiencePrerequisite>
 
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 8 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
@@ -1110,7 +1110,7 @@
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Faction" Inverted="false">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics05">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics05">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics05">15</PoliticsExperiencePrerequisite>
 
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 8 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
@@ -1127,7 +1127,7 @@
        </LawEffectSimulation>
        <PathPrerequisite Flags="Prerequisite,Discard,Faction" Inverted="false">../ClassEmpire,AffinityGameplayTemplars</PathPrerequisite>
        <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,!GovernmentRepublic</PathPrerequisite>
-       <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics05">1</SupportPrerequisite>
+       <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics05">1</SupportPrerequisite> -->
        <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics05">15</PoliticsExperiencePrerequisite>
    
        <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) + Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 8 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
@@ -1144,7 +1144,7 @@
        </LawEffectSimulation>
        <PathPrerequisite Flags="Prerequisite,Discard,Faction" Inverted="false">../ClassEmpire,AffinityGameplayTemplars</PathPrerequisite>
        <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentRepublic</PathPrerequisite>
-       <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics05">1</SupportPrerequisite>
+       <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics05">1</SupportPrerequisite> -->
        <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics05">15</PoliticsExperiencePrerequisite>
    
        <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) + Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 8 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
@@ -1206,7 +1206,7 @@
             <SimulationDescriptorReference Name="LawEffectP06L01" />
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,!GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics06">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics06">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics06">0</PoliticsExperiencePrerequisite>
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 2 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
 
@@ -1221,7 +1221,7 @@
             <SimulationDescriptorReference Name="LawEffectP06L01Republic" />
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics06">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics06">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics06">0</PoliticsExperiencePrerequisite>
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 2 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
 
@@ -1236,7 +1236,7 @@
             <SimulationDescriptorReference Name="LawEffectP06L02" />
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,!GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics06">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics06">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics06">3</PoliticsExperiencePrerequisite>
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 4 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
 
@@ -1254,7 +1254,7 @@
             <SimulationDescriptorReference Name="LawEffectP06L02Republic" />
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics06">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics06">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics06">3</PoliticsExperiencePrerequisite>
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 4 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
 
@@ -1274,7 +1274,7 @@
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,!GovernmentRepublic</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Faction">../ClassEmpire,!AffinityGameplayMajorHisshos</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics06">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics06">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics06">9</PoliticsExperiencePrerequisite>
 
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 6 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
@@ -1291,7 +1291,7 @@
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentRepublic</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Faction">../ClassEmpire,!AffinityGameplayMajorHisshos</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics06">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics06">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics06">9</PoliticsExperiencePrerequisite>
 
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 6 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
@@ -1307,7 +1307,7 @@
             <SimulationDescriptorReference Name="LawEffectP06L04" />
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,!GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics06">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics06">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics06">15</PoliticsExperiencePrerequisite>
 
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 8 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
@@ -1324,7 +1324,7 @@
             <SimulationDescriptorReference Name="LawEffectP06L04Republic" />
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics06">1</SupportPrerequisite>
+        <!-- <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics06">1</SupportPrerequisite> -->
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics06">15</PoliticsExperiencePrerequisite>
         
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) +  Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 8 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
