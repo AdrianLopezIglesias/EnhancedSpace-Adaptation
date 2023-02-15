@@ -234,43 +234,43 @@
    </SimulationDescriptor>
 
    <SimulationDescriptor Name="ModuleSupportEngine1" Type="ModuleSupportEngine">
-      <Modifier TargetProperty="MaximumMovement"         Operation="Addition"     Value="2"      Path="ModuleSupportEngine"/>
+      <Modifier TargetProperty="MaximumMovement"         Operation="Addition"     Value="4"      Path="ModuleSupportEngine"/>
    </SimulationDescriptor>
 
    <SimulationDescriptor Name="ModuleSupportEngine2" Type="ModuleSupportEngine">
-      <Modifier TargetProperty="MaximumMovement"         Operation="Addition"     Value="3"      Path="ModuleSupportEngine"/>
+      <Modifier TargetProperty="MaximumMovement"         Operation="Addition"     Value="6"      Path="ModuleSupportEngine"/>
    </SimulationDescriptor>
 
    <SimulationDescriptor Name="ModuleSupportEngine4" Type="ModuleSupportEngine">
-      <Modifier TargetProperty="MaximumMovement"         Operation="Addition"     Value="5"      Path="ModuleSupportEngine"/>
+      <Modifier TargetProperty="MaximumMovement"         Operation="Addition"     Value="7"      Path="ModuleSupportEngine"/>
    </SimulationDescriptor>
 
    <SimulationDescriptor Name="ModuleSupportEngine2Strategic1" Type="ModuleSupportEngine">
-      <Modifier TargetProperty="MaximumMovement"         Operation="Addition"     Value="4"      Path="ModuleSupportEngine"/>
+      <Modifier TargetProperty="MaximumMovement"         Operation="Addition"     Value="7"      Path="ModuleSupportEngine"/>
       <Modifier TargetProperty="Evasion"                 Operation="Addition"     Value="0.02"    Path="ModuleSupportEngine"/>
    </SimulationDescriptor>
    
    <SimulationDescriptor Name="ModuleSupportEngine2Strategic2" Type="ModuleSupportEngine">
-      <Modifier TargetProperty="MaximumMovement"         Operation="Addition"     Value="5"      Path="ModuleSupportEngine"/>
+      <Modifier TargetProperty="MaximumMovement"         Operation="Addition"     Value="8"      Path="ModuleSupportEngine"/>
    </SimulationDescriptor>
 
    <SimulationDescriptor Name="ModuleSupportEngine3Strategic3" Type="ModuleSupportEngine">
-      <Modifier TargetProperty="MaximumMovement"         Operation="Addition"     Value="6"      Path="ModuleSupportEngine"/>
+      <Modifier TargetProperty="MaximumMovement"         Operation="Addition"     Value="9"      Path="ModuleSupportEngine"/>
       <Modifier TargetProperty="Evasion"                 Operation="Addition"     Value="0.03"   Path="ModuleSupportEngine"/>
    </SimulationDescriptor>
    
    <SimulationDescriptor Name="ModuleSupportEngine3Strategic4" Type="ModuleSupportEngine">
-      <Modifier TargetProperty="MaximumMovement"         Operation="Addition"     Value="7"      Path="ModuleSupportEngine"/>
+      <Modifier TargetProperty="MaximumMovement"         Operation="Addition"     Value="10"      Path="ModuleSupportEngine"/>
       <Modifier TargetProperty="Evasion"                 Operation="Addition"     Value="0.01"   Path="ModuleSupportEngine"/>
    </SimulationDescriptor>
 
    <SimulationDescriptor Name="ModuleSupportEngine4Strategic5" Type="ModuleSupportEngine">
-      <Modifier TargetProperty="MaximumMovement"         Operation="Addition"     Value="7"      Path="ModuleSupportEngine"/>
+      <Modifier TargetProperty="MaximumMovement"         Operation="Addition"     Value="10"      Path="ModuleSupportEngine"/>
       <Modifier TargetProperty="Evasion"                 Operation="Addition"     Value="0.04"   Path="ModuleSupportEngine"/>
    </SimulationDescriptor>
 
    <SimulationDescriptor Name="ModuleSupportEngine4Strategic6" Type="ModuleSupportEngine">
-      <Modifier TargetProperty="MaximumMovement"         Operation="Addition"     Value="8"      Path="ModuleSupportEngine"/>
+      <Modifier TargetProperty="MaximumMovement"         Operation="Addition"     Value="12"      Path="ModuleSupportEngine"/>
       <Modifier TargetProperty="Evasion"                 Operation="Addition"     Value="0.02"   Path="ModuleSupportEngine"/>
    </SimulationDescriptor>
    
