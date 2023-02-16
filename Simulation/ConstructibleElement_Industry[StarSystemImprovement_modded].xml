@@ -1273,7 +1273,7 @@
   <!--####          DUST          #####-->
   <!--#################################-->
   
-
+<!-- StarSystemImprovementDust1 -->
   <StarSystemImprovementDefinition Name="StarSystemImprovementDust1" SubCategory="SubCategoryDust" ScoreProvider="StarSystemImprovementBuilt">
     <SupervisorGain Name="Dust" />
     <Cost ResourceName="SystemProduction">280</Cost>
@@ -1286,6 +1286,7 @@
     <PopulationEvent Name="PopulationPoliticalEventBuildingConstructionDust1"/>
   </StarSystemImprovementDefinition>
 
+<!-- StarSystemImprovementUniqueDust1 -->
   <StarSystemImprovementDefinition Name="StarSystemImprovementUniqueDust1"    Category="CategoryStarSystemImprovementUnique" SubCategory="SubCategoryDust" ScoreProvider="StarSystemImprovementBuilt">
     <SupervisorGain Name="Dust" />
     <QueuedSimulationDescriptorReference Name="BuildingStarSystemImprovementUniqueDust1"/>
@@ -1305,7 +1306,7 @@
     <UniqueTags>StarSystemImprovementUniqueDust1</UniqueTags>
   </StarSystemImprovementDefinition>
 
-  <!-- BUYOUT -->
+<!-- BUYOUT -->
   <StarSystemImprovementDefinition Name="StarSystemImprovementBuyout1" SubCategory="SubCategoryBuyout" ScoreProvider="StarSystemImprovementBuilt">
     <SupervisorGain Name="Dust"     Weight="0.5"/>
     <SupervisorGain Name="Industry" Weight="0.5"/>
@@ -1315,6 +1316,7 @@
     <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementBuyout1,!FastForwardedImprovement</PathPrerequisite>
     <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementBuyout1Venetians,!FastForwardedImprovement</PathPrerequisite>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyUniqueDust1</TechnologyPrerequisite>
+    <PathPrerequisite       Inverted="true"    Flags="Prerequisite,Discard,UnlockAvailability">../ClassEmpire,AffinityGameplayVenetians</PathPrerequisite>
     <SimulationDescriptorReference Name="StarSystemImprovementBuyout1" />
     <SimulationDescriptorReference Name="DustBuilding" />
     <SimulationDescriptorReference Name="StarSystemImprovementUpkeepStage2Normal" />
@@ -1344,7 +1346,7 @@
     <PathPrerequisite                           Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
     <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementBuyout1Venetians,!FastForwardedImprovement</PathPrerequisite>
     <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementBuyout1,!FastForwardedImprovement</PathPrerequisite>
-    <!-- <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyUniqueDust1</TechnologyPrerequisite> -->
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyUniqueDust1</TechnologyPrerequisite>
     <PathPrerequisite       Inverted="true"    Flags="Prerequisite,Discard,UnlockAvailability">../ClassEmpire,!AffinityGameplayVenetians</PathPrerequisite>
     <SimulationDescriptorReference Name="StarSystemImprovementBuyout1" />
     <SimulationDescriptorReference Name="DustBuilding" />
@@ -1352,6 +1354,7 @@
     <PopulationEvent Name="PopulationPoliticalEventBuildingConstructionBuyout1"/>
   </StarSystemImprovementDefinition>
 
+<!-- StarSystemImprovementTrade1 -->
   <StarSystemImprovementDefinition Name="StarSystemImprovementTrade1" SubCategory="SubCategoryTradingCompanyStructure" ScoreProvider="StarSystemImprovementBuilt">
     <SupervisorGain Name="Dust"     />
     <Cost ResourceName="SystemProduction">2240</Cost>
