@@ -1315,7 +1315,8 @@
     <PathPrerequisite                           Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
     <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementBuyout1,!FastForwardedImprovement</PathPrerequisite>
     <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementBuyout1Venetians,!FastForwardedImprovement</PathPrerequisite>
-    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyUniqueDust1</TechnologyPrerequisite>
+    <!-- <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyUniqueDust1</TechnologyPrerequisite> -->
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyMarketplace1</TechnologyPrerequisite>
     <PathPrerequisite       Inverted="true"    Flags="Prerequisite,Discard,UnlockAvailability">../ClassEmpire,AffinityGameplayVenetians</PathPrerequisite>
     <SimulationDescriptorReference Name="StarSystemImprovementBuyout1" />
     <SimulationDescriptorReference Name="DustBuilding" />
@@ -1331,7 +1332,8 @@
     <PathPrerequisite                           Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
     <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementBuyout1,!FastForwardedImprovement</PathPrerequisite>
     <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementBuyout1Venetians,!FastForwardedImprovement</PathPrerequisite>
-    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyUniqueDust1TimeLords</TechnologyPrerequisite>
+    <!-- <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyUniqueDust1TimeLords</TechnologyPrerequisite> -->
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyMarketplace1</TechnologyPrerequisite>
     <SimulationDescriptorReference Name="StarSystemImprovementBuyout1" />
     <SimulationDescriptorReference Name="DustBuilding" />
     <SimulationDescriptorReference Name="StarSystemImprovementUpkeepStage2Normal" />
