@@ -1293,9 +1293,8 @@
     <Cost ResourceName="SystemProduction">840</Cost>
     <Cost ResourceName="Strategic2" Instant="true">15</Cost>
     <PathPrerequisite                           Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
-    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementUniqueDust1,!FastForwardedImprovement</PathPrerequisite>
-    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementUniqueDust1TimeLords,!FastForwardedImprovement</PathPrerequisite>
-    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">../ClassEmpire/Uniques,StarSystemImprovementUniqueDust1</PathPrerequisite>
+    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementBuyout1,!FastForwardedImprovement</PathPrerequisite>
+    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementBuyout1Venetians,!FastForwardedImprovement</PathPrerequisite
     <InterpreterPrerequisite Inverted="true"    Flags="Prerequisite,Discard">Path(Context,@'../ClassEmpire/ClassStarSystem,BuildingStarSystemImprovementUniqueDust1') and not(Path(Context,@'ClassStarSystem,BuildingStarSystemImprovementUniqueDust1'))</InterpreterPrerequisite>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyMarketplace1</TechnologyPrerequisite>
     <SimulationDescriptorReference Name="StarSystemImprovementUniqueDust1" />
@@ -1306,17 +1305,18 @@
     <UniqueTags>StarSystemImprovementUniqueDust1</UniqueTags>
   </StarSystemImprovementDefinition>
 
-<!-- BUYOUT -->
+<!-- StarSystemImprovementBuyout1 -->
   <StarSystemImprovementDefinition Name="StarSystemImprovementBuyout1" SubCategory="SubCategoryBuyout" ScoreProvider="StarSystemImprovementBuilt">
     <SupervisorGain Name="Dust"     Weight="0.5"/>
     <SupervisorGain Name="Industry" Weight="0.5"/>
     <Cost ResourceName="SystemProduction">560</Cost>
     <Cost ResourceName="Strategic2" Instant="true">5</Cost>
     <PathPrerequisite                           Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
-    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementBuyout1,!FastForwardedImprovement</PathPrerequisite>
-    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementBuyout1Venetians,!FastForwardedImprovement</PathPrerequisite>
+    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementUniqueDust1,!FastForwardedImprovement</PathPrerequisite>
+    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementUniqueDust1TimeLords,!FastForwardedImprovement</PathPrerequisite>
+    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">../ClassEmpire/Uniques,StarSystemImprovementUniqueDust1</PathPrerequisite>>
     <!-- <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyUniqueDust1</TechnologyPrerequisite> -->
-    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyMarketplace1</TechnologyPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyUniqueDust1</TechnologyPrerequisite>
     <PathPrerequisite       Inverted="true"    Flags="Prerequisite,Discard,UnlockAvailability">../ClassEmpire,AffinityGameplayVenetians</PathPrerequisite>
     <SimulationDescriptorReference Name="StarSystemImprovementBuyout1" />
     <SimulationDescriptorReference Name="DustBuilding" />
@@ -1330,10 +1330,10 @@
     <Cost ResourceName="SystemProduction">560</Cost>
     <Cost ResourceName="Strategic2" Instant="true">5</Cost>
     <PathPrerequisite                           Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
-    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementBuyout1,!FastForwardedImprovement</PathPrerequisite>
-    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementBuyout1Venetians,!FastForwardedImprovement</PathPrerequisite>
+    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementUniqueDust1,!FastForwardedImprovement</PathPrerequisite>
+    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementUniqueDust1TimeLords,!FastForwardedImprovement</PathPrerequisite>
     <!-- <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyUniqueDust1TimeLords</TechnologyPrerequisite> -->
-    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyMarketplace1</TechnologyPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyUniqueDust1</TechnologyPrerequisite>
     <SimulationDescriptorReference Name="StarSystemImprovementBuyout1" />
     <SimulationDescriptorReference Name="DustBuilding" />
     <SimulationDescriptorReference Name="StarSystemImprovementUpkeepStage2Normal" />
@@ -1346,8 +1346,8 @@
     <Cost ResourceName="SystemProduction">560</Cost>
     <Cost ResourceName="Strategic2" Instant="true">5</Cost>
     <PathPrerequisite                           Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
-    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementBuyout1Venetians,!FastForwardedImprovement</PathPrerequisite>
-    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementBuyout1,!FastForwardedImprovement</PathPrerequisite>
+    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementUniqueDust1,!FastForwardedImprovement</PathPrerequisite>
+    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementUniqueDust1TimeLords,!FastForwardedImprovement</PathPrerequisite>
     <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyUniqueDust1</TechnologyPrerequisite>
     <PathPrerequisite       Inverted="true"    Flags="Prerequisite,Discard,UnlockAvailability">../ClassEmpire,!AffinityGameplayVenetians</PathPrerequisite>
     <SimulationDescriptorReference Name="StarSystemImprovementBuyout1" />
