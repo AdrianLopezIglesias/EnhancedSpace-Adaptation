@@ -329,16 +329,16 @@
 
     <WorldSettingDefinition Name="SpecialNodesMultiplier" Type="string" Default="Normal">
         <ItemDefinition Name="None">
-            <KeyValuePair Key="SpecialNodesProbability">0.1</KeyValuePair>
+            <KeyValuePair Key="SpecialNodesProbability">0.4</KeyValuePair>
         </ItemDefinition>
         <ItemDefinition Name="Rare">
-            <KeyValuePair Key="SpecialNodesProbability">0.3</KeyValuePair>
+            <KeyValuePair Key="SpecialNodesProbability">0.5</KeyValuePair>
         </ItemDefinition>
         <ItemDefinition Name="Normal">
-            <KeyValuePair Key="SpecialNodesProbability">0.45</KeyValuePair>
+            <KeyValuePair Key="SpecialNodesProbability">0.6</KeyValuePair>
         </ItemDefinition>
         <ItemDefinition Name="Abundant">
-            <KeyValuePair Key="SpecialNodesProbability">0.6</KeyValuePair>
+            <KeyValuePair Key="SpecialNodesProbability">0.7</KeyValuePair>
         </ItemDefinition>
     </WorldSettingDefinition>
 </Datatable>
