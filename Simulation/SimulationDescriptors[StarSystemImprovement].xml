@@ -428,8 +428,8 @@
   <!--#################################-->
 
   <SimulationDescriptor Name="StarSystemImprovementDust1" Type="StarSystemImprovement">
-     <BinaryModifier TargetProperty="PlanetDust"          Operation="Addition" Left="1" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedStarSystem/ClassColonizedPlanet"/>
-     <BinaryModifier TargetProperty="PlanetDust"          Operation="Addition" Left="3" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedStarSystem/ClassColonizedPlanet,PlanetHasDepositLuxury"/>
+     <BinaryModifier TargetProperty="PlanetDust"          Operation="Addition" Left="5" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedStarSystem/ClassColonizedPlanet"/>
+     <BinaryModifier TargetProperty="PlanetDust"          Operation="Addition" Left="5" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedStarSystem/ClassColonizedPlanet,PlanetHasDepositLuxury"/>
   </SimulationDescriptor>
 
   <SimulationDescriptor Name="StarSystemImprovementUniqueDust1" Type="StarSystemImprovement">
