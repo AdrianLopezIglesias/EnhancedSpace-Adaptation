@@ -97,9 +97,9 @@
 
     <SimulationDescriptor Name="LawEffectP00L07Republic" Type="LawEffect">
         <Modifier TargetProperty="Happiness"            Operation="Addition"        Value="30"      Path="../ClassEmpire/ClassColonizedStarSystem" />
-        <Modifier TargetProperty="SystemProduction"       Operation="Percent"         Value="-0.3"    Path="../ClassEmpire/ClassColonizedStarSystem"/>
-        <Modifier TargetProperty="SystemMoney"       Operation="Percent"         Value="-0.3"    Path="../ClassEmpire/ClassColonizedStarSystem"/>
-        <Modifier TargetProperty="SystemResearch"       Operation="Percent"         Value="-0.3"    Path="../ClassEmpire/ClassColonizedStarSystem"/>
+        <Modifier TargetProperty="SystemProduction"       Operation="Percent"         Value="-0.5"    Path="../ClassEmpire/ClassColonizedStarSystem"/>
+        <Modifier TargetProperty="SystemMoney"       Operation="Percent"         Value="-0.5"    Path="../ClassEmpire/ClassColonizedStarSystem"/>
+        <Modifier TargetProperty="SystemResearch"       Operation="Percent"         Value="-0.5"    Path="../ClassEmpire/ClassColonizedStarSystem"/>
         <Modifier TargetProperty="DemocracyLawsDiversityHasNeutral" Operation="Addition" Value="1" Path="../ClassEmpire" TooltipHidden="true"/>
     </SimulationDescriptor>
     
