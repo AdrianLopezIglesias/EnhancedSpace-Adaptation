@@ -182,6 +182,49 @@
 	  </SimulationDescriptor>
 
 
+    <!-- ********************************** -->
+    <!-- *****      REPAIR MODULES     **** -->
+    <!-- ********************************** -->
+
+    <!--Repair-->
+    <SimulationDescriptor Name="ModuleSupportRepair"            Type="ModuleSupportRepair">
+        <Property Name="RepairAfterBattle"                BaseValue="0"/>
+        <Property Name="RepairAfterPhase"                BaseValue="0"/>
+        <Property Name="HealthRegenerationRatio"                BaseValue="0"/>
+        <Modifier TargetProperty="RepairAfterBattle"      Operation="Addition" Value="$(RepairAfterBattle)"       Path="../ClassShip"     Priority="1"/>
+        <Modifier TargetProperty="RepairAfterPhase"      Operation="Addition" Value="$(RepairAfterPhase)"       Path="../ClassShip"     Priority="1"/>
+        <Modifier TargetProperty="HealthRegenerationRatio"      Operation="Addition" Value="$(HealthRegenerationRatio)"       Path="../ClassShip"     Priority="1"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleSupportRepair1" Type="ModuleSupportRepair">
+        <Modifier TargetProperty="SectionHealthBonus"       Operation="Addition" Value="200"    Path="ClassModule"/>
+        <Modifier TargetProperty="RepairAfterBattle" Operation="Addition" Value="0.15" Path="ModuleSupportRepair"/>
+        <Modifier TargetProperty="DefensiveMilitaryPower"   Operation="Percent" Value="0.03" Path="../ClassShip"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleSupportRepair2Strategic1" Type="ModuleSupportRepair">
+        <Modifier TargetProperty="SectionHealthBonus"       Operation="Addition" Value="400"    Path="ClassModule"/>
+        <Modifier TargetProperty="RepairAfterBattle" Operation="Addition" Value="0.20" Path="ModuleSupportRepair"/>
+        <Modifier TargetProperty="RepairAfterPhase" Operation="Addition" Value="0.05" Path="ModuleSupportRepair"/>
+        <Modifier TargetProperty="DefensiveMilitaryPower"   Operation="Percent" Value="0.08" Path="../ClassShip"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleSupportRepair2Strategic2" Type="ModuleSupportRepair">
+        <Modifier TargetProperty="SectionHealthBonus"       Operation="Addition" Value="200"    Path="ClassModule"/>
+        <Modifier TargetProperty="RepairAfterBattle" Operation="Addition" Value="0.15" Path="ModuleSupportRepair"/>
+        <Modifier TargetProperty="HealthRegenerationRatio" Operation="Addition" Value="0.15" Path="ModuleSupportRepair"/>
+        <Modifier TargetProperty="DefensiveMilitaryPower"   Operation="Percent" Value="0.08" Path="../ClassShip"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="ModuleSupportRepair3Strategic5" Type="ModuleSupportRepair">
+        <Modifier TargetProperty="SectionHealthBonus"       Operation="Addition" Value="200"    Path="ClassModule"/>
+        <Modifier TargetProperty="RepairAfterBattle" Operation="Addition" Value="0.25" Path="ModuleSupportRepair"/>
+        <Modifier TargetProperty="RepairAfterPhase" Operation="Addition" Value="0.25" Path="ModuleSupportRepair"/>
+        <Modifier TargetProperty="HealthRegenerationRatio" Operation="Addition" Value="0.2" Path="ModuleSupportRepair"/>
+        <Modifier TargetProperty="DefensiveMilitaryPower"   Operation="Percent" Value="0.16" Path="../ClassShip"/>
+    </SimulationDescriptor>
+
+
 
     <!-- ********************* -->
     <!-- ** ROOT CREATOR MODULES ** -->
