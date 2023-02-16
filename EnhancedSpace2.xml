@@ -2,14 +2,14 @@
 <Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="Documentation/Schemas/Amplitude.Unity.Runtime.RuntimeModule.xsd">
 
 	<!-- Conversion = add new files, not compatible with other mods. Standalone = replace all files, not compatible with other mods. Extension = add new files, compatible with other mods. // Example : <RuntimeModule Name="ExampleTechnology" Type="Extension" Version="1.1">-->
-  <RuntimeModule Name="EnhancedSpace2" Type="Extension" Version="0.10.4">
+  <RuntimeModule Name="Empire Space" Type="Extension" Version="0.1.1">
 
     <!-- Title as it appears in the workshop // Example : <Title>Example technology</Title>-->
-        <Title>Enhanced Space 2 - Original</Title>
+        <Title>Empre Space</Title>
     <!-- Description as it appears in the workshop // Example : <Description>Adds:- Technology - Exclusion technology link - Cost reduction technology link</Description>-->
-        <Description>This mod's goal is to rework most aspects of the game to bring a lot more polish and a more even playing field for newer and advanced players alike. It also attempts to make the game more flavourful.
+        <Description>This mod was branched of EnhancedSpace2 mod
 
-[h1][url=https://www.patreon.com/enhancedspace2] Support the mod on Patreon.[/url][/h1] (To make a one time donation, pledge once and then immediately unsubscribe, you'll keep your perks until the end of the month.)
+url=https://www.patreon.com/enhancedspace2
 
 Features implemented:
 -A lot of new content (System improvements, hero skills, ship modules, etc).
