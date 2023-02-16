@@ -313,7 +313,7 @@
     <SimulationDescriptor Name="ClassModuleWeaponMissile"  Type="ClassModuleWeapon">
         <Modifier TargetProperty="WeaponTypePhysical"           Operation="Addition"        Value="1"        Path="ClassModuleWeapon" TooltipHidden="true"/>
 
-        <Modifier TargetProperty="Cooldown"                     Operation="Addition"        Value="9"        Path="ClassModuleWeapon" TooltipHidden="true"/>
+        <Modifier TargetProperty="Cooldown"                     Operation="Addition"        Value="12"        Path="ClassModuleWeapon" TooltipHidden="true"/>
         <Modifier TargetProperty="PreparationDuration"          Operation="Addition"        Value="0.5"      Path="ClassModuleWeapon" TooltipHidden="true"/>
         <Modifier TargetProperty="PreparationDurationFactorMin" Operation="Multiplication"  Value="0.8"      Path="ClassModuleWeapon" TooltipHidden="true"/>
         <Modifier TargetProperty="PreparationDurationFactorMax" Operation="Multiplication"  Value="1.2"      Path="ClassModuleWeapon" TooltipHidden="true"/>
