@@ -47,17 +47,11 @@
   </SimulationDescriptor>
 
   <SimulationDescriptor Name="StarSystemImprovementStartingFoodIndustry" Type="StarSystemImprovement">
-    <Modifier        TargetProperty="SystemProduction"      Operation="Addition"   Value="10" Path="./ClassColonizedStarSystem"/>
-    <Modifier        TargetProperty="SystemGrowth"          Operation="Addition"   Value="10" Path="./ClassColonizedStarSystem"/>
-    <BinaryModifier  TargetProperty="SystemProduction"	   Operation="Addition"   Left="5"    BinaryOperation="Multiplication" Right="$(OwnedPlanets)"		Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
-    <BinaryModifier  TargetProperty="SystemGrowth"		      Operation="Addition"   Left="5"    BinaryOperation="Multiplication" Right="$(OwnedPlanets)"		Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
+    <BinaryModifier  TargetProperty="SystemProduction"	   Operation="Addition"   Left="5"    BinaryOperation="Multiplication" Right="$(Population)"		Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
   </SimulationDescriptor>
 
   <SimulationDescriptor Name="StarSystemImprovementStartingDustScience" Type="StarSystemImprovement">
-    <Modifier        TargetProperty="SystemMoney"           Operation="Addition"    Value="10" Path="./ClassColonizedStarSystem"/>
-    <Modifier        TargetProperty="SystemResearch"        Operation="Addition"    Value="10" Path="./ClassColonizedStarSystem"/>
-    <BinaryModifier  TargetProperty="SystemMoney"	         Operation="Addition"		Left="5"    BinaryOperation="Multiplication" Right="$(OwnedPlanets)"		Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
-    <BinaryModifier  TargetProperty="SystemResearch"		   Operation="Addition"		Left="5"    BinaryOperation="Multiplication" Right="$(OwnedPlanets)"		Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
+    <BinaryModifier  TargetProperty="SystemResearch"	         Operation="Addition"		Left="5"    BinaryOperation="Multiplication" Right="$(Population)"		Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
   </SimulationDescriptor>
 
  <!-- ########################################################################### -->
@@ -265,8 +259,8 @@
   <!--#################################-->
 
   <SimulationDescriptor Name="StarSystemImprovementIndustry2" Type="StarSystemImprovement">
-     <BinaryModifier TargetProperty="PlanetIndustry"             Operation="Addition"     Left="3"     BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedStarSystem/ClassColonizedPlanet,PlanetHasDepositStrategic"/>
-     <BinaryModifier TargetProperty="PlanetIndustry"             Operation="Addition"     Left="1"     BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedStarSystem/ClassColonizedPlanet"/>
+     <BinaryModifier TargetProperty="PlanetIndustry"             Operation="Addition"     Left="5"     BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedStarSystem/ClassColonizedPlanet,PlanetHasDepositStrategic"/>
+     <BinaryModifier TargetProperty="PlanetIndustry"             Operation="Addition"     Left="5"     BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedStarSystem/ClassColonizedPlanet"/>
   </SimulationDescriptor>
 
   <SimulationDescriptor Name="StarSystemImprovementIndustry1" Type="StarSystemImprovement">
