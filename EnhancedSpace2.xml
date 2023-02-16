@@ -2,10 +2,10 @@
 <Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="Documentation/Schemas/Amplitude.Unity.Runtime.RuntimeModule.xsd">
 
 	<!-- Conversion = add new files, not compatible with other mods. Standalone = replace all files, not compatible with other mods. Extension = add new files, compatible with other mods. // Example : <RuntimeModule Name="ExampleTechnology" Type="Extension" Version="1.1">-->
-  <RuntimeModule Name="Empire Space" Type="Extension" Version="0.1.1">
+  <RuntimeModule Name="EnhancedSpace2" Type="Extension" Version="0.1.1">
 
     <!-- Title as it appears in the workshop // Example : <Title>Example technology</Title>-->
-        <Title>Empre Space</Title>
+        <Title>Empire Space</Title>
     <!-- Description as it appears in the workshop // Example : <Description>Adds:- Technology - Exclusion technology link - Cost reduction technology link</Description>-->
         <Description>This mod was branched of EnhancedSpace2 mod
 
