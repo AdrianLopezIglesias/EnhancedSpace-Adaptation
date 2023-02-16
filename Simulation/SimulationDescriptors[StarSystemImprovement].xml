@@ -445,10 +445,11 @@
   </SimulationDescriptor>
 
   <SimulationDescriptor Name="StarSystemImprovementBuyout1" Type="StarSystemImprovement">
-     <BinaryModifier TargetProperty="PlanetDust"          Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedStarSystem/ClassColonizedPlanet"/>
-     <BinaryModifier TargetProperty="PlanetDust"          Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedStarSystem/ClassColonizedPlanet,PlanetGameplayTypeDry"/>
-    <Modifier TargetProperty="BuildingBuyoutReduction"                 Operation="Addition"  Value="0.1" Path="./ClassColonizedStarSystem"/>
-    <Modifier TargetProperty="ShipBuyoutReduction"                     Operation="Addition"  Value="0.1" Path="./ClassColonizedStarSystem"/>
+    <BinaryModifier TargetProperty="PlanetDust"          Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedStarSystem/ClassColonizedPlanet"/>
+
+    <BinaryModifier TargetProperty="SystemMoney"       Operation="Addition" Left="40" BinaryOperation="Multiplication" Right="$(OwnedDryPlanets)"  Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>
+    <Modifier TargetProperty="BuildingBuyoutReduction"                 Operation="Addition"  Value="0.4" Path="./ClassColonizedStarSystem"/>
+    <Modifier TargetProperty="ShipBuyoutReduction"                     Operation="Addition"  Value="0.4" Path="./ClassColonizedStarSystem"/>
   </SimulationDescriptor>
 
   <SimulationDescriptor Name="StarSystemImprovementBuyout1Venetians" Type="StarSystemImprovement">
