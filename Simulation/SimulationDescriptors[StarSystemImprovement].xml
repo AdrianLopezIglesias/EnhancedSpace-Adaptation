@@ -159,8 +159,7 @@
     <!--#################################-->
 
   <SimulationDescriptor Name="StarSystemImprovementFood1" Type="StarSystemImprovement">
-      <BinaryModifier TargetProperty="PlanetFood"     Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedStarSystem/ClassColonizedPlanet"/>
-      <BinaryModifier TargetProperty="PlanetFood"     Operation="Addition" Left="1" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedStarSystem/ClassColonizedPlanet,PlanetGameplayTypeMild"/>
+      <Modifier TargetProperty="SystemGrowth"	  Operation="Addition" Value="100"		    Path="./ClassColonizedStarSystem" SearchValueFromPath="true"/>                                                                               Path="./ClassColonizedStarSystem/ClassColonizedPlanet"/>
   </SimulationDescriptor>
 
    <SimulationDescriptor Name="StarSystemImprovementFood1UmbralChoir" Type="StarSystemImprovement">
