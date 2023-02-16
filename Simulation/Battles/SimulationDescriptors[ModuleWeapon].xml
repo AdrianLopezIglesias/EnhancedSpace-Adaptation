@@ -369,7 +369,7 @@
         <Modifier TargetProperty="Damage"                       Operation="Addition" Value="480"     TooltipHidden="true"/>
         
         <!-- Must be same value as Salvo Health-->
-        <Modifier TargetProperty="MissileHealth"                Operation="Addition" Value="3." TooltipHidden="true"/>
+        <Modifier TargetProperty="MissileHealth"                Operation="Addition" Value="30" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleWeaponMissile3Strategic1"  Type="ModuleWeapon">
