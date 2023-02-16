@@ -430,9 +430,10 @@
   </SimulationDescriptor>
 
   <SimulationDescriptor Name="StarSystemImprovementUniqueDust1" Type="StarSystemImprovement">
-    <BinaryModifier TargetProperty="SystemMoney"        Operation="Addition"        Left="10"   BinaryOperation="Multiplication"    Right="$(OwnedLuxuryDeposits)"  Path="./ClassColonizedStarSystem"   SearchValueFromPath="true"/>
-    <BinaryModifier TargetProperty="SystemMoney"        Operation="Addition"        Left="3"    BinaryOperation="Multiplication"    Right="$(NonTemplePopulation)"   Path="./ClassColonizedStarSystem"   SearchValueFromPath="true" />
-    <BinaryModifier TargetProperty="SystemMoney"        Operation="Percent"         Left="0.05" BinaryOperation="Multiplication"    Right="$(OwnedLuxuryDeposits)"   Path="./ClassColonizedStarSystem"   SearchValueFromPath="true" />
+    <Modifier TargetProperty="SystemMoney"        Operation="Addition"        Value="50"/>
+    <Modifier TargetProperty="SystemMoney"        Operation="Addition"        Value="50"   Path="./HappinessStatusStarSystem3"/>
+    <Modifier TargetProperty="SystemMoney"        Operation="Addition"        Value="150"   Path="./HappinessStatusStarSystem4"/>
+    <BinaryModifier TargetProperty="SystemMoney"        Operation="Percent"         Left="0.02" BinaryOperation="Multiplication"    Right="$(OwnedLuxuryDeposits)"   Path="./ClassColonizedStarSystem"   SearchValueFromPath="true" />
   </SimulationDescriptor>
 
   <SimulationDescriptor Name="StarSystemImprovementUniqueDust1TimeLords" Type="StarSystemImprovement">
