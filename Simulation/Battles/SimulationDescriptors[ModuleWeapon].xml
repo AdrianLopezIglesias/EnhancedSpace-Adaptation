@@ -344,7 +344,7 @@
         <Modifier TargetProperty="Damage"                       Operation="Addition" Value="250"      TooltipHidden="true"/>
         
         <!-- Must be same value as Salvo Health-->
-        <Modifier TargetProperty="MissileHealth"                Operation="Addition" Value="60" TooltipHidden="true"/>
+        <Modifier TargetProperty="MissileHealth"                Operation="Addition" Value="25" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <!-- ERA 2-->
@@ -352,7 +352,7 @@
         <Modifier TargetProperty="Damage"                       Operation="Addition" Value="400"     TooltipHidden="true"/>
         
         <!-- Must be same value as Salvo Health-->
-        <Modifier TargetProperty="MissileHealth"                Operation="Addition" Value="75" TooltipHidden="true"/>
+        <Modifier TargetProperty="MissileHealth"                Operation="Addition" Value="45" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleWeaponMissile2Strategic1"  Type="ModuleWeapon">
@@ -361,7 +361,7 @@
         <Modifier TargetProperty="ShipManpowerKillPerHit"       Operation="Addition" Value="2"      TooltipHidden="true"/>
         
         <!-- Must be same value as Salvo Health-->
-        <Modifier TargetProperty="MissileHealth"                Operation="Addition" Value="90" TooltipHidden="true"/>
+        <Modifier TargetProperty="MissileHealth"                Operation="Addition" Value="70" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <!-- ERA 3-->
@@ -369,7 +369,7 @@
         <Modifier TargetProperty="Damage"                       Operation="Addition" Value="550"     TooltipHidden="true"/>
         
         <!-- Must be same value as Salvo Health-->
-        <Modifier TargetProperty="MissileHealth"                Operation="Addition" Value="90" TooltipHidden="true"/>
+        <Modifier TargetProperty="MissileHealth"                Operation="Addition" Value="70" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleWeaponMissile3Strategic1"  Type="ModuleWeapon">
@@ -378,7 +378,7 @@
         <Modifier TargetProperty="ShipManpowerKillPerHit"       Operation="Addition" Value="3"      TooltipHidden="true"/>
         
         <!-- Must be same value as Salvo Health-->
-        <Modifier TargetProperty="MissileHealth"                Operation="Addition" Value="90" TooltipHidden="true"/>
+        <Modifier TargetProperty="MissileHealth"                Operation="Addition" Value="70" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleWeaponMissile3Strategic3"  Type="ModuleWeapon">
@@ -387,7 +387,7 @@
         <Modifier TargetProperty="ShipManpowerKillPerHit"       Operation="Addition" Value="8"      TooltipHidden="true"/>
         
         <!-- Must be same value as Salvo Health-->
-        <Modifier TargetProperty="MissileHealth"                Operation="Addition" Value="115" TooltipHidden="true"/>
+        <Modifier TargetProperty="MissileHealth"                Operation="Addition" Value="90" TooltipHidden="true"/>
     </SimulationDescriptor>
     
     <!-- ERA 4-->
@@ -395,7 +395,7 @@
         <Modifier TargetProperty="Damage"                       Operation="Addition" Value="700"     TooltipHidden="true"/>
         
         <!-- Must be same value as Salvo Health-->
-        <Modifier TargetProperty="MissileHealth"                Operation="Addition" Value="100" TooltipHidden="true"/>
+        <Modifier TargetProperty="MissileHealth"                Operation="Addition" Value="80" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleWeaponMissile4Strategic3"  Type="ModuleWeapon">
@@ -404,7 +404,7 @@
         <Modifier TargetProperty="ShipManpowerKillPerHit"       Operation="Addition" Value="10"      TooltipHidden="true"/>
 
         <!-- Must be same value as Salvo Health-->
-        <Modifier TargetProperty="MissileHealth"                Operation="Addition" Value="115" TooltipHidden="true"/>
+        <Modifier TargetProperty="MissileHealth"                Operation="Addition" Value="95" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleWeaponMissile4Strategic5"  Type="ModuleWeapon">
@@ -415,7 +415,7 @@
         <Modifier TargetProperty="SpecialEffectDuration"        Operation="Addition"  Value="10"  TooltipHidden="true"/>
 
         <!-- Must be same value as Salvo Health-->
-        <Modifier TargetProperty="MissileHealth"                Operation="Addition" Value="140" TooltipHidden="true"/>
+        <Modifier TargetProperty="MissileHealth"                Operation="Addition" Value="120" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <!-- ERA 5-->
@@ -423,7 +423,7 @@
         <Modifier TargetProperty="Damage"                       Operation="Addition" Value="850"     TooltipHidden="true"/>
 
         <!-- Must be same value as Salvo Health-->
-        <Modifier TargetProperty="MissileHealth"                Operation="Addition" Value="115" TooltipHidden="true"/>
+        <Modifier TargetProperty="MissileHealth"                Operation="Addition" Value="95" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleWeaponMissile5Strategic5"  Type="ModuleWeapon">
@@ -434,7 +434,7 @@
         <Modifier TargetProperty="SpecialEffectDuration"        Operation="Addition"  Value="10"  TooltipHidden="true"/>
 
         <!-- Must be same value as Salvo Health-->
-        <Modifier TargetProperty="MissileHealth"                Operation="Addition" Value="140" TooltipHidden="true"/>
+        <Modifier TargetProperty="MissileHealth"                Operation="Addition" Value="120" TooltipHidden="true"/>
     </SimulationDescriptor>
 
     
