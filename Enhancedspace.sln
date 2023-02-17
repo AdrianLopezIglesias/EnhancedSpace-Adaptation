@@ -362,6 +362,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Simulation", "Simulation", 
 		Simulation\LawDefinitions[DLC3].xml = Simulation\LawDefinitions[DLC3].xml
 		Simulation\ManpowerUpgradeDefinition.xml = Simulation\ManpowerUpgradeDefinition.xml
 		Simulation\MarketplaceEventDefinitions.xml = Simulation\MarketplaceEventDefinitions.xml
+		Simulation\PiratePowerLevelDefinition.xml = Simulation\PiratePowerLevelDefinition.xml
 		Simulation\PopulationCollectionBonusTraits.xml = Simulation\PopulationCollectionBonusTraits.xml
 		Simulation\PopulationCollectionBonusTraits[DLC1].xml = Simulation\PopulationCollectionBonusTraits[DLC1].xml
 		Simulation\PopulationCollectionBonusTraits[DLC2].xml = Simulation\PopulationCollectionBonusTraits[DLC2].xml

@@ -1,0 +1,1680 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/PiratePowerLevelDefinition.xsd">
+
+    <!-- Note: simulation descriptors are applied on the empire -->
+    <!-- They are SWAPPED based on their type. They cannot be removed, they must be replaced with an empty one. -->
+
+
+    <!--#####HOW-TO: REINFORCEMENTS#####
+    ####################################
+    Reinforcement descriptors are applied on the fleet directly, so the path can start on the ClassGarrison
+    Reinforcements thresholds and effects are additive, which means that if the 1st and 2nd thresholds have a Cost="33" they will be placed at 33% and 66% on the bar.
+    If they both have a bonus of +10% Health, having both thresholds will give a total of +20% Health. 
+    Bar range is [0-100] so the sum of thresholds cannot exceed 100.
+    Bonuses are given to a fleet. So don't forget to duplicate the bonus to all the alternative versions of a same fleet.
+    
+    <SimulationDescriptorReference Name="ABC123"/> to add a regular stats Bonus
+    <ShipDesignReference Name="XYZ"/> to add a Bonus Ship
+    Descriptors for bonuses are referenced in SimulationDescriptors[Pirates].xml
+    Pirate Ships for both core Fleets and Reinforcements are defined in HullDefinitions[MinorFactions].xml-->
+    
+
+    <!-- None -->
+    <PiratePowerLevelDefinition Name="PiratePowerLevelNone0" PowerLevel="0" Difficulty="None" MinimumPowerPointsStock="0">
+        <SimulationDescriptorReference Name="DisabledPiratesEffect"/>
+    </PiratePowerLevelDefinition>
+
+    <!-- Medium (obsolete but needed for dev saves...) -->
+    <PiratePowerLevelDefinition Name="PiratePowerLevelMedium0" PowerLevel="0" Difficulty="Medium" MinimumPowerPointsStock="0">
+        <SimulationDescriptorReference Name="DisabledPiratesEffect"/>
+    </PiratePowerLevelDefinition>
+
+
+    <!-- ###EASY### -->
+    <!-- No spawn -->
+    <PiratePowerLevelDefinition Name="PiratePowerLevelEasy0" PowerLevel="0" Difficulty="Easy" MinimumPowerPointsStock="0">
+        <SimulationDescriptorReference Name="PiratePowerLevel0Effect"/>
+        <SimulationDescriptorReference Name="PirateDifficultyEasy"/>
+        <FleetMissionDefinitionReference Name="RoamAndAttack"/>
+    </PiratePowerLevelDefinition>
+
+    <!-- EASY - PIRATE POWER 1 -->
+    <PiratePowerLevelDefinition Name="PiratePowerLevelEasy1" PowerLevel="1" Difficulty="Easy" MinimumPowerPointsStock="25">
+        <SimulationDescriptorReference Name="PiratePowerLevel1Effect"/>
+        <SimulationDescriptorReference Name="PirateDifficultyEasy"/>
+         
+        <FleetSpawn Weight="1"> <!--Use Weight to list multiple fleet templates to choose between-->
+            <ShipDesignReference Name="MFPiratesSmallAttackWeak"/>
+             <Reinforcement Cost="33"><!--Reinforcements for this fleet template-->
+                 <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed01"/>
+             </Reinforcement>
+             <Reinforcement Cost="33">
+                 <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+             </Reinforcement>
+             <Reinforcement Cost="33">
+                 <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+             </Reinforcement>
+         </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFAdvancedSmallAttackWeak"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFInsectoidSmallAttackWeak"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFPrimitiveSmallAttackWeak"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+            </Reinforcement>
+        </FleetSpawn>
+
+        <FleetMissionDefinitionReference Name="RoamAndAttack"/>
+        
+        <!--Loot awarded for destroying a Lair at PP1-->
+        <Droplist Picks="1"> <!--Pick 1 item from the list-->
+            <DroppableResource Name="EmpireMoney"    Quantity="300"  Weight="3"/> <!--300 * PiratePower-->
+        </Droplist>
+    </PiratePowerLevelDefinition>
+
+    <!-- EASY - PIRATE POWER 2 -->
+    <PiratePowerLevelDefinition Name="PiratePowerLevelEasy2" PowerLevel="2" Difficulty="Easy" MinimumPowerPointsStock="75">
+        <SimulationDescriptorReference Name="PiratePowerLevel2Effect"/>
+        <SimulationDescriptorReference Name="PirateDifficultyEasy"/>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFPiratesSmallAttackAvg"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed01"/>
+                  <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+              </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFAdvancedSmallAttackAvg"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed01"/>
+                  <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+              </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFInsectoidSmallAttackAvg"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFPrimitiveSmallAttackAvg"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        
+        <FleetMissionDefinitionReference Name="RoamAndAttack"/>
+
+        <!--Loot awarded for destroying a Lair at PP2-->
+        <Droplist Picks="1">
+            <DroppableResource Name="EmpireMoney"    Quantity="600"  Weight="3"/> <!--300 * PiratePower-->
+            <DroppableResource Name="Strategic1"     Quantity="20"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Strategic2"     Quantity="20"   Weight="3"/> <!--10  * PiratePower-->
+            
+            <DroppableResource Name="Luxury1"        Quantity="20"   Weight="1"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury2"        Quantity="20"   Weight="1"/>
+            <DroppableResource Name="Luxury3"        Quantity="20"   Weight="1"/>
+            <DroppableResource Name="Luxury4"        Quantity="20"   Weight="1"/>
+            <DroppableResource Name="Luxury5"        Quantity="20"   Weight="1"/>
+            <DroppableResource Name="Luxury6"        Quantity="20"   Weight="1"/>
+            <DroppableResource Name="Luxury7"        Quantity="20"   Weight="1"/>
+            <DroppableResource Name="Luxury8"        Quantity="20"   Weight="1"/>
+        </Droplist>
+        
+    </PiratePowerLevelDefinition>
+
+    <!-- EASY - PIRATE POWER 3 -->
+    <PiratePowerLevelDefinition Name="PiratePowerLevelEasy3" PowerLevel="3" Difficulty="Easy" MinimumPowerPointsStock="175">
+        <SimulationDescriptorReference Name="PiratePowerLevel3Effect"/>
+        <SimulationDescriptorReference Name="PirateDifficultyEasy"/>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFPiratesSmallAttackAvg"/>
+            <ShipDesignReference Name="MFPiratesSmallAttackAvg"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFInsectoidSmallAttackAvg"/>
+            <ShipDesignReference Name="MFInsectoidSmallAttackAvg"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFAdvancedSmallAttackAvg"/>
+            <ShipDesignReference Name="MFAdvancedSmallAttackAvg"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFPrimitiveSmallAttackAvg"/>
+            <ShipDesignReference Name="MFPrimitiveSmallAttackAvg"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetMissionDefinitionReference Name="RoamAndBlockade"/>
+
+        <!--Loot awarded for destroying a Lair at PP3-->
+        <Droplist Picks="2"> <!--Pick 2 items from the list-->
+            <DroppableResource Name="EmpireMoney"    Quantity="900"  Weight="6"/> <!--300 * PiratePower-->
+            <DroppableResource Name="Strategic1"     Quantity="30"   Weight="6"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Strategic2"     Quantity="30"   Weight="6"/> <!--10  * PiratePower-->
+
+            <DroppableResource Name="Strategic3"     Quantity="15"   Weight="4"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Strategic4"     Quantity="15"   Weight="4"/> <!--5   * PiratePower-->
+
+            <DroppableResource Name="Luxury1"        Quantity="30"   Weight="2"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury2"        Quantity="30"   Weight="2"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury3"        Quantity="30"   Weight="2"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury4"        Quantity="30"   Weight="2"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury5"        Quantity="30"   Weight="2"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury6"        Quantity="30"   Weight="2"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury7"        Quantity="30"   Weight="2"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury8"        Quantity="30"   Weight="2"/> <!--10  * PiratePower-->
+
+            <DroppableResource Name="Luxury9"        Quantity="15"   Weight="1"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury10"       Quantity="15"   Weight="1"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury11"       Quantity="15"   Weight="1"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury12"       Quantity="15"   Weight="1"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury13"       Quantity="15"   Weight="1"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury14"       Quantity="15"   Weight="1"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury15"       Quantity="15"   Weight="1"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury16"       Quantity="15"   Weight="1"/> <!--5   * PiratePower-->
+        </Droplist>
+        
+    </PiratePowerLevelDefinition>
+
+    <!-- EASY - PIRATE POWER 4 -->
+    <PiratePowerLevelDefinition Name="PiratePowerLevelEasy4" PowerLevel="4" Difficulty="Easy" MinimumPowerPointsStock="375">
+        <SimulationDescriptorReference Name="PiratePowerLevel4Effect"/>
+        <SimulationDescriptorReference Name="PirateDifficultyEasy"/>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFPiratesSmallAttackAvg"/>
+            <ShipDesignReference Name="MFPiratesSmallAttackStrong"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <ShipDesignReference Name="MFPiratesSmallAttackAvg"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFAdvancedSmallAttackAvg"/>
+            <ShipDesignReference Name="MFAdvancedSmallAttackStrong"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <ShipDesignReference Name="MFAdvancedSmallAttackAvg"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFPrimitiveSmallAttackAvg"/>
+            <ShipDesignReference Name="MFPrimitiveSmallAttackStrong"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <ShipDesignReference Name="MFPrimitiveSmallAttackAvg"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFInsectoidSmallAttackAvg"/>
+            <ShipDesignReference Name="MFInsectoidSmallAttackStrong"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <ShipDesignReference Name="MFInsectoidSmallAttackAvg"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetMissionDefinitionReference Name="RoamAndBlockade"/>
+
+        <!--Loot awarded for destroying a Lair at PP4-->
+        <Droplist Picks="2"> <!--Pick 2 items from the list-->
+            <DroppableResource Name="EmpireMoney"    Quantity="1200"  Weight="9"/> <!--300 * PiratePower-->
+            <DroppableResource Name="Strategic1"     Quantity="40"   Weight="9"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Strategic2"     Quantity="40"   Weight="9"/> <!--10  * PiratePower-->
+
+            <DroppableResource Name="Strategic3"     Quantity="20"   Weight="6"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Strategic4"     Quantity="20"   Weight="6"/> <!--5   * PiratePower-->
+            
+            <DroppableResource Name="Strategic3"     Quantity="8"   Weight="4"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Strategic4"     Quantity="8"   Weight="4"/> <!--2    * PiratePower-->
+
+            <DroppableResource Name="Luxury1"        Quantity="40"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury2"        Quantity="40"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury3"        Quantity="40"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury4"        Quantity="40"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury5"        Quantity="40"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury6"        Quantity="40"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury7"        Quantity="40"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury8"        Quantity="40"   Weight="3"/> <!--10  * PiratePower-->
+
+            <DroppableResource Name="Luxury9"        Quantity="20"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury10"       Quantity="20"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury11"       Quantity="20"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury12"       Quantity="20"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury13"       Quantity="20"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury14"       Quantity="20"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury15"       Quantity="20"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury16"       Quantity="20"   Weight="2"/> <!--5   * PiratePower-->
+
+            <DroppableResource Name="Luxury17"       Quantity="8"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury18"       Quantity="8"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury19"       Quantity="8"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury20"       Quantity="8"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury21"       Quantity="8"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury22"       Quantity="8"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury23"       Quantity="8"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury24"       Quantity="8"   Weight="1"/> <!--2    * PiratePower-->
+        </Droplist>
+        
+    </PiratePowerLevelDefinition>
+
+    <!-- EASY - PIRATE POWER 5 -->
+    <PiratePowerLevelDefinition Name="PiratePowerLevelEasy5" PowerLevel="5" Difficulty="Easy" MinimumPowerPointsStock="675">
+        <SimulationDescriptorReference Name="PiratePowerLevel5Effect"/>
+        <SimulationDescriptorReference Name="PirateDifficultyEasy"/>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFPiratesSmallAttackAvg"/>
+            <ShipDesignReference Name="MFPiratesSmallAttackStrong"/>
+            <ShipDesignReference Name="MFPiratesSmallAttackStrong"/>
+            <Reinforcement Cost="33">
+                <ShipDesignReference Name="MFPiratesSmallAttackAvg"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <ShipDesignReference Name="MFPiratesSmallAttackAvg"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFAdvancedSmallAttackAvg"/>
+            <ShipDesignReference Name="MFAdvancedSmallAttackStrong"/>
+            <ShipDesignReference Name="MFAdvancedSmallAttackStrong"/>
+            <Reinforcement Cost="33">
+                <ShipDesignReference Name="MFAdvancedSmallAttackAvg"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <ShipDesignReference Name="MFAdvancedSmallAttackAvg"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFInsectoidSmallAttackAvg"/>
+            <ShipDesignReference Name="MFInsectoidSmallAttackStrong"/>
+            <ShipDesignReference Name="MFInsectoidSmallAttackStrong"/>
+            <Reinforcement Cost="33">
+                <ShipDesignReference Name="MFInsectoidSmallAttackAvg"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <ShipDesignReference Name="MFInsectoidSmallAttackAvg"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFPrimitiveSmallAttackAvg"/>
+            <ShipDesignReference Name="MFPrimitiveSmallAttackStrong"/>
+            <ShipDesignReference Name="MFPrimitiveSmallAttackStrong"/>
+            <Reinforcement Cost="33">
+                <ShipDesignReference Name="MFPrimitiveSmallAttackAvg"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <ShipDesignReference Name="MFPrimitiveSmallAttackAvg"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetMissionDefinitionReference Name="RoamAndInvade"/>
+
+        <!--Loot awarded for destroying a Lair at PP5-->
+        <Droplist Picks="3"> <!--Pick 3 items from the list-->
+            <DroppableResource Name="EmpireMoney"    Quantity="1500"  Weight="9"/> <!--300 * PiratePower-->
+            <DroppableResource Name="Strategic1"     Quantity="50"   Weight="9"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Strategic2"     Quantity="50"   Weight="9"/> <!--10  * PiratePower-->
+
+            <DroppableResource Name="Strategic3"     Quantity="25"   Weight="6"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Strategic4"     Quantity="25"   Weight="6"/> <!--5   * PiratePower-->
+            
+            <DroppableResource Name="Strategic3"     Quantity="10"   Weight="4"/> <!--2   * PiratePower-->
+            <DroppableResource Name="Strategic4"     Quantity="10"   Weight="4"/> <!--2   * PiratePower-->
+
+            <DroppableResource Name="Luxury1"        Quantity="50"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury2"        Quantity="50"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury3"        Quantity="50"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury4"        Quantity="50"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury5"        Quantity="50"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury6"        Quantity="50"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury7"        Quantity="50"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury8"        Quantity="50"   Weight="3"/> <!--10  * PiratePower-->
+
+            <DroppableResource Name="Luxury9"        Quantity="25"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury10"       Quantity="25"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury11"       Quantity="25"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury12"       Quantity="25"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury13"       Quantity="25"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury14"       Quantity="25"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury15"       Quantity="25"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury16"       Quantity="25"   Weight="2"/> <!--5   * PiratePower-->
+
+            <DroppableResource Name="Luxury17"       Quantity="10"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury18"       Quantity="10"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury19"       Quantity="10"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury20"       Quantity="10"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury21"       Quantity="10"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury22"       Quantity="10"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury23"       Quantity="10"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury24"       Quantity="10"   Weight="1"/> <!--2    * PiratePower-->
+            </Droplist>
+        
+    </PiratePowerLevelDefinition>
+
+
+    <!-- ###NORMAL### -->
+    <!-- No spawn -->
+    <PiratePowerLevelDefinition Name="PiratePowerLevelNormal0" PowerLevel="0" Difficulty="Normal" MinimumPowerPointsStock="0">
+        <SimulationDescriptorReference Name="PiratePowerLevel0Effect"/>
+        <SimulationDescriptorReference Name="PirateDifficultyNormal"/>
+        <FleetMissionDefinitionReference Name="RoamAndAttack"/>
+    </PiratePowerLevelDefinition>
+
+    <!-- NORMAL - PIRATE POWER 1 -->
+    <PiratePowerLevelDefinition Name="PiratePowerLevelNormal1" PowerLevel="1" Difficulty="Normal" MinimumPowerPointsStock="25">
+        <SimulationDescriptorReference Name="PiratePowerLevel1Effect"/>
+        <SimulationDescriptorReference Name="PirateDifficultyNormal"/>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFPiratesSmallAttackWeak"/>
+            <ShipDesignReference Name="MFPiratesSmallAttackAvg"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed02"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFAdvancedSmallAttackWeak"/>
+            <ShipDesignReference Name="MFAdvancedSmallAttackAvg"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed02"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth02"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFPrimitiveSmallAttackWeak"/>
+            <ShipDesignReference Name="MFPrimitiveSmallAttackAvg"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed02"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth02"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFInsectoidSmallAttackWeak"/>
+            <ShipDesignReference Name="MFInsectoidSmallAttackAvg"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed02"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth02"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetMissionDefinitionReference Name="RoamAndAttack"/>
+        
+<!--Loot awarded for destroying a Lair at PP1-->
+        <Droplist Picks="1"> <!--Pick 1 item from the list-->
+            <DroppableResource Name="EmpireMoney"    Quantity="300"  Weight="3"/> <!--300 * PiratePower-->
+        </Droplist>
+        
+    </PiratePowerLevelDefinition>
+
+    <!-- NORMAL - PIRATE POWER 2 -->
+    <PiratePowerLevelDefinition Name="PiratePowerLevelNormal2" PowerLevel="2" Difficulty="Normal" MinimumPowerPointsStock="75">
+        <SimulationDescriptorReference Name="PiratePowerLevel2Effect"/>
+        <SimulationDescriptorReference Name="PirateDifficultyNormal"/>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFPiratesSmallAttackAvg"/>
+            <ShipDesignReference Name="MFPiratesSmallAttackStrong"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed02"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth02"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense02"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFAdvancedSmallAttackAvg"/>
+            <ShipDesignReference Name="MFAdvancedSmallAttackStrong"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed02"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth02"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense02"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFPrimitiveSmallAttackAvg"/>
+            <ShipDesignReference Name="MFPrimitiveSmallAttackStrong"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed02"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth02"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense02"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFInsectoidSmallAttackAvg"/>
+            <ShipDesignReference Name="MFInsectoidSmallAttackStrong"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed02"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth02"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense02"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetMissionDefinitionReference Name="RoamAndAttack"/>
+        
+        <!--Loot awarded for destroying a Lair at PP2-->
+        <Droplist Picks="1">
+            <DroppableResource Name="EmpireMoney"    Quantity="600"  Weight="3"/> <!--300 * PiratePower-->
+            <DroppableResource Name="Strategic1"     Quantity="20"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Strategic2"     Quantity="20"   Weight="3"/> <!--10  * PiratePower-->
+            
+            <DroppableResource Name="Luxury1"        Quantity="20"   Weight="1"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury2"        Quantity="20"   Weight="1"/>
+            <DroppableResource Name="Luxury3"        Quantity="20"   Weight="1"/>
+            <DroppableResource Name="Luxury4"        Quantity="20"   Weight="1"/>
+            <DroppableResource Name="Luxury5"        Quantity="20"   Weight="1"/>
+            <DroppableResource Name="Luxury6"        Quantity="20"   Weight="1"/>
+            <DroppableResource Name="Luxury7"        Quantity="20"   Weight="1"/>
+            <DroppableResource Name="Luxury8"        Quantity="20"   Weight="1"/>
+        </Droplist>
+        
+    </PiratePowerLevelDefinition>
+
+    <!-- NORMAL - PIRATE POWER 3 -->
+    <PiratePowerLevelDefinition Name="PiratePowerLevelNormal3" PowerLevel="3" Difficulty="Normal" MinimumPowerPointsStock="175">
+        <SimulationDescriptorReference Name="PiratePowerLevel3Effect"/>
+        <SimulationDescriptorReference Name="PirateDifficultyNormal"/>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFPiratesSmallAttackAvg"/>
+            <ShipDesignReference Name="MFPiratesSmallAttackStrong"/>
+            <ShipDesignReference Name="MFPiratesSmallAttackStrong"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed02"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth02"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense02"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <ShipDesignReference Name="MFPiratesSmallAttackAvg"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFAdvancedSmallAttackAvg"/>
+            <ShipDesignReference Name="MFAdvancedSmallAttackStrong"/>
+            <ShipDesignReference Name="MFAdvancedSmallAttackStrong"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed02"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth02"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense02"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <ShipDesignReference Name="MFAdvancedSmallAttackAvg"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFPrimitiveSmallAttackAvg"/>
+            <ShipDesignReference Name="MFPrimitiveSmallAttackStrong"/>
+            <ShipDesignReference Name="MFPrimitiveSmallAttackStrong"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed02"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth02"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense02"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <ShipDesignReference Name="MFPrimitiveSmallAttackAvg"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFInsectoidSmallAttackAvg"/>
+            <ShipDesignReference Name="MFInsectoidSmallAttackStrong"/>
+            <ShipDesignReference Name="MFInsectoidSmallAttackStrong"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed02"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth02"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense02"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <ShipDesignReference Name="MFInsectoidSmallAttackAvg"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetMissionDefinitionReference Name="RoamAndBlockade"/>
+        
+        <!--Loot awarded for destroying a Lair at PP3-->
+        <Droplist Picks="2"> <!--Pick 2 items from the list-->
+            <DroppableResource Name="EmpireMoney"    Quantity="900"  Weight="6"/> <!--300 * PiratePower-->
+            <DroppableResource Name="Strategic1"     Quantity="30"   Weight="6"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Strategic2"     Quantity="30"   Weight="6"/> <!--10  * PiratePower-->
+
+            <DroppableResource Name="Strategic3"     Quantity="15"   Weight="4"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Strategic4"     Quantity="15"   Weight="4"/> <!--5   * PiratePower-->
+
+            <DroppableResource Name="Luxury1"        Quantity="30"   Weight="2"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury2"        Quantity="30"   Weight="2"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury3"        Quantity="30"   Weight="2"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury4"        Quantity="30"   Weight="2"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury5"        Quantity="30"   Weight="2"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury6"        Quantity="30"   Weight="2"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury7"        Quantity="30"   Weight="2"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury8"        Quantity="30"   Weight="2"/> <!--10  * PiratePower-->
+
+            <DroppableResource Name="Luxury9"        Quantity="15"   Weight="1"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury10"       Quantity="15"   Weight="1"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury11"       Quantity="15"   Weight="1"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury12"       Quantity="15"   Weight="1"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury13"       Quantity="15"   Weight="1"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury14"       Quantity="15"   Weight="1"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury15"       Quantity="15"   Weight="1"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury16"       Quantity="15"   Weight="1"/> <!--5   * PiratePower-->
+        </Droplist>
+        
+    </PiratePowerLevelDefinition>
+
+    <!-- NORMAL - PIRATE POWER 4 -->
+    <PiratePowerLevelDefinition Name="PiratePowerLevelNormal4" PowerLevel="4" Difficulty="Normal" MinimumPowerPointsStock="375">
+        <SimulationDescriptorReference Name="PiratePowerLevel4Effect"/>
+        <SimulationDescriptorReference Name="PirateDifficultyNormal"/>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFPiratesSmallAttackStrong"/>
+            <ShipDesignReference Name="MFAdvancedSmallAttackStrong"/>
+            <ShipDesignReference Name="MFPrimitiveMediumAttackAvg"/>
+            <Reinforcement Cost="33">
+                <ShipDesignReference Name="MFPiratesSmallAttackStrong"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed02"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth02"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense02"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFAdvancedSmallAttackStrong"/>
+            <ShipDesignReference Name="MFPrimitiveSmallAttackStrong"/>
+            <ShipDesignReference Name="MFInsectoidMediumAttackAvg"/>
+            <Reinforcement Cost="33">
+                <ShipDesignReference Name="MFAdvancedSmallAttackStrong"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed02"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth02"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense02"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFPrimitiveSmallAttackStrong"/>
+            <ShipDesignReference Name="MFInsectoidSmallAttackStrong"/>
+            <ShipDesignReference Name="MFPiratesMediumAttackAvg"/>
+            <Reinforcement Cost="33">
+                <ShipDesignReference Name="MFPrimitiveSmallAttackStrong"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed02"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth02"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense02"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFInsectoidSmallAttackStrong"/>
+            <ShipDesignReference Name="MFPiratesSmallAttackStrong"/>
+            <ShipDesignReference Name="MFAdvancedMediumAttackAvg"/>
+            <Reinforcement Cost="33">
+                <ShipDesignReference Name="MFInsectoidSmallAttackStrong"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed02"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth02"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense02"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetMissionDefinitionReference Name="RoamAndBlockade"/>
+        
+        <!--Loot awarded for destroying a Lair at PP4-->
+        <Droplist Picks="2"> <!--Pick 2 items from the list-->
+            <DroppableResource Name="EmpireMoney"    Quantity="1200"  Weight="9"/> <!--300 * PiratePower-->
+            <DroppableResource Name="Strategic1"     Quantity="40"   Weight="9"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Strategic2"     Quantity="40"   Weight="9"/> <!--10  * PiratePower-->
+
+            <DroppableResource Name="Strategic3"     Quantity="20"   Weight="6"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Strategic4"     Quantity="20"   Weight="6"/> <!--5   * PiratePower-->
+            
+            <DroppableResource Name="Strategic3"     Quantity="8"   Weight="4"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Strategic4"     Quantity="8"   Weight="4"/> <!--2    * PiratePower-->
+
+            <DroppableResource Name="Luxury1"        Quantity="40"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury2"        Quantity="40"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury3"        Quantity="40"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury4"        Quantity="40"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury5"        Quantity="40"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury6"        Quantity="40"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury7"        Quantity="40"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury8"        Quantity="40"   Weight="3"/> <!--10  * PiratePower-->
+
+            <DroppableResource Name="Luxury9"        Quantity="20"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury10"       Quantity="20"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury11"       Quantity="20"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury12"       Quantity="20"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury13"       Quantity="20"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury14"       Quantity="20"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury15"       Quantity="20"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury16"       Quantity="20"   Weight="2"/> <!--5   * PiratePower-->
+
+            <DroppableResource Name="Luxury17"       Quantity="8"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury18"       Quantity="8"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury19"       Quantity="8"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury20"       Quantity="8"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury21"       Quantity="8"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury22"       Quantity="8"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury23"       Quantity="8"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury24"       Quantity="8"   Weight="1"/> <!--2    * PiratePower-->
+        </Droplist>
+        
+    </PiratePowerLevelDefinition>
+
+    <!-- NORMAL - PIRATE POWER 5 -->
+    <PiratePowerLevelDefinition Name="PiratePowerLevelNormal5" PowerLevel="5" Difficulty="Normal" MinimumPowerPointsStock="675">
+        <SimulationDescriptorReference Name="PiratePowerLevel5Effect"/>
+        <SimulationDescriptorReference Name="PirateDifficultyNormal"/>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFAdvancedSmallAttackStrong"/>
+            <ShipDesignReference Name="MFPrimitiveMediumAttackAvg"/>
+            <ShipDesignReference Name="MFInsectoidMediumAttackStrong"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed02"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth02"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense02"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage02"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <ShipDesignReference Name="MFPiratesSmallAttackStrong"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFPrimitiveSmallAttackStrong"/>
+            <ShipDesignReference Name="MFInsectoidMediumAttackAvg"/>
+            <ShipDesignReference Name="MFPiratesMediumAttackStrong"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed02"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth02"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense02"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage02"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <ShipDesignReference Name="MFAdvancedSmallAttackStrong"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFInsectoidSmallAttackStrong"/>
+            <ShipDesignReference Name="MFPiratesMediumAttackAvg"/>
+            <ShipDesignReference Name="MFAdvancedMediumAttackStrong"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed02"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth02"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense02"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage02"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <ShipDesignReference Name="MFPrimitiveSmallAttackStrong"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFPiratesSmallAttackStrong"/>
+            <ShipDesignReference Name="MFAdvancedMediumAttackAvg"/>
+            <ShipDesignReference Name="MFPrimitiveMediumAttackStrong"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed02"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth02"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense02"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage02"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <ShipDesignReference Name="MFInsectoidSmallAttackStrong"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetMissionDefinitionReference Name="RoamAndInvade"/>
+        
+                <!--Loot awarded for destroying a Lair at PP5-->
+        <Droplist Picks="3"> <!--Pick 3 items from the list-->
+            <DroppableResource Name="EmpireMoney"    Quantity="1500"  Weight="9"/> <!--300 * PiratePower-->
+            <DroppableResource Name="Strategic1"     Quantity="50"   Weight="9"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Strategic2"     Quantity="50"   Weight="9"/> <!--10  * PiratePower-->
+
+            <DroppableResource Name="Strategic3"     Quantity="25"   Weight="6"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Strategic4"     Quantity="25"   Weight="6"/> <!--5   * PiratePower-->
+            
+            <DroppableResource Name="Strategic3"     Quantity="10"   Weight="4"/> <!--2   * PiratePower-->
+            <DroppableResource Name="Strategic4"     Quantity="10"   Weight="4"/> <!--2   * PiratePower-->
+
+            <DroppableResource Name="Luxury1"        Quantity="50"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury2"        Quantity="50"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury3"        Quantity="50"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury4"        Quantity="50"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury5"        Quantity="50"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury6"        Quantity="50"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury7"        Quantity="50"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury8"        Quantity="50"   Weight="3"/> <!--10  * PiratePower-->
+
+            <DroppableResource Name="Luxury9"        Quantity="25"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury10"       Quantity="25"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury11"       Quantity="25"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury12"       Quantity="25"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury13"       Quantity="25"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury14"       Quantity="25"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury15"       Quantity="25"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury16"       Quantity="25"   Weight="2"/> <!--5   * PiratePower-->
+
+            <DroppableResource Name="Luxury17"       Quantity="10"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury18"       Quantity="10"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury19"       Quantity="10"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury20"       Quantity="10"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury21"       Quantity="10"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury22"       Quantity="10"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury23"       Quantity="10"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury24"       Quantity="10"   Weight="1"/> <!--2    * PiratePower-->
+            </Droplist>
+        
+    </PiratePowerLevelDefinition>
+
+
+    <!-- ###HARD### -->
+    <!-- No spawn -->
+    <PiratePowerLevelDefinition Name="PiratePowerLevelHard0" PowerLevel="0" Difficulty="Hard" MinimumPowerPointsStock="0">
+        <SimulationDescriptorReference Name="PiratePowerLevel0Effect"/>
+        <SimulationDescriptorReference Name="PirateDifficultyHard"/>
+
+        <FleetMissionDefinitionReference Name="RoamAndAttack"/>
+    </PiratePowerLevelDefinition>
+
+    <!-- HARD - PIRATE POWER 1 -->
+    <PiratePowerLevelDefinition Name="PiratePowerLevelHard1" PowerLevel="1" Difficulty="Hard" MinimumPowerPointsStock="25">
+        <SimulationDescriptorReference Name="PiratePowerLevel1Effect"/>
+        <SimulationDescriptorReference Name="PirateDifficultyHard"/>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFPiratesSmallAttackAvg"/>
+            <ShipDesignReference Name="MFAdvancedSmallAttackAvg"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth03"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFPiratesSmallAttackAvg"/>
+            <ShipDesignReference Name="MFPrimitiveSmallAttackAvg"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth03"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFPiratesSmallAttackAvg"/>
+            <ShipDesignReference Name="MFInsectoidSmallAttackAvg"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth03"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFPrimitiveSmallAttackAvg"/>
+            <ShipDesignReference Name="MFAdvancedSmallAttackAvg"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth03"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetMissionDefinitionReference Name="RoamAndAttack"/>
+        
+<!--Loot awarded for destroying a Lair at PP1-->
+        <Droplist Picks="1"> <!--Pick 1 item from the list-->
+            <DroppableResource Name="EmpireMoney"    Quantity="300"  Weight="3"/> <!--300 * PiratePower-->
+        </Droplist>
+        
+    </PiratePowerLevelDefinition>
+
+    <!-- HARD - PIRATE POWER 2 -->
+    <PiratePowerLevelDefinition Name="PiratePowerLevelHard2" PowerLevel="2" Difficulty="Hard" MinimumPowerPointsStock="75">
+        <SimulationDescriptorReference Name="PiratePowerLevel2Effect"/>
+        <SimulationDescriptorReference Name="PirateDifficultyHard"/>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFAdvancedSmallAttackAvg"/>
+            <ShipDesignReference Name="MFPrimitiveSmallAttackStrong"/>
+            <ShipDesignReference Name="MFInsectoidSmallAttackStrong"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense03"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFPrimitiveSmallAttackAvg"/>
+            <ShipDesignReference Name="MFPiratesSmallAttackStrong"/>
+            <ShipDesignReference Name="MFInsectoidSmallAttackStrong"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense03"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFInsectoidSmallAttackAvg"/>
+            <ShipDesignReference Name="MFPiratesSmallAttackStrong"/>
+            <ShipDesignReference Name="MFAdvancedSmallAttackStrong"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense03"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFPiratesSmallAttackAvg"/>
+            <ShipDesignReference Name="MFAdvancedSmallAttackStrong"/>
+            <ShipDesignReference Name="MFPrimitiveSmallAttackStrong"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense03"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetMissionDefinitionReference Name="RoamAndAttack"/>
+        
+        <!--Loot awarded for destroying a Lair at PP2-->
+        <Droplist Picks="1">
+            <DroppableResource Name="EmpireMoney"    Quantity="600"  Weight="3"/> <!--300 * PiratePower-->
+            <DroppableResource Name="Strategic1"     Quantity="20"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Strategic2"     Quantity="20"   Weight="3"/> <!--10  * PiratePower-->
+            
+            <DroppableResource Name="Luxury1"        Quantity="20"   Weight="1"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury2"        Quantity="20"   Weight="1"/>
+            <DroppableResource Name="Luxury3"        Quantity="20"   Weight="1"/>
+            <DroppableResource Name="Luxury4"        Quantity="20"   Weight="1"/>
+            <DroppableResource Name="Luxury5"        Quantity="20"   Weight="1"/>
+            <DroppableResource Name="Luxury6"        Quantity="20"   Weight="1"/>
+            <DroppableResource Name="Luxury7"        Quantity="20"   Weight="1"/>
+            <DroppableResource Name="Luxury8"        Quantity="20"   Weight="1"/>
+        </Droplist>
+        
+    </PiratePowerLevelDefinition>
+
+    <!-- HARD - PIRATE POWER 3 -->
+    <PiratePowerLevelDefinition Name="PiratePowerLevelHard3" PowerLevel="3" Difficulty="Hard" MinimumPowerPointsStock="175">
+        <SimulationDescriptorReference Name="PiratePowerLevel3Effect"/>
+        <SimulationDescriptorReference Name="PirateDifficultyHard"/>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFPiratesSmallAttackStrong"/>
+            <ShipDesignReference Name="MFAdvancedSmallAttackStrong"/>
+            <ShipDesignReference Name="MFPrimitiveMediumAttackAvg"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense03"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <ShipDesignReference Name="MFPiratesSmallAttackStrong"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFAdvancedSmallAttackStrong"/>
+            <ShipDesignReference Name="MFPrimitiveSmallAttackStrong"/>
+            <ShipDesignReference Name="MFInsectoidMediumAttackAvg"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense03"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <ShipDesignReference Name="MFAdvancedSmallAttackStrong"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFPrimitiveSmallAttackStrong"/>
+            <ShipDesignReference Name="MFInsectoidSmallAttackStrong"/>
+            <ShipDesignReference Name="MFPiratesMediumAttackAvg"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense03"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <ShipDesignReference Name="MFPrimitiveSmallAttackStrong"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFInsectoidSmallAttackStrong"/>
+            <ShipDesignReference Name="MFPiratesSmallAttackStrong"/>
+            <ShipDesignReference Name="MFAdvancedMediumAttackAvg"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense03"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <ShipDesignReference Name="MFInsectoidSmallAttackStrong"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <ShipDesignReference Name="MFInsectoidSmallAttackStrong"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetMissionDefinitionReference Name="RoamAndBlockade"/>
+        
+    <!--Loot awarded for destroying a Lair at PP3-->
+        <Droplist Picks="2"> <!--Pick 2 items from the list-->
+            <DroppableResource Name="EmpireMoney"    Quantity="900"  Weight="6"/> <!--300 * PiratePower-->
+            <DroppableResource Name="Strategic1"     Quantity="30"   Weight="6"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Strategic2"     Quantity="30"   Weight="6"/> <!--10  * PiratePower-->
+
+            <DroppableResource Name="Strategic3"     Quantity="15"   Weight="4"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Strategic4"     Quantity="15"   Weight="4"/> <!--5   * PiratePower-->
+
+            <DroppableResource Name="Luxury1"        Quantity="30"   Weight="2"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury2"        Quantity="30"   Weight="2"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury3"        Quantity="30"   Weight="2"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury4"        Quantity="30"   Weight="2"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury5"        Quantity="30"   Weight="2"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury6"        Quantity="30"   Weight="2"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury7"        Quantity="30"   Weight="2"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury8"        Quantity="30"   Weight="2"/> <!--10  * PiratePower-->
+
+            <DroppableResource Name="Luxury9"        Quantity="15"   Weight="1"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury10"       Quantity="15"   Weight="1"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury11"       Quantity="15"   Weight="1"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury12"       Quantity="15"   Weight="1"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury13"       Quantity="15"   Weight="1"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury14"       Quantity="15"   Weight="1"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury15"       Quantity="15"   Weight="1"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury16"       Quantity="15"   Weight="1"/> <!--5   * PiratePower-->
+        </Droplist>    
+    
+    </PiratePowerLevelDefinition>
+
+    <!-- HARD - PIRATE POWER 4 -->
+    <PiratePowerLevelDefinition Name="PiratePowerLevelHard4" PowerLevel="4" Difficulty="Hard" MinimumPowerPointsStock="375">
+        <SimulationDescriptorReference Name="PiratePowerLevel4Effect"/>
+        <SimulationDescriptorReference Name="PirateDifficultyHard"/>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFPiratesSmallAttackStrong"/>
+            <ShipDesignReference Name="MFAdvancedSmallAttackStrong"/>
+            <ShipDesignReference Name="MFPrimitiveMediumAttackAvg"/>
+            <ShipDesignReference Name="MFInsectoidMediumAttackStrong"/>
+            <Reinforcement Cost="33">
+                <ShipDesignReference Name="MFPiratesSmallAttackStrong"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage03"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFAdvancedSmallAttackStrong"/>
+            <ShipDesignReference Name="MFPrimitiveSmallAttackStrong"/>
+            <ShipDesignReference Name="MFInsectoidMediumAttackAvg"/>
+            <ShipDesignReference Name="MFPiratesMediumAttackStrong"/>
+            <Reinforcement Cost="33">
+                <ShipDesignReference Name="MFAdvancedSmallAttackStrong"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage03"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFPrimitiveSmallAttackStrong"/>
+            <ShipDesignReference Name="MFInsectoidSmallAttackStrong"/>
+            <ShipDesignReference Name="MFPiratesMediumAttackAvg"/>
+            <ShipDesignReference Name="MFAdvancedMediumAttackStrong"/>
+            <Reinforcement Cost="33">
+                <ShipDesignReference Name="MFPrimitiveSmallAttackStrong"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage03"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFInsectoidSmallAttackStrong"/>
+            <ShipDesignReference Name="MFPiratesSmallAttackStrong"/>
+            <ShipDesignReference Name="MFAdvancedMediumAttackAvg"/>
+            <ShipDesignReference Name="MFPrimitiveMediumAttackStrong"/>
+            <Reinforcement Cost="33">
+                <ShipDesignReference Name="MFInsectoidSmallAttackStrong"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage03"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetMissionDefinitionReference Name="RoamAndBlockade"/>
+        
+        <!--Loot awarded for destroying a Lair at PP4-->
+        <Droplist Picks="2"> <!--Pick 2 items from the list-->
+            <DroppableResource Name="EmpireMoney"    Quantity="1200"  Weight="9"/> <!--300 * PiratePower-->
+            <DroppableResource Name="Strategic1"     Quantity="40"   Weight="9"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Strategic2"     Quantity="40"   Weight="9"/> <!--10  * PiratePower-->
+
+            <DroppableResource Name="Strategic3"     Quantity="20"   Weight="6"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Strategic4"     Quantity="20"   Weight="6"/> <!--5   * PiratePower-->
+            
+            <DroppableResource Name="Strategic3"     Quantity="8"   Weight="4"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Strategic4"     Quantity="8"   Weight="4"/> <!--2    * PiratePower-->
+
+            <DroppableResource Name="Luxury1"        Quantity="40"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury2"        Quantity="40"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury3"        Quantity="40"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury4"        Quantity="40"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury5"        Quantity="40"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury6"        Quantity="40"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury7"        Quantity="40"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury8"        Quantity="40"   Weight="3"/> <!--10  * PiratePower-->
+
+            <DroppableResource Name="Luxury9"        Quantity="20"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury10"       Quantity="20"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury11"       Quantity="20"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury12"       Quantity="20"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury13"       Quantity="20"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury14"       Quantity="20"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury15"       Quantity="20"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury16"       Quantity="20"   Weight="2"/> <!--5   * PiratePower-->
+
+            <DroppableResource Name="Luxury17"       Quantity="8"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury18"       Quantity="8"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury19"       Quantity="8"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury20"       Quantity="8"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury21"       Quantity="8"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury22"       Quantity="8"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury23"       Quantity="8"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury24"       Quantity="8"   Weight="1"/> <!--2    * PiratePower-->
+        </Droplist>
+        
+    </PiratePowerLevelDefinition>
+
+    <!-- HARD - PIRATE POWER 5 -->
+    <PiratePowerLevelDefinition Name="PiratePowerLevelHard5" PowerLevel="5" Difficulty="Hard" MinimumPowerPointsStock="675">
+        <SimulationDescriptorReference Name="PiratePowerLevel5Effect"/>
+        <SimulationDescriptorReference Name="PirateDifficultyHard"/>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFAdvancedSmallAttackStrong"/>
+            <ShipDesignReference Name="MFPrimitiveSmallAttackStrong"/>
+            <ShipDesignReference Name="MFInsectoidMediumAttackStrong"/>
+            <ShipDesignReference Name="MFPiratesMediumAttackStrong"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage03"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <ShipDesignReference Name="MFPiratesMediumAttackStrong"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFPrimitiveSmallAttackStrong"/>
+            <ShipDesignReference Name="MFInsectoidSmallAttackStrong"/>
+            <ShipDesignReference Name="MFPiratesMediumAttackStrong"/>
+            <ShipDesignReference Name="MFAdvancedMediumAttackStrong"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage03"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <ShipDesignReference Name="MFAdvancedMediumAttackStrong"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFInsectoidSmallAttackStrong"/>
+            <ShipDesignReference Name="MFPiratesSmallAttackStrong"/>
+            <ShipDesignReference Name="MFAdvancedMediumAttackStrong"/>
+            <ShipDesignReference Name="MFPrimitiveMediumAttackStrong"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage03"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <ShipDesignReference Name="MFPrimitiveMediumAttackStrong"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetSpawn Weight="1">
+            <ShipDesignReference Name="MFPiratesSmallAttackStrong"/>
+            <ShipDesignReference Name="MFAdvancedSmallAttackStrong"/>
+            <ShipDesignReference Name="MFPrimitiveMediumAttackStrong"/>
+            <ShipDesignReference Name="MFInsectoidMediumAttackStrong"/>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedSpeed03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense03"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage03"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+            <Reinforcement Cost="33">
+                <ShipDesignReference Name="MFInsectoidMediumAttackStrong"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
+                <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
+            </Reinforcement>
+        </FleetSpawn>
+        <FleetMissionDefinitionReference Name="RoamAndInvade"/>
+        
+                <!--Loot awarded for destroying a Lair at PP5-->
+        <Droplist Picks="3"> <!--Pick 3 items from the list-->
+            <DroppableResource Name="EmpireMoney"    Quantity="1500"  Weight="9"/> <!--300 * PiratePower-->
+            <DroppableResource Name="Strategic1"     Quantity="50"   Weight="9"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Strategic2"     Quantity="50"   Weight="9"/> <!--10  * PiratePower-->
+
+            <DroppableResource Name="Strategic3"     Quantity="25"   Weight="6"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Strategic4"     Quantity="25"   Weight="6"/> <!--5   * PiratePower-->
+            
+            <DroppableResource Name="Strategic3"     Quantity="10"   Weight="4"/> <!--2   * PiratePower-->
+            <DroppableResource Name="Strategic4"     Quantity="10"   Weight="4"/> <!--2   * PiratePower-->
+
+            <DroppableResource Name="Luxury1"        Quantity="50"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury2"        Quantity="50"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury3"        Quantity="50"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury4"        Quantity="50"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury5"        Quantity="50"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury6"        Quantity="50"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury7"        Quantity="50"   Weight="3"/> <!--10  * PiratePower-->
+            <DroppableResource Name="Luxury8"        Quantity="50"   Weight="3"/> <!--10  * PiratePower-->
+
+            <DroppableResource Name="Luxury9"        Quantity="25"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury10"       Quantity="25"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury11"       Quantity="25"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury12"       Quantity="25"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury13"       Quantity="25"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury14"       Quantity="25"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury15"       Quantity="25"   Weight="2"/> <!--5   * PiratePower-->
+            <DroppableResource Name="Luxury16"       Quantity="25"   Weight="2"/> <!--5   * PiratePower-->
+
+            <DroppableResource Name="Luxury17"       Quantity="10"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury18"       Quantity="10"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury19"       Quantity="10"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury20"       Quantity="10"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury21"       Quantity="10"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury22"       Quantity="10"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury23"       Quantity="10"   Weight="1"/> <!--2    * PiratePower-->
+            <DroppableResource Name="Luxury24"       Quantity="10"   Weight="1"/> <!--2    * PiratePower-->
+            </Droplist>
+        
+    </PiratePowerLevelDefinition>
+
+</Datatable>
