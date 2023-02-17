@@ -935,32 +935,32 @@
 	  <!-- ########################################################################### -->
       <!-- STAGE 1 -->
       <SimulationDescriptor Name="StarSystemImprovementUpkeepStage1Weak" Type="StarSystemImprovementUpkeep">
-          <Property Name="SystemMoneyUpkeep" BaseValue="2"/>
-      </SimulationDescriptor>
-
-      <SimulationDescriptor Name="StarSystemImprovementUpkeepStage1Normal" Type="StarSystemImprovementUpkeep">
           <Property Name="SystemMoneyUpkeep" BaseValue="4"/>
       </SimulationDescriptor>
 
-      <SimulationDescriptor Name="StarSystemImprovementUpkeepStage1High" Type="StarSystemImprovementUpkeep">
+      <SimulationDescriptor Name="StarSystemImprovementUpkeepStage1Normal" Type="StarSystemImprovementUpkeep">
           <Property Name="SystemMoneyUpkeep" BaseValue="8"/>
       </SimulationDescriptor>
 
+      <SimulationDescriptor Name="StarSystemImprovementUpkeepStage1High" Type="StarSystemImprovementUpkeep">
+          <Property Name="SystemMoneyUpkeep" BaseValue="16"/>
+      </SimulationDescriptor>
+
       <SimulationDescriptor Name="StarSystemImprovementUpkeepStage1Extreme" Type="StarSystemImprovementUpkeep">
-          <Property Name="SystemMoneyUpkeep" BaseValue="32"/>
+          <Property Name="SystemMoneyUpkeep" BaseValue="64"/>
       </SimulationDescriptor>
 
 	  <!-- STAGE 2 -->
 	  <SimulationDescriptor Name="StarSystemImprovementUpkeepStage2Weak" Type="StarSystemImprovementUpkeep">
-		  <Property Name="SystemMoneyUpkeep" BaseValue="4"/>
-	  </SimulationDescriptor>
-
-	  <SimulationDescriptor Name="StarSystemImprovementUpkeepStage2Normal" Type="StarSystemImprovementUpkeep">
 		  <Property Name="SystemMoneyUpkeep" BaseValue="8"/>
 	  </SimulationDescriptor>
 
-	  <SimulationDescriptor Name="StarSystemImprovementUpkeepStage2High" Type="StarSystemImprovementUpkeep">
+	  <SimulationDescriptor Name="StarSystemImprovementUpkeepStage2Normal" Type="StarSystemImprovementUpkeep">
 		  <Property Name="SystemMoneyUpkeep" BaseValue="16"/>
+	  </SimulationDescriptor>
+
+	  <SimulationDescriptor Name="StarSystemImprovementUpkeepStage2High" Type="StarSystemImprovementUpkeep">
+		  <Property Name="SystemMoneyUpkeep" BaseValue="32"/>
 	  </SimulationDescriptor>
 
 	  <SimulationDescriptor Name="StarSystemImprovementUpkeepStage2Extreme" Type="StarSystemImprovementUpkeep">
@@ -969,53 +969,53 @@
 
 	  <!-- STAGE 3 -->
 	  <SimulationDescriptor Name="StarSystemImprovementUpkeepStage3Weak" Type="StarSystemImprovementUpkeep">
-		  <Property Name="SystemMoneyUpkeep" BaseValue="8"/>
-	  </SimulationDescriptor>
-
-	  <SimulationDescriptor Name="StarSystemImprovementUpkeepStage3Normal" Type="StarSystemImprovementUpkeep">
 		  <Property Name="SystemMoneyUpkeep" BaseValue="16"/>
 	  </SimulationDescriptor>
 
-	  <SimulationDescriptor Name="StarSystemImprovementUpkeepStage3High" Type="StarSystemImprovementUpkeep">
+	  <SimulationDescriptor Name="StarSystemImprovementUpkeepStage3Normal" Type="StarSystemImprovementUpkeep">
 		  <Property Name="SystemMoneyUpkeep" BaseValue="32"/>
 	  </SimulationDescriptor>
 
+	  <SimulationDescriptor Name="StarSystemImprovementUpkeepStage3High" Type="StarSystemImprovementUpkeep">
+		  <Property Name="SystemMoneyUpkeep" BaseValue="64"/>
+	  </SimulationDescriptor>
+
 	  <SimulationDescriptor Name="StarSystemImprovementUpkeepStage3Extreme" Type="StarSystemImprovementUpkeep">
-		  <Property Name="SystemMoneyUpkeep" BaseValue="128"/>
+		  <Property Name="SystemMoneyUpkeep" BaseValue="256"/>
 	  </SimulationDescriptor>
 	
 	  <!-- STAGE 4 -->
 	  <SimulationDescriptor Name="StarSystemImprovementUpkeepStage4Weak" Type="StarSystemImprovementUpkeep">
-		  <Property Name="SystemMoneyUpkeep" BaseValue="32"/>
-	  </SimulationDescriptor>
-
-	  <SimulationDescriptor Name="StarSystemImprovementUpkeepStage4Normal" Type="StarSystemImprovementUpkeep">
 		  <Property Name="SystemMoneyUpkeep" BaseValue="64"/>
 	  </SimulationDescriptor>
 
-	  <SimulationDescriptor Name="StarSystemImprovementUpkeepStage4High" Type="StarSystemImprovementUpkeep">
+	  <SimulationDescriptor Name="StarSystemImprovementUpkeepStage4Normal" Type="StarSystemImprovementUpkeep">
 		  <Property Name="SystemMoneyUpkeep" BaseValue="128"/>
 	  </SimulationDescriptor>
 
-	  <SimulationDescriptor Name="StarSystemImprovementUpkeepStage4Extreme" Type="StarSystemImprovementUpkeep">
+	  <SimulationDescriptor Name="StarSystemImprovementUpkeepStage4High" Type="StarSystemImprovementUpkeep">
 		  <Property Name="SystemMoneyUpkeep" BaseValue="256"/>
+	  </SimulationDescriptor>
+
+	  <SimulationDescriptor Name="StarSystemImprovementUpkeepStage4Extreme" Type="StarSystemImprovementUpkeep">
+		  <Property Name="SystemMoneyUpkeep" BaseValue="526"/>
 	  </SimulationDescriptor>
 
 	  <!-- STAGE 5 -->
 	  <SimulationDescriptor Name="StarSystemImprovementUpkeepStage5Weak" Type="StarSystemImprovementUpkeep">
-		  <Property Name="SystemMoneyUpkeep" BaseValue="64"/>
-	  </SimulationDescriptor>
-
-	  <SimulationDescriptor Name="StarSystemImprovementUpkeepStage5Normal" Type="StarSystemImprovementUpkeep">
 		  <Property Name="SystemMoneyUpkeep" BaseValue="128"/>
 	  </SimulationDescriptor>
 
-	  <SimulationDescriptor Name="StarSystemImprovementUpkeepStage5High" Type="StarSystemImprovementUpkeep">
+	  <SimulationDescriptor Name="StarSystemImprovementUpkeepStage5Normal" Type="StarSystemImprovementUpkeep">
 		  <Property Name="SystemMoneyUpkeep" BaseValue="256"/>
 	  </SimulationDescriptor>
 
+	  <SimulationDescriptor Name="StarSystemImprovementUpkeepStage5High" Type="StarSystemImprovementUpkeep">
+		  <Property Name="SystemMoneyUpkeep" BaseValue="526"/>
+	  </SimulationDescriptor>
+
 	  <SimulationDescriptor Name="StarSystemImprovementUpkeepStage5Extreme" Type="StarSystemImprovementUpkeep">
-		  <Property Name="SystemMoneyUpkeep" BaseValue="512"/>
+		  <Property Name="SystemMoneyUpkeep" BaseValue="1024"/>
 	  </SimulationDescriptor>
 
   <!-- ################################################################################ -->
