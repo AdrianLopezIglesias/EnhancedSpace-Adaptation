@@ -1165,13 +1165,18 @@
   
   <SimulationDescriptor Name="StarSystemImprovementPropagandaPolitics02" Type="StarSystemImprovement">
       <Modifier TargetProperty="NetSystemProduction"  Operation="Multiplication"  Value="0"       Path="ClassColonizedStarSystem"/>
+      <Modifier TargetProperty="SystemMoney"          Operation="Multiplication"  Value="0.85"       Path="ClassColonizedStarSystem"/>
+      <Modifier TargetProperty="SystemGrowth"         Operation="Multiplication"  Value="0.85"       Path="ClassColonizedStarSystem"/>
       <Modifier TargetProperty="SystemResearch"       Operation="Percent"         Value="0.15"    Path="ClassColonizedStarSystem"/>
+      <BinaryModifier TargetProperty="SystemResearch"     Operation="Addition" Left="5" BinaryOperation="Multiplication" Right="$(Population)"  Path="ClassColonizedStarSystem"/>
       <Modifier TargetProperty="NetPolitics02ElectionScore" Operation="Addition"  Value="0.1"     Path="../ClassEmpire/ClassSenate" TooltipHidden="true"/>
   </SimulationDescriptor>
   
   <SimulationDescriptor Name="StarSystemImprovementPropagandaPolitics03" Type="StarSystemImprovement">
-      <Modifier TargetProperty="NetSystemProduction"  Operation="Multiplication" Value="0"        Path="ClassColonizedStarSystem"/>
-      <Modifier TargetProperty="SystemEmpirePoint"          Operation="Percent"         Value="0.15"    Path="ClassColonizedStarSystem"/>
+      <Modifier TargetProperty="NetSystemProduction"  Operation="Multiplication"  Value="0"        Path="ClassColonizedStarSystem"/>
+      <Modifier TargetProperty="SystemEmpirePoint"          Operation="Percent"   Value="0.15"    Path="ClassColonizedStarSystem"/>
+      <BinaryModifier TargetProperty="SystemEmpirePoint"    Operation="Addition"  Left="6" BinaryOperation="Multiplication" Right="$(Population)"  Path="ClassColonizedStarSystem"/>
+      <Modifier TargetProperty="SystemMoney"                Operation="Percent"   Value="0.05"    Path="ClassColonizedStarSystem"/>
       <Modifier TargetProperty="NetPolitics03ElectionScore" Operation="Addition"  Value="0.1"     Path="../ClassEmpire/ClassSenate" TooltipHidden="true"/>
   </SimulationDescriptor>
   
@@ -1186,7 +1191,9 @@
   
   <SimulationDescriptor Name="StarSystemImprovementPropagandaPolitics05" Type="StarSystemImprovement">
       <Modifier TargetProperty="NetSystemProduction"  Operation="Multiplication"  Value="0"       Path="ClassColonizedStarSystem"/>
-      <Modifier TargetProperty="SystemMoney"    Operation="Percent"         Value="0.15"    Path="ClassColonizedStarSystem"/>
+      <Modifier TargetProperty="SystemMoney"    Operation="Percent"         Value="0.4"    Path="ClassColonizedStarSystem"/>
+      <Modifier TargetProperty="SystemGrowth"         Operation="Multiplication"  Value="0.85"       Path="ClassColonizedStarSystem"/>
+      <Modifier TargetProperty="SystemResearch"         Operation="Multiplication"  Value="0.65"       Path="ClassColonizedStarSystem"/>
       <Modifier TargetProperty="NetPolitics05ElectionScore" Operation="Addition"  Value="0.1"     Path="../ClassEmpire/ClassSenate" TooltipHidden="true"/>
   </SimulationDescriptor>
   
