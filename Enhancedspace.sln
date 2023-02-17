@@ -407,6 +407,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Simulation", "Simulation", 
 		Simulation\SimulationDescriptors[Migration].xml = Simulation\SimulationDescriptors[Migration].xml
 		Simulation\SimulationDescriptors[MinorRelation].xml = Simulation\SimulationDescriptors[MinorRelation].xml
 		Simulation\SimulationDescriptors[mod].xml = Simulation\SimulationDescriptors[mod].xml
+		Simulation\SimulationDescriptors[Pirates].xml = Simulation\SimulationDescriptors[Pirates].xml
 		Simulation\SimulationDescriptors[Planet].xml = Simulation\SimulationDescriptors[Planet].xml
 		Simulation\SimulationDescriptors[Planet_Update5].xml = Simulation\SimulationDescriptors[Planet_Update5].xml
 		Simulation\SimulationDescriptors[PlanetaryImprovement].xml = Simulation\SimulationDescriptors[PlanetaryImprovement].xml

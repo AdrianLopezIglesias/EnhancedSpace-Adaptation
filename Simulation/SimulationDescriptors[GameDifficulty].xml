@@ -304,4 +304,28 @@
       <Modifier TargetProperty="DifficultyLevel"          Operation="Force"           Value="6"   Path="ClassEmpire" />
       <Modifier TargetProperty="NetMinorStress"           Operation="Multiplication"  Value="1.4" Path="ClassEmpire,EmpireTypeMinor"   Priority="2"/>
    </SimulationDescriptor>
+
+<!--PIRATE DIFFICULTY-->
+  <!--Easy-->
+  <SimulationDescriptor Name="PirateDifficultyEasy" Type="PirateDifficulty">
+    <Modifier TargetProperty="PirateDifficultyMultiplier" Operation="Force" Value="0.38" Path="ClassEmpire"/>
+    <Modifier TargetProperty="MaximumPirateFleetCount"    Operation="Force" Value="4"    Path="ClassEmpire/ClassPirateLair" Priority="2"/>
+    <Modifier TargetProperty="HackingSpeedPercentMultiplier"          Operation="Percent"        Value="-0.50"    Path="ClassEmpire,EmpireTypePirate" Priority="100"/>
+    <Modifier TargetProperty="NetTraceOperationProgress"              Operation="Percent"        Value="-0.50"    Path="ClassEmpire,EmpireTypePirate" Priority="100"/>
+  </SimulationDescriptor>
+
+  <!--Normal-->
+  <SimulationDescriptor Name="PirateDifficultyNormal" Type="PirateDifficulty">
+    <Modifier TargetProperty="PirateDifficultyMultiplier" Operation="Force" Value="0.42" Path="ClassEmpire"/>
+    <Modifier TargetProperty="MaximumPirateFleetCount"    Operation="Force" Value="8"    Path="ClassEmpire/ClassPirateLair" Priority="2"/>
+    <Modifier TargetProperty="HackingSpeedPercentMultiplier"          Operation="Percent"        Value="-0.25"    Path="ClassEmpire,EmpireTypePirate" Priority="100"/>
+    <Modifier TargetProperty="NetTraceOperationProgress"              Operation="Percent"        Value="-0.25"    Path="ClassEmpire,EmpireTypePirate" Priority="100"/>
+  </SimulationDescriptor>
+
+  <!--Hard-->
+  <SimulationDescriptor Name="PirateDifficultyHard" Type="PirateDifficulty">
+    <Modifier TargetProperty="PirateDifficultyMultiplier" Operation="Force" Value="0.46" Path="ClassEmpire"/>
+    <Modifier TargetProperty="MaximumPirateFleetCount"    Operation="Force" Value="12"    Path="ClassEmpire/ClassPirateLair" Priority="2"/>
+  </SimulationDescriptor>
+
 </Datatable>
