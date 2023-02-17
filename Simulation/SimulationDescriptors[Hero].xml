@@ -66,7 +66,8 @@
        
         <!-- MODDED Calculate upkeep  -->
         <BinaryModifier TargetProperty="Upkeep_rounded" Operation="Multiplication" Left="$(Level)" BinaryOperation="Power" Right="1.5" Priority="-3" Path="ClassHero"/>
-        <BinaryModifier TargetProperty="Upkeep"         Operation="Addition"       Left="$(Upkeep_rounded)" BinaryOperation="Multiplication" Right="10" Priority="-2" Path="ClassHero"/>
+        <BinaryModifier TargetProperty="Upkeep"         Operation="Addition"       Left="$(Upkeep_rounded)" BinaryOperation="Multiplication" Right="5" Priority="-2" Path="ClassHero"/>
+        <Modifier TargetProperty="Upkeep"         Operation="Addition"       Value="20" />
        
         <!-- Calculate upkeep : HeroUpkeep = 0 + (Level - 1) * (Level / 4) + (2 * Level) + (skillPointsUsed) -->
         <!--<BinaryModifier TargetProperty="Upkeep" Operation="Addition" Left="$(Level)" BinaryOperation="Subtraction" Right="1" Priority="-3" Path="ClassHero"/>
