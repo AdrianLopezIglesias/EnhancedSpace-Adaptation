@@ -10,7 +10,7 @@
         <!--Added cap on cost reduction and quadrant multipliers-->
         <!--Added galaxy size modifier on science inflation-->
 
-        <Property Name="TechnologyCurrentCostPower" BaseValue="1.05"/>
+        <Property Name="TechnologyCurrentCostPower" BaseValue="1.2"/>
         
         <!--END OF MOD CHANGES-->
 
@@ -155,7 +155,7 @@
         <Modifier       TargetProperty="TechnologyCurrentCost"   Operation="Addition"       Value="15"                                                                  Priority="2"/>
         <Modifier       TargetProperty="TechnologyCurrentCost"   Operation="Multiplication" Value="2"                                                                   Priority="2"/>
 
-        <BinaryModifier TargetProperty="TechnologyCurrentCostPower" Operation="Addition"    Left="$(GalaxySize)" BinaryOperation="Division" Right="20"                  Priority="2"/>
+        <!-- <BinaryModifier TargetProperty="TechnologyCurrentCostPower" Operation="Addition"    Left="$(GalaxySize)" BinaryOperation="Division" Right="20"                  Priority="2"/> -->
       
         <Modifier       TargetProperty="TechnologyCurrentCost"   Operation="Power"          Value="$(TechnologyCurrentCostPower)"                                       Priority="2"/>
         <Modifier       TargetProperty="TechnologyCurrentCost"   Operation="Multiplication" Value="$(TechnologyCostModifier)"                                           Priority="3"/>
