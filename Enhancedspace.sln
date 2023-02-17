@@ -334,6 +334,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Simulation", "Simulation", 
 		Simulation\EntityActions[DLC2].xml = Simulation\EntityActions[DLC2].xml
 		Simulation\EntityActions[DLC3].xml = Simulation\EntityActions[DLC3].xml
 		Simulation\EntityActions[Minor].xml = Simulation\EntityActions[Minor].xml
+		Simulation\EntityActions[Pirate].xml = Simulation\EntityActions[Pirate].xml
 		Simulation\EntityActions[System].xml = Simulation\EntityActions[System].xml
 		Simulation\Factions[Major].xml = Simulation\Factions[Major].xml
 		Simulation\FactionTraits[Affinity].xml = Simulation\FactionTraits[Affinity].xml
