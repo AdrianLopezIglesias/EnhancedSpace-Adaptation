@@ -57,7 +57,7 @@
 
 	<!-- Assimilate -->
 	<AssimilateEmpireAction Name="AssimilateEmpireAction">
-		<CustomCost ResourceName="EmpireEmpirePoint" Instant="true">(1500 + 750 * Property(StockLocation,@ClassEmpire,SystemCount)) * Property(StockLocation,@ClassEmpire,DiplomacyCostReduction) * Property(StockLocation,@ClassEmpire,PeacefulTreatyCostReduction)</CustomCost>
+		<CustomCost ResourceName="EmpireEmpirePoint" Instant="true">(1500 + 750  * Property(StockLocation,@ClassEmpire,DiplomacyCostReduction) * Property(StockLocation,@ClassEmpire,PeacefulTreatyCostReduction)</CustomCost>
 
 		<PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">ClassEmpire,AffinityVampirilis</PathPrerequisite>
 		<PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">ClassEmpire,AffinityUnfallen</PathPrerequisite>
@@ -79,7 +79,7 @@
 	</AssimilateEmpireAction>
 	
 	<AssimilateEmpireAction Name="AssimilateUnfallenEmpireAction">
-		<CustomCost ResourceName="EmpireEmpirePoint" Instant="true">(1500 + 750 * Property(StockLocation,@ClassEmpire,SystemCount)) * Property(StockLocation,@ClassEmpire,DiplomacyCostReduction) * Property(StockLocation,@ClassEmpire,PeacefulTreatyCostReduction)</CustomCost>
+		<CustomCost ResourceName="EmpireEmpirePoint" Instant="true">(1500 + 750  * Property(StockLocation,@ClassEmpire,DiplomacyCostReduction) * Property(StockLocation,@ClassEmpire,PeacefulTreatyCostReduction)</CustomCost>
 
 		<PathPrerequisite Flags="Prerequisite,Discard">ClassEmpire,AffinityGameplayUnfallen</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,FactionTraitEternalWar" Inverted="true">ClassEmpire,FactionTraitEternalWar/ClassSenate/ClassSenator,Politics06</PathPrerequisite>
@@ -100,7 +100,7 @@
 
 	<!-- Vampirilis Brainwash -->
 	<CreateAllianceEmpireAction Name="CreateAllianceEmpireAction" ResultingDiplomaticRelationState="DiplomaticRelationStateMinorAdvancedBrainwashed">
-		<CustomCost ResourceName="EmpireEmpirePoint" Instant="true">(1500 + 750 * Property(StockLocation,@ClassEmpire,SystemCount)) * Property(StockLocation,@ClassEmpire,DiplomacyCostReduction) * Property(StockLocation,@ClassEmpire,PeacefulTreatyCostReduction)</CustomCost>
+		<CustomCost ResourceName="EmpireEmpirePoint" Instant="true">(1500 + 750  * Property(StockLocation,@ClassEmpire,DiplomacyCostReduction) * Property(StockLocation,@ClassEmpire,PeacefulTreatyCostReduction)</CustomCost>
 
 		<PathPrerequisite Flags="Prerequisite,Discard" >ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,FactionTraitEternalWar" Inverted="true">ClassEmpire,FactionTraitEternalWar/ClassSenate/ClassSenator,Politics06</PathPrerequisite>
@@ -140,7 +140,7 @@
 
 	<!-- Quest -->
 	<AskForMinorQuestEmpireActionDefinition Name="AskForMinorQuestEmpireAction">
-		<CustomCost ResourceName="EmpireMoney" Instant="true">(1500 + 750 * Property(StockLocation,@ClassEmpire,SystemCount)) * Property(StockLocation,@ClassEmpire,DiplomacyCostReduction) * Property(Relation,MinorQuestCostMultiplier) * Property(StockLocation,@ClassEmpire,PeacefulTreatyCostReduction) * Property(StockLocation, @ClassEmpire, DustInflation)</CustomCost>
+		<CustomCost ResourceName="EmpireMoney" Instant="true">(1500 + 750  * Property(StockLocation,@ClassEmpire,DiplomacyCostReduction) * Property(Relation,MinorQuestCostMultiplier) * Property(StockLocation,@ClassEmpire,PeacefulTreatyCostReduction) * Property(StockLocation, @ClassEmpire, DustInflation)</CustomCost>
 
 		<PathPrerequisite Flags="Prerequisite,Discard" Inverted="true">ClassEmpire,AffinityGameplayUnfallen</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,FactionTraitEternalWar" Inverted="true">ClassEmpire,FactionTraitEternalWar/ClassSenate/ClassSenator,Politics06</PathPrerequisite>
@@ -158,7 +158,7 @@
 
 	<!-- Quest -->
 	<AskForMinorQuestEmpireActionDefinition Name="AskForMinorQuestUnfallenEmpireAction">
-    <CustomCost ResourceName="EmpireMoney" Instant="true">(1500 + 750 * Property(StockLocation,@ClassEmpire,SystemCount)) * Property(StockLocation,@ClassEmpire,DiplomacyCostReduction) * Property(Relation,MinorQuestCostMultiplier) * Property(StockLocation,@ClassEmpire,PeacefulTreatyCostReduction) * Property(StockLocation, @ClassEmpire, DustInflation)</CustomCost>
+    <CustomCost ResourceName="EmpireMoney" Instant="true">(1500 + 750  * Property(StockLocation,@ClassEmpire,DiplomacyCostReduction) * Property(Relation,MinorQuestCostMultiplier) * Property(StockLocation,@ClassEmpire,PeacefulTreatyCostReduction) * Property(StockLocation, @ClassEmpire, DustInflation)</CustomCost>
 
 		<PathPrerequisite Flags="Prerequisite,Discard">ClassEmpire,AffinityGameplayUnfallen</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,FactionTraitEternalWar" Inverted="true">ClassEmpire,FactionTraitEternalWar/ClassSenate/ClassSenator,Politics06</PathPrerequisite>
@@ -207,7 +207,7 @@
 	<!-- ####################################################### -->
 
 	<EmpireDiplomaticMigrationAction Name="EmpireDiplomaticMigrationAction" HidePanelOnClick="true" PopulationCount="1">
-      <CustomCost ResourceName="EmpireMoney" Instant="true">(500 + 500 * Property(StockLocation,@ClassEmpire,SystemCount)) * Property(StockLocation,@ClassEmpire,DiplomacyCostReduction) * Property(StockLocation,@ClassEmpire,PeacefulTreatyCostReduction) * Property(StockLocation, @ClassEmpire, DustInflation)</CustomCost>
+      <CustomCost ResourceName="EmpireMoney" Instant="true">(500 + 500  * Property(StockLocation,@ClassEmpire,DiplomacyCostReduction) * Property(StockLocation,@ClassEmpire,PeacefulTreatyCostReduction) * Property(StockLocation, @ClassEmpire, DustInflation)</CustomCost>
 		<PathPrerequisite Flags="Prerequisite,Discard" >ClassEmpire,!AffinityVampirilis</PathPrerequisite>
       <PathPrerequisite Flags="Prerequisite,Discard" >ClassEmpire,!AffinityUmbralChoir</PathPrerequisite>
       <InterpreterPrerequisite Flags="NoValidDestination">(SumProperty(Context, @'ClassEmpire/ClassColonizedStarSystem',MaximumPopulation) - Property(Context,@ClassEmpire,Population)) gt 0</InterpreterPrerequisite>
@@ -219,7 +219,7 @@
     </EmpireDiplomaticMigrationAction>
 
 	<EmpireDiplomacyGiveResourcesAction Name="EmpireDiplomaticEssenceAction" PopulationToDestroyCount="1">
-      <CustomCost ResourceName="EmpireMoney" Instant="true">(500 + 500 * Property(StockLocation,@ClassEmpire,SystemCount)) * Property(StockLocation,@ClassEmpire,DiplomacyCostReduction) * Property(StockLocation,@ClassEmpire,PeacefulTreatyCostReduction) * Property(StockLocation, @ClassEmpire, DustInflation)</CustomCost>
+      <CustomCost ResourceName="EmpireMoney" Instant="true">(500 + 500  * Property(StockLocation,@ClassEmpire,DiplomacyCostReduction) * Property(StockLocation,@ClassEmpire,PeacefulTreatyCostReduction) * Property(StockLocation, @ClassEmpire, DustInflation)</CustomCost>
 		<PathPrerequisite Flags="Prerequisite,Discard">ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
 		<InterpreterPrerequisite Flags="Disable">Property(Context,@ClassEmpire,EmpireLifeforceStock) lt Property(Context,@ClassEmpire,MaximumEmpireLifeforceStock)</InterpreterPrerequisite>
 		<StatePrerequisite Inverted="true" Flags="Prerequisite,Discard" Hidden="true" State="DiplomaticRelationStateMinorUnknown"/>
@@ -232,7 +232,7 @@
     </EmpireDiplomacyGiveResourcesAction>
 
 	<EmpireDiplomaticAbilityAction Name="EmpireDiplomaticAbilityAction" DiplomaticAbilityReference="SharedEmpireTraits" Duration="10" Flags="CancelOnWar">
-      <CustomCost ResourceName="EmpireMoney" Instant="true">(750 + 250 * Property(StockLocation,@ClassEmpire,SystemCount)) * Property(StockLocation,@ClassEmpire,DiplomacyCostReduction) * Property(StockLocation,@ClassEmpire,PeacefulTreatyCostReduction) * Property(StockLocation, @ClassEmpire, DustInflation)</CustomCost>
+      <CustomCost ResourceName="EmpireMoney" Instant="true">(750 + 250  * Property(StockLocation,@ClassEmpire,DiplomacyCostReduction) * Property(StockLocation,@ClassEmpire,PeacefulTreatyCostReduction) * Property(StockLocation, @ClassEmpire, DustInflation)</CustomCost>
 		<StatePrerequisite Inverted="true" Flags="Prerequisite,Discard" Hidden="true" State="DiplomaticRelationStateMinorUnknown"/>
 		<MinorEmpireInterpreterPrerequisite Flags="Prerequisite,RequiredBestRelation">$(OwnershipType) ge 1 and $(IsOwner) eq 1</MinorEmpireInterpreterPrerequisite>
 		<MinorEmpireInterpreterPrerequisite Flags="NoPopulationOnSystem">Property(Context, @'ClassEmpire/ClassColonizedStarSystem,MinorHomeSystem',Population) gt 1</MinorEmpireInterpreterPrerequisite>
@@ -243,7 +243,7 @@
 	</EmpireDiplomaticAbilityAction>
 
 	<EmpireDiplomaticGivePopulationAsShipAction Name="EmpireDiplomaticGivePopulationAsShipAction" HidePanelOnClick="true" PopulationCount="1" FleetCount="1">
-    <CustomCost ResourceName="EmpireMoney" Instant="true">(500 + 500 * Property(StockLocation,@ClassEmpire,SystemCount)) * Property(StockLocation,@ClassEmpire,DiplomacyCostReduction) * Property(StockLocation,@ClassEmpire,PeacefulTreatyCostReduction) * Property(StockLocation, @ClassEmpire, DustInflation)</CustomCost>
+    <CustomCost ResourceName="EmpireMoney" Instant="true">(500 + 500  * Property(StockLocation,@ClassEmpire,DiplomacyCostReduction) * Property(StockLocation,@ClassEmpire,PeacefulTreatyCostReduction) * Property(StockLocation, @ClassEmpire, DustInflation)</CustomCost>
 		<StatePrerequisite Inverted="true" Flags="Prerequisite,Discard" Hidden="true" State="DiplomaticRelationStateMinorUnknown"/>
 		<RelationPathPrerequisite Inverted="false" Flags="Prerequisite,Discard">ClassMinorRelationWithMajor,RelationIdeologyMinorWarmonger</RelationPathPrerequisite>
 		<MinorEmpireInterpreterPrerequisite Flags="Prerequisite,RequiredBestRelation">$(OwnershipType) ge 1 and $(IsOwner) eq 1</MinorEmpireInterpreterPrerequisite>
