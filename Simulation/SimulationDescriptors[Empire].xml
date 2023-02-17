@@ -404,7 +404,7 @@
 
         <!-- Game speed -->
         <Property Name="GameSpeedMultiplier"    BaseValue="1"/>
-        <Property Name="GameSpeedTrendMultiplier"    BaseValue="2"/>
+        <Property Name="GameSpeedTrendMultiplier"    BaseValue="1"/>
         <Property Name="GameSpeedTimeMultiplier" BaseValue="1"/>
         <Property Name="GameSpeedTimeModifier" BaseValue="1"/>
         <Property Name="GameSpeedProductionToMoneyMultiplier" BaseValue="1"/>
