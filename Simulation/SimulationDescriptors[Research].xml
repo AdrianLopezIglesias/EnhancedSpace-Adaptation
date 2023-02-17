@@ -21,12 +21,12 @@
         <Property Name="EraTechnologyCountPrerequisite" BaseValue="0" />
         <Property Name="TechnologyCostReduction" BaseValue="0" MinValue="-0.5" MaxValue="1"/>
 
-        <Property Name="TechnologyCostStage1Multiplier" BaseValue="1.25"/>
-        <Property Name="TechnologyCostStage2Multiplier" BaseValue="2"/>
-        <Property Name="TechnologyCostStage3Multiplier" BaseValue="7.5"/>
-        <Property Name="TechnologyCostStage4Multiplier" BaseValue="20"/>
-        <Property Name="TechnologyCostStage5Multiplier" BaseValue="50"/>
-        <Property Name="TechnologyCostStage6Multiplier" BaseValue="50"/>
+        <Property Name="TechnologyCostStage1Multiplier" BaseValue="3"/>
+        <Property Name="TechnologyCostStage2Multiplier" BaseValue="7"/>
+        <Property Name="TechnologyCostStage3Multiplier" BaseValue="15"/>
+        <Property Name="TechnologyCostStage4Multiplier" BaseValue="40"/>
+        <Property Name="TechnologyCostStage5Multiplier" BaseValue="80"/>
+        <Property Name="TechnologyCostStage6Multiplier" BaseValue="200"/>
 
         <!-- DLC2 - Hisshos -->
         <Property Name="TechnologyCostJuggernautMultiplier" BaseValue="1.25"/>
