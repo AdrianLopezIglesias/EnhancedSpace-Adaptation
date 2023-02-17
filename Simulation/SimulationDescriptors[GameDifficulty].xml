@@ -309,7 +309,7 @@
   <!--Easy-->
   <SimulationDescriptor Name="PirateDifficultyEasy" Type="PirateDifficulty">
     <Modifier TargetProperty="PirateDifficultyMultiplier" Operation="Force" Value="0.38" Path="ClassEmpire"/>
-    <Modifier TargetProperty="MaximumPirateFleetCount"    Operation="Force" Value="1.1"    Path="ClassEmpire/ClassPirateLair" Priority="2"/>
+    <Modifier TargetProperty="MaximumPirateFleetCount"    Operation="Force" Value="2"    Path="ClassEmpire/ClassPirateLair" Priority="2"/>
     <Modifier TargetProperty="HackingSpeedPercentMultiplier"          Operation="Percent"        Value="-0.50"    Path="ClassEmpire,EmpireTypePirate" Priority="100"/>
     <Modifier TargetProperty="NetTraceOperationProgress"              Operation="Percent"        Value="-0.50"    Path="ClassEmpire,EmpireTypePirate" Priority="100"/>
   </SimulationDescriptor>
@@ -317,7 +317,7 @@
   <!--Normal-->
   <SimulationDescriptor Name="PirateDifficultyNormal" Type="PirateDifficulty">
     <Modifier TargetProperty="PirateDifficultyMultiplier" Operation="Force" Value="0.42" Path="ClassEmpire"/>
-    <Modifier TargetProperty="MaximumPirateFleetCount"    Operation="Force" Value="1.5"    Path="ClassEmpire/ClassPirateLair" Priority="2"/>
+    <Modifier TargetProperty="MaximumPirateFleetCount"    Operation="Force" Value="2"    Path="ClassEmpire/ClassPirateLair" Priority="2"/>
     <Modifier TargetProperty="HackingSpeedPercentMultiplier"          Operation="Percent"        Value="-0.25"    Path="ClassEmpire,EmpireTypePirate" Priority="100"/>
     <Modifier TargetProperty="NetTraceOperationProgress"              Operation="Percent"        Value="-0.25"    Path="ClassEmpire,EmpireTypePirate" Priority="100"/>
   </SimulationDescriptor>
