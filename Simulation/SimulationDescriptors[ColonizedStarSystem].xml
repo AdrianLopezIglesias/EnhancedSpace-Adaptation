@@ -1704,6 +1704,8 @@
         <Property Name="NetSystemGrowthImpactFactor" BaseValue="5"/>
         <Property Name="NetSystemProductionImpactFactor" BaseValue="5"/>
 
+
+
         <!-- Properties that are needed because Net can't be affected directly because of Siege leeching effect -->
         <Property Name="SystemMoneyLostFromSiege"        BaseValue="0"/>
         <Property Name="SystemResearchLostFromSiege"     BaseValue="0"/>
@@ -1805,8 +1807,7 @@
         <BinaryModifier TargetProperty="NetSystemMoney"            Operation="Subtraction"   Left="$(SystemMoneyLostFromSiege)"         BinaryOperation="Multiplication" Right="$(BlockadeImpactFactor)" Path="ClassColonizedStarSystem"/>
         <BinaryModifier TargetProperty="NetSystemResearch"         Operation="Subtraction"   Left="$(SystemResearchLostFromSiege)"      BinaryOperation="Multiplication" Right="$(BlockadeImpactFactor)" Path="ClassColonizedStarSystem"/>
         <BinaryModifier TargetProperty="NetSystemEmpirePoint"      Operation="Subtraction"   Left="$(SystemEmpirePointLostFromSiege)"   BinaryOperation="Multiplication" Right="$(BlockadeImpactFactor)" Path="ClassColonizedStarSystem"/>
-        <Modifier       TargetProperty="SystemHappiness"           Operation="Addition"	   Value="-30"	                                                                                                Path="ClassColonizedStarSystem"/>
-
+        <BinaryModifier TargetProperty="SystemHappiness"      Operation="Subtraction"        Left="30"   BinaryOperation="Multiplication" Right="$(BlockadeImpactFactor)" Path="ClassColonizedStarSystem"/>
 
         <Modifier TargetProperty="NetStrategic1"    Operation="Subtraction"     Value="$(NetStrategic1LostFromSiege)"   Priority="1000" Path="ClassColonizedStarSystem" TooltipHidden="true"/>
         <Modifier TargetProperty="NetStrategic2"    Operation="Subtraction"     Value="$(NetStrategic2LostFromSiege)"   Priority="1000" Path="ClassColonizedStarSystem" TooltipHidden="true"/>
