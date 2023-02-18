@@ -345,10 +345,10 @@
     
     <!-- **   Vampirilis Small Civilian Hull   ** -->
     <HullDefinition Name="HullSmall03Vampirilis" ScoreProvider="CivilianShipConstructed" Category="CategoryHull" SubCategory="SubCategoryShipDesign">
-        <!-- <CostReductionReference Name="ColonyShipConstructible"/> -->
-        <CustomCost ResourceName="SystemProduction">150</CustomCost>
+        <CostReductionReference Name="ColonyShipConstructible"/>
+        <CustomCost ResourceName="SystemProduction">200</CustomCost>
         <PathPrerequisite Flags="Prerequisite,Discard">ClassColonizedStarSystem,ColonizedStarSystemStateColony</PathPrerequisite>
-        <PathPrerequisite Flags="Prerequisite,Discard,Edition">../ClassEmpire,AffinityMappingVampirilis</PathPrerequisite>
+        <PathPrerequisite Flags="Prerequisite,Discard,Edition" Inverted="true">../ClassEmpire,AffinityMappingVampirilis</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Edition" Inverted="true">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Edition" Inverted="true">../ClassEmpire,AffinityGameplayVenetians</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Edition" Inverted="true">../ClassEmpire,AffinityGameplayUnfallen</PathPrerequisite>
@@ -456,6 +456,7 @@
 
         <LevelUpRuleReference Name="ShipLevelUpRule"/>
     </HullDefinition>
+
 
     <!-- **  Vampirilis Small Explorer   ** -->
     <HullDefinition Name="HullSmall04Vampirilis" ScoreProvider="CivilianShipConstructed" Category="CategoryHull" SubCategory="SubCategoryShipDesign">
