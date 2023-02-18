@@ -224,7 +224,7 @@
     </PirateFleet>
     <PirateFleet Weight="1">
       <ShipDesign>MFInsectoidSmallAttackWeak</ShipDesign>
-      <Mission Name="RoamAndAttack"/>
+      <Mission Name="RoamAndInvade"/>
     </PirateFleet>
 	</CuriosityDroplist>
 
@@ -268,7 +268,7 @@
     </PirateFleet>
     <PirateFleet Weight="1">
       <ShipDesign>MFInsectoidSmallAttackWeak</ShipDesign>
-      <Mission Name="RoamAndAttack"/>
+      <Mission Name="RoamAndInvade"/>
     </PirateFleet>
     
     <!-- REVEAL : 5 -->
@@ -339,11 +339,11 @@
 		<!-- TRAP : 5 -->
 		<PirateFleet Weight="2">
 			<ShipDesign>MFPrimitiveSmallAttackWeak</ShipDesign>
-            <Mission Name="RoamAndAttack"/>
+            <Mission Name="RoamAndInvade"/>
 		</PirateFleet>
 		<PirateFleet Weight="3">
 			<ShipDesign>MFInsectoidSmallAttackWeak</ShipDesign>
-            <Mission Name="RoamAndAttack"/>
+            <Mission Name="RoamAndInvade"/>
 		</PirateFleet>
 	</CuriosityDroplist>
 
@@ -404,11 +404,11 @@
     <!-- TRAP : 5 -->
     <PirateFleet Weight="3">
       <ShipDesign>MFPiratesSmallAttackWeak</ShipDesign>
-      <Mission Name="RoamAndAttack"/>
+      <Mission Name="RoamAndInvade"/>
     </PirateFleet>
     <PirateFleet Weight="2">
       <ShipDesign>MFAdvancedSmallAttackWeak</ShipDesign>
-      <Mission Name="RoamAndAttack"/>
+      <Mission Name="RoamAndInvade"/>
     </PirateFleet>
     
     <!-- REVEAL CURIO : 2 -->
@@ -506,11 +506,11 @@
 		<!-- TRAP : 10 -->
 		<PirateFleet Weight="5">
             <ShipDesign>MFPrimitiveSmallAttackAvg</ShipDesign>
-            <Mission Name="RoamAndAttack"/>
+            <Mission Name="RoamAndInvade"/>
         </PirateFleet>
         <PirateFleet Weight="5">
             <ShipDesign>MFInsectoidSmallAttackAvg</ShipDesign>
-            <Mission Name="RoamAndAttack"/>
+            <Mission Name="RoamAndInvade"/>
 		</PirateFleet>
 	</CuriosityDroplist>
 
@@ -707,11 +707,11 @@
     <!-- TRAP : 5 -->
 		<PirateFleet Weight="2">
 			<ShipDesign>MFPrimitiveSmallAttackStrong</ShipDesign>
-            <Mission Name="RoamAndAttack"/>
+            <Mission Name="RoamAndInvade"/>
 		</PirateFleet>
 		<PirateFleet Weight="3">
 			<ShipDesign>MFInsectoidSmallAttackStrong</ShipDesign>
-            <Mission Name="RoamAndAttack"/>
+            <Mission Name="RoamAndInvade"/>
 		</PirateFleet>
 	</CuriosityDroplist>
 
@@ -782,11 +782,11 @@
     <!-- TRAP : 20 -->
     <PirateFleet Weight="10">
       <ShipDesign>MFPiratesSmallAttackStrong</ShipDesign>
-      <Mission Name="RoamAndAttack"/>
+      <Mission Name="RoamAndInvade"/>
     </PirateFleet>
     <PirateFleet Weight="10">
       <ShipDesign>MFAdvancedSmallAttackStrong</ShipDesign>
-      <Mission Name="RoamAndAttack"/>
+      <Mission Name="RoamAndInvade"/>
     </PirateFleet>
     
     <!-- REVEAL CURIO : 5 -->

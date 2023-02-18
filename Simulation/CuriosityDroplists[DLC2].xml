@@ -15,7 +15,7 @@
         <Resource Name="Strategic2"                 Quantity="30"   Weight="5"/>
 		<PirateFleet Weight="5">
 			<ShipDesign>MFPrimitiveSmallAttackAvg</ShipDesign>
-            <Mission Name="RoamAndAttack"/>
+            <Mission Name="RoamAndInvade"/>
 		</PirateFleet>
         <Fleet Weight="7">
             <ShipDesign>MFPiratesSmallAttackAvg</ShipDesign>

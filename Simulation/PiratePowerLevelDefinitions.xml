@@ -35,7 +35,7 @@
     <PiratePowerLevelDefinition Name="PiratePowerLevelEasy0" PowerLevel="0" Difficulty="Easy" MinimumPowerPointsStock="0">
         <SimulationDescriptorReference Name="PiratePowerLevel0Effect"/>
         <SimulationDescriptorReference Name="PirateDifficultyEasy"/>
-        <FleetMissionDefinitionReference Name="RoamAndAttack"/>
+        <FleetMissionDefinitionReference Name="RoamAndInvade"/>
     </PiratePowerLevelDefinition>
 
     <!-- EASY - PIRATE POWER 1 -->
@@ -92,7 +92,7 @@
             </Reinforcement>
         </FleetSpawn>
 
-        <FleetMissionDefinitionReference Name="RoamAndAttack"/>
+        <FleetMissionDefinitionReference Name="RoamAndInvade"/>
         
         <!--Loot awarded for destroying a Lair at PP1-->
         <Droplist Picks="1"> <!--Pick 1 item from the list-->
@@ -161,7 +161,7 @@
             </Reinforcement>
         </FleetSpawn>
         
-        <FleetMissionDefinitionReference Name="RoamAndAttack"/>
+        <FleetMissionDefinitionReference Name="RoamAndInvade"/>
 
         <!--Loot awarded for destroying a Lair at PP2-->
         <Droplist Picks="1">
@@ -253,7 +253,7 @@
                 <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
             </Reinforcement>
         </FleetSpawn>
-        <FleetMissionDefinitionReference Name="RoamAndBlockade"/>
+        <FleetMissionDefinitionReference Name="RoamAndInvade"/>
 
         <!--Loot awarded for destroying a Lair at PP3-->
         <Droplist Picks="2"> <!--Pick 2 items from the list-->
@@ -373,7 +373,7 @@
                 <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
             </Reinforcement>
         </FleetSpawn>
-        <FleetMissionDefinitionReference Name="RoamAndBlockade"/>
+        <FleetMissionDefinitionReference Name="RoamAndInvade"/>
 
         <!--Loot awarded for destroying a Lair at PP4-->
         <Droplist Picks="2"> <!--Pick 2 items from the list-->
@@ -563,7 +563,7 @@
     <PiratePowerLevelDefinition Name="PiratePowerLevelNormal0" PowerLevel="0" Difficulty="Normal" MinimumPowerPointsStock="0">
         <SimulationDescriptorReference Name="PiratePowerLevel0Effect"/>
         <SimulationDescriptorReference Name="PirateDifficultyNormal"/>
-        <FleetMissionDefinitionReference Name="RoamAndAttack"/>
+        <FleetMissionDefinitionReference Name="RoamAndInvade"/>
     </PiratePowerLevelDefinition>
 
     <!-- NORMAL - PIRATE POWER 1 -->
@@ -632,7 +632,7 @@
                 <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
             </Reinforcement>
         </FleetSpawn>
-        <FleetMissionDefinitionReference Name="RoamAndAttack"/>
+        <FleetMissionDefinitionReference Name="RoamAndInvade"/>
         
 <!--Loot awarded for destroying a Lair at PP1-->
         <Droplist Picks="1"> <!--Pick 1 item from the list-->
@@ -709,7 +709,7 @@
                 <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
             </Reinforcement>
         </FleetSpawn>
-        <FleetMissionDefinitionReference Name="RoamAndAttack"/>
+        <FleetMissionDefinitionReference Name="RoamAndInvade"/>
         
         <!--Loot awarded for destroying a Lair at PP2-->
         <Droplist Picks="1">
@@ -809,7 +809,7 @@
                 <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
             </Reinforcement>
         </FleetSpawn>
-        <FleetMissionDefinitionReference Name="RoamAndBlockade"/>
+        <FleetMissionDefinitionReference Name="RoamAndInvade"/>
         
         <!--Loot awarded for destroying a Lair at PP3-->
         <Droplist Picks="2"> <!--Pick 2 items from the list-->
@@ -929,7 +929,7 @@
                 <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
             </Reinforcement>
         </FleetSpawn>
-        <FleetMissionDefinitionReference Name="RoamAndBlockade"/>
+        <FleetMissionDefinitionReference Name="RoamAndInvade"/>
         
         <!--Loot awarded for destroying a Lair at PP4-->
         <Droplist Picks="2"> <!--Pick 2 items from the list-->
@@ -1116,7 +1116,7 @@
         <SimulationDescriptorReference Name="PiratePowerLevel0Effect"/>
         <SimulationDescriptorReference Name="PirateDifficultyHard"/>
 
-        <FleetMissionDefinitionReference Name="RoamAndAttack"/>
+        <FleetMissionDefinitionReference Name="RoamAndInvade"/>
     </PiratePowerLevelDefinition>
 
     <!-- HARD - PIRATE POWER 1 -->
@@ -1179,7 +1179,7 @@
                 <SimulationDescriptorReference Name="PirateReinforcementIncreasedHealth01"/>
             </Reinforcement>
         </FleetSpawn>
-        <FleetMissionDefinitionReference Name="RoamAndAttack"/>
+        <FleetMissionDefinitionReference Name="RoamAndInvade"/>
         
 <!--Loot awarded for destroying a Lair at PP1-->
         <Droplist Picks="1"> <!--Pick 1 item from the list-->
@@ -1264,7 +1264,7 @@
                 <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
             </Reinforcement>
         </FleetSpawn>
-        <FleetMissionDefinitionReference Name="RoamAndAttack"/>
+        <FleetMissionDefinitionReference Name="RoamAndInvade"/>
         
         <!--Loot awarded for destroying a Lair at PP2-->
         <Droplist Picks="1">
@@ -1365,7 +1365,7 @@
                 <SimulationDescriptorReference Name="PirateReinforcementIncreasedDefense01"/>
             </Reinforcement>
         </FleetSpawn>
-        <FleetMissionDefinitionReference Name="RoamAndBlockade"/>
+        <FleetMissionDefinitionReference Name="RoamAndInvade"/>
         
     <!--Loot awarded for destroying a Lair at PP3-->
         <Droplist Picks="2"> <!--Pick 2 items from the list-->
@@ -1493,7 +1493,7 @@
                 <SimulationDescriptorReference Name="PirateReinforcementIncreasedDamage01"/>
             </Reinforcement>
         </FleetSpawn>
-        <FleetMissionDefinitionReference Name="RoamAndBlockade"/>
+        <FleetMissionDefinitionReference Name="RoamAndInvade"/>
         
         <!--Loot awarded for destroying a Lair at PP4-->
         <Droplist Picks="2"> <!--Pick 2 items from the list-->
