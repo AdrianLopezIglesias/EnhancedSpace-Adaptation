@@ -34,7 +34,7 @@
 
     <!-- **  Vampirilis Small Attack Hull   ** -->
     <HullDefinition Name="HullSmall01Vampirilis" ScoreProvider="WarShipConstructed" Category="CategoryHull" SubCategory="SubCategoryShipDesign">
-        <CustomCost ResourceName="SystemProduction">75</CustomCost>
+        <CustomCost ResourceName="SystemProduction">200</CustomCost>
         <!-- S2 costs here -->
 
         <PathPrerequisite Flags="Prerequisite,Discard">ClassColonizedStarSystem,ColonizedStarSystemStateColony</PathPrerequisite>
@@ -204,7 +204,7 @@
 
     <!-- **   Vampirilis Small Support Hull   ** -->
     <HullDefinition Name="HullSmall02Vampirilis" ScoreProvider="WarShipConstructed" Category="CategoryHull" SubCategory="SubCategoryShipDesign">
-        <CustomCost ResourceName="SystemProduction">75</CustomCost>
+        <CustomCost ResourceName="SystemProduction">200</CustomCost>
         <!-- S2 costs here -->
 
         <PathPrerequisite Flags="Prerequisite,Discard">ClassColonizedStarSystem,ColonizedStarSystemStateColony</PathPrerequisite>
@@ -346,7 +346,7 @@
     <!-- **   Vampirilis Small Civilian Hull   ** -->
     <HullDefinition Name="HullSmall03Vampirilis" ScoreProvider="CivilianShipConstructed" Category="CategoryHull" SubCategory="SubCategoryShipDesign">
         <CostReductionReference Name="ColonyShipConstructible"/>
-        <CustomCost ResourceName="SystemProduction">50</CustomCost>
+        <CustomCost ResourceName="SystemProduction">150</CustomCost>
         <PathPrerequisite Flags="Prerequisite,Discard">ClassColonizedStarSystem,ColonizedStarSystemStateColony</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Edition">../ClassEmpire,AffinityMappingVampirilis</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Edition" Inverted="true">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
@@ -460,7 +460,7 @@
     <!-- **  Vampirilis Small Explorer   ** -->
     <HullDefinition Name="HullSmall04Vampirilis" ScoreProvider="CivilianShipConstructed" Category="CategoryHull" SubCategory="SubCategoryShipDesign">
         <Tags>HiddenInFactionPreview</Tags>
-        <CustomCost ResourceName="SystemProduction">50</CustomCost>
+        <CustomCost ResourceName="SystemProduction">150</CustomCost>
 
         <PathPrerequisite Flags="Prerequisite,Discard">ClassColonizedStarSystem,ColonizedStarSystemStateColony</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Edition">../ClassEmpire,!AffinityGameplayVampirilis/ClassPopulationEmpireAffinityVampirilis,PopulationMajor</PathPrerequisite>
@@ -587,7 +587,7 @@
 
     <!-- **  Vampirilis Small Explorer Ship bound  ** -->
     <HullDefinition Name="HullSmall04VampirilisShipBound" ScoreProvider="CivilianShipConstructed" Category="CategoryHull" SubCategory="SubCategoryShipDesign">
-        <CustomCost ResourceName="SystemProduction">50</CustomCost>
+        <CustomCost ResourceName="SystemProduction">150</CustomCost>
 
         <!-- S2 costs here -->
 
@@ -717,7 +717,7 @@
         <!-- **   Vampirilis Small Leecher Hull   ** -->
     <HullDefinition Name="HullSmall05Vampirilis" ScoreProvider="CivilianShipConstructed" Category="CategoryHull" SubCategory="SubCategoryShipDesign">
 		<CostReductionReference Name="ColonyShipConstructible"/>
-        <CustomCost ResourceName="SystemProduction">50</CustomCost>
+        <CustomCost ResourceName="SystemProduction">150</CustomCost>
 
       <PathPrerequisite Flags="Prerequisite,Discard">ClassColonizedStarSystem,ColonizedStarSystemStateColony</PathPrerequisite>
       <PathPrerequisite Flags="Prerequisite,Discard,Edition">../ClassEmpire,AffinityGameplayVampirilis/ClassPopulationEmpireAffinityVampirilis,PopulationMajor</PathPrerequisite>
@@ -825,7 +825,7 @@
     <!-- **   Vampirilis Root Creator   ** -->
     <HullDefinition Name="HullSmall06Vampirilis" ScoreProvider="CivilianShipConstructed" Category="CategoryHull" SubCategory="SubCategoryShipDesign">
         <CostReductionReference Name="ColonyShipConstructible"/>
-        <CustomCost ResourceName="SystemProduction">400</CustomCost>
+        <CustomCost ResourceName="SystemProduction">800</CustomCost>
         
         <PathPrerequisite Flags="Prerequisite,Discard">ClassColonizedStarSystem,ColonizedStarSystemStateColony</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Edition">../ClassEmpire,AffinityGameplayUnfallen/ClassPopulationEmpireAffinityVampirilis,PopulationMajor</PathPrerequisite>
@@ -918,7 +918,7 @@
 
     <!-- **   Vampirilis Medium Attack Hull   ** -->
     <HullDefinition Name="HullMedium01Vampirilis" ScoreProvider="WarShipConstructed" Category="CategoryHull" SubCategory="SubCategoryShipDesign" ModuleCostMultiplier="2">
-        <CustomCost ResourceName="SystemProduction">300</CustomCost>
+        <CustomCost ResourceName="SystemProduction">600</CustomCost>
         <Cost Instant="true" ResourceName="Strategic1">5</Cost>
         <!-- S2 costs here -->
 
@@ -1168,7 +1168,7 @@
 
     <!-- **   Vampirilis Medium Defense Hull   ** -->
     <HullDefinition Name="HullMedium02Vampirilis" ScoreProvider="WarShipConstructed" Category="CategoryHull" SubCategory="SubCategoryShipDesign" ModuleCostMultiplier="2">
-        <CustomCost ResourceName="SystemProduction">300</CustomCost>
+        <CustomCost ResourceName="SystemProduction">600</CustomCost>
         <Cost Instant="true" ResourceName="Strategic2">5</Cost>
         <!-- S2 costs here -->
 
@@ -1532,7 +1532,7 @@
     
     <!-- **   Vampirilis Large Carrier Hull   ** -->
     <HullDefinition Name="HullLarge01Vampirilis" ScoreProvider="WarShipConstructed" Category="CategoryHull" SubCategory="SubCategoryShipDesign" ModuleCostMultiplier="4">
-        <CustomCost ResourceName="SystemProduction">1250</CustomCost>
+        <CustomCost ResourceName="SystemProduction">2500</CustomCost>
         <Cost Instant="true" ResourceName="Strategic3">5</Cost>
         <Cost Instant="true" ResourceName="Strategic4">5</Cost>
         <!-- S2 costs here -->
