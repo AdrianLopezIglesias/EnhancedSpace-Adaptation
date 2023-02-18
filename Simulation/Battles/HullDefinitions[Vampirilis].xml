@@ -345,7 +345,7 @@
     
     <!-- **   Vampirilis Small Civilian Hull   ** -->
     <HullDefinition Name="HullSmall03Vampirilis" ScoreProvider="CivilianShipConstructed" Category="CategoryHull" SubCategory="SubCategoryShipDesign">
-        <CostReductionReference Name="ColonyShipConstructible"/>
+        <!-- <CostReductionReference Name="ColonyShipConstructible"/> -->
         <CustomCost ResourceName="SystemProduction">150</CustomCost>
         <PathPrerequisite Flags="Prerequisite,Discard">ClassColonizedStarSystem,ColonizedStarSystemStateColony</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Edition">../ClassEmpire,AffinityMappingVampirilis</PathPrerequisite>
@@ -716,7 +716,7 @@
     
         <!-- **   Vampirilis Small Leecher Hull   ** -->
     <HullDefinition Name="HullSmall05Vampirilis" ScoreProvider="CivilianShipConstructed" Category="CategoryHull" SubCategory="SubCategoryShipDesign">
-		<CostReductionReference Name="ColonyShipConstructible"/>
+		<!-- <CostReductionReference Name="ColonyShipConstructible"/> -->
         <CustomCost ResourceName="SystemProduction">150</CustomCost>
 
       <PathPrerequisite Flags="Prerequisite,Discard">ClassColonizedStarSystem,ColonizedStarSystemStateColony</PathPrerequisite>
@@ -824,8 +824,8 @@
 
     <!-- **   Vampirilis Root Creator   ** -->
     <HullDefinition Name="HullSmall06Vampirilis" ScoreProvider="CivilianShipConstructed" Category="CategoryHull" SubCategory="SubCategoryShipDesign">
-        <CostReductionReference Name="ColonyShipConstructible"/>
-        <CustomCost ResourceName="SystemProduction">800</CustomCost>
+        <!-- <CostReductionReference Name="ColonyShipConstructible"/> -->
+        <CustomCost ResourceName="SystemProduction">3000</CustomCost>
         
         <PathPrerequisite Flags="Prerequisite,Discard">ClassColonizedStarSystem,ColonizedStarSystemStateColony</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Edition">../ClassEmpire,AffinityGameplayUnfallen/ClassPopulationEmpireAffinityVampirilis,PopulationMajor</PathPrerequisite>
@@ -837,7 +837,7 @@
         <SimulationDescriptorReference Name="CannotHaveWeapon"/>
 
         <ShipDesignLayout>
-            <ShipRoleReference Name="ShipRoleRootCreator"/>
+         <ShipRoleReference Name="ShipRoleRootCreator"/>
 			<SectionPattern_Eight>
 				<!-- Core Section -->
 				<CoreSection Name="CoreSection">
@@ -1433,7 +1433,7 @@
 
     <!-- **   Vampirilis Argosy   ** -->
     <HullDefinition Name="HullMedium03Vampirilis" ScoreProvider="CivilianShipConstructed" Category="CategoryHull" SubCategory="SubCategoryShipDesign" RepresentativeMappingOverride="HullMedium03Vaulters">
-        <CostReductionReference Name="ColonyShipConstructible"/>
+        <!-- <CostReductionReference Name="ColonyShipConstructible"/> -->
         <!-- Additional cost here -->
         <PathPrerequisite Flags="Prerequisite,Discard,Edition">false</PathPrerequisite>
 
