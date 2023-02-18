@@ -6,106 +6,116 @@
     <!-- FOOD PLANETARY IMPROVEMENT -->
    
     <SimulationDescriptor Name="PlanetImprovementFood1" Type="PlanetImprovement">
-        <BinaryModifier TargetProperty="PlanetFood"    Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeLush,PlanetGameplayTypeTeeming"      TooltipOverride="%PlanetImprovementFood1Override1"/>
-        <BinaryModifier TargetProperty="PlanetFood"    Operation="Addition" Left="3" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet"                                                       TooltipOverride="%PlanetImprovementFood1Override2"/>
+        <!-- TooltipOverride="%PlanetImprovementFood1Override1" -->
+        <BinaryModifier TargetProperty="PlanetFood"    Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet"                               />
+        <BinaryModifier TargetProperty="PlanetFood"    Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeTemperate"   />
+        <BinaryModifier TargetProperty="PlanetFood"    Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeLush"        />
+        <BinaryModifier TargetProperty="PlanetFood"    Operation="Addition" Left="3" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeTeeming"     />
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="PlanetImprovementFood2" Type="PlanetImprovement">
-        <BinaryModifier TargetProperty="PlanetFood"    Operation="Addition" Left="5" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet"                                                       TooltipOverride="%PlanetImprovementFood2Override1"/>
-        <BinaryModifier TargetProperty="PlanetFood"    Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeLush,PlanetGameplayTypeTeeming"      TooltipOverride="%PlanetImprovementFood2Override2"/>
-        <BinaryModifier TargetProperty="PlanetFood"    Operation="Addition" Left="3" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeLush,PlanetGameplayTypeMild"         TooltipOverride="%PlanetImprovementFood2Override3"/>
-        <BinaryModifier TargetProperty="PlanetFood"    Operation="Addition" Left="3" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeWater"                               TooltipOverride="%PlanetImprovementFood2Override4"/>
+        <BinaryModifier TargetProperty="PlanetFood"    Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet"                               />
+        <BinaryModifier TargetProperty="PlanetFood"    Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeTemperate"   />
+        <BinaryModifier TargetProperty="PlanetFood"    Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeLush"        />
+        <BinaryModifier TargetProperty="PlanetFood"    Operation="Addition" Left="5" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeTeeming"     />
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="PlanetImprovementFood3" Type="PlanetImprovement">
-        <BinaryModifier TargetProperty="PlanetFood"    Operation="Addition" Left="6" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet"                                                       TooltipOverride="%PlanetImprovementFood3Override1"/>
-        <BinaryModifier TargetProperty="PlanetFood"    Operation="Addition" Left="5" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeLush,PlanetGameplayTypeTeeming"      TooltipOverride="%PlanetImprovementFood3Override2"/>
-        <BinaryModifier TargetProperty="PlanetFood"    Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeLush,PlanetGameplayTypeMild"         TooltipOverride="%PlanetImprovementFood3Override3"/>
-        <BinaryModifier TargetProperty="PlanetFood"    Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeWater"                               TooltipOverride="%PlanetImprovementFood3Override4"/>
+        <BinaryModifier TargetProperty="PlanetFood"    Operation="Addition" Left="6" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet"                               />
+        <BinaryModifier TargetProperty="PlanetFood"    Operation="Addition" Left="6" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeTemperate"   />
+        <BinaryModifier TargetProperty="PlanetFood"    Operation="Addition" Left="6" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeLush"        />
+        <BinaryModifier TargetProperty="PlanetFood"    Operation="Addition" Left="7" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeTeeming"     />
     </SimulationDescriptor>
   
     <!-- INDUSTRY PLANETARY IMPROVEMENT -->
    
     <SimulationDescriptor Name="PlanetImprovementIndustry1" Type="PlanetImprovement">
-        <BinaryModifier TargetProperty="PlanetIndustry" Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet"                                                       TooltipOverride="%PlanetImprovementIndustry1Override1"/>
-        <BinaryModifier TargetProperty="PlanetIndustry" Operation="Addition" Left="3" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeHot, PlanetGameplayTypeCraggy"       TooltipOverride="%PlanetImprovementIndustry1Override2"/>
+        <BinaryModifier TargetProperty="PlanetIndustry" Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet"                             />
+        <BinaryModifier TargetProperty="PlanetIndustry" Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeMeager"    />
+        <BinaryModifier TargetProperty="PlanetIndustry" Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeCraggy"    />
+        <BinaryModifier TargetProperty="PlanetIndustry" Operation="Addition" Left="3" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeHot"       />
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="PlanetImprovementIndustry2" Type="PlanetImprovement">
-        <BinaryModifier TargetProperty="PlanetIndustry" Operation="Addition" Left="5" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet"                                                       TooltipOverride="%PlanetImprovementIndustry2Override1"/>
-        <BinaryModifier TargetProperty="PlanetIndustry" Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeHot, PlanetGameplayTypeCraggy"       TooltipOverride="%PlanetImprovementIndustry2Override2"/>
-        <BinaryModifier TargetProperty="PlanetIndustry" Operation="Addition" Left="3" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeTemperate, PlanetGameplayTypeCraggy" TooltipOverride="%PlanetImprovementIndustry2Override3"/>
-        <BinaryModifier TargetProperty="PlanetIndustry" Operation="Addition" Left="3" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeHot, PlanetGameplayTypeGas"          TooltipOverride="%PlanetImprovementIndustry2Override4"/>
+        <BinaryModifier TargetProperty="PlanetIndustry" Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet"                             />
+        <BinaryModifier TargetProperty="PlanetIndustry" Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeMeager"    />
+        <BinaryModifier TargetProperty="PlanetIndustry" Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeCraggy"    />
+        <BinaryModifier TargetProperty="PlanetIndustry" Operation="Addition" Left="5" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeHot"       />
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="PlanetImprovementIndustry3" Type="PlanetImprovement">
-        <BinaryModifier TargetProperty="PlanetIndustry" Operation="Addition" Left="6" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet"                                                       TooltipOverride="%PlanetImprovementIndustry3Override1"/>
-        <BinaryModifier TargetProperty="PlanetIndustry" Operation="Addition" Left="5" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeHot,PlanetGameplayTypeCraggy"        TooltipOverride="%PlanetImprovementIndustry3Override2"/>
-        <BinaryModifier TargetProperty="PlanetIndustry" Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeTemperate,PlanetGameplayTypeCraggy"  TooltipOverride="%PlanetImprovementIndustry3Override3"/>
-        <BinaryModifier TargetProperty="PlanetIndustry" Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeHot,PlanetGameplayTypeGas"           TooltipOverride="%PlanetImprovementIndustry3Override4"/>
+        <BinaryModifier TargetProperty="PlanetIndustry" Operation="Addition" Left="6" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet"                             />
+        <BinaryModifier TargetProperty="PlanetIndustry" Operation="Addition" Left="6" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeMeager"    />
+        <BinaryModifier TargetProperty="PlanetIndustry" Operation="Addition" Left="6" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeCraggy"    />
+        <BinaryModifier TargetProperty="PlanetIndustry" Operation="Addition" Left="7" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeHot"       />
     </SimulationDescriptor>
 
     <!-- SCIENCE PLANETARY IMPROVEMENT -->
-
     <SimulationDescriptor Name="PlanetImprovementScience1" Type="PlanetImprovement">
-        <BinaryModifier TargetProperty="PlanetScience"   Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet"                                                    TooltipOverride="%PlanetImprovementScience1Override1"/>
-        <BinaryModifier TargetProperty="PlanetScience"   Operation="Addition" Left="3" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet,PlanetGameplayTypeStable"                           TooltipOverride="%PlanetImprovementScience1Override2"/>
+        <BinaryModifier TargetProperty="PlanetScience"   Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet"                              />
+        <BinaryModifier TargetProperty="PlanetScience"   Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet,PlanetGameplayTypeTemperate"     />
+        <BinaryModifier TargetProperty="PlanetScience"   Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet,PlanetGameplayTypeStable"     />
+        <BinaryModifier TargetProperty="PlanetScience"   Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet,PlanetGameplayTypeCold"       />
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="PlanetImprovementScience2" Type="PlanetImprovement">
-        <BinaryModifier TargetProperty="PlanetScience"   Operation="Addition" Left="5" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet"                                                        TooltipOverride="%PlanetImprovementScience2Override1"/>
-        <BinaryModifier TargetProperty="PlanetScience"   Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet,PlanetGameplayTypeCold,PlanetGameplayTypeStable"        TooltipOverride="%PlanetImprovementScience2Override2"/>
-        <BinaryModifier TargetProperty="PlanetScience"   Operation="Addition" Left="3" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet,PlanetGameplayTypeTemperate,PlanetGameplayTypeStable"   TooltipOverride="%PlanetImprovementScience2Override3"/>
-        <BinaryModifier TargetProperty="PlanetScience"   Operation="Addition" Left="3" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet,PlanetGameplayTypeCold,PlanetGameplayTypeGas"           TooltipOverride="%PlanetImprovementScience2Override4"/>
+        <BinaryModifier TargetProperty="PlanetScience"   Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet"                              />
+        <BinaryModifier TargetProperty="PlanetScience"   Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet,PlanetGameplayTypeTemperate"     />
+        <BinaryModifier TargetProperty="PlanetScience"   Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet,PlanetGameplayTypeStable"     />
+        <BinaryModifier TargetProperty="PlanetScience"   Operation="Addition" Left="6" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet,PlanetGameplayTypeCold"       />
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="PlanetImprovementScience3" Type="PlanetImprovement">
-        <BinaryModifier TargetProperty="PlanetScience"   Operation="Addition" Left="6" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet"                                                        TooltipOverride="%PlanetImprovementScience3Override1"/>
-        <BinaryModifier TargetProperty="PlanetScience"   Operation="Addition" Left="5" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet,PlanetGameplayTypeCold,PlanetGameplayTypeStable"        TooltipOverride="%PlanetImprovementScience3Override2"/>
-        <BinaryModifier TargetProperty="PlanetScience"   Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet,PlanetGameplayTypeTemperate,PlanetGameplayTypeStable"   TooltipOverride="%PlanetImprovementScience3Override3"/>
-        <BinaryModifier TargetProperty="PlanetScience"   Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet,PlanetGameplayTypeCold,PlanetGameplayTypeGas"           TooltipOverride="%PlanetImprovementScience3Override4"/>
+        <BinaryModifier TargetProperty="PlanetScience"   Operation="Addition" Left="6" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet"                              />
+        <BinaryModifier TargetProperty="PlanetScience"   Operation="Addition" Left="6" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet,PlanetGameplayTypeTemperate"     />
+        <BinaryModifier TargetProperty="PlanetScience"   Operation="Addition" Left="6" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet,PlanetGameplayTypeStable"     />
+        <BinaryModifier TargetProperty="PlanetScience"   Operation="Addition" Left="8" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet,PlanetGameplayTypeCold"       />
     </SimulationDescriptor>
 
     <!-- DUST PLANETARY IMPROVEMENT -->
 
     <SimulationDescriptor Name="PlanetImprovementDust1" Type="PlanetImprovement">
-        <BinaryModifier TargetProperty="PlanetDust"    Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet"                                                        TooltipOverride="%PlanetImprovementDust1Override1"/>
-        <BinaryModifier TargetProperty="PlanetDust"    Operation="Addition" Left="3" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet,PlanetGameplayTypeDry"                                  TooltipOverride="%PlanetImprovementDust1Override2"/>
+        <BinaryModifier TargetProperty="PlanetIndustry" Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet"                             />
+        <BinaryModifier TargetProperty="PlanetIndustry" Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeHot"        />
+        <BinaryModifier TargetProperty="PlanetIndustry" Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeCraggy"    />
+        <BinaryModifier TargetProperty="PlanetIndustry" Operation="Addition" Left="3" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeDry"       />
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="PlanetImprovementDust2" Type="PlanetImprovement">
-        <BinaryModifier TargetProperty="PlanetDust"    Operation="Addition" Left="5" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet"                                                        TooltipOverride="%PlanetImprovementDust2Override1"/>
-        <BinaryModifier TargetProperty="PlanetDust"    Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet,PlanetGameplayTypeMeager, PlanetGameplayTypeDry"        TooltipOverride="%PlanetImprovementDust2Override2"/>
-        <BinaryModifier TargetProperty="PlanetDust"    Operation="Addition" Left="3" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet,PlanetGameplayTypeMild, PlanetGameplayTypeDry"          TooltipOverride="%PlanetImprovementDust2Override3"/>
-        <BinaryModifier TargetProperty="PlanetDust"    Operation="Addition" Left="3" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet,PlanetGameplayTypeGas"                                  TooltipOverride="%PlanetImprovementDust2Override4"/>
+        <BinaryModifier TargetProperty="PlanetIndustry" Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet"                             />
+        <BinaryModifier TargetProperty="PlanetIndustry" Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeHot"        />
+        <BinaryModifier TargetProperty="PlanetIndustry" Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeCraggy"    />
+        <BinaryModifier TargetProperty="PlanetIndustry" Operation="Addition" Left="6" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeDry"       />    
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="PlanetImprovementDust3" Type="PlanetImprovement">
-        <BinaryModifier TargetProperty="PlanetDust"    Operation="Addition" Left="6" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet"                                                        TooltipOverride="%PlanetImprovementDust3Override1"/>
-        <BinaryModifier TargetProperty="PlanetDust"    Operation="Addition" Left="5" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet,PlanetGameplayTypeMeager, PlanetGameplayTypeDry"        TooltipOverride="%PlanetImprovementDust3Override2"/>
-        <BinaryModifier TargetProperty="PlanetDust"    Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet,PlanetGameplayTypeMild, PlanetGameplayTypeDry"          TooltipOverride="%PlanetImprovementDust3Override3"/>
-        <BinaryModifier TargetProperty="PlanetDust"    Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet,PlanetGameplayTypeGas"                                  TooltipOverride="%PlanetImprovementDust3Override4"/>
+        <BinaryModifier TargetProperty="PlanetIndustry" Operation="Addition" Left="6" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet"                             />
+        <BinaryModifier TargetProperty="PlanetIndustry" Operation="Addition" Left="6" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeHot"        />
+        <BinaryModifier TargetProperty="PlanetIndustry" Operation="Addition" Left="6" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeCraggy"    />
+        <BinaryModifier TargetProperty="PlanetIndustry" Operation="Addition" Left="8" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeDry"       />
     </SimulationDescriptor>
 
     <!-- INFLUENCE PLANETARY IMPROVEMENT -->
 
     <SimulationDescriptor Name="PlanetImprovementInfluence1" Type="PlanetImprovement">
-        <BinaryModifier TargetProperty="PlanetPrestige" Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet"                                                        TooltipOverride="%PlanetImprovementInfluence1Override1"/>
-        <BinaryModifier TargetProperty="PlanetPrestige" Operation="Addition" Left="3" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet,PlanetGameplayTypeWater,PlanetGameplayTypeTeeming"      TooltipOverride="%PlanetImprovementInfluence1Override2"/>
+        <BinaryModifier TargetProperty="PlanetFood"    Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet"                               />
+        <BinaryModifier TargetProperty="PlanetFood"    Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeTemperate"   />
+        <BinaryModifier TargetProperty="PlanetFood"    Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeLush"        />
+        <BinaryModifier TargetProperty="PlanetFood"    Operation="Addition" Left="3" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeWater"     />
     </SimulationDescriptor>
 
-    <SimulationDescriptor Name="PlanetImprovementInfluence2" Type="PlanetImprovement">
-        <BinaryModifier TargetProperty="PlanetPrestige" Operation="Addition" Left="5" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet"                                                        TooltipOverride="%PlanetImprovementInfluence2Override1"/>
-        <BinaryModifier TargetProperty="PlanetPrestige" Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet,PlanetGameplayTypeWater,PlanetGameplayTypeTeeming"      TooltipOverride="%PlanetImprovementInfluence2Override2"/>
-        <BinaryModifier TargetProperty="PlanetPrestige" Operation="Addition" Left="3" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet,PlanetGameplayTypeWater,PlanetGameplayTypeMild"         TooltipOverride="%PlanetImprovementInfluence2Override3"/>
-        <BinaryModifier TargetProperty="PlanetPrestige" Operation="Addition" Left="3" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet,PlanetGameplayTypeLush"                                 TooltipOverride="%PlanetImprovementInfluence2Override4"/>
+    <SimulationDescriptor Name="PlanetImprovementInfluence2" Type="PlanetImprovement">        <BinaryModifier TargetProperty="PlanetFood"    Operation="Addition" Left="2" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet"                               />
+        <BinaryModifier TargetProperty="PlanetFood"    Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet"                               />
+        <BinaryModifier TargetProperty="PlanetFood"    Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeTemperate"   />
+        <BinaryModifier TargetProperty="PlanetFood"    Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeLush"        />
+        <BinaryModifier TargetProperty="PlanetFood"    Operation="Addition" Left="6" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeWater"     />
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="PlanetImprovementInfluence3" Type="PlanetImprovement">
-        <BinaryModifier TargetProperty="PlanetPrestige" Operation="Addition" Left="6" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet"                                                        TooltipOverride="%PlanetImprovementInfluence3Override1"/>
-        <BinaryModifier TargetProperty="PlanetPrestige" Operation="Addition" Left="5" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet,PlanetGameplayTypeWater,PlanetGameplayTypeTeeming"      TooltipOverride="%PlanetImprovementInfluence3Override2"/>
-        <BinaryModifier TargetProperty="PlanetPrestige" Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet,PlanetGameplayTypeWater,PlanetGameplayTypeMild"         TooltipOverride="%PlanetImprovementInfluence3Override3"/>
-        <BinaryModifier TargetProperty="PlanetPrestige" Operation="Addition" Left="4" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true" Path="./ClassColonizedPlanet,PlanetGameplayTypeLush"                                 TooltipOverride="%PlanetImprovementInfluence3Override4"/>
+        <BinaryModifier TargetProperty="PlanetFood"    Operation="Addition" Left="6" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet"                               />
+        <BinaryModifier TargetProperty="PlanetFood"    Operation="Addition" Left="6" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeTemperate"   />
+        <BinaryModifier TargetProperty="PlanetFood"    Operation="Addition" Left="6" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeLush"        />
+        <BinaryModifier TargetProperty="PlanetFood"    Operation="Addition" Left="8" BinaryOperation="Multiplication" Right="$(Population)" SearchValueFromPath="true"  Path="./ClassColonizedPlanet,PlanetGameplayTypeWater"     />
     </SimulationDescriptor>
   
     <!-- RESOURCES PLANETARY IMPROVEMENT -->
