@@ -1805,6 +1805,8 @@
         <BinaryModifier TargetProperty="NetSystemMoney"            Operation="Subtraction"   Left="$(SystemMoneyLostFromSiege)"         BinaryOperation="Multiplication" Right="$(BlockadeImpactFactor)" Path="ClassColonizedStarSystem"/>
         <BinaryModifier TargetProperty="NetSystemResearch"         Operation="Subtraction"   Left="$(SystemResearchLostFromSiege)"      BinaryOperation="Multiplication" Right="$(BlockadeImpactFactor)" Path="ClassColonizedStarSystem"/>
         <BinaryModifier TargetProperty="NetSystemEmpirePoint"      Operation="Subtraction"   Left="$(SystemEmpirePointLostFromSiege)"   BinaryOperation="Multiplication" Right="$(BlockadeImpactFactor)" Path="ClassColonizedStarSystem"/>
+        <Modifier       TargetProperty="SystemHappiness"           Operation="Addition"	   Value="-30"	                                                                                                Path="ClassColonizedStarSystem"/>
+
 
         <Modifier TargetProperty="NetStrategic1"    Operation="Subtraction"     Value="$(NetStrategic1LostFromSiege)"   Priority="1000" Path="ClassColonizedStarSystem" TooltipHidden="true"/>
         <Modifier TargetProperty="NetStrategic2"    Operation="Subtraction"     Value="$(NetStrategic2LostFromSiege)"   Priority="1000" Path="ClassColonizedStarSystem" TooltipHidden="true"/>
