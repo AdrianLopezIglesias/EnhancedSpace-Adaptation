@@ -268,7 +268,7 @@
                 </Section>
 
                 <!-- Right Section -->
-                <Section Name="SectionE">
+                   <Section Name="SectionE">
                     <VisualSectionName>Right</VisualSectionName>
                     <Slot Name="Defense01">
                         <RestrictedModuleCategory>Defense</RestrictedModuleCategory>
@@ -348,7 +348,7 @@
         <CostReductionReference Name="ColonyShipConstructible"/>
         <CustomCost ResourceName="SystemProduction">200</CustomCost>
         <PathPrerequisite Flags="Prerequisite,Discard">ClassColonizedStarSystem,ColonizedStarSystemStateColony</PathPrerequisite>
-        <PathPrerequisite Flags="Prerequisite,Discard,Edition" Inverted="true">../ClassEmpire,AffinityMappingVampirilis</PathPrerequisite>
+        <PathPrerequisite Flags="Prerequisite,Discard,Edition">../ClassEmpire,AffinityMappingVampirilis</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Edition" Inverted="true">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Edition" Inverted="true">../ClassEmpire,AffinityGameplayVenetians</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Edition" Inverted="true">../ClassEmpire,AffinityGameplayUnfallen</PathPrerequisite>
