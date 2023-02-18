@@ -477,16 +477,16 @@
 
     <!-- ERA 1-->
     <SimulationDescriptor Name="ModuleWeaponLaser1"  Type="ModuleWeapon">
-        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="24"      TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="28"      TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <!-- ERA 2-->
     <SimulationDescriptor Name="ModuleWeaponLaser2"  Type="ModuleWeapon">
-        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="38"      TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="46"      TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleWeaponLaser2Strategic2"  Type="ModuleWeapon">
-        <Modifier TargetProperty="Damage"                           Operation="Addition" Value="58"      TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                           Operation="Addition" Value="70"      TooltipHidden="true"/>
         <Modifier TargetProperty="CriticalHitChance"                Operation="Addition" Value="0.05"    TooltipHidden="true"/>
         <Modifier TargetProperty="Cooldown"                         Operation="Addition"  Value="-0.1"  TooltipHidden="true"/>
         <Modifier TargetProperty="OpponentEnergyWeaponAccuracyPercent"      Operation="Addition"  Value="-0.2"  TooltipHidden="true"/>
@@ -495,15 +495,15 @@
 
     <!-- ERA 3-->
     <SimulationDescriptor Name="ModuleWeaponLaser3"  Type="ModuleWeapon">
-        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="52"      TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="62"      TooltipHidden="true"/>
     </SimulationDescriptor>
 
    <SimulationDescriptor Name="ModuleWeaponLaser2Vampirilis"  Type="ModuleWeapon">
-      <Modifier TargetProperty="Damage"                       Operation="Addition" Value="52"      TooltipHidden="true"/>
+      <Modifier TargetProperty="Damage"                       Operation="Addition" Value="62"      TooltipHidden="true"/>
    </SimulationDescriptor>
 
    <SimulationDescriptor Name="ModuleWeaponLaser3Strategic2"  Type="ModuleWeapon">
-        <Modifier TargetProperty="Damage"                           Operation="Addition" Value="72"      TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                           Operation="Addition" Value="86"      TooltipHidden="true"/>
         <Modifier TargetProperty="CriticalHitChance"                Operation="Addition" Value="0.06"    TooltipHidden="true"/>
         <Modifier TargetProperty="Cooldown"                         Operation="Addition"  Value="-0.1"  TooltipHidden="true"/>
         <Modifier TargetProperty="OpponentEnergyWeaponAccuracyPercent"      Operation="Addition"  Value="-0.2"  TooltipHidden="true"/>
@@ -511,7 +511,7 @@
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleWeaponLaser3Strategic4"  Type="ModuleWeapon">
-        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="72"      TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="86"      TooltipHidden="true"/>
         <Modifier TargetProperty="CriticalHitChance"            Operation="Addition" Value="0.08"    TooltipHidden="true"/>
         <Modifier TargetProperty="Cooldown"                  Operation="Addition"  Value="-0.1"  TooltipHidden="true"/>
         <Modifier TargetProperty="HullPlatingPenetrationFactorBonus" Operation="Addition"  Value="0.20"  TooltipHidden="true"/>
@@ -519,18 +519,18 @@
 
     <!-- ERA 4-->
     <SimulationDescriptor Name="ModuleWeaponLaser4"  Type="ModuleWeapon">
-        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="67"      TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="80"      TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleWeaponLaser4Strategic4"  Type="ModuleWeapon">
-        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="87"      TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="93"      TooltipHidden="true"/>
         <Modifier TargetProperty="CriticalHitChance"            Operation="Addition" Value="0.09"    TooltipHidden="true"/>
         <Modifier TargetProperty="Cooldown"                  Operation="Addition"  Value="-0.1"  TooltipHidden="true"/>
         <Modifier TargetProperty="HullPlatingPenetrationFactorBonus" Operation="Addition"  Value="0.20"  TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleWeaponLaser4Strategic6"  Type="ModuleWeapon">
-        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="87"      TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="93"      TooltipHidden="true"/>
         <Modifier TargetProperty="CriticalHitChance"            Operation="Addition" Value="0.11"    TooltipHidden="true"/>
         <Modifier TargetProperty="Cooldown"                     Operation="Addition"  Value="-0.1"  TooltipHidden="true"/>
         <Modifier TargetProperty="SplashFlotillaDamagePercent"  Operation="Addition"  Value="0.1"  TooltipHidden="true"/>
@@ -538,11 +538,11 @@
 
     <!-- ERA 5-->
     <SimulationDescriptor Name="ModuleWeaponLaser5"  Type="ModuleWeapon">
-        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="82"     TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="90"     TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleWeaponLaser5Strategic6"  Type="ModuleWeapon">
-        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="101"     TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="122"     TooltipHidden="true"/>
         <Modifier TargetProperty="CriticalHitChance"            Operation="Addition" Value="0.13"    TooltipHidden="true"/>
         <Modifier TargetProperty="Cooldown"                     Operation="Addition"  Value="-0.1"  TooltipHidden="true"/>
         <Modifier TargetProperty="SplashFlotillaDamagePercent"  Operation="Addition"  Value="0.1"  TooltipHidden="true"/>
@@ -587,16 +587,16 @@
 
     <!-- ERA 1 -->
     <SimulationDescriptor Name="ModuleWeaponBeam1"  Type="ModuleWeapon">
-        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="72"      TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="94"      TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <!-- ERA 2 -->
     <SimulationDescriptor Name="ModuleWeaponBeam2"  Type="ModuleWeapon">
-        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="96"      TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="120"      TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleWeaponBeam2Strategic2"  Type="ModuleWeapon">
-        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="134"      TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="162"      TooltipHidden="true"/>
         <Modifier TargetProperty="CriticalHitChance"            Operation="Addition"  Value="0.05"    TooltipHidden="true"/>
         <Modifier TargetProperty="ShipManpowerKillPerHit"       Operation="Addition" Value="3"      TooltipHidden="true"/>
         <Modifier TargetProperty="OpponentEnergyWeaponAccuracyPercent"      Operation="Addition"  Value="-0.2"  TooltipHidden="true"/>
@@ -605,11 +605,11 @@
 
     <!-- ERA 3 -->
     <SimulationDescriptor Name="ModuleWeaponBeam3"  Type="ModuleWeapon">
-        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="132"      TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="160"      TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleWeaponBeam3Strategic2"  Type="ModuleWeapon">
-        <Modifier TargetProperty="Damage"                           Operation="Addition" Value="170"     TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                           Operation="Addition" Value="202"     TooltipHidden="true"/>
         <Modifier TargetProperty="CriticalHitChance"                Operation="Addition"  Value="0.05"    TooltipHidden="true"/>
         <Modifier TargetProperty="ShipManpowerKillPerHit"           Operation="Addition" Value="4"      TooltipHidden="true"/>
         <Modifier TargetProperty="OpponentEnergyWeaponAccuracyPercent"      Operation="Addition"  Value="-0.2"  TooltipHidden="true"/>
@@ -617,7 +617,7 @@
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleWeaponBeam3Strategic4"  Type="ModuleWeapon">
-        <Modifier TargetProperty="Damage"                           Operation="Addition" Value="170"     TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                           Operation="Addition" Value="202"     TooltipHidden="true"/>
         <Modifier TargetProperty="CriticalHitChance"                Operation="Addition"  Value="0.05"    TooltipHidden="true"/>
         <Modifier TargetProperty="ShipManpowerKillPerHit"           Operation="Addition" Value="5"      TooltipHidden="true"/>
         <Modifier TargetProperty="HullPlatingPenetrationFactorBonus"     Operation="Addition"  Value="0.2"  TooltipHidden="true"/>
@@ -625,18 +625,18 @@
 
     <!-- ERA 4 -->
     <SimulationDescriptor Name="ModuleWeaponBeam4"  Type="ModuleWeapon">
-        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="168"     TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="190"     TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleWeaponBeam4Strategic4"  Type="ModuleWeapon">
-        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="205"     TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="245"     TooltipHidden="true"/>
         <Modifier TargetProperty="CriticalHitChance"            Operation="Addition"  Value="0.05"    TooltipHidden="true"/>
         <Modifier TargetProperty="ShipManpowerKillPerHit"       Operation="Addition" Value="6"      TooltipHidden="true"/>
         <Modifier TargetProperty="HullPlatingPenetrationFactorBonus" Operation="Addition"  Value="0.2"  TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleWeaponBeam4Strategic6"  Type="ModuleWeapon">
-        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="222"     TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="270"     TooltipHidden="true"/>
         <Modifier TargetProperty="CriticalHitChance"            Operation="Addition"  Value="0.05"    TooltipHidden="true"/>
         <Modifier TargetProperty="ShipManpowerKillPerHit"       Operation="Addition" Value="8"      TooltipHidden="true"/>
         <Modifier TargetProperty="SplashFlotillaDamagePercent"  Operation="Addition"  Value="0.1"  TooltipHidden="true"/>
@@ -644,15 +644,15 @@
 
     <!-- ERA 5 -->
     <SimulationDescriptor Name="ModuleWeaponBeam5"  Type="ModuleWeapon">
-        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="205"     TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="250"     TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleWeaponBeam5TimeLords"  Type="ModuleWeapon">
-        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="222"     TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="262"     TooltipHidden="true"/>
     </SimulationDescriptor>
 
     <SimulationDescriptor Name="ModuleWeaponBeam5Strategic6"  Type="ModuleWeapon">
-        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="242"     TooltipHidden="true"/>
+        <Modifier TargetProperty="Damage"                       Operation="Addition" Value="284"     TooltipHidden="true"/>
         <Modifier TargetProperty="CriticalHitChance"            Operation="Addition"  Value="0.05"    TooltipHidden="true"/>
         <Modifier TargetProperty="ShipManpowerKillPerHit"       Operation="Addition" Value="10"      TooltipHidden="true"/>
         <Modifier TargetProperty="SplashFlotillaDamagePercent"  Operation="Addition"  Value="0.1"  TooltipHidden="true"/>
