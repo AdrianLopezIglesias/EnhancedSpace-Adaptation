@@ -6,7 +6,7 @@
             <KeyValuePair Key="GalaxySizeIndex">1</KeyValuePair>
             <KeyValuePair Key="NominalPlayers"></KeyValuePair>
             <KeyValuePair Key="UniquePlanetQuantity">1</KeyValuePair>
-            <KeyValuePair Key="NodesQuantity">70</KeyValuePair>
+            <KeyValuePair Key="NodesQuantity">100</KeyValuePair>
             <KeyValuePair Key="IsolatedNodesQuantity">15</KeyValuePair>
             <KeyValuePair Key="QuestNodesQuantity">12</KeyValuePair>
             <KeyValuePair Key="QuestNodesPerMajorFaction">4</KeyValuePair>
@@ -32,7 +32,7 @@
             <KeyValuePair Key="GalaxySizeIndex">2</KeyValuePair>
             <KeyValuePair Key="NominalPlayers">4</KeyValuePair>
             <KeyValuePair Key="UniquePlanetQuantity">2</KeyValuePair>
-            <KeyValuePair Key="NodesQuantity">80</KeyValuePair>
+            <KeyValuePair Key="NodesQuantity">110</KeyValuePair>
             <KeyValuePair Key="IsolatedNodesQuantity">20</KeyValuePair>
             <KeyValuePair Key="QuestNodesQuantity">8</KeyValuePair>
             <KeyValuePair Key="QuestNodesPerMajorFaction">4</KeyValuePair>
@@ -58,7 +58,7 @@
             <KeyValuePair Key="GalaxySizeIndex">3</KeyValuePair>
             <KeyValuePair Key="NominalPlayers">6</KeyValuePair>
             <KeyValuePair Key="UniquePlanetQuantity">3</KeyValuePair>
-            <KeyValuePair Key="NodesQuantity">100</KeyValuePair>
+            <KeyValuePair Key="NodesQuantity">130</KeyValuePair>
             <KeyValuePair Key="IsolatedNodesQuantity">30</KeyValuePair>
             <KeyValuePair Key="QuestNodesQuantity">10</KeyValuePair>
             <KeyValuePair Key="QuestNodesPerMajorFaction">4</KeyValuePair>
@@ -84,7 +84,7 @@
             <KeyValuePair Key="GalaxySizeIndex">4</KeyValuePair>
             <KeyValuePair Key="NominalPlayers">8</KeyValuePair>
             <KeyValuePair Key="UniquePlanetQuantity">4</KeyValuePair>
-            <KeyValuePair Key="NodesQuantity">130</KeyValuePair>
+            <KeyValuePair Key="NodesQuantity">160</KeyValuePair>
             <KeyValuePair Key="IsolatedNodesQuantity">40</KeyValuePair>
             <KeyValuePair Key="QuestNodesQuantity">8</KeyValuePair>
             <KeyValuePair Key="QuestNodesPerMajorFaction">4</KeyValuePair>
@@ -110,7 +110,7 @@
             <KeyValuePair Key="GalaxySizeIndex">5</KeyValuePair>
             <KeyValuePair Key="NominalPlayers">10</KeyValuePair>
             <KeyValuePair Key="UniquePlanetQuantity">5</KeyValuePair>
-            <KeyValuePair Key="NodesQuantity">150</KeyValuePair>
+            <KeyValuePair Key="NodesQuantity">180</KeyValuePair>
             <KeyValuePair Key="IsolatedNodesQuantity">50</KeyValuePair>
             <KeyValuePair Key="QuestNodesQuantity">12</KeyValuePair>
             <KeyValuePair Key="QuestNodesPerMajorFaction">4</KeyValuePair>
@@ -136,7 +136,7 @@
             <KeyValuePair Key="GalaxySizeIndex">6</KeyValuePair>
             <KeyValuePair Key="NominalPlayers">12</KeyValuePair>
             <KeyValuePair Key="UniquePlanetQuantity">6</KeyValuePair>
-            <KeyValuePair Key="NodesQuantity">170</KeyValuePair>
+            <KeyValuePair Key="NodesQuantity">200</KeyValuePair>
             <KeyValuePair Key="IsolatedNodesQuantity">60</KeyValuePair>
             <KeyValuePair Key="QuestNodesQuantity">12</KeyValuePair>
             <KeyValuePair Key="QuestNodesPerMajorFaction">4</KeyValuePair>
@@ -162,7 +162,7 @@
             <KeyValuePair Key="GalaxySizeIndex">7</KeyValuePair>
             <KeyValuePair Key="NominalPlayers">14</KeyValuePair>
             <KeyValuePair Key="UniquePlanetQuantity">7</KeyValuePair>
-            <KeyValuePair Key="NodesQuantity">180</KeyValuePair>
+            <KeyValuePair Key="NodesQuantity">220</KeyValuePair>
             <KeyValuePair Key="IsolatedNodesQuantity">70</KeyValuePair>
             <KeyValuePair Key="QuestNodesQuantity">12</KeyValuePair>
             <KeyValuePair Key="QuestNodesPerMajorFaction">4</KeyValuePair>
