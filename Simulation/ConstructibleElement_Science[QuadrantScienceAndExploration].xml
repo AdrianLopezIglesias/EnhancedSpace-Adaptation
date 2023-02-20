@@ -181,8 +181,6 @@
         <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">ClassEmpire,AffinityGameplayUnfallen</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">ClassEmpire,AffinityGameplayTimeLords</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">ClassEmpire,AffinityMappingVaulters</PathPrerequisite>
-        <SimulationDescriptorReference Name="TechnologyColonization4"/>
-        <SimulationDescriptorReference Name="TechnologyColonization4Common"/>
         <SimulationDescriptorReference Name="TechnologyCountScienceAndExplorationIncreaseStage2"/>
         <SimulationDescriptorReference Name="TechnologyCounter"/>
         <SimulationDescriptorReference Name="TechnologyExplorationModule2"/>
@@ -197,7 +195,6 @@
     <TechnologyDefinition Name="TechnologyDefinitionScienceAndExploration4Unfallen" TechnologyStage="TechnologyStageDefinitionScienceAndExploration2" Category="CategoryTechnologyScienceAndExploration" ScoreProvider="TechnologyUnlocked">
         <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage2Multiplier) * (1 - (Property(StockLocation,@ClassEmpire/ClassResearch , TechnologyLinkReductionValue) * Count(StockLocation, @'ClassEmpire/ClassResearch,TechnologyLinkScienceAndExploration2To4'))) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantScienceAndExplorationMultiplier)</CustomCost>
         <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityGameplayTechnologyUnfallen" Inverted="false">ClassEmpire,AffinityGameplayUnfallen</PathPrerequisite>
-        <SimulationDescriptorReference Name="TechnologyColonization4Unfallen"/>
         <SimulationDescriptorReference Name="TechnologyCountScienceAndExplorationIncreaseStage2"/>
         <SimulationDescriptorReference Name="TechnologyCounter"/>
         <SimulationDescriptorReference Name="TechnologyExplorationModule2"/>
@@ -211,7 +208,6 @@
     <TechnologyDefinition Name="TechnologyDefinitionScienceAndExploration4TimeLords" TechnologyStage="TechnologyStageDefinitionScienceAndExploration2" Category="CategoryTechnologyScienceAndExploration" ScoreProvider="TechnologyUnlocked">
         <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage2Multiplier) * (1 - (Property(StockLocation,@ClassEmpire/ClassResearch , TechnologyLinkReductionValue) * Count(StockLocation, @'ClassEmpire/ClassResearch,TechnologyLinkScienceAndExploration2To4'))) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantScienceAndExplorationMultiplier)</CustomCost>
         <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityGameplayTechnologyTimeLords" Inverted="false">ClassEmpire,AffinityGameplayTimeLords</PathPrerequisite>
-        <SimulationDescriptorReference Name="TechnologyColonization4TimeLords"/>
         <SimulationDescriptorReference Name="TechnologyCountScienceAndExplorationIncreaseStage2"/>
         <SimulationDescriptorReference Name="TechnologyCounter"/>
         <SimulationDescriptorReference Name="TechnologyExplorationModule2"/>
@@ -228,7 +224,6 @@
       <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">ClassEmpire,AffinityGameplayUnfallen</PathPrerequisite>
       <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">ClassEmpire,AffinityGameplayTimeLords</PathPrerequisite>
       <DownloadableContentPrerequisite Flags="Prerequisite,Discard">DLCVaulters</DownloadableContentPrerequisite>
-      <SimulationDescriptorReference Name="TechnologyColonization4"/>
       <SimulationDescriptorReference Name="TechnologyExplorationModule2"/>
       <SimulationDescriptorReference Name="TechnologyFreeMovementVaulters"/>
       <SimulationDescriptorReference Name="TechnologyCountScienceAndExplorationIncreaseStage2"/>

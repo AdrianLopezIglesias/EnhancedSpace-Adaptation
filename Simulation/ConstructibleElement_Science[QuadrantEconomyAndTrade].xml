@@ -36,6 +36,8 @@
       <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage1Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEconomyAndTradeMultiplier)</CustomCost>
       <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">AffinityGameplayVampirilis</PathPrerequisite>
       <SimulationDescriptorReference Name="TechnologyDust1"/>
+      <SimulationDescriptorReference Name="TechnologyColonization4"/>
+      <!-- <SimulationDescriptorReference Name="TechnologyColonization4Unfallen"/> -->
       <SimulationDescriptorReference Name="TechnologyDust1Alt"/>
       <SimulationDescriptorReference Name="TechnologyStrategicDeposit2"/>
       <SimulationDescriptorReference Name="TechnologyCountEconomyAndTradeIncreaseStage1"/>
@@ -51,6 +53,7 @@
       <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage1Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantEconomyAndTradeMultiplier)</CustomCost>
       <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityGameplayTechnologyVampirilis" Inverted="false">AffinityGameplayVampirilis</PathPrerequisite>
       <SimulationDescriptorReference Name="TechnologyDust1"/>
+      <SimulationDescriptorReference Name="TechnologyColonization4"/>
       <SimulationDescriptorReference Name="TechnologyStrategicDeposit2"/>
       <SimulationDescriptorReference Name="TechnologyCountEconomyAndTradeIncreaseStage1"/>
       <SimulationDescriptorReference Name="TechnologyCounter"/>
