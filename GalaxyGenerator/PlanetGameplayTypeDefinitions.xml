@@ -8,36 +8,40 @@
 
   <PlanetGameplayTypeDefinition PlanetType="PlanetTypeSwamp">
     <GameplayType>PlanetGameplayTier2</GameplayType>
-    <GameplayType>PlanetGameplayTypeTemperate</GameplayType>
-    <GameplayType>PlanetGameplayTypeMild</GameplayType>
-    <GameplayType>PlanetGameplayTypeLush</GameplayType>
+    <GameplayType>PlanetGameplayTypeFertile</GameplayType>
+    <GameplayType>PlanetGameplayTypeWarm</GameplayType>
+    <GameplayType>PlanetGameplayTypeFlooded</GameplayType>
+    <GameplayType>PlanetGameplayTypePlains</GameplayType>
 
     <GameplayType>PlanetGameplayTypeTree</GameplayType>
   </PlanetGameplayTypeDefinition>
 
   <PlanetGameplayTypeDefinition PlanetType="PlanetTypeMonsoon">
     <GameplayType>PlanetGameplayTier2</GameplayType>
-    <GameplayType>PlanetGameplayTypeTemperate</GameplayType>
-    <GameplayType>PlanetGameplayTypeMild</GameplayType>
-    <GameplayType>PlanetGameplayTypeLush</GameplayType>
+    <GameplayType>PlanetGameplayTypeFertile</GameplayType>
+    <GameplayType>PlanetGameplayTypeWarm</GameplayType>
+    <GameplayType>PlanetGameplayTypeFlooded</GameplayType>
+    <GameplayType>PlanetGameplayTypePlains</GameplayType>
 
     <GameplayType>PlanetGameplayTypeTree</GameplayType>
   </PlanetGameplayTypeDefinition>
 
   <PlanetGameplayTypeDefinition PlanetType="PlanetTypeJungle">
     <GameplayType>PlanetGameplayTier1</GameplayType>
-    <GameplayType>PlanetGameplayTypeHot</GameplayType>
-    <GameplayType>PlanetGameplayTypeTeeming</GameplayType>
-    <GameplayType>PlanetGameplayTypeLush</GameplayType>
+    <GameplayType>PlanetGameplayTypeFertile</GameplayType>
+    <GameplayType>PlanetGameplayTypeWarm</GameplayType>
+    <GameplayType>PlanetGameplayTypeFlooded</GameplayType>
+    <GameplayType>PlanetGameplayTypePlains</GameplayType>
 
     <GameplayType>PlanetGameplayTypeTree</GameplayType>
   </PlanetGameplayTypeDefinition>
 
   <PlanetGameplayTypeDefinition PlanetType="PlanetTypeForest">
     <GameplayType>PlanetGameplayTier1</GameplayType>
-    <GameplayType>PlanetGameplayTypeTemperate</GameplayType>
-    <GameplayType>PlanetGameplayTypeTeeming</GameplayType>
-    <GameplayType>PlanetGameplayTypeLush</GameplayType>
+    <GameplayType>PlanetGameplayTypeFertile</GameplayType>
+    <GameplayType>PlanetGameplayTypeWarm</GameplayType>
+    <GameplayType>PlanetGameplayTypeFlooded</GameplayType>
+    <GameplayType>PlanetGameplayTypePlains</GameplayType>
     
     <GameplayType>PlanetGameplayTypeTree</GameplayType>
   </PlanetGameplayTypeDefinition>
@@ -46,36 +50,40 @@
 
   <PlanetGameplayTypeDefinition PlanetType="PlanetTypeTropical">
     <GameplayType>PlanetGameplayTier2</GameplayType>
-    <GameplayType>PlanetGameplayTypeTemperate</GameplayType>
-    <GameplayType>PlanetGameplayTypeMild</GameplayType>
-    <GameplayType>PlanetGameplayTypeWater</GameplayType>
+    <GameplayType>PlanetGameplayTypeFertile</GameplayType>
+    <GameplayType>PlanetGameplayTypeWarm</GameplayType>
+    <GameplayType>PlanetGameplayTypeFlooded</GameplayType>
+    <GameplayType>PlanetGameplayTypePlains</GameplayType>
 
     <GameplayType>PlanetGameplayTypeTree</GameplayType>
   </PlanetGameplayTypeDefinition>
 
   <PlanetGameplayTypeDefinition PlanetType="PlanetTypeAtoll">
     <GameplayType>PlanetGameplayTier2</GameplayType>
-    <GameplayType>PlanetGameplayTypeTemperate</GameplayType>
-    <GameplayType>PlanetGameplayTypeMild</GameplayType>
-    <GameplayType>PlanetGameplayTypeWater</GameplayType>
+    <GameplayType>PlanetGameplayTypeFertile</GameplayType>
+    <GameplayType>PlanetGameplayTypeWarm</GameplayType>
+    <GameplayType>PlanetGameplayTypeFlooded</GameplayType>
+    <GameplayType>PlanetGameplayTypePlains</GameplayType>
 
     <GameplayType>PlanetGameplayTypeTree</GameplayType>
   </PlanetGameplayTypeDefinition>
 
   <PlanetGameplayTypeDefinition PlanetType="PlanetTypeOcean">
     <GameplayType>PlanetGameplayTier1</GameplayType>
-    <GameplayType>PlanetGameplayTypeTemperate</GameplayType>
-    <GameplayType>PlanetGameplayTypeTeeming</GameplayType>
-    <GameplayType>PlanetGameplayTypeWater</GameplayType>
+    <GameplayType>PlanetGameplayTypeFertile</GameplayType>
+    <GameplayType>PlanetGameplayTypeWarm</GameplayType>
+    <GameplayType>PlanetGameplayTypeFlooded</GameplayType>
+    <GameplayType>PlanetGameplayTypePlains</GameplayType>
 
     <GameplayType>PlanetGameplayTypeTree</GameplayType>
   </PlanetGameplayTypeDefinition>
 
   <PlanetGameplayTypeDefinition PlanetType="PlanetTypeTerran">
     <GameplayType>PlanetGameplayTier1</GameplayType>
-    <GameplayType>PlanetGameplayTypeTemperate</GameplayType>
-    <GameplayType>PlanetGameplayTypeTeeming</GameplayType>
-    <GameplayType>PlanetGameplayTypeWater</GameplayType>
+    <GameplayType>PlanetGameplayTypeFertile</GameplayType>
+    <GameplayType>PlanetGameplayTypeWarm</GameplayType>
+    <GameplayType>PlanetGameplayTypeFlooded</GameplayType>
+    <GameplayType>PlanetGameplayTypePlains</GameplayType>
 
     <GameplayType>PlanetGameplayTypeTree</GameplayType>
   </PlanetGameplayTypeDefinition>
@@ -84,16 +92,18 @@
 
   <PlanetGameplayTypeDefinition PlanetType="PlanetTypeSnow">
     <GameplayType>PlanetGameplayTier2</GameplayType>
-    <GameplayType>PlanetGameplayTypeCold</GameplayType>
-    <GameplayType>PlanetGameplayTypeMild</GameplayType>
-    <GameplayType>PlanetGameplayTypeStable</GameplayType>
+    <GameplayType>PlanetGameplayTypeFertile</GameplayType>
+    <GameplayType>PlanetGameplayTypeWarm</GameplayType>
+    <GameplayType>PlanetGameplayTypeFlooded</GameplayType>
+    <GameplayType>PlanetGameplayTypePlains</GameplayType>
   </PlanetGameplayTypeDefinition>
   
   <PlanetGameplayTypeDefinition PlanetType="PlanetTypeArctic">
     <GameplayType>PlanetGameplayTier2</GameplayType>
-    <GameplayType>PlanetGameplayTypeCold</GameplayType>
-    <GameplayType>PlanetGameplayTypeMild</GameplayType>
-    <GameplayType>PlanetGameplayTypeStable</GameplayType>
+    <GameplayType>PlanetGameplayTypeFertile</GameplayType>
+    <GameplayType>PlanetGameplayTypeWarm</GameplayType>
+    <GameplayType>PlanetGameplayTypeFlooded</GameplayType>
+    <GameplayType>PlanetGameplayTypePlains</GameplayType>
   </PlanetGameplayTypeDefinition>
 
   <PlanetGameplayTypeDefinition PlanetType="PlanetTypeIce">

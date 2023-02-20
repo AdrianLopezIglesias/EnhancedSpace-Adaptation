@@ -78,6 +78,112 @@
       </Icons>
     </PlanetGameplayTypeGuiElement>
 
+    <!-- LIFE -->
+    <PlanetGameplayTypeGuiElement Name="PlanetGameplayTypeFertile">
+      <Title>Fertile</Title>
+      <Description>Fertile planet description</Description>
+      <Icons>
+        <Icon Size="Small" Path="PlanetGameplayTypeLush"/>
+      </Icons>
+    </PlanetGameplayTypeGuiElement>
+
+    <PlanetGameplayTypeGuiElement Name="PlanetGameplayTypeInfertile">
+      <Title>Infertile</Title>
+      <Description>Infertile planet description</Description>
+      <Icons>
+        <Icon Size="Small" Path="PlanetGameplayTypeLush"/>
+      </Icons>
+    </PlanetGameplayTypeGuiElement>
+
+    <PlanetGameplayTypeGuiElement Name="PlanetGameplayTypeInhospitable">
+      <Title>Inhospitable</Title>
+      <Description>Inhospitable planet description</Description>
+      <Icons>
+        <Icon Size="Small" Path="PlanetGameplayTypeLush"/>
+      </Icons>
+    </PlanetGameplayTypeGuiElement>
+
+    <!-- TEMPERATURE -->
+
+    <PlanetGameplayTypeGuiElement Name="PlanetGameplayTypeInferno">
+      <Title>Inferno</Title>
+      <Description>Inferno planet description</Description>
+      <Icons>
+        <Icon Size="Small" Path="PlanetGameplayTypeLush"/>
+      </Icons>
+    </PlanetGameplayTypeGuiElement>
+
+    <PlanetGameplayTypeGuiElement Name="PlanetGameplayTypeFrozen">
+      <Title>Frozen</Title>
+      <Description>Frozen planet description</Description>
+      <Icons>
+        <Icon Size="Small" Path="PlanetGameplayTypeLush"/>
+      </Icons>
+    </PlanetGameplayTypeGuiElement>
+
+    <!-- WATER -->
+
+    <PlanetGameplayTypeGuiElement Name="PlanetGameplayTypeFlooded">
+      <Title>Flooded</Title>
+      <Description>Flooded planet description</Description>
+      <Icons>
+        <Icon Size="Small" Path="PlanetGameplayTypeLush"/>
+      </Icons>
+    </PlanetGameplayTypeGuiElement>
+
+    <PlanetGameplayTypeGuiElement Name="PlanetGameplayTypeRivers">
+      <Title>Rivers</Title>
+      <Description>Rivers planet description</Description>
+      <Icons>
+        <Icon Size="Small" Path="PlanetGameplayTypeLush"/>
+      </Icons>
+    </PlanetGameplayTypeGuiElement>
+
+    <PlanetGameplayTypeGuiElement Name="PlanetGameplayTypeOceans">
+      <Title>Oceans</Title>
+      <Description>Oceans planet description</Description>
+      <Icons>
+        <Icon Size="Small" Path="PlanetGameplayTypeLush"/>
+      </Icons>
+    </PlanetGameplayTypeGuiElement>
+
+    <PlanetGameplayTypeGuiElement Name="PlanetGameplayTypeFlooded">
+      <Title>Flooded</Title>
+      <Description>Flooded planet description</Description>
+      <Icons>
+        <Icon Size="Small" Path="PlanetGameplayTypeLush"/>
+      </Icons>
+    </PlanetGameplayTypeGuiElement>
+
+    <!-- TOPOLOGY -->
+
+    <PlanetGameplayTypeGuiElement Name="PlanetGameplayTypePlains">
+      <Title>Plains</Title>
+      <Description>Plains planet description</Description>
+      <Icons>
+        <Icon Size="Small" Path="PlanetGameplayTypeLush"/>
+      </Icons>
+    </PlanetGameplayTypeGuiElement>
+
+    <PlanetGameplayTypeGuiElement Name="PlanetGameplayTypeMountains">
+      <Title>Mountains</Title>
+      <Description>Mountains planet description</Description>
+      <Icons>
+        <Icon Size="Small" Path="PlanetGameplayTypeLush"/>
+      </Icons>
+    </PlanetGameplayTypeGuiElement>
+
+    <PlanetGameplayTypeGuiElement Name="PlanetGameplayTypeFluid">
+      <Title>Fluid</Title>
+      <Description>Fluid planet description</Description>
+      <Icons>
+        <Icon Size="Small" Path="PlanetGameplayTypeLush"/>
+      </Icons>
+    </PlanetGameplayTypeGuiElement>
+
+    <!-- END -->
+
+
     <PlanetGameplayTypeGuiElement Name="PlanetGameplayTypeWater">
       <Title>%PlanetGameplayTypeWaterTitle</Title>
       <Description>%PlanetGameplayTypeWaterDescription</Description>

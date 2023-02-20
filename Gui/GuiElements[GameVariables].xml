@@ -20,6 +20,18 @@
     <GuiElement Name="OwnedHotPlanets">
         <Title>%PlanetGameplayTypeHotTitle</Title>
     </GuiElement>
+    
+    <GuiElement Name="OwnedFloodedPlanets">
+        <Title>Flooded</Title>
+    </GuiElement>
+
+    <GuiElement Name="OwnedPlainsPlanets">
+        <Title>Plains</Title>
+    </GuiElement>
+
+    <GuiElement Name="OwnedFertilePlanets">
+        <Title>Fertile</Title>
+    </GuiElement>
   
     <GuiElement Name="OwnedTemperatePlanets">
         <Title>%PlanetGameplayTypeTemperateTitle</Title>

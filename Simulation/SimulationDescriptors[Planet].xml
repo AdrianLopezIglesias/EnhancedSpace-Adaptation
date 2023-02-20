@@ -555,6 +555,64 @@
     </SimulationDescriptor>
 
     <!-- ECONOMIC GAMEPLAY DESCRIPTOR -->
+      <!-- new types -->
+   <!-- life -->
+    <SimulationDescriptor Name="PlanetGameplayTypeFertile" Type="PlanetGameplayType" >
+      <Property Name="OwnedFertilePlanets" BaseValue="1"/>
+      <Modifier   TargetProperty="PlanetIsFertile"  Operation="Force" Value="1" Path="ClassPlanet/ClassPopulationPlanet"    TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="PlanetGameplayTypeInfertile" Type="PlanetGameplayType" >
+      <Property Name="OwnedInfertilePlanets" BaseValue="1"/>
+      <Modifier   TargetProperty="PlanetIsInfertile"  Operation="Force" Value="1" Path="ClassPlanet/ClassPopulationPlanet"    TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+    <SimulationDescriptor Name="PlanetGameplayTypeInhospitable" Type="PlanetGameplayType" >
+      <Property Name="OwnedInhospitablePlanets" BaseValue="1"/>
+      <Modifier   TargetProperty="PlanetIsInhospitable"  Operation="Force" Value="1" Path="ClassPlanet/ClassPopulationPlanet"    TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+   <!-- temperature -->
+    <SimulationDescriptor Name="PlanetGameplayTypeWarm" Type="PlanetGameplayType" >
+      <Property Name="OwnedWarmPlanets" BaseValue="1"/>
+      <Modifier   TargetProperty="PlanetIsWarm"  Operation="Force" Value="1" Path="ClassPlanet/ClassPopulationPlanet"    TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+   
+   <!-- water -->
+    <SimulationDescriptor Name="PlanetGameplayTypeFlooded" Type="PlanetGameplayType" >
+      <Property Name="OwnedFloodedPlanets" BaseValue="1"/>
+      <Modifier   TargetProperty="PlanetIsFlooded"  Operation="Force" Value="1" Path="ClassPlanet/ClassPopulationPlanet"    TooltipHidden="true"/>
+    </SimulationDescriptor>
+   
+   <!-- landscape -->
+    <SimulationDescriptor Name="PlanetGameplayTypePlains" Type="PlanetGameplayType" >
+      <Property Name="OwnedPlainsPlanets" BaseValue="1"/>
+      <Modifier   TargetProperty="PlanetIsPlains"  Operation="Force" Value="1" Path="ClassPlanet/ClassPopulationPlanet"    TooltipHidden="true"/>
+    </SimulationDescriptor>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- old types -->
     <SimulationDescriptor Name="PlanetGameplayTypeCold"          Type="PlanetGameplayType" >
       <Property Name="OwnedColdPlanets"                           BaseValue="1"/>
       <Modifier   TargetProperty="PlanetIsCold"           Operation="Force"     Value="1"   Path="ClassPlanet/ClassPopulationPlanet"    TooltipHidden="true"/>
