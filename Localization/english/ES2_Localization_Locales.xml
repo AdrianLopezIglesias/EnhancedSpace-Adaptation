@@ -596,6 +596,11 @@ Hull Weakness: #E3BDAC#500#REVERT# (see defense absorption)</LocalizationPair>
 
    
 
+<!-- MOD Adrian -->
+  <LocalizationPair Name="%TechnologyDefinitionScienceAndExploration2Title">Strategic Production Analysis </LocalizationPair>
+  <LocalizationPair Name="%StarSystemImprovementBuyout1Title">Production aconditionation</LocalizationPair>
+  <LocalizationPair Name="%StarSystemImprovementScienceOnGasTitle">Motivation for growth</LocalizationPair>
+  <LocalizationPair Name="%StarSystemImprovementScience8Title">Uniqeness Valuation</LocalizationPair>
 
 
 

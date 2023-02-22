@@ -1221,24 +1221,6 @@
     <PopulationEvent Name="PopulationPoliticalEventScienceBuildingConstruction1"/>
   </StarSystemImprovementDefinition>
 
-   <StarSystemImprovementDefinition Name="StarSystemImprovementScience8" SubCategory="SubCategoryScience" ScoreProvider="StarSystemImprovementBuilt">
-      <SupervisorGain Name="Science" />
-      <Tags>NoBailiff</Tags>
-      <Cost ResourceName="SystemProduction">4480</Cost>
-      <Cost ResourceName="Strategic5" Instant="true">15</Cost>
-      <PathPrerequisite       Inverted="false"    Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
-      <InterpreterPrerequisite                    Flags="Prerequisite,Discard">
-         Path(Context,@'ClassColonizedStarSystem/ClassColonizedPlanet,PlanetAnomalyReduced') or
-         Path(Context,@'ClassColonizedStarSystem/ClassColonizedPlanet,PlanetAnomalyNegative')
-      </InterpreterPrerequisite>
-      <PathPrerequisite       Inverted="false"    Flags="Prerequisite,Discard,UnlockAvailability">../ClassEmpire,!FactionTraitScienceReduction</PathPrerequisite>
-      <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementScience8,!FastForwardedImprovement</PathPrerequisite>
-      <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyAnomalyReduction3</TechnologyPrerequisite>
-      <SimulationDescriptorReference Name="StarSystemImprovementScience8" />
-      <SimulationDescriptorReference Name="StarSystemImprovementUpkeepStage5Normal" />
-      <SimulationDescriptorReference Name="ScienceConstruction" />
-      <PopulationEvent Name="PopulationPoliticalEventScienceBuildingConstruction1"/>
-   </StarSystemImprovementDefinition>
 
    <StarSystemImprovementDefinition Name="StarSystemImprovementScienceOnGas" SubCategory="SubCategoryScience" ScoreProvider="StarSystemImprovementBuilt">
       <SupervisorGain Name="Science"     />
@@ -1304,57 +1286,6 @@
     <SimulationDescriptorReference Name="StarSystemImprovementUpkeepStage2Normal" />
     <PopulationEvent Name="PopulationPoliticalEventBuildingConstructionUniqueDust1"/>
     <UniqueTags>StarSystemImprovementUniqueDust1</UniqueTags>
-  </StarSystemImprovementDefinition>
-
-<!-- StarSystemImprovementBuyout1 -->
-  <StarSystemImprovementDefinition Name="StarSystemImprovementBuyout1" SubCategory="SubCategoryBuyout" ScoreProvider="StarSystemImprovementBuilt">
-    <SupervisorGain Name="Dust"     Weight="0.5"/>
-    <SupervisorGain Name="Industry" Weight="0.5"/>
-    <Cost ResourceName="SystemProduction">560</Cost>
-    <Cost ResourceName="Strategic2" Instant="true">5</Cost>
-    <PathPrerequisite                           Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
-    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementUniqueDust1,!FastForwardedImprovement</PathPrerequisite>
-    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementUniqueDust1TimeLords,!FastForwardedImprovement</PathPrerequisite>
-    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">../ClassEmpire/Uniques,StarSystemImprovementUniqueDust1</PathPrerequisite>
-    <!-- <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyUniqueDust1</TechnologyPrerequisite> -->
-    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyUniqueDust1</TechnologyPrerequisite>
-    <PathPrerequisite       Inverted="true"    Flags="Prerequisite,Discard,UnlockAvailability">../ClassEmpire,AffinityGameplayVenetians</PathPrerequisite>
-    <SimulationDescriptorReference Name="StarSystemImprovementBuyout1" />
-    <SimulationDescriptorReference Name="DustBuilding" />
-    <SimulationDescriptorReference Name="StarSystemImprovementUpkeepStage2Normal" />
-    <PopulationEvent Name="PopulationPoliticalEventBuildingConstructionBuyout1"/>
-  </StarSystemImprovementDefinition>
-  
-  <StarSystemImprovementDefinition Name="StarSystemImprovementBuyout1" SubCategory="SubCategoryBuyout" ScoreProvider="StarSystemImprovementBuilt">
-    <SupervisorGain Name="Dust"     Weight="0.5"/>
-    <SupervisorGain Name="Industry" Weight="0.5"/>
-    <Cost ResourceName="SystemProduction">560</Cost>
-    <Cost ResourceName="Strategic2" Instant="true">5</Cost>
-    <PathPrerequisite                           Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
-    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementUniqueDust1,!FastForwardedImprovement</PathPrerequisite>
-    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementUniqueDust1TimeLords,!FastForwardedImprovement</PathPrerequisite>
-    <!-- <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyUniqueDust1TimeLords</TechnologyPrerequisite> -->
-    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyUniqueDust1</TechnologyPrerequisite>
-    <SimulationDescriptorReference Name="StarSystemImprovementBuyout1" />
-    <SimulationDescriptorReference Name="DustBuilding" />
-    <SimulationDescriptorReference Name="StarSystemImprovementUpkeepStage2Normal" />
-    <PopulationEvent Name="PopulationPoliticalEventBuildingConstructionBuyout1"/>
-  </StarSystemImprovementDefinition>
-
-  <StarSystemImprovementDefinition Name="StarSystemImprovementBuyout1Venetians" SubCategory="SubCategoryBuyout" ScoreProvider="StarSystemImprovementBuilt">
-    <SupervisorGain Name="Dust"     Weight="0.5"/>
-    <SupervisorGain Name="Industry" Weight="0.5"/>
-    <Cost ResourceName="SystemProduction">560</Cost>
-    <Cost ResourceName="Strategic2" Instant="true">5</Cost>
-    <PathPrerequisite                           Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
-    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementUniqueDust1,!FastForwardedImprovement</PathPrerequisite>
-    <PathPrerequisite       Inverted="true"     Flags="Prerequisite,Discard">ClassColonizedStarSystem/StarSystemImprovementUniqueDust1TimeLords,!FastForwardedImprovement</PathPrerequisite>
-    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyUniqueDust1</TechnologyPrerequisite>
-    <PathPrerequisite       Inverted="true"    Flags="Prerequisite,Discard,UnlockAvailability">../ClassEmpire,!AffinityGameplayVenetians</PathPrerequisite>
-    <SimulationDescriptorReference Name="StarSystemImprovementBuyout1" />
-    <SimulationDescriptorReference Name="DustBuilding" />
-    <SimulationDescriptorReference Name="StarSystemImprovementUpkeepStage2Normal" />
-    <PopulationEvent Name="PopulationPoliticalEventBuildingConstructionBuyout1"/>
   </StarSystemImprovementDefinition>
 
 <!-- StarSystemImprovementTrade1 -->
@@ -2813,5 +2744,48 @@
   </StarSystemImprovementDefinition>
 
  
+ 
+
+  <!-- ################################################################################ -->
+  <!-- ################################## NEW TYPES ################################## -->
+  <!-- ################################################################################ -->
+
+ <!-- Production aconditionation -->
+  <StarSystemImprovementDefinition Name="StarSystemImprovementBuyout1" SubCategory="SubCategoryFIDSI" ScoreProvider="StarSystemImprovementBuilt">
+    <SupervisorGain Name="Dust"     Weight="0.5"/>
+    <SupervisorGain Name="Industry" Weight="0.5"/>
+    <Cost ResourceName="SystemProduction">150</Cost>
+    <PathPrerequisite Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyModuleSupportAnalyzer1</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="StarSystemImprovementBuyout1" />
+    <SimulationDescriptorReference Name="DustBuilding" />
+    <SimulationDescriptorReference Name="StarSystemImprovementUpkeepStage2Normal" />
+    <PopulationEvent Name="PopulationPoliticalEventBuildingConstructionBuyout1"/>
+  </StarSystemImprovementDefinition>
+
+ <!-- Motivation for growth -->
+  <StarSystemImprovementDefinition Name="StarSystemImprovementScienceOnGas" SubCategory="SubCategoryFIDSI" ScoreProvider="StarSystemImprovementBuilt">
+    <SupervisorGain Name="Science"     Weight="0.5"/>
+    <Cost ResourceName="SystemProduction">150</Cost>
+    <PathPrerequisite Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyModuleSupportAnalyzer1</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="StarSystemImprovementScienceOnGas" />
+    <SimulationDescriptorReference Name="DustBuilding" />
+    <SimulationDescriptorReference Name="StarSystemImprovementUpkeepStage2Normal" />
+    <PopulationEvent Name="PopulationPoliticalEventBuildingConstructionBuyout1"/>
+  </StarSystemImprovementDefinition>
+
+ <!-- Motivation for growth -->
+  <StarSystemImprovementDefinition Name="StarSystemImprovementScience8" SubCategory="SubCategoryFIDSI" ScoreProvider="StarSystemImprovementBuilt">
+    <SupervisorGain Name="Food"     Weight="0.5"/>
+    <SupervisorGain Name="Influence"     Weight="0.5"/>
+    <Cost ResourceName="SystemProduction">150</Cost>
+    <PathPrerequisite Flags="Prerequisite,Discard">ColonizedStarSystemStateColony</PathPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyModuleSupportAnalyzer1</TechnologyPrerequisite>
+    <SimulationDescriptorReference Name="StarSystemImprovementScience8" />
+    <SimulationDescriptorReference Name="DustBuilding" />
+    <SimulationDescriptorReference Name="StarSystemImprovementUpkeepStage2Normal" />
+    <PopulationEvent Name="PopulationPoliticalEventBuildingConstructionBuyout1"/>
+  </StarSystemImprovementDefinition>
 
 </Datatable>

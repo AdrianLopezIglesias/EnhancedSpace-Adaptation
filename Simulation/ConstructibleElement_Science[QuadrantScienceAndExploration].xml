@@ -15,22 +15,11 @@
     <!-- ???-->
     <TechnologyDefinition Name="TechnologyDefinitionScienceAndExploration1" TechnologyStage="TechnologyStageDefinitionScienceAndExploration1" Category="CategoryTechnologyScienceAndExploration" ScoreProvider="TechnologyUnlocked" TechnologyFlags="Affinity">
         <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage1Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantScienceAndExplorationMultiplier)</CustomCost>
-        <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">ClassEmpire,AffinityGameplayUnfallen</PathPrerequisite>
-        <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">ClassEmpire,AffinityGameplayTimeLords</PathPrerequisite>
         <SimulationDescriptorReference Name="TechnologyColonization1"/>
         <SimulationDescriptorReference Name="TechnologyScience1"/>
         <SimulationDescriptorReference Name="TechnologyCountScienceAndExplorationIncreaseStage1"/>
         <SimulationDescriptorReference Name="TechnologyCounter"/>
         <PopulationEvent Name="PopulationPoliticalEventEcologistTechnology"/>
-
-
-        <HelperVariable Name="AvailableTundraPlanets"/>
-        <HelperVariable Name="ScienceVariable"/>
-        <HelperVariable Name="OwnedPlanetsCount"/>
-        <HelperVariable Name="AvailableTeemingPlanets"/>
-        <HelperVariable Name="AvailableTemperatePlanets"/>
-        
-        <HelperFormula>$(AvailableTundraPlanets) * 1 + $(OwnedPlanetsCount) * 1 + $(AvailableTemperatePlanets) * 1 + $(AvailableTeemingPlanets) * 1</HelperFormula>
     </TechnologyDefinition>
 
     <!-- ???-->
@@ -38,9 +27,6 @@
         <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage1Multiplier) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantScienceAndExplorationMultiplier)</CustomCost>
         <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">ClassEmpire,AffinityGameplayUnfallen</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">ClassEmpire,AffinityGameplayTimeLords</PathPrerequisite>
-        <SimulationDescriptorReference Name="TechnologyColonization2"/>
-        <SimulationDescriptorReference Name="TechnologyColonization2Common"/>
-        <SimulationDescriptorReference Name="TechnologyLinkTo2Vaulters"/>
         <SimulationDescriptorReference Name="TechnologyModuleSupportAnalyzer1"/>
         <SimulationDescriptorReference Name="TechnologyCountScienceAndExplorationIncreaseStage1"/>
         <SimulationDescriptorReference Name="TechnologyCounter"/>
@@ -170,75 +156,7 @@
       <HelperVariable Name="TurnVariable"/>
       <HelperFormula>$(AvailableVeldtPlanets) * 1 + $(TurnVariable) * 10 + $(ExplorationRatioVariable) * 5</HelperFormula>
     </TechnologyDefinition>
-  
-    <!-- Rare Earth Foams -->
-    <TechnologyDefinition Name="TechnologyDefinitionScienceAndExploration5" TechnologyStage="TechnologyStageDefinitionScienceAndExploration2" Category="CategoryTechnologyScienceAndExploration" ScoreProvider="TechnologyUnlocked">
-        <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage2Multiplier)* (1 - (Property(StockLocation,@ClassEmpire/ClassResearch , TechnologyLinkReductionValue) * Count(StockLocation, @'ClassEmpire/ClassResearch,TechnologyLinkScienceAndExploration2To5'))) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantScienceAndExplorationMultiplier)</CustomCost>
-        <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
-        <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">ClassEmpire,AffinityGameplayUnfallen,</PathPrerequisite>
-        <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">ClassEmpire,AffinityGameplayTimeLords</PathPrerequisite>
-        <SimulationDescriptorReference Name="TechnologyScience2"/>
-        <SimulationDescriptorReference Name="TechnologyColonization7"/>
-        <SimulationDescriptorReference Name="TechnologyLinkColonization7Common"/>
-        <SimulationDescriptorReference Name="TechnologyExploration1Alt"/>
-        <SimulationDescriptorReference Name="TechnologyCountScienceAndExplorationIncreaseStage2"/>
-        <SimulationDescriptorReference Name="TechnologyCounter"/>
-        <PopulationEvent Name="PopulationPoliticalEventScientistTechnology"/>
 
-
-        <HelperVariable Name="AvailableAridPlanets"/>
-        <HelperVariable Name="SciencePopulation"/>
-        <HelperFormula>$(AvailableAridPlanets) * 1  + $(SciencePopulation) * 4</HelperFormula>
-    </TechnologyDefinition>
-
-    <TechnologyDefinition Name="TechnologyDefinitionScienceAndExploration5Unfallen" TechnologyStage="TechnologyStageDefinitionScienceAndExploration2" Category="CategoryTechnologyScienceAndExploration" ScoreProvider="TechnologyUnlocked">
-        <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage2Multiplier) * (1 - (Property(StockLocation,@ClassEmpire/ClassResearch , TechnologyLinkReductionValue) * Count(StockLocation, @'ClassEmpire/ClassResearch,TechnologyLinkScienceAndExploration2To5'))) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantScienceAndExplorationMultiplier)</CustomCost>
-        <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
-        <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityGameplayTechnologyUnfallen" Inverted="false">ClassEmpire,AffinityGameplayUnfallen</PathPrerequisite>
-        <SimulationDescriptorReference Name="TechnologyScience2"/>
-        <SimulationDescriptorReference Name="TechnologyColonization7Unfallen"/>
-        <SimulationDescriptorReference Name="TechnologyExploration1Alt"/>
-        <SimulationDescriptorReference Name="TechnologyCountScienceAndExplorationIncreaseStage2"/>
-        <SimulationDescriptorReference Name="TechnologyCounter"/>
-        <PopulationEvent Name="PopulationPoliticalEventScientistTechnology"/>
-
-        <HelperVariable Name="AvailableAridPlanets"/>
-        <HelperVariable Name="SciencePopulation"/>
-        <HelperFormula>$(AvailableAridPlanets) * 1  + $(SciencePopulation) * 4</HelperFormula>
-    </TechnologyDefinition>
-
-    <TechnologyDefinition Name="TechnologyDefinitionScienceAndExploration5TimeLords" TechnologyStage="TechnologyStageDefinitionScienceAndExploration2" Category="CategoryTechnologyScienceAndExploration" ScoreProvider="TechnologyUnlocked">
-        <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage2Multiplier) * (1 - (Property(StockLocation,@ClassEmpire/ClassResearch , TechnologyLinkReductionValue) * Count(StockLocation, @'ClassEmpire/ClassResearch,TechnologyLinkScienceAndExploration2To5'))) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantScienceAndExplorationMultiplier)</CustomCost>
-        <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityGameplayTechnologyTimeLords" Inverted="false">ClassEmpire,AffinityGameplayTimeLords</PathPrerequisite>
-        <SimulationDescriptorReference Name="TechnologyScience2"/>
-        <SimulationDescriptorReference Name="TechnologyColonization7TimeLords"/>
-        <SimulationDescriptorReference Name="TechnologyLinkTo5CommonTimeLords"/>
-        <SimulationDescriptorReference Name="TechnologyLinkTo5SophonsTimeLords"/>
-        <SimulationDescriptorReference Name="TechnologyExploration1Alt"/>
-        <SimulationDescriptorReference Name="TechnologyCountScienceAndExplorationIncreaseStage2"/>
-        <SimulationDescriptorReference Name="TechnologyCounter"/>
-        <PopulationEvent Name="PopulationPoliticalEventScientistTechnology"/>
-
-        <HelperVariable Name="AvailableTropicalPlanets"/>
-        <HelperVariable Name="SciencePopulation"/>
-        <HelperFormula>$(AvailableTropicalPlanets) * 1  + $(SciencePopulation) * 4</HelperFormula>
-    </TechnologyDefinition>
-
-    <TechnologyDefinition Name="TechnologyDefinitionScienceAndExploration5Vampirilis" TechnologyStage="TechnologyStageDefinitionScienceAndExploration2" Category="CategoryTechnologyScienceAndExploration" ScoreProvider="TechnologyUnlocked">
-        <CustomCost ResourceName="EmpireResearch">Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCurrentCost) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostStage2Multiplier) * (1 - (Property(StockLocation,@ClassEmpire/ClassResearch , TechnologyLinkReductionValue) * Count(StockLocation, @'ClassEmpire/ClassResearch,TechnologyLinkScienceAndExploration2To5'))) * Property(StockLocation,@'ClassEmpire/ClassResearch', TechnologyCostQuadrantScienceAndExplorationMultiplier)</CustomCost>
-        <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard,Faction,AffinityGameplayTechnologyVampirilis" Inverted="false">ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
-        <SimulationDescriptorReference Name="TechnologyScience2"/> 
-        <SimulationDescriptorReference Name="TechnologyColonization7"/>
-        <SimulationDescriptorReference Name="TechnologyLinkColonization7Vampirilis"/>
-        <SimulationDescriptorReference Name="TechnologyCountScienceAndExplorationIncreaseStage2"/>
-        <SimulationDescriptorReference Name="TechnologyCounter"/>
-        <PopulationEvent Name="PopulationPoliticalEventScientistTechnology"/>
-
-
-        <HelperVariable Name="AvailableTropicalPlanets"/>
-        <HelperVariable Name="SciencePopulation"/>
-        <HelperFormula>$(AvailableTropicalPlanets) * 1  + $(SciencePopulation) * 2</HelperFormula>
-    </TechnologyDefinition>
 
     <!-- ????? -->
     <TechnologyDefinition Name="TechnologyDefinitionScienceAndExploration28" TechnologyStage="TechnologyStageDefinitionScienceAndExploration2" Category="CategoryTechnologyScienceAndExploration" ScoreProvider="TechnologyUnlocked">
@@ -1037,6 +955,7 @@
       <PathPrerequisite Flags="Prerequisite,DiplomaticTradable,Discard" Inverted="true">ClassEmpire,AffinityMappingHoratio</PathPrerequisite>
       <SimulationDescriptorReference Name="TechnologyFood1"/>
       <SimulationDescriptorReference Name="TechnologyFood1Common"/>
+      <SimulationDescriptorReference Name="TechCustom1"/>
       <SimulationDescriptorReference Name="TechnologyCountScienceAndExplorationIncreaseStage4"/>
       <SimulationDescriptorReference Name="TechnologyCounter"/>
       <PopulationEvent Name="PopulationPoliticalEventEcologistTechnology"/>

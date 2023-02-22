@@ -64,21 +64,7 @@
     <PopulationEvent Name="PopulationPoliticalEventColonizationAtoll"/>
   </PlanetColonizationConstructibleElement>
   
-  <PlanetColonizationConstructibleElement Name="PlanetTypeOceanColonization"  Category="CategoryPlanetColonization"    SubCategory="PlanetColonization" PlanetType="PlanetTypeOcean">
-    <InProgressSimulationDescriptorReference Name="PlanetStatusBeingColonized"/>
-    <Cost ResourceName="SystemProduction">320</Cost>
-    <PathPrerequisite Flags="Prerequisite,Faction">../ClassEmpire,!AffinityGameplayUnfallen,!AffinityGameplayTimeLords</PathPrerequisite>
-    <MetaPrerequisite Operator="Or">
-      <TechnologyPrerequisite Flags="Prerequisite,Technology">TechnologyColonization2</TechnologyPrerequisite>
-      <PathPrerequisite Flags="Prerequisite">../ClassEmpire,FactionTraitHomePlanetPlanetTypeVeldt</PathPrerequisite>
-      <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00</PathPrerequisite>
-      <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00Republic</PathPrerequisite>
-      <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00Dictatorship</PathPrerequisite>
-      <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00DictatorshipMajorHisshos</PathPrerequisite>
-      <PathPrerequisite Flags="Prerequisite">../ClassEmpire,EmpireTypeMinor</PathPrerequisite>
-    </MetaPrerequisite>
-    <PopulationEvent Name="PopulationPoliticalEventColonizationOcean"/>
-  </PlanetColonizationConstructibleElement>
+
 
   <PlanetColonizationConstructibleElement Name="PlanetTypeMonsoonColonization"    Category="CategoryPlanetColonization"     SubCategory="PlanetColonization" PlanetType="PlanetTypeMonsoon">
     <InProgressSimulationDescriptorReference Name="PlanetStatusBeingColonized"/>
@@ -389,19 +375,7 @@
         <PopulationEvent Name="PopulationPoliticalEventColonizationTropical"/>
     </PlanetColonizationConstructibleElement>
   
-    <PlanetColonizationConstructibleElement Name="PlanetTypeSteppesColonizationTimeLords"  Category="CategoryPlanetColonization"     SubCategory="PlanetColonization" PlanetType="PlanetTypeSteppes">
-        <InProgressSimulationDescriptorReference Name="PlanetStatusBeingColonized"/>
-        <Cost ResourceName="SystemProduction">160</Cost>
-        <PathPrerequisite Flags="Prerequisite,Faction">../ClassEmpire,AffinityGameplayTimeLords</PathPrerequisite>
-        <MetaPrerequisite Operator="Or">
-            <TechnologyPrerequisite Flags="Prerequisite,Technology">TechnologyColonization2TimeLords</TechnologyPrerequisite>
-            <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00</PathPrerequisite>
-            <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00Republic</PathPrerequisite>
-            <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00Dictatorship</PathPrerequisite>
-            <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00DictatorshipMajorHisshos</PathPrerequisite>
-        </MetaPrerequisite>
-        <PopulationEvent Name="PopulationPoliticalEventColonizationSteppes"/>
-    </PlanetColonizationConstructibleElement>
+
 
     <PlanetColonizationConstructibleElement Name="PlanetTypeSnowColonizationTimeLords"  Category="CategoryPlanetColonization"     SubCategory="PlanetColonization" PlanetType="PlanetTypeSnow">
         <InProgressSimulationDescriptorReference Name="PlanetStatusBeingColonized"/>
@@ -623,20 +597,7 @@
 
     <!-- COLD -->
 
-    <PlanetColonizationConstructibleElement Name="PlanetTypeBorealRootColonization" Category="CategoryPlanetColonization"     SubCategory="PlanetColonization" PlanetType="PlanetTypeBoreal">
-      <Tags>NoBuyout</Tags>
-      <InProgressSimulationDescriptorReference Name="PlanetStatusBeingColonized"/>
-      <Cost ResourceName="SystemTurnBased">2</Cost>
-      <PathPrerequisite Flags="Prerequisite,Faction">../ClassEmpire,AffinityGameplayUnfallen</PathPrerequisite>
-      <MetaPrerequisite Operator="Or">
-        <TechnologyPrerequisite Flags="Prerequisite,Technology">TechnologyColonization2Unfallen</TechnologyPrerequisite>
-        <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00</PathPrerequisite>
-        <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00Republic</PathPrerequisite>
-        <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00Dictatorship</PathPrerequisite>
-        <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00DictatorshipMajorHisshos</PathPrerequisite>
-      </MetaPrerequisite>
-      <PopulationEvent Name="PopulationPoliticalEventColonizationBoreal"/>
-    </PlanetColonizationConstructibleElement>
+
 
 
     <!-- HOT -->
@@ -682,21 +643,7 @@
 
 
 
-    <!-- Stage 2 -->
-    <PlanetColonizationConstructibleElement Name="PlanetTypeSteppesRootColonization"    Category="CategoryPlanetColonization"     SubCategory="PlanetColonization" PlanetType="PlanetTypeSteppes">
-        <Tags>NoBuyout</Tags>
-		<InProgressSimulationDescriptorReference Name="PlanetStatusBeingColonized"/>
-        <Cost ResourceName="SystemTurnBased">2</Cost>
-        <PathPrerequisite Flags="Prerequisite,Faction">../ClassEmpire,AffinityGameplayUnfallen</PathPrerequisite>
-        <MetaPrerequisite Operator="Or">
-            <TechnologyPrerequisite Flags="Prerequisite,Technology">TechnologyColonization2Unfallen</TechnologyPrerequisite>
-            <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00</PathPrerequisite>
-            <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00Republic</PathPrerequisite>
-            <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00Dictatorship</PathPrerequisite>
-            <PathPrerequisite Flags="Prerequisite">../ClassEmpire/ClassSenate/LawEffectP04L00DictatorshipMajorHisshos</PathPrerequisite>
-        </MetaPrerequisite>
-        <PopulationEvent Name="PopulationPoliticalEventColonizationSteppes"/>
-    </PlanetColonizationConstructibleElement>
+
 
     <PlanetColonizationConstructibleElement Name="PlanetTypeVeldtRootColonization"    Category="CategoryPlanetColonization"     SubCategory="PlanetColonization" PlanetType="PlanetTypeVeldt">
         <Tags>NoBuyout</Tags>

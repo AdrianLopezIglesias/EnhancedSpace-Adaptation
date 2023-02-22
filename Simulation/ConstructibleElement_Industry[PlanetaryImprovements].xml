@@ -9,7 +9,7 @@
     <Cost ResourceName="SystemProduction">160</Cost>
     <PathPrerequisite Flags="Prerequisite,Discard,UnlockAvailability" Inverted="true">../ClassEmpire,AffinityGameplayVampirilis</PathPrerequisite>
     <PathPrerequisite Flags="Prerequisite,Discard,UnlockAvailability" Inverted="true">../ClassEmpire,FactionTraitScienceReduction</PathPrerequisite>
-    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyModuleSupportAnalyzer1</TechnologyPrerequisite>
+    <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyModuleSupportAnalyzer1x</TechnologyPrerequisite>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassEmpire/ClassResearch,TechnologyMoonExploration</PathPrerequisite>
     <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassEmpire/ClassResearch,TechnologyScience5</PathPrerequisite>
     <PathPrerequisite   Inverted="true" Flags="Prerequisite,Discard">ClassColonizedPlanet/PlanetImprovementScience1,!FastForwardedImprovement</PathPrerequisite>
@@ -322,7 +322,7 @@
       <SupervisorGain Name="Science" Weight="0.5"/>
       <Cost ResourceName="SystemProduction">160</Cost>
       <PathPrerequisite Flags="Prerequisite,Discard,UnlockAvailability" Inverted="false">../ClassEmpire,FactionTraitScienceReduction</PathPrerequisite>
-      <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyModuleSupportAnalyzer1</TechnologyPrerequisite>
+      <TechnologyPrerequisite Flags="Prerequisite,Discard,Technology">TechnologyModuleSupportAnalyzer1x</TechnologyPrerequisite>
       <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassEmpire/ClassResearch,TechnologyMoonExploration</PathPrerequisite>
       <PathPrerequisite Inverted="true" Flags="Prerequisite,Discard">../ClassEmpire/ClassResearch,TechnologyScience5</PathPrerequisite>
       <PathPrerequisite   Inverted="true" Flags="Prerequisite,Discard">ClassColonizedPlanet/PlanetImprovementTemplarsScience1,!FastForwardedImprovement</PathPrerequisite>
